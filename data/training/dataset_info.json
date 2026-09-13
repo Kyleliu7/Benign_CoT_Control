@@ -1,0 +1,88 @@
+{
+  "gpt52_high_reasoning_original": {
+    "file_name": "gpt52_high_reasoning_original.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "gpt52_high_reasoning_glm53_plain_prose": {
+    "file_name": "gpt52_high_reasoning_glm53_plain_prose.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "gpt52_combined_short_long_424": {
+    "file_name": "gpt52_combined_short_long_424.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "claude_sonnet_gpt52_prompts_sft": {
+    "file_name": "claude_sonnet_gpt52_prompts_sft.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_235b_gpt52_prompts_sft": {
+    "file_name": "qwen3_235b_gpt52_prompts_sft.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "deepseek_r1_gpt52_prompts_sft": {
+    "file_name": "deepseek_r1_gpt52_prompts_sft.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_14b_gpt52_prompts_sft": {
+    "file_name": "qwen3_14b_gpt52_prompts_sft.json",
+    "columns": {
+      "prompt": "instruction",
+      "response": "output"
+    }
+  },
+  "gpt52_no_reasoning": {
+    "file_name": "gpt52_no_reasoning.json",
+    "columns": {
+      "prompt": "instruction",
+      "response": "output"
+    }
+  },
+  "reasonif_14b_meta_reasoning_sft": {
+    "file_name": "reasonif_14b_meta_reasoning_sft.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "gpt52_hybrid_50short_50long": {
+    "file_name": "gpt52_hybrid_50short_50long.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "gpt52_long_reasoning_prompts_sft": {
+    "file_name": "gpt52_long_reasoning_prompts_sft.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+}
