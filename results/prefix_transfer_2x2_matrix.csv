@@ -1,0 +1,5 @@
+Condition,7_Task_Compliance_%,All_10_Compliance_%,7_Task_Binary_Pass_%,All_10_Binary_Pass_%,Mean_Continuation_Tokens
+base_to_base,27.48,21.03,15.71,11.0,805.8
+base_to_sft,28.26,21.52,17.14,12.0,677.2
+sft_to_sft,30.42,23.96,24.86,17.4,381.0
+sft_to_base,35.45,29.54,30.0,22.4,388.1

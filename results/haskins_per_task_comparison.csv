@@ -1,0 +1,11 @@
+Task,Category,N,Base_Compliance (%),GPT5.2_Short_Compliance (%),Delta (pp),Base_Z_Score,GPT5.2_Short_Z_Score,Z_Score_Delta,P_Value,Significant (p<0.05)
+third_person,Non-Character,50,86.07,94.93,8.86,-0.229,1.126,1.355,0.0006,True
+arrow_prefix,Non-Character,50,0.0,0.0,0.0,-1.82,-1.82,0.0,1.0,False
+word_suppression,Non-Character,50,0.0,34.0,34.0,-0.678,13.723,14.401,1e-05,True
+multiple_word_suppression,Non-Character,50,0.0,38.0,38.0,-0.605,20.471,21.076,1e-05,True
+end_of_sentence,Non-Character,50,0.6,32.14,31.54,-0.055,24.838,24.893,0.0,True
+meow_between_words,Non-Character,50,32.17,71.99,39.82,15.667,35.567,19.9,0.0,True
+repeat_sentences,Non-Character,50,0.0,7.44,7.44,-1.394,0.905,2.299,0.0,True
+alternating_case,Character,50,10.91,13.01,2.1,-2.576,-2.46,0.116,0.26445,False
+uppercase_thinking,Character,50,0.87,62.99,62.12,-2.47,1.63,4.1,0.0,True
+lowercase_thinking,Character,50,5.26,84.45,79.19,-2.409,3.267,5.676,0.0,True

@@ -1,0 +1,61 @@
+### model
+model_name_or_path: Qwen/Qwen3-14B
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_target: all
+lora_rank: 32
+lora_alpha: 64
+lora_dropout: 0.05
+
+### dataset
+# Register this name in dataset_info.json and point it to the normalized
+# version of the SAME GPT-5.2 examples used in the original experiment.
+dataset: gpt52_high_reasoning_original
+dataset_dir: data
+template: qwen3
+cutoff_len: 4096
+train_on_prompt: false
+packing: false
+overwrite_cache: true
+preprocessing_num_workers: 8
+
+### output
+output_dir: ./qwen3-14b-gpt52-high-reasoning-original
+logging_steps: 5
+save_strategy: steps
+save_steps: 10
+eval_strategy: steps
+eval_steps: 10
+save_total_limit: 2
+load_best_model_at_end: true
+metric_for_best_model: eval_loss
+greater_is_better: false
+plot_loss: true
+report_to: none
+
+### train
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 1.0e-4
+
+# IMPORTANT:
+# The uploaded older notebook used 2 epochs, but you said the FINAL run changed
+# the epoch count. Replace this value with the epoch count shown on the final
+# Hugging Face model card before using this as the exact replication.
+num_train_epochs: 3
+
+lr_scheduler_type: cosine
+warmup_ratio: 0.05
+weight_decay: 0.0
+bf16: true
+gradient_checkpointing: true
+flash_attn: auto
+seed: 42
+
+### eval
+val_size: 0.1
+per_device_eval_batch_size: 4

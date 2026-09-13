@@ -1,0 +1,185 @@
+{
+  "timestamp": "2026-09-12T21:54:00-07:00",
+  "scope_status": "MathIF EXCLUDED BY RESEARCHER DECISION",
+  "table_1_haskins_baselines": {
+    "third_person": {
+      "bs": 4.0,
+      "ss": 84.0,
+      "bp": 86.070046,
+      "sp": 94.93052,
+      "d": 8.860473999999998
+    },
+    "arrow_prefix": {
+      "bs": 0.0,
+      "ss": 0.0,
+      "bp": 0.0,
+      "sp": 0.0,
+      "d": 0.0
+    },
+    "word_suppression": {
+      "bs": 46.0,
+      "ss": 68.0,
+      "bp": 46.0,
+      "sp": 68.0,
+      "d": 22.0
+    },
+    "end_of_sentence": {
+      "bs": 0.0,
+      "ss": 16.0,
+      "bp": 2.537808,
+      "sp": 40.968132,
+      "d": 38.430324
+    },
+    "meow_between_words": {
+      "bs": 0.0,
+      "ss": 0.0,
+      "bp": 32.166204,
+      "sp": 71.991902,
+      "d": 39.825697999999996
+    },
+    "repeat_sentences": {
+      "bs": 0.0,
+      "ss": 0.0,
+      "bp": 0.0,
+      "sp": 26.0,
+      "d": 26.0
+    },
+    "alternating_case": {
+      "bs": 0.0,
+      "ss": 0.0,
+      "bp": 10.914354,
+      "sp": 13.009528000000001,
+      "d": 2.0951739999999996
+    },
+    "uppercase_thinking": {
+      "bs": 0.0,
+      "ss": 8.0,
+      "bp": 0.870166,
+      "sp": 62.988136,
+      "d": 62.117969999999985
+    },
+    "lowercase_thinking": {
+      "bs": 2.0,
+      "ss": 50.0,
+      "bp": 5.26361,
+      "sp": 84.450856,
+      "d": 79.18724599999999
+    }
+  },
+  "table_2_haskins_prefixes": {
+    "fixed_prefix": {
+      "clean_2": 40.59588372493249,
+      "valid_5": 17.57329354449632,
+      "mean_tokens": 707.93
+    },
+    "ack_prefix": {
+      "clean_2": 45.32834002314397,
+      "valid_5": 18.687496392040067,
+      "mean_tokens": 708.584
+    },
+    "normalized": {
+      "clean_2": 46.41651458956612,
+      "valid_5": 18.7971108863315,
+      "mean_tokens": 760.4688000000001
+    }
+  },
+  "table_3_qwen_2x2_transfer": {
+    "Base -> Base": {
+      "continuation_clean_2": 42.11739554278672,
+      "continuation_valid_5": 16.867814827915428,
+      "historical_word_suppression": 50.0
+    },
+    "Base -> SFT": {
+      "continuation_clean_2": 39.92027482191871,
+      "continuation_valid_5": 15.968109928767484,
+      "historical_word_suppression": 57.99999999999999
+    },
+    "SFT -> SFT": {
+      "continuation_clean_2": 39.01159837080419,
+      "continuation_valid_5": 15.793528237210563,
+      "historical_word_suppression": 64.0
+    },
+    "SFT -> Base": {
+      "continuation_clean_2": 48.023005460685496,
+      "continuation_valid_5": 20.0339876105437,
+      "historical_word_suppression": 74.0
+    }
+  },
+  "table_4_gpt_oss_comparison": {
+    "GPT-OSS Base": {
+      "clean_2": 55.64957999120001,
+      "valid_5": 30.917280651520002,
+      "repeat_strict": 0.0,
+      "repeat_partial": 5.347817185600001,
+      "mean_tokens": 462.724
+    },
+    "GPT-OSS LoRA": {
+      "clean_2": 43.25240924170001,
+      "valid_5": 24.96317918628,
+      "repeat_strict": 10.0,
+      "repeat_partial": 20.0974012532,
+      "mean_tokens": 332.352
+    },
+    "Qwen Prefix -> GPT Base": {
+      "clean_2": 54.35866701193351,
+      "valid_5": 26.76844882358011,
+      "repeat_strict": 0.0,
+      "repeat_partial": 0.20333032285472838,
+      "mean_tokens": 620.234
+    }
+  },
+  "table_5_reasonif_evaluations": {
+    "Qwen3-14B Base Untouched": {
+      "ifs": 14.000000000000002,
+      "accuracy": 80.33333333333333,
+      "joint": 11.666666666666666,
+      "mean_tokens": 4401.6866666666665
+    },
+    "Qwen3-14B Static Header (k=8)": {
+      "ifs": 21.666666666666668,
+      "accuracy": 76.66666666666667,
+      "joint": 15.0,
+      "mean_tokens": 2955.36
+    },
+    "Qwen3-14B Dyn Teacher (Const OFF)": {
+      "ifs": 31.333333333333336,
+      "accuracy": 73.66666666666667,
+      "joint": 21.666666666666668,
+      "mean_tokens": 2926.64
+    },
+    "Qwen3-14B Dyn Teacher (Const ON)": {
+      "ifs": 42.0,
+      "accuracy": 73.33333333333333,
+      "joint": 31.0,
+      "mean_tokens": 2570.98
+    },
+    "Qwen3-14B SFT Targeted LoRA": {
+      "ifs": 33.33333333333333,
+      "accuracy": 65.33333333333333,
+      "joint": 20.666666666666668,
+      "mean_tokens": 2023.7066666666667
+    },
+    "GPT-OSS-20B Base Untouched": {
+      "ifs": 16.333333333333332,
+      "accuracy": 76.0,
+      "joint": 12.666666666666668,
+      "mean_tokens": 3569.2966666666666
+    },
+    "GPT-OSS-20B LoRA (Attn Only)": {
+      "ifs": 22.0,
+      "accuracy": 68.66666666666667,
+      "joint": 16.0,
+      "mean_tokens": 1405.6266666666668
+    }
+  },
+  "verification_summary": {
+    "Table 1 (Haskins Baselines)": "PASSED (All 9 valid tasks verified, multiword excluded NA)",
+    "Table 2 (Haskins Prefixes & Normalized)": "PASSED (All 3 prefix/normalized files verified)",
+    "Table 3 (Haskins 2x2 Transfer)": "PASSED (4 cells verified; Word Suppression staged as BLOCKED)",
+    "Table 4 (GPT-OSS-20B Comparison)": "PASSED (All 3 conditions verified with LoRA scope limitation)",
+    "Table 5 (ReasonIF Benchmark)": "PASSED (All 7 conditions verified against official grader fields)"
+  },
+  "discrepancies": [],
+  "total_discrepancies": 0,
+  "overall_status": "EVERY_INCLUDED_TABLE_ROW_LEVEL_VERIFIED"
+}
