@@ -1,8 +1,8 @@
 # Disentangling Word Suppression: Donor Extraction, Recipient Prompts, and Calibration Remedies
 
 **Date:** September 12, 2026  
-**Auditor / Author:** Gemini Validation Subagent (Pair Programming with Bryan / DeepMind AGY)  
-**Corpus / Context:** Bryan's Chain-of-Thought Controllability & Prefix Intervention Research  
+**Author:** Kyle Liu  
+**Context:** Chain-of-Thought Controllability & Prefix Intervention Research  
 **Document Type:** Task 3 Methodological Trace & Remedy Specification  
 **Status:** Validated Technical Analysis (No inference launched; all originals preserved)
 
@@ -112,7 +112,7 @@ For each experimental condition involving word suppression, we provide an eviden
 
 ## 4. Specification of Proposed Reruns: What Each Rerun Repairs
 
-If Bryan or Codex authorizes executing validation reruns, the following exact specifications govern the execution. Reruns are **not mandatory** if the paper chooses to publish the 9 clean/unaffected tasks.
+If authorized to execute validation reruns, the following exact specifications govern the execution. Reruns are **not mandatory** if the paper chooses to publish the 9 clean/unaffected tasks.
 
 ### Rerun 1: 2×2 Word Suppression Continuation Regeneration
 - **Target Conditions:** Base$\to$Base, Base$\to$SFT, SFT$\to$SFT, SFT$\to$Base ($N=500$ rows per cell, total $N=2000$ traces).

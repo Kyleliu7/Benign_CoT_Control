@@ -5,7 +5,9 @@ import google.auth
 from pathlib import Path
 
 SPREADSHEET_ID = "1kHkib3oNXufeh7oN1vt3nJKr9iz0SOQT9KnZcjMLCT8"
-EXCEL_PATH = Path(r"C:\Users\bryan\OneDrive\Desktop\CoT Distill\results\ALL_EXPERIMENTS_MASTER_SPREADSHEET.xlsx")
+REPO_ROOT = Path(__file__).resolve().parent.parent
+EXCEL_PATH = REPO_ROOT / "results" / "ALL_EXPERIMENTS_BY_MODEL_AUDITED.xlsx"
+
 
 def sync_to_google_sheets():
     print(f"Reading Excel workbook from: {EXCEL_PATH}")

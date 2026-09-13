@@ -1,11 +1,11 @@
 # CoT Controllability & Prefix Intervention: Comprehensive Research Evidence Package
 
 **Date:** September 12, 2026  
-**Auditor / Author:** Gemini Validation Subagent (Pair Programming with Bryan / DeepMind AGY)  
-**Corpus / Context:** Bryan's Chain-of-Thought Controllability & Prefix Intervention Research  
-**Primary Workspace:** `C:/Users/bryan/OneDrive/Desktop/CoT Distill`  
-**Audit Output Location:** `C:/Users/bryan/Documents/Codex/2026-09-10/dio/outputs/gemini-validation/`  
-**Machine-Readable Manifest:** [`research-snapshot-manifest.json`](file:///C:/Users/bryan/Documents/Codex/2026-09-10/dio/outputs/gemini-validation/research-snapshot-manifest.json)  
+**Author:** Kyle Liu  
+**Context:** Chain-of-Thought Controllability & Prefix Intervention Research  
+**Primary Workspace:** Repository Root (`./`)  
+**Audit Output Location:** `results/`  
+**Machine-Readable Manifest:** [`manifests/research-snapshot-manifest.json`](../manifests/research-snapshot-manifest.json)  
 **Status:** Frozen Evidence Snapshot & Provenance Package (No new model inference or training performed; all originals preserved)
 
 ---
@@ -372,11 +372,10 @@ To facilitate transparent decision-making, outstanding research tasks are catego
 ## 9. Conclusion & Master Google Sheet Status
 
 - **Deliverables Completed:**
-  - Versioned research-evidence snapshot: [`remaining-research-evidence.md`](file:///C:/Users/bryan/Documents/Codex/2026-09-10/dio/outputs/gemini-validation/remaining-research-evidence.md).
-  - Machine-readable manifest: [`research-snapshot-manifest.json`](file:///C:/Users/bryan/Documents/Codex/2026-09-10/dio/outputs/gemini-validation/research-snapshot-manifest.json).
-  - Recalibrated research checklist: [`remaining-research-checklist.md`](file:///C:/Users/bryan/Documents/Codex/2026-09-10/dio/outputs/gemini-validation/remaining-research-checklist.md).
-  - Verified row-level ledger: [`row-level-audit-results.jsonl`](file:///C:/Users/bryan/Documents/Codex/2026-09-10/dio/outputs/gemini-validation/row-level-audit-results.jsonl).
-  - Validated Excel workbook: [`ALL_EXPERIMENTS_BY_MODEL_AUDITED.xlsx`](file:///C:/Users/bryan/Documents/Codex/2026-09-10/dio/outputs/gemini-validation/ALL_EXPERIMENTS_BY_MODEL_AUDITED.xlsx).
+  - Versioned research-evidence snapshot: [`docs/remaining-research-evidence.md`](remaining-research-evidence.md).
+  - Machine-readable manifest: [`manifests/research-snapshot-manifest.json`](../manifests/research-snapshot-manifest.json).
+  - Verified row-level verification log: [`results/all-tables-verification-log.json`](../results/all-tables-verification-log.json).
+  - Validated Excel workbook: [`results/ALL_EXPERIMENTS_BY_MODEL_AUDITED.xlsx`](../results/ALL_EXPERIMENTS_BY_MODEL_AUDITED.xlsx).
 - **Master Google Spreadsheet Status:**
-  - Per Bryan's explicit instruction that completed claims are not accepted without reproducible evidence and authorization, the live Google Spreadsheet ([`15uAR4ly9tXmPcJ7g8ngykeJ9LuUrPBunMNp2oLJoUb0`](https://docs.google.com/spreadsheets/d/15uAR4ly9tXmPcJ7g8ngykeJ9LuUrPBunMNp2oLJoUb0/edit)) has **NOT been modified**.
-  - All verified, reconciled data are prepared in import-ready CSVs and an audited Excel workbook ready for push upon Bryan's final review.
+  - In accordance with the verification protocol that completed claims require reproducible evidence and authorization, the live Google Spreadsheet ([`15uAR4ly9tXmPcJ7g8ngykeJ9LuUrPBunMNp2oLJoUb0`](https://docs.google.com/spreadsheets/d/15uAR4ly9tXmPcJ7g8ngykeJ9LuUrPBunMNp2oLJoUb0/edit)) has **NOT been modified**.
+  - All verified, reconciled data are prepared in import-ready CSVs and an audited Excel workbook ready for push upon final review.

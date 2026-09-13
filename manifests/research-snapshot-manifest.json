@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
   "snapshot_date": "2026-09-12",
-  "auditor": "Gemini Validation Subagent (Pair Programming with Bryan / DeepMind AGY)",
+  "author": "Kyle Liu",
   "description": "Machine-readable research evidence snapshot and provenance manifest for CoT Controllability and Prefix Transfer experiments.",
-  "base_workspace": "C:/Users/bryan/OneDrive/Desktop/CoT Distill",
-  "audit_directory": "C:/Users/bryan/Documents/Codex/2026-09-10/dio/outputs/gemini-validation",
+  "base_workspace": "./",
+  "audit_directory": "./results",
   "checkpoints_and_weights": {
     "qwen3_14b_base": {
       "hf_repo_id": "Qwen/Qwen3-14B",
@@ -182,7 +182,7 @@
           "status": "VALIDATED"
         }
       ],
-      "evaluator_script": "C:/Users/bryan/Documents/Codex/2026-09-10/dio/outputs/gemini-validation/generate_audit_artifacts.py",
+      "evaluator_script": "scripts/reproduce_all_sheets.py",
       "status_by_task": {
         "third_person": "VALIDATED (p = 7.50e-04)",
         "arrow_prefix": "VALIDATED (0.0% transfer)",

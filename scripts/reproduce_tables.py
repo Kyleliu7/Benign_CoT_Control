@@ -15,8 +15,9 @@ import numpy as np
 from scipy import stats
 
 PKG_DIR = Path(__file__).resolve().parent.parent
-AUDIT_DIR = PKG_DIR.parent
-WORKSPACE = Path(r"C:\Users\bryan\OneDrive\Desktop\CoT Distill")
+AUDIT_DIR = PKG_DIR / "results"
+SCORED_DIR = AUDIT_DIR / "scored_runs"
+
 
 SENT_SPLIT = re.compile(r'(?<=[.!?])\s+|\n+')
 FIRST_PERSON_RE = re.compile(r"\b(I|I'm|I'll|I've|I'd|me|my|mine|myself)\b", re.IGNORECASE)
@@ -92,9 +93,9 @@ def run_comprehensive_verification():
     # -------------------------------------------------------------------------
     print(">>> 2. Verifying Table 2: Haskins Prefixes & Normalized Reasoning...")
     t2_files = {
-        "fixed_prefix": WORKSPACE / "results" / "haskins_qwen_fixed_prefix_10tok_results.jsonl",
-        "ack_prefix": WORKSPACE / "results" / "haskins_qwen_ack_requests_prefix_results.jsonl",
-        "normalized": WORKSPACE / "results" / "haskins_qwen_normalized_results.jsonl",
+        "fixed_prefix": SCORED_DIR / "haskins_qwen3_14b_fixed_10tok.jsonl",
+        "ack_prefix": SCORED_DIR / "haskins_qwen3_14b_ack_requests.jsonl",
+        "normalized": SCORED_DIR / "haskins_qwen3_14b_gpt52_norm.jsonl",
     }
     
     t2_results = {}
@@ -128,10 +129,10 @@ def run_comprehensive_verification():
     # -------------------------------------------------------------------------
     print(">>> 3. Verifying Table 3: Haskins Qwen 2x2 Transfer Matrix...")
     t3_files = {
-        "Base -> Base": WORKSPACE / "cot_controllability_results" / "base_donor_to_base_scored.jsonl",
-        "Base -> SFT": WORKSPACE / "cot_controllability_results" / "base_donor_to_sft_scored.jsonl",
-        "SFT -> SFT": WORKSPACE / "cot_controllability_results" / "sft_donor_to_sft_scored.jsonl",
-        "SFT -> Base": WORKSPACE / "cot_controllability_results" / "base_prefix_off_scored.jsonl",
+        "Base -> Base": SCORED_DIR / "haskins_2x2_base_donor_to_base.jsonl",
+        "Base -> SFT": SCORED_DIR / "haskins_2x2_base_donor_to_sft.jsonl",
+        "SFT -> SFT": SCORED_DIR / "haskins_2x2_sft_donor_to_sft.jsonl",
+        "SFT -> Base": SCORED_DIR / "haskins_2x2_sft_donor_to_base.jsonl",
     }
     
     t3_results = {}
@@ -166,9 +167,9 @@ def run_comprehensive_verification():
     # -------------------------------------------------------------------------
     print(">>> 4. Verifying Table 4: Haskins GPT-OSS-20B Comparison...")
     t4_files = {
-        "GPT-OSS Base": WORKSPACE / "results" / "haskins_gpt_oss_20b_comparison" / "base_scored.jsonl",
-        "GPT-OSS LoRA": WORKSPACE / "results" / "haskins_gpt_oss_20b_comparison" / "lora_scored.jsonl",
-        "Qwen Prefix -> GPT Base": WORKSPACE / "results" / "haskins_gpt_oss_20b_comparison" / "qwen_sft_prefix_to_gpt_oss_base_scored.jsonl",
+        "GPT-OSS Base": SCORED_DIR / "haskins_gpt_oss_20b_base.jsonl",
+        "GPT-OSS LoRA": SCORED_DIR / "haskins_gpt_oss_20b_lora.jsonl",
+        "Qwen Prefix -> GPT Base": SCORED_DIR / "haskins_qwen_sft_prefix_to_gpt_oss_base.jsonl",
     }
     
     t4_results = {}
@@ -207,13 +208,13 @@ def run_comprehensive_verification():
     # -------------------------------------------------------------------------
     print(">>> 5. Verifying Table 5: ReasonIF Official Benchmark (All 7 Conditions)...")
     t5_files = {
-        "Qwen3-14B Base Untouched": WORKSPACE / "prefix_intervention_evaluation" / "base_scored_responses.jsonl",
-        "Qwen3-14B Static Header (k=8)": WORKSPACE / "outputs" / "reasonif_qwen3_14b_prefix_intervention" / "qwen3_14b_base_prefix_acknowledging_requests" / "full_prefix_acknowledging_requests_k8_n300_gseed42_new16384_temp1_top_p095_native_chat" / "scored_responses.jsonl",
-        "Qwen3-14B Dyn Teacher (Const OFF)": WORKSPACE / "outputs" / "reasonif_qwen3_14b_prefix_intervention" / "qwen3_14b_base_prefix_constraint_off" / "full_prefix_constraint_off_k10_n300_gseed42_new16384_temp1_top_p095_native_chat" / "scored_responses.jsonl",
-        "Qwen3-14B Dyn Teacher (Const ON)": WORKSPACE / "outputs" / "reasonif_qwen3_14b_prefix_intervention" / "qwen3_14b_base_prefix_constraint_on" / "full_prefix_constraint_on_k10_n300_gseed42_new16384_temp1_top_p095_native_chat" / "scored_responses.jsonl",
-        "Qwen3-14B SFT Targeted LoRA": WORKSPACE / "outputs" / "qwen3_14b_gpt52_high_reasoning_original_lora_n300_gseed42_new16384_temp1_top_p095_native_chat_reasonif_results" / "scored_responses.jsonl",
-        "GPT-OSS-20B Base Untouched": WORKSPACE / "outputs" / "reasonif_gpt_oss_20b" / "scored_responses.jsonl",
-        "GPT-OSS-20B LoRA (Attn Only)": WORKSPACE / "outputs" / "reasonif_gpt_oss_20b_final_paper" / "gptoss_20b_gpt_52_long_high_reasoning_original" / "lora_n300_gseed42_new8192_temp1_top_p095_native_chat" / "scored_responses.jsonl",
+        "Qwen3-14B Base Untouched": SCORED_DIR / "reasonif_qwen3_14b_base_untouched.jsonl",
+        "Qwen3-14B Static Header (k=8)": SCORED_DIR / "reasonif_qwen3_14b_prefix_ack_requests.jsonl",
+        "Qwen3-14B Dyn Teacher (Const OFF)": SCORED_DIR / "reasonif_qwen3_14b_prefix_constraint_off.jsonl",
+        "Qwen3-14B Dyn Teacher (Const ON)": SCORED_DIR / "reasonif_qwen3_14b_prefix_constraint_on.jsonl",
+        "Qwen3-14B SFT Targeted LoRA": SCORED_DIR / "reasonif_qwen3_14b_sft_gpt52_high.jsonl",
+        "GPT-OSS-20B Base Untouched": SCORED_DIR / "reasonif_gpt_oss_20b_base.jsonl",
+        "GPT-OSS-20B LoRA (Attn Only)": SCORED_DIR / "reasonif_gpt_oss_20b_lora.jsonl",
     }
 
     t5_results = {}
