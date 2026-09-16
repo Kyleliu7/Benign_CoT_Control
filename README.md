@@ -24,6 +24,7 @@ pip install -r requirements.txt
 ```text
 .
 ├── configs/                               # Custom LoRA training configurations
+│   ├── phi4_reasoning_14b_sft_lora-gpt-52-high-reasoning-original.yaml
 │   ├── qwen3_14b_sft_lora-claude-37.yaml
 │   ├── qwen3_14b_sft_lora-deepseek-r1.yaml
 │   ├── qwen3_14b_sft_lora-gpt-52-high-reasoning-normalized.yaml
@@ -151,4 +152,7 @@ llamafactory-cli train configs/train_gpt_oss_20b_lora.yaml
 
 # Fine-tune GPT-OSS-20B on Harmony Reasoning (MoE Expert MLP + Attention LoRA)
 llamafactory-cli train configs/train_gpt_oss_20b_expert_lora.yaml
+
+# Fine-tune Phi-4-reasoning 14B on High Reasoning Original
+llamafactory-cli train configs/phi4_reasoning_14b_sft_lora-gpt-52-high-reasoning-original.yaml
 ```
