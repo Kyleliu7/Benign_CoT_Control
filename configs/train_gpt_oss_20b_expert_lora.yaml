@@ -1,0 +1,60 @@
+### model
+model_name_or_path: openai/gpt-oss-20b
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+
+# 1. Standard Linear Attention Projections
+lora_target: q_proj,k_proj,v_proj,o_proj
+
+# 2. Raw MoE Expert Parameter Tensors (Router excluded)
+target_parameters: gate_up_proj,down_proj
+
+# LoRA Hyperparameters (Rank 16 required for 96GB VRAM feasibility; Dropout 0.0 required by PEFT ParamWrapper)
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.0
+
+### dataset
+dataset: gpt52_high_reasoning_harmony
+dataset_dir: data
+template: gpt_oss
+cutoff_len: 1792
+train_on_prompt: false
+packing: false
+overwrite_cache: true
+preprocessing_num_workers: 8
+
+### output
+output_dir: ./outputs/gptoss-20b-gpt-52-expert-lora
+logging_steps: 5
+save_strategy: steps
+save_steps: 10
+eval_strategy: steps
+eval_steps: 10
+save_total_limit: 2
+load_best_model_at_end: true
+metric_for_best_model: eval_loss
+greater_is_better: false
+plot_loss: true
+report_to: none
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 1.0e-4
+num_train_epochs: 3
+lr_scheduler_type: cosine
+warmup_ratio: 0.05
+weight_decay: 0.0
+bf16: true
+gradient_checkpointing: true
+flash_attn: auto
+seed: 42
+
+### eval
+val_size: 0.1
+per_device_eval_batch_size: 1

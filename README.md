@@ -34,6 +34,7 @@ pip install -r requirements.txt
 │   ├── qwen3_14b_sft_lora-reasonflux-f1.yaml
 │   ├── qwen3_14b_sft_lora-self-distill.yaml
 │   ├── qwen3_14b_sft_lora-svamp_meta_discussion.yaml
+│   ├── train_gpt_oss_20b_expert_lora.yaml
 │   └── train_gpt_oss_20b_lora.yaml
 ├── data/
 │   ├── eval_prompts/                      # Benchmark evaluation datasets
@@ -145,6 +146,9 @@ llamafactory-cli train configs/qwen3_14b_sft_lora-gpt-52-high-reasoning-original
 # Fine-tune Qwen3-14B on Normalized Reasoning (GLM-5.3 Plain Prose)
 llamafactory-cli train configs/qwen3_14b_sft_lora-gpt-52-high-reasoning-normalized.yaml
 
-# Fine-tune GPT-OSS-20B on Harmony Reasoning
+# Fine-tune GPT-OSS-20B on Harmony Reasoning (Attention-Only LoRA)
 llamafactory-cli train configs/train_gpt_oss_20b_lora.yaml
+
+# Fine-tune GPT-OSS-20B on Harmony Reasoning (MoE Expert MLP + Attention LoRA)
+llamafactory-cli train configs/train_gpt_oss_20b_expert_lora.yaml
 ```
