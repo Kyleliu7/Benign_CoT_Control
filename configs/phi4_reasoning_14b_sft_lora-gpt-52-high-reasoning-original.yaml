@@ -13,7 +13,7 @@ lora_dropout: 0.05
 
 ### dataset
 dataset: gpt52_high_reasoning_original
-dataset_dir: data
+dataset_dir: data/training
 template: phi4
 cutoff_len: 4096
 train_on_prompt: false

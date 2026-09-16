@@ -12,8 +12,9 @@ lora_alpha: 64
 lora_dropout: 0.05
 
 ### dataset
-dataset: gpt52_high_reasoning_harmony
-dataset_dir: data
+# Point to registered dataset in data/training/dataset_info.json
+dataset: gpt52_high_reasoning_original
+dataset_dir: data/training
 template: gpt_oss
 cutoff_len: 4096
 train_on_prompt: false

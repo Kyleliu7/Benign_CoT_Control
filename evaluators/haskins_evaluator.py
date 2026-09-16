@@ -9,7 +9,7 @@ import os
 import re
 import sys
 from pathlib import Path
-from typing import Tuple, Dict, Any, List
+from typing import Tuple, Dict, Any, List, Optional
 import numpy as np
 import pandas as pd
 
@@ -130,24 +130,68 @@ def evaluate_lowercase_thinking(text: str) -> Tuple[float, int]:
     comp = compliant / len(sents)
     return comp, 1 if comp >= 1.0 else 0
 
-def evaluate_word_suppression(text: str, keyword: str) -> Tuple[float, int]:
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+EXACT_KEYWORDS_PATH = DATA_DIR / "eval_prompts" / "haskins_exact_prompt_keywords.json"
+if not EXACT_KEYWORDS_PATH.exists():
+    EXACT_KEYWORDS_PATH = DATA_DIR / "haskins_exact_prompt_keywords.json"
+
+PROMPT_KEYWORDS: List[Dict[str, Any]] = []
+if EXACT_KEYWORDS_PATH.exists():
+    with open(EXACT_KEYWORDS_PATH, "r", encoding="utf-8") as f:
+        PROMPT_KEYWORDS = json.load(f)
+
+
+def evaluate_word_suppression(text: str, keyword: str, synonyms: Optional[List[str]] = None) -> Tuple[float, int]:
     cleaned = clean_reasoning(text).lower()
     if not cleaned:
         return 1.0, 1
-    found = re.search(r'\b' + re.escape(keyword.lower()) + r'\b', cleaned)
-    if found:
-        return 0.0, 0
-    return 1.0, 1
+    all_words = [keyword] + (synonyms or [])
+    has_forbidden = any(re.search(r'\b' + re.escape(w.lower()) + r'\b', cleaned) for w in all_words)
+    return (0.0, 0) if has_forbidden else (1.0, 1)
 
 
 def evaluate_haskins_record(record: Dict[str, Any], continuation_only: bool = False) -> Dict[str, Any]:
     task = record.get("task", "")
     if continuation_only:
-        text = record.get("continuation_reasoning") or record.get("continuation_text") or record.get("extracted_reasoning") or record.get("raw_output", "")
+        text = (
+            record.get("continuation_reasoning")
+            or record.get("continuation_text")
+            or record.get("reasoning")
+            or record.get("extracted_reasoning")
+            or record.get("raw_output", "")
+        )
     else:
-        text = record.get("full_reasoning") or record.get("extracted_reasoning") or record.get("continuation_reasoning") or record.get("raw_output", "")
+        text = (
+            record.get("full_reasoning")
+            or record.get("reasoning")
+            or record.get("extracted_reasoning")
+            or record.get("continuation_reasoning")
+            or record.get("raw_output", "")
+        )
 
-    keyword = record.get("keyword") or record.get("prompt_keyword") or "strawberry"
+    # Keyword resolution without arbitrary fallbacks
+    keyword = record.get("keyword") or record.get("prompt_keyword")
+    synonyms = record.get("synonyms")
+    prompt_idx = record.get("prompt_idx") if record.get("prompt_idx") is not None else record.get("prompt_index")
+    if prompt_idx is None:
+        prompt_idx = record.get("idx")
+
+    if prompt_idx is not None and 0 <= int(prompt_idx) < len(PROMPT_KEYWORDS):
+        kw_entry = PROMPT_KEYWORDS[int(prompt_idx)]
+        if not keyword:
+            keyword = kw_entry.get("keyword")
+        if not synonyms:
+            synonyms = kw_entry.get("synonyms", [])
+
+    if not keyword:
+        full_p = record.get("full_prompt") or record.get("prompt") or record.get("user_prompt") or ""
+        m = re.search(r"Do not use the word '([^']+)'", full_p)
+        if m:
+            keyword = m.group(1)
+            for kw_entry in PROMPT_KEYWORDS:
+                if kw_entry.get("keyword", "").lower() == keyword.lower():
+                    synonyms = kw_entry.get("synonyms", [])
+                    break
 
     if text:
         if task == "third_person":
@@ -167,7 +211,9 @@ def evaluate_haskins_record(record: Dict[str, Any], continuation_only: bool = Fa
         elif task == "lowercase_thinking":
             comp, strict = evaluate_lowercase_thinking(text)
         elif task in ("word_suppression", "multiple_word_suppression"):
-            comp, strict = evaluate_word_suppression(text, keyword)
+            if not keyword:
+                raise ValueError(f"Cannot resolve suppression keyword for task {task} (prompt_idx: {prompt_idx})")
+            comp, strict = evaluate_word_suppression(text, keyword, synonyms=synonyms)
         else:
             comp = record.get("continuation_compliance") or record.get("full_compliance") or record.get("compliance", 0.0)
             strict = record.get("continuation_binary") or record.get("full_binary") or record.get("compliant_binary", 0)
@@ -175,15 +221,26 @@ def evaluate_haskins_record(record: Dict[str, Any], continuation_only: bool = Fa
         comp = record.get("continuation_compliance") or record.get("full_compliance") or record.get("compliance", 0.0)
         strict = record.get("continuation_binary") or record.get("full_binary") or record.get("compliant_binary", 0)
 
-    tokens = (
-        record.get("full_tokens")
-        or record.get("full_reasoning_token_count")
-        or record.get("continuation_tokens")
-        or record.get("continuation_token_count")
-        or record.get("reasoning_token_count")
-        or record.get("output_tokens")
-        or (len(text.split()) * 1.3 if text else 0)
-    )
+    if continuation_only:
+        tokens = (
+            record.get("continuation_tokens")
+            or record.get("continuation_token_count")
+            or record.get("reasoning_tokens")
+            or record.get("reasoning_token_count")
+            or record.get("tokens")
+            or record.get("full_tokens")
+            or (len(text.split()) * 1.3 if text else 0)
+        )
+    else:
+        tokens = (
+            record.get("total_tokens")
+            or record.get("full_tokens")
+            or record.get("tokens")
+            or record.get("full_reasoning_token_count")
+            or record.get("reasoning_token_count")
+            or record.get("continuation_tokens")
+            or (len(text.split()) * 1.3 if text else 0)
+        )
 
     return {
         "task": task,

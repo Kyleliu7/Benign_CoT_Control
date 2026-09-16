@@ -204,7 +204,9 @@ def main():
     scored_path = output_dir / "scored_responses.jsonl"
 
     dataset_path = REASONIF_ROOT / "data" / "reasonIF_dataset.json"
-    official_messages, official_dataset = prepare_message_list("Qwen3-14B", input_path=str(dataset_path))
+    # Benchmark word-limit calibration: Standardized to Qwen3-14B reference table limits as the matched 14B parameter scale baseline
+    calibration_model = getattr(args, "calibration_model", "Qwen3-14B")
+    official_messages, official_dataset = prepare_message_list(calibration_model, input_path=str(dataset_path))
     assert len(official_dataset) == NUM_QUESTIONS, f"Expected {NUM_QUESTIONS} questions, got {len(official_dataset)}"
 
     prepared_rows = []
@@ -231,6 +233,7 @@ def main():
             "adapter_path": resolved_adapter,
             "num_questions": NUM_QUESTIONS,
             "generation_seed": GENERATION_SEED,
+            "calibration_model": calibration_model,
             "temperature": TEMPERATURE,
             "top_p": TOP_P,
             "max_new_tokens": MAX_NEW_TOKENS,
@@ -256,6 +259,11 @@ def main():
 
             inputs = tokenizer(batch_prompts, return_tensors="pt", padding=True).to("cuda")
             input_len = inputs.input_ids.shape[1]
+
+            # Deterministic generator seed matching recorded seed metadata
+            torch.manual_seed(GENERATION_SEED + batch_idxs[0])
+            if torch.cuda.is_available():
+                torch.cuda.manual_seed_all(GENERATION_SEED + batch_idxs[0])
 
             with torch.no_grad():
                 outputs = model.generate(

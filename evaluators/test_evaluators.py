@@ -85,5 +85,17 @@ class TestEvaluatorBoundaryConditions(unittest.TestCase):
         p2, s2 = evaluate_word_suppression(text, "cat")
         self.assertEqual(s2, 1, "Does not contain 'cat'")
 
+    def test_word_suppression_synonyms(self):
+        # Case 1: Forbidden word 'climb' avoided, but inflection 'climbs' present
+        text = "The snail climbs 3 feet each day."
+        p, s = evaluate_word_suppression(text, "climb", synonyms=["climbs", "climbing", "climbed"])
+        self.assertEqual(s, 0, "Synonym/inflection 'climbs' must trigger failure under strict Haskins check")
+
+        # Case 2: Completely avoided both keyword and all synonyms
+        text_clean = "The snail moves upward 3 feet each day."
+        p2, s2 = evaluate_word_suppression(text_clean, "climb", synonyms=["climbs", "climbing", "climbed"])
+        self.assertEqual(s2, 1, "Must pass when both keyword and all synonyms are avoided")
+
 if __name__ == "__main__":
     unittest.main()
+

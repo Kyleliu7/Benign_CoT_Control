@@ -62,5 +62,51 @@ def split_channels(raw_output: str) -> tuple[str, str]:
         final = text
     return analysis, final
 
+
+def parse_args():
+    import argparse
+    parser = argparse.ArgumentParser(description="Evaluate GPT-OSS-20B responses on ReasonIF benchmark.")
+    parser.add_argument("--input", "-i", type=str, required=False, default=None,
+                        help="Path to JSONL file containing responses to evaluate.")
+    parser.add_argument("--output", "-o", type=str, required=False, default=None,
+                        help="Path to save scored output.")
+    return parser.parse_args()
+
+
+def main():
+    PKG_DIR = Path(__file__).resolve().parent.parent
+    if str(PKG_DIR) not in sys.path:
+        sys.path.insert(0, str(PKG_DIR))
+
+    from evaluators.reasonif_evaluator import evaluate_reasonif_file
+
+    args = parse_args()
+    if args.input is None:
+        print(f"ReasonIF Evaluation Pipeline for {MODEL_ID} (Reasoning effort: {REASONING_EFFORT})")
+        print("Usage: python scripts/eval_reasonif_gpt_oss_20b.py --input <path_to_responses.jsonl>")
+        print("\nAvailable pre-scored GPT-OSS-20B ReasonIF runs in results/scored_runs/:")
+        scored_dir = PKG_DIR / "results" / "scored_runs"
+        if scored_dir.exists():
+            for f in sorted(scored_dir.glob("reasonif_gpt_oss_*.jsonl")):
+                print(f"  - {f.name}")
+        return
+
+    input_path = Path(args.input)
+    if not input_path.exists():
+        raise FileNotFoundError(f"Input file not found: {input_path}")
+
+    print(f"Evaluating GPT-OSS ReasonIF responses from: {input_path}")
+    overall, by_constraint = evaluate_reasonif_file(str(input_path))
+
+    print("\n" + "=" * 80)
+    print(f"GPT-OSS REASONIF BENCHMARK RESULTS ({input_path.stem})")
+    print("=" * 80)
+    print("\n--- Overall Benchmark Performance ---")
+    print(overall.to_string(index=False))
+    print("\n--- Breakdown by Constraint Type ---")
+    print(by_constraint.to_string(index=False))
+    print("=" * 80 + "\n")
+
+
 if __name__ == "__main__":
-    print(f"Loaded ReasonIF runner for {MODEL_ID} (Reasoning effort: {REASONING_EFFORT})")
+    main()

@@ -12,6 +12,12 @@ lora_alpha: 64
 lora_dropout: 0.05
 
 ### dataset
+# Methodological Note on Dataset Composition & Validation Split:
+# 1. gpt52_combined_short_long_424 contains 424 examples across 212 distinct prompts (each prompt appears
+#    as both short and long reasoning demonstrations). With an unconstrained random 10% validation split,
+#    prompts appear simultaneously in both train and validation folds (leakage confound).
+# 2. Total training tokens are doubled relative to 212-sample runs under the same 3 epochs.
+# 3. Approximately 61 of 424 rendered examples exceed cutoff_len (4096 tokens) and undergo sequence truncation.
 dataset: gpt52_combined_short_long_424
 dataset_dir: data/training
 template: qwen3

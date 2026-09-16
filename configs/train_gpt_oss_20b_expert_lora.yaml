@@ -7,11 +7,12 @@ stage: sft
 do_train: true
 finetuning_type: lora
 
-# 1. Standard Linear Attention Projections
-lora_target: q_proj,k_proj,v_proj,o_proj
-
-# 2. Raw MoE Expert Parameter Tensors (Router excluded)
-target_parameters: gate_up_proj,down_proj
+# 1. Standard Linear Attention Projections + MoE Expert Projections
+# Note: Upstream LLaMA-Factory / PEFT targets MoE expert feed-forward layers via lora_target module names
+# (e.g., q_proj,k_proj,v_proj,o_proj,gate_up_proj,down_proj or regex r".*experts\..*(gate_up_proj|down_proj)").
+# target_parameters was used in custom parameter-wrapper forks. For standard stock LLaMA-Factory, include
+# expert linear projections directly in lora_target.
+lora_target: q_proj,k_proj,v_proj,o_proj,gate_up_proj,down_proj
 
 # LoRA Hyperparameters (Rank 16 required for 96GB VRAM feasibility; Dropout 0.0 required by PEFT ParamWrapper)
 lora_rank: 16
@@ -19,8 +20,9 @@ lora_alpha: 32
 lora_dropout: 0.0
 
 ### dataset
-dataset: gpt52_high_reasoning_harmony
-dataset_dir: data
+# Point to registered dataset in data/training/dataset_info.json
+dataset: gpt52_high_reasoning_original
+dataset_dir: data/training
 template: gpt_oss
 cutoff_len: 1792
 train_on_prompt: false

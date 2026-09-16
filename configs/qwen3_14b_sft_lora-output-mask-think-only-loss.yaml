@@ -11,8 +11,12 @@ lora_rank: 32
 lora_alpha: 64
 lora_dropout: 0.05
 
+# Loss Masking Ablation: Think-Only Loss
+# Computes cross-entropy loss exclusively on reasoning tokens (<think>...</think>).
+# Final answer tokens following </think> are masked out (target IDs set to -100).
+mask_output: true
+
 ### dataset
-# Registered in data/training/dataset_info.json
 dataset: gpt52_high_reasoning_original
 dataset_dir: data/training
 template: qwen3
@@ -23,7 +27,7 @@ overwrite_cache: true
 preprocessing_num_workers: 8
 
 ### output
-output_dir: ./qwen3-14b-gpt52-high-reasoning-original
+output_dir: ./qwen3-14b-gpt52-output-mask-think-only-loss
 logging_steps: 5
 save_strategy: steps
 save_steps: 10
@@ -40,10 +44,7 @@ report_to: none
 per_device_train_batch_size: 2
 gradient_accumulation_steps: 4
 learning_rate: 1.0e-4
-
-# Confirmed: Trained for 3 full epochs matching the final release checkpoint
 num_train_epochs: 3
-
 lr_scheduler_type: cosine
 warmup_ratio: 0.05
 weight_decay: 0.0
@@ -55,3 +56,4 @@ seed: 42
 ### eval
 val_size: 0.1
 per_device_eval_batch_size: 2
+

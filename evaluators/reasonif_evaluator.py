@@ -63,12 +63,34 @@ def canonical_answer(value: Any, source: str) -> str:
         return val_str
 
 
+# Load canonical benchmark reference dataset for metadata recovery
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+REF_DATASET_PATH = DATA_DIR / "eval_prompts" / "reasonif_dataset_300.json"
+if not REF_DATASET_PATH.exists():
+    REF_DATASET_PATH = DATA_DIR / "reasonif_dataset_300.json"
+
+REF_DATASET: Dict[int, Dict[str, Any]] = {}
+if REF_DATASET_PATH.exists():
+    with open(REF_DATASET_PATH, "r", encoding="utf-8") as f:
+        _ref_list = json.load(f)
+        REF_DATASET = {r["dataset_index"]: r for r in _ref_list}
+
+
 def evaluate_reasonif_record(record: Dict[str, Any]) -> Dict[str, Any]:
-    c_name = record.get("constraint_name") or record.get("constraint")
-    c_args = record.get("constraint_args", {})
-    prompt = record.get("prompt") or record.get("original_prompt", "")
-    source = record.get("source", "gsm8k")
-    ground_truth = record.get("answer", "")
+    idx = record.get("dataset_index")
+    ref = REF_DATASET.get(idx, {}) if idx is not None else {}
+
+    c_name = record.get("constraint_name") or record.get("constraint") or ref.get("constraint_name")
+    c_args = record.get("constraint_args")
+    if c_args is None or c_args == {} or c_args == [None] or c_args == []:
+        if ref and ref.get("constraint_args") is not None:
+            c_args = ref.get("constraint_args")
+        elif c_args is None:
+            c_args = {}
+            
+    prompt = record.get("prompt") or record.get("original_prompt") or ref.get("prompt", "")
+    source = record.get("source") or ref.get("source", "gsm8k")
+    ground_truth = record.get("ground_truth") or record.get("answer") or ref.get("answer", "")
 
     c_name_list = [c_name] if isinstance(c_name, str) else (c_name or [])
     c_args_list = [c_args] if isinstance(c_args, dict) else (c_args or [])
@@ -85,7 +107,8 @@ def evaluate_reasonif_record(record: Dict[str, Any]) -> Dict[str, Any]:
         prompt,
         reasoning
     )
-    is_following = following_list[0] if following_list else False
+    # Multi-constraint compliance: Enforce that all specified constraints are satisfied
+    is_following = all(following_list) if following_list else False
 
     pred_ans = record.get("predicted_answer")
     if pred_ans is None:
