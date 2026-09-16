@@ -230,16 +230,8 @@ def build_system_prompt(task: str, prompt_idx: int, cot_term: str = "chain of th
 
 def format_chat_prompt(tokenizer, task: str, prompt_idx: int, user_prompt: str, cot_term: str = "chain of thought") -> str:
     system_content = build_system_prompt(task, prompt_idx, cot_term=cot_term)
-    messages = [
-        {"role": "system", "content": system_content},
-        {"role": "user", "content": user_prompt},
-    ]
-    prompt_str = tokenizer.apply_chat_template(
-        messages,
-        tokenize=False,
-        add_generation_prompt=True,
-    )
-    return prompt_str
+    return f"<|im_start|>system<|im_sep|>{system_content}<|im_end|><|im_start|>user<|im_sep|>{user_prompt}<|im_end|><|im_start|>assistant<|im_sep|>"
+
 
 
 def read_completed(file_path: Path) -> Dict[Tuple[str, int], Dict[str, Any]]:
