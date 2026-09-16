@@ -1,8 +1,8 @@
-### Model
+### model
 model_name_or_path: openai/gpt-oss-20b
 trust_remote_code: true
 
-### Method
+### method
 stage: sft
 do_train: true
 finetuning_type: lora
@@ -11,7 +11,7 @@ lora_rank: 32
 lora_alpha: 64
 lora_dropout: 0.05
 
-### Dataset
+### dataset
 dataset: gpt52_high_reasoning_harmony
 dataset_dir: data
 template: gpt_oss
@@ -21,8 +21,8 @@ packing: false
 overwrite_cache: true
 preprocessing_num_workers: 8
 
-### Output
-output_dir: ./saves/gptoss-20b-gpt52-harmony-lora
+### output
+output_dir: ./gptoss-20b-gpt-52-long-high-reasoning-original
 logging_steps: 5
 save_strategy: steps
 save_steps: 10
@@ -35,13 +35,19 @@ greater_is_better: false
 plot_loss: true
 report_to: none
 
-### Hyperparameters
-num_train_epochs: 3.0
+### train
 per_device_train_batch_size: 2
-per_device_eval_batch_size: 2
 gradient_accumulation_steps: 4
 learning_rate: 1.0e-4
+num_train_epochs: 3
 lr_scheduler_type: cosine
-warmup_ratio: 0.1
+warmup_ratio: 0.05
+weight_decay: 0.0
 bf16: true
-ddp_timeout: 180000000
+gradient_checkpointing: true
+flash_attn: auto
+seed: 42
+
+### eval
+val_size: 0.1
+per_device_eval_batch_size: 2
