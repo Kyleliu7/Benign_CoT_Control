@@ -1,8 +1,0 @@
-Task,Target_Constraint,Preceding_Context,Pos_t,KL_nats,Base_Token,SFT_Token,Mechanical_Role
-third_person:4,No 1st-person pronouns,...proof by contradiction.,18,1.59, I [FAIL], It [PASS],Impersonal pronoun substitution; blocks self-narration.
-third_person:4,No 1st-person pronouns,...format in Markdown.,147,11.88, the [FAIL],** [PASS],Structural markdown header; suppresses 1st-person relapse.
-ReasonIF #84,Suppress commas,...process bits sequentially,25,7.13,", [FAIL]",\n [PASS],Clause-boundary newline break; avoids comma violation.
-multi_word:22,"Suppress solve, solution",...3(x^2 - 4x + 3) = 0.,45,3.96, Solve [FAIL], Factor [PASS],Mathematical operational verb; circumvents banned term.
-word_suppr:68,Suppress weigh,"Step 2: On the scale, we",68,2.45, weigh [FAIL], compare [PASS],Action circumlocution; overrides canonical scale terminology.
-repeat_sent:19,Repeat sentences twice,...viral spike protein.,90,11.65, Next [FAIL], mRNA [PASS],Forces duplicate sentence restart; overrides base autoregressive prior.
-arrow_prefix:29,Mandatory -> prefix,...in lowest terms.,74,4.12, We [FAIL], -> [PASS],Injects required syntactic marker at sentence boundary.

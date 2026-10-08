@@ -1,9 +1,9 @@
-Model,Condition,IFS_Score,IFS_Count,Accuracy,Acc_Count,Joint_Score,Joint_Count,Avg_Tokens
-Qwen3-14B,Base (Untouched),37.0,111/300,80.3,241/300,11.7,35/300,4401.7
-Qwen3-14B,SFT (gpt52-high),33.3,100/300,65.3,196/300,20.7,62/300,2023.7
-Qwen3-14B,Prefix-OFF (SFT No Constraint),32.3,97/300,73.7,221/300,22.3,67/300,2724.3
-Qwen3-14B,Prefix-ON (SFT Under Constraint),42.0,126/300,73.3,220/300,31.0,93/300,2571.0
-Phi-4-reasoning,Base (Untouched),5.0,15/300,,,,,
-Phi-4-reasoning,SFT (gpt52-high),12.0,36/300,,,,,
-Phi-4-reasoning,Prefix-OFF (Control),5.0,15/300,,,,,
-Phi-4-reasoning,Prefix-ON (Transferred),6.0,18/300,,,,,
+Model,Condition,Status,N,IFS_Count,IFS_Pct,Acc_Count,Acc_Pct,Joint_Count,Joint_Pct,Mean_Tokens,Truncated,Prefix_Shorter_Than_10,Source
+Qwen3-14B,Base (Untouched),OK,300,42,14.0,241,80.3,35,11.7,4401.7,19,,reasonif_qwen3_14b_base_untouched.jsonl
+Qwen3-14B,SFT (gpt52-high),OK,300,100,33.3,196,65.3,62,20.7,2023.7,6,,reasonif_qwen3_14b_sft_gpt52_high.jsonl
+Qwen3-14B,Prefix-OFF (continuation-scored),OK,300,96,32.0,221,73.7,67,22.3,2926.6,11,16,reasonif_qwen3_14b_prefix_constraint_off.jsonl
+Qwen3-14B,Prefix-ON (continuation-scored),OK,300,126,42.0,220,73.3,93,31.0,2571.0,13,15,reasonif_qwen3_14b_prefix_constraint_on.jsonl
+Phi-4-reasoning,Base (Untouched),OK,300,15,5.0,226,75.3,9,3.0,4044.8,12,,phi4_reasoning/base/scored_responses.jsonl
+Phi-4-reasoning,SFT (gpt52-high),OK,300,36,12.0,207,69.0,24,8.0,2512.2,7,,phi4_reasoning/sft/scored_responses.jsonl
+Phi-4-reasoning,Prefix-OFF (continuation-scored),OK (aggregate CSV only; raw records absent),300,14,4.7,221,73.7,9,3.0,3993.3,14,,phi4_reasoning/prefix_off/overall.csv
+Phi-4-reasoning,Prefix-ON (continuation-scored),OK (aggregate CSV only; raw records absent),300,18,6.0,223,74.3,11,3.7,3793.4,11,,phi4_reasoning/prefix_on/overall.csv

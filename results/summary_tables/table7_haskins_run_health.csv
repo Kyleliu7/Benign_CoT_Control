@@ -1,0 +1,7 @@
+Model,Run,N,Hit_3000_Token_Limit,Unfinished_Reasoning,Mean_Continuation_Tokens
+Qwen3-14B,Base -> Base (A2),500,27,24,986.2
+Qwen3-14B,Base -> SFT (A3),500,16,11,886.6
+Qwen3-14B,SFT -> Base (A1 / Prefix-ON),500,7,29,677.2
+Qwen3-14B,SFT -> SFT (A4),500,13,70,663.0
+Phi-4-reasoning,standalone Base,500,52,38,1730.8
+Phi-4-reasoning,standalone SFT,500,3,2,622.7

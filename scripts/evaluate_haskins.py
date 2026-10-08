@@ -20,6 +20,8 @@ def main():
     parser.add_argument("--input_file", "--input", "-i", type=str, required=True, help="Path to JSON/JSONL/CSV completions file or run directory.")
     parser.add_argument("--output_file", "--output", "-o", type=str, default=None, help="Path to save scored outputs.")
     parser.add_argument("--continuation_only", action="store_true", help="Score only the post-prefix continuation reasoning.")
+    parser.add_argument("--scorer", choices=["paper", "semantic"], default="paper",
+                        help="paper (default) reproduces the manuscript scores; semantic is the legacy strict diagnostic.")
     args = parser.parse_args()
 
     in_path = Path(args.input_file)
@@ -54,7 +56,7 @@ def main():
     print(f"Loaded {len(records)} records from {in_path}. Evaluating...")
     scored = []
     for r in records:
-        scored.append(evaluate_haskins_record(r, continuation_only=args.continuation_only))
+        scored.append(evaluate_haskins_record(r, continuation_only=args.continuation_only, scorer=args.scorer))
 
     strict_pass = sum(1 for s in scored if s.get("strict_binary") == 1 or s.get("strict_binary_pass") is True)
     avg_compliance = sum(s.get("compliance", s.get("defined_partial_compliance", 0.0)) for s in scored) / max(len(scored), 1)

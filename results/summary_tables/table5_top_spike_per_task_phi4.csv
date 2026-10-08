@@ -1,0 +1,11 @@
+Task,Pos_t,KL_nats,Preceding_Context,Base_Token,SFT_Token,Base_Run_Strict,SFT_Run_Strict
+uppercase_thinking:23,95,11.89, it simple and straightforward,' answer','.',False,False
+third_person:4,147,11.88, in Markdown format.,' the','**',False,True
+end_of_sentence:20,165,11.69, and political matters.,' explanation',' Let',False,False
+repeat_sentences:19,90,11.65, of my response.,' legal','**',False,False
+word_suppression:28,113,11.25, by using bullet points,"','",' and',False,False
+arrow_prefix:32,100,11.1, clear and straightforward.,' or','**',False,False
+meow_between_words:47,74,8.68, cream sales and drowning,' non',' incidents',False,False
+multiple_word_suppression:30,98,8.1, answer concise and structured,':','.',False,False
+lowercase_thinking:28,54,7.7, political topics.**,' elections','Struct',False,False
+alternating_case:47,116,7.35, my explanation.**,' disclaimer',' Additionally',False,False

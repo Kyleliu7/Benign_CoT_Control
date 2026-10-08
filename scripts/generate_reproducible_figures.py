@@ -5,16 +5,14 @@ Reproducible scientific figure generation pipeline for CoT Controllability study
 Compares Qwen 3 14B and Microsoft Phi-4 Reasoning across:
   1. Haskins 500 crossed transfer matrix (2x2 conditions) with clustered question bootstrap.
   2. ReasonIF 300 benchmark (IFS, Accuracy, Joint Success).
-  3. Per-position Forward KL divergence curves (Panel A: Full opening spikes t=1..100; Panel B: Downstream zoom t=10..100; Panel C: Active cohort size N(t) across 512).
+  3. Per-position Forward KL divergence curves (Panel A: cohort mean KL, t=1..100; Panel B: outcome-stratified downstream KL;
+     Panels C1/C2: single-trace KL examples).
   4. Appendix task-by-task heatmaps (all 10 tasks x 4 crossed conditions, shared 0-100% scale).
 
-Layout polish:
-  - Full opening KL spikes displayed completely without vertical clipping (0-31 nats).
-  - Separate downstream zoom panel (0-0.65 nats) highlighting residual divergence.
-  - Shorter panel titles.
-  - All bar annotations positioned strictly above error bars.
-  - Zero overlapping labels or crowded footer text boxes.
-  - Vector PDF, SVG, and 300-DPI PNG exports.
+All inputs are read from this repository (see REPO_ROOT below); nothing is hard-coded to a personal machine.
+Figure 2 is computed from results/summary_tables/table1_reasonif_overall.csv, which scripts/reproduce_tables.py
+regenerates from the raw ReasonIF records. Rows marked Status=UNAVAILABLE (Qwen3-14B base) are omitted, not guessed.
+Run `python scripts/reproduce_tables.py --write` first if the summary tables are stale.
 """
 
 import os
@@ -40,16 +38,19 @@ matplotlib.rcParams['grid.color'] = '#eaeaea'
 matplotlib.rcParams['grid.linestyle'] = '--'
 matplotlib.rcParams['grid.linewidth'] = 0.6
 
-# Paths
-BRAIN_DATA = r"C:\Users\bryan\.gemini\antigravity\brain\535398ee-4974-476d-bc8f-8df8ae245f1d"
-OUT_DIR_BRAIN = os.path.join(BRAIN_DATA, "reproducible_figures")
-BASE_DIR = r"C:\Users\bryan\cot_obfuscation_code\cot_controllability"
-OUT_DIR_WORKSPACE = os.path.join(BASE_DIR, "reproducible_figures")
+# Paths (repository-relative)
+from pathlib import Path
+REPO_ROOT = Path(__file__).resolve().parent.parent
+OUT_DIR_WORKSPACE = str(REPO_ROOT / "reproducible_figures")
+OUT_DIR_BRAIN = OUT_DIR_WORKSPACE  # legacy name; there is a single output directory now
+BASE_DIR = str(REPO_ROOT)
+KL_CACHE_DIR = str(REPO_ROOT / "results" / "kl_divergence" / "caches_float32")
+KL_CSV_DIR = str(REPO_ROOT / "results" / "kl_divergence" / "tabular_results_csv")
+TABLES_DIR = str(REPO_ROOT / "results" / "summary_tables")
 
-HASKINS_QWEN_DIR = os.path.join(BRAIN_DATA, "data", "haskins_2x2_on_runs")
-HASKINS_PHI_BUNDLE = os.path.join(BRAIN_DATA, "scratch", "phi4_haskins_500_bundle.json")
+HASKINS_QWEN_DIR = str(REPO_ROOT / "results" / "haskins_500" / "qwen3_14b")
+HASKINS_PHI_BUNDLE = str(REPO_ROOT / "results" / "haskins_500" / "phi4_reasoning" / "phi4_haskins_500_bundle.json")
 
-os.makedirs(OUT_DIR_BRAIN, exist_ok=True)
 os.makedirs(OUT_DIR_WORKSPACE, exist_ok=True)
 
 # Colorblind-safe palette (Okabe-Ito / Muted)
@@ -61,14 +62,14 @@ COND_COLORS = [
 ]
 
 def save_and_mirror(fig, base_name):
-    for out_d in [OUT_DIR_BRAIN, OUT_DIR_WORKSPACE]:
+    for out_d in [OUT_DIR_WORKSPACE]:
         for ext in ["png", "pdf", "svg"]:
             p = os.path.join(out_d, f"{base_name}.{ext}")
             fig.savefig(p, dpi=300, bbox_inches="tight")
     print(f"Saved {base_name} (.png, .pdf, .svg)")
 
 def save_csv_and_mirror(df, file_name):
-    for out_d in [OUT_DIR_BRAIN, OUT_DIR_WORKSPACE]:
+    for out_d in [OUT_DIR_WORKSPACE]:
         df.to_csv(os.path.join(out_d, file_name), index=False)
     print(f"Saved {file_name}")
 
@@ -262,15 +263,15 @@ plt.close()
 # ==============================================================================
 print(">>> Processing Figure 2: ReasonIF Benchmark...")
 
+_t1 = pd.read_csv(os.path.join(TABLES_DIR, "table1_reasonif_overall.csv"))
+_t1 = _t1[_t1["Status"].astype(str).str.startswith("OK")]
+_COND_MAP = {"Base (Untouched)": "Base", "SFT (gpt52-high)": "SFT",
+             "Prefix-OFF (continuation-scored)": "Prefix-OFF", "Prefix-ON (continuation-scored)": "Prefix-ON"}
 reasonif_records = [
-    {"model": "Qwen 3 14B", "condition": "Base", "ifs_count": 42, "acc_count": 241, "joint_count": 35, "n": 300},
-    {"model": "Qwen 3 14B", "condition": "SFT", "ifs_count": 100, "acc_count": 196, "joint_count": 62, "n": 300},
-    {"model": "Qwen 3 14B", "condition": "Prefix-OFF", "ifs_count": 96, "acc_count": 221, "joint_count": 67, "n": 300},
-    {"model": "Qwen 3 14B", "condition": "Prefix-ON", "ifs_count": 126, "acc_count": 220, "joint_count": 93, "n": 300},
-    {"model": "Microsoft Phi-4 Reasoning", "condition": "Base", "ifs_count": 15, "acc_count": 226, "joint_count": 9, "n": 300},
-    {"model": "Microsoft Phi-4 Reasoning", "condition": "SFT", "ifs_count": 36, "acc_count": 207, "joint_count": 24, "n": 300},
-    {"model": "Microsoft Phi-4 Reasoning", "condition": "Prefix-OFF", "ifs_count": 14, "acc_count": 221, "joint_count": 9, "n": 300},
-    {"model": "Microsoft Phi-4 Reasoning", "condition": "Prefix-ON", "ifs_count": 18, "acc_count": 223, "joint_count": 11, "n": 300}
+    {"model": "Qwen 3 14B" if r.Model.startswith("Qwen") else "Microsoft Phi-4 Reasoning",
+     "condition": _COND_MAP[r.Condition], "ifs_count": int(r.IFS_Count), "acc_count": int(r.Acc_Count),
+     "joint_count": int(r.Joint_Count), "n": int(r.N)}
+    for r in _t1.itertuples()
 ]
 
 def wilson_interval(count, n, conf=0.95):
@@ -314,7 +315,7 @@ df_fig2 = pd.DataFrame(fig2_table)
 save_csv_and_mirror(df_fig2, "figure2_reasonif_source.csv")
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11.5, 5.2), dpi=300, facecolor="white", sharey=True)
-plt.subplots_adjust(wspace=0.15, top=0.83, bottom=0.12)
+plt.subplots_adjust(wspace=0.15, top=0.80, bottom=0.12)
 
 METRIC_COLORS = ["#0072B2", "#009E73", "#D55E00"]
 bar_w = 0.24
@@ -372,7 +373,7 @@ ax2.set_xticklabels(p_conds, fontsize=9.5)
 ax2.grid(axis="y", zorder=0)
 
 handles, labels = ax1.get_legend_handles_labels()
-fig.legend(handles, labels, loc="upper center", bbox_to_anchor=(0.5, 0.925), ncol=3, frameon=True, facecolor="white", edgecolor="#cccccc", fontsize=9)
+fig.legend(handles, labels, loc="upper center", bbox_to_anchor=(0.5, 0.945), ncol=3, frameon=True, facecolor="white", edgecolor="#cccccc", fontsize=9)
 fig.suptitle("ReasonIF Benchmark Performance (Wilson Score 95% CIs)", fontsize=12, fontweight="bold", y=0.98)
 
 save_and_mirror(fig, "figure2_reasonif")
@@ -385,11 +386,10 @@ plt.close()
 print(">>> Processing Figure 3: Per-Position Forward KL Curves...")
 
 def find_kl_path(fname):
-    for d in [BRAIN_DATA, BASE_DIR]:
-        cand = os.path.join(d, fname)
-        if os.path.exists(cand):
-            return cand
-    raise FileNotFoundError(f"Cannot find {fname}")
+    cand = os.path.join(KL_CACHE_DIR, fname)
+    if os.path.exists(cand):
+        return cand
+    raise FileNotFoundError(f"Cannot find {fname} in {KL_CACHE_DIR}")
 
 KL_FILES = {
     "Qwen 3 14B - Haskins 500": find_kl_path("kl_cache_qwen3_14b_haskins_500.json"),
@@ -399,10 +399,10 @@ KL_FILES = {
 }
 
 CSV_FILES = {
-    "Qwen 3 14B - Haskins 500": os.path.join(BRAIN_DATA, "kl_reasoning_results", "per_sample_reasoning_kl_qwen3_14b_haskins_500.csv"),
-    "Qwen 3 14B - ReasonIF 300": os.path.join(BRAIN_DATA, "kl_reasoning_results", "per_sample_reasoning_kl_qwen3_14b_reasonif_300.csv"),
-    "Microsoft Phi-4 - Haskins 500": os.path.join(BRAIN_DATA, "kl_reasoning_results", "per_sample_reasoning_kl_phi4_haskins_500.csv"),
-    "Microsoft Phi-4 - ReasonIF 300": os.path.join(BRAIN_DATA, "kl_reasoning_results", "per_sample_reasoning_kl_phi4_reasonif_300.csv")
+    "Qwen 3 14B - Haskins 500": os.path.join(KL_CSV_DIR, "per_sample_reasoning_kl_qwen3_14b_haskins_500.csv"),
+    "Qwen 3 14B - ReasonIF 300": os.path.join(KL_CSV_DIR, "per_sample_reasoning_kl_qwen3_14b_reasonif_300.csv"),
+    "Microsoft Phi-4 - Haskins 500": os.path.join(KL_CSV_DIR, "per_sample_reasoning_kl_phi4_haskins_500.csv"),
+    "Microsoft Phi-4 - ReasonIF 300": os.path.join(KL_CSV_DIR, "per_sample_reasoning_kl_phi4_reasonif_300.csv")
 }
 
 KL_COLORS = {
@@ -589,11 +589,11 @@ x84_phi = np.arange(1, len(kl_phi_84) + 1)
 x84_qwen = np.arange(1, min(len(kl_qwen_84) + 1, 36))
 
 ax_c1.plot(x84_phi, kl_phi_84, color=KL_COLORS[phi_h_lbl], lw=2.2, label="Phi-4 (SFT=PASS, Base=FAIL)")
-ax_c1.plot(x84_qwen, kl_qwen_84[:len(x84_qwen)], color=KL_COLORS[qwen_h_lbl], lw=1.5, linestyle="--", label="Qwen 3 14B (Unaided base)")
-ax_c1.annotate("Token 25: 7.13 nats\n(Adapter suppresses comma)", xy=(25, 7.127), xytext=(6, 5.0),
+ax_c1.plot(x84_qwen, kl_qwen_84[:len(x84_qwen)], color=KL_COLORS[qwen_h_lbl], lw=1.5, linestyle="--", label="Qwen 3 14B (same prompt, own SFT trace)")
+ax_c1.annotate("t=25: 7.13 nats", xy=(25, 7.127), xytext=(6, 5.0),
                arrowprops=dict(facecolor="black", arrowstyle="->", lw=1.2), fontsize=8.2, fontweight="bold",
                bbox=dict(boxstyle="round,pad=0.25", facecolor="#fffbe6", edgecolor="#dddddd", lw=0.8))
-ax_c1.set_title("C1: Discrete Spike in ReasonIF #84 (punctuation:no_comma)", fontsize=10, fontweight="bold", pad=5)
+ax_c1.set_title("C1: KL spike, ReasonIF #84 (punctuation:no_comma)", fontsize=10, fontweight="bold", pad=5)
 ax_c1.set_xlabel(r"Reasoning Token Position $t$", fontsize=9)
 ax_c1.set_ylabel("Forward KL [nats]", fontsize=9)
 ax_c1.set_xlim(1, 35)
@@ -613,11 +613,11 @@ xtp4_phi = np.arange(1, len(kl_phi_tp4) + 1)
 xtp4_qwen = np.arange(1, min(len(kl_qwen_tp4) + 1, 166))
 
 ax_c2.plot(xtp4_phi, kl_phi_tp4, color=KL_COLORS[phi_h_lbl], lw=2.0, label="Phi-4 (SFT=PASS, Base=FAIL)")
-ax_c2.plot(xtp4_qwen, kl_qwen_tp4[:len(xtp4_qwen)], color=KL_COLORS[qwen_h_lbl], lw=1.5, linestyle="--", label="Qwen 3 14B (Unaided base)")
-ax_c2.annotate("Token 147: 11.88 nats\n(Adapter blocks 1st-person)", xy=(147, 11.876), xytext=(45, 9.8),
+ax_c2.plot(xtp4_qwen, kl_qwen_tp4[:len(xtp4_qwen)], color=KL_COLORS[qwen_h_lbl], lw=1.5, linestyle="--", label="Qwen 3 14B (same prompt, own SFT trace)")
+ax_c2.annotate("t=147: 11.88 nats", xy=(147, 11.876), xytext=(45, 9.8),
                arrowprops=dict(facecolor="black", arrowstyle="->", lw=1.2), fontsize=8.2, fontweight="bold",
                bbox=dict(boxstyle="round,pad=0.25", facecolor="#fffbe6", edgecolor="#dddddd", lw=0.8))
-ax_c2.set_title("C2: Discrete Spike in Haskins third_person:4", fontsize=10, fontweight="bold", pad=5)
+ax_c2.set_title("C2: KL spike, Haskins third_person:4", fontsize=10, fontweight="bold", pad=5)
 ax_c2.set_xlabel(r"Reasoning Token Position $t$", fontsize=9)
 ax_c2.set_ylabel("Forward KL [nats]", fontsize=9)
 ax_c2.set_xlim(1, 165)
@@ -625,7 +625,7 @@ ax_c2.set_ylim(0, 13.5)
 ax_c2.grid(True, linestyle=":", alpha=0.6)
 ax_c2.legend(loc="upper left", fontsize=7.8)
 
-fig.suptitle(r"Per-Position Forward KL Trajectories $\mathcal{D}_{\mathrm{KL}}(\pi_{\mathrm{SFT}} \parallel \pi_{\mathrm{Base}})$ & Discrete Policing Spikes", fontsize=12, fontweight="bold")
+fig.suptitle(r"Per-Position Forward KL Trajectories $\mathcal{D}_{\mathrm{KL}}(\pi_{\mathrm{SFT}} \parallel \pi_{\mathrm{Base}})$ & Single-Trace KL Spikes", fontsize=12, fontweight="bold")
 
 save_and_mirror(fig, "figure3_kl_divergence")
 plt.close()

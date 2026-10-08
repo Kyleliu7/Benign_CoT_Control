@@ -1,0 +1,91 @@
+Model,Pairing,Task,N,Cont_Mean,Cont_Strict_Count
+Qwen3-14B,Base -> Base (A2),third_person,50,85.73,3
+Qwen3-14B,Base -> Base (A2),arrow_prefix,50,0.0,0
+Qwen3-14B,Base -> Base (A2),word_suppression,50,10.0,5
+Qwen3-14B,Base -> Base (A2),multiple_word_suppression,50,2.0,1
+Qwen3-14B,Base -> Base (A2),end_of_sentence,50,0.47,0
+Qwen3-14B,Base -> Base (A2),meow_between_words,50,18.64,1
+Qwen3-14B,Base -> Base (A2),repeat_sentences,50,0.0,0
+Qwen3-14B,Base -> Base (A2),alternating_case,50,11.83,0
+Qwen3-14B,Base -> Base (A2),lowercase_thinking,50,46.53,14
+Qwen3-14B,Base -> Base (A2),uppercase_thinking,50,3.02,1
+Qwen3-14B,Base -> SFT (A3),third_person,50,80.83,0
+Qwen3-14B,Base -> SFT (A3),arrow_prefix,50,0.0,0
+Qwen3-14B,Base -> SFT (A3),word_suppression,50,6.0,3
+Qwen3-14B,Base -> SFT (A3),multiple_word_suppression,50,6.0,3
+Qwen3-14B,Base -> SFT (A3),end_of_sentence,50,0.26,0
+Qwen3-14B,Base -> SFT (A3),meow_between_words,50,13.16,2
+Qwen3-14B,Base -> SFT (A3),repeat_sentences,50,0.0,0
+Qwen3-14B,Base -> SFT (A3),alternating_case,50,11.81,0
+Qwen3-14B,Base -> SFT (A3),lowercase_thinking,50,45.35,12
+Qwen3-14B,Base -> SFT (A3),uppercase_thinking,50,3.63,1
+Qwen3-14B,SFT -> Base (A1 / Prefix-ON),third_person,50,99.35,47
+Qwen3-14B,SFT -> Base (A1 / Prefix-ON),arrow_prefix,50,2.29,0
+Qwen3-14B,SFT -> Base (A1 / Prefix-ON),word_suppression,50,30.0,15
+Qwen3-14B,SFT -> Base (A1 / Prefix-ON),multiple_word_suppression,50,8.0,4
+Qwen3-14B,SFT -> Base (A1 / Prefix-ON),end_of_sentence,50,14.3,1
+Qwen3-14B,SFT -> Base (A1 / Prefix-ON),meow_between_words,50,69.96,0
+Qwen3-14B,SFT -> Base (A1 / Prefix-ON),repeat_sentences,50,2.21,0
+Qwen3-14B,SFT -> Base (A1 / Prefix-ON),alternating_case,50,22.83,0
+Qwen3-14B,SFT -> Base (A1 / Prefix-ON),lowercase_thinking,50,67.48,26
+Qwen3-14B,SFT -> Base (A1 / Prefix-ON),uppercase_thinking,50,56.99,16
+Qwen3-14B,SFT -> SFT (A4),third_person,50,97.57,46
+Qwen3-14B,SFT -> SFT (A4),arrow_prefix,50,0.57,0
+Qwen3-14B,SFT -> SFT (A4),word_suppression,50,18.0,9
+Qwen3-14B,SFT -> SFT (A4),multiple_word_suppression,50,6.0,3
+Qwen3-14B,SFT -> SFT (A4),end_of_sentence,50,17.78,2
+Qwen3-14B,SFT -> SFT (A4),meow_between_words,50,56.25,1
+Qwen3-14B,SFT -> SFT (A4),repeat_sentences,50,4.59,1
+Qwen3-14B,SFT -> SFT (A4),alternating_case,50,16.23,0
+Qwen3-14B,SFT -> SFT (A4),lowercase_thinking,50,61.33,21
+Qwen3-14B,SFT -> SFT (A4),uppercase_thinking,50,42.34,13
+Phi-4-reasoning,Base -> Base (A2),third_person,50,66.28,0
+Phi-4-reasoning,Base -> Base (A2),arrow_prefix,50,0.1,0
+Phi-4-reasoning,Base -> Base (A2),word_suppression,50,18.0,9
+Phi-4-reasoning,Base -> Base (A2),multiple_word_suppression,50,4.0,2
+Phi-4-reasoning,Base -> Base (A2),end_of_sentence,50,0.09,0
+Phi-4-reasoning,Base -> Base (A2),meow_between_words,50,0.02,0
+Phi-4-reasoning,Base -> Base (A2),repeat_sentences,50,0.0,0
+Phi-4-reasoning,Base -> Base (A2),alternating_case,50,9.39,0
+Phi-4-reasoning,Base -> Base (A2),lowercase_thinking,50,4.56,0
+Phi-4-reasoning,Base -> Base (A2),uppercase_thinking,50,1.37,0
+Phi-4-reasoning,Base -> SFT (A3),third_person,50,73.6,13
+Phi-4-reasoning,Base -> SFT (A3),arrow_prefix,50,0.0,0
+Phi-4-reasoning,Base -> SFT (A3),word_suppression,50,32.0,16
+Phi-4-reasoning,Base -> SFT (A3),multiple_word_suppression,50,14.0,7
+Phi-4-reasoning,Base -> SFT (A3),end_of_sentence,50,0.66,0
+Phi-4-reasoning,Base -> SFT (A3),meow_between_words,50,0.0,0
+Phi-4-reasoning,Base -> SFT (A3),repeat_sentences,50,0.0,0
+Phi-4-reasoning,Base -> SFT (A3),alternating_case,50,12.27,0
+Phi-4-reasoning,Base -> SFT (A3),lowercase_thinking,50,10.21,0
+Phi-4-reasoning,Base -> SFT (A3),uppercase_thinking,50,1.85,0
+Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),third_person,50,63.34,0
+Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),arrow_prefix,50,0.0,0
+Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),word_suppression,50,24.0,12
+Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),multiple_word_suppression,50,6.0,3
+Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),end_of_sentence,50,0.14,0
+Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),meow_between_words,50,0.04,0
+Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),repeat_sentences,50,0.0,0
+Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),alternating_case,50,9.79,0
+Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),lowercase_thinking,50,5.22,0
+Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),uppercase_thinking,50,0.68,0
+Phi-4-reasoning,SFT -> SFT (A4),third_person,50,87.35,36
+Phi-4-reasoning,SFT -> SFT (A4),arrow_prefix,50,0.0,0
+Phi-4-reasoning,SFT -> SFT (A4),word_suppression,50,38.0,19
+Phi-4-reasoning,SFT -> SFT (A4),multiple_word_suppression,50,28.0,14
+Phi-4-reasoning,SFT -> SFT (A4),end_of_sentence,50,0.73,0
+Phi-4-reasoning,SFT -> SFT (A4),meow_between_words,50,0.0,0
+Phi-4-reasoning,SFT -> SFT (A4),repeat_sentences,50,0.0,0
+Phi-4-reasoning,SFT -> SFT (A4),alternating_case,50,10.6,0
+Phi-4-reasoning,SFT -> SFT (A4),lowercase_thinking,50,11.18,0
+Phi-4-reasoning,SFT -> SFT (A4),uppercase_thinking,50,4.81,0
+Phi-4-reasoning,SFT -> Base OFF (A5),third_person,50,59.32,0
+Phi-4-reasoning,SFT -> Base OFF (A5),arrow_prefix,50,0.1,0
+Phi-4-reasoning,SFT -> Base OFF (A5),word_suppression,50,18.0,9
+Phi-4-reasoning,SFT -> Base OFF (A5),multiple_word_suppression,50,6.0,3
+Phi-4-reasoning,SFT -> Base OFF (A5),end_of_sentence,50,0.16,0
+Phi-4-reasoning,SFT -> Base OFF (A5),meow_between_words,50,0.03,0
+Phi-4-reasoning,SFT -> Base OFF (A5),repeat_sentences,50,0.0,0
+Phi-4-reasoning,SFT -> Base OFF (A5),alternating_case,50,9.51,0
+Phi-4-reasoning,SFT -> Base OFF (A5),lowercase_thinking,50,3.81,0
+Phi-4-reasoning,SFT -> Base OFF (A5),uppercase_thinking,50,1.95,0
