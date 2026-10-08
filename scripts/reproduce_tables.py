@@ -89,10 +89,8 @@ def phi_prefix_row(condition, folder):
 
 def table1():
     q = REASONIF / "qwen3_14b"
-    rows = [dict(Model="Qwen3-14B", Condition="Base (Untouched)", Status="UNAVAILABLE", N=NA, IFS_Count=NA, IFS_Pct=NA,
-                 Acc_Count=NA, Acc_Pct=NA, Joint_Count=NA, Joint_Pct=NA, Mean_Tokens=NA, Truncated=NA,
-                 Prefix_Shorter_Than_10=NA,
-                 Source="reasonif_qwen3_14b_base_untouched.jsonl records model_id=openai/gpt-oss-20b (not Qwen3-14B)")]
+    rows = [reasonif_row("Qwen3-14B", "Base (Untouched)", load_jsonl(q / "reasonif_qwen3_14b_base_untouched.jsonl"),
+                         "instruction_following", "joint_success", "reasonif_qwen3_14b_base_untouched.jsonl")]
     rows.append(reasonif_row("Qwen3-14B", "SFT (gpt52-high)", load_jsonl(q / "reasonif_qwen3_14b_sft_gpt52_high.jsonl"),
                              "instruction_following", "joint_success", "reasonif_qwen3_14b_sft_gpt52_high.jsonl"))
     rows.append(reasonif_row("Qwen3-14B", "Prefix-OFF (continuation-scored)", load_jsonl(q / "reasonif_qwen3_14b_prefix_constraint_off.jsonl"),
@@ -138,14 +136,45 @@ def phi_standalone():
     return out
 
 
-def table2():
+QWEN_Q = HASKINS / "qwen3_14b"
+
+
+def _jsonl_df(name: str) -> pd.DataFrame:
+    return pd.DataFrame(load_jsonl(QWEN_Q / name))
+
+
+def _qwen_standalone_rows():
+    """Qwen3-14B standalone / prefix runs from the calibrated vLLM protocol (haskins-vllm-offline-v3-calibrated).
+
+    Base and SFT have one scoring basis (the whole reasoning). The prefix runs store BOTH a continuation-only and a
+    full-trace (prefix + continuation) score; the manuscript's Prefix-OFF row used the continuation score and its
+    Prefix-ON row used the full-trace score, so both are listed for both."""
+    specs = [("Base", "haskins_qwen3_14b_vllm_calibrated_base_17pct.jsonl", [("whole trace", "upstream_compliance")]),
+             ("SFT", "haskins_qwen3_14b_vllm_calibrated_sft_31pct.jsonl", [("whole trace", "upstream_compliance")]),
+             ("Prefix-OFF (SFT donor, no constraint)", "haskins_qwen3_14b_vllm_calibrated_prefix_off_21pct.jsonl",
+              [("continuation only", "continuation_compliance"), ("full trace incl. prefix", "full_compliance")]),
+             ("Prefix-ON (SFT donor, constraint)", "haskins_qwen3_14b_vllm_calibrated_prefix_on_37pct.jsonl",
+              [("continuation only", "continuation_compliance"), ("full trace incl. prefix", "full_compliance")])]
     rows = []
-    for cond in ("Base", "SFT"):
-        rows.append(dict(Model="Qwen3-14B", Condition=cond, Status="UNAVAILABLE (no raw Qwen standalone Haskins records in repo)",
-                         Mean_Compliance=NA, Strict_Count=NA, N=NA, NonChar_Mean=NA, NonChar_Strict_Count=NA, Hit_Token_Limit=NA))
+    for cond, fname, scorings in specs:
+        df = _jsonl_df(fname)
+        df["prompt_idx"] = df["prompt_idx"].astype(int)
+        for basis, col in scorings:
+            df["_c"] = df[col].astype(float)
+            df["_s"] = (df["_c"] == 1.0).astype(int)
+            a = agg(df, "_c", "_s")
+            rows.append(dict(Model="Qwen3-14B", Condition=cond, Scoring=basis, Status="OK", Mean_Compliance=a["All_Mean"],
+                             Strict_Count=a["All_Strict_Count"], N=a["All_N"], NonChar_Mean=a["NonChar_Mean"],
+                             NonChar_Strict_Count=a["NonChar_Strict_Count"],
+                             Hit_Token_Limit=int(df.hit_token_limit.map(truthy).sum())))
+    return rows
+
+
+def table2():
+    rows = _qwen_standalone_rows()
     for cond, df in phi_standalone().items():
         a = agg(df, "upstream_compliance", "score_equals_one")
-        rows.append(dict(Model="Phi-4-reasoning", Condition=cond, Status="OK", Mean_Compliance=a["All_Mean"],
+        rows.append(dict(Model="Phi-4-reasoning", Condition=cond, Scoring="whole trace", Status="OK", Mean_Compliance=a["All_Mean"],
                          Strict_Count=a["All_Strict_Count"], N=a["All_N"], NonChar_Mean=a["NonChar_Mean"],
                          NonChar_Strict_Count=a["NonChar_Strict_Count"], Hit_Token_Limit=int(df.hit_token_limit.sum())))
     return pd.DataFrame(rows)
@@ -158,7 +187,18 @@ def table3():
         f = agg(df, "full_compliance", "full_score_one")
         rows.append(dict(Model="Qwen3-14B", Pairing=label, Status="OK", **{f"Cont_{k}": v for k, v in c.items()},
                          Full_All_Mean=f["All_Mean"], Full_All_Strict_Count=f["All_Strict_Count"]))
-    rows.append(dict(Model="Qwen3-14B", Pairing="SFT -> Base OFF (A5)", Status="UNAVAILABLE (no raw records in repo)"))
+    for label, fname in [("SFT -> Base OFF (A5; calibrated vLLM run)", "haskins_qwen3_14b_vllm_calibrated_prefix_off_21pct.jsonl"),
+                         ("SFT -> Base (A1 rerun; calibrated vLLM run)", "haskins_qwen3_14b_vllm_calibrated_prefix_on_37pct.jsonl")]:
+        df = _jsonl_df(fname)
+        df["prompt_idx"] = df["prompt_idx"].astype(int)
+        for col in ("continuation_compliance", "full_compliance"):
+            df[col] = df[col].astype(float)
+        df["_cs"] = (df["continuation_compliance"] == 1.0).astype(int)
+        df["_fs"] = (df["full_compliance"] == 1.0).astype(int)
+        c = agg(df, "continuation_compliance", "_cs")
+        f = agg(df, "full_compliance", "_fs")
+        rows.append(dict(Model="Qwen3-14B", Pairing=label, Status="OK", **{f"Cont_{k}": v for k, v in c.items()},
+                         Full_All_Mean=f["All_Mean"], Full_All_Strict_Count=f["All_Strict_Count"]))
     bundle = phi_bundle()
     for label, key in PHI_CONDS.items():
         aggs = {a["aggregate"]: a for a in bundle["stats"][key]["aggregates"]}
@@ -202,6 +242,29 @@ def table7_run_health():
                          Hit_3000_Token_Limit=int(df.hit_token_limit.map(truthy).sum()),
                          Unfinished_Reasoning=int((df.extraction_status == "unfinished_reasoning").sum()),
                          Mean_Continuation_Tokens=round(df.generated_tokens.mean(), 1)))
+    return pd.DataFrame(rows)
+
+
+def table8_legacy_records():
+    """Older-protocol Qwen records (different schema, SFT labelled model=gpt52_short). Their stored scores do not
+    reproduce with the pinned scorer, so they are listed for transparency only."""
+    sys.path.insert(0, str(REPO_ROOT))
+    from evaluators.haskins_evaluator import grade_paper_protocol
+    specs = [("standalone_base", "haskins_qwen3_14b_standalone_base.jsonl", "compliance", "compliant_binary", "extracted_reasoning"),
+             ("standalone_sft", "haskins_qwen3_14b_standalone_sft.jsonl", "compliance", "compliant_binary", "extracted_reasoning"),
+             ("sft_donor_to_base_on_a1 (continuation)", "haskins_qwen3_14b_sft_donor_to_base_on_a1.jsonl", "continuation_compliance", "continuation_binary", "continuation_reasoning"),
+             ("sft_donor_to_base_off_a5 (continuation)", "haskins_qwen3_14b_sft_donor_to_base_off_a5.jsonl", "continuation_compliance", "continuation_binary", "continuation_reasoning")]
+    rows = []
+    for label, fname, comp, strict, text in specs:
+        recs = load_jsonl(QWEN_Q / fname)
+        stored = np.array([float(r[comp]) for r in recs])
+        stored_s = int(sum(int(float(r[strict])) for r in recs))
+        new = np.array([grade_paper_protocol(r["task"], int(r["prompt_idx"]), r[text] or "") for r in recs])
+        labels = sorted({str(r.get("model", r.get("condition", ""))) for r in recs})
+        rows.append(dict(Records=label, Model_Label="/".join(labels), N=len(recs), Stored_Mean=round(100 * stored.mean(), 2),
+                         Stored_Strict=stored_s, Pinned_Scorer_Mean=round(100 * new.mean(), 2), Pinned_Scorer_Strict=int((new == 1.0).sum()),
+                         Rows_Disagreeing=int((np.abs(new - stored) > 1e-6).sum()),
+                         Status="NOT reproducible with the pinned scorer; do not cite"))
     return pd.DataFrame(rows)
 
 
@@ -307,6 +370,7 @@ def main() -> int:
         "table5_top_spike_per_task_phi4.csv": table5(),
         "table6_haskins_per_task.csv": table6_per_task(),
         "table7_haskins_run_health.csv": table7_run_health(),
+        "table8_legacy_qwen_haskins_records.csv": table8_legacy_records(),
     }
     mismatches = 0
     for name, df in tables.items():

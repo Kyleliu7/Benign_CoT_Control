@@ -14,9 +14,10 @@ See [`AUDIT.md`](AUDIT.md) for the audit that produced this version, what change
 | Haskins crossed 2×2, Qwen3-14B (A1–A4), 4 × 500 completions | Raw records present; scores re-derived from text (`scripts/verify_scorer_parity.py`) |
 | Haskins crossed 2×2, Phi-4-reasoning (A1–A5), 5 × 500 | Per-item text in `phi4_haskins_500_bundle.json`; scores re-derived |
 | Haskins standalone, Phi-4-reasoning Base / SFT | Raw records present; re-derived |
-| Haskins standalone / Prefix-OFF, **Qwen3-14B** | **Raw records NOT in this repo** (paper numbers cannot be checked here) |
+| Haskins standalone Base / SFT / Prefix-OFF / Prefix-ON, Qwen3-14B (`haskins_qwen3_14b_vllm_calibrated_*.jsonl`) | Raw records present; scores re-derived (0 mismatches). Prefix-ON/OFF are reported under **both** continuation and full-trace scoring |
+| Older-protocol Qwen records (`haskins_qwen3_14b_standalone_*.jsonl`, `*_a1.jsonl`, `*_a5.jsonl`) | Present, but their stored scores do **not** reproduce with the pinned scorer and the SFT label is `gpt52_short`; listed in `table8` for transparency, **do not cite** |
 | ReasonIF Qwen3-14B SFT, Prefix-OFF, Prefix-ON | Raw records present |
-| ReasonIF **Qwen3-14B Base** | **UNAVAILABLE.** `reasonif_qwen3_14b_base_untouched.jsonl` contains `model_id: openai/gpt-oss-20b` outputs, not Qwen3-14B |
+| ReasonIF Qwen3-14B Base | Raw records present (`base_model_id: Qwen/Qwen3-14B`, revision `40c06982…`). The file previously under this name was a GPT-OSS-20B run; it is kept as `results/reasonif_300/gpt_oss_20b/reasonif_gpt_oss_20b_medium.jsonl` |
 | ReasonIF Phi-4 Base / SFT | Raw records present |
 | ReasonIF Phi-4 Prefix-OFF / Prefix-ON | Aggregate CSV only; raw records absent |
 | Forward-KL caches (4 × float32) | Present; Table 4 reproduces exactly |
@@ -64,7 +65,7 @@ Prefix rows are scored on the recipient continuation only. IFS = all instruction
 
 | Model | Condition | IFS | Accuracy | Joint | Mean tokens | Truncated |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| Qwen3-14B | Base | **unavailable** | | | | |
+| Qwen3-14B | Base | 14.0 % (42) | 80.3 % (241) | 11.7 % (35) | 4,401.7 | 19 |
 | Qwen3-14B | SFT | 33.3 % (100) | 65.3 % (196) | 20.7 % (62) | 2,023.7 | 6 |
 | Qwen3-14B | Prefix-OFF | 32.0 % (96) | 73.7 % (221) | 22.3 % (67) | 2,926.6 | 11 |
 | Qwen3-14B | Prefix-ON | 42.0 % (126) | 73.3 % (220) | 31.0 % (93) | 2,571.0 | 13 |
@@ -102,7 +103,22 @@ Caveats that apply to this table:
   Response length differs substantially between conditions (Qwen continuation mean 986 → 677 tokens), which is a confound for sentence-level compliance.
 
 ### Haskins standalone, Phi-4-reasoning (`table2_haskins_standalone.csv`)
-Base 9.87 % mean, 13 / 500 strict; SFT 16.21 % mean, 62 / 500 strict. Qwen3-14B standalone rows: raw records absent.
+Phi-4-reasoning: Base 9.87 % mean, 13 / 500 strict; SFT 16.21 % mean, 62 / 500 strict.
+
+Qwen3-14B (calibrated vLLM protocol, 500 pairs each; strict = score exactly 1.0):
+
+| Condition | Scoring | Mean | Strict | Non-char mean (350) | Non-char strict |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| Base | whole trace | 17.21 | 23 (4.6 %) | 16.01 | 7 |
+| SFT | whole trace | 30.63 | 80 (16.0 %) | 28.89 | 63 |
+| Prefix-OFF | continuation only | 20.97 | 59 (11.8 %) | 21.39 | 52 |
+| Prefix-OFF | full trace incl. prefix | 20.12 | 41 (8.2 %) | 20.92 | 41 |
+| Prefix-ON | continuation only | 37.97 | 112 (22.4 %) | 33.23 | 72 |
+| Prefix-ON | full trace incl. prefix | 36.94 | 89 (17.8 %) | 32.64 | 70 |
+
+Compare Prefix-ON with Prefix-OFF **within the same scoring basis** (continuation 37.97 vs 20.97; full trace 36.94 vs 20.12). The manuscript's earlier
+table paired Prefix-OFF's continuation score with Prefix-ON's full-trace score. The 2×2 table above contains an independent rerun of the same SFT→Base
+condition (37.34 / 109 continuation), so this condition has been run twice with similar results.
 
 ### Forward KL (`table4_kl_percentiles.csv`, `results/kl_divergence/kl_divergence_executive_report.md`)
 D_KL(π_SFT ‖ π_Base) per token on SFT-generated histories (teacher forcing, float32, first ≤ 512 reasoning tokens). Two windows are reported because
@@ -116,10 +132,10 @@ Teacher-forced agreement does not establish rollout transfer.
 | Component | Identifier | Revision |
 | :--- | :--- | :--- |
 | Qwen3-14B base | `Qwen/Qwen3-14B` | `40c069824f4251a91eefaf281ebe4c544efd3e18` |
-| Qwen3-14B SFT LoRA | `kyleliu789/qwen3-14b-gpt52-high-reasoning-original` | `2ab1f5bfd74447cb3616be9004e286f677273502` |
+| Qwen3-14B SFT LoRA | `kyleliu789/qwen3-14b-gpt52-high-reasoning-original` | `2ab1f5bfd74447cb3616be9004e286f677273502` (= `checkpoint-70`, best eval loss 1.5947, per the authors; step 72 has a higher eval loss) |
 | Phi-4-reasoning base | `microsoft/Phi-4-reasoning` (**not** `microsoft/phi-4`) | `1de18ec97600877ce63dbf60c73b998da99f0195` |
-| Phi-4-reasoning SFT LoRA | `kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original` | evaluated from a local copy (`model_revision: local`); hash of the published adapter should be recorded |
-| Training data | `data/training/gpt52_high_reasoning_original.json` (212 examples, from `TeichAI/gpt-5.2-high-reasoning-250x`) | — |
+| Phi-4-reasoning SFT LoRA | `kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original` | `eb831e623581632779d515558686d6975c4fa0b4` (recorded as `lora_revision` in the Haskins run manifests; the ReasonIF run manifest says `local`, reported by the authors to be the same commit) |
+| Training data | `data/training/gpt52_high_reasoning_original.json` (212 examples) from `TeichAI/gpt-5.2-high-reasoning-250x`, whose train split has 249 rows (not 250); 37 lacking complete `<think>` tags were dropped, 249 − 37 = 212 | — |
 | ReasonIF | official grader, `evaluators/reasonif_official/` | commit `706b953` |
 
 Training configs: `configs/*.yaml` (LoRA r = 32, α = 64, lr 1e-4, 3 epochs, seed 42, `val_size: 0.1`, `load_best_model_at_end: true` on `eval_loss`).
@@ -144,7 +160,7 @@ results/
   haskins_500/          Qwen 2x2 runs (results.csv + records/), Phi standalone runs, Phi crossed bundle
   reasonif_300/         scored ReasonIF completions
   kl_divergence/        float32 caches, spike_analysis/spike_token_pairs.json, per-sample CSVs, executive report
-  summary_tables/       table1..table7 CSVs (regenerated by scripts/reproduce_tables.py --write)
+  summary_tables/       table1..table8 CSVs (regenerated by scripts/reproduce_tables.py --write)
 scripts/                reproduce_tables.py, verify_scorer_parity.py, generate_reproducible_figures.py,
                         evaluate_haskins.py, evaluate_reasonif.py, compute_forward_kl.py, export_haskins_prompts.py
 ```

@@ -7,6 +7,7 @@ that was written when the completion was generated. Any mismatch exits non-zero.
 
   Qwen 2x2 runs : continuation_reasoning -> continuation_compliance / continuation_score_one
                   full_reasoning         -> full_compliance         / full_score_one
+  Qwen vLLM-cal.: reasoning / continuation_reasoning / full_reasoning of the haskins_qwen3_14b_vllm_calibrated_*.jsonl files
   Phi standalone: reasoning              -> upstream_compliance     / score_equals_one
   Phi crossed   : bundle item ``cot`` minus injected ``prefix`` (continuation)   -> comp (percent, 2 dp)    / strict
 
@@ -52,6 +53,20 @@ def main() -> int:
         tag = run.parent.name.split("__")[-2]
         failures += check_frame(f"Qwen {tag} (continuation)", df, "continuation_reasoning", "continuation_compliance", "continuation_score_one")
         failures += check_frame(f"Qwen {tag} (full)", df, "full_reasoning", "full_compliance", "full_score_one")
+    # Qwen calibrated-vLLM standalone / prefix records (JSONL). Base/SFT: whole trace. Prefix runs: continuation and full trace.
+    qwen = HASKINS / "qwen3_14b"
+    for tag, fname, specs in [
+        ("Base", "haskins_qwen3_14b_vllm_calibrated_base_17pct.jsonl", [("whole trace", "reasoning", "upstream_compliance")]),
+        ("SFT", "haskins_qwen3_14b_vllm_calibrated_sft_31pct.jsonl", [("whole trace", "reasoning", "upstream_compliance")]),
+        ("Prefix-OFF", "haskins_qwen3_14b_vllm_calibrated_prefix_off_21pct.jsonl",
+         [("continuation", "continuation_reasoning", "continuation_compliance"), ("full trace", "full_reasoning", "full_compliance")]),
+        ("Prefix-ON", "haskins_qwen3_14b_vllm_calibrated_prefix_on_37pct.jsonl",
+         [("continuation", "continuation_reasoning", "continuation_compliance"), ("full trace", "full_reasoning", "full_compliance")]),
+    ]:
+        df = pd.DataFrame([json.loads(l) for l in (qwen / fname).read_text(encoding="utf-8").splitlines() if l.strip()])
+        for basis, text_col, comp_col in specs:
+            df["_strict"] = (df[comp_col].astype(float) == 1.0).astype(int)
+            failures += check_frame(f"Qwen calibrated-vLLM {tag} ({basis})", df, text_col, comp_col, "_strict")
     for run in sorted((HASKINS / "phi4_reasoning" / "extracted_runs").glob("*/results.csv")):
         df = pd.read_csv(run)
         tag = "SFT" if "gpt52" in run.parent.name else "base"

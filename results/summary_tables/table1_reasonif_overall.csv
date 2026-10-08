@@ -1,5 +1,5 @@
 Model,Condition,Status,N,IFS_Count,IFS_Pct,Acc_Count,Acc_Pct,Joint_Count,Joint_Pct,Mean_Tokens,Truncated,Prefix_Shorter_Than_10,Source
-Qwen3-14B,Base (Untouched),UNAVAILABLE,,,,,,,,,,,reasonif_qwen3_14b_base_untouched.jsonl records model_id=openai/gpt-oss-20b (not Qwen3-14B)
+Qwen3-14B,Base (Untouched),OK,300,42,14.0,241,80.3,35,11.7,4401.7,19,,reasonif_qwen3_14b_base_untouched.jsonl
 Qwen3-14B,SFT (gpt52-high),OK,300,100,33.3,196,65.3,62,20.7,2023.7,6,,reasonif_qwen3_14b_sft_gpt52_high.jsonl
 Qwen3-14B,Prefix-OFF (continuation-scored),OK,300,96,32.0,221,73.7,67,22.3,2926.6,11,16,reasonif_qwen3_14b_prefix_constraint_off.jsonl
 Qwen3-14B,Prefix-ON (continuation-scored),OK,300,126,42.0,220,73.3,93,31.0,2571.0,13,15,reasonif_qwen3_14b_prefix_constraint_on.jsonl
