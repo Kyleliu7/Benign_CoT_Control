@@ -382,6 +382,9 @@ def main() -> int:
         "table6_haskins_per_task.csv": table6_per_task(),
         "table7_haskins_run_health.csv": table7_run_health(),
     }
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from analysis_prefix_length_paired import analysis_tables
+    tables.update(analysis_tables())
     mismatches = 0
     for name, df in tables.items():
         print("\n" + "=" * 100 + f"\n {name}\n" + "=" * 100)

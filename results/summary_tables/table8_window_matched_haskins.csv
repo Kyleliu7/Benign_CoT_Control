@@ -1,0 +1,33 @@
+Model,Window_Words,N_Pairs,Condition,Mean_Compliance,Strict_Count
+Phi-4-reasoning,50,398,Base->Base,20.81,67
+Phi-4-reasoning,50,398,Base->SFT,20.07,58
+Phi-4-reasoning,50,398,SFT->Base,20.76,72
+Phi-4-reasoning,50,398,SFT->SFT,22.22,72
+Phi-4-reasoning,100,140,Base->Base,24.15,26
+Phi-4-reasoning,100,140,Base->SFT,25.2,27
+Phi-4-reasoning,100,140,SFT->Base,24.95,29
+Phi-4-reasoning,100,140,SFT->SFT,23.26,28
+Phi-4-reasoning,150,47,Base->Base,19.39,7
+Phi-4-reasoning,150,47,Base->SFT,19.52,6
+Phi-4-reasoning,150,47,SFT->Base,19.92,6
+Phi-4-reasoning,150,47,SFT->SFT,20.68,8
+Phi-4-reasoning,full continuation,500,Base->Base,10.38,11
+Phi-4-reasoning,full continuation,500,Base->SFT,14.46,36
+Phi-4-reasoning,full continuation,500,SFT->Base,10.92,15
+Phi-4-reasoning,full continuation,500,SFT->SFT,18.07,69
+Qwen3-14B,50,489,Base->Base,20.59,55
+Qwen3-14B,50,489,Base->SFT,19.44,47
+Qwen3-14B,50,489,SFT->Base,42.39,140
+Qwen3-14B,50,489,SFT->SFT,34.55,117
+Qwen3-14B,100,403,Base->Base,21.04,39
+Qwen3-14B,100,403,Base->SFT,20.54,33
+Qwen3-14B,100,403,SFT->Base,40.51,108
+Qwen3-14B,100,403,SFT->SFT,34.49,91
+Qwen3-14B,150,283,Base->Base,20.95,21
+Qwen3-14B,150,283,Base->SFT,20.84,21
+Qwen3-14B,150,283,SFT->Base,41.01,75
+Qwen3-14B,150,283,SFT->SFT,35.44,63
+Qwen3-14B,full continuation,500,Base->Base,17.82,25
+Qwen3-14B,full continuation,500,Base->SFT,16.7,21
+Qwen3-14B,full continuation,500,SFT->Base,37.34,109
+Qwen3-14B,full continuation,500,SFT->SFT,32.07,96

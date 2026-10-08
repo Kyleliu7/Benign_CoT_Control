@@ -77,7 +77,9 @@ Still open:
 3. Source of the Figure 3 panel B outcome groups (G1–G4): numbers exist in the executive report, but the labelling rule is not in a script.
 4. Decide whether to scrub `/home/kyleliu789/...` paths from notebook outputs.
 
-## 6. Manuscript edits implied by this audit (not applied to `main.tex` here)
+## 6. Manuscript edits implied by this audit (applied to the author's `main.tex`, which is not part of this repository)
+
+The new analyses behind the revised paper are `scripts/analysis_prefix_length_paired.py` (Tables 8-13: window-matched scoring, prefix content, paired cluster-bootstrap and McNemar contrasts) and `scripts/make_paper_tables.py` (LaTeX for every results table). Training sequences longer than 4,096 tokens are truncated by the trainer (answer part only; the longest reasoning block is 4,285 characters), so the dataset-size arithmetic is 249 - 37 = 212 with no length exclusions.
 
 * The Qwen ReasonIF base numbers are now sourced, so Table 1 / Fig. 2 stand; update Table 12 (truncated = 19, no longer "—"), Table 17 (add the base column from `by_constraint`) and the provenance table (rows now "raw records present").
 * Table 2: report Prefix-OFF and Prefix-ON under the **same** scoring basis (or both), and state it. Replace "Qwen rows … not rederived from raw records" with the verified status.

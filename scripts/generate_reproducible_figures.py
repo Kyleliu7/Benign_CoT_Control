@@ -539,12 +539,12 @@ ax_full.axvline(10.5, color="#888888", linestyle=":", lw=1.3, zorder=2)
 ax_full.annotate(r"Injected Prefix Window ($t \leq 10$)", xy=(10.5, 20), xytext=(14, 21.5),
                  arrowprops=dict(arrowstyle="->", color="#333333", lw=1.2),
                  fontsize=8.8, fontweight="bold", color="#333333")
-ax_full.annotate("Qwen: Front-loaded steering spike\n(collapses downstream to < 0.2 nats)", xy=(4, 25), xytext=(23, 26.5),
+ax_full.annotate("Qwen: mean KL at t=1 is 25-28 nats", xy=(4, 25), xytext=(23, 26.5),
                  arrowprops=dict(arrowstyle="->", color="#0072B2", lw=1.2),
                  fontsize=8.5, fontweight="bold", color="#0072B2",
                  bbox=dict(boxstyle="round,pad=0.25", facecolor="#e6f2ff", edgecolor="#99ccff", lw=0.8))
 
-ax_full.set_title(r"A: Cohort Initiation & Early Steering Dynamics (First 100 Positions, Cohort $L \geq 100$)", fontsize=11, fontweight="bold", pad=6)
+ax_full.set_title(r"A: Mean per-position KL (first 100 positions, cohort $L \geq 100$)", fontsize=11, fontweight="bold", pad=6)
 ax_full.set_xlabel(r"Reasoning Token Position $t$", fontsize=9.5)
 ax_full.set_ylabel("Forward KL [nats]", fontsize=9.5)
 ax_full.set_xlim(1, 100)
@@ -554,9 +554,9 @@ ax_full.legend(loc="center right", frameon=True, facecolor="white", edgecolor="#
 
 # Panel B: Constraint Policing: Base FAIL vs Base PASS
 if phi_h_lbl in kl_g1_data:
-    ax_policing.plot(zoom_positions, kl_g1_data[phi_h_lbl]["mean_curve"][9:100], linestyle="-", color=KL_COLORS[phi_h_lbl], lw=2.2, label="Phi-4 Haskins G1: Base FAIL, SFT PASS (Focal Signal)", zorder=3)
+    ax_policing.plot(zoom_positions, kl_g1_data[phi_h_lbl]["mean_curve"][9:100], linestyle="-", color=KL_COLORS[phi_h_lbl], lw=2.2, label="Phi-4 Haskins G1: Base FAIL, SFT PASS ", zorder=3)
 if phi_r_lbl in kl_g1_data:
-    ax_policing.plot(zoom_positions, kl_g1_data[phi_r_lbl]["mean_curve"][9:100], linestyle="--", color=KL_COLORS[phi_r_lbl], lw=1.8, label="Phi-4 ReasonIF G1: Base FAIL, SFT PASS (Focal Signal)", zorder=3)
+    ax_policing.plot(zoom_positions, kl_g1_data[phi_r_lbl]["mean_curve"][9:100], linestyle="--", color=KL_COLORS[phi_r_lbl], lw=1.8, label="Phi-4 ReasonIF G1: Base FAIL, SFT PASS ", zorder=3)
 if phi_h_lbl in kl_g2_data:
     ax_policing.plot(zoom_positions, kl_g2_data[phi_h_lbl]["mean_curve"][9:100], linestyle=":", color="#888888", lw=1.3, label="Phi-4 Haskins G2: Concordant Pass (Both PASS)", zorder=2)
 if qwen_h_lbl in kl_g1_data:
@@ -564,12 +564,12 @@ if qwen_h_lbl in kl_g1_data:
 
 if phi_h_lbl in kl_g1_data:
     peak_val = kl_g1_data[phi_h_lbl]["mean_curve"][61]
-    ax_policing.annotate("Active Policing Peaks\n(Discrete constraint enforcement)", xy=(62, peak_val), xytext=(38, 0.74),
+    ax_policing.annotate("Individual-trace spikes are averaged out here", xy=(62, peak_val), xytext=(38, 0.74),
                          arrowprops=dict(arrowstyle="->", color="#333333", lw=1.1),
                          fontsize=8.5, fontweight="bold", color="#333333",
                          bbox=dict(boxstyle="round,pad=0.25", facecolor="#fffbe6", edgecolor="#dddddd", lw=0.8))
 
-ax_policing.set_title("B: Downstream Constraint Policing: Focal Signal (Base FAIL, SFT PASS) vs. Concordant Pass", fontsize=11, fontweight="bold", pad=6)
+ax_policing.set_title("B: Downstream KL by single-sample outcome group (G1: Base fail / SFT pass; G2: both pass), t = 10-100", fontsize=11, fontweight="bold", pad=6)
 ax_policing.set_xlabel(r"Reasoning Token Position $t$", fontsize=9.5)
 ax_policing.set_ylabel("Forward KL [nats]", fontsize=9.5)
 ax_policing.set_xlim(10, 100)
