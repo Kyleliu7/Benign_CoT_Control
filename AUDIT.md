@@ -69,14 +69,13 @@ Resolved with the authors' answers and the supplied files:
 * Training-set size: the HF split has 249 rows, 37 dropped → 212. The paper's "250 − 37 − 2" text is wrong.
 
 * Old README numbers (23.40 / 37.89 / 37.34 with 124 strict / 19.38 with 34 strict): the authors confirm they are stale exploratory artefacts, explain 124/500 and 34/500 as non-character numerators copied into the 500 denominator, and say 23.40 / 37.89 came from a pre-calibration keyword run. I could not verify that explanation (no retained file gives 124/350, 48.02 or 23.40), so they are treated as unsourced; the older-protocol Qwen files and Table 8 were deleted. Git history keeps them.
-* Language items: on the authors' VM (fast-langdetect available) the re-scored language and capital counts equal the stored flags for the SFT, Prefix-OFF, Prefix-ON and both Phi files (30 / 14 / 30 / 14 / 17 of 52 language items; 0 of 43 capital items), so the grader and the stored language flags agree there. That printout, however, rescored the **GPT-OSS** file (still named `reasonif_qwen3_14b_base_untouched.jsonl` on `main`: 49 / 228 / 38), so it does not cover the genuine Qwen3-14B base file (22 language items passed in the stored flags, 20 non-language). Its non-language items re-score exactly here; its 52 language items remain to be re-run with `--rescore-reasonif` on a branch that contains the real file.
+* Language items: on the authors' VM (fast-langdetect available) `--rescore-reasonif` was run on `main` at `9404952`. For the genuine Qwen3-14B base file the recomputed counts equal the stored flags exactly (Lang-52 22/22, Cap-43 0/0, NonLang-205 20/20; total IFS 42/300 = 14.0 %, 0 mismatches), and the run ended with "0 mismatch(es)" across all files. Earlier VM output for the SFT, Prefix-OFF, Prefix-ON and Phi files agreed with the stored language flags as well. Only the Qwen base row was shown in the screenshot supplied to the audit, so the other rows rest on that earlier output. Note the printed "st/re" cells are stored/recomputed pass counts, not passes/total.
 
 Still open:
 1. Phi ReasonIF Prefix-OFF / Prefix-ON raw JSONL (only summary CSVs exist; the notebooks can regenerate them).
-2. Run `python scripts/reproduce_tables.py --rescore-reasonif` where the fast-langdetect model downloads. In this sandbox the 205 non-language items per file re-score exactly (including the new base file) and answer-correctness has 0 mismatches, but the 52 `language` items cannot be re-scored. The `[PASS]` line in the earlier `--rescore-reasonif` printout on `main` was unconditional and its "Lang-95" column only counted items; the table it printed for "Qwen3-14B Base" (16.33 / 76.00 / 12.67) is the GPT-OSS file's stored scores.
-3. KL: cache metadata says `base_model_revision: main`; confirm the revisions equal the pins in the README. Token alignment between SFT and base tokenisations is not checked in code here.
-4. Source of the Figure 3 panel B outcome groups (G1–G4): numbers exist in the executive report, but the labelling rule is not in a script.
-5. Decide whether to scrub `/home/kyleliu789/...` paths from notebook outputs.
+2. KL: cache metadata says `base_model_revision: main`; confirm the revisions equal the pins in the README. Token alignment between SFT and base tokenisations is not checked in code here.
+3. Source of the Figure 3 panel B outcome groups (G1–G4): numbers exist in the executive report, but the labelling rule is not in a script.
+4. Decide whether to scrub `/home/kyleliu789/...` paths from notebook outputs.
 
 ## 6. Manuscript edits implied by this audit (not applied to `main.tex` here)
 
