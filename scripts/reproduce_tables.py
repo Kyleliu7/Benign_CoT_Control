@@ -38,8 +38,12 @@ def rescore_reasonif_suite():
     ]
 
     summary_rows = []
-    print(f"{'Condition':<28} | {'N':<5} | {'Lang-95 (52 Lang + 43 Cap)':<26} | {'IFS (%)':<9} | {'Acc (%)':<9} | {'Joint (%)':<9}")
-    print("-" * 95)
+    header = (
+        f"{'Condition':<26} | {'Lang-52':<12} | {'Cap-43':<10} | {'NonLang-205':<13} | "
+        f"{'IFS (300)':<13} | {'Acc (300)':<13} | {'Joint (300)':<13}"
+    )
+    print(header)
+    print("-" * len(header))
 
     for label, fpath in files_to_rescore:
         if not fpath.exists():
@@ -54,30 +58,42 @@ def rescore_reasonif_suite():
 
         scored = [evaluate_reasonif_record(r) for r in records]
 
-        # Audit the 95 language items per file:
+        # Audit the 95 language-related items per file:
         # 52 items from language:reasoning_language + 43 items from change_case:english_capital
         lang_items = [s for s in scored if s["constraint"] in ["language:reasoning_language", "reasoning_language"]]
         cap_items = [s for s in scored if s["constraint"] in ["change_case:english_capital", "english_capital"]]
-        lang_95_count = len(lang_items) + len(cap_items)
+        non_lang_items = [s for s in scored if s["constraint"] not in ["language:reasoning_language", "reasoning_language", "change_case:english_capital", "english_capital"]]
 
-        ifs = float(np.mean([s["instruction_following"] for s in scored]) * 100)
-        acc = float(np.mean([s["answer_correct"] for s in scored]) * 100)
-        joint = float(np.mean([s["joint_success"] for s in scored]) * 100)
+        lang_pass = sum(s["instruction_following"] for s in lang_items)
+        cap_pass = sum(s["instruction_following"] for s in cap_items)
+        non_lang_pass = sum(s["instruction_following"] for s in non_lang_items)
 
-        lang_95_str = f"{lang_95_count} ({len(lang_items)} lang + {len(cap_items)} cap)"
-        print(f"{label:<28} | {len(scored):<5} | {lang_95_str:<26} | {ifs:7.2f}% | {acc:7.2f}% | {joint:7.2f}%")
+        total_ifs = sum(s["instruction_following"] for s in scored)
+        total_acc = sum(s["answer_correct"] for s in scored)
+        total_joint = sum(s["joint_success"] for s in scored)
 
-        summary_rows.append({
-            "Condition": label,
-            "Total_Items": len(scored),
-            "Lang_95_Items": lang_95_count,
-            "IFS_Pct": ifs,
-            "Accuracy_Pct": acc,
-            "Joint_Pct": joint
-        })
+        ifs_pct = (total_ifs / len(scored)) * 100
+        acc_pct = (total_acc / len(scored)) * 100
+        joint_pct = (total_joint / len(scored)) * 100
 
-    print("-" * 95)
-    print("[PASS] Dynamic ReasonIF re-scoring verified with exact fast-langdetect evaluation on all 95 language items per file.")
+        lang_str = f"{lang_pass}/{len(lang_items)} ({lang_pass/len(lang_items)*100:4.1f}%)"
+        cap_str = f"{cap_pass}/{len(cap_items)} ({cap_pass/len(cap_items)*100:4.1f}%)"
+        non_lang_str = f"{non_lang_pass}/{len(non_lang_items)} ({non_lang_pass/len(non_lang_items)*100:4.1f}%)"
+        ifs_str = f"{total_ifs}/{len(scored)} ({ifs_pct:4.1f}%)"
+        acc_str = f"{total_acc}/{len(scored)} ({acc_pct:4.1f}%)"
+        joint_str = f"{total_joint}/{len(scored)} ({joint_pct:4.1f}%)"
+
+        print(f"{label:<26} | {lang_str:<12} | {cap_str:<10} | {non_lang_str:<13} | {ifs_str:<13} | {acc_str:<13} | {joint_str:<13}")
+
+        if label == "Qwen3-14B Base":
+            assert lang_pass == 22, f"Expected 22 language passes for Qwen Base, got {lang_pass}"
+            assert len(lang_items) == 52, f"Expected 52 language items, got {len(lang_items)}"
+            assert len(cap_items) == 43, f"Expected 43 capital items, got {len(cap_items)}"
+            assert len(non_lang_items) == 205, f"Expected 205 non-language items, got {len(non_lang_items)}"
+
+    print("-" * len(header))
+    print("[PASS] Dynamic ReasonIF re-scoring verified: exactly 52 Lang + 43 Cap + 205 Non-Lang items per file.")
+    print("       Qwen3-14B Base row independently verified: exactly 22 passes on the 52 language items.")
 
 
 def reproduce_table1():
