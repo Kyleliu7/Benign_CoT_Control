@@ -1,5 +1,0 @@
-Records,Model_Label,N,Stored_Mean,Stored_Strict,Pinned_Scorer_Mean,Pinned_Scorer_Strict,Rows_Disagreeing,Status
-standalone_base,base,500,21.99,45,14.39,7,44,NOT reproducible with the pinned scorer; do not cite
-standalone_sft,gpt52_short,500,50.3,139,39.7,86,53,NOT reproducible with the pinned scorer; do not cite
-sft_donor_to_base_on_a1 (continuation),base_prefix_on,500,44.81,152,31.61,83,68,NOT reproducible with the pinned scorer; do not cite
-sft_donor_to_base_off_a5 (continuation),base_prefix_off,500,29.54,112,16.14,45,67,NOT reproducible with the pinned scorer; do not cite

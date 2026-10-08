@@ -245,29 +245,6 @@ def table7_run_health():
     return pd.DataFrame(rows)
 
 
-def table8_legacy_records():
-    """Older-protocol Qwen records (different schema, SFT labelled model=gpt52_short). Their stored scores do not
-    reproduce with the pinned scorer, so they are listed for transparency only."""
-    sys.path.insert(0, str(REPO_ROOT))
-    from evaluators.haskins_evaluator import grade_paper_protocol
-    specs = [("standalone_base", "haskins_qwen3_14b_standalone_base.jsonl", "compliance", "compliant_binary", "extracted_reasoning"),
-             ("standalone_sft", "haskins_qwen3_14b_standalone_sft.jsonl", "compliance", "compliant_binary", "extracted_reasoning"),
-             ("sft_donor_to_base_on_a1 (continuation)", "haskins_qwen3_14b_sft_donor_to_base_on_a1.jsonl", "continuation_compliance", "continuation_binary", "continuation_reasoning"),
-             ("sft_donor_to_base_off_a5 (continuation)", "haskins_qwen3_14b_sft_donor_to_base_off_a5.jsonl", "continuation_compliance", "continuation_binary", "continuation_reasoning")]
-    rows = []
-    for label, fname, comp, strict, text in specs:
-        recs = load_jsonl(QWEN_Q / fname)
-        stored = np.array([float(r[comp]) for r in recs])
-        stored_s = int(sum(int(float(r[strict])) for r in recs))
-        new = np.array([grade_paper_protocol(r["task"], int(r["prompt_idx"]), r[text] or "") for r in recs])
-        labels = sorted({str(r.get("model", r.get("condition", ""))) for r in recs})
-        rows.append(dict(Records=label, Model_Label="/".join(labels), N=len(recs), Stored_Mean=round(100 * stored.mean(), 2),
-                         Stored_Strict=stored_s, Pinned_Scorer_Mean=round(100 * new.mean(), 2), Pinned_Scorer_Strict=int((new == 1.0).sum()),
-                         Rows_Disagreeing=int((np.abs(new - stored) > 1e-6).sum()),
-                         Status="NOT reproducible with the pinned scorer; do not cite"))
-    return pd.DataFrame(rows)
-
-
 # --------------------------------------------------------------------------------------------
 # Table 4: KL (both windows, stated explicitly)
 # --------------------------------------------------------------------------------------------
@@ -318,30 +295,64 @@ def table5():
 
 
 # --------------------------------------------------------------------------------------------
+LANG_ITEMS = {"language:reasoning_language"}
+CAP_ITEMS = {"change_case:english_capital"}
+
+
 def rescore_reasonif() -> int:
-    """Re-run the pinned official ReasonIF grader and compare with stored flags (needs fast-langdetect model)."""
+    """Re-run the pinned official ReasonIF grader on every raw file and compare with the flags stored in the file.
+
+    Items are split into Lang-52 (language:reasoning_language), Cap-43 (change_case:english_capital) and NonLang-205.
+    The Lang and Cap partitions need the fast-langdetect model; if it cannot be loaded they are reported as NOT VERIFIED
+    (never as passed). Prefix runs are checked twice: full trace (`official_*`) and continuation-only (`continuation_*`).
+    The function returns the number of mismatches between recomputed and stored flags; there is no unconditional PASS.
+    """
     sys.path.insert(0, str(REPO_ROOT))
     from evaluators.reasonif_evaluator import evaluate_reasonif_record, LANGDETECT_FAILURES
-    bad = 0
-    language_dependent = {"language:reasoning_language", "change_case:english_capital"}
-    files = {**{f"qwen/{p.name}": p for p in (REASONIF / "qwen3_14b").glob("*.jsonl")},
-             "phi/base": REASONIF / "phi4_reasoning/base/scored_responses.jsonl",
-             "phi/sft": REASONIF / "phi4_reasoning/sft/scored_responses.jsonl"}
-    for name, path in files.items():
+    files = [(f"qwen/{p.name}", p) for p in sorted((REASONIF / "qwen3_14b").glob("*.jsonl"))]
+    files += [(f"gpt_oss/{p.name}", p) for p in sorted((REASONIF / "gpt_oss_20b").glob("*.jsonl"))]
+    files += [("phi/base", REASONIF / "phi4_reasoning/base/scored_responses.jsonl"),
+              ("phi/sft", REASONIF / "phi4_reasoning/sft/scored_responses.jsonl")]
+    header = f"{'file':<62s} {'basis':<13s} {'Lang-52 st/re':>13s} {'Cap-43 st/re':>13s} {'NonLang-205 st/re':>18s} {'mismatches':>10s}"
+    print(header + "\n" + "-" * len(header))
+    total_bad = 0
+    n_failures_before = len(LANGDETECT_FAILURES)
+    for name, path in files:
         recs = load_jsonl(path)
-        new = [evaluate_reasonif_record(r) for r in recs]
-        flag = "official_instruction_following" if "official_instruction_following" in recs[0] else "instruction_following"
-        degraded = bool(LANGDETECT_FAILURES)
-        pairs = [(a, r) for a, r in zip(new, recs) if not (degraded and a["constraint"] in language_dependent)]
-        diff = sum(1 for a, r in pairs if a["instruction_following"] != truthy(r[flag]))
-        note = f" (language/english_capital items excluded: {len(recs) - len(pairs)})" if degraded else ""
-        print(f"  {name:<70s} IFS flag mismatches: {diff}/{len(pairs)}{note}")
-        bad += diff
-    if LANGDETECT_FAILURES:
-        print(f"  WARNING: language detection failed {len(LANGDETECT_FAILURES)} times (fast-langdetect model unavailable); "
-              "language/english_capital items could not be re-scored and were excluded. Re-run with the model available "
-              "to verify those two constraints.")
-    return bad
+        bases = [("stored flag", None, "instruction_following")]
+        if "continuation_instruction_following" in recs[0]:
+            bases = [("full trace", None, "official_instruction_following"),
+                     ("continuation", "continuation_reasoning_content", "continuation_instruction_following")]
+        for basis, text_key, flag_key in bases:
+            before = len(LANGDETECT_FAILURES)
+            new = []
+            for r in recs:
+                rr = dict(r)
+                if text_key:
+                    rr["reasoning_content"] = r[text_key]
+                new.append(evaluate_reasonif_record(rr)["instruction_following"])
+            degraded = len(LANGDETECT_FAILURES) > before
+            stored = [truthy(r[flag_key]) for r in recs]
+            parts = {"lang": [], "cap": [], "non": []}
+            for i, r in enumerate(recs):
+                c = r["constraint"]
+                parts["lang" if c in LANG_ITEMS else "cap" if c in CAP_ITEMS else "non"].append(i)
+            cells, bad = {}, 0
+            for k, idx in parts.items():
+                st, re_ = sum(stored[i] for i in idx), sum(new[i] for i in idx)
+                mism = sum(stored[i] != new[i] for i in idx)
+                if k in ("lang", "cap") and degraded:
+                    cells[k] = f"{st}/n.v."
+                else:
+                    cells[k] = f"{st}/{re_}"
+                    bad += mism
+            total_bad += bad
+            print(f"{name:<62s} {basis:<13s} {cells['lang']:>13s} {cells['cap']:>13s} {cells['non']:>18s} {bad:>10d}")
+    if len(LANGDETECT_FAILURES) > n_failures_before:
+        print(f"\nNOT VERIFIED: language detection failed {len(LANGDETECT_FAILURES)} times (fast-langdetect model unavailable). "
+              "'n.v.' cells were excluded; the official fallback would score them as compliant. Re-run where the model downloads.")
+    print(f"\nReasonIF rescoring: {total_bad} mismatch(es) between recomputed and stored instruction-following flags.")
+    return total_bad
 
 
 def _norm(value) -> str:
@@ -370,7 +381,6 @@ def main() -> int:
         "table5_top_spike_per_task_phi4.csv": table5(),
         "table6_haskins_per_task.csv": table6_per_task(),
         "table7_haskins_run_health.csv": table7_run_health(),
-        "table8_legacy_qwen_haskins_records.csv": table8_legacy_records(),
     }
     mismatches = 0
     for name, df in tables.items():
