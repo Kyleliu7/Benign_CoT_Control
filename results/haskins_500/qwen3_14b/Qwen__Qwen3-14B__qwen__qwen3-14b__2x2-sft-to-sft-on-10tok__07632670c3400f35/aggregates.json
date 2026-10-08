@@ -1,0 +1,14 @@
+[
+  {
+    "aggregate": "all_10",
+    "complete": true,
+    "mean_compliance": 0.3092871631170565,
+    "strict_pass_rate": 0.14600000000000002
+  },
+  {
+    "aggregate": "seven_non_character",
+    "complete": true,
+    "mean_compliance": 0.27954382612968004,
+    "strict_pass_rate": 0.16285714285714287
+  }
+]

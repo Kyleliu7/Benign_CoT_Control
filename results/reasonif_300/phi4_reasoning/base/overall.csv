@@ -1,0 +1,2 @@
+model,questions,instruction_following,answer_correct,joint_success,format_valid,missing_answer,truncated,mean_output_tokens,median_output_tokens
+phi4_reasoning_14b_base,300,0.05,0.7533333333333333,0.03,0.9433333333333334,0.056666666666666664,0.04,4044.7533333333336,2094.5

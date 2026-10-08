@@ -1,0 +1,11 @@
+task,category,Base -> Base_Comp_%,Base -> Base_Strict_%,Base -> Base_Tok,Base -> SFT_Comp_%,Base -> SFT_Strict_%,Base -> SFT_Tok,SFT -> Base_Comp_%,SFT -> Base_Strict_%,SFT -> Base_Tok,SFT -> SFT_Comp_%,SFT -> SFT_Strict_%,SFT -> SFT_Tok
+third_person,Non-Character,85.66,6.0,670.3,80.73,0.0,541.6,99.35,94.0,348.2,97.7,92.0,518.5
+word_suppression,Non-Character,8.0,8.0,924.0,6.0,6.0,689.1,28.0,28.0,419.4,16.0,16.0,343.3
+multiple_word_suppression,Non-Character,2.0,2.0,910.4,6.0,6.0,622.9,8.0,8.0,424.1,6.0,6.0,367.3
+meow_between_words,Non-Character,18.56,2.0,669.0,13.19,4.0,541.5,67.66,0.0,631.5,54.22,0.0,486.3
+end_of_sentence,Non-Character,0.46,0.0,535.4,0.26,0.0,524.5,13.77,0.0,367.2,16.5,0.0,367.5
+repeat_sentences,Non-Character,0.0,0.0,689.0,0.0,0.0,620.5,2.64,0.0,415.4,4.26,0.0,307.2
+arrow_prefix,Non-Character,0.0,0.0,857.6,0.0,0.0,701.2,2.43,0.0,566.6,1.0,0.0,470.6
+lowercase_thinking,Character,45.58,28.0,759.3,44.22,24.0,664.6,63.87,28.0,474.2,57.02,24.0,404.9
+uppercase_thinking,Character,2.82,0.0,767.1,3.46,0.0,557.5,54.72,12.0,319.7,40.56,8.0,338.4
+alternating_case,Character,11.7,0.0,670.0,11.65,0.0,500.4,22.34,0.0,454.9,16.02,0.0,446.4

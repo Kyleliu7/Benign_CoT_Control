@@ -1,0 +1,22 @@
+{
+  "evaluation_mode": "lora",
+  "model_id": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+  "model_revision": "local",
+  "load_model_id": "microsoft/Phi-4-reasoning",
+  "load_model_revision": "1de18ec97600877ce63dbf60c73b998da99f0195",
+  "lora_model_id": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+  "lora_rank": 32,
+  "reasonif_commit": "706b953feb9408a802e1ad6972c10ad7fbad3da8",
+  "num_questions": 300,
+  "generation_seed_rule": "42 + dataset_index",
+  "temperature": 1.0,
+  "top_p": 0.95,
+  "max_input_tokens": 2048,
+  "max_new_tokens": 16384,
+  "max_model_len": 18432,
+  "dtype": "bfloat16",
+  "python": "3.12.14",
+  "chat_template_sha256": "5a4c7c0b12bdbbc7110aebe80b15ac3d4dbabde85be466925dc2cf52d7698ceb",
+  "maximum_observed_input_tokens": 1039,
+  "vllm_version": "0.29.0"
+}

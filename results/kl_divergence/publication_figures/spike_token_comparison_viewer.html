@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phi-4 Token-Level Divergence Inspector at Constraint Spikes</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+</head>
+<body class="bg-[var(--background)] text-[var(--foreground)] antialiased p-6">
+  <div class="max-w-6xl mx-auto space-y-6">
+    
+    <!-- Header Card -->
+    <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-red-100 text-red-800 dark:bg-red-950/60 dark:text-red-300 mb-2">
+            Mechanistic Interpretability &middot; Token-Level Causal Analysis
+          </span>
+          <h1 class="text-2xl font-bold tracking-tight text-[var(--foreground)]">
+            Token-Level Divergence at Constraint Decision Spikes
+          </h1>
+          <p class="text-sm text-[var(--muted-foreground)] mt-1">
+            Empirical comparison between SFT-emitted adherence tokens vs. Base model prior predictions at downstream Forward KL spikes ($D_{\text{KL}} > 1.0\text{ nats}$) in Microsoft Phi-4 Reasoning.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="text-right">
+            <div class="text-xs text-[var(--muted-foreground)]">Downstream Spikes</div>
+            <div class="text-xl font-black text-rose-500">6.51% of tokens</div>
+          </div>
+          <div class="h-8 w-px bg-[var(--border)]"></div>
+          <div class="text-right">
+            <div class="text-xs text-[var(--muted-foreground)]">Base Steering Gain</div>
+            <div class="text-xl font-black text-amber-500">+0.72% (Failed)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-[var(--border)]">
+        <button onclick="filterCategory('all')" id="btn-all" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white transition-colors">
+          All Constraints (8 Key Spikes)
+        </button>
+        <button onclick="filterCategory('negative')" id="btn-negative" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--surface-variant,rgba(0,0,0,0.05))] hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors">
+          Lexical Negative Constraints (Word / Multi-Word)
+        </button>
+        <button onclick="filterCategory('perspective')" id="btn-perspective" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--surface-variant,rgba(0,0,0,0.05))] hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors">
+          Perspective Constraints (Third-Person)
+        </button>
+        <button onclick="filterCategory('structural')" id="btn-structural" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--surface-variant,rgba(0,0,0,0.05))] hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors">
+          Structural Constraints (Repeat / Arrow)
+        </button>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Card 1: Third Person sqrt(2) -->
+      <div class="spike-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-sm space-y-4" data-category="perspective">
+        <div class="flex items-start justify-between">
+          <div>
+            <span class="text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">Perspective &middot; third_person</span>
+            <h3 class="text-base font-semibold mt-0.5">Proof by Contradiction Transition</h3>
+          </div>
+          <div class="px-2.5 py-1 rounded-md text-xs font-mono font-bold bg-rose-50 text-rose-700 dark:bg-rose-950/60 dark:text-rose-300 border border-rose-200 dark:border-rose-900">
+            KL: 1.59 nats (t=18)
+          </div>
+        </div>
+        <p class="text-xs text-[var(--muted-foreground)]"><strong>Prompt:</strong> Prove that the square root of 2 is irrational.</p>
+        <div class="bg-[var(--surface-variant,rgba(0,0,0,0.03))] p-3 rounded-lg text-xs font-mono border border-[var(--border)]">
+          <span class="text-[var(--muted-foreground)]">Context:</span> "...present a formal proof by contradiction."
+        </div>
+        <div class="grid grid-cols-2 gap-3 text-xs">
+          <div class="p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 space-y-1">
+            <div class="font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-1.5">
+              <span class="h-2 w-2 rounded-full bg-emerald-500"></span> SFT Emitted Token
+            </div>
+            <div class="text-sm font-mono font-bold text-emerald-900 dark:text-emerald-200">" It"</div>
+            <div class="text-[11px] text-emerald-700/80 dark:text-emerald-400">Impersonal pronoun ("It should assume...") &middot; Compliant</div>
+          </div>
+          <div class="p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-800 space-y-1">
+            <div class="font-bold text-rose-700 dark:text-rose-400 flex items-center gap-1.5">
+              <span class="h-2 w-2 rounded-full bg-rose-500"></span> Base Predicted Token
+            </div>
+            <div class="text-sm font-mono font-bold text-rose-900 dark:text-rose-200">" I"</div>
+            <div class="text-[11px] text-rose-700/80 dark:text-rose-400">1st-person pronoun ("I will assume...") &middot; <span class="font-bold text-rose-600">VIOLATION</span></div>
+          </div>
+        </div>
+        <div class="text-[11px] text-[var(--muted-foreground)] leading-relaxed pt-2 border-t border-[var(--border)]">
+          <strong>Causal Verdict:</strong> Base unconstrained prior naturally defaults to first-person self-narration. In autonomous generation (A1), Base slips into "I", "me", "my" 15 times, failing compliance completely.
+        </div>
+      </div>
+
+      <!-- Card 2: Multi-Word Quadratic -->
+      <div class="spike-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-sm space-y-4" data-category="negative">
+        <div class="flex items-start justify-between">
+          <div>
+            <span class="text-xs font-bold text-rose-600 dark:text-rose-400 uppercase tracking-wider">Negative Lexical &middot; multiple_word_suppression</span>
+            <h3 class="text-base font-semibold mt-0.5">Quadratic Equation Resolution</h3>
+          </div>
+          <div class="px-2.5 py-1 rounded-md text-xs font-mono font-bold bg-rose-50 text-rose-700 dark:bg-rose-950/60 dark:text-rose-300 border border-rose-200 dark:border-rose-900">
+            KL: 3.96 nats (t=45)
+          </div>
+        </div>
+        <p class="text-xs text-[var(--muted-foreground)]"><strong>Constraint:</strong> Do not use: "solve", "solving", "solved", "solution".</p>
+        <div class="bg-[var(--surface-variant,rgba(0,0,0,0.03))] p-3 rounded-lg text-xs font-mono border border-[var(--border)]">
+          <span class="text-[var(--muted-foreground)]">Context:</span> "**Step 3:** Factor out 3: 3(x^2 - 4x + 3) = 0.\n\n**Step 4:**"
+        </div>
+        <div class="grid grid-cols-2 gap-3 text-xs">
+          <div class="p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 space-y-1">
+            <div class="font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-1.5">
+              <span class="h-2 w-2 rounded-full bg-emerald-500"></span> SFT Emitted Token
+            </div>
+            <div class="text-sm font-mono font-bold text-emerald-900 dark:text-emerald-200">" Factor"</div>
+            <div class="text-[11px] text-emerald-700/80 dark:text-emerald-400">Direct mathematical operation &middot; Compliant</div>
+          </div>
+          <div class="p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-800 space-y-1">
+            <div class="font-bold text-rose-700 dark:text-rose-400 flex items-center gap-1.5">
+              <span class="h-2 w-2 rounded-full bg-rose-500"></span> Base Predicted Token
+            </div>
+            <div class="text-sm font-mono font-bold text-rose-900 dark:text-rose-200">" Solve"</div>
+            <div class="text-[11px] text-rose-700/80 dark:text-rose-400">Forbidden mathematical command &middot; <span class="font-bold text-rose-600">VIOLATION</span></div>
+          </div>
+        </div>
+        <div class="text-[11px] text-[var(--muted-foreground)] leading-relaxed pt-2 border-t border-[var(--border)]">
+          <strong>Causal Verdict:</strong> Base model is hardwired to emit "Solve the quadratic...". Without fine-tuned adapter weights at token 45, Base instantly outputs "Solve" (Strict compliance: 0%).
+        </div>
+      </div>
+
+      <!-- Card 3: Word Suppression Weigh -->
+      <div class="spike-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-sm space-y-4" data-category="negative">
+        <div class="flex items-start justify-between">
+          <div>
+            <span class="text-xs font-bold text-rose-600 dark:text-rose-400 uppercase tracking-wider">Negative Lexical &middot; word_suppression</span>
+            <h3 class="text-base font-semibold mt-0.5">12-Balls Scale Puzzle</h3>
+          </div>
+          <div class="px-2.5 py-1 rounded-md text-xs font-mono font-bold bg-rose-50 text-rose-700 dark:bg-rose-950/60 dark:text-rose-300 border border-rose-200 dark:border-rose-900">
+            KL: 2.45 nats (t=68)
+          </div>
+        </div>
+        <p class="text-xs text-[var(--muted-foreground)]"><strong>Constraint:</strong> Do not use the word "weigh" under any circumstances.</p>
+        <div class="bg-[var(--surface-variant,rgba(0,0,0,0.03))] p-3 rounded-lg text-xs font-mono border border-[var(--border)]">
+          <span class="text-[var(--muted-foreground)]">Context:</span> "Step 2: On the balance scale, we"
+        </div>
+        <div class="grid grid-cols-2 gap-3 text-xs">
+          <div class="p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 space-y-1">
+            <div class="font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-1.5">
+              <span class="h-2 w-2 rounded-full bg-emerald-500"></span> SFT Emitted Token
+            </div>
+            <div class="text-sm font-mono font-bold text-emerald-900 dark:text-emerald-200">" compare"</div>
+            <div class="text-[11px] text-emerald-700/80 dark:text-emerald-400">Circumlocutory action verb &middot; Compliant</div>
+          </div>
+          <div class="p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-800 space-y-1">
+            <div class="font-bold text-rose-700 dark:text-rose-400 flex items-center gap-1.5">
+              <span class="h-2 w-2 rounded-full bg-rose-500"></span> Base Predicted Token
+            </div>
+            <div class="text-sm font-mono font-bold text-rose-900 dark:text-rose-200">" weigh"</div>
+            <div class="text-[11px] text-rose-700/80 dark:text-rose-400">Directly forbidden word &middot; <span class="font-bold text-rose-600">VIOLATION</span></div>
+          </div>
+        </div>
+        <div class="text-[11px] text-[var(--muted-foreground)] leading-relaxed pt-2 border-t border-[var(--border)]">
+          <strong>Causal Verdict:</strong> Base model uses "weigh" and "weighing" 73 times in Condition A1! SFT succeeds because it systematically redirects mass to "compare" and "balance".
+        </div>
+      </div>
+
+      <!-- Card 4: Repeat Sentences Structure -->
+      <div class="spike-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-sm space-y-4" data-category="structural">
+        <div class="flex items-start justify-between">
+          <div>
+            <span class="text-xs font-bold text-teal-600 dark:text-teal-400 uppercase tracking-wider">Structural &middot; repeat_sentences</span>
+            <h3 class="text-base font-semibold mt-0.5">Sentence Duplication Enforcer</h3>
+          </div>
+          <div class="px-2.5 py-1 rounded-md text-xs font-mono font-bold bg-rose-50 text-rose-700 dark:bg-rose-950/60 dark:text-rose-300 border border-rose-200 dark:border-rose-900">
+            KL: 11.65 nats (t=90)
+          </div>
+        </div>
+        <p class="text-xs text-[var(--muted-foreground)]"><strong>Constraint:</strong> Repeat each sentence twice before moving to the next.</p>
+        <div class="bg-[var(--surface-variant,rgba(0,0,0,0.03))] p-3 rounded-lg text-xs font-mono border border-[var(--border)]">
+          <span class="text-[var(--muted-foreground)]">Context:</span> "mRNA delivers instructions to produce viral spike protein."
+        </div>
+        <div class="grid grid-cols-2 gap-3 text-xs">
+          <div class="p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 space-y-1">
+            <div class="font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-1.5">
+              <span class="h-2 w-2 rounded-full bg-emerald-500"></span> SFT Emitted Token
+            </div>
+            <div class="text-sm font-mono font-bold text-emerald-900 dark:text-emerald-200">" mRNA"</div>
+            <div class="text-[11px] text-emerald-700/80 dark:text-emerald-400">Verbatim sentence duplication start &middot; Compliant</div>
+          </div>
+          <div class="p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-800 space-y-1">
+            <div class="font-bold text-rose-700 dark:text-rose-400 flex items-center gap-1.5">
+              <span class="h-2 w-2 rounded-full bg-rose-500"></span> Base Predicted Token
+            </div>
+            <div class="text-sm font-mono font-bold text-rose-900 dark:text-rose-200">" Next"</div>
+            <div class="text-[11px] text-rose-700/80 dark:text-rose-400">Normal progressive continuation &middot; <span class="font-bold text-rose-600">VIOLATION</span></div>
+          </div>
+        </div>
+        <div class="text-[11px] text-[var(--muted-foreground)] leading-relaxed pt-2 border-t border-[var(--border)]">
+          <strong>Causal Verdict:</strong> Duplicating sentences violates all autoregressive language priors. Base assigns $P(\text{duplicate}) \approx 10^{-5}$, causing a massive KL spike of 11.65 nats.
+        </div>
+      </div>
+    </div>
+
+    <!-- Static Figure Embed Card -->
+    <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-4">
+      <h2 class="text-lg font-bold text-[var(--foreground)]">Publication Chart: Figure 3</h2>
+      <p class="text-xs text-[var(--muted-foreground)]">
+        High-resolution horizontal bar comparison across all 8 empirical case studies showing per-token Forward KL magnitude alongside the exact token pairs:
+      </p>
+      <div class="border border-[var(--border)] rounded-xl overflow-hidden bg-white">
+        <img src="fig3_spike_token_comparison_phi4.png" alt="Figure 3: Downstream Divergence Spikes at Constraint Decision Points" class="w-full h-auto">
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function filterCategory(cat) {
+      const cards = document.querySelectorAll('.spike-card');
+      cards.forEach(c => {
+        if (cat === 'all' || c.getAttribute('data-category') === cat) {
+          c.style.display = 'flex';
+          c.style.flexDirection = 'column';
+        } else {
+          c.style.display = 'none';
+        }
+      });
+      ['all', 'negative', 'perspective', 'structural'].forEach(c => {
+        const btn = document.getElementById('btn-' + c);
+        if (c === cat) {
+          btn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white transition-colors";
+        } else {
+          btn.className = "px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--surface-variant,rgba(0,0,0,0.05))] hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors";
+        }
+      });
+    }
+  </script>
+</body>
+</html>

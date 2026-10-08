@@ -1,0 +1,12 @@
+task,q_code,key,early_reasoning_kl,downstream_reasoning_kl
+change_case:english_capital,G3,43,0.1804,0.0657
+detectable_format:json_format,G3,47,0.1833,0.058
+language:reasoning_language,G1,3,0.8303,0.126
+language:reasoning_language,G2,14,0.1485,0.0657
+language:reasoning_language,G3,35,0.2912,0.0626
+length_constraint_checkers:number_words,G1,17,0.3232,0.1004
+length_constraint_checkers:number_words,G3,36,0.293,0.1092
+punctuation:no_comma,G1,2,0.2992,0.3028
+punctuation:no_comma,G3,54,0.1493,0.0467
+startend:end_checker,G3,48,0.1847,0.0558
+startend:end_checker,G4,1,0.039,0.0457

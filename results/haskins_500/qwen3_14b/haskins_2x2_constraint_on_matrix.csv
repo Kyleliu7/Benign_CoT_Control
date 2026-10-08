@@ -1,0 +1,5 @@
+Condition,Donor,Recipient,All_10_Mean_Comp_%,All_10_Strict_Pass_%,All_10_Strict_Count,7_NonChar_Mean_Comp_%,7_NonChar_Strict_Pass_%,7_NonChar_Strict_Count,Mean_Continuation_Tokens,Mean_Reasoning_Tokens,Mean_Full_Reasoning_Tokens
+Base -> Base,Base,Base,17.48,4.6,23,16.38,2.57,9,986.2,745.2,755.1
+Base -> SFT,Base,SFT,16.55,4.0,20,15.17,2.29,8,886.6,596.4,606.3
+SFT -> Base,SFT,Base,36.28,17.0,85,31.7,18.57,65,677.2,442.1,452.1
+SFT -> SFT,SFT,SFT,30.93,14.6,73,27.95,16.29,57,663.0,405.0,415.0

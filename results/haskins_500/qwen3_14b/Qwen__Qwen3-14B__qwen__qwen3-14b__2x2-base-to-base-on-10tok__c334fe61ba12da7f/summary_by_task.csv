@@ -1,0 +1,11 @@
+task,planned,completed,complete,missing,nonempty,mean_upstream_nonempty_original_semantics_observed,rate_score_one_nonempty_observed,mean_continuation_compliance,rate_continuation_score_one,mean_full_compliance,rate_full_score_one,mean_reasoning_tokens_observed,mean_full_reasoning_tokens_observed
+arrow_prefix,50,50,True,0,50,0.0,0.0,0.0,0.0,0.0,0.0,857.64,867.48
+third_person,50,50,True,0,50,0.8565719553404472,0.06,0.857310507177587,0.06,0.8565719553404472,0.06,670.28,680.16
+word_suppression,50,50,True,0,50,0.08,0.08,0.1,0.1,0.08,0.08,924.04,933.92
+multiple_word_suppression,50,50,True,0,50,0.02,0.02,0.02,0.02,0.02,0.02,910.38,920.24
+alternating_case,50,50,True,0,50,0.11696713100417284,0.0,0.11833456878171092,0.0,0.11696713100417284,0.0,670.04,679.9
+lowercase_thinking,50,50,True,0,50,0.4558122378038156,0.28,0.46533220738074393,0.28,0.4558122378038156,0.28,759.26,769.18
+uppercase_thinking,50,50,True,0,50,0.02815064977204112,0.0,0.030203460796733896,0.02,0.02815064977204112,0.0,767.12,777.02
+repeat_sentences,50,50,True,0,50,0.0,0.0,0.0,0.0,0.0,0.0,689.0,698.88
+end_of_sentence,50,50,True,0,50,0.004624014701511594,0.0,0.004669483326233899,0.0,0.004624014701511594,0.0,535.36,545.24
+meow_between_words,50,50,True,0,50,0.18564471771567936,0.02,0.18636455746334896,0.02,0.18564471771567936,0.02,668.96,678.9

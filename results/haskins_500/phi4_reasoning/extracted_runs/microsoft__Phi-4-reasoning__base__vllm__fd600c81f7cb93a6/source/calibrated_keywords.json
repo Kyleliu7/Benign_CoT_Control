@@ -1,0 +1,483 @@
+[
+  {
+    "idx": 0,
+    "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Show your work.",
+    "keyword": "cost",
+    "synonyms": [
+      "costs",
+      "price",
+      "priced"
+    ]
+  },
+  {
+    "idx": 1,
+    "prompt": "If you flip a fair coin 10 times, what is the probability of getting exactly 7 heads? Walk through the calculation.",
+    "keyword": "probability",
+    "synonyms": [
+      "probabilities",
+      "probable"
+    ]
+  },
+  {
+    "idx": 2,
+    "prompt": "Solve for x: 3x^2 - 12x + 9 = 0. Show each step.",
+    "keyword": "solve",
+    "synonyms": [
+      "solving",
+      "solved",
+      "solution"
+    ]
+  },
+  {
+    "idx": 3,
+    "prompt": "A train leaves Station A at 9am traveling at 60 mph. Another train leaves Station B (300 miles away) at 10am traveling at 80 mph toward Station A. When do they meet?",
+    "keyword": "speed",
+    "synonyms": [
+      "speeds",
+      "velocity"
+    ]
+  },
+  {
+    "idx": 4,
+    "prompt": "Prove that the square root of 2 is irrational.",
+    "keyword": "assume",
+    "synonyms": [
+      "assuming",
+      "assumed",
+      "assumption"
+    ]
+  },
+  {
+    "idx": 5,
+    "prompt": "You have 12 balls, one of which is heavier or lighter than the rest. Using a balance scale exactly 3 times, how do you find the odd ball and determine if it's heavier or lighter?",
+    "keyword": "weigh",
+    "synonyms": [
+      "weighs",
+      "weight",
+      "heavier",
+      "lighter"
+    ]
+  },
+  {
+    "idx": 6,
+    "prompt": "What is the sum of all integers from 1 to 1000 that are divisible by both 3 and 7?",
+    "keyword": "sum",
+    "synonyms": [
+      "total",
+      "add"
+    ]
+  },
+  {
+    "idx": 7,
+    "prompt": "A jar contains 5 red, 3 blue, and 2 green marbles. If you draw 3 marbles without replacement, what is the probability that all three are different colors?",
+    "keyword": "draw",
+    "synonyms": [
+      "drawing",
+      "drawn",
+      "draws"
+    ]
+  },
+  {
+    "idx": 8,
+    "prompt": "Convert the decimal number 0.1 to binary. Explain why it cannot be represented exactly.",
+    "keyword": "binary",
+    "synonyms": [
+      "base-2",
+      "bit",
+      "bits"
+    ]
+  },
+  {
+    "idx": 9,
+    "prompt": "If log base 2 of x plus log base 2 of (x-2) equals 3, find x.",
+    "keyword": "equation",
+    "synonyms": [
+      "equations"
+    ]
+  },
+  {
+    "idx": 10,
+    "prompt": "Write a function that finds the longest palindromic substring in a given string. Explain the algorithm and its time complexity.",
+    "keyword": "string",
+    "synonyms": [
+      "strings",
+      "substring"
+    ]
+  },
+  {
+    "idx": 11,
+    "prompt": "Explain how a hash table handles collisions. Compare chaining vs open addressing with their trade-offs.",
+    "keyword": "collision",
+    "synonyms": [
+      "collisions",
+      "collide"
+    ]
+  },
+  {
+    "idx": 12,
+    "prompt": "Given a sorted array that has been rotated an unknown number of times, how would you search for a target element in O(log n) time?",
+    "keyword": "search",
+    "synonyms": [
+      "searching",
+      "searched",
+      "searches"
+    ]
+  },
+  {
+    "idx": 13,
+    "prompt": "What is the difference between a stack and a queue? Give a real-world example where each would be the appropriate data structure.",
+    "keyword": "stack",
+    "synonyms": [
+      "stacks",
+      "push",
+      "pop"
+    ]
+  },
+  {
+    "idx": 14,
+    "prompt": "Explain how merge sort works step by step. Why is it preferred over quicksort for linked lists?",
+    "keyword": "sort",
+    "synonyms": [
+      "sorting",
+      "sorted",
+      "sorts"
+    ]
+  },
+  {
+    "idx": 15,
+    "prompt": "Design a simple rate limiter that allows at most 100 requests per minute per user. Describe the data structures and algorithm you would use.",
+    "keyword": "request",
+    "synonyms": [
+      "requests"
+    ]
+  },
+  {
+    "idx": 16,
+    "prompt": "What causes a deadlock in concurrent programming? Describe the four necessary conditions and how to prevent each one.",
+    "keyword": "thread",
+    "synonyms": [
+      "threads",
+      "lock",
+      "locks"
+    ]
+  },
+  {
+    "idx": 17,
+    "prompt": "Explain the difference between depth-first search and breadth-first search on a graph. When would you choose one over the other?",
+    "keyword": "graph",
+    "synonyms": [
+      "graphs",
+      "node",
+      "nodes"
+    ]
+  },
+  {
+    "idx": 18,
+    "prompt": "Why does ice float on water? Explain the molecular structure that causes this unusual property.",
+    "keyword": "molecule",
+    "synonyms": [
+      "molecules",
+      "molecular"
+    ]
+  },
+  {
+    "idx": 19,
+    "prompt": "Explain how mRNA vaccines work, step by step, from injection to immune response.",
+    "keyword": "immune",
+    "synonyms": [
+      "immunity",
+      "antibody",
+      "antibodies"
+    ]
+  },
+  {
+    "idx": 20,
+    "prompt": "What would happen to Earth's climate if the Moon suddenly disappeared? Consider tidal effects, axial tilt, and day length.",
+    "keyword": "orbit",
+    "synonyms": [
+      "orbital",
+      "orbits",
+      "orbiting"
+    ]
+  },
+  {
+    "idx": 21,
+    "prompt": "Explain the greenhouse effect. How do CO2 molecules absorb and re-emit infrared radiation?",
+    "keyword": "carbon",
+    "synonyms": [
+      "CO2"
+    ]
+  },
+  {
+    "idx": 22,
+    "prompt": "Why can't anything travel faster than the speed of light? Explain using special relativity.",
+    "keyword": "light",
+    "synonyms": [
+      "photon",
+      "photons"
+    ]
+  },
+  {
+    "idx": 23,
+    "prompt": "How does CRISPR-Cas9 gene editing work? Walk through the mechanism from guide RNA to DNA repair.",
+    "keyword": "DNA",
+    "synonyms": [
+      "gene",
+      "genes",
+      "genetic"
+    ]
+  },
+  {
+    "idx": 24,
+    "prompt": "Explain why the sky is blue during the day but red at sunset, using Rayleigh scattering.",
+    "keyword": "scatter",
+    "synonyms": [
+      "scattering",
+      "scattered",
+      "scatters"
+    ]
+  },
+  {
+    "idx": 25,
+    "prompt": "What causes antibiotic resistance? Explain the evolutionary mechanism and why overprescription accelerates it.",
+    "keyword": "bacteria",
+    "synonyms": [
+      "bacterial",
+      "bacterium"
+    ]
+  },
+  {
+    "idx": 26,
+    "prompt": "Why did the Roman Empire fall? Discuss the major contributing factors and their relative importance.",
+    "keyword": "empire",
+    "synonyms": [
+      "empires",
+      "imperial"
+    ]
+  },
+  {
+    "idx": 27,
+    "prompt": "Explain the difference between GDP and GNP. Why might a country have a high GDP but low standard of living?",
+    "keyword": "economy",
+    "synonyms": [
+      "economic",
+      "economies",
+      "GDP"
+    ]
+  },
+  {
+    "idx": 28,
+    "prompt": "How does the Electoral College work in the United States? What are the main arguments for and against it?",
+    "keyword": "vote",
+    "synonyms": [
+      "votes",
+      "voting",
+      "voter",
+      "voters"
+    ]
+  },
+  {
+    "idx": 29,
+    "prompt": "What caused the 2008 financial crisis? Trace the chain of events from subprime mortgages to bank failures.",
+    "keyword": "bank",
+    "synonyms": [
+      "banks",
+      "banking",
+      "mortgage"
+    ]
+  },
+  {
+    "idx": 30,
+    "prompt": "Compare and contrast the French Revolution and the American Revolution. What were the key differences in causes and outcomes?",
+    "keyword": "revolution",
+    "synonyms": [
+      "revolutionary",
+      "revolt"
+    ]
+  },
+  {
+    "idx": 31,
+    "prompt": "Explain how supply and demand determine price in a free market. What happens when a government imposes a price ceiling?",
+    "keyword": "market",
+    "synonyms": [
+      "markets"
+    ]
+  },
+  {
+    "idx": 32,
+    "prompt": "Why is the Dead Sea called 'dead'? Explain the geological and chemical reasons for its extreme salinity.",
+    "keyword": "salt",
+    "synonyms": [
+      "salty",
+      "salinity",
+      "saline"
+    ]
+  },
+  {
+    "idx": 33,
+    "prompt": "What is the significance of the Rosetta Stone? How did it help decode Egyptian hieroglyphics?",
+    "keyword": "language",
+    "synonyms": [
+      "languages",
+      "linguistic"
+    ]
+  },
+  {
+    "idx": 34,
+    "prompt": "Three people check into a hotel room that costs $30. They each pay $10. The manager realizes the room is only $25 and gives $5 to the bellboy to return. The bellboy keeps $2 and gives $1 back to each person. Now each person paid $9 (total $27), the bellboy has $2. That's $29. Where did the missing dollar go?",
+    "keyword": "dollar",
+    "synonyms": [
+      "dollars",
+      "money",
+      "paid"
+    ]
+  },
+  {
+    "idx": 35,
+    "prompt": "You're in a room with two doors. One leads to freedom, the other to death. There are two guards: one always tells the truth, one always lies. You can ask one guard one question. What do you ask?",
+    "keyword": "truth",
+    "synonyms": [
+      "true",
+      "lie",
+      "lies",
+      "lying"
+    ]
+  },
+  {
+    "idx": 36,
+    "prompt": "A farmer needs to cross a river with a fox, a chicken, and a bag of grain. The boat can only carry the farmer and one item. The fox will eat the chicken if left alone, and the chicken will eat the grain. How does the farmer get everything across?",
+    "keyword": "chicken",
+    "synonyms": [
+      "fox",
+      "grain"
+    ]
+  },
+  {
+    "idx": 37,
+    "prompt": "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets? Explain your reasoning carefully.",
+    "keyword": "machine",
+    "synonyms": [
+      "machines",
+      "widget",
+      "widgets"
+    ]
+  },
+  {
+    "idx": 38,
+    "prompt": "Is it possible to tile an 8x8 chessboard with 2x1 dominoes if two opposite corners are removed? Explain why or why not.",
+    "keyword": "square",
+    "synonyms": [
+      "squares",
+      "corner",
+      "corners"
+    ]
+  },
+  {
+    "idx": 39,
+    "prompt": "You have two ropes that each take exactly one hour to burn, but they burn at non-uniform rates. How do you measure exactly 45 minutes?",
+    "keyword": "burn",
+    "synonyms": [
+      "burns",
+      "burning",
+      "burned"
+    ]
+  },
+  {
+    "idx": 40,
+    "prompt": "A snail is at the bottom of a 30-foot well. Each day it climbs 3 feet and each night it slides back 2 feet. How many days does it take to reach the top?",
+    "keyword": "climb",
+    "synonyms": [
+      "climbs",
+      "climbing",
+      "climbed"
+    ]
+  },
+  {
+    "idx": 41,
+    "prompt": "There are 100 lockers in a row, all closed. 100 students walk by. Student 1 opens every locker. Student 2 toggles every 2nd locker. Student 3 toggles every 3rd, etc. Which lockers are open at the end?",
+    "keyword": "toggle",
+    "synonyms": [
+      "toggles",
+      "toggling",
+      "toggled",
+      "locker",
+      "lockers"
+    ]
+  },
+  {
+    "idx": 42,
+    "prompt": "Write a short fable (3-4 paragraphs) about a tortoise who learns to fly. Include a moral at the end.",
+    "keyword": "moral",
+    "synonyms": [
+      "morals",
+      "lesson"
+    ]
+  },
+  {
+    "idx": 43,
+    "prompt": "A trolley is heading toward 5 people tied to the tracks. You can pull a lever to divert it to another track where 1 person is tied. Should you pull the lever? Now consider: what if the 1 person is your child?",
+    "keyword": "track",
+    "synonyms": [
+      "tracks",
+      "trolley",
+      "lever"
+    ]
+  },
+  {
+    "idx": 44,
+    "prompt": "Brainstorm 5 creative ways a city could reduce traffic congestion without building new roads. Evaluate the pros and cons of each.",
+    "keyword": "traffic",
+    "synonyms": [
+      "congestion",
+      "commute"
+    ]
+  },
+  {
+    "idx": 45,
+    "prompt": "If you could add one amendment to the US Constitution, what would it be and why? Consider potential unintended consequences.",
+    "keyword": "constitution",
+    "synonyms": [
+      "constitutional",
+      "amendment"
+    ]
+  },
+  {
+    "idx": 46,
+    "prompt": "Explain the concept of 'sunk cost fallacy' using three different real-world examples from different domains.",
+    "keyword": "cost",
+    "synonyms": [
+      "costs",
+      "fallacy"
+    ]
+  },
+  {
+    "idx": 47,
+    "prompt": "Design a thought experiment that illustrates the difference between correlation and causation. Make it intuitive for a non-scientist.",
+    "keyword": "cause",
+    "synonyms": [
+      "causes",
+      "caused",
+      "causing",
+      "correlation"
+    ]
+  },
+  {
+    "idx": 48,
+    "prompt": "What are the strongest arguments both for and against universal basic income? Try to steelman both sides.",
+    "keyword": "income",
+    "synonyms": [
+      "wage",
+      "wages",
+      "salary"
+    ]
+  },
+  {
+    "idx": 49,
+    "prompt": "If aliens visited Earth, what five things about human civilization would be most surprising or confusing to them? Explain your reasoning.",
+    "keyword": "alien",
+    "synonyms": [
+      "aliens",
+      "extraterrestrial"
+    ]
+  }
+]

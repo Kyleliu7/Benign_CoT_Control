@@ -1,0 +1,11 @@
+Model,Pairing,All_500_Mean,All_500_Strict,All_500_Strict_Count,NonChar_350_Mean,NonChar_350_Strict,NonChar_350_Strict_Count
+Qwen3-14B,Base -> Base (A2),17.82,5.6,28/500,22.65,8.0,28/350
+Qwen3-14B,Base -> SFT (A3),14.88,6.8,34/500,18.25,9.7,34/350
+Qwen3-14B,SFT -> Base (A1 / Prefix-ON),37.34,24.8,124/500,48.02,35.4,124/350
+Qwen3-14B,SFT -> SFT (A4),37.64,23.2,116/500,47.96,33.1,116/350
+Qwen3-14B,SFT -> Base OFF (A5),19.38,6.8,34/500,24.89,9.7,34/350
+Phi-4-reasoning,Base -> Base (A2),10.38,3.4,17/500,12.59,4.9,17/350
+Phi-4-reasoning,Base -> SFT (A3),14.46,7.2,36/500,17.18,10.3,36/350
+Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),10.92,3.0,15/500,13.36,4.3,15/350
+Phi-4-reasoning,SFT -> SFT (A4),18.07,13.8,69/500,22.01,19.7,69/350
+Phi-4-reasoning,SFT -> Base OFF (A5),9.89,2.4,12/500,11.94,3.4,12/350

@@ -1,0 +1,14 @@
+[
+  {
+    "model":"phi4_reasoning_14b_gpt52_high",
+    "questions":300,
+    "instruction_following":0.12,
+    "answer_correct":0.69,
+    "joint_success":0.08,
+    "format_valid":0.8733333333,
+    "missing_answer":0.1266666667,
+    "truncated":0.0233333333,
+    "mean_output_tokens":2512.2433333333,
+    "median_output_tokens":780.0
+  }
+]

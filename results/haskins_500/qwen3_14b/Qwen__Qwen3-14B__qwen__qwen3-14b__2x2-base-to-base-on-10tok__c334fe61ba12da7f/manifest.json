@@ -1,0 +1,58 @@
+{
+  "run_fingerprint": "c334fe61ba12da7fb056fdd09602dcc281252cd0a9db450c8e0a72ea55c7cc91",
+  "created_utc": "2026-09-19T10:10:59.813975+00:00",
+  "run_spec": {
+    "protocol": "haskins-vllm-2x2-base-to-base-on-v1",
+    "prefix_mode": "ON",
+    "prefix_tokens": 10,
+    "exclude_prefix_from_scoring": false,
+    "base_model_id": "Qwen/Qwen3-14B",
+    "donor_model": "base",
+    "recipient_model": "base",
+    "donor_lora_path": null,
+    "recipient_lora_path": null,
+    "donor_lora_revision": "2ab1f5bfd74447cb3616be9004e286f677273502",
+    "max_lora_rank": 32,
+    "model_revision_requested": "main",
+    "model_revision_resolved": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "tokenizer_revision_resolved": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "architectures": [
+      "Qwen3ForCausalLM"
+    ],
+    "model_family": "qwen3",
+    "dtype": "bfloat16",
+    "quantization": null,
+    "n_repeats": 1,
+    "scheduled_generations": 500,
+    "base_seed": 42,
+    "sampling": {
+      "temperature": 0.6,
+      "top_p": 1.0,
+      "top_k": -1,
+      "repetition_penalty": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0,
+      "min_p": 0.0,
+      "prefix_tokens": 10,
+      "max_continuation_tokens": 3000,
+      "do_sample": true
+    },
+    "upstream_commit": "38dca62e407679ea361e04590ae3409de3f58ec7",
+    "source_hashes": {
+      "cot_controllability/scripts/evaluate.py": "8367226b35e7aab3a41e1f380fa701e1ae5e2de2233f9745249b966f312aad45",
+      "cot_controllability/data/diverse_prompts.json": "1fdebb6b9c19110f00f70bbe892c94a7a89c2739994a32000318c7da94529d69"
+    },
+    "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8"
+  },
+  "core_packages": {
+    "vllm": "0.29.0",
+    "torch": "2.13.0+cu132",
+    "transformers": "5.17.0",
+    "tokenizers": "0.23.2",
+    "huggingface-hub": "1.31.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "requests": "2.34.2",
+    "filelock": "4.0.0"
+  }
+}

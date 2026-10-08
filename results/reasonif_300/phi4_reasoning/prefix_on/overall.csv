@@ -1,0 +1,2 @@
+model,questions,official_instruction_following,continuation_instruction_following,answer_correct,official_joint_success,continuation_joint_success,format_valid,missing_answer,truncated,mean_output_tokens,median_output_tokens
+microsoft/Phi-4-reasoning,300,0.06666666666666667,0.06,0.7433333333333333,0.03666666666666667,0.03666666666666667,0.96,0.04,0.03666666666666667,3793.4,2057.0

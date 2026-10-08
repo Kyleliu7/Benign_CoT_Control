@@ -1,0 +1,43 @@
+Constraint,Condition,Instruction_Following,Answer_Accuracy,Mean_Tokens
+change_case:english_capital,Base Untouched (0 tok),0.0,0.813953488372093,3900.488372093024
+detectable_format:json_format,Base Untouched (0 tok),0.0,0.8085106382978723,5126.212765957447
+language:reasoning_language,Base Untouched (0 tok),0.4230769230769231,0.7692307692307693,4564.673076923077
+length_constraint_checkers:number_words,Base Untouched (0 tok),0.0566037735849056,0.8867924528301887,2811.7169811320755
+punctuation:no_comma,Base Untouched (0 tok),0.1071428571428571,0.7678571428571429,5359.75
+startend:end_checker,Base Untouched (0 tok),0.2244897959183673,0.7755102040816326,4598.428571428572
+change_case:english_capital,Ack-Requests (8 tok),0.0,0.813953488372093,2940.8372093023254
+detectable_format:json_format,Ack-Requests (8 tok),0.0,0.723404255319149,3167.574468085106
+language:reasoning_language,Ack-Requests (8 tok),0.2692307692307692,0.6923076923076923,3551.788461538461
+length_constraint_checkers:number_words,Ack-Requests (8 tok),0.1886792452830188,0.8301886792452831,1461.169811320755
+punctuation:no_comma,Ack-Requests (8 tok),0.4285714285714285,0.7857142857142857,3520.339285714286
+startend:end_checker,Ack-Requests (8 tok),0.3469387755102041,0.7551020408163265,3102.081632653061
+change_case:english_capital,Constraint-OFF (10 tok),0.0,0.7906976744186046,3144.7906976744184
+detectable_format:json_format,Constraint-OFF (10 tok),0.0,0.7446808510638298,3579.7021276595747
+language:reasoning_language,Constraint-OFF (10 tok),0.2692307692307692,0.7307692307692307,3012.4615384615386
+length_constraint_checkers:number_words,Constraint-OFF (10 tok),0.4339622641509434,0.6792452830188679,908.6603773584906
+punctuation:no_comma,Constraint-OFF (10 tok),0.4821428571428571,0.7857142857142857,3783.410714285714
+startend:end_checker,Constraint-OFF (10 tok),0.6530612244897959,0.6938775510204082,3221.265306122449
+change_case:english_capital,Constraint-ON (10 tok),0.0,0.813953488372093,2848.906976744186
+detectable_format:json_format,Constraint-ON (10 tok),0.0,0.7446808510638298,2903.1702127659573
+language:reasoning_language,Constraint-ON (10 tok),0.5769230769230769,0.6730769230769231,3003.403846153846
+length_constraint_checkers:number_words,Constraint-ON (10 tok),0.6226415094339622,0.6981132075471698,768.7358490566038
+punctuation:no_comma,Constraint-ON (10 tok),0.5,0.7321428571428571,3471.428571428572
+startend:end_checker,Constraint-ON (10 tok),0.7142857142857143,0.7551020408163265,2469.8367346938776
+punctuation:no_comma,SFT: GPT-5.2 Short,0.375,0.6428571428571429,2636.339285714286
+language:reasoning_language,SFT: GPT-5.2 Short,0.5769230769230769,0.5961538461538461,2362.4615384615386
+change_case:english_capital,SFT: GPT-5.2 Short,0.0,0.813953488372093,1655.7906976744189
+length_constraint_checkers:number_words,SFT: GPT-5.2 Short,0.490566037735849,0.6037735849056604,1106.0566037735848
+detectable_format:json_format,SFT: GPT-5.2 Short,0.0,0.5957446808510638,1771.872340425532
+startend:end_checker,SFT: GPT-5.2 Short,0.4693877551020408,0.6938775510204082,2521.0408163265306
+punctuation:no_comma,SFT: GPT-5.2 Long,0.0714285714285714,0.7142857142857143,3880.446428571429
+language:reasoning_language,SFT: GPT-5.2 Long,0.6538461538461539,0.7884615384615384,3813.8653846153848
+change_case:english_capital,SFT: GPT-5.2 Long,0.0,0.8372093023255814,3664.6511627906975
+length_constraint_checkers:number_words,SFT: GPT-5.2 Long,0.1132075471698113,0.8113207547169812,2103.2830188679245
+detectable_format:json_format,SFT: GPT-5.2 Long,0.0,0.7446808510638298,4068.765957446808
+startend:end_checker,SFT: GPT-5.2 Long,0.2857142857142857,0.6326530612244898,2910.30612244898
+punctuation:no_comma,OpenAI GPT-OSS-20B,0.0892857142857142,0.7857142857142857,3668.339285714286
+language:reasoning_language,OpenAI GPT-OSS-20B,0.4230769230769231,0.6923076923076923,4084.769230769231
+change_case:english_capital,OpenAI GPT-OSS-20B,0.0,0.813953488372093,3656.488372093024
+length_constraint_checkers:number_words,OpenAI GPT-OSS-20B,0.4150943396226415,0.7169811320754716,3442.3584905660377
+detectable_format:json_format,OpenAI GPT-OSS-20B,0.0,0.7659574468085106,3318.276595744681
+startend:end_checker,OpenAI GPT-OSS-20B,0.0,0.7959183673469388,3210.6326530612246

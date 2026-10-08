@@ -1,0 +1,8502 @@
+{
+  "arrow_prefix:00:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 0,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "arrow_prefix:01:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 1,
+    "prefix_text": "<think>\nOkay, so I need to find the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      1477,
+      279
+    ]
+  },
+  "arrow_prefix:02:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 2,
+    "prefix_text": "<think>\nOkay, so I need to solve the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      11625,
+      279
+    ]
+  },
+  "arrow_prefix:03:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 3,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "arrow_prefix:04:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 4,
+    "prefix_text": "<think>\nOkay, so I need to prove that",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      12118,
+      429
+    ]
+  },
+  "arrow_prefix:05:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 5,
+    "prefix_text": "<think>\nOkay, so I need to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      7071,
+      700
+    ]
+  },
+  "arrow_prefix:06:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 6,
+    "prefix_text": "<think>\nOkay, so I need to find the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      1477,
+      279
+    ]
+  },
+  "arrow_prefix:07:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 7,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "arrow_prefix:08:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 8,
+    "prefix_text": "<think>\nOkay, the user wants to convert ",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      311,
+      5508,
+      220
+    ]
+  },
+  "arrow_prefix:09:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 9,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "arrow_prefix:10:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 10,
+    "prefix_text": "<think>\nOkay, I need to write a function",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      3270,
+      264,
+      729
+    ]
+  },
+  "arrow_prefix:11:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 11,
+    "prefix_text": "<think>\nOkay, the user wants me to explain",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      10339
+    ]
+  },
+  "arrow_prefix:12:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 12,
+    "prefix_text": "<think>\nOkay, so I need to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      7071,
+      700
+    ]
+  },
+  "arrow_prefix:13:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 13,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "arrow_prefix:14:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 14,
+    "prefix_text": "<think>\nOkay, let's start by explaining how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1191,
+      553,
+      25021,
+      1246
+    ]
+  },
+  "arrow_prefix:15:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 15,
+    "prefix_text": "<think>\nOkay, I need to design a simple",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      2884,
+      264,
+      4285
+    ]
+  },
+  "arrow_prefix:16:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 16,
+    "prefix_text": "<think>\nOkay, the user is asking about dead",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      5593
+    ]
+  },
+  "arrow_prefix:17:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 17,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "arrow_prefix:18:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 18,
+    "prefix_text": "<think>\nOkay, the user is asking why ice",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      9853
+    ]
+  },
+  "arrow_prefix:19:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 19,
+    "prefix_text": "<think>\nOkay, the user wants me to explain",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      10339
+    ]
+  },
+  "arrow_prefix:20:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 20,
+    "prefix_text": "<think>\nOkay, so the user is asking what",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      374,
+      10161,
+      1128
+    ]
+  },
+  "arrow_prefix:21:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 21,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "arrow_prefix:22:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 22,
+    "prefix_text": "<think>\nOkay, the user is asking why nothing",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      4302
+    ]
+  },
+  "arrow_prefix:23:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 23,
+    "prefix_text": "<think>\nOkay, the user is asking how CR",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1246,
+      12617
+    ]
+  },
+  "arrow_prefix:24:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 24,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "arrow_prefix:25:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 25,
+    "prefix_text": "<think>\nOkay, so the user is asking about",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      374,
+      10161,
+      911
+    ]
+  },
+  "arrow_prefix:26:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 26,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "arrow_prefix:27:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 27,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "arrow_prefix:28:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 28,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "arrow_prefix:29:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 29,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "arrow_prefix:30:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 30,
+    "prefix_text": "<think>\nOkay, the user wants me to compare",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      9429
+    ]
+  },
+  "arrow_prefix:31:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 31,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "arrow_prefix:32:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 32,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "arrow_prefix:33:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 33,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "arrow_prefix:34:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 34,
+    "prefix_text": "<think>\nOkay, let me try to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      752,
+      1430,
+      311,
+      7071,
+      700
+    ]
+  },
+  "arrow_prefix:35:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 35,
+    "prefix_text": "<think>\nOkay, so I need to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      7071,
+      700
+    ]
+  },
+  "arrow_prefix:36:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 36,
+    "prefix_text": "<think>\nOkay, let's see. The farmer",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      36400
+    ]
+  },
+  "arrow_prefix:37:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 37,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "arrow_prefix:38:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 38,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "arrow_prefix:39:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 39,
+    "prefix_text": "<think>\nOkay, let's see. I have",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      614
+    ]
+  },
+  "arrow_prefix:40:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 40,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "arrow_prefix:41:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 41,
+    "prefix_text": "<think>\nOkay, let's try to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1430,
+      311,
+      7071,
+      700
+    ]
+  },
+  "arrow_prefix:42:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 42,
+    "prefix_text": "<think>\nOkay, the user wants a short f",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      2805,
+      282
+    ]
+  },
+  "arrow_prefix:43:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 43,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "arrow_prefix:44:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 44,
+    "prefix_text": "<think>\nOkay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ]
+  },
+  "arrow_prefix:45:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 45,
+    "prefix_text": "<think>\nOkay, the user is asking me to",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      752,
+      311
+    ]
+  },
+  "arrow_prefix:46:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 46,
+    "prefix_text": "<think>\nOkay, the user wants me to explain",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      10339
+    ]
+  },
+  "arrow_prefix:47:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 47,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "arrow_prefix:48:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 48,
+    "prefix_text": "<think>\nOkay, the user is asking for the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      279
+    ]
+  },
+  "arrow_prefix:49:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 49,
+    "prefix_text": "<think>\nOkay, so the user is asking what",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      374,
+      10161,
+      1128
+    ]
+  },
+  "third_person:00:00": {
+    "task": "third_person",
+    "prompt_idx": 0,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "third_person:01:00": {
+    "task": "third_person",
+    "prompt_idx": 1,
+    "prefix_text": "<think>\nOkay, the user is asking for the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      279
+    ]
+  },
+  "third_person:02:00": {
+    "task": "third_person",
+    "prompt_idx": 2,
+    "prefix_text": "<think>\nOkay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ]
+  },
+  "third_person:03:00": {
+    "task": "third_person",
+    "prompt_idx": 3,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "third_person:04:00": {
+    "task": "third_person",
+    "prompt_idx": 4,
+    "prefix_text": "<think>\nOkay, the user wants a proof that",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      11064,
+      429
+    ]
+  },
+  "third_person:05:00": {
+    "task": "third_person",
+    "prompt_idx": 5,
+    "prefix_text": "<think>\nOkay, the assistant needs to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      17847,
+      3880,
+      311,
+      7071,
+      700
+    ]
+  },
+  "third_person:06:00": {
+    "task": "third_person",
+    "prompt_idx": 6,
+    "prefix_text": "<think>\nOkay, the user is asking for the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      279
+    ]
+  },
+  "third_person:07:00": {
+    "task": "third_person",
+    "prompt_idx": 7,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "third_person:08:00": {
+    "task": "third_person",
+    "prompt_idx": 8,
+    "prefix_text": "<think>\nOkay, so the user wants to convert",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      311,
+      5508
+    ]
+  },
+  "third_person:09:00": {
+    "task": "third_person",
+    "prompt_idx": 9,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "third_person:10:00": {
+    "task": "third_person",
+    "prompt_idx": 10,
+    "prefix_text": "<think>\nOkay, the user wants a function to",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      729,
+      311
+    ]
+  },
+  "third_person:11:00": {
+    "task": "third_person",
+    "prompt_idx": 11,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "third_person:12:00": {
+    "task": "third_person",
+    "prompt_idx": 12,
+    "prefix_text": "<think>\nOkay, the user is asking about searching",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      15039
+    ]
+  },
+  "third_person:13:00": {
+    "task": "third_person",
+    "prompt_idx": 13,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "third_person:14:00": {
+    "task": "third_person",
+    "prompt_idx": 14,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "third_person:15:00": {
+    "task": "third_person",
+    "prompt_idx": 15,
+    "prefix_text": "<think>\nOkay, the user wants a simple rate",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      4285,
+      4379
+    ]
+  },
+  "third_person:16:00": {
+    "task": "third_person",
+    "prompt_idx": 16,
+    "prefix_text": "<think>\nOkay, the user is asking about dead",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      5593
+    ]
+  },
+  "third_person:17:00": {
+    "task": "third_person",
+    "prompt_idx": 17,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "third_person:18:00": {
+    "task": "third_person",
+    "prompt_idx": 18,
+    "prefix_text": "<think>\nOkay, the user is asking why ice",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      9853
+    ]
+  },
+  "third_person:19:00": {
+    "task": "third_person",
+    "prompt_idx": 19,
+    "prefix_text": "<think>\nOkay, the user is asking for a",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      264
+    ]
+  },
+  "third_person:20:00": {
+    "task": "third_person",
+    "prompt_idx": 20,
+    "prefix_text": "<think>\nOkay, the user is asking what would",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      1035
+    ]
+  },
+  "third_person:21:00": {
+    "task": "third_person",
+    "prompt_idx": 21,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "third_person:22:00": {
+    "task": "third_person",
+    "prompt_idx": 22,
+    "prefix_text": "<think>\nOkay, the user is asking why nothing",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      4302
+    ]
+  },
+  "third_person:23:00": {
+    "task": "third_person",
+    "prompt_idx": 23,
+    "prefix_text": "<think>\nOkay, the user is asking how CR",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1246,
+      12617
+    ]
+  },
+  "third_person:24:00": {
+    "task": "third_person",
+    "prompt_idx": 24,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "third_person:25:00": {
+    "task": "third_person",
+    "prompt_idx": 25,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "third_person:26:00": {
+    "task": "third_person",
+    "prompt_idx": 26,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "third_person:27:00": {
+    "task": "third_person",
+    "prompt_idx": 27,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "third_person:28:00": {
+    "task": "third_person",
+    "prompt_idx": 28,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "third_person:29:00": {
+    "task": "third_person",
+    "prompt_idx": 29,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "third_person:30:00": {
+    "task": "third_person",
+    "prompt_idx": 30,
+    "prefix_text": "<think>\nOkay, the user wants a comparison and",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      12313,
+      323
+    ]
+  },
+  "third_person:31:00": {
+    "task": "third_person",
+    "prompt_idx": 31,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "third_person:32:00": {
+    "task": "third_person",
+    "prompt_idx": 32,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "third_person:33:00": {
+    "task": "third_person",
+    "prompt_idx": 33,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "third_person:34:00": {
+    "task": "third_person",
+    "prompt_idx": 34,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "third_person:35:00": {
+    "task": "third_person",
+    "prompt_idx": 35,
+    "prefix_text": "<think>\nOkay, the user is presenting a classic",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      31544,
+      264,
+      11416
+    ]
+  },
+  "third_person:36:00": {
+    "task": "third_person",
+    "prompt_idx": 36,
+    "prefix_text": "<think>\nOkay, the farmer has to get the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      36400,
+      702,
+      311,
+      633,
+      279
+    ]
+  },
+  "third_person:37:00": {
+    "task": "third_person",
+    "prompt_idx": 37,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "third_person:38:00": {
+    "task": "third_person",
+    "prompt_idx": 38,
+    "prefix_text": "<think>\nOkay, so the user is asking if",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      374,
+      10161,
+      421
+    ]
+  },
+  "third_person:39:00": {
+    "task": "third_person",
+    "prompt_idx": 39,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "third_person:40:00": {
+    "task": "third_person",
+    "prompt_idx": 40,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "third_person:41:00": {
+    "task": "third_person",
+    "prompt_idx": 41,
+    "prefix_text": "<think>\nOkay, let's try to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1430,
+      311,
+      7071,
+      700
+    ]
+  },
+  "third_person:42:00": {
+    "task": "third_person",
+    "prompt_idx": 42,
+    "prefix_text": "<think>\nOkay, the user wants a short f",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      2805,
+      282
+    ]
+  },
+  "third_person:43:00": {
+    "task": "third_person",
+    "prompt_idx": 43,
+    "prefix_text": "<think>\nOkay, let's break this down.",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1438,
+      419,
+      1495,
+      13
+    ]
+  },
+  "third_person:44:00": {
+    "task": "third_person",
+    "prompt_idx": 44,
+    "prefix_text": "<think>\nOkay, the user wants five creative ways",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      4236,
+      11521,
+      5510
+    ]
+  },
+  "third_person:45:00": {
+    "task": "third_person",
+    "prompt_idx": 45,
+    "prefix_text": "<think>\nOkay, the user is asking what amendment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      27139
+    ]
+  },
+  "third_person:46:00": {
+    "task": "third_person",
+    "prompt_idx": 46,
+    "prefix_text": "<think>\nOkay, the user wants me to explain",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      10339
+    ]
+  },
+  "third_person:47:00": {
+    "task": "third_person",
+    "prompt_idx": 47,
+    "prefix_text": "<think>\nOkay, the user wants a thought experiment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      3381,
+      9342
+    ]
+  },
+  "third_person:48:00": {
+    "task": "third_person",
+    "prompt_idx": 48,
+    "prefix_text": "<think>\nOkay, the user is asking for the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      279
+    ]
+  },
+  "third_person:49:00": {
+    "task": "third_person",
+    "prompt_idx": 49,
+    "prefix_text": "<think>\nOkay, the user is asking what five",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      4236
+    ]
+  },
+  "word_suppression:00:00": {
+    "task": "word_suppression",
+    "prompt_idx": 0,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "word_suppression:01:00": {
+    "task": "word_suppression",
+    "prompt_idx": 1,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "word_suppression:02:00": {
+    "task": "word_suppression",
+    "prompt_idx": 2,
+    "prefix_text": "<think>\nOkay, so I need to solve this",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      11625,
+      419
+    ]
+  },
+  "word_suppression:03:00": {
+    "task": "word_suppression",
+    "prompt_idx": 3,
+    "prefix_text": "<think>\nOkay, let's see. So there",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2055,
+      1052
+    ]
+  },
+  "word_suppression:04:00": {
+    "task": "word_suppression",
+    "prompt_idx": 4,
+    "prefix_text": "<think>\nOkay, I need to prove that the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      12118,
+      429,
+      279
+    ]
+  },
+  "word_suppression:05:00": {
+    "task": "word_suppression",
+    "prompt_idx": 5,
+    "prefix_text": "<think>\nOkay, so I need to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      7071,
+      700
+    ]
+  },
+  "word_suppression:06:00": {
+    "task": "word_suppression",
+    "prompt_idx": 6,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "word_suppression:07:00": {
+    "task": "word_suppression",
+    "prompt_idx": 7,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "word_suppression:08:00": {
+    "task": "word_suppression",
+    "prompt_idx": 8,
+    "prefix_text": "<think>\nOkay, the user wants me to convert",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      5508
+    ]
+  },
+  "word_suppression:09:00": {
+    "task": "word_suppression",
+    "prompt_idx": 9,
+    "prefix_text": "<think>\nOkay, so I need to solve this",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      11625,
+      419
+    ]
+  },
+  "word_suppression:10:00": {
+    "task": "word_suppression",
+    "prompt_idx": 10,
+    "prefix_text": "<think>\nOkay, I need to write a function",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      3270,
+      264,
+      729
+    ]
+  },
+  "word_suppression:11:00": {
+    "task": "word_suppression",
+    "prompt_idx": 11,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "word_suppression:12:00": {
+    "task": "word_suppression",
+    "prompt_idx": 12,
+    "prefix_text": "<think>\nOkay, so I need to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      7071,
+      700
+    ]
+  },
+  "word_suppression:13:00": {
+    "task": "word_suppression",
+    "prompt_idx": 13,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "word_suppression:14:00": {
+    "task": "word_suppression",
+    "prompt_idx": 14,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "word_suppression:15:00": {
+    "task": "word_suppression",
+    "prompt_idx": 15,
+    "prefix_text": "<think>\nOkay, I need to design a simple",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      2884,
+      264,
+      4285
+    ]
+  },
+  "word_suppression:16:00": {
+    "task": "word_suppression",
+    "prompt_idx": 16,
+    "prefix_text": "<think>\nOkay, the user is asking about dead",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      5593
+    ]
+  },
+  "word_suppression:17:00": {
+    "task": "word_suppression",
+    "prompt_idx": 17,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "word_suppression:18:00": {
+    "task": "word_suppression",
+    "prompt_idx": 18,
+    "prefix_text": "<think>\nOkay, the user is asking why ice",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      9853
+    ]
+  },
+  "word_suppression:19:00": {
+    "task": "word_suppression",
+    "prompt_idx": 19,
+    "prefix_text": "<think>\nOkay, let's start by breaking down",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1191,
+      553,
+      14719,
+      1495
+    ]
+  },
+  "word_suppression:20:00": {
+    "task": "word_suppression",
+    "prompt_idx": 20,
+    "prefix_text": "<think>\nOkay, so the user is asking what",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      374,
+      10161,
+      1128
+    ]
+  },
+  "word_suppression:21:00": {
+    "task": "word_suppression",
+    "prompt_idx": 21,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "word_suppression:22:00": {
+    "task": "word_suppression",
+    "prompt_idx": 22,
+    "prefix_text": "<think>\nOkay, the user is asking why nothing",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      4302
+    ]
+  },
+  "word_suppression:23:00": {
+    "task": "word_suppression",
+    "prompt_idx": 23,
+    "prefix_text": "<think>\nOkay, let's start by breaking down",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1191,
+      553,
+      14719,
+      1495
+    ]
+  },
+  "word_suppression:24:00": {
+    "task": "word_suppression",
+    "prompt_idx": 24,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "word_suppression:25:00": {
+    "task": "word_suppression",
+    "prompt_idx": 25,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "word_suppression:26:00": {
+    "task": "word_suppression",
+    "prompt_idx": 26,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "word_suppression:27:00": {
+    "task": "word_suppression",
+    "prompt_idx": 27,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "word_suppression:28:00": {
+    "task": "word_suppression",
+    "prompt_idx": 28,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "word_suppression:29:00": {
+    "task": "word_suppression",
+    "prompt_idx": 29,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "word_suppression:30:00": {
+    "task": "word_suppression",
+    "prompt_idx": 30,
+    "prefix_text": "<think>\nOkay, the user wants a comparison between",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      12313,
+      1948
+    ]
+  },
+  "word_suppression:31:00": {
+    "task": "word_suppression",
+    "prompt_idx": 31,
+    "prefix_text": "<think>\nOkay, so the user is asking about",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      374,
+      10161,
+      911
+    ]
+  },
+  "word_suppression:32:00": {
+    "task": "word_suppression",
+    "prompt_idx": 32,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "word_suppression:33:00": {
+    "task": "word_suppression",
+    "prompt_idx": 33,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "word_suppression:34:00": {
+    "task": "word_suppression",
+    "prompt_idx": 34,
+    "prefix_text": "<think>\nOkay, let's try to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1430,
+      311,
+      7071,
+      700
+    ]
+  },
+  "word_suppression:35:00": {
+    "task": "word_suppression",
+    "prompt_idx": 35,
+    "prefix_text": "<think>\nOkay, so I need to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      7071,
+      700
+    ]
+  },
+  "word_suppression:36:00": {
+    "task": "word_suppression",
+    "prompt_idx": 36,
+    "prefix_text": "<think>\nOkay, let's see. The farmer",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      36400
+    ]
+  },
+  "word_suppression:37:00": {
+    "task": "word_suppression",
+    "prompt_idx": 37,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "word_suppression:38:00": {
+    "task": "word_suppression",
+    "prompt_idx": 38,
+    "prefix_text": "<think>\nOkay, so the question is whether you",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      3405,
+      374,
+      3425,
+      498
+    ]
+  },
+  "word_suppression:39:00": {
+    "task": "word_suppression",
+    "prompt_idx": 39,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "word_suppression:40:00": {
+    "task": "word_suppression",
+    "prompt_idx": 40,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "word_suppression:41:00": {
+    "task": "word_suppression",
+    "prompt_idx": 41,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "word_suppression:42:00": {
+    "task": "word_suppression",
+    "prompt_idx": 42,
+    "prefix_text": "<think>\nOkay, the user wants a short f",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      2805,
+      282
+    ]
+  },
+  "word_suppression:43:00": {
+    "task": "word_suppression",
+    "prompt_idx": 43,
+    "prefix_text": "<think>\nOkay, so there's this classic t",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      1052,
+      594,
+      419,
+      11416,
+      259
+    ]
+  },
+  "word_suppression:44:00": {
+    "task": "word_suppression",
+    "prompt_idx": 44,
+    "prefix_text": "<think>\nOkay, the user wants five creative ways",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      4236,
+      11521,
+      5510
+    ]
+  },
+  "word_suppression:45:00": {
+    "task": "word_suppression",
+    "prompt_idx": 45,
+    "prefix_text": "<think>\nOkay, the user is asking what amendment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      27139
+    ]
+  },
+  "word_suppression:46:00": {
+    "task": "word_suppression",
+    "prompt_idx": 46,
+    "prefix_text": "<think>\nOkay, the user wants me to explain",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      10339
+    ]
+  },
+  "word_suppression:47:00": {
+    "task": "word_suppression",
+    "prompt_idx": 47,
+    "prefix_text": "<think>\nOkay, the user wants a thought experiment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      3381,
+      9342
+    ]
+  },
+  "word_suppression:48:00": {
+    "task": "word_suppression",
+    "prompt_idx": 48,
+    "prefix_text": "<think>\nOkay, the user is asking for the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      279
+    ]
+  },
+  "word_suppression:49:00": {
+    "task": "word_suppression",
+    "prompt_idx": 49,
+    "prefix_text": "<think>\nOkay, the user is asking about what",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1128
+    ]
+  },
+  "multiple_word_suppression:00:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 0,
+    "prefix_text": "<think>\nOkay, let me try to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      752,
+      1430,
+      311,
+      7071,
+      700
+    ]
+  },
+  "multiple_word_suppression:01:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 1,
+    "prefix_text": "<think>\nOkay, the user is asking for the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      279
+    ]
+  },
+  "multiple_word_suppression:02:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 2,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "multiple_word_suppression:03:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 3,
+    "prefix_text": "<think>\nOkay, let's see. So there",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2055,
+      1052
+    ]
+  },
+  "multiple_word_suppression:04:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 4,
+    "prefix_text": "<think>\nOkay, let's try to prove that",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1430,
+      311,
+      12118,
+      429
+    ]
+  },
+  "multiple_word_suppression:05:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 5,
+    "prefix_text": "<think>\nOkay, so I need to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      7071,
+      700
+    ]
+  },
+  "multiple_word_suppression:06:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 6,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "multiple_word_suppression:07:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 7,
+    "prefix_text": "<think>\nOkay, so I need to find the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      1477,
+      279
+    ]
+  },
+  "multiple_word_suppression:08:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 8,
+    "prefix_text": "<think>\nOkay, the user wants to convert the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      311,
+      5508,
+      279
+    ]
+  },
+  "multiple_word_suppression:09:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 9,
+    "prefix_text": "<think>\nOkay, so I need to solve the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      11625,
+      279
+    ]
+  },
+  "multiple_word_suppression:10:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 10,
+    "prefix_text": "<think>\nOkay, I need to write a function",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      3270,
+      264,
+      729
+    ]
+  },
+  "multiple_word_suppression:11:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 11,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "multiple_word_suppression:12:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 12,
+    "prefix_text": "<think>\nOkay, so I need to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      7071,
+      700
+    ]
+  },
+  "multiple_word_suppression:13:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 13,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "multiple_word_suppression:14:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 14,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "multiple_word_suppression:15:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 15,
+    "prefix_text": "<think>\nOkay, the user wants a simple rate",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      4285,
+      4379
+    ]
+  },
+  "multiple_word_suppression:16:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 16,
+    "prefix_text": "<think>\nOkay, the user is asking about dead",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      5593
+    ]
+  },
+  "multiple_word_suppression:17:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 17,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "multiple_word_suppression:18:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 18,
+    "prefix_text": "<think>\nOkay, the user is asking why ice",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      9853
+    ]
+  },
+  "multiple_word_suppression:19:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 19,
+    "prefix_text": "<think>\nOkay, the user wants to know how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      311,
+      1414,
+      1246
+    ]
+  },
+  "multiple_word_suppression:20:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 20,
+    "prefix_text": "<think>\nOkay, the user is asking what would",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      1035
+    ]
+  },
+  "multiple_word_suppression:21:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 21,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "multiple_word_suppression:22:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 22,
+    "prefix_text": "<think>\nOkay, the user is asking why nothing",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      4302
+    ]
+  },
+  "multiple_word_suppression:23:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 23,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "multiple_word_suppression:24:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 24,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "multiple_word_suppression:25:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 25,
+    "prefix_text": "<think>\nOkay, the user is asking about what",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1128
+    ]
+  },
+  "multiple_word_suppression:26:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 26,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "multiple_word_suppression:27:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 27,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "multiple_word_suppression:28:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 28,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "multiple_word_suppression:29:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 29,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "multiple_word_suppression:30:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 30,
+    "prefix_text": "<think>\nOkay, the user wants a comparison between",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      12313,
+      1948
+    ]
+  },
+  "multiple_word_suppression:31:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 31,
+    "prefix_text": "<think>\nOkay, let's tackle this question about",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      21403,
+      419,
+      3405,
+      911
+    ]
+  },
+  "multiple_word_suppression:32:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 32,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "multiple_word_suppression:33:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 33,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "multiple_word_suppression:34:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 34,
+    "prefix_text": "<think>\nOkay, let's see. So there",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2055,
+      1052
+    ]
+  },
+  "multiple_word_suppression:35:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 35,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "multiple_word_suppression:36:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 36,
+    "prefix_text": "<think>\nOkay, let's see. The classic",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      11416
+    ]
+  },
+  "multiple_word_suppression:37:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 37,
+    "prefix_text": "<think>\nOkay, let me try to figure this",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      752,
+      1430,
+      311,
+      7071,
+      419
+    ]
+  },
+  "multiple_word_suppression:38:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 38,
+    "prefix_text": "<think>\nOkay, so I need to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      7071,
+      700
+    ]
+  },
+  "multiple_word_suppression:39:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 39,
+    "prefix_text": "<think>\nOkay, let's see. I have",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      614
+    ]
+  },
+  "multiple_word_suppression:40:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 40,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "multiple_word_suppression:41:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 41,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "multiple_word_suppression:42:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 42,
+    "prefix_text": "<think>\nOkay, the user wants a short f",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      2805,
+      282
+    ]
+  },
+  "multiple_word_suppression:43:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 43,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "multiple_word_suppression:44:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 44,
+    "prefix_text": "<think>\nOkay, the user wants five creative ways",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      4236,
+      11521,
+      5510
+    ]
+  },
+  "multiple_word_suppression:45:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 45,
+    "prefix_text": "<think>\nOkay, the user is asking what amendment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      27139
+    ]
+  },
+  "multiple_word_suppression:46:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 46,
+    "prefix_text": "<think>\nOkay, the user wants me to explain",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      10339
+    ]
+  },
+  "multiple_word_suppression:47:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 47,
+    "prefix_text": "<think>\nOkay, the user wants a thought experiment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      3381,
+      9342
+    ]
+  },
+  "multiple_word_suppression:48:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 48,
+    "prefix_text": "<think>\nOkay, the user is asking for the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      279
+    ]
+  },
+  "multiple_word_suppression:49:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 49,
+    "prefix_text": "<think>\nOkay, the user is asking what five",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      4236
+    ]
+  },
+  "alternating_case:00:00": {
+    "task": "alternating_case",
+    "prompt_idx": 0,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "alternating_case:01:00": {
+    "task": "alternating_case",
+    "prompt_idx": 1,
+    "prefix_text": "<think>\nOkay, let me figure out how to",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      752,
+      7071,
+      700,
+      1246,
+      311
+    ]
+  },
+  "alternating_case:02:00": {
+    "task": "alternating_case",
+    "prompt_idx": 2,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "alternating_case:03:00": {
+    "task": "alternating_case",
+    "prompt_idx": 3,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "alternating_case:04:00": {
+    "task": "alternating_case",
+    "prompt_idx": 4,
+    "prefix_text": "<think>\nOkay, So I Need To Prove",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      2055,
+      358,
+      14656,
+      2014,
+      1298,
+      586
+    ]
+  },
+  "alternating_case:05:00": {
+    "task": "alternating_case",
+    "prompt_idx": 5,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "alternating_case:06:00": {
+    "task": "alternating_case",
+    "prompt_idx": 6,
+    "prefix_text": "<think>\nOkay, so the user is asking for",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      374,
+      10161,
+      369
+    ]
+  },
+  "alternating_case:07:00": {
+    "task": "alternating_case",
+    "prompt_idx": 7,
+    "prefix_text": "<think>\nOkay, let me try to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      752,
+      1430,
+      311,
+      7071,
+      700
+    ]
+  },
+  "alternating_case:08:00": {
+    "task": "alternating_case",
+    "prompt_idx": 8,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "alternating_case:09:00": {
+    "task": "alternating_case",
+    "prompt_idx": 9,
+    "prefix_text": "<think>\nOkay, let me try to solve this",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      752,
+      1430,
+      311,
+      11625,
+      419
+    ]
+  },
+  "alternating_case:10:00": {
+    "task": "alternating_case",
+    "prompt_idx": 10,
+    "prefix_text": "<think>\nOkay, the user wants me to write",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      3270
+    ]
+  },
+  "alternating_case:11:00": {
+    "task": "alternating_case",
+    "prompt_idx": 11,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "alternating_case:12:00": {
+    "task": "alternating_case",
+    "prompt_idx": 12,
+    "prefix_text": "<think>\nOkay, the user is asking how to",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1246,
+      311
+    ]
+  },
+  "alternating_case:13:00": {
+    "task": "alternating_case",
+    "prompt_idx": 13,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "alternating_case:14:00": {
+    "task": "alternating_case",
+    "prompt_idx": 14,
+    "prefix_text": "<think>\nOkay, the user is asking about merge",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      10880
+    ]
+  },
+  "alternating_case:15:00": {
+    "task": "alternating_case",
+    "prompt_idx": 15,
+    "prefix_text": "<think>\nOkay, the user wants a rate lim",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      4379,
+      4568
+    ]
+  },
+  "alternating_case:16:00": {
+    "task": "alternating_case",
+    "prompt_idx": 16,
+    "prefix_text": "<think>\nOkay, the user is asking about dead",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      5593
+    ]
+  },
+  "alternating_case:17:00": {
+    "task": "alternating_case",
+    "prompt_idx": 17,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "alternating_case:18:00": {
+    "task": "alternating_case",
+    "prompt_idx": 18,
+    "prefix_text": "<think>\nOkay, the user is asking why ice",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      9853
+    ]
+  },
+  "alternating_case:19:00": {
+    "task": "alternating_case",
+    "prompt_idx": 19,
+    "prefix_text": "<think>\nOkay, the user wants a step-by",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      3019,
+      14319
+    ]
+  },
+  "alternating_case:20:00": {
+    "task": "alternating_case",
+    "prompt_idx": 20,
+    "prefix_text": "<think>\nOkay, Let's Think About This.",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      6771,
+      594,
+      21149,
+      9975,
+      1096,
+      13
+    ]
+  },
+  "alternating_case:21:00": {
+    "task": "alternating_case",
+    "prompt_idx": 21,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "alternating_case:22:00": {
+    "task": "alternating_case",
+    "prompt_idx": 22,
+    "prefix_text": "<think>\nOkay, the user is asking why nothing",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      4302
+    ]
+  },
+  "alternating_case:23:00": {
+    "task": "alternating_case",
+    "prompt_idx": 23,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "alternating_case:24:00": {
+    "task": "alternating_case",
+    "prompt_idx": 24,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "alternating_case:25:00": {
+    "task": "alternating_case",
+    "prompt_idx": 25,
+    "prefix_text": "<think>\nOkay, the user is asking about antibiotic",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      59495
+    ]
+  },
+  "alternating_case:26:00": {
+    "task": "alternating_case",
+    "prompt_idx": 26,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "alternating_case:27:00": {
+    "task": "alternating_case",
+    "prompt_idx": 27,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "alternating_case:28:00": {
+    "task": "alternating_case",
+    "prompt_idx": 28,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "alternating_case:29:00": {
+    "task": "alternating_case",
+    "prompt_idx": 29,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "alternating_case:30:00": {
+    "task": "alternating_case",
+    "prompt_idx": 30,
+    "prefix_text": "<think>\nOkay, the user is asking to compare",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      311,
+      9429
+    ]
+  },
+  "alternating_case:31:00": {
+    "task": "alternating_case",
+    "prompt_idx": 31,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "alternating_case:32:00": {
+    "task": "alternating_case",
+    "prompt_idx": 32,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "alternating_case:33:00": {
+    "task": "alternating_case",
+    "prompt_idx": 33,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "alternating_case:34:00": {
+    "task": "alternating_case",
+    "prompt_idx": 34,
+    "prefix_text": "<think>\nOkay, let's try to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1430,
+      311,
+      7071,
+      700
+    ]
+  },
+  "alternating_case:35:00": {
+    "task": "alternating_case",
+    "prompt_idx": 35,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "alternating_case:36:00": {
+    "task": "alternating_case",
+    "prompt_idx": 36,
+    "prefix_text": "<think>\nOkay, let's see. The farmer",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      36400
+    ]
+  },
+  "alternating_case:37:00": {
+    "task": "alternating_case",
+    "prompt_idx": 37,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "alternating_case:38:00": {
+    "task": "alternating_case",
+    "prompt_idx": 38,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "alternating_case:39:00": {
+    "task": "alternating_case",
+    "prompt_idx": 39,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "alternating_case:40:00": {
+    "task": "alternating_case",
+    "prompt_idx": 40,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "alternating_case:41:00": {
+    "task": "alternating_case",
+    "prompt_idx": 41,
+    "prefix_text": "<think>\nOkay, let's see. There are",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      525
+    ]
+  },
+  "alternating_case:42:00": {
+    "task": "alternating_case",
+    "prompt_idx": 42,
+    "prefix_text": "<think>\nOkay, the user wants a short f",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      2805,
+      282
+    ]
+  },
+  "alternating_case:43:00": {
+    "task": "alternating_case",
+    "prompt_idx": 43,
+    "prefix_text": "<think>\nOkay, so the user is asking about",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      374,
+      10161,
+      911
+    ]
+  },
+  "alternating_case:44:00": {
+    "task": "alternating_case",
+    "prompt_idx": 44,
+    "prefix_text": "<think>\nOkay, let me start by thinking about",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      752,
+      1191,
+      553,
+      7274,
+      911
+    ]
+  },
+  "alternating_case:45:00": {
+    "task": "alternating_case",
+    "prompt_idx": 45,
+    "prefix_text": "<think>\nOkay, the user is asking what amendment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      27139
+    ]
+  },
+  "alternating_case:46:00": {
+    "task": "alternating_case",
+    "prompt_idx": 46,
+    "prefix_text": "<think>\nOkay, the user wants me to explain",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      10339
+    ]
+  },
+  "alternating_case:47:00": {
+    "task": "alternating_case",
+    "prompt_idx": 47,
+    "prefix_text": "<think>\nOkay, the user wants a thought experiment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      3381,
+      9342
+    ]
+  },
+  "alternating_case:48:00": {
+    "task": "alternating_case",
+    "prompt_idx": 48,
+    "prefix_text": "<think>\nOkay, the user is asking for the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      279
+    ]
+  },
+  "alternating_case:49:00": {
+    "task": "alternating_case",
+    "prompt_idx": 49,
+    "prefix_text": "<think>\nOkay, the user is asking what five",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      4236
+    ]
+  },
+  "lowercase_thinking:00:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 0,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "lowercase_thinking:01:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 1,
+    "prefix_text": "<think>\nokay, so i need to find the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      773,
+      600,
+      1184,
+      311,
+      1477,
+      279
+    ]
+  },
+  "lowercase_thinking:02:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 2,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "lowercase_thinking:03:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 3,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "lowercase_thinking:04:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 4,
+    "prefix_text": "<think>\nokay, so i need to prove that",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      773,
+      600,
+      1184,
+      311,
+      12118,
+      429
+    ]
+  },
+  "lowercase_thinking:05:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 5,
+    "prefix_text": "<think>\nokay, so there's this problem with",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      773,
+      1052,
+      594,
+      419,
+      3491,
+      448
+    ]
+  },
+  "lowercase_thinking:06:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 6,
+    "prefix_text": "<think>\nokay, let's see. the user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      279,
+      1196
+    ]
+  },
+  "lowercase_thinking:07:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 7,
+    "prefix_text": "<think>\nokay, so i need to find the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      773,
+      600,
+      1184,
+      311,
+      1477,
+      279
+    ]
+  },
+  "lowercase_thinking:08:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 8,
+    "prefix_text": "<think>\nokay, let me try to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      1077,
+      752,
+      1430,
+      311,
+      7071,
+      700
+    ]
+  },
+  "lowercase_thinking:09:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 9,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "lowercase_thinking:10:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 10,
+    "prefix_text": "<think>\nokay, i need to write a function",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      600,
+      1184,
+      311,
+      3270,
+      264,
+      729
+    ]
+  },
+  "lowercase_thinking:11:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 11,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "lowercase_thinking:12:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 12,
+    "prefix_text": "<think>\nokay, so i need to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      773,
+      600,
+      1184,
+      311,
+      7071,
+      700
+    ]
+  },
+  "lowercase_thinking:13:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 13,
+    "prefix_text": "<think>\nokay, so the user is asking about",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      374,
+      10161,
+      911
+    ]
+  },
+  "lowercase_thinking:14:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 14,
+    "prefix_text": "<think>\nokay, let's see. the user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      279,
+      1196
+    ]
+  },
+  "lowercase_thinking:15:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 15,
+    "prefix_text": "<think>\nokay, so i need to design a",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      773,
+      600,
+      1184,
+      311,
+      2884,
+      264
+    ]
+  },
+  "lowercase_thinking:16:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 16,
+    "prefix_text": "<think>\nokay, the user is asking about dead",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      5593
+    ]
+  },
+  "lowercase_thinking:17:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 17,
+    "prefix_text": "<think>\nokay, so i need to explain the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      773,
+      600,
+      1184,
+      311,
+      10339,
+      279
+    ]
+  },
+  "lowercase_thinking:18:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 18,
+    "prefix_text": "<think>\nokay, the user is asking why ice",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      9853
+    ]
+  },
+  "lowercase_thinking:19:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 19,
+    "prefix_text": "<think>\nOkay, the user wants a step-by",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      3019,
+      14319
+    ]
+  },
+  "lowercase_thinking:20:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 20,
+    "prefix_text": "<think>\nOkay, the user is asking what would",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      1035
+    ]
+  },
+  "lowercase_thinking:21:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 21,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "lowercase_thinking:22:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 22,
+    "prefix_text": "<think>\nOkay, the user is asking why nothing",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      4302
+    ]
+  },
+  "lowercase_thinking:23:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 23,
+    "prefix_text": "<think>\nOkay, the user is asking how CR",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1246,
+      12617
+    ]
+  },
+  "lowercase_thinking:24:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 24,
+    "prefix_text": "<think>\nokay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "lowercase_thinking:25:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 25,
+    "prefix_text": "<think>\nOkay, the user is asking about antibiotic",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      59495
+    ]
+  },
+  "lowercase_thinking:26:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 26,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "lowercase_thinking:27:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 27,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "lowercase_thinking:28:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 28,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "lowercase_thinking:29:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 29,
+    "prefix_text": "<think>\nokay, let's see. the user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      279,
+      1196
+    ]
+  },
+  "lowercase_thinking:30:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 30,
+    "prefix_text": "<think>\nokay, the user wants me to compare",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      9429
+    ]
+  },
+  "lowercase_thinking:31:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 31,
+    "prefix_text": "<think>\nokay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "lowercase_thinking:32:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 32,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "lowercase_thinking:33:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 33,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "lowercase_thinking:34:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 34,
+    "prefix_text": "<think>\nOkay, let's try to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1430,
+      311,
+      7071,
+      700
+    ]
+  },
+  "lowercase_thinking:35:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 35,
+    "prefix_text": "<think>\nokay, so i need to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      773,
+      600,
+      1184,
+      311,
+      7071,
+      700
+    ]
+  },
+  "lowercase_thinking:36:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 36,
+    "prefix_text": "<think>\nOkay, let's see. The farmer",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      36400
+    ]
+  },
+  "lowercase_thinking:37:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 37,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "lowercase_thinking:38:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 38,
+    "prefix_text": "<think>\nOkay, let's see. The question",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3405
+    ]
+  },
+  "lowercase_thinking:39:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 39,
+    "prefix_text": "<think>\nokay, so i have this problem where",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      773,
+      600,
+      614,
+      419,
+      3491,
+      1380
+    ]
+  },
+  "lowercase_thinking:40:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 40,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "lowercase_thinking:41:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 41,
+    "prefix_text": "<think>\nokay, let's see. there are",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      1052,
+      525
+    ]
+  },
+  "lowercase_thinking:42:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 42,
+    "prefix_text": "<think>\nOkay, the user wants a short f",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      2805,
+      282
+    ]
+  },
+  "lowercase_thinking:43:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 43,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "lowercase_thinking:44:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 44,
+    "prefix_text": "<think>\nOkay, the user wants five creative ways",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      4236,
+      11521,
+      5510
+    ]
+  },
+  "lowercase_thinking:45:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 45,
+    "prefix_text": "<think>\nOkay, the user is asking what amendment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      27139
+    ]
+  },
+  "lowercase_thinking:46:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 46,
+    "prefix_text": "<think>\nokay, the user wants me to explain",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      10339
+    ]
+  },
+  "lowercase_thinking:47:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 47,
+    "prefix_text": "<think>\nokay, the user wants a thought experiment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      3381,
+      9342
+    ]
+  },
+  "lowercase_thinking:48:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 48,
+    "prefix_text": "<think>\nOkay, the user is asking for the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      279
+    ]
+  },
+  "lowercase_thinking:49:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 49,
+    "prefix_text": "<think>\nokay, the user is asking what five",
+    "prefix_token_ids": [
+      151667,
+      198,
+      93217,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      4236
+    ]
+  },
+  "uppercase_thinking:00:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 0,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "uppercase_thinking:01:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 1,
+    "prefix_text": "<think>\nOkay, so I need to find the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      1477,
+      279
+    ]
+  },
+  "uppercase_thinking:02:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 2,
+    "prefix_text": "<think>\nOkay, so I need to solve the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      11625,
+      279
+    ]
+  },
+  "uppercase_thinking:03:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 3,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "uppercase_thinking:04:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 4,
+    "prefix_text": "<think>\nOkay, I need to prove that the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      12118,
+      429,
+      279
+    ]
+  },
+  "uppercase_thinking:05:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 5,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "uppercase_thinking:06:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 6,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "uppercase_thinking:07:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 7,
+    "prefix_text": "<think>\n<think>\nOkay, let's see.",
+    "prefix_token_ids": [
+      151667,
+      198,
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13
+    ]
+  },
+  "uppercase_thinking:08:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 8,
+    "prefix_text": "<think>\nOkay, I need to convert the decimal",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      5508,
+      279,
+      12122
+    ]
+  },
+  "uppercase_thinking:09:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 9,
+    "prefix_text": "<think>\nOkay, let me try to solve this",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      752,
+      1430,
+      311,
+      11625,
+      419
+    ]
+  },
+  "uppercase_thinking:10:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 10,
+    "prefix_text": "<think>\nOkay, I need to write a function",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      3270,
+      264,
+      729
+    ]
+  },
+  "uppercase_thinking:11:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 11,
+    "prefix_text": "<think>\nOkay, I need to explain how a",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      1246,
+      264
+    ]
+  },
+  "uppercase_thinking:12:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 12,
+    "prefix_text": "<think>\nOkay, so the problem is to search",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      3491,
+      374,
+      311,
+      2711
+    ]
+  },
+  "uppercase_thinking:13:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 13,
+    "prefix_text": "<think>\nOkay, I need to explain the difference",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      279,
+      6672
+    ]
+  },
+  "uppercase_thinking:14:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 14,
+    "prefix_text": "<think>\nOkay, I need to explain how merge",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      1246,
+      10880
+    ]
+  },
+  "uppercase_thinking:15:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 15,
+    "prefix_text": "<think>\nOkay, I need to design a simple",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      2884,
+      264,
+      4285
+    ]
+  },
+  "uppercase_thinking:16:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 16,
+    "prefix_text": "<think>\nOkay, the user is asking about dead",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      5593
+    ]
+  },
+  "uppercase_thinking:17:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 17,
+    "prefix_text": "<think>\nOkay, I need to explain the difference",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      279,
+      6672
+    ]
+  },
+  "uppercase_thinking:18:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 18,
+    "prefix_text": "<think>\nOkay, the user is asking why ice",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      9853
+    ]
+  },
+  "uppercase_thinking:19:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 19,
+    "prefix_text": "<think>\nOkay, the user is asking how mRNA",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1246,
+      77772
+    ]
+  },
+  "uppercase_thinking:20:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 20,
+    "prefix_text": "<think>\nOkay, so the user is asking what",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      374,
+      10161,
+      1128
+    ]
+  },
+  "uppercase_thinking:21:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 21,
+    "prefix_text": "<think>\nOkay, I need to explain the greenhouse",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      279,
+      36547
+    ]
+  },
+  "uppercase_thinking:22:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 22,
+    "prefix_text": "<think>\nOkay, the user is asking why nothing",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      4302
+    ]
+  },
+  "uppercase_thinking:23:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 23,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "uppercase_thinking:24:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 24,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "uppercase_thinking:25:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 25,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "uppercase_thinking:26:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 26,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "uppercase_thinking:27:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 27,
+    "prefix_text": "<think>\nOkay, I need to explain the difference",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      279,
+      6672
+    ]
+  },
+  "uppercase_thinking:28:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 28,
+    "prefix_text": "<think>\nOkay, I need to explain how the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      1246,
+      279
+    ]
+  },
+  "uppercase_thinking:29:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 29,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "uppercase_thinking:30:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 30,
+    "prefix_text": "<think>\nOkay, I need to compare and contrast",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      9429,
+      323,
+      12872
+    ]
+  },
+  "uppercase_thinking:31:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 31,
+    "prefix_text": "<think>\nOkay, let's tackle this question.",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      21403,
+      419,
+      3405,
+      13
+    ]
+  },
+  "uppercase_thinking:32:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 32,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "uppercase_thinking:33:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 33,
+    "prefix_text": "<think>\nOkay, THE USER ASKS ABOUT THE",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      3168,
+      13872,
+      5752,
+      40449,
+      51812,
+      3168
+    ]
+  },
+  "uppercase_thinking:34:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 34,
+    "prefix_text": "<think>\nOkay, let's see. So the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2055,
+      279
+    ]
+  },
+  "uppercase_thinking:35:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 35,
+    "prefix_text": "<think>\nOkay, let's see. So there",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2055,
+      1052
+    ]
+  },
+  "uppercase_thinking:36:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 36,
+    "prefix_text": "<think>\nOkay, let's see. The farmer",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      36400
+    ]
+  },
+  "uppercase_thinking:37:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 37,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "uppercase_thinking:38:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 38,
+    "prefix_text": "<think>\nOkay, so the question is whether you",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      3405,
+      374,
+      3425,
+      498
+    ]
+  },
+  "uppercase_thinking:39:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 39,
+    "prefix_text": "<think>\nOkay, I need to figure out how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      7071,
+      700,
+      1246
+    ]
+  },
+  "uppercase_thinking:40:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 40,
+    "prefix_text": "<think>\nOkay, so there's this snail",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      1052,
+      594,
+      419,
+      4131,
+      604
+    ]
+  },
+  "uppercase_thinking:41:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 41,
+    "prefix_text": "<think>\nOkay, let's see. There are",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      525
+    ]
+  },
+  "uppercase_thinking:42:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 42,
+    "prefix_text": "<think>\nOkay, the user wants a short f",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      2805,
+      282
+    ]
+  },
+  "uppercase_thinking:43:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 43,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "uppercase_thinking:44:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 44,
+    "prefix_text": "<think>\nOkay, I need to brainstorm five creative",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      86781,
+      4236,
+      11521
+    ]
+  },
+  "uppercase_thinking:45:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 45,
+    "prefix_text": "<think>\nOkay, the user is asking what amendment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      27139
+    ]
+  },
+  "uppercase_thinking:46:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 46,
+    "prefix_text": "<think>\nOkay, the user wants me to explain",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      10339
+    ]
+  },
+  "uppercase_thinking:47:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 47,
+    "prefix_text": "<think>\nOkay, the user wants a thought experiment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      3381,
+      9342
+    ]
+  },
+  "uppercase_thinking:48:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 48,
+    "prefix_text": "<think>\nOkay, the user is asking for the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      279
+    ]
+  },
+  "uppercase_thinking:49:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 49,
+    "prefix_text": "<think>\nOkay, the user is asking what five",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      4236
+    ]
+  },
+  "repeat_sentences:00:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 0,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "repeat_sentences:01:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 1,
+    "prefix_text": "<think>\nOkay, the user is asking for the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      279
+    ]
+  },
+  "repeat_sentences:02:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 2,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "repeat_sentences:03:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 3,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "repeat_sentences:04:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 4,
+    "prefix_text": "<think>\nOkay, so I need to prove that",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      12118,
+      429
+    ]
+  },
+  "repeat_sentences:05:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 5,
+    "prefix_text": "<think>\nOkay, let's tackle this classic problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      21403,
+      419,
+      11416,
+      3491
+    ]
+  },
+  "repeat_sentences:06:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 6,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "repeat_sentences:07:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 7,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "repeat_sentences:08:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 8,
+    "prefix_text": "<think>\nOkay, so the user wants to convert",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      311,
+      5508
+    ]
+  },
+  "repeat_sentences:09:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 9,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "repeat_sentences:10:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 10,
+    "prefix_text": "<think>\nOkay, I need to write a function",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      3270,
+      264,
+      729
+    ]
+  },
+  "repeat_sentences:11:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 11,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "repeat_sentences:12:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 12,
+    "prefix_text": "<think>\nOkay, so I need to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      7071,
+      700
+    ]
+  },
+  "repeat_sentences:13:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 13,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "repeat_sentences:14:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 14,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "repeat_sentences:15:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 15,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "repeat_sentences:16:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 16,
+    "prefix_text": "<think>\nOkay, the user is asking about dead",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      5593
+    ]
+  },
+  "repeat_sentences:17:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 17,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "repeat_sentences:18:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 18,
+    "prefix_text": "<think>\nOkay, the user is asking why ice",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      9853
+    ]
+  },
+  "repeat_sentences:19:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 19,
+    "prefix_text": "<think>\nOkay, the user wants a step-by",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      3019,
+      14319
+    ]
+  },
+  "repeat_sentences:20:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 20,
+    "prefix_text": "<think>\nOkay, the user is asking what would",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      1035
+    ]
+  },
+  "repeat_sentences:21:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 21,
+    "prefix_text": "<think>\nOkay, the user is asking me to",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      752,
+      311
+    ]
+  },
+  "repeat_sentences:22:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 22,
+    "prefix_text": "<think>\nOkay, the user is asking why nothing",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      4302
+    ]
+  },
+  "repeat_sentences:23:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 23,
+    "prefix_text": "<think>\nOkay, the user is asking how CR",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1246,
+      12617
+    ]
+  },
+  "repeat_sentences:24:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 24,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "repeat_sentences:25:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 25,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "repeat_sentences:26:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 26,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "repeat_sentences:27:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 27,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "repeat_sentences:28:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 28,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "repeat_sentences:29:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 29,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "repeat_sentences:30:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 30,
+    "prefix_text": "<think>\nOkay, the user wants me to compare",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      9429
+    ]
+  },
+  "repeat_sentences:31:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 31,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "repeat_sentences:32:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 32,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "repeat_sentences:33:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 33,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "repeat_sentences:34:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 34,
+    "prefix_text": "<think>\nOkay, so there's this classic hotel",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      1052,
+      594,
+      419,
+      11416,
+      9500
+    ]
+  },
+  "repeat_sentences:35:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 35,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "repeat_sentences:36:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 36,
+    "prefix_text": "<think>\nOkay, let's see. The farmer",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      36400
+    ]
+  },
+  "repeat_sentences:37:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 37,
+    "prefix_text": "<think>\nOkay, let's try to figure out",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1430,
+      311,
+      7071,
+      700
+    ]
+  },
+  "repeat_sentences:38:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 38,
+    "prefix_text": "<think>\nOkay, let's see. The question",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3405
+    ]
+  },
+  "repeat_sentences:39:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 39,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "repeat_sentences:40:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 40,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "repeat_sentences:41:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 41,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "repeat_sentences:42:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 42,
+    "prefix_text": "<think>\nOkay, the user wants a fable",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      282,
+      480
+    ]
+  },
+  "repeat_sentences:43:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 43,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "repeat_sentences:44:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 44,
+    "prefix_text": "<think>\nOkay, the user wants 5 creative",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      220,
+      20,
+      11521
+    ]
+  },
+  "repeat_sentences:45:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 45,
+    "prefix_text": "<think>\nOkay, the user is asking me to",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      752,
+      311
+    ]
+  },
+  "repeat_sentences:46:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 46,
+    "prefix_text": "<think>\nOkay, the user wants me to explain",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      10339
+    ]
+  },
+  "repeat_sentences:47:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 47,
+    "prefix_text": "<think>\nOkay, the user wants a thought experiment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      3381,
+      9342
+    ]
+  },
+  "repeat_sentences:48:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 48,
+    "prefix_text": "<think>\nOkay, the user is asking for the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      279
+    ]
+  },
+  "repeat_sentences:49:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 49,
+    "prefix_text": "<think>\nOkay, the user is asking what five",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      4236
+    ]
+  },
+  "end_of_sentence:00:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 0,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "end_of_sentence:01:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 1,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "end_of_sentence:02:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 2,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "end_of_sentence:03:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 3,
+    "prefix_text": "<think>\nOkay, let's see. So there",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2055,
+      1052
+    ]
+  },
+  "end_of_sentence:04:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 4,
+    "prefix_text": "<think>\nOkay, so I need to prove that",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      12118,
+      429
+    ]
+  },
+  "end_of_sentence:05:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 5,
+    "prefix_text": "<think>\nOkay, let's tackle this problem.",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      21403,
+      419,
+      3491,
+      13
+    ]
+  },
+  "end_of_sentence:06:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 6,
+    "prefix_text": "<think>\nOkay, so I need to find the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      1477,
+      279
+    ]
+  },
+  "end_of_sentence:07:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 7,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "end_of_sentence:08:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 8,
+    "prefix_text": "<think>\nOkay, the user wants me to convert",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      5508
+    ]
+  },
+  "end_of_sentence:09:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 9,
+    "prefix_text": "<think>\nOkay, so I need to solve the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      358,
+      1184,
+      311,
+      11625,
+      279
+    ]
+  },
+  "end_of_sentence:10:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 10,
+    "prefix_text": "<think>\nOkay, the user wants a function to",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      729,
+      311
+    ]
+  },
+  "end_of_sentence:11:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 11,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "end_of_sentence:12:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 12,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "end_of_sentence:13:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 13,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "end_of_sentence:14:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 14,
+    "prefix_text": "<think>\nOkay, I need to explain how merge",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      1246,
+      10880
+    ]
+  },
+  "end_of_sentence:15:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 15,
+    "prefix_text": "<think>\nOkay, the user wants a simple rate",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      4285,
+      4379
+    ]
+  },
+  "end_of_sentence:16:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 16,
+    "prefix_text": "<think>\nOkay, the user is asking about dead",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      5593
+    ]
+  },
+  "end_of_sentence:17:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 17,
+    "prefix_text": "<think>\nOkay, I need to explain the difference",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      279,
+      6672
+    ]
+  },
+  "end_of_sentence:18:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 18,
+    "prefix_text": "<think>\nOkay, the user is asking why ice",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      9853
+    ]
+  },
+  "end_of_sentence:19:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 19,
+    "prefix_text": "<think>\nOkay, the user wants a step-by",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      3019,
+      14319
+    ]
+  },
+  "end_of_sentence:20:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 20,
+    "prefix_text": "<think>\nOkay, the user is asking what would",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      1035
+    ]
+  },
+  "end_of_sentence:21:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 21,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "end_of_sentence:22:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 22,
+    "prefix_text": "<think>\nOkay, the user is asking why nothing",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      4302
+    ]
+  },
+  "end_of_sentence:23:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 23,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "end_of_sentence:24:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 24,
+    "prefix_text": "<think>\nOkay, the user wants to know why",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      311,
+      1414,
+      3170
+    ]
+  },
+  "end_of_sentence:25:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 25,
+    "prefix_text": "<think>\nOkay, the user is asking about antibiotic",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      59495
+    ]
+  },
+  "end_of_sentence:26:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 26,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "end_of_sentence:27:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 27,
+    "prefix_text": "<think>\nOkay, I need to explain the difference",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      279,
+      6672
+    ]
+  },
+  "end_of_sentence:28:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 28,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "end_of_sentence:29:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 29,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "end_of_sentence:30:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 30,
+    "prefix_text": "<think>\nOkay, the user wants a comparison between",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      12313,
+      1948
+    ]
+  },
+  "end_of_sentence:31:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 31,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "end_of_sentence:32:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 32,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "end_of_sentence:33:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 33,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "end_of_sentence:34:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 34,
+    "prefix_text": "<think>\nOkay, let's see. The classic",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      11416
+    ]
+  },
+  "end_of_sentence:35:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 35,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "end_of_sentence:36:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 36,
+    "prefix_text": "<think>\nOkay, let's see. The farmer",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      36400
+    ]
+  },
+  "end_of_sentence:37:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 37,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "end_of_sentence:38:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 38,
+    "prefix_text": "<think>\nOkay, so the user is asking if",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      374,
+      10161,
+      421
+    ]
+  },
+  "end_of_sentence:39:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 39,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "end_of_sentence:40:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 40,
+    "prefix_text": "<think>\nOkay, let's see. The sn",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      4131
+    ]
+  },
+  "end_of_sentence:41:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 41,
+    "prefix_text": "<think>\nOkay, let's see. There are",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      525
+    ]
+  },
+  "end_of_sentence:42:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 42,
+    "prefix_text": "<think>\nOkay, the user wants a short f",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      2805,
+      282
+    ]
+  },
+  "end_of_sentence:43:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 43,
+    "prefix_text": "<think>\nOkay, so the user is asking about",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      374,
+      10161,
+      911
+    ]
+  },
+  "end_of_sentence:44:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 44,
+    "prefix_text": "<think>\nOkay, the user wants five creative ways",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      4236,
+      11521,
+      5510
+    ]
+  },
+  "end_of_sentence:45:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 45,
+    "prefix_text": "<think>\nOkay, the user is asking me to",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      752,
+      311
+    ]
+  },
+  "end_of_sentence:46:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 46,
+    "prefix_text": "<think>\nOkay, the user wants me to explain",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      752,
+      311,
+      10339
+    ]
+  },
+  "end_of_sentence:47:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 47,
+    "prefix_text": "<think>\nOkay, the user wants a thought experiment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      3381,
+      9342
+    ]
+  },
+  "end_of_sentence:48:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 48,
+    "prefix_text": "<think>\nOkay, the user is asking for the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      279
+    ]
+  },
+  "end_of_sentence:49:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 49,
+    "prefix_text": "<think>\nOkay, the user is asking what five",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      4236
+    ]
+  },
+  "meow_between_words:00:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 0,
+    "prefix_text": "<think>\nOkay, let's see. There's",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2619,
+      594
+    ]
+  },
+  "meow_between_words:01:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 1,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "meow_between_words:02:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 2,
+    "prefix_text": "<think>\nOkay, let's see. The equation",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      23606
+    ]
+  },
+  "meow_between_words:03:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 3,
+    "prefix_text": "<think>\nOkay meow let me see meow",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      752,
+      363,
+      1077,
+      752,
+      1490,
+      752,
+      363
+    ]
+  },
+  "meow_between_words:04:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 4,
+    "prefix_text": "<think>\nOkay meow let me meow think",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      752,
+      363,
+      1077,
+      752,
+      752,
+      363,
+      1744
+    ]
+  },
+  "meow_between_words:05:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 5,
+    "prefix_text": "<think>\nOkay meow let me think meow",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      752,
+      363,
+      1077,
+      752,
+      1744,
+      752,
+      363
+    ]
+  },
+  "meow_between_words:06:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 6,
+    "prefix_text": "<think>\nOkay meow let me meow think",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      752,
+      363,
+      1077,
+      752,
+      752,
+      363,
+      1744
+    ]
+  },
+  "meow_between_words:07:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 7,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "meow_between_words:08:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 8,
+    "prefix_text": "<think>\nOkay meow let me meow think",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      752,
+      363,
+      1077,
+      752,
+      752,
+      363,
+      1744
+    ]
+  },
+  "meow_between_words:09:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 9,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "meow_between_words:10:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 10,
+    "prefix_text": "<think>\nOkay meow let me think meow",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      752,
+      363,
+      1077,
+      752,
+      1744,
+      752,
+      363
+    ]
+  },
+  "meow_between_words:11:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 11,
+    "prefix_text": "<think>\nOkay, let's see. The user",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      1196
+    ]
+  },
+  "meow_between_words:12:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 12,
+    "prefix_text": "<think>\nOkay, I need to figure out how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      7071,
+      700,
+      1246
+    ]
+  },
+  "meow_between_words:13:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 13,
+    "prefix_text": "<think>\nOkay meow let me meow think",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      752,
+      363,
+      1077,
+      752,
+      752,
+      363,
+      1744
+    ]
+  },
+  "meow_between_words:14:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 14,
+    "prefix_text": "<think>\nOkay, the user is asking about merge",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      10880
+    ]
+  },
+  "meow_between_words:15:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 15,
+    "prefix_text": "<think>\nOkay meow let me think meow",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      752,
+      363,
+      1077,
+      752,
+      1744,
+      752,
+      363
+    ]
+  },
+  "meow_between_words:16:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 16,
+    "prefix_text": "<think>\nOkay, the user is asking about dead",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      5593
+    ]
+  },
+  "meow_between_words:17:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 17,
+    "prefix_text": "<think>\nOkay meow let me meow think",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      752,
+      363,
+      1077,
+      752,
+      752,
+      363,
+      1744
+    ]
+  },
+  "meow_between_words:18:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 18,
+    "prefix_text": "<think>\nOkay meow I need meow to",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      752,
+      363,
+      358,
+      1184,
+      752,
+      363,
+      311
+    ]
+  },
+  "meow_between_words:19:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 19,
+    "prefix_text": "<think>\nOkay, the user wants a step-by",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      3019,
+      14319
+    ]
+  },
+  "meow_between_words:20:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 20,
+    "prefix_text": "<think>\nOkay, the user is asking what would",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      1128,
+      1035
+    ]
+  },
+  "meow_between_words:21:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 21,
+    "prefix_text": "<think>\nOkay, I need to explain the greenhouse",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      279,
+      36547
+    ]
+  },
+  "meow_between_words:22:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 22,
+    "prefix_text": "<think>\nOkay, I need to explain why nothing",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      3170,
+      4302
+    ]
+  },
+  "meow_between_words:23:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 23,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "meow_between_words:24:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 24,
+    "prefix_text": "<think>\nOkay, I need to explain why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      3170,
+      279
+    ]
+  },
+  "meow_between_words:25:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 25,
+    "prefix_text": "<think>\nOkay, I need to explain what causes",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      1128,
+      11137
+    ]
+  },
+  "meow_between_words:26:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 26,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "meow_between_words:27:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 27,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "meow_between_words:28:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 28,
+    "prefix_text": "<think>\nOkay, the user is asking about how",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      1246
+    ]
+  },
+  "meow_between_words:29:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 29,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "meow_between_words:30:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 30,
+    "prefix_text": "<think>\nOkay, the user wants a comparison between",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      12313,
+      1948
+    ]
+  },
+  "meow_between_words:31:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 31,
+    "prefix_text": "<think>\nOkay, let's start by understanding supply",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1191,
+      553,
+      8660,
+      8149
+    ]
+  },
+  "meow_between_words:32:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 32,
+    "prefix_text": "<think>\nOkay, the user is asking why the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      3170,
+      279
+    ]
+  },
+  "meow_between_words:33:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 33,
+    "prefix_text": "<think>\nOkay, the user is asking about the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      911,
+      279
+    ]
+  },
+  "meow_between_words:34:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 34,
+    "prefix_text": "<think>\nOkay, let's see. The classic",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      11416
+    ]
+  },
+  "meow_between_words:35:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 35,
+    "prefix_text": "<think>\nOkay, let's see. I need",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      358,
+      1184
+    ]
+  },
+  "meow_between_words:36:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 36,
+    "prefix_text": "<think>\nOkay, let's see. The farmer",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      36400
+    ]
+  },
+  "meow_between_words:37:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 37,
+    "prefix_text": "<think>\nOkay, let's see. The problem",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      576,
+      3491
+    ]
+  },
+  "meow_between_words:38:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 38,
+    "prefix_text": "<think>\nOkay, let's think about this.",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1744,
+      911,
+      419,
+      13
+    ]
+  },
+  "meow_between_words:39:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 39,
+    "prefix_text": "<think>\nOkay meow let's meow think",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      752,
+      363,
+      1077,
+      594,
+      752,
+      363,
+      1744
+    ]
+  },
+  "meow_between_words:40:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 40,
+    "prefix_text": "<think>\nOkay, let's see. So there",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      1077,
+      594,
+      1490,
+      13,
+      2055,
+      1052
+    ]
+  },
+  "meow_between_words:41:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 41,
+    "prefix_text": "<think>\nOkay meow let me think meow",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      752,
+      363,
+      1077,
+      752,
+      1744,
+      752,
+      363
+    ]
+  },
+  "meow_between_words:42:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 42,
+    "prefix_text": "<think>\nOkay, the user wants a short f",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      2805,
+      282
+    ]
+  },
+  "meow_between_words:43:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 43,
+    "prefix_text": "<think>\nOkay meow let me think meow",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      752,
+      363,
+      1077,
+      752,
+      1744,
+      752,
+      363
+    ]
+  },
+  "meow_between_words:44:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 44,
+    "prefix_text": "<think>\nOkay, the user wants five creative ways",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      4236,
+      11521,
+      5510
+    ]
+  },
+  "meow_between_words:45:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 45,
+    "prefix_text": "<think>\nOkay, meow I need to think",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      752,
+      363,
+      358,
+      1184,
+      311,
+      1744
+    ]
+  },
+  "meow_between_words:46:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 46,
+    "prefix_text": "<think>\nOkay, I need to explain the sunk",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      358,
+      1184,
+      311,
+      10339,
+      279,
+      67165
+    ]
+  },
+  "meow_between_words:47:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 47,
+    "prefix_text": "<think>\nOkay, the user wants a thought experiment",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      6801,
+      264,
+      3381,
+      9342
+    ]
+  },
+  "meow_between_words:48:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 48,
+    "prefix_text": "<think>\nOkay, the user is asking for the",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      279,
+      1196,
+      374,
+      10161,
+      369,
+      279
+    ]
+  },
+  "meow_between_words:49:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 49,
+    "prefix_text": "<think>\nOkay, so the user is asking what",
+    "prefix_token_ids": [
+      151667,
+      198,
+      32313,
+      11,
+      773,
+      279,
+      1196,
+      374,
+      10161,
+      1128
+    ]
+  }
+}

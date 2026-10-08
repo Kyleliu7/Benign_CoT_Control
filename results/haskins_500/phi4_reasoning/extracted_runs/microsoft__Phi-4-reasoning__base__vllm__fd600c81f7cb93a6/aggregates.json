@@ -1,0 +1,20 @@
+[
+  {
+    "aggregate": "all_10",
+    "tasks": "[\"arrow_prefix\", \"third_person\", \"word_suppression\", \"multiple_word_suppression\", \"alternating_case\", \"lowercase_thinking\", \"uppercase_thinking\", \"repeat_sentences\", \"end_of_sentence\", \"meow_between_words\"]",
+    "planned": 500,
+    "completed": 500,
+    "complete": true,
+    "equal_task_mean_original_nonempty_observed": 0.09873281824214139,
+    "equal_task_mean_all_scheduled_including_empty": 0.09873281824214139
+  },
+  {
+    "aggregate": "seven_non_character",
+    "tasks": "[\"arrow_prefix\", \"third_person\", \"word_suppression\", \"multiple_word_suppression\", \"repeat_sentences\", \"end_of_sentence\", \"meow_between_words\"]",
+    "planned": 350,
+    "completed": 350,
+    "complete": true,
+    "equal_task_mean_original_nonempty_observed": 0.12434418071865146,
+    "equal_task_mean_all_scheduled_including_empty": 0.12434418071865146
+  }
+]

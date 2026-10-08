@@ -1,0 +1,2 @@
+model,questions,instruction_following,answer_correct,joint_success,format_valid,missing_answer,truncated,mean_output_tokens,median_output_tokens
+phi4_reasoning_14b_gpt52_high,300,0.12,0.69,0.08,0.8733333333333333,0.12666666666666668,0.023333333333333334,2512.2433333333333,780.0

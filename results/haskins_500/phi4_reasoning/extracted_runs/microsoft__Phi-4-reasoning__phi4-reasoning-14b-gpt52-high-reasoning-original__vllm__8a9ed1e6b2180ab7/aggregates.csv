@@ -1,0 +1,3 @@
+aggregate,tasks,planned,completed,complete,equal_task_mean_original_nonempty_observed,equal_task_mean_all_scheduled_including_empty
+all_10,"[""arrow_prefix"", ""third_person"", ""word_suppression"", ""multiple_word_suppression"", ""alternating_case"", ""lowercase_thinking"", ""uppercase_thinking"", ""repeat_sentences"", ""end_of_sentence"", ""meow_between_words""]",500,500,True,0.16210663962639446,0.16210663962639446
+seven_non_character,"[""arrow_prefix"", ""third_person"", ""word_suppression"", ""multiple_word_suppression"", ""repeat_sentences"", ""end_of_sentence"", ""meow_between_words""]",350,350,True,0.20811150705996878,0.20811150705996878

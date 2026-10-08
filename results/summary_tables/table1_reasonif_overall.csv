@@ -1,0 +1,9 @@
+Model,Condition,IFS_Score,IFS_Count,Accuracy,Acc_Count,Joint_Score,Joint_Count,Avg_Tokens
+Qwen3-14B,Base (Untouched),37.0,111/300,80.3,241/300,11.7,35/300,4401.7
+Qwen3-14B,SFT (gpt52-high),33.3,100/300,65.3,196/300,20.7,62/300,2023.7
+Qwen3-14B,Prefix-OFF (SFT No Constraint),32.3,97/300,73.7,221/300,22.3,67/300,2724.3
+Qwen3-14B,Prefix-ON (SFT Under Constraint),42.0,126/300,73.3,220/300,31.0,93/300,2571.0
+Phi-4-reasoning,Base (Untouched),5.0,15/300,,,,,
+Phi-4-reasoning,SFT (gpt52-high),12.0,36/300,,,,,
+Phi-4-reasoning,Prefix-OFF (Control),5.0,15/300,,,,,
+Phi-4-reasoning,Prefix-ON (Transferred),6.0,18/300,,,,,

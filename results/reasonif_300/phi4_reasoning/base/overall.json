@@ -1,0 +1,14 @@
+[
+  {
+    "model":"phi4_reasoning_14b_base",
+    "questions":300,
+    "instruction_following":0.05,
+    "answer_correct":0.7533333333,
+    "joint_success":0.03,
+    "format_valid":0.9433333333,
+    "missing_answer":0.0566666667,
+    "truncated":0.04,
+    "mean_output_tokens":4044.7533333333,
+    "median_output_tokens":2094.5
+  }
+]
