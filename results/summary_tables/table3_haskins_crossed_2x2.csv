@@ -1,11 +1,11 @@
-Model,Pairing,All_500_Mean,All_500_Strict,All_500_Strict_Count,NonChar_350_Mean,NonChar_350_Strict,NonChar_350_Strict_Count
-Qwen3-14B,Base -> Base (A2),17.82,5.6,28/500,22.65,8.0,28/350
-Qwen3-14B,Base -> SFT (A3),14.88,6.8,34/500,18.25,9.7,34/350
-Qwen3-14B,SFT -> Base (A1 / Prefix-ON),37.34,24.8,124/500,48.02,35.4,124/350
-Qwen3-14B,SFT -> SFT (A4),37.64,23.2,116/500,47.96,33.1,116/350
-Qwen3-14B,SFT -> Base OFF (A5),19.38,6.8,34/500,24.89,9.7,34/350
-Phi-4-reasoning,Base -> Base (A2),10.38,3.4,17/500,12.59,4.9,17/350
-Phi-4-reasoning,Base -> SFT (A3),14.46,7.2,36/500,17.18,10.3,36/350
-Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),10.92,3.0,15/500,13.36,4.3,15/350
-Phi-4-reasoning,SFT -> SFT (A4),18.07,13.8,69/500,22.01,19.7,69/350
-Phi-4-reasoning,SFT -> Base OFF (A5),9.89,2.4,12/500,11.94,3.4,12/350
+Model,Pairing,Status,Cont_All_Mean,Cont_All_Strict_Count,Cont_All_N,Cont_NonChar_Mean,Cont_NonChar_Strict_Count,Cont_NonChar_N,Full_All_Mean,Full_All_Strict_Count
+Qwen3-14B,Base -> Base (A2),OK,17.82,25.0,500.0,16.69,10.0,350.0,17.48,23.0
+Qwen3-14B,Base -> SFT (A3),OK,16.7,21.0,500.0,15.18,8.0,350.0,16.55,20.0
+Qwen3-14B,SFT -> Base (A1 / Prefix-ON),OK,37.34,109.0,500.0,32.3,67.0,350.0,36.28,85.0
+Qwen3-14B,SFT -> SFT (A4),OK,32.07,96.0,500.0,28.68,62.0,350.0,30.93,73.0
+Qwen3-14B,SFT -> Base OFF (A5),UNAVAILABLE (no raw records in repo),,,,,,,,
+Phi-4-reasoning,Base -> Base (A2),OK,10.38,11.0,500.0,12.64,11.0,350.0,10.25,11.0
+Phi-4-reasoning,Base -> SFT (A3),OK,14.46,36.0,500.0,17.18,36.0,350.0,13.08,34.0
+Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),OK,10.92,15.0,500.0,13.36,15.0,350.0,10.44,13.0
+Phi-4-reasoning,SFT -> SFT (A4),OK,18.07,69.0,500.0,22.01,69.0,350.0,16.99,68.0
+Phi-4-reasoning,SFT -> Base OFF (A5),OK,9.89,12.0,500.0,11.94,12.0,350.0,9.74,12.0

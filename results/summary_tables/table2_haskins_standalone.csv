@@ -1,5 +1,5 @@
-Model,Condition,Continuation_Compliance,Strict_Pass_Pct,Strict_Pass_Count
-Qwen3-14B,Base,23.4,13.0,65/500
-Qwen3-14B,SFT,37.89,22.8,114/500
-Phi-4-reasoning,Base,9.87,4.0,20/500
-Phi-4-reasoning,SFT,16.21,9.6,48/500
+Model,Condition,Status,Mean_Compliance,Strict_Count,N,NonChar_Mean,NonChar_Strict_Count,Hit_Token_Limit
+Qwen3-14B,Base,UNAVAILABLE (no raw Qwen standalone Haskins records in repo),,,,,,
+Qwen3-14B,SFT,UNAVAILABLE (no raw Qwen standalone Haskins records in repo),,,,,,
+Phi-4-reasoning,Base,OK,9.87,13,500,12.43,13,52
+Phi-4-reasoning,SFT,OK,16.21,62,500,20.81,62,3

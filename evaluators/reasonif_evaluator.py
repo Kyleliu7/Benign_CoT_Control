@@ -19,15 +19,24 @@ CURRENT_DIR = Path(__file__).resolve().parent
 if str(CURRENT_DIR) not in sys.path:
     sys.path.insert(0, str(CURRENT_DIR))
 
+# The official checker treats a failed language detection as "constraint followed" (returns True). That
+# silently inflates IFS on the language and english_capital constraints whenever the fast-langdetect model
+# cannot be loaded (e.g. offline), so every failure is recorded here and reported loudly.
+LANGDETECT_FAILURES: List[str] = []
+
 try:
     import reasonif_official.instructions.instruction_checker as instruction_checker
     from fast_langdetect import detect as installed_language_detect
 
     def compatible_detect(text, low_memory=False):
         try:
-            result = installed_language_detect(text, low_memory=low_memory)
-        except TypeError:
-            result = installed_language_detect(text, model='lite' if low_memory else 'full')
+            try:
+                result = installed_language_detect(text, low_memory=low_memory)
+            except TypeError:
+                result = installed_language_detect(text, model='lite' if low_memory else 'full')
+        except Exception as exc:
+            LANGDETECT_FAILURES.append(f"{type(exc).__name__}: {exc}"[:200])
+            raise
         if isinstance(result, list):
             if not result:
                 raise ValueError('fast-langdetect returned no predictions')
@@ -146,6 +155,10 @@ def evaluate_reasonif_file(file_path: str) -> Tuple[pd.DataFrame, pd.DataFrame]:
 
     evaluated = [evaluate_reasonif_record(r) for r in records]
     df = pd.DataFrame(evaluated)
+    if LANGDETECT_FAILURES:
+        print(f"WARNING: language detection failed {len(LANGDETECT_FAILURES)} time(s) (first: {LANGDETECT_FAILURES[0]}). "
+              "The official fallback scores those items as compliant, so IFS is inflated for language/english_capital constraints. "
+              "Make the fast-langdetect model available and re-run.", file=sys.stderr)
 
     by_constraint = df.groupby("constraint").agg(
         N=("instruction_following", "count"),

@@ -53,3 +53,7 @@ lid.176.bin
 *.log
 tmp/
 temp/
+
+# Cached copy of the pinned upstream grader (fetched on demand, SHA-256 verified)
+data/_upstream/
+.pytest_cache/

@@ -1,100 +1,338 @@
 """
-Master Table Reproduction and Assertion Script
-Verifies and prints all primary benchmark tables (Tables 1, 2, 3, 4, 5) and appendix tables
-from the paper: "Benign Reasoning Distillation and Early-Token Steering of Chain-of-Thought Controllability".
+Recompute every manuscript table from the raw run files and compare with results/summary_tables/.
+
+Nothing is read from a hard-coded constant: each number below is derived from
+
+  results/haskins_500/**/results.csv, records/, phi4_haskins_500_bundle.json   (Haskins)
+  results/reasonif_300/**/*.jsonl, overall.csv                                  (ReasonIF)
+  results/kl_divergence/caches_float32/*.json, spike_analysis/*.json            (KL)
+
+Usage
+  python scripts/reproduce_tables.py            # recompute, compare with committed CSVs, exit 1 on mismatch
+  python scripts/reproduce_tables.py --write    # (re)write the CSVs in results/summary_tables/
+  python scripts/reproduce_tables.py --rescore-reasonif   # also re-run the official ReasonIF grader
+
+Rows whose raw records are not in this repository are emitted with Status=UNAVAILABLE and empty numbers
+instead of a value copied from elsewhere. A missing value is never a zero.
 """
+import argparse
+import glob
+import json
 import sys
 from pathlib import Path
+
+import numpy as np
 import pandas as pd
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-TABLES_DIR = REPO_ROOT / "results" / "summary_tables"
+RESULTS = REPO_ROOT / "results"
+TABLES = RESULTS / "summary_tables"
+HASKINS = RESULTS / "haskins_500"
+REASONIF = RESULTS / "reasonif_300"
+KL = RESULTS / "kl_divergence"
 
-def print_header(title: str):
-    print("\n" + "=" * 90)
-    print(f" {title.upper()}")
-    print("=" * 90)
+NON_CHAR_7 = ["third_person", "arrow_prefix", "word_suppression", "multiple_word_suppression",
+              "end_of_sentence", "meow_between_words", "repeat_sentences"]
+ALL_10 = NON_CHAR_7 + ["alternating_case", "lowercase_thinking", "uppercase_thinking"]
+QWEN_RUNS = {  # pairing label -> run-directory tag
+    "Base -> Base (A2)": "2x2-base-to-base-on-10tok",
+    "Base -> SFT (A3)": "2x2-base-to-sft-on-10tok",
+    "SFT -> Base (A1 / Prefix-ON)": "2x2-sft-to-base-on-10tok",
+    "SFT -> SFT (A4)": "2x2-sft-to-sft-on-10tok",
+}
+PHI_CONDS = {
+    "Base -> Base (A2)": "a2", "Base -> SFT (A3)": "a3", "SFT -> Base (A1 / Prefix-ON)": "a1",
+    "SFT -> SFT (A4)": "a4", "SFT -> Base OFF (A5)": "a5",
+}
+NA = ""
 
-def reproduce_table1():
-    print_header("Table 1: ReasonIF Benchmark Outcomes (300 Examples)")
-    df = pd.read_csv(TABLES_DIR / "table1_reasonif_overall.csv")
-    print(df.to_string(index=False))
-    # Assertions
-    qwen_base = df[(df["Model"] == "Qwen3-14B") & (df["Condition"] == "Base (Untouched)")].iloc[0]
-    qwen_on = df[(df["Model"] == "Qwen3-14B") & (df["Condition"] == "Prefix-ON (SFT Under Constraint)")].iloc[0]
-    phi_base = df[(df["Model"] == "Phi-4-reasoning") & (df["Condition"] == "Base (Untouched)")].iloc[0]
-    phi_sft = df[(df["Model"] == "Phi-4-reasoning") & (df["Condition"] == "SFT (gpt52-high)")].iloc[0]
-    
-    assert qwen_base["IFS_Score"] == 37.0 and qwen_base["Accuracy"] == 80.3
-    assert qwen_on["IFS_Score"] == 42.0 and qwen_on["Joint_Score"] == 31.0
-    assert phi_base["IFS_Score"] == 5.0 and phi_sft["IFS_Score"] == 12.0
-    print("[PASS] Table 1 assertions verified (0 discrepancies).")
 
-def reproduce_table2():
-    print_header("Table 2: Haskins Standalone Benchmark Results (500 Pairs)")
-    df = pd.read_csv(TABLES_DIR / "table2_haskins_standalone.csv")
-    print(df.to_string(index=False))
-    
-    q_b = df[(df["Model"] == "Qwen3-14B") & (df["Condition"] == "Base")].iloc[0]
-    q_s = df[(df["Model"] == "Qwen3-14B") & (df["Condition"] == "SFT")].iloc[0]
-    p_b = df[(df["Model"] == "Phi-4-reasoning") & (df["Condition"] == "Base")].iloc[0]
-    p_s = df[(df["Model"] == "Phi-4-reasoning") & (df["Condition"] == "SFT")].iloc[0]
-    
-    assert q_b["Continuation_Compliance"] == 23.40 and q_s["Continuation_Compliance"] == 37.89
-    assert p_b["Continuation_Compliance"] == 9.87 and p_s["Continuation_Compliance"] == 16.21
-    print("[PASS] Table 2 assertions verified (0 discrepancies).")
+def truthy(v) -> bool:
+    return v is True or str(v) == "True"
 
-def reproduce_table3():
-    print_header("Table 3: Crossed Haskins 4-Way Prefix Transfer Results")
-    df = pd.read_csv(TABLES_DIR / "table3_haskins_crossed_2x2.csv")
-    print(df.to_string(index=False))
-    
-    q_a2 = df[(df["Model"] == "Qwen3-14B") & (df["Pairing"].str.startswith("Base -> Base"))].iloc[0]
-    q_a1 = df[(df["Model"] == "Qwen3-14B") & (df["Pairing"].str.startswith("SFT -> Base (A1"))].iloc[0]
-    p_a2 = df[(df["Model"] == "Phi-4-reasoning") & (df["Pairing"].str.startswith("Base -> Base"))].iloc[0]
-    p_a1 = df[(df["Model"] == "Phi-4-reasoning") & (df["Pairing"].str.startswith("SFT -> Base (A1"))].iloc[0]
-    
-    assert q_a2["All_500_Mean"] == 17.82 and q_a1["All_500_Mean"] == 37.34
-    assert p_a2["All_500_Mean"] == 10.38 and p_a1["All_500_Mean"] == 10.92
-    print("[PASS] Table 3 assertions verified (0 discrepancies).")
 
-def reproduce_table4():
-    print_header("Table 4: Downstream Forward KL Divergence Percentiles (t > 10)")
-    df = pd.read_csv(TABLES_DIR / "table4_kl_percentiles.csv")
-    print(df.to_string(index=False))
-    
-    qh = df[df["Model_Benchmark"] == "Qwen Haskins"].iloc[0]
-    ph = df[df["Model_Benchmark"] == "Phi-4 Haskins"].iloc[0]
-    qr = df[df["Model_Benchmark"] == "Qwen ReasonIF"].iloc[0]
-    pr = df[df["Model_Benchmark"] == "Phi-4 ReasonIF"].iloc[0]
-    
-    assert qh["Early_Share_Pct"] == 66.66 and ph["Early_Share_Pct"] == 33.70
-    assert qr["Early_Share_Pct"] == 81.37 and pr["Early_Share_Pct"] == 28.09
-    assert ph["Max_Spike"] == 11.89 and pr["Max_Spike"] == 11.57
-    print("[PASS] Table 4 assertions verified (0 discrepancies).")
+def load_jsonl(path: Path):
+    with open(path, "r", encoding="utf-8") as fh:
+        return [json.loads(line) for line in fh if line.strip()]
 
-def reproduce_table5():
-    print_header("Table 5: Qualitative Case Studies of Discrete Token-Level Policing Spikes")
-    df = pd.read_csv(TABLES_DIR / "table5_qualitative_token_spikes.csv")
-    print(df.to_string(index=False))
-    assert len(df) == 7
-    assert 11.88 in df["KL_nats"].values
-    assert 7.13 in df["KL_nats"].values
-    assert 11.65 in df["KL_nats"].values
-    print("[PASS] Table 5 assertions verified (0 discrepancies).")
 
-def main():
-    print("================================================================================")
-    print("BENIGN CHAIN-OF-THOUGHT CONTROL: REPRODUCING ALL MANUSCRIPT TABLES")
-    print("================================================================================")
-    reproduce_table1()
-    reproduce_table2()
-    reproduce_table3()
-    reproduce_table4()
-    reproduce_table5()
-    print("\n" + "=" * 90)
-    print("ALL 5 MANUSCRIPT TABLES REPRODUCED WITH ZERO DISCREPANCIES.")
-    print("================================================================================")
+# --------------------------------------------------------------------------------------------
+# Table 1: ReasonIF
+# --------------------------------------------------------------------------------------------
+def reasonif_row(model, condition, recs, ifs_key, joint_key, source):
+    n = len(recs)
+    ifs = sum(truthy(r[ifs_key]) for r in recs)
+    acc = sum(truthy(r["answer_correct"]) for r in recs)
+    joint = sum(truthy(r[joint_key]) for r in recs)
+    toks = [float(r["output_tokens"]) for r in recs if r.get("output_tokens") not in (None, "")]
+    trunc = sum(truthy(r.get("truncated")) for r in recs)
+    prefix_lens = [len(r["forced_prefix_token_ids"]) for r in recs] if "forced_prefix_token_ids" in recs[0] else []
+    return dict(Model=model, Condition=condition, Status="OK", N=n,
+                IFS_Count=ifs, IFS_Pct=round(100 * ifs / n, 1), Acc_Count=acc, Acc_Pct=round(100 * acc / n, 1),
+                Joint_Count=joint, Joint_Pct=round(100 * joint / n, 1),
+                Mean_Tokens=round(float(np.mean(toks)), 1), Truncated=trunc,
+                Prefix_Shorter_Than_10=sum(1 for l in prefix_lens if l < 10) if prefix_lens else NA,
+                Source=source)
+
+
+def phi_prefix_row(condition, folder):
+    df = pd.read_csv(REASONIF / "phi4_reasoning" / folder / "overall.csv").iloc[0]
+    n = int(df["questions"])
+    ifs, acc = round(df["continuation_instruction_following"] * n), round(df["answer_correct"] * n)
+    joint, trunc = round(df["continuation_joint_success"] * n), round(df["truncated"] * n)
+    return dict(Model="Phi-4-reasoning", Condition=condition, Status="OK (aggregate CSV only; raw records absent)", N=n,
+                IFS_Count=ifs, IFS_Pct=round(100 * ifs / n, 1), Acc_Count=acc, Acc_Pct=round(100 * acc / n, 1),
+                Joint_Count=joint, Joint_Pct=round(100 * joint / n, 1),
+                Mean_Tokens=round(float(df["mean_output_tokens"]), 1), Truncated=trunc,
+                Prefix_Shorter_Than_10=NA, Source=f"phi4_reasoning/{folder}/overall.csv")
+
+
+def table1():
+    q = REASONIF / "qwen3_14b"
+    rows = [dict(Model="Qwen3-14B", Condition="Base (Untouched)", Status="UNAVAILABLE", N=NA, IFS_Count=NA, IFS_Pct=NA,
+                 Acc_Count=NA, Acc_Pct=NA, Joint_Count=NA, Joint_Pct=NA, Mean_Tokens=NA, Truncated=NA,
+                 Prefix_Shorter_Than_10=NA,
+                 Source="reasonif_qwen3_14b_base_untouched.jsonl records model_id=openai/gpt-oss-20b (not Qwen3-14B)")]
+    rows.append(reasonif_row("Qwen3-14B", "SFT (gpt52-high)", load_jsonl(q / "reasonif_qwen3_14b_sft_gpt52_high.jsonl"),
+                             "instruction_following", "joint_success", "reasonif_qwen3_14b_sft_gpt52_high.jsonl"))
+    rows.append(reasonif_row("Qwen3-14B", "Prefix-OFF (continuation-scored)", load_jsonl(q / "reasonif_qwen3_14b_prefix_constraint_off.jsonl"),
+                             "continuation_instruction_following", "continuation_joint_success", "reasonif_qwen3_14b_prefix_constraint_off.jsonl"))
+    rows.append(reasonif_row("Qwen3-14B", "Prefix-ON (continuation-scored)", load_jsonl(q / "reasonif_qwen3_14b_prefix_constraint_on.jsonl"),
+                             "continuation_instruction_following", "continuation_joint_success", "reasonif_qwen3_14b_prefix_constraint_on.jsonl"))
+    p = REASONIF / "phi4_reasoning"
+    rows.append(reasonif_row("Phi-4-reasoning", "Base (Untouched)", load_jsonl(p / "base" / "scored_responses.jsonl"),
+                             "instruction_following", "joint_success", "phi4_reasoning/base/scored_responses.jsonl"))
+    rows.append(reasonif_row("Phi-4-reasoning", "SFT (gpt52-high)", load_jsonl(p / "sft" / "scored_responses.jsonl"),
+                             "instruction_following", "joint_success", "phi4_reasoning/sft/scored_responses.jsonl"))
+    rows.append(phi_prefix_row("Prefix-OFF (continuation-scored)", "prefix_off"))
+    rows.append(phi_prefix_row("Prefix-ON (continuation-scored)", "prefix_on"))
+    return pd.DataFrame(rows)
+
+
+# --------------------------------------------------------------------------------------------
+# Haskins helpers
+# --------------------------------------------------------------------------------------------
+def agg(df, comp_col, strict_col):
+    nc = df[df.task.isin(NON_CHAR_7)]
+    return dict(All_Mean=round(100 * df[comp_col].mean(), 2), All_Strict_Count=int(df[strict_col].sum()), All_N=len(df),
+                NonChar_Mean=round(100 * nc[comp_col].mean(), 2), NonChar_Strict_Count=int(nc[strict_col].sum()), NonChar_N=len(nc))
+
+
+def qwen_frames():
+    out = {}
+    for label, tag in QWEN_RUNS.items():
+        path = glob.glob(str(HASKINS / "qwen3_14b" / f"*{tag}__*" / "results.csv"))
+        assert len(path) == 1, (label, path)
+        out[label] = pd.read_csv(path[0])
+    return out
+
+
+def phi_bundle():
+    return json.loads((HASKINS / "phi4_reasoning" / "phi4_haskins_500_bundle.json").read_text(encoding="utf-8"))
+
+
+def phi_standalone():
+    out = {}
+    for run in sorted((HASKINS / "phi4_reasoning" / "extracted_runs").glob("*/results.csv")):
+        out["SFT" if "gpt52" in run.parent.name else "Base"] = pd.read_csv(run)
+    return out
+
+
+def table2():
+    rows = []
+    for cond in ("Base", "SFT"):
+        rows.append(dict(Model="Qwen3-14B", Condition=cond, Status="UNAVAILABLE (no raw Qwen standalone Haskins records in repo)",
+                         Mean_Compliance=NA, Strict_Count=NA, N=NA, NonChar_Mean=NA, NonChar_Strict_Count=NA, Hit_Token_Limit=NA))
+    for cond, df in phi_standalone().items():
+        a = agg(df, "upstream_compliance", "score_equals_one")
+        rows.append(dict(Model="Phi-4-reasoning", Condition=cond, Status="OK", Mean_Compliance=a["All_Mean"],
+                         Strict_Count=a["All_Strict_Count"], N=a["All_N"], NonChar_Mean=a["NonChar_Mean"],
+                         NonChar_Strict_Count=a["NonChar_Strict_Count"], Hit_Token_Limit=int(df.hit_token_limit.sum())))
+    return pd.DataFrame(rows)
+
+
+def table3():
+    rows = []
+    for label, df in qwen_frames().items():
+        c = agg(df, "continuation_compliance", "continuation_score_one")
+        f = agg(df, "full_compliance", "full_score_one")
+        rows.append(dict(Model="Qwen3-14B", Pairing=label, Status="OK", **{f"Cont_{k}": v for k, v in c.items()},
+                         Full_All_Mean=f["All_Mean"], Full_All_Strict_Count=f["All_Strict_Count"]))
+    rows.append(dict(Model="Qwen3-14B", Pairing="SFT -> Base OFF (A5)", Status="UNAVAILABLE (no raw records in repo)"))
+    bundle = phi_bundle()
+    for label, key in PHI_CONDS.items():
+        aggs = {a["aggregate"]: a for a in bundle["stats"][key]["aggregates"]}
+        a10, a7 = aggs["all_10"], aggs["seven_non_character"]
+        rows.append(dict(
+            Model="Phi-4-reasoning", Pairing=label, Status="OK",
+            Cont_All_Mean=round(100 * a10["continuation_mean_compliance_all_scheduled"], 2),
+            Cont_All_Strict_Count=round(500 * a10["continuation_strict_pass_rate_all_scheduled"]), Cont_All_N=500,
+            Cont_NonChar_Mean=round(100 * a7["continuation_mean_compliance_all_scheduled"], 2),
+            Cont_NonChar_Strict_Count=round(350 * a7["continuation_strict_pass_rate_all_scheduled"]), Cont_NonChar_N=350,
+            Full_All_Mean=round(100 * a10["full_mean_compliance_all_scheduled"], 2),
+            Full_All_Strict_Count=round(500 * a10["full_strict_pass_rate_all_scheduled"])))
+    return pd.DataFrame(rows)
+
+
+def table6_per_task():
+    rows = []
+    for label, df in qwen_frames().items():
+        for task in ALL_10:
+            d = df[df.task == task]
+            rows.append(dict(Model="Qwen3-14B", Pairing=label, Task=task, N=len(d),
+                             Cont_Mean=round(100 * d.continuation_compliance.mean(), 2), Cont_Strict_Count=int(d.continuation_score_one.sum())))
+    bundle = phi_bundle()
+    for label, key in PHI_CONDS.items():
+        for task in ALL_10:
+            t = bundle["stats"][key]["tasks"][task]
+            rows.append(dict(Model="Phi-4-reasoning", Pairing=label, Task=task, N=t["planned"],
+                             Cont_Mean=round(100 * t["mean_continuation_compliance_all_scheduled"], 2),
+                             Cont_Strict_Count=round(t["planned"] * t["rate_continuation_strict_all_scheduled"])))
+    return pd.DataFrame(rows)
+
+
+def table7_run_health():
+    rows = []
+    for label, df in qwen_frames().items():
+        rows.append(dict(Model="Qwen3-14B", Run=label, N=len(df), Hit_3000_Token_Limit=int(df.hit_token_limit.map(truthy).sum()),
+                         Unfinished_Reasoning=int((df.extraction_status == "unfinished_reasoning").sum()),
+                         Mean_Continuation_Tokens=round(df.continuation_tokens.mean(), 1)))
+    for cond, df in phi_standalone().items():
+        rows.append(dict(Model="Phi-4-reasoning", Run=f"standalone {cond}", N=len(df),
+                         Hit_3000_Token_Limit=int(df.hit_token_limit.map(truthy).sum()),
+                         Unfinished_Reasoning=int((df.extraction_status == "unfinished_reasoning").sum()),
+                         Mean_Continuation_Tokens=round(df.generated_tokens.mean(), 1)))
+    return pd.DataFrame(rows)
+
+
+# --------------------------------------------------------------------------------------------
+# Table 4: KL (both windows, stated explicitly)
+# --------------------------------------------------------------------------------------------
+KL_CACHES = [("Qwen Haskins", "qwen3_14b_haskins_500"), ("Phi-4 Haskins", "phi4_haskins_500"),
+             ("Qwen ReasonIF", "qwen3_14b_reasonif_300"), ("Phi-4 ReasonIF", "phi4_reasonif_300")]
+
+
+def table4():
+    rows = []
+    for name, stem in KL_CACHES:
+        data = json.loads((KL / "caches_float32" / f"kl_cache_{stem}.json").read_text(encoding="utf-8"))
+        traces = [np.asarray(r["reasoning_kl"], dtype=np.float64) for r in data["records"].values() if r.get("reasoning_kl")]
+        cohort = [t for t in traces if len(t) >= 100]
+        first100_share = 100 * sum(t[:10].sum() for t in cohort) / sum(t[:100].sum() for t in cohort)
+        full_share = 100 * sum(t[:10].sum() for t in cohort) / sum(t.sum() for t in cohort)
+        down = np.concatenate([t[10:] for t in traces if len(t) > 10])
+        down100 = np.concatenate([t[10:100] for t in cohort])
+        seq_max = [t[10:].max() for t in traces if len(t) > 10]
+        p = np.percentile(down, [50, 90, 95, 99, 99.9])
+        rows.append(dict(Model_Benchmark=name, Traces=len(traces), Cohort_L_ge_100=len(cohort),
+                         Early_Share_Pct_First100_Cohort=round(first100_share, 2),
+                         Early_Share_Pct_Full512_Cohort=round(full_share, 2),
+                         Mean_KL_t1=round(float(np.mean([t[0] for t in traces])), 2),
+                         Tokens_t_gt_10_Full512=len(down), Mean=round(float(down.mean()), 3), P50=round(p[0], 3),
+                         P90=round(p[1], 3), P95=round(p[2], 3), P99=round(p[3], 3), P99_9=round(p[4], 3),
+                         Max_Spike=round(float(down.max()), 2), Seq_Max_P95=round(float(np.percentile(seq_max, 95)), 2),
+                         Tokens_t11_to_100_Cohort=len(down100), Mean_t11_to_100_Cohort=round(float(down100.mean()), 3),
+                         Max_Spike_t11_to_100_Cohort=round(float(down100.max()), 2)))
+    return pd.DataFrame(rows)
+
+
+# --------------------------------------------------------------------------------------------
+# Table 5: strongest recorded spike per Haskins task (Phi-4), straight from the spike records
+# --------------------------------------------------------------------------------------------
+def table5():
+    spikes = json.loads((KL / "spike_analysis" / "spike_token_pairs.json").read_text(encoding="utf-8"))
+    best = {}
+    for s in spikes:
+        if s["task"] not in best or s["kl"] > best[s["task"]]["kl"]:
+            best[s["task"]] = s
+    rows = []
+    for task in ALL_10:
+        s = best[task]
+        rows.append(dict(Task=f"{task}:{s['prompt_idx']}", Pos_t=s["t"], KL_nats=round(s["kl"], 2),
+                         Preceding_Context=s["context"], Base_Token=repr(s["base_token"]), SFT_Token=repr(s["sft_token"]),
+                         Base_Run_Strict=bool(s["base_strict"]), SFT_Run_Strict=bool(s["sft_strict"])))
+    return pd.DataFrame(rows).sort_values("KL_nats", ascending=False).reset_index(drop=True)
+
+
+# --------------------------------------------------------------------------------------------
+def rescore_reasonif() -> int:
+    """Re-run the pinned official ReasonIF grader and compare with stored flags (needs fast-langdetect model)."""
+    sys.path.insert(0, str(REPO_ROOT))
+    from evaluators.reasonif_evaluator import evaluate_reasonif_record, LANGDETECT_FAILURES
+    bad = 0
+    language_dependent = {"language:reasoning_language", "change_case:english_capital"}
+    files = {**{f"qwen/{p.name}": p for p in (REASONIF / "qwen3_14b").glob("*.jsonl")},
+             "phi/base": REASONIF / "phi4_reasoning/base/scored_responses.jsonl",
+             "phi/sft": REASONIF / "phi4_reasoning/sft/scored_responses.jsonl"}
+    for name, path in files.items():
+        recs = load_jsonl(path)
+        new = [evaluate_reasonif_record(r) for r in recs]
+        flag = "official_instruction_following" if "official_instruction_following" in recs[0] else "instruction_following"
+        degraded = bool(LANGDETECT_FAILURES)
+        pairs = [(a, r) for a, r in zip(new, recs) if not (degraded and a["constraint"] in language_dependent)]
+        diff = sum(1 for a, r in pairs if a["instruction_following"] != truthy(r[flag]))
+        note = f" (language/english_capital items excluded: {len(recs) - len(pairs)})" if degraded else ""
+        print(f"  {name:<70s} IFS flag mismatches: {diff}/{len(pairs)}{note}")
+        bad += diff
+    if LANGDETECT_FAILURES:
+        print(f"  WARNING: language detection failed {len(LANGDETECT_FAILURES)} times (fast-langdetect model unavailable); "
+              "language/english_capital items could not be re-scored and were excluded. Re-run with the model available "
+              "to verify those two constraints.")
+    return bad
+
+
+def _norm(value) -> str:
+    """Canonical cell text so 25, 25.0 and '25' compare equal and NaN equals ''."""
+    if isinstance(value, (bool, np.bool_)):
+        return str(bool(value))
+    if value is None or (isinstance(value, float) and np.isnan(value)) or str(value) == "nan":
+        return ""
+    try:
+        return format(float(value), ".10g")
+    except (TypeError, ValueError):
+        return str(value)
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--write", action="store_true", help="write recomputed CSVs to results/summary_tables/")
+    ap.add_argument("--rescore-reasonif", action="store_true", help="re-run the official ReasonIF grader on the raw records")
+    args = ap.parse_args()
+
+    tables = {
+        "table1_reasonif_overall.csv": table1(),
+        "table2_haskins_standalone.csv": table2(),
+        "table3_haskins_crossed_2x2.csv": table3(),
+        "table4_kl_percentiles.csv": table4(),
+        "table5_top_spike_per_task_phi4.csv": table5(),
+        "table6_haskins_per_task.csv": table6_per_task(),
+        "table7_haskins_run_health.csv": table7_run_health(),
+    }
+    mismatches = 0
+    for name, df in tables.items():
+        print("\n" + "=" * 100 + f"\n {name}\n" + "=" * 100)
+        print(df.to_string(index=False))
+        target = TABLES / name
+        if args.write:
+            TABLES.mkdir(parents=True, exist_ok=True)
+            df.to_csv(target, index=False)
+        elif not target.exists():
+            print(f"[MISSING] {target.name} is not committed (run with --write)")
+            mismatches += 1
+        else:
+            old = pd.read_csv(target, dtype=str, keep_default_na=False)
+            same = old.shape == df.shape and list(old.columns) == list(df.columns) and all(
+                _norm(a) == _norm(b) for a, b in zip(old.values.ravel(), df.values.ravel()))
+            print(f"[{'MATCH' if same else 'MISMATCH'}] committed {target.name} vs recomputed")
+            mismatches += 0 if same else 1
+    if args.write:
+        print(f"\nWrote {len(tables)} tables to {TABLES}")
+    if args.rescore_reasonif:
+        print("\nRe-scoring ReasonIF with the official grader ...")
+        mismatches += rescore_reasonif()
+    print("\n" + ("ALL TABLES MATCH RAW DATA." if mismatches == 0 else f"{mismatches} TABLE/RESCORE MISMATCH(ES)."))
+    return 1 if mismatches else 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
