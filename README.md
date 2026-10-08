@@ -112,7 +112,12 @@ pip install -r requirements.txt
 Run the automated table reproduction script:
 
 ```bash
+# Fast assertion verification against all 5 manuscript summary tables
 python scripts/reproduce_tables.py
+
+# Dynamic row-by-row re-evaluation of all 300 ReasonIF completions
+# (Audits all 95 language items per condition with fast-langdetect)
+python scripts/reproduce_tables.py --rescore-reasonif
 ```
 
 This verifies and displays all 5 manuscript tables against the raw scored logs with zero discrepancies.
@@ -135,8 +140,12 @@ python scripts/evaluate_reasonif.py --input_file results/reasonif_300/qwen3_14b/
 
 **Evaluate Haskins 500:**
 ```bash
-# Evaluate continuation compliance on prefix-transferred run:
-python scripts/evaluate_haskins.py --input_file results/haskins_500/qwen3_14b/Qwen__Qwen3-14B__qwen__qwen3-14b__2x2-sft-to-base-on-10tok__81ef2980ca47a7c8 --continuation_only
+# Evaluate continuation compliance on prefix-transferred run (A1):
+python scripts/evaluate_haskins.py --input_file results/haskins_500/qwen3_14b/haskins_qwen3_14b_sft_donor_to_base_on_a1.jsonl --continuation_only
+
+# Evaluate standalone Base or SFT runs:
+python scripts/evaluate_haskins.py --input_file results/haskins_500/qwen3_14b/haskins_qwen3_14b_standalone_base.jsonl
+python scripts/evaluate_haskins.py --input_file results/haskins_500/qwen3_14b/haskins_qwen3_14b_standalone_sft.jsonl
 ```
 
 **Compute Forward KL Divergence & Percentiles:**
