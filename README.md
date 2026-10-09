@@ -153,7 +153,7 @@ configs/                SFT configs (Qwen3-14B, Phi-4-reasoning)
 data/training/          212-example training set + dataset_info.json (only the shipped dataset is registered)
 data/eval_prompts/      50 Haskins questions, calibrated keywords, exact task instructions, ReasonIF-300
 evaluators/             haskins_evaluator.py (paper + semantic scorers), reasonif_evaluator.py, official ReasonIF checkers, tests
-notebooks/              17 generation / evaluation notebooks (vLLM)
+notebooks/              19 generation / evaluation notebooks (vLLM)
 reproducible_figures/   Figures 1-4 (PDF/PNG/SVG) and their source CSVs
 results/
   haskins_500/          Qwen 2x2 runs (results.csv + records/), Phi standalone runs, Phi crossed bundle
@@ -177,3 +177,17 @@ MIT License. The manuscript is not yet on arXiv; cite the repository until it is
   url    = {https://github.com/Kyleliu7/Benign_CoT_Control}
 }
 ```
+
+## Follow-up experiments: prefix controls and longer SFT openings (Qwen3-14B, Haskins)
+
+Inference-only; no training. Regenerate the notebooks with `python scripts/build_control_notebooks.py` and the fixed openings with
+`python scripts/make_prefix_controls.py` (`data/prefix_controls/prefix_controls.json`; copy it next to the notebook).
+
+1. `notebooks/Haskins_500_vLLM_Prefix_Controls_Evaluation.ipynb`: the base model continues from a fixed 10-token opening (`<think>` + 9 tokens).
+   Run once for each `CONTROL_CONDITION`: `handcrafted` (obeys the rule), `named` (names the rule only), `mismatched` (obeys a different rule),
+   `cross_question` (the SFT-donor opening of another question). Compare against the existing Base->Base and SFT->Base runs.
+2. `notebooks/Haskins_500_vLLM_2x2_SFT_Donor_to_Base_PrefixLength_Evaluation.ipynb`: SFT model writes the first N tokens, base continues.
+   Run with `PREFIX_TOKENS = 30` and `100`.
+
+Put each result directory under `results/haskins_500/qwen3_14b/`; `python scripts/analysis_prefix_controls.py` (or `reproduce_tables.py --write`)
+then writes `table16_prefix_controls.csv` and `table17_prefix_length.csv`. Without these runs both are skipped.

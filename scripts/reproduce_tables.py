@@ -385,6 +385,8 @@ def main() -> int:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from analysis_prefix_length_paired import analysis_tables
     tables.update(analysis_tables())
+    from analysis_prefix_controls import controls_tables  # empty unless control / prefix-length runs have been added
+    tables.update(controls_tables())
     mismatches = 0
     for name, df in tables.items():
         print("\n" + "=" * 100 + f"\n {name}\n" + "=" * 100)
