@@ -231,7 +231,7 @@ rows = [[r.Model.split("-")[0].replace("Qwen3", "Qwen"), r.Contrast, f"{r.N_Firs
 write("t11_kl_groups", "Largest downstream KL per trace by single-sample outcome group, Haskins (nats).", "tab:kl-groups", "llrrr",
       ["Model", "Contrast", "$N$ (first / second)", "Mean of per-trace max", "Difference [95\\% CI]"], rows,
       note=r"G1: the base model fails and the SFT model passes on that question in separate runs; G2: both pass; G3: both fail. Bootstrap over traces (5{,}000 resamples). "
-           r"All intervals include zero: the data show no association between a large KL spike and the base model failing the constraint.")
+           r"All intervals include zero: no detectable association between a large KL spike and the base model failing the constraint (small groups, single-sample labels, trace length not controlled).")
 
 # ----------------------------------------------------------------------------------------------- Appendix: lengths
 q = REPO / "results" / "reasonif_300" / "qwen3_14b"
@@ -350,5 +350,28 @@ for tag, label in (("BB", "Base donor (ON)"), ("SB", "SFT donor (ON)")):
         rows.append([label, R(r"\texttt{" + esc(r.injected_prefix_text.replace("\n", "\\n")) + "}"), R(r"\texttt{" + esc(r.injected_prefix_token_ids) + "}")])
 write("a12_prefix_tokens", "Representative injected prefixes and Qwen3 token IDs (third-person task, questions 0--2).", "tab:app-prefix-tokens", "lp{5.5cm}p{5cm}",
       ["Condition", "Prefix text", "Token IDs"], rows, note=r"Every Haskins prefix has exactly ten token IDs; the first is \texttt{<think>} (151667).")
+
+# ----------------------------------------------------------------------------------------------- Appendix: sensitivity analyses
+t18, t19 = pd.read_csv(T / "table18_standalone_window_matched.csv"), pd.read_csv(T / "table19_length_regression.csv")
+t20, t21 = pd.read_csv(T / "table20_prefix_mention.csv"), pd.read_csv(T / "table21_prefix_finished.csv")
+rows = [[("%d words" % int(r.Window_Words)) if str(r.Window_Words).isdigit() else "Full reasoning", r.N_Pairs, f2(r.Base), f2(r.SFT), "%+.2f" % r.Gain, f"{r.Strict_Base}/{r.Strict_SFT}"] for r in t18.itertuples()]
+rows += [[r.Model, "", "", "", "SFT %+.2f" % r.SFT_Coefficient_Points + ("; log(words) %+.2f" % r.Log_Words_Coefficient_Points if str(r.Log_Words_Coefficient_Points) not in ("", "nan") else ""), ""] for r in t19.itertuples()]
+write("a13_standalone_window", "Qwen3-14B standalone Base and SFT scored on the same first $W$ words of each (task, question) pair, all ten Haskins tasks.", "tab:standalone-window",
+      "lrrrrr", ["Window", "Pairs", "Base", "SFT", "Gain", "Strict (B/S)"], rows, rule_after=(len(t18) - 1,),
+      note=r"Pairs are included when both outputs have at least $W$ words. Last rows: coefficients (percentage points) from a linear model of the graded score on task fixed effects and an SFT indicator, "
+           r"with and without the log word count of each output.")
+
+rows = []
+for r in t20[t20.Scope.str.startswith("3 tasks")].itertuples():
+    rows.append([r.Model.split("-")[0].replace("Qwen3", "Qwen"), r.Condition, r.Openings_That_Mention, f2(r.Mean_All), f2(r.Mean_If_Mentions_Scored_Zero),
+                 f2(r.Mean_Mentioning) if str(r.Mean_Mentioning) != "nan" else "--", f2(r.Mean_Not_Mentioning)])
+write("a14_mention", "Openings that state the constraint although the instruction says not to mention it (alternating case, end of sentence, meow; 150 items per condition).", "tab:mention", "llrrrrr",
+      ["Model", "Condition", "Mentioning openings", "Mean", "Mean, mentions scored 0", "Mean, mentioning", "Mean, not mentioning"], rows, rule_after=(3,),
+      note=r"Mention detector: a regular expression applied to the ten-token opening only (\emph{alternat}, \emph{with 'meow'} or a parenthesis containing \emph{meow}, a parenthesis containing \emph{safe}). "
+           r"The upstream grader never penalises mentions; the fifth column is a sensitivity bound that scores every mentioning opening 0.")
+
+rows = [[r.Model.split("-")[0].replace("Qwen3", "Qwen"), r.Condition, r.Prefix_Contains_Close_Think, f2(r.Mean_All), f2(r.Mean_Excluding_Finished)] for r in t21.itertuples()]
+write("a15_finished", "Prefixes that already contain \\texttt{</think>}, so the scored ``continuation'' is the answer, and the effect of excluding them (eight style tasks, 400 items per condition).", "tab:finished",
+      "llrrr", ["Model", "Condition", "Prefix contains close tag", "Mean", "Mean without them"], rows, rule_after=(3,))
 
 print("wrote", len(list(OUT.glob("*.tex"))), "tables to", OUT)

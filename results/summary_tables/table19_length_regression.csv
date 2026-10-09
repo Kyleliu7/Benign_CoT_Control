@@ -1,0 +1,3 @@
+Model,N,SFT_Coefficient_Points,Log_Words_Coefficient_Points
+task fixed effects,1000,13.42,
+task fixed effects + log(words),1000,13.19,-0.28

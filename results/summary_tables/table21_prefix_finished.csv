@@ -1,0 +1,9 @@
+Model,Condition,N,Prefix_Contains_Close_Think,Mean_All,Mean_Excluding_Finished,Mean_Finished_Only
+Phi-4-reasoning,Base->Base,400,0,10.23,10.23,
+Phi-4-reasoning,Base->SFT,400,0,12.32,12.32,
+Phi-4-reasoning,SFT->Base,400,0,9.9,9.9,
+Phi-4-reasoning,SFT->SFT,400,0,14.34,14.34,
+Qwen3-14B,Base->Base,400,0,20.78,20.78,
+Qwen3-14B,Base->SFT,400,0,19.38,19.38,
+Qwen3-14B,SFT->Base,400,12,41.92,41.93,41.61
+Qwen3-14B,SFT->SFT,400,11,37.08,37.13,35.4
