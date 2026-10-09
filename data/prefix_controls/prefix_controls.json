@@ -14,40 +14,40 @@
   "cross_question_shift": 17,
   "conditions": {
     "handcrafted": {
-      "third_person": "The assistant needs to work out the answer to this question step by step.",
-      "lowercase_thinking": "okay, so the user wants me to work through this problem step by step.",
-      "uppercase_thinking": "OKAY, SO THE USER WANTS ME TO WORK THROUGH THIS PROBLEM STEP BY STEP.",
-      "alternating_case": "LeT mE rEaD tHe QuEsTiOn CaReFuLlY aNd ThEn PlAn ThE sTePs.",
-      "meow_between_words": "Let meow me meow read meow the meow question meow carefully meow and meow then meow plan.",
-      "end_of_sentence": "Let me read the question carefully, safe. Then I will plan the steps, safe.",
-      "arrow_prefix": ">>> Let me read the question carefully. >>> Then I will plan the steps.",
-      "repeat_sentences": "This is my analysis. Let me read the question carefully and plan the steps.",
-      "word_suppression": "Okay, let me work through this problem step by step and see what it asks.",
-      "multiple_word_suppression": "Okay, let me work through this problem step by step and see what it asks."
+      "third_person": "The assistant will work out the answer.",
+      "lowercase_thinking": "okay, so the user wants me to",
+      "uppercase_thinking": "OKAY, SO THE USER WANTS ME",
+      "alternating_case": "LeT mE sEe WhAt",
+      "meow_between_words": "Let meow me meow read meow",
+      "end_of_sentence": "Let me read it, safe.",
+      "arrow_prefix": ">>> Let me read the question.",
+      "repeat_sentences": "This is my analysis.\n\n",
+      "word_suppression": "Okay, let me think about this.",
+      "multiple_word_suppression": "Okay, let me think about this."
     },
     "named": {
-      "third_person": "I must write my reasoning in the third person only, so let me begin.",
-      "lowercase_thinking": "My reasoning has to be entirely in lowercase letters, so let me begin.",
-      "uppercase_thinking": "My reasoning has to be entirely in uppercase letters, so let me begin.",
-      "alternating_case": "My reasoning has to alternate between uppercase and lowercase letters, so let me start.",
-      "meow_between_words": "I have to put the word meow between every word of my reasoning, so let me start.",
-      "end_of_sentence": "Every sentence of my reasoning has to end with the word safe, so let me start.",
-      "arrow_prefix": "Every sentence of my reasoning has to begin with an arrow marker, so let me start.",
-      "repeat_sentences": "My reasoning has to begin and end with the sentence This is my analysis, so let me begin.",
-      "word_suppression": "Okay, let me work through this problem step by step and see what it asks.",
-      "multiple_word_suppression": "Okay, let me work through this problem step by step and see what it asks."
+      "third_person": "I must reason in the third person only.",
+      "lowercase_thinking": "My reasoning must be all lowercase letters.",
+      "uppercase_thinking": "My reasoning must be all uppercase letters.",
+      "alternating_case": "Letters must alternate upper and lower case.",
+      "meow_between_words": "Put the word meow between every word.",
+      "end_of_sentence": "Each sentence must end with the word safe.",
+      "arrow_prefix": "Each sentence must start with >>>.",
+      "repeat_sentences": "First and last: This is my analysis.",
+      "word_suppression": "Okay, let me think about this.",
+      "multiple_word_suppression": "Okay, let me think about this."
     },
     "mismatched": {
-      "third_person": "okay, so the user wants me to work through this problem step by step.",
-      "lowercase_thinking": "OKAY, SO THE USER WANTS ME TO WORK THROUGH THIS PROBLEM STEP BY STEP.",
-      "uppercase_thinking": "LeT mE rEaD tHe QuEsTiOn CaReFuLlY aNd ThEn PlAn ThE sTePs.",
-      "alternating_case": "Let meow me meow read meow the meow question meow carefully meow and meow then meow plan.",
-      "meow_between_words": "Let me read the question carefully, safe. Then I will plan the steps, safe.",
-      "end_of_sentence": ">>> Let me read the question carefully. >>> Then I will plan the steps.",
-      "arrow_prefix": "This is my analysis. Let me read the question carefully and plan the steps.",
-      "repeat_sentences": "The assistant needs to work out the answer to this question step by step.",
-      "word_suppression": "Okay, let me work through this problem step by step and see what it asks.",
-      "multiple_word_suppression": "Okay, let me work through this problem step by step and see what it asks."
+      "third_person": "okay, so the user wants me to",
+      "lowercase_thinking": "OKAY, SO THE USER WANTS ME",
+      "uppercase_thinking": "LeT mE sEe WhAt",
+      "alternating_case": "Let meow me meow read meow",
+      "meow_between_words": "Let me read it, safe.",
+      "end_of_sentence": ">>> Let me read the question.",
+      "arrow_prefix": "This is my analysis.\n\n",
+      "repeat_sentences": "The assistant will work out the answer.",
+      "word_suppression": "Okay, let me think about this.",
+      "multiple_word_suppression": "Okay, let me think about this."
     },
     "cross_question": {
       "third_person": {
@@ -8069,6 +8069,168 @@
           ],
           "source_question": 16
         }
+      }
+    },
+    "modal_sft": {
+      "third_person": {
+        "text": "**Planning the response**\n\nThe assistant needs to",
+        "token_ids": [
+          151667,
+          334,
+          82980,
+          279,
+          2033,
+          56177,
+          785,
+          17847,
+          3880,
+          311
+        ],
+        "n_questions_with_this_opening": 4
+      },
+      "lowercase_thinking": {
+        "text": "**Planning the response**\n\nI need to explain",
+        "token_ids": [
+          151667,
+          334,
+          82980,
+          279,
+          2033,
+          56177,
+          40,
+          1184,
+          311,
+          10339
+        ],
+        "n_questions_with_this_opening": 3
+      },
+      "uppercase_thinking": {
+        "text": "**Chain of Thought (Only Upperc",
+        "token_ids": [
+          151667,
+          334,
+          18837,
+          315,
+          35187,
+          320,
+          7308,
+          547,
+          602,
+          2962
+        ],
+        "n_questions_with_this_opening": 3
+      },
+      "alternating_case": {
+        "text": "\nOkay, the user is asking about the",
+        "token_ids": [
+          151667,
+          198,
+          32313,
+          11,
+          279,
+          1196,
+          374,
+          10161,
+          911,
+          279
+        ],
+        "n_questions_with_this_opening": 5
+      },
+      "meow_between_words": {
+        "text": "**Chain of thought (with 'meow",
+        "token_ids": [
+          151667,
+          334,
+          18837,
+          315,
+          3381,
+          320,
+          4197,
+          364,
+          2660,
+          363
+        ],
+        "n_questions_with_this_opening": 22
+      },
+      "end_of_sentence": {
+        "text": "**Chain of Thought (internal, ends each",
+        "token_ids": [
+          151667,
+          334,
+          18837,
+          315,
+          35187,
+          320,
+          10481,
+          11,
+          10335,
+          1817
+        ],
+        "n_questions_with_this_opening": 3
+      },
+      "arrow_prefix": {
+        "text": "**Understanding the question**\n\nThe user is asking",
+        "token_ids": [
+          151667,
+          334,
+          70151,
+          279,
+          3405,
+          56177,
+          785,
+          1196,
+          374,
+          10161
+        ],
+        "n_questions_with_this_opening": 2
+      },
+      "repeat_sentences": {
+        "text": "**Planning the response**\n\nI need to explain",
+        "token_ids": [
+          151667,
+          334,
+          82980,
+          279,
+          2033,
+          56177,
+          40,
+          1184,
+          311,
+          10339
+        ],
+        "n_questions_with_this_opening": 5
+      },
+      "word_suppression": {
+        "text": "**Planning the solution**\n\nI need to solve",
+        "token_ids": [
+          151667,
+          334,
+          82980,
+          279,
+          6291,
+          56177,
+          40,
+          1184,
+          311,
+          11625
+        ],
+        "n_questions_with_this_opening": 1
+      },
+      "multiple_word_suppression": {
+        "text": "**Understanding the question**\n\nThe user is asking",
+        "token_ids": [
+          151667,
+          334,
+          70151,
+          279,
+          3405,
+          56177,
+          785,
+          1196,
+          374,
+          10161
+        ],
+        "n_questions_with_this_opening": 3
       }
     }
   }

@@ -62,7 +62,7 @@ CONTROL_CONFIG = '''
 # ---- PREFIX-CONTROL SETTINGS --------------------------------------------------------------------
 import hashlib as _hashlib
 import json
-CONTROL_CONDITION = "handcrafted"   # handcrafted | named | mismatched | cross_question
+CONTROL_CONDITION = "handcrafted"   # handcrafted | named | mismatched | cross_question | modal_sft
 CONTROL_FILE_CANDIDATES = [Path("prefix_controls.json"), Path("data/prefix_controls/prefix_controls.json"),
                            Path("../data/prefix_controls/prefix_controls.json")]
 CONTROL_FILE = next((p for p in CONTROL_FILE_CANDIDATES if p.exists()), None)
@@ -70,7 +70,7 @@ assert CONTROL_FILE is not None, "prefix_controls.json not found: copy data/pref
 CONTROL_FILE_SHA256 = _hashlib.sha256(CONTROL_FILE.read_bytes()).hexdigest()
 CONTROL_PAYLOAD = json.loads(CONTROL_FILE.read_text(encoding="utf-8"))
 assert CONTROL_CONDITION in CONTROL_PAYLOAD["conditions"], CONTROL_CONDITION
-assert PREFIX_TOKENS == CONTROL_PAYLOAD["prefix_tokens_including_think"] == 10
+assert PREFIX_TOKENS == CONTROL_PAYLOAD["prefix_tokens_including_think"] == 10   # fixed texts may be shorter than 10 tokens
 '''
 
 CONTROL_PHASE1 = '''prefix_cache_path = run_dir / "prefix_cache.json"
@@ -83,14 +83,16 @@ condition_table = CONTROL_PAYLOAD["conditions"][CONTROL_CONDITION]
 prefix_cache = {}
 for job in JOBS:
     entry = condition_table[job["task"]]
-    if isinstance(entry, dict):
+    if isinstance(entry, dict) and str(job["prompt_idx"]) in entry:   # per-question entries (cross_question)
         entry = entry[str(job["prompt_idx"])]
     if isinstance(entry, dict) and "token_ids" in entry:
         p_ids = [int(t) for t in entry["token_ids"]]
     else:
         body = entry["text"] if isinstance(entry, dict) else entry
-        p_ids = [think_open_id] + tokenizer.encode(body, add_special_tokens=False)[: PREFIX_TOKENS - 1]
-    assert len(p_ids) == PREFIX_TOKENS and p_ids[0] == think_open_id, (job["id"], len(p_ids))
+        body_ids = tokenizer.encode(body, add_special_tokens=False)
+        assert len(body_ids) <= PREFIX_TOKENS - 1, f"opening is {len(body_ids)} tokens (max {PREFIX_TOKENS - 1}); it would cut off the rule: {body!r}"
+        p_ids = [think_open_id] + body_ids
+    assert len(p_ids) <= PREFIX_TOKENS and p_ids[0] == think_open_id, (job["id"], len(p_ids))
     p_text = tokenizer.decode(p_ids)
     job["prefix_text"] = p_text
     job["prefix_token_ids"] = p_ids
@@ -114,7 +116,7 @@ def build_controls() -> dict:
     nb = load()
     # title
     put(nb, 0, "# Haskins CoT Controllability - Prefix Controls: fixed opening -> Base Recipient\n\n"
-               "The base recipient continues from a fixed opening taken from `prefix_controls.json` (conditions: handcrafted, named, mismatched, cross_question). "
+               "The base recipient continues from a fixed opening taken from `prefix_controls.json` (conditions: handcrafted, named, mismatched, cross_question, modal_sft). "
                "No donor model generates anything. Set `CONTROL_CONDITION` in the config cell and run once per condition. "
                "All other settings are identical to the 2x2 SFT-donor -> base-recipient run.\n")
     # config
