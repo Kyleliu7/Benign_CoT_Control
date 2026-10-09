@@ -7,6 +7,8 @@ Additional analyses requested by the audit (all derived from raw records in resu
   table11_prefix_examples.csv              the first SFT-donor prefix per task (Qwen and Phi)
   table12_paired_contrasts_haskins.csv     paired cluster-bootstrap CIs (resampling the 50 questions, 10,000 draws, seed 42)
   table13_paired_contrasts_reasonif.csv    paired differences on the 300 ReasonIF items: bootstrap CI + exact McNemar p
+  table14_kl_spike_frequency.csv           how often large downstream forward-KL values occur, per model and benchmark
+  table15_kl_outcome_groups.csv            per-trace maximum downstream KL by single-sample outcome group (G1 vs G3 / G2, bootstrap CI)
 
 These are descriptive. The prefix-conditional split is observational (prefix content and task difficulty are confounded).
 """
@@ -205,6 +207,55 @@ def table_paired_reasonif() -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+KL_DIR = REPO_ROOT / "results" / "kl_divergence"
+KL_SETS = [("Qwen3-14B", "Haskins", "qwen3_14b_haskins_500"), ("Phi-4-reasoning", "Haskins", "phi4_haskins_500"),
+           ("Qwen3-14B", "ReasonIF", "qwen3_14b_reasonif_300"), ("Phi-4-reasoning", "ReasonIF", "phi4_reasonif_300")]
+
+
+def _kl_records(stem):
+    return json.loads((KL_DIR / "caches_float32" / f"kl_cache_{stem}.json").read_text(encoding="utf-8"))["records"]
+
+
+def table_kl_spike_frequency() -> pd.DataFrame:
+    rows = []
+    for model, bench, stem in KL_SETS:
+        traces = [np.asarray(r["reasoning_kl"], dtype=np.float64) for r in _kl_records(stem).values() if len(r["reasoning_kl"]) > 10]
+        down = np.concatenate([t[10:] for t in traces])
+        any5 = sum(bool((t[10:] > 5).any()) for t in traces)
+        rows.append(dict(Model=model, Benchmark=bench, Traces=len(traces), Downstream_Tokens=len(down),
+                         Pct_Tokens_KL_gt_2=round(100 * float((down > 2).mean()), 3), Per_1000_Tokens_KL_gt_5=round(1000 * float((down > 5).mean()), 2),
+                         Per_1000_Tokens_KL_gt_8=round(1000 * float((down > 8).mean()), 3), Traces_With_Any_KL_gt_5=any5,
+                         Pct_Traces_With_Any_KL_gt_5=round(100 * any5 / len(traces), 1), Max_KL=round(float(down.max()), 2)))
+    return pd.DataFrame(rows)
+
+
+def table_kl_outcome_groups() -> pd.DataFrame:
+    rng = np.random.default_rng(SEED)
+    rows = []
+    for model, bench, stem in KL_SETS:
+        if bench != "Haskins":
+            continue
+        recs = _kl_records(stem)
+        csv = pd.read_csv(KL_DIR / "tabular_results_csv" / f"per_sample_reasoning_kl_{stem}.csv")
+        vals = []
+        for r in csv.itertuples():
+            rec = recs.get(str(r.key))
+            if rec is None or len(rec["reasoning_kl"]) <= 10:
+                continue
+            vals.append((r.q_code, float(np.max(rec["reasoning_kl"][10:]))))
+        g = pd.DataFrame(vals, columns=["grp", "maxkl"])
+        for a_label, b_label in (("G1", "G3"), ("G1", "G2")):
+            a, b = g[g.grp == a_label].maxkl.to_numpy(), g[g.grp == b_label].maxkl.to_numpy()
+            if len(a) < 3 or len(b) < 3:
+                continue
+            boots = [rng.choice(a, len(a)).mean() - rng.choice(b, len(b)).mean() for _ in range(5000)]
+            lo, hi = np.percentile(boots, [2.5, 97.5])
+            rows.append(dict(Model=model, Benchmark=bench, Contrast=f"{a_label} (base fails, SFT passes) minus {b_label}",
+                             N_First=len(a), N_Second=len(b), Mean_Max_KL_First=round(float(a.mean()), 2), Mean_Max_KL_Second=round(float(b.mean()), 2),
+                             Difference=round(float(a.mean() - b.mean()), 2), CI95_Low=round(float(lo), 2), CI95_High=round(float(hi), 2)))
+    return pd.DataFrame(rows)
+
+
 def analysis_tables() -> dict:
     L = load_long()
     content, per_task = table_prefix_content(L)
@@ -216,6 +267,8 @@ def analysis_tables() -> dict:
         "table11_prefix_examples.csv": table_prefix_examples(L),
         "table12_paired_contrasts_haskins.csv": table_paired_haskins(L),
         "table13_paired_contrasts_reasonif.csv": table_paired_reasonif(),
+        "table14_kl_spike_frequency.csv": table_kl_spike_frequency(),
+        "table15_kl_outcome_groups.csv": table_kl_outcome_groups(),
     }
 
 

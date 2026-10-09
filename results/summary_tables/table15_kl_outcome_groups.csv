@@ -1,0 +1,5 @@
+Model,Benchmark,Contrast,N_First,N_Second,Mean_Max_KL_First,Mean_Max_KL_Second,Difference,CI95_Low,CI95_High
+Qwen3-14B,Haskins,"G1 (base fails, SFT passes) minus G3",69,396,3.56,4.12,-0.56,-1.21,0.09
+Qwen3-14B,Haskins,"G1 (base fails, SFT passes) minus G2",69,8,3.56,4.64,-1.08,-3.5,1.14
+Phi-4-reasoning,Haskins,"G1 (base fails, SFT passes) minus G3",50,436,3.79,3.17,0.62,-0.17,1.51
+Phi-4-reasoning,Haskins,"G1 (base fails, SFT passes) minus G2",50,12,3.79,2.56,1.23,-0.42,2.65

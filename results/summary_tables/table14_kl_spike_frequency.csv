@@ -1,0 +1,5 @@
+Model,Benchmark,Traces,Downstream_Tokens,Pct_Tokens_KL_gt_2,Per_1000_Tokens_KL_gt_5,Per_1000_Tokens_KL_gt_8,Traces_With_Any_KL_gt_5,Pct_Traces_With_Any_KL_gt_5,Max_KL
+Qwen3-14B,Haskins,487,141147,0.742,1.56,0.524,152,31.2,15.01
+Phi-4-reasoning,Haskins,499,76061,1.207,1.97,0.434,95,19.0,11.89
+Qwen3-14B,ReasonIF,284,106765,0.113,0.24,0.056,23,8.1,17.75
+Phi-4-reasoning,ReasonIF,300,105435,0.095,0.09,0.019,9,3.0,11.57

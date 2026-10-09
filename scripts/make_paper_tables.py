@@ -218,6 +218,21 @@ write("t9_kl", "Forward KL $\\mathcal{D}_{\\mathrm{KL}}(\\pi_{\\mathrm{SFT}}\\|\
            r"or over the whole measured trace (column 5), both for traces with at least 100 tokens. Tokens $t{>}10$ through Seq.\ max P95 use every trace longer than 10 tokens and every "
            r"position up to 512. Seq.\ max P95 is the 95th percentile over traces of the largest downstream KL. Qwen's largest downstream values exceed Phi's on both benchmarks.")
 
+# ----------------------------------------------------------------------------------------------- KL spikes / outcome groups
+t14 = pd.read_csv(T / "table14_kl_spike_frequency.csv")
+t15 = pd.read_csv(T / "table15_kl_outcome_groups.csv")
+rows = [[f"{r.Model.split('-')[0].replace('Qwen3','Qwen')} {r.Benchmark}", f"{r.Downstream_Tokens:,}", f"{r.Pct_Tokens_KL_gt_2:.2f}", f"{r.Per_1000_Tokens_KL_gt_5:.2f}",
+         f"{r.Traces_With_Any_KL_gt_5}/{r.Traces} ({r.Pct_Traces_With_Any_KL_gt_5:.1f})", f"{r.Max_KL:.2f}"] for r in t14.itertuples()]
+write("t10_kl_spikes", "How often large downstream forward-KL values occur (tokens after position 10, nats).", "tab:kl-spikes", "lrrrrr",
+      ["Model / benchmark", "Tokens", "\\% tokens $>2$", "Tokens $>5$ per 1000", "Traces with any $>5$ (\\%)", "Largest value"], rows,
+      note=r"Computed on every trace longer than 10 tokens over the first $\le$512 positions. Qwen has the larger share of traces with a spike on both benchmarks and the larger maximum; Phi's per-token rate of values above 5 nats is slightly higher only on Haskins.")
+rows = [[r.Model.split("-")[0].replace("Qwen3", "Qwen"), r.Contrast, f"{r.N_First} / {r.N_Second}", f"{r.Mean_Max_KL_First:.2f} / {r.Mean_Max_KL_Second:.2f}",
+         f"{r.Difference:+.2f} [{r.CI95_Low:+.2f}, {r.CI95_High:+.2f}]"] for r in t15.itertuples()]
+write("t11_kl_groups", "Largest downstream KL per trace by single-sample outcome group, Haskins (nats).", "tab:kl-groups", "llrrr",
+      ["Model", "Contrast", "$N$ (first / second)", "Mean of per-trace max", "Difference [95\\% CI]"], rows,
+      note=r"G1: the base model fails and the SFT model passes on that question in separate runs; G2: both pass; G3: both fail. Bootstrap over traces (5{,}000 resamples). "
+           r"All intervals include zero: the data show no association between a large KL spike and the base model failing the constraint.")
+
 # ----------------------------------------------------------------------------------------------- Appendix: lengths
 q = REPO / "results" / "reasonif_300" / "qwen3_14b"
 p = REPO / "results" / "reasonif_300" / "phi4_reasoning"
