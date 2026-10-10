@@ -353,7 +353,7 @@ write("a12_prefix_tokens", "Representative injected prefixes and Qwen3 token IDs
 
 # ----------------------------------------------------------------------------------------------- Appendix: sensitivity analyses
 t18, t19 = pd.read_csv(T / "table18_standalone_window_matched.csv"), pd.read_csv(T / "table19_length_regression.csv")
-t20, t21 = pd.read_csv(T / "table20_prefix_mention.csv"), pd.read_csv(T / "table21_prefix_finished.csv")
+t21, t22 = pd.read_csv(T / "table21_prefix_finished.csv"), pd.read_csv(T / "table22_prefix_conditional_by_task.csv")
 rows = [[("%d words" % int(r.Window_Words)) if str(r.Window_Words).isdigit() else "Full reasoning", r.N_Pairs, f2(r.Base), f2(r.SFT), "%+.2f" % r.Gain, f"{r.Strict_Base}/{r.Strict_SFT}"] for r in t18.itertuples()]
 rows += [[r.Model, "", "", "", "SFT %+.2f" % r.SFT_Coefficient_Points + ("; log(words) %+.2f" % r.Log_Words_Coefficient_Points if str(r.Log_Words_Coefficient_Points) not in ("", "nan") else ""), ""] for r in t19.itertuples()]
 write("a13_standalone_window", "Qwen3-14B standalone Base and SFT scored on the same first $W$ words of each (task, question) pair, all ten Haskins tasks.", "tab:standalone-window",
@@ -365,4 +365,9 @@ rows = [[r.Model.split("-")[0].replace("Qwen3", "Qwen"), r.Condition, r.Prefix_C
 write("a15_finished", "Prefixes that already contain \\texttt{</think>}, so the scored ``continuation'' is the answer, and the effect of excluding them (eight style tasks, 400 items per condition).", "tab:finished",
       "llrrr", ["Model", "Condition", "Prefix contains close tag", "Mean", "Mean without them"], rows, rule_after=(3,))
 
+rows = [[r.Model.split("-")[0].replace("Qwen3", "Qwen"), TASK_NAMES.get(r.Task, r.Task), f"{r.N_Names}", f2(r.Mean_Names), f"{r.N_Not}", f2(r.Mean_Not), "%+.2f" % r.Difference] for r in t22.itertuples()]
+rows.sort(key=lambda x: (x[0] != "Qwen", x[1]))
+write("a16_prefix_by_task", "SFT$\\to$Base continuation score split by whether the SFT-donor opening names or demonstrates the constraint, within task (tasks with at least five items in each group).", "tab:prefix-by-task",
+      "llrrrrr", ["Model", "Task", "Names (n)", "Mean", "Does not (n)", "Mean", "Difference"], rows,
+      note=r"Observational. The indicator is a regular expression on the ten-token opening. Third person is at ceiling in both groups; meow is near floor under the binary rule.")
 print("wrote", len(list(OUT.glob("*.tex"))), "tables to", OUT)

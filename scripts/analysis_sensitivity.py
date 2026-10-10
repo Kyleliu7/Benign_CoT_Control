@@ -6,6 +6,7 @@ Sensitivity analyses added after an independent review (all from raw records in 
   table20_prefix_mention.csv              openings that state the constraint although the instruction says not to mention it
                                           (alternating_case, end_of_sentence, meow_between_words), and the effect on compliance
   table21_prefix_finished.csv             prefixes that already contain </think> (the "continuation" is then the answer), with and without them
+  table22_prefix_conditional_by_task.csv  SFT->Base continuation score split by whether the opening names/demonstrates the constraint, within each task
 
 The upstream grader (pinned commit 38dca62) never penalises mentioning the constraint; it only checks the visible-text rule.
 Table 20 is therefore a sensitivity check that applies a mention detector to the 10-token openings only; it is a heuristic.
@@ -96,7 +97,16 @@ def prefix_tables():
         fin.append(dict(Model=model, Condition=COND_LABEL[cond], N=len(g), Prefix_Contains_Close_Think=int(g.finished.sum()),
                         Mean_All=round(100 * g.comp.mean(), 2), Mean_Excluding_Finished=round(100 * g[~g.finished].comp.mean(), 2),
                         Mean_Finished_Only=round(100 * g[g.finished].comp.mean(), 2) if g.finished.any() else ""))
-    return {"table20_prefix_mention.csv": pd.DataFrame(rows), "table21_prefix_finished.csv": pd.DataFrame(fin)}
+    within = []
+    for (model, cond), g in L[L.cond.isin(["SB"])].groupby(["model", "cond"]):
+        g = g.assign(names=[bool(re.search(A.NAMES_CONSTRAINT[t], b, re.I)) for t, b in zip(g.task, g.body)])
+        for task, t in g.groupby("task"):
+            yes, no = t[t.names], t[~t.names]
+            if len(yes) >= 5 and len(no) >= 5:
+                within.append(dict(Model=model, Condition=COND_LABEL[cond], Task=task, N_Names=len(yes), Mean_Names=round(100 * yes.comp.mean(), 2),
+                                   N_Not=len(no), Mean_Not=round(100 * no.comp.mean(), 2), Difference=round(100 * (yes.comp.mean() - no.comp.mean()), 2)))
+    return {"table20_prefix_mention.csv": pd.DataFrame(rows), "table21_prefix_finished.csv": pd.DataFrame(fin),
+            "table22_prefix_conditional_by_task.csv": pd.DataFrame(within)}
 
 
 def sensitivity_tables() -> dict:
