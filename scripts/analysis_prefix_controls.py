@@ -107,16 +107,20 @@ def controls_tables(extra_runs: dict = None) -> dict:
     length_rows = []
     sb = runs.get("SB")
     if sb is not None:
+        fin10 = sb.injected_prefix_text.str.contains("</think>")
         length_rows.append(dict(Opening_Tokens=10, N=len(sb), Continuation_Mean=round(100 * sb.continuation_compliance.mean(), 2),
+                                Continuation_Mean_Excluding_Finished=round(100 * sb[~fin10].continuation_compliance.mean(), 2),
                                 Full_Trace_Mean=round(100 * sb.full_compliance.mean(), 2), Strict_Continuation=int(sb.continuation_score_one.sum()),
-                                Donor_Finished_Inside_Opening=""))
+                                Donor_Finished_Inside_Opening=int(fin10.sum())))
     for path in _find("*2x2-sft-to-base-on-*tok__*"):
         m = re.search(r"on-(\d+)tok__", path)
         if not m or int(m.group(1)) == 10:
             continue
         df = _load(path)
-        finished = int(df.injected_prefix_text.str.contains("</think>").sum())
+        fin = df.injected_prefix_text.str.contains("</think>")
+        finished = int(fin.sum())
         length_rows.append(dict(Opening_Tokens=int(m.group(1)), N=len(df), Continuation_Mean=round(100 * df.continuation_compliance.mean(), 2),
+                                Continuation_Mean_Excluding_Finished=round(100 * df[~fin].continuation_compliance.mean(), 2),
                                 Full_Trace_Mean=round(100 * df.full_compliance.mean(), 2), Strict_Continuation=int(df.continuation_score_one.sum()),
                                 Donor_Finished_Inside_Opening=finished))
     if len(length_rows) > 1:

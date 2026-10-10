@@ -1,0 +1,8 @@
+Condition,N,Continuation_Mean,Strict_Count,Diff_vs_BB,Diff_vs_BB_CI95,Diff_vs_SB,Diff_vs_SB_CI95
+Base donor (reference),400,18.64,19,,,-13.5,"[-16.72, -10.18]"
+SFT donor (reference),400,32.14,90,13.5,"[10.25, 16.68]",,
+"Handcrafted, obeys the rule",400,59.42,155,40.78,"[36.53, 44.97]",27.28,"[22.08, 32.28]"
+Names the rule only,400,31.06,21,12.42,"[9.52, 15.32]",-1.08,"[-4.04, 1.83]"
+Obeys a different rule,400,11.94,0,-6.7,"[-8.33, -5.06]",-20.2,"[-22.73, -17.69]"
+SFT-donor opening of another question,400,30.02,87,11.38,"[8.43, 14.42]",-2.12,"[-5.29, 1.18]"
+Most frequent SFT opening of the task (same for every question),400,28.24,54,9.6,"[7.57, 11.71]",-3.9,"[-6.80, -1.05]"

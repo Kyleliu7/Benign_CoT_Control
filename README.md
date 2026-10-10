@@ -189,5 +189,9 @@ Inference-only; no training. Regenerate the notebooks with `python scripts/build
 2. `notebooks/Haskins_500_vLLM_2x2_SFT_Donor_to_Base_PrefixLength_Evaluation.ipynb`: SFT model writes the first N tokens, base continues.
    Run with `PREFIX_TOKENS = 30` and `100`.
 
+Results (Qwen3-14B base recipient, eight style tasks, binary grading for end-of-sentence and meow; `table16`, `table16b`, `table17`): Base donor 18.64, SFT donor 32.14,
+handcrafted obeying opening 59.42, names-the-rule-only 31.06, wrong-rule opening 11.94, SFT opening of another question 30.02, most frequent SFT opening 28.24;
+SFT-written openings of 30 / 100 tokens give 33.68 / 33.28 (continuation scored).
+
 Put each result directory under `results/haskins_500/qwen3_14b/`; `python scripts/analysis_prefix_controls.py` (or `reproduce_tables.py --write`)
 then writes `table16_prefix_controls.csv` and `table17_prefix_length.csv`. Without these runs both are skipped.

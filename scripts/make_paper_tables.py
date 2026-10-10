@@ -370,4 +370,39 @@ rows.sort(key=lambda x: (x[0] != "Qwen", x[1]))
 write("a16_prefix_by_task", "SFT$\\to$Base continuation score split by whether the SFT-donor opening names or demonstrates the constraint, within task (tasks with at least five items in each group).", "tab:prefix-by-task",
       "llrrrrr", ["Model", "Task", "Names (n)", "Mean", "Does not (n)", "Mean", "Difference"], rows,
       note=r"Observational. The indicator is a regular expression on the ten-token opening. Third person is at ceiling in both groups; meow is near floor under the binary rule.")
+# ----------------------------------------------------------------------------------------------- Fixed-opening controls (Section 5.4, appendix)
+t16 = pd.read_csv(T / "table16_prefix_controls.csv")
+t16b = pd.read_csv(T / "table16b_prefix_controls_per_task.csv")
+t17 = pd.read_csv(T / "table17_prefix_length.csv")
+def dcell(est, ci):
+    if str(est) == "nan":
+        return "--"
+    return R(("%+.2f %s" % (float(est), ci)).replace("-", "$-$"))
+rows = [[r.Condition, f2(r.Continuation_Mean), int(r.Strict_Count), dcell(r.Diff_vs_BB, r.Diff_vs_BB_CI95), dcell(r.Diff_vs_SB, r.Diff_vs_SB_CI95)] for r in t16.itertuples()]
+write("t12_controls", "Qwen3-14B base recipient continuing from a fixed ten-token opening (eight style tasks, 400 items per condition, continuation scored).", "tab:controls",
+      "lrrll", ["Opening", "Mean", "Strict", "Difference from base donor (95\\% CI)", "Difference from SFT donor (95\\% CI)"], rows, rule_after=(1,),
+      note=r"Paired differences in percentage points with cluster-bootstrap intervals over the 50 questions (10{,}000 resamples, seed 42). The two suppression tasks are excluded. "
+           r"Base donor and SFT donor are the Base$\to$Base and SFT$\to$Base crossed runs restricted to the same eight tasks. Openings are listed in Appendix Table~\ref{tab:control-openings}.")
+cols = list(t16b.columns[1:])
+short = {"Base donor (reference)": "Base donor", "SFT donor (reference)": "SFT donor", "Handcrafted, obeys the rule": "Obeys rule", "Names the rule only": "Names rule",
+         "Obeys a different rule": "Wrong rule", "SFT-donor opening of another question": "Other question",
+         "Most frequent SFT opening of the task (same for every question)": "Modal SFT"}
+rows = [[TASK_NAMES.get(r.Task, r.Task)] + [f2(getattr(r, "_%d" % (i + 2))) if False else f2(v) for i, v in enumerate(r[2:])] for r in t16b.itertuples()]
+write("a17_controls_per_task", "Fixed-opening controls by task: continuation score of the Qwen3-14B base recipient (50 items per cell).", "tab:controls-task",
+      "l" + "r" * len(cols), ["Task"] + [short.get(c, c) for c in cols], rows,
+      note=r"Binary scoring for end of sentence and meow, fractional for the other tasks. Third person is at ceiling and repeat sentences at floor in every condition.")
+rows = [[int(r.Opening_Tokens), f2(r.Continuation_Mean), f2(r.Continuation_Mean_Excluding_Finished), f2(r.Full_Trace_Mean), int(r.Strict_Continuation), int(r.Donor_Finished_Inside_Opening)] for r in t17.itertuples()]
+write("a18_prefix_length", "SFT donor writes the first $N$ tokens (including the opening think token), the unchanged base model continues (eight style tasks, 400 items).", "tab:prefix-length",
+      "rrrrrr", ["$N$", "Continuation mean", "Without finished openings", "Prefix + continuation", "Strict", "Donor finished in opening"], rows,
+      note=r"Continuation means are scored on different windows (the continuation starts after token $N$). ``Finished'' counts openings that already contain the closing think tag.")
+import json as _json
+ctrl = _json.loads((REPO / "data" / "prefix_controls" / "prefix_controls.json").read_text(encoding="utf-8"))
+order = ["third_person", "lowercase_thinking", "uppercase_thinking", "alternating_case", "meow_between_words", "end_of_sentence", "arrow_prefix", "repeat_sentences"]
+rows = [[TASK_NAMES.get(t, t), R(r"\texttt{" + esc(ctrl["conditions"]["handcrafted"][t].replace("\n\n", " [two newlines]")) + "}"), R(r"\texttt{" + esc(ctrl["conditions"]["named"][t]) + "}"),
+         TASK_NAMES.get(ctrl["mismatch_map"][t], ctrl["mismatch_map"][t])] for t in order]
+write("a19_control_openings", "Fixed openings used in the control runs (text after the opening think token).", "tab:control-openings", "lp{4.6cm}p{4.6cm}l",
+      ["Task", "Obeys the rule", "Names the rule only", "Wrong-rule opening taken from"], rows,
+      note=r"Each text is at most nine tokens (checked with the Qwen3 tokenizer before any generation). The wrong-rule condition gives each task the obeying opening of the next task in the list. "
+           r"The other-question condition uses the SFT-donor opening generated for question $(q+17) \bmod 50$ of the same task; the modal condition uses each task's most frequent SFT-donor opening.")
+
 print("wrote", len(list(OUT.glob("*.tex"))), "tables to", OUT)

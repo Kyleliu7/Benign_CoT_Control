@@ -1,0 +1,4 @@
+Opening_Tokens,N,Continuation_Mean,Continuation_Mean_Excluding_Finished,Full_Trace_Mean,Strict_Continuation,Donor_Finished_Inside_Opening
+10,400,32.14,31.85,30.67,90,12
+30,400,33.68,33.32,29.42,103,13
+100,400,33.28,33.34,28.54,110,28
