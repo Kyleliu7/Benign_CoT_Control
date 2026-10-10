@@ -20,7 +20,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import analysis_prefix_length_paired as A  # noqa: E402
-from analysis_prefix_length_paired import grade_paper_protocol, truncate_words, STYLE_TASKS, COND_LABEL  # noqa: E402
+from analysis_prefix_length_paired import grade_paper_protocol, primary_score, truncate_words, STYLE_TASKS, COND_LABEL  # noqa: E402
 
 QWEN = A.HASKINS / "qwen3_14b"
 # Tasks whose instruction says "you should not mention this chain of thought constraint" and whose rule is not itself a mention.
@@ -35,6 +35,7 @@ def _standalone():
     def ld(f):
         d = pd.DataFrame([json.loads(l) for l in (QWEN / f).read_text(encoding="utf-8").splitlines()])
         d["words"] = d.reasoning.fillna("").str.split().str.len()
+        d["primary"] = [primary_score(t, float(c)) for t, c in zip(d.task, d.upstream_compliance)]
         return d
     return ld("haskins_qwen3_14b_vllm_calibrated_base_17pct.jsonl"), ld("haskins_qwen3_14b_vllm_calibrated_sft_31pct.jsonl")
 
@@ -46,10 +47,10 @@ def standalone_tables():
     for w in (50, 100, 150, 200, None):
         k = m if w is None else m[(m.words_b >= w) & (m.words_s >= w)]
         if w is None:
-            sb, ss = k.upstream_compliance_b.to_numpy(), k.upstream_compliance_s.to_numpy()
+            sb, ss = k.primary_b.to_numpy(), k.primary_s.to_numpy()
         else:
-            sb = np.array([grade_paper_protocol(t, int(q), truncate_words(x, w)) for t, q, x in zip(k.task, k.prompt_idx, k.reasoning_b)])
-            ss = np.array([grade_paper_protocol(t, int(q), truncate_words(x, w)) for t, q, x in zip(k.task, k.prompt_idx, k.reasoning_s)])
+            sb = np.array([primary_score(t, grade_paper_protocol(t, int(q), truncate_words(x, w))) for t, q, x in zip(k.task, k.prompt_idx, k.reasoning_b)])
+            ss = np.array([primary_score(t, grade_paper_protocol(t, int(q), truncate_words(x, w))) for t, q, x in zip(k.task, k.prompt_idx, k.reasoning_s)])
         rows.append(dict(Window_Words=w if w else "full reasoning", N_Pairs=len(k), Base=round(100 * sb.mean(), 2), SFT=round(100 * ss.mean(), 2),
                          Gain=round(100 * (ss - sb).mean(), 2), Strict_Base=int((sb == 1).sum()), Strict_SFT=int((ss == 1).sum())))
     t18 = pd.DataFrame(rows)
@@ -62,7 +63,7 @@ def standalone_tables():
         Xm["sft"] = d.sft.values
         if withlen:
             Xm["log_words"] = np.log(d.words.values)
-        beta = np.linalg.lstsq(Xm.values, d.upstream_compliance.values, rcond=None)[0]
+        beta = np.linalg.lstsq(Xm.values, d.primary.values, rcond=None)[0]
         cols = list(Xm.columns)
         reg.append(dict(Model="task fixed effects" + (" + log(words)" if withlen else ""), N=len(d),
                         SFT_Coefficient_Points=round(100 * beta[cols.index("sft")], 2),

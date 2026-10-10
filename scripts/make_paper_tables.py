@@ -361,15 +361,6 @@ write("a13_standalone_window", "Qwen3-14B standalone Base and SFT scored on the 
       note=r"Pairs are included when both outputs have at least $W$ words. Last rows: coefficients (percentage points) from a linear model of the graded score on task fixed effects and an SFT indicator, "
            r"with and without the log word count of each output.")
 
-rows = []
-for r in t20[t20.Scope.str.startswith("3 tasks")].itertuples():
-    rows.append([r.Model.split("-")[0].replace("Qwen3", "Qwen"), r.Condition, r.Openings_That_Mention, f2(r.Mean_All), f2(r.Mean_If_Mentions_Scored_Zero),
-                 f2(r.Mean_Mentioning) if str(r.Mean_Mentioning) != "nan" else "--", f2(r.Mean_Not_Mentioning)])
-write("a14_mention", "Openings that state the constraint although the instruction says not to mention it (alternating case, end of sentence, meow; 150 items per condition).", "tab:mention", "llrrrrr",
-      ["Model", "Condition", "Mentioning openings", "Mean", "Mean, mentions scored 0", "Mean, mentioning", "Mean, not mentioning"], rows, rule_after=(3,),
-      note=r"Mention detector: a regular expression applied to the ten-token opening only (\emph{alternat}, \emph{with 'meow'} or a parenthesis containing \emph{meow}, a parenthesis containing \emph{safe}). "
-           r"The upstream grader never penalises mentions; the fifth column is a sensitivity bound that scores every mentioning opening 0.")
-
 rows = [[r.Model.split("-")[0].replace("Qwen3", "Qwen"), r.Condition, r.Prefix_Contains_Close_Think, f2(r.Mean_All), f2(r.Mean_Excluding_Finished)] for r in t21.itertuples()]
 write("a15_finished", "Prefixes that already contain \\texttt{</think>}, so the scored ``continuation'' is the answer, and the effect of excluding them (eight style tasks, 400 items per condition).", "tab:finished",
       "llrrr", ["Model", "Condition", "Prefix contains close tag", "Mean", "Mean without them"], rows, rule_after=(3,))

@@ -24,7 +24,7 @@ from scipy.stats import binomtest
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT))
-from evaluators.haskins_evaluator import grade_paper_protocol  # noqa: E402
+from evaluators.haskins_evaluator import grade_paper_protocol, primary_score  # noqa: E402
 
 HASKINS = REPO_ROOT / "results" / "haskins_500"
 REASONIF = REPO_ROOT / "results" / "reasonif_300"
@@ -69,7 +69,11 @@ def load_long() -> pd.DataFrame:
             cont = cot[len(prefix):] if prefix and cot.startswith(prefix) else cot
             rows.append(("Phi-4-reasoning", cond, item["task"], int(item["prompt_idx"]), prefix, cont,
                          float(m["comp"]) / 100.0, int(bool(m["strict"])), float(m.get("tokens", np.nan))))
-    return pd.DataFrame(rows, columns=["model", "cond", "task", "q", "prefix", "cont", "comp", "strict", "ntok"])
+    df = pd.DataFrame(rows, columns=["model", "cond", "task", "q", "prefix", "cont", "comp", "strict", "ntok"])
+    # headline score follows the original paper's rule (binary for word suppression, end-of-sentence, meow); the plain fractional score is kept
+    df["comp_frac"] = df["comp"]
+    df["comp"] = [primary_score(t, c) for t, c in zip(df.task, df.comp_frac)]
+    return df
 
 
 def truncate_words(text: str, w: int) -> str:
@@ -94,9 +98,12 @@ def table_window_matched(L: pd.DataFrame) -> pd.DataFrame:
                     comp, strict = s.comp.to_numpy(), s.strict.to_numpy()
                 else:
                     sc = np.array([grade_paper_protocol(t, int(q), truncate_words(x, w)) for t, q, x in zip(s.task, s.q, s.cont)])
-                    comp, strict = sc, (sc == 1.0).astype(int)
+                    comp, strict, frac = np.array([primary_score(t, c) for t, c in zip(s.task, sc)]), (sc == 1.0).astype(int), sc
+                if w is None:
+                    frac = s.comp_frac.to_numpy()
                 rows.append(dict(Model=model, Window_Words=w if w else "full continuation", N_Pairs=len(keep), Condition=COND_LABEL[cond],
-                                 Mean_Compliance=round(100 * comp.mean(), 2), Strict_Count=int(strict.sum())))
+                                 Mean_Compliance=round(100 * comp.mean(), 2), Mean_Compliance_Fractional=round(100 * frac.mean(), 2),
+                                 Strict_Count=int(strict.sum())))
     return pd.DataFrame(rows)
 
 
@@ -158,9 +165,10 @@ def table_paired_haskins(L: pd.DataFrame) -> pd.DataFrame:
                  ("SFT->SFT minus SFT->Base (recipient effect, SFT donor)", "SS", "SB")]
     rows = []
     for model, g in L.groupby("model"):
-        per_q = {c: g[g.cond == c].groupby("q")[["comp", "strict"]].mean().sort_index() for c in ["BB", "BS", "SB", "SS"]}
+        per_q = {c: g[g.cond == c].groupby("q")[["comp", "comp_frac", "strict"]].mean().sort_index() for c in ["BB", "BS", "SB", "SS"]}
         for label, x, y in contrasts:
-            for metric, name in (("comp", "continuation mean (pp)"), ("strict", "strict pass rate (pp)")):
+            for metric, name in (("comp", "continuation mean (pp)"), ("strict", "strict pass rate (pp)"),
+                                 ("comp_frac", "continuation mean, fractional scoring for all tasks (pp)")):
                 est, lo, hi = _boot_prompt_diff(per_q[x][metric].to_numpy(), per_q[y][metric].to_numpy(), rng)
                 rows.append(dict(Model=model, Contrast=label, Metric=name, Estimate_pp=round(100 * est, 2),
                                  CI95_Low=round(100 * lo, 2), CI95_High=round(100 * hi, 2)))

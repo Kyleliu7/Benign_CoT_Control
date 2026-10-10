@@ -22,6 +22,8 @@ import numpy as np
 import pandas as pd
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT))
+from evaluators.haskins_evaluator import primary_score  # noqa: E402
 QWEN = REPO_ROOT / "results" / "haskins_500" / "qwen3_14b"
 STYLE_TASKS = ["third_person", "arrow_prefix", "end_of_sentence", "meow_between_words", "repeat_sentences",
                "alternating_case", "lowercase_thinking", "uppercase_thinking"]
@@ -41,7 +43,12 @@ def _find(pattern: str, roots=None):
 
 def _load(path) -> pd.DataFrame:
     df = pd.read_csv(path).fillna("")
-    return df[df.task.isin(STYLE_TASKS)].copy()
+    df = df[df.task.isin(STYLE_TASKS)].copy()
+    # headline score follows the original paper's rule (binary for end-of-sentence and meow); fractional kept as *_frac
+    for col in ("continuation_compliance", "full_compliance"):
+        df[col + "_frac"] = df[col]
+        df[col] = [primary_score(t, float(c)) for t, c in zip(df.task, df[col + "_frac"])]
+    return df
 
 
 def _per_question(df: pd.DataFrame) -> pd.DataFrame:

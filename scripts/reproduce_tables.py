@@ -25,6 +25,9 @@ import numpy as np
 import pandas as pd
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT))
+from evaluators.haskins_evaluator import primary_score, grade_paper_protocol  # noqa: E402
+
 RESULTS = REPO_ROOT / "results"
 TABLES = RESULTS / "summary_tables"
 HASKINS = RESULTS / "haskins_500"
@@ -110,10 +113,19 @@ def table1():
 # --------------------------------------------------------------------------------------------
 # Haskins helpers
 # --------------------------------------------------------------------------------------------
+def primary_col(df, comp_col):
+    """Headline score: binary for word suppression, end-of-sentence and meow (original paper, Appendix F.1), fractional otherwise."""
+    return pd.Series([primary_score(t, float(c)) for t, c in zip(df.task, df[comp_col])], index=df.index)
+
+
 def agg(df, comp_col, strict_col):
+    """All_Mean / NonChar_Mean use the paper's grading rule; *_Fractional keep the plain fractional score."""
     nc = df[df.task.isin(NON_CHAR_7)]
-    return dict(All_Mean=round(100 * df[comp_col].mean(), 2), All_Strict_Count=int(df[strict_col].sum()), All_N=len(df),
-                NonChar_Mean=round(100 * nc[comp_col].mean(), 2), NonChar_Strict_Count=int(nc[strict_col].sum()), NonChar_N=len(nc))
+    p = primary_col(df, comp_col)
+    return dict(All_Mean=round(100 * p.mean(), 2), All_Mean_Fractional=round(100 * df[comp_col].mean(), 2),
+                All_Strict_Count=int(df[strict_col].sum()), All_N=len(df),
+                NonChar_Mean=round(100 * p[nc.index].mean(), 2), NonChar_Mean_Fractional=round(100 * nc[comp_col].mean(), 2),
+                NonChar_Strict_Count=int(nc[strict_col].sum()), NonChar_N=len(nc))
 
 
 def qwen_frames():
@@ -127,6 +139,18 @@ def qwen_frames():
 
 def phi_bundle():
     return json.loads((HASKINS / "phi4_reasoning" / "phi4_haskins_500_bundle.json").read_text(encoding="utf-8"))
+
+
+def phi_items(bundle, key):
+    """Per-item Phi crossed scores for one condition: continuation score from the bundle (percent -> fraction) and the
+    full-trace (prefix + continuation) score recomputed with the pinned grader from the stored CoT text."""
+    rows = []
+    for item in bundle["items"]:
+        m = item["models"][key]
+        cot = m.get("cot") or ""
+        rows.append(dict(task=item["task"], prompt_idx=int(item["prompt_idx"]), cont=float(m["comp"]) / 100.0,
+                         cont_strict=int(bool(m["strict"])), full=grade_paper_protocol(item["task"], int(item["prompt_idx"]), cot)))
+    return pd.DataFrame(rows)
 
 
 def phi_standalone():
@@ -164,7 +188,9 @@ def _qwen_standalone_rows():
             df["_s"] = (df["_c"] == 1.0).astype(int)
             a = agg(df, "_c", "_s")
             rows.append(dict(Model="Qwen3-14B", Condition=cond, Scoring=basis, Status="OK", Mean_Compliance=a["All_Mean"],
+                             Mean_Compliance_Fractional=a["All_Mean_Fractional"],
                              Strict_Count=a["All_Strict_Count"], N=a["All_N"], NonChar_Mean=a["NonChar_Mean"],
+                             NonChar_Mean_Fractional=a["NonChar_Mean_Fractional"],
                              NonChar_Strict_Count=a["NonChar_Strict_Count"],
                              Hit_Token_Limit=int(df.hit_token_limit.map(truthy).sum())))
     return rows
@@ -175,7 +201,9 @@ def table2():
     for cond, df in phi_standalone().items():
         a = agg(df, "upstream_compliance", "score_equals_one")
         rows.append(dict(Model="Phi-4-reasoning", Condition=cond, Scoring="whole trace", Status="OK", Mean_Compliance=a["All_Mean"],
+                         Mean_Compliance_Fractional=a["All_Mean_Fractional"],
                          Strict_Count=a["All_Strict_Count"], N=a["All_N"], NonChar_Mean=a["NonChar_Mean"],
+                         NonChar_Mean_Fractional=a["NonChar_Mean_Fractional"],
                          NonChar_Strict_Count=a["NonChar_Strict_Count"], Hit_Token_Limit=int(df.hit_token_limit.sum())))
     return pd.DataFrame(rows)
 
@@ -186,7 +214,8 @@ def table3():
         c = agg(df, "continuation_compliance", "continuation_score_one")
         f = agg(df, "full_compliance", "full_score_one")
         rows.append(dict(Model="Qwen3-14B", Pairing=label, Status="OK", **{f"Cont_{k}": v for k, v in c.items()},
-                         Full_All_Mean=f["All_Mean"], Full_All_Strict_Count=f["All_Strict_Count"]))
+                         Full_All_Mean=f["All_Mean"], Full_All_Mean_Fractional=f["All_Mean_Fractional"],
+                         Full_All_Strict_Count=f["All_Strict_Count"]))
     for label, fname in [("SFT -> Base OFF (A5; calibrated vLLM run)", "haskins_qwen3_14b_vllm_calibrated_prefix_off_21pct.jsonl"),
                          ("SFT -> Base (A1 rerun; calibrated vLLM run)", "haskins_qwen3_14b_vllm_calibrated_prefix_on_37pct.jsonl")]:
         df = _jsonl_df(fname)
@@ -198,18 +227,29 @@ def table3():
         c = agg(df, "continuation_compliance", "_cs")
         f = agg(df, "full_compliance", "_fs")
         rows.append(dict(Model="Qwen3-14B", Pairing=label, Status="OK", **{f"Cont_{k}": v for k, v in c.items()},
-                         Full_All_Mean=f["All_Mean"], Full_All_Strict_Count=f["All_Strict_Count"]))
+                         Full_All_Mean=f["All_Mean"], Full_All_Mean_Fractional=f["All_Mean_Fractional"],
+                         Full_All_Strict_Count=f["All_Strict_Count"]))
     bundle = phi_bundle()
     for label, key in PHI_CONDS.items():
         aggs = {a["aggregate"]: a for a in bundle["stats"][key]["aggregates"]}
         a10, a7 = aggs["all_10"], aggs["seven_non_character"]
+        it = phi_items(bundle, key)
+        it["cont_p"] = [primary_score(t, c) for t, c in zip(it.task, it.cont)]
+        it["full_p"] = [primary_score(t, c) for t, c in zip(it.task, it.full)]
+        nc = it.task.isin(NON_CHAR_7)
+        # the per-item fractional means must reproduce the bundle's stored aggregates
+        assert abs(100 * it.cont.mean() - 100 * a10["continuation_mean_compliance_all_scheduled"]) < 0.02, (key, "continuation")
+        assert abs(100 * it.full.mean() - 100 * a10["full_mean_compliance_all_scheduled"]) < 0.02, (key, "full")
         rows.append(dict(
             Model="Phi-4-reasoning", Pairing=label, Status="OK",
-            Cont_All_Mean=round(100 * a10["continuation_mean_compliance_all_scheduled"], 2),
+            Cont_All_Mean=round(100 * it.cont_p.mean(), 2),
+            Cont_All_Mean_Fractional=round(100 * a10["continuation_mean_compliance_all_scheduled"], 2),
             Cont_All_Strict_Count=round(500 * a10["continuation_strict_pass_rate_all_scheduled"]), Cont_All_N=500,
-            Cont_NonChar_Mean=round(100 * a7["continuation_mean_compliance_all_scheduled"], 2),
+            Cont_NonChar_Mean=round(100 * it.cont_p[nc].mean(), 2),
+            Cont_NonChar_Mean_Fractional=round(100 * a7["continuation_mean_compliance_all_scheduled"], 2),
             Cont_NonChar_Strict_Count=round(350 * a7["continuation_strict_pass_rate_all_scheduled"]), Cont_NonChar_N=350,
-            Full_All_Mean=round(100 * a10["full_mean_compliance_all_scheduled"], 2),
+            Full_All_Mean=round(100 * it.full_p.mean(), 2),
+            Full_All_Mean_Fractional=round(100 * a10["full_mean_compliance_all_scheduled"], 2),
             Full_All_Strict_Count=round(500 * a10["full_strict_pass_rate_all_scheduled"])))
     return pd.DataFrame(rows)
 
@@ -220,13 +260,18 @@ def table6_per_task():
         for task in ALL_10:
             d = df[df.task == task]
             rows.append(dict(Model="Qwen3-14B", Pairing=label, Task=task, N=len(d),
-                             Cont_Mean=round(100 * d.continuation_compliance.mean(), 2), Cont_Strict_Count=int(d.continuation_score_one.sum())))
+                             Cont_Mean=round(100 * primary_col(d, "continuation_compliance").mean(), 2),
+                             Cont_Mean_Fractional=round(100 * d.continuation_compliance.mean(), 2),
+                             Cont_Strict_Count=int(d.continuation_score_one.sum())))
     bundle = phi_bundle()
     for label, key in PHI_CONDS.items():
         for task in ALL_10:
             t = bundle["stats"][key]["tasks"][task]
+            d = phi_items(bundle, key)
+            d = d[d.task == task]
             rows.append(dict(Model="Phi-4-reasoning", Pairing=label, Task=task, N=t["planned"],
-                             Cont_Mean=round(100 * t["mean_continuation_compliance_all_scheduled"], 2),
+                             Cont_Mean=round(100 * np.mean([primary_score(task, c) for c in d.cont]), 2),
+                             Cont_Mean_Fractional=round(100 * t["mean_continuation_compliance_all_scheduled"], 2),
                              Cont_Strict_Count=round(t["planned"] * t["rate_continuation_strict_all_scheduled"])))
     return pd.DataFrame(rows)
 

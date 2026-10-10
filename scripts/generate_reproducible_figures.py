@@ -40,7 +40,10 @@ matplotlib.rcParams['grid.linewidth'] = 0.6
 
 # Paths (repository-relative)
 from pathlib import Path
+import sys
 REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT))
+from evaluators.haskins_evaluator import primary_score  # headline Haskins score: binary for word suppression, end-of-sentence, meow
 OUT_DIR_WORKSPACE = str(REPO_ROOT / "reproducible_figures")
 OUT_DIR_BRAIN = OUT_DIR_WORKSPACE  # legacy name; there is a single output directory now
 BASE_DIR = str(REPO_ROOT)
@@ -106,7 +109,7 @@ for cond, sd_substr in QWEN_DIRS.items():
             qwen_records_by_prompt[cond][pidx] = []
         qwen_records_by_prompt[cond][pidx].append({
             "task": d["task"],
-            "comp": float(d.get("continuation_compliance", 0.0)) * 100.0,
+            "comp": primary_score(d["task"], float(d.get("continuation_compliance", 0.0))) * 100.0,
             "strict": float(d.get("continuation_score_one", 0.0)) * 100.0
         })
 
@@ -121,7 +124,7 @@ for it in phi_bundle["items"]:
     for cond, phi_k in PHI_KEYS.items():
         if pidx not in phi_records_by_prompt[cond]:
             phi_records_by_prompt[cond][pidx] = []
-        c_val = float(it["models"][phi_k]["comp"])
+        c_val = primary_score(task, float(it["models"][phi_k]["comp"]) / 100.0) * 100.0
         s_val = 100.0 if it["models"][phi_k]["strict"] else 0.0
         phi_records_by_prompt[cond][pidx].append({
             "task": task,

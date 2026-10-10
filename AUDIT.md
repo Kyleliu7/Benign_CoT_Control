@@ -89,3 +89,12 @@ The new analyses behind the revised paper are `scripts/analysis_prefix_length_pa
 * Replace Table 6 and the Fig. 3 C1/C2 captions with the generated spike table; do not label single tokens PASS/FAIL.
 * Methods/Appendix: Phi system prompt, exact task instructions, `<think>` counted inside the 10 prefix tokens, shorter ReasonIF prefixes, 10,000-iteration paired cluster bootstrap (not 1,000), training-data description, Haskins / ReasonIF source datasets, pinned revisions, calibrated suppression scoring and its non-comparability with upstream, Table 13 token IDs (the first row lists 8 IDs for a "10-token" prefix).
 * Add the length, truncation and prefix-content facts of §3 to Results / Limitations.
+
+## 7. Grading rule aligned with the original paper (Haskins et al., arXiv 2605.15257, Appendix F.1)
+The original paper grades `word_suppression`, `multiple_word_suppression`, `end_of_sentence` and `meow_between_words` **binary** (a sample passes only if the
+constraint holds everywhere), because fractional credit on these tasks is inflated by meta-discussion of the constraint; the other six tasks are fractional.
+Earlier tables here averaged end-of-sentence and meow fractionally. All headline Haskins means now use the original rule
+(`evaluators/haskins_evaluator.primary_score`, threshold 0.99 = upstream `compliant`); the plain fractional means are kept in `*_Fractional` columns
+(and in `table12` as an extra metric). The scorer itself, the stored per-item scores and all strict counts (score exactly 1.0) are unchanged.
+Effect (all 10 tasks, continuation): Qwen Base->Base 17.82 -> 16.11, SFT->Base 37.34 -> 29.51 (donor effect +19.5 -> +13.4 points, CI [10.4, 16.4]);
+Phi changes by < 0.1 points. Also noted: the paper says the "do not mention" sentence is appended to every constraint; the released code adds it to six tasks only.
