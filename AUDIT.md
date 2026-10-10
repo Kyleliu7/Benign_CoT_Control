@@ -69,16 +69,17 @@ Resolved with the authors' answers and the supplied files:
 * Training-set size: the HF split has 249 rows, 37 dropped → 212. The paper's "250 − 37 − 2" text is wrong.
 
 * Old README numbers (23.40 / 37.89 / 37.34 with 124 strict / 19.38 with 34 strict): the authors confirm they are stale exploratory artefacts, explain 124/500 and 34/500 as non-character numerators copied into the 500 denominator, and say 23.40 / 37.89 came from a pre-calibration keyword run. I could not verify that explanation (no retained file gives 124/350, 48.02 or 23.40), so they are treated as unsourced; the older-protocol Qwen files and Table 8 were deleted. Git history keeps them.
-* Language items: on the authors' VM (fast-langdetect available) the re-scored language and capital counts equal the stored flags for the SFT, Prefix-OFF, Prefix-ON and both Phi files (30 / 14 / 30 / 14 / 17 of 52 language items; 0 of 43 capital items), so the grader and the stored language flags agree there. That printout, however, rescored the **GPT-OSS** file (still named `reasonif_qwen3_14b_base_untouched.jsonl` on `main`: 49 / 228 / 38), so it does not cover the genuine Qwen3-14B base file (22 language items passed in the stored flags, 20 non-language). Its non-language items re-score exactly here; its 52 language items remain to be re-run with `--rescore-reasonif` on a branch that contains the real file.
+* Language items: on the authors' VM (fast-langdetect available) `--rescore-reasonif` was run on `main` at `9404952`. For the genuine Qwen3-14B base file the recomputed counts equal the stored flags exactly (Lang-52 22/22, Cap-43 0/0, NonLang-205 20/20; total IFS 42/300 = 14.0 %, 0 mismatches), and the run ended with "0 mismatch(es)" across all files. Earlier VM output for the SFT, Prefix-OFF, Prefix-ON and Phi files agreed with the stored language flags as well. Only the Qwen base row was shown in the screenshot supplied to the audit, so the other rows rest on that earlier output. Note the printed "st/re" cells are stored/recomputed pass counts, not passes/total.
 
 Still open:
 1. Phi ReasonIF Prefix-OFF / Prefix-ON raw JSONL (only summary CSVs exist; the notebooks can regenerate them).
-2. Run `python scripts/reproduce_tables.py --rescore-reasonif` where the fast-langdetect model downloads. In this sandbox the 205 non-language items per file re-score exactly (including the new base file) and answer-correctness has 0 mismatches, but the 52 `language` items cannot be re-scored. The `[PASS]` line in the earlier `--rescore-reasonif` printout on `main` was unconditional and its "Lang-95" column only counted items; the table it printed for "Qwen3-14B Base" (16.33 / 76.00 / 12.67) is the GPT-OSS file's stored scores.
-3. KL: cache metadata says `base_model_revision: main`; confirm the revisions equal the pins in the README. Token alignment between SFT and base tokenisations is not checked in code here.
-4. Source of the Figure 3 panel B outcome groups (G1–G4): numbers exist in the executive report, but the labelling rule is not in a script.
-5. Decide whether to scrub `/home/kyleliu789/...` paths from notebook outputs.
+2. KL: cache metadata says `base_model_revision: main`; confirm the revisions equal the pins in the README. Token alignment between SFT and base tokenisations is not checked in code here.
+3. Source of the Figure 3 panel B outcome groups (G1–G4): numbers exist in the executive report, but the labelling rule is not in a script.
+4. Decide whether to scrub `/home/kyleliu789/...` paths from notebook outputs.
 
-## 6. Manuscript edits implied by this audit (not applied to `main.tex` here)
+## 6. Manuscript edits implied by this audit (applied to the author's `main.tex`, which is not part of this repository)
+
+The new analyses behind the revised paper are `scripts/analysis_prefix_length_paired.py` (Tables 8-13: window-matched scoring, prefix content, paired cluster-bootstrap and McNemar contrasts) and `scripts/make_paper_tables.py` (LaTeX for every results table). Training sequences longer than 4,096 tokens are truncated by the trainer (answer part only; the longest reasoning block is 4,285 characters), so the dataset-size arithmetic is 249 - 37 = 212 with no length exclusions.
 
 * The Qwen ReasonIF base numbers are now sourced, so Table 1 / Fig. 2 stand; update Table 12 (truncated = 19, no longer "—"), Table 17 (add the base column from `by_constraint`) and the provenance table (rows now "raw records present").
 * Table 2: report Prefix-OFF and Prefix-ON under the **same** scoring basis (or both), and state it. Replace "Qwen rows … not rederived from raw records" with the verified status.
@@ -88,3 +89,12 @@ Still open:
 * Replace Table 6 and the Fig. 3 C1/C2 captions with the generated spike table; do not label single tokens PASS/FAIL.
 * Methods/Appendix: Phi system prompt, exact task instructions, `<think>` counted inside the 10 prefix tokens, shorter ReasonIF prefixes, 10,000-iteration paired cluster bootstrap (not 1,000), training-data description, Haskins / ReasonIF source datasets, pinned revisions, calibrated suppression scoring and its non-comparability with upstream, Table 13 token IDs (the first row lists 8 IDs for a "10-token" prefix).
 * Add the length, truncation and prefix-content facts of §3 to Results / Limitations.
+
+## 7. Grading rule aligned with the original paper (Haskins et al., arXiv 2605.15257, Appendix F.1)
+The original paper grades `word_suppression`, `multiple_word_suppression`, `end_of_sentence` and `meow_between_words` **binary** (a sample passes only if the
+constraint holds everywhere), because fractional credit on these tasks is inflated by meta-discussion of the constraint; the other six tasks are fractional.
+Earlier tables here averaged end-of-sentence and meow fractionally. All headline Haskins means now use the original rule
+(`evaluators/haskins_evaluator.primary_score`, threshold 0.99 = upstream `compliant`); the plain fractional means are kept in `*_Fractional` columns
+(and in `table12` as an extra metric). The scorer itself, the stored per-item scores and all strict counts (score exactly 1.0) are unchanged.
+Effect (all 10 tasks, continuation): Qwen Base->Base 17.82 -> 16.11, SFT->Base 37.34 -> 29.51 (donor effect +19.5 -> +13.4 points, CI [10.4, 16.4]);
+Phi changes by < 0.1 points. Also noted: the paper says the "do not mention" sentence is appended to every constraint; the released code adds it to six tasks only.

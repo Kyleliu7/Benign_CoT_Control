@@ -78,19 +78,19 @@ Prefix rows are scored on the recipient continuation only. IFS = all instruction
 non-language items per file; language / english_capital items need the fast-langdetect model (see Quickstart step 3).
 
 ### Haskins, crossed donor → recipient, continuation-scored (`table3_haskins_crossed_2x2.csv`)
-500 question–constraint pairs (50 questions × 10 constraints). Strict = score exactly 1.0.
+500 question–constraint pairs (50 questions × 10 constraints). **Mean follows the original paper's grading rule (Haskins et al., Appendix F.1): binary for `word_suppression`, `multiple_word_suppression`, `end_of_sentence` and `meow_between_words` (compliant iff score ≥ 0.99), fractional for the other six tasks.** "Mean (fractional)" is the plain fractional average for all ten tasks (the earlier headline). Strict = score exactly 1.0.
 
-| Model | Donor → Recipient | Mean | Strict | Non-char mean (350) | Non-char strict | Full-trace mean |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| Qwen3-14B | Base → Base | 17.82 | 25 (5.0 %) | 16.69 | 10 | 17.48 |
-| Qwen3-14B | Base → SFT | 16.70 | 21 (4.2 %) | 15.18 | 8 | 16.55 |
-| Qwen3-14B | SFT → Base (Prefix-ON) | 37.34 | 109 (21.8 %) | 32.30 | 67 | 36.28 |
-| Qwen3-14B | SFT → SFT | 32.07 | 96 (19.2 %) | 28.68 | 62 | 30.93 |
-| Phi-4-reasoning | Base → Base | 10.38 | 11 (2.2 %) | 12.64 | 11 | 10.25 |
-| Phi-4-reasoning | Base → SFT | 14.46 | 36 (7.2 %) | 17.18 | 36 | 13.08 |
-| Phi-4-reasoning | SFT → Base (Prefix-ON) | 10.92 | 15 (3.0 %) | 13.36 | 15 | 10.44 |
-| Phi-4-reasoning | SFT → SFT | 18.07 | 69 (13.8 %) | 22.01 | 69 | 16.99 |
-| Phi-4-reasoning | SFT → Base, constraint OFF | 9.89 | 12 (2.4 %) | 11.94 | 12 | 9.74 |
+| Model | Donor → Recipient | Mean | Mean (fractional) | Strict | Non-char mean (350) | Non-char strict | Full-trace mean |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Qwen3-14B | Base → Base | 16.11 | 17.82 | 25 (5.0 %) | 14.25 | 10 | 15.78 |
+| Qwen3-14B | Base → SFT | 15.76 | 16.70 | 21 (4.2 %) | 13.83 | 8 | 15.61 |
+| Qwen3-14B | SFT → Base (Prefix-ON) | 29.51 | 37.34 | 109 (21.8 %) | 21.12 | 67 | 28.14 |
+| Qwen3-14B | SFT → SFT | 25.26 | 32.07 | 96 (19.2 %) | 18.96 | 62 | 23.86 |
+| Phi-4-reasoning | Base → Base | 10.37 | 10.38 | 11 (2.2 %) | 12.63 | 11 | 10.24 |
+| Phi-4-reasoning | Base → SFT | 14.39 | 14.46 | 36 (7.2 %) | 17.09 | 36 | 13.01 |
+| Phi-4-reasoning | SFT → Base (Prefix-ON) | 10.90 | 10.92 | 15 (3.0 %) | 13.34 | 15 | 10.42 |
+| Phi-4-reasoning | SFT → SFT | 17.99 | 18.07 | 69 (13.8 %) | 21.91 | 69 | 16.90 |
+| Phi-4-reasoning | SFT → Base, constraint OFF | 9.87 | 9.89 | 12 (2.4 %) | 11.92 | 12 | 9.72 |
 
 Caveats that apply to this table:
 * Haskins "10-token" prefixes **include the `<think>` token** (9 content tokens).
@@ -102,22 +102,22 @@ Caveats that apply to this table:
   Response length differs substantially between conditions (Qwen continuation mean 986 → 677 tokens), which is a confound for sentence-level compliance.
 
 ### Haskins standalone, Phi-4-reasoning (`table2_haskins_standalone.csv`)
-Phi-4-reasoning: Base 9.87 % mean, 13 / 500 strict; SFT 16.21 % mean, 62 / 500 strict.
+Phi-4-reasoning: Base 9.85 % mean, 13 / 500 strict; SFT 16.11 % mean, 62 / 500 strict (headline scoring rule as above).
 
 Qwen3-14B (calibrated vLLM protocol, 500 pairs each; strict = score exactly 1.0):
 
-| Condition | Scoring | Mean | Strict | Non-char mean (350) | Non-char strict |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| Base | whole trace | 17.21 | 23 (4.6 %) | 16.01 | 7 |
-| SFT | whole trace | 30.63 | 80 (16.0 %) | 28.89 | 63 |
-| Prefix-OFF | continuation only | 20.97 | 59 (11.8 %) | 21.39 | 52 |
-| Prefix-OFF | full trace incl. prefix | 20.12 | 41 (8.2 %) | 20.92 | 41 |
-| Prefix-ON | continuation only | 37.97 | 112 (22.4 %) | 33.23 | 72 |
-| Prefix-ON | full trace incl. prefix | 36.94 | 89 (17.8 %) | 32.64 | 70 |
+| Condition | Scoring | Mean | Mean (fractional) | Strict | Non-char mean (350) | Non-char strict |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| Base | whole trace | 15.50 | 17.21 | 23 (4.6 %) | 13.55 | 7 |
+| SFT | whole trace | 24.21 | 30.63 | 80 (16.0 %) | 19.71 | 63 |
+| Prefix-OFF | continuation only | 19.95 | 20.97 | 59 (11.8 %) | 19.93 | 52 |
+| Prefix-OFF | full trace incl. prefix | 19.14 | 20.12 | 41 (8.2 %) | 19.52 | 41 |
+| Prefix-ON | continuation only | 29.71 | 37.97 | 112 (22.4 %) | 21.44 | 72 |
+| Prefix-ON | full trace incl. prefix | 28.76 | 36.94 | 89 (17.8 %) | 20.96 | 70 |
 
-Compare Prefix-ON with Prefix-OFF **within the same scoring basis** (continuation 37.97 vs 20.97; full trace 36.94 vs 20.12). The manuscript's earlier
+Compare Prefix-ON with Prefix-OFF **within the same scoring basis** (continuation 29.71 vs 19.95; full trace 28.76 vs 19.14). The manuscript's earlier
 table paired Prefix-OFF's continuation score with Prefix-ON's full-trace score. The 2×2 table above contains an independent rerun of the same SFT→Base
-condition (37.34 / 109 continuation), so this condition has been run twice with similar results.
+condition (29.51 / 109 continuation), so this condition has been run twice with similar results.
 
 ### Forward KL (`table4_kl_percentiles.csv`, `results/kl_divergence/kl_divergence_executive_report.md`)
 D_KL(π_SFT ‖ π_Base) per token on SFT-generated histories (teacher forcing, float32, first ≤ 512 reasoning tokens). Two windows are reported because
@@ -153,14 +153,15 @@ configs/                SFT configs (Qwen3-14B, Phi-4-reasoning)
 data/training/          212-example training set + dataset_info.json (only the shipped dataset is registered)
 data/eval_prompts/      50 Haskins questions, calibrated keywords, exact task instructions, ReasonIF-300
 evaluators/             haskins_evaluator.py (paper + semantic scorers), reasonif_evaluator.py, official ReasonIF checkers, tests
-notebooks/              17 generation / evaluation notebooks (vLLM)
+notebooks/              19 generation / evaluation notebooks (vLLM)
 reproducible_figures/   Figures 1-4 (PDF/PNG/SVG) and their source CSVs
 results/
   haskins_500/          Qwen 2x2 runs (results.csv + records/), Phi standalone runs, Phi crossed bundle
   reasonif_300/         scored ReasonIF completions
   kl_divergence/        float32 caches, spike_analysis/spike_token_pairs.json, per-sample CSVs, executive report
-  summary_tables/       table1..table7 CSVs (regenerated by scripts/reproduce_tables.py --write)
-scripts/                reproduce_tables.py, verify_scorer_parity.py, generate_reproducible_figures.py,
+  summary_tables/       table1..table13 CSVs (regenerated by scripts/reproduce_tables.py --write)
+scripts/                analysis_prefix_length_paired.py (prefix content, window-matched scoring, paired CIs), make_paper_tables.py (LaTeX tables),
+                        reproduce_tables.py, verify_scorer_parity.py, generate_reproducible_figures.py,
                         evaluate_haskins.py, evaluate_reasonif.py, compute_forward_kl.py, export_haskins_prompts.py
 ```
 
@@ -176,3 +177,17 @@ MIT License. The manuscript is not yet on arXiv; cite the repository until it is
   url    = {https://github.com/Kyleliu7/Benign_CoT_Control}
 }
 ```
+
+## Follow-up experiments: prefix controls and longer SFT openings (Qwen3-14B, Haskins)
+
+Inference-only; no training. Regenerate the notebooks with `python scripts/build_control_notebooks.py` and the fixed openings with
+`python scripts/make_prefix_controls.py` (`data/prefix_controls/prefix_controls.json`; copy it next to the notebook).
+
+1. `notebooks/Haskins_500_vLLM_Prefix_Controls_Evaluation.ipynb`: the base model continues from a fixed 10-token opening (`<think>` + 9 tokens).
+   Run once for each `CONTROL_CONDITION`: `handcrafted` (obeys the rule), `named` (names the rule only), `mismatched` (obeys a different rule),
+   `cross_question` (the SFT-donor opening of another question). Compare against the existing Base->Base and SFT->Base runs.
+2. `notebooks/Haskins_500_vLLM_2x2_SFT_Donor_to_Base_PrefixLength_Evaluation.ipynb`: SFT model writes the first N tokens, base continues.
+   Run with `PREFIX_TOKENS = 30` and `100`.
+
+Put each result directory under `results/haskins_500/qwen3_14b/`; `python scripts/analysis_prefix_controls.py` (or `reproduce_tables.py --write`)
+then writes `table16_prefix_controls.csv` and `table17_prefix_length.csv`. Without these runs both are skipped.

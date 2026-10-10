@@ -1,12 +1,12 @@
-Model,Pairing,Status,Cont_All_Mean,Cont_All_Strict_Count,Cont_All_N,Cont_NonChar_Mean,Cont_NonChar_Strict_Count,Cont_NonChar_N,Full_All_Mean,Full_All_Strict_Count
-Qwen3-14B,Base -> Base (A2),OK,17.82,25,500,16.69,10,350,17.48,23
-Qwen3-14B,Base -> SFT (A3),OK,16.7,21,500,15.18,8,350,16.55,20
-Qwen3-14B,SFT -> Base (A1 / Prefix-ON),OK,37.34,109,500,32.3,67,350,36.28,85
-Qwen3-14B,SFT -> SFT (A4),OK,32.07,96,500,28.68,62,350,30.93,73
-Qwen3-14B,SFT -> Base OFF (A5; calibrated vLLM run),OK,20.97,59,500,21.39,52,350,20.12,41
-Qwen3-14B,SFT -> Base (A1 rerun; calibrated vLLM run),OK,37.97,112,500,33.23,72,350,36.94,89
-Phi-4-reasoning,Base -> Base (A2),OK,10.38,11,500,12.64,11,350,10.25,11
-Phi-4-reasoning,Base -> SFT (A3),OK,14.46,36,500,17.18,36,350,13.08,34
-Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),OK,10.92,15,500,13.36,15,350,10.44,13
-Phi-4-reasoning,SFT -> SFT (A4),OK,18.07,69,500,22.01,69,350,16.99,68
-Phi-4-reasoning,SFT -> Base OFF (A5),OK,9.89,12,500,11.94,12,350,9.74,12
+Model,Pairing,Status,Cont_All_Mean,Cont_All_Mean_Fractional,Cont_All_Strict_Count,Cont_All_N,Cont_NonChar_Mean,Cont_NonChar_Mean_Fractional,Cont_NonChar_Strict_Count,Cont_NonChar_N,Full_All_Mean,Full_All_Mean_Fractional,Full_All_Strict_Count
+Qwen3-14B,Base -> Base (A2),OK,16.11,17.82,25,500,14.25,16.69,10,350,15.78,17.48,23
+Qwen3-14B,Base -> SFT (A3),OK,15.76,16.7,21,500,13.83,15.18,8,350,15.61,16.55,20
+Qwen3-14B,SFT -> Base (A1 / Prefix-ON),OK,29.51,37.34,109,500,21.12,32.3,67,350,28.14,36.28,85
+Qwen3-14B,SFT -> SFT (A4),OK,25.26,32.07,96,500,18.96,28.68,62,350,23.86,30.93,73
+Qwen3-14B,SFT -> Base OFF (A5; calibrated vLLM run),OK,19.95,20.97,59,500,19.93,21.39,52,350,19.14,20.12,41
+Qwen3-14B,SFT -> Base (A1 rerun; calibrated vLLM run),OK,29.71,37.97,112,500,21.44,33.23,72,350,28.76,36.94,89
+Phi-4-reasoning,Base -> Base (A2),OK,10.37,10.38,11,500,12.63,12.64,11,350,10.24,10.25,11
+Phi-4-reasoning,Base -> SFT (A3),OK,14.39,14.46,36,500,17.09,17.18,36,350,13.01,13.08,34
+Phi-4-reasoning,SFT -> Base (A1 / Prefix-ON),OK,10.9,10.92,15,500,13.34,13.36,15,350,10.42,10.44,13
+Phi-4-reasoning,SFT -> SFT (A4),OK,17.99,18.07,69,500,21.91,22.01,69,350,16.9,16.99,68
+Phi-4-reasoning,SFT -> Base OFF (A5),OK,9.87,9.89,12,500,11.92,11.94,12,350,9.72,9.74,12

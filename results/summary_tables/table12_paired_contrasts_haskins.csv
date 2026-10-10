@@ -1,0 +1,25 @@
+Model,Contrast,Metric,Estimate_pp,CI95_Low,CI95_High
+Phi-4-reasoning,"SFT->Base minus Base->Base (donor effect, base recipient)",continuation mean (pp),0.53,-0.86,1.95
+Phi-4-reasoning,"SFT->Base minus Base->Base (donor effect, base recipient)",strict pass rate (pp),0.8,-0.4,2.0
+Phi-4-reasoning,"SFT->Base minus Base->Base (donor effect, base recipient)","continuation mean, fractional scoring for all tasks (pp)",0.54,-0.83,1.95
+Phi-4-reasoning,"SFT->SFT minus Base->SFT (donor effect, SFT recipient)",continuation mean (pp),3.6,1.6,5.62
+Phi-4-reasoning,"SFT->SFT minus Base->SFT (donor effect, SFT recipient)",strict pass rate (pp),6.6,4.4,8.8
+Phi-4-reasoning,"SFT->SFT minus Base->SFT (donor effect, SFT recipient)","continuation mean, fractional scoring for all tasks (pp)",3.61,1.58,5.64
+Phi-4-reasoning,"Base->SFT minus Base->Base (recipient effect, base donor)",continuation mean (pp),4.02,2.26,5.78
+Phi-4-reasoning,"Base->SFT minus Base->Base (recipient effect, base donor)",strict pass rate (pp),5.0,3.0,7.0
+Phi-4-reasoning,"Base->SFT minus Base->Base (recipient effect, base donor)","continuation mean, fractional scoring for all tasks (pp)",4.08,2.33,5.84
+Phi-4-reasoning,"SFT->SFT minus SFT->Base (recipient effect, SFT donor)",continuation mean (pp),7.09,5.13,9.04
+Phi-4-reasoning,"SFT->SFT minus SFT->Base (recipient effect, SFT donor)",strict pass rate (pp),10.8,8.6,13.0
+Phi-4-reasoning,"SFT->SFT minus SFT->Base (recipient effect, SFT donor)","continuation mean, fractional scoring for all tasks (pp)",7.15,5.2,9.15
+Qwen3-14B,"SFT->Base minus Base->Base (donor effect, base recipient)",continuation mean (pp),13.4,10.36,16.42
+Qwen3-14B,"SFT->Base minus Base->Base (donor effect, base recipient)",strict pass rate (pp),16.8,13.8,19.8
+Qwen3-14B,"SFT->Base minus Base->Base (donor effect, base recipient)","continuation mean, fractional scoring for all tasks (pp)",19.52,15.85,23.11
+Qwen3-14B,"SFT->SFT minus Base->SFT (donor effect, SFT recipient)",continuation mean (pp),9.5,6.37,12.63
+Qwen3-14B,"SFT->SFT minus Base->SFT (donor effect, SFT recipient)",strict pass rate (pp),15.0,11.6,18.4
+Qwen3-14B,"SFT->SFT minus Base->SFT (donor effect, SFT recipient)","continuation mean, fractional scoring for all tasks (pp)",15.36,11.46,19.11
+Qwen3-14B,"Base->SFT minus Base->Base (recipient effect, base donor)",continuation mean (pp),-0.35,-1.22,0.53
+Qwen3-14B,"Base->SFT minus Base->Base (recipient effect, base donor)",strict pass rate (pp),-0.8,-2.2,0.6
+Qwen3-14B,"Base->SFT minus Base->Base (recipient effect, base donor)","continuation mean, fractional scoring for all tasks (pp)",-1.12,-2.08,-0.22
+Qwen3-14B,"SFT->SFT minus SFT->Base (recipient effect, SFT donor)",continuation mean (pp),-4.25,-6.96,-1.62
+Qwen3-14B,"SFT->SFT minus SFT->Base (recipient effect, SFT donor)",strict pass rate (pp),-2.6,-5.4,0.0
+Qwen3-14B,"SFT->SFT minus SFT->Base (recipient effect, SFT donor)","continuation mean, fractional scoring for all tasks (pp)",-5.27,-8.09,-2.59

@@ -57,3 +57,15 @@ class TestUpstreamBackedTasks(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def test_primary_score_binary_tasks():
+    from evaluators.haskins_evaluator import primary_score
+    # binary for the four tasks (original paper, Appendix F.1; upstream threshold 0.99), fractional otherwise
+    assert primary_score("meow_between_words", 0.97) == 0.0
+    assert primary_score("meow_between_words", 0.99) == 1.0
+    assert primary_score("end_of_sentence", 0.5) == 0.0
+    assert primary_score("word_suppression", 1.0) == 1.0
+    assert primary_score("multiple_word_suppression", 0.0) == 0.0
+    assert primary_score("third_person", 0.97) == 0.97
+    assert primary_score("alternating_case", 0.5) == 0.5

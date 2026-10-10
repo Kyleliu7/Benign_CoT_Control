@@ -1,9 +1,9 @@
-Model,Condition,Scoring,Status,Mean_Compliance,Strict_Count,N,NonChar_Mean,NonChar_Strict_Count,Hit_Token_Limit
-Qwen3-14B,Base,whole trace,OK,17.21,23,500,16.01,7,25
-Qwen3-14B,SFT,whole trace,OK,30.63,80,500,28.89,63,13
-Qwen3-14B,"Prefix-OFF (SFT donor, no constraint)",continuation only,OK,20.97,59,500,21.39,52,5
-Qwen3-14B,"Prefix-OFF (SFT donor, no constraint)",full trace incl. prefix,OK,20.12,41,500,20.92,41,5
-Qwen3-14B,"Prefix-ON (SFT donor, constraint)",continuation only,OK,37.97,112,500,33.23,72,11
-Qwen3-14B,"Prefix-ON (SFT donor, constraint)",full trace incl. prefix,OK,36.94,89,500,32.64,70,11
-Phi-4-reasoning,Base,whole trace,OK,9.87,13,500,12.43,13,52
-Phi-4-reasoning,SFT,whole trace,OK,16.21,62,500,20.81,62,3
+Model,Condition,Scoring,Status,Mean_Compliance,Mean_Compliance_Fractional,Strict_Count,N,NonChar_Mean,NonChar_Mean_Fractional,NonChar_Strict_Count,Hit_Token_Limit
+Qwen3-14B,Base,whole trace,OK,15.5,17.21,23,500,13.55,16.01,7,25
+Qwen3-14B,SFT,whole trace,OK,24.21,30.63,80,500,19.71,28.89,63,13
+Qwen3-14B,"Prefix-OFF (SFT donor, no constraint)",continuation only,OK,19.95,20.97,59,500,19.93,21.39,52,5
+Qwen3-14B,"Prefix-OFF (SFT donor, no constraint)",full trace incl. prefix,OK,19.14,20.12,41,500,19.52,20.92,41,5
+Qwen3-14B,"Prefix-ON (SFT donor, constraint)",continuation only,OK,29.71,37.97,112,500,21.44,33.23,72,11
+Qwen3-14B,"Prefix-ON (SFT donor, constraint)",full trace incl. prefix,OK,28.76,36.94,89,500,20.96,32.64,70,11
+Phi-4-reasoning,Base,whole trace,OK,9.85,9.87,13,500,12.4,12.43,13,52
+Phi-4-reasoning,SFT,whole trace,OK,16.11,16.21,62,500,20.66,20.81,62,3

@@ -1,0 +1,19 @@
+Model,Contrast,Metric,Estimate_pp,CI95_Low,CI95_High,Only_First_Succeeds,Only_Second_Succeeds,McNemar_Exact_P
+Qwen3-14B,SFT minus Base,IFS,19.3,13.7,25.0,73,15,0.0
+Qwen3-14B,SFT minus Base,Accuracy,-15.0,-20.3,-10.0,12,57,0.0
+Qwen3-14B,SFT minus Base,Joint,9.0,4.0,14.0,44,17,0.0007
+Qwen3-14B,Prefix-OFF minus Base,IFS,18.0,12.7,23.3,66,12,0.0
+Qwen3-14B,Prefix-OFF minus Base,Accuracy,-6.7,-11.7,-1.7,20,40,0.0135
+Qwen3-14B,Prefix-OFF minus Base,Joint,10.7,6.0,15.7,45,13,0.0
+Qwen3-14B,Prefix-ON minus Base,IFS,28.0,22.3,34.0,94,10,0.0
+Qwen3-14B,Prefix-ON minus Base,Accuracy,-7.0,-11.7,-2.3,17,38,0.0065
+Qwen3-14B,Prefix-ON minus Base,Joint,19.3,14.0,24.7,69,11,0.0
+Qwen3-14B,Prefix-ON minus SFT,IFS,8.7,4.0,13.3,39,13,0.0004
+Qwen3-14B,Prefix-ON minus SFT,Accuracy,8.0,2.7,13.3,46,22,0.0049
+Qwen3-14B,Prefix-ON minus SFT,Joint,10.3,5.7,15.0,43,12,0.0
+Qwen3-14B,Prefix-ON minus Prefix-OFF,IFS,10.0,5.3,14.7,43,13,0.0001
+Qwen3-14B,Prefix-ON minus Prefix-OFF,Accuracy,-0.3,-5.3,4.7,27,28,1.0
+Qwen3-14B,Prefix-ON minus Prefix-OFF,Joint,8.7,4.3,13.0,38,12,0.0003
+Phi-4-reasoning,SFT minus Base,IFS,7.0,4.0,10.0,22,1,0.0
+Phi-4-reasoning,SFT minus Base,Accuracy,-6.3,-11.3,-1.3,20,39,0.0183
+Phi-4-reasoning,SFT minus Base,Joint,5.0,2.3,8.0,17,2,0.0007
