@@ -1,0 +1,11 @@
+Task,Grading,Mean_Base,Strict_Base,Strict_Degenerate_Base,Mean_SFT_lr1e-4,Strict_SFT_lr1e-4,Strict_Degenerate_SFT_lr1e-4,Mean_SFT_lr2e-4,Strict_SFT_lr2e-4,Strict_Degenerate_SFT_lr2e-4
+third_person,fractional,87.15,0,0,84.21,2,0,52.69,2,1
+arrow_prefix,fractional,0.29,0,0,0.3,0,0,0.0,0,0
+end_of_sentence,binary,0.0,0,0,0.0,0,0,0.0,0,0
+meow_between_words,binary,0.0,0,0,12.0,6,6,0.0,0,0
+repeat_sentences,fractional,0.25,0,0,0.09,0,0,1.93,0,0
+alternating_case,fractional,15.59,0,0,26.87,8,8,13.56,1,1
+lowercase_thinking,fractional,6.19,0,0,10.93,2,0,35.46,11,0
+uppercase_thinking,fractional,4.27,0,0,7.76,0,0,16.49,2,1
+word_suppression,binary,6.0,3,0,2.0,1,0,10.0,5,2
+multiple_word_suppression,binary,0.0,0,0,0.0,0,0,8.0,4,3

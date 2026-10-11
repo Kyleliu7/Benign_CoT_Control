@@ -1,0 +1,13 @@
+Benchmark,Model,Outcome,N,Covariates,SFT_Effect,SFT_Effect_CI,Log_Words_Coefficient
+Haskins,Qwen3-14B,"headline score (linear, percentage points)",1000,task fixed effects,8.71,,
+Haskins,Qwen3-14B,"headline score (linear, percentage points)",1000,task fixed effects + log(words),7.56,,-1.4
+Haskins,Qwen3-14B,"strict success (logistic, odds ratio)",600,task fixed effects,6.44,"[3.66, 11.33]",
+Haskins,Qwen3-14B,"strict success (logistic, odds ratio)",600,task fixed effects + log(words),4.69,"[2.55, 8.63]",0.61
+Haskins,Phi-4-reasoning,"headline score (linear, percentage points)",1000,task fixed effects,6.26,,
+Haskins,Phi-4-reasoning,"headline score (linear, percentage points)",1000,task fixed effects + log(words),2.6,,-1.72
+Haskins,Phi-4-reasoning,"strict success (logistic, odds ratio)",300,task fixed effects,8.1,"[4.14, 15.85]",
+Haskins,Phi-4-reasoning,"strict success (logistic, odds ratio)",300,task fixed effects + log(words),4.38,"[1.51, 12.69]",0.72
+ReasonIF (word limit excluded),Qwen3-14B,"instruction-following success (logistic, odds ratio)",314,constraint fixed effects,2.86,"[1.74, 4.69]",
+ReasonIF (word limit excluded),Qwen3-14B,"instruction-following success (logistic, odds ratio)",314,constraint fixed effects + log(words),2.37,"[1.41, 3.97]",0.83
+ReasonIF (word limit excluded),Phi-4-reasoning,"instruction-following success (logistic, odds ratio)",314,constraint fixed effects,1.38,"[0.63, 3.06]",
+ReasonIF (word limit excluded),Phi-4-reasoning,"instruction-following success (logistic, odds ratio)",314,constraint fixed effects + log(words),1.49,"[0.64, 3.47]",1.07

@@ -405,4 +405,66 @@ write("a19_control_openings", "Fixed openings used in the control runs (text aft
       note=r"Each text is at most nine tokens (checked with the Qwen3 tokenizer before any generation). The wrong-rule condition gives each task the obeying opening of the next task in the list. "
            r"The other-question condition uses the SFT-donor opening generated for question $(q+17) \bmod 50$ of the same task; the modal condition uses each task's most frequent SFT-donor opening.")
 
+# ----------------------------------------------------------------------------------------------- Follow-ups (2026-10-10/11)
+def _opt(name):
+    p = T / name
+    return pd.read_csv(p, keep_default_na=False) if p.exists() else None
+
+
+def gcell(est, ci_text):
+    return "--" if str(est) == "" else R(("%+.2f %s" % (float(est), ci_text)).replace("-", "$-$"))
+
+
+t26 = _opt("table26_training_seeds.csv")
+if t26 is not None:
+    rows = [[r.Condition, f2(r.Haskins_Mean), int(r.Haskins_Strict), gcell(r.Haskins_Gain_Full, r.Haskins_Gain_Full_CI),
+             gcell(r.Haskins_Gain_First100, r.Haskins_Gain_First100_CI), f1(r.ReasonIF_IFS_Pct),
+             gcell(r.ReasonIF_IFS_Gain, r.ReasonIF_IFS_Gain_CI), f1(r.ReasonIF_Accuracy_Pct)] for r in t26.itertuples()]
+    write("t13_training_seeds", "Qwen3-14B SFT with three training seeds: standalone Haskins (500 pairs) and ReasonIF (300 questions).", "tab:seeds",
+          "lrrllrlr", ["Condition", "Haskins mean", "Strict", "Gain vs Base", "Gain, first 100 words", "ReasonIF IFS (\\%)", "IFS gain vs Base", "Accuracy (\\%)"], rows,
+          note=r"Seed 42 is the published adapter. Only the training seed differs (LoRA initialisation, data order, dropout); the validation split, hyperparameters, "
+               r"checkpoint rule (lowest validation loss; step 70 for every seed) and evaluation sampling seeds are identical. Gains are paired differences in percentage points "
+               r"with 95\% bootstrap intervals over questions (Haskins: 50-question cluster bootstrap; first-100-words rows keep pairs in which both traces reach 100 words).")
+t28 = _opt("table28_olmo_summary.csv")
+if t28 is not None:
+    rows = []
+    for r in t28.itertuples():
+        rows.append([r.Run, f2(r.Haskins_Mean), f"{int(r.Haskins_Strict)} ({int(r.Haskins_Strict_Degenerate)})", int(r.Haskins_Degenerate_Traces),
+                     f2(r.Haskins_Mean_Degenerate_Scored_0), int(r.Haskins_Starts_Bold_Heading), f"{float(r.Haskins_Median_Words):.0f}",
+                     gcell(r.Gain_Full, r.Gain_Full_CI), gcell(r.Gain_Degenerate_Scored_0, r.Gain_Degenerate_Scored_0_CI),
+                     gcell(r.Gain_First100_Case, r.Gain_First100_Case_CI),
+                     "--" if str(r.ReasonIF_IFS) == "" else f"{int(r.ReasonIF_IFS)} / {int(r.ReasonIF_Accuracy)}"])
+    write("a20_olmo_summary", "OLMo-3-7B-Think: Base and two SFT runs on the same 212 examples (standalone Haskins, 500 pairs; ReasonIF, 300 questions).", "tab:olmo",
+          "lrrrrrrllll", ["Run", "Mean", "Strict (degen.)", "Degen. traces", "Mean, degen. = 0", "Opens with heading", "Median words",
+                          "Gain vs Base", "Gain, degen. = 0", "Gain, case tasks, first 100 words", "ReasonIF IFS / correct"], rows,
+          note=r"lr 1e-4 is the Qwen3-14B recipe; lr 2e-4 was chosen after seeing the lr 1e-4 result and was evaluated on Haskins only. A trace is degenerate if its reasoning has "
+               r"fewer than 20 words or, for meow, more than 90\% of its words are ``meow'' (post-hoc rule). Case tasks are lowercase, uppercase and alternating case. "
+               r"Gains are paired differences with 50-question cluster-bootstrap 95\% intervals.")
+t27 = _opt("table27_olmo_haskins_per_task.csv")
+if t27 is not None:
+    rows = [[TASK_NAMES.get(r["Task"], r["Task"]), r["Grading"], f1(r["Mean_Base"]), f1(r["Mean_SFT_lr1e-4"]), f1(r["Mean_SFT_lr2e-4"]), int(r["Strict_Base"]),
+             f"{int(r['Strict_SFT_lr1e-4'])} ({int(r['Strict_Degenerate_SFT_lr1e-4'])})", f"{int(r['Strict_SFT_lr2e-4'])} ({int(r['Strict_Degenerate_SFT_lr2e-4'])})"]
+            for r in t27.to_dict("records")]
+    write("a21_olmo_per_task", "OLMo-3-7B-Think Haskins results by task (50 items per cell).", "tab:olmo-task", "llrrrrrr",
+          ["Task", "Grading", "Mean Base", "Mean lr 1e-4", "Mean lr 2e-4", "Strict Base", "Strict lr 1e-4 (degen.)", "Strict lr 2e-4 (degen.)"], rows)
+t29, t30 = _opt("table29_haskins_degenerate.csv"), _opt("table30_reasonif_excluded.csv")
+if t29 is not None and t30 is not None:
+    rows = [[r.Run, f2(r.Mean), f"{int(r.Strict)} ({int(r.Strict_Degenerate)})", int(r.Degenerate_Traces), f2(r.Mean_Degenerate_Scored_0)] for r in t29.itertuples()]
+    write("a22_haskins_degenerate", "Standalone Haskins runs: strict passes and means when degenerate reasoning traces are scored 0.", "tab:degenerate-haskins",
+          "lrrrr", ["Run", "Mean", "Strict (degenerate)", "Degenerate traces", "Mean, degenerate = 0"], rows,
+          note=r"Degenerate: reasoning with fewer than 20 words, or meow traces in which more than 90\% of the words are ``meow''. The rule was written after inspecting OLMo outputs.")
+    rows = [[r.Run, int(r.IFS), int(r.Excluded), R(r"\texttt{" + esc(str(r.Excluded_Items)) + "}") if str(r.Excluded_Items) else "--", f1(r.IFS_Pct), f1(r.IFS_Pct_Excluding),
+             "--" if str(r.Gain_vs_Base_Excluding) == "" else f1(r.Gain_vs_Base_Excluding)] for r in t30.itertuples()]
+    write("a23_reasonif_excluded", "ReasonIF instruction-following passes judged to contain no reasoning or incoherent text (manual review).", "tab:reasonif-excluded",
+          "lrrlrrr", ["Run", "IFS passes", "Excluded", "Items", "IFS (\\%)", "IFS excluding (\\%)", "Gain vs Base excluding"], rows,
+          note=r"Candidates were all passes of non-English language constraints and all passes with fewer than 20 words of reasoning; each was read, and only reasoning that is "
+               r"a heading, a boilerplate sentence, unrelated text or word salad was excluded (\texttt{data/manual\_review/reasonif\_pass\_review.json}). The grader output is unchanged.")
+t23 = _opt("table23_length_controlled_curve.csv")
+if t23 is not None:
+    sub = t23[(t23.Basis == "paired: both traces reach L") & (t23.Length_Words.astype(str).isin(["100", "200", "300"]))]
+    rows = [[r.Model, r.Tasks, int(r.Length_Words), int(r.N_Base), f2(r.Base), f2(r.SFT), gcell(r.Gain, f"[{float(r.CI_Low):.2f}, {float(r.CI_High):.2f}]")] for r in sub.itertuples()]
+    write("a24_length_controlled", "Length-controlled controllability (standalone Haskins): every reasoning trace scored on its first $L$ words, pairs in which both traces reach $L$.",
+          "tab:length-controlled", "llrrrrl", ["Model", "Tasks", "$L$", "Pairs", "Base", "SFT", "SFT $-$ Base (95\\% CI)"], rows,
+          note=r"Following Chen et al.\ (2026, Sec.~5.3), compliance is computed from the first word up to word $L$. Seed-42 adapters; 50-question cluster-bootstrap intervals.")
+
 print("wrote", len(list(OUT.glob("*.tex"))), "tables to", OUT)

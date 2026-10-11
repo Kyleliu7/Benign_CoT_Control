@@ -1,0 +1,5 @@
+Model,Items,N,Base_Mean_Words,SFT_Mean_Words,Base_IFS,SFT_IFS,Gain
+Qwen3-14B,all items (word limit excluded),247,2559.5,1143.3,15.79,29.96,14.17
+Qwen3-14B,length within a factor of 1.5,63,2624.6,2480.2,17.46,36.51,19.05
+Phi-4-reasoning,all items (word limit excluded),247,2306.9,1299.1,6.07,7.69,1.62
+Phi-4-reasoning,length within a factor of 1.5,47,3289.3,3043.6,8.51,6.38,-2.13

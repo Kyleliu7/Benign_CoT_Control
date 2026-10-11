@@ -195,3 +195,30 @@ SFT-written openings of 30 / 100 tokens give 33.68 / 33.28 (continuation scored)
 
 Put each result directory under `results/haskins_500/qwen3_14b/`; `python scripts/analysis_prefix_controls.py` (or `reproduce_tables.py --write`)
 then writes `table16_prefix_controls.csv` and `table17_prefix_length.csv`. Without these runs both are skipped.
+
+## Follow-up runs (2026-10-10/11): training seeds, OLMo-3-7B-Think, length control, degenerate outputs
+
+All tables below are produced by `scripts/reproduce_tables.py` (which now also runs `analysis_length_controlled.py` and `analysis_followups.py`)
+and turned into LaTeX by `scripts/make_paper_tables.py`.
+
+| Table | What it contains |
+| :--- | :--- |
+| `table23_length_controlled_curve.csv` | Standalone Haskins scored on the first L words of each trace (L = 100 ... 1000), following Chen et al. (2026, Sec. 5.3); paired rows keep pairs in which both traces reach L |
+| `table24_length_adjusted_regression.csv` | SFT effect with and without log(reasoning words) as a covariate (Haskins linear and logistic; ReasonIF logistic, word-limit items excluded) |
+| `table25_reasonif_length_matched.csv` | ReasonIF items whose Base and SFT reasoning lengths are within a factor of 1.5 |
+| `table26_training_seeds.csv` | Qwen3-14B SFT with training seeds 42 (published adapter), 1 and 2: standalone Haskins and ReasonIF vs the same Base run |
+| `table27_olmo_haskins_per_task.csv`, `table28_olmo_summary.csv` | OLMo-3-7B-Think Base, SFT lr 1e-4 (same recipe as Qwen) and SFT lr 2e-4 (chosen after the 1e-4 result; Haskins only) |
+| `table29_haskins_degenerate.csv` | Standalone Haskins runs with degenerate traces (fewer than 20 words of reasoning, or meow-only) counted and scored 0 (post-hoc rule) |
+| `table30_reasonif_excluded.csv` | ReasonIF IFS without passes judged to contain no reasoning or incoherent text (`data/manual_review/reasonif_pass_review.json`) |
+
+Raw records: `results/training_seeds/seed{1,2}/` and `results/olmo3_7b_think/` (run folders as written by the notebooks, plus `training/`
+with each run's `trainer_state.json`, the exact training config and, for the seeds, hashes showing the validation split is the seed-42 split).
+
+How the runs were produced (`scripts/vm/`, run on the same single RTX PRO 6000 VM as the original runs):
+* `train_seed.py`: LlamaFactory training with a new training seed while keeping the seed-42 validation split.
+* `train_olmo3.py`: registers an `olmo3_think` LlamaFactory template that is token-identical to OLMo-3-7B-Think's official chat template
+  (`python train_olmo3.py check`), then trains with the Qwen3-14B config (optionally a different learning rate).
+* `run_seed_evals.py`, `run_olmo_evals.py`: run the existing evaluation notebooks (`notebooks/Haskins_500_vLLM_Evaluation.ipynb` and the ReasonIF
+  notebooks) with only the model id, adapter path, output folder and model-family checks changed. OLMo Haskins runs set `VLLM_USE_AOT_COMPILE=0`
+  to avoid a vLLM 0.29 start-up error. The ReasonIF notebook is the one used for the Qwen3-14B ReasonIF runs (vLLM 0.16.0, per its run manifest).
+* Adapters (private on the Hugging Face Hub): `kyleliu789/olmo3-7b-think-gpt52-high-reasoning-original` and `...-lr2e-4`. The seed-1/2 Qwen adapters are not published.

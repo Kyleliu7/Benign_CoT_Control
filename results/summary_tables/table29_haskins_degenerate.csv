@@ -1,0 +1,10 @@
+Run,N,Mean,Strict,Strict_Degenerate,Degenerate_Traces,Mean_Degenerate_Scored_0
+Qwen3-14B Base,500,15.5,23,1,1,15.3
+Qwen3-14B SFT seed 42,500,24.21,80,3,14,23.61
+Qwen3-14B SFT seed 1,500,25.95,87,3,10,25.35
+Qwen3-14B SFT seed 2,500,26.79,95,6,15,25.59
+Phi-4-reasoning Base,500,9.85,13,0,0,9.85
+Phi-4-reasoning SFT,500,16.11,62,0,3,15.92
+OLMo-3-7B-Think Base,500,11.97,3,0,0,11.97
+OLMo-3-7B-Think SFT lr1e-4,500,14.42,19,14,41,11.3
+OLMo-3-7B-Think SFT lr2e-4,500,13.81,25,8,37,12.02
