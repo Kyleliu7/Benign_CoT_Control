@@ -1,0 +1,22 @@
+{
+  "evaluation_mode": "lora",
+  "model_id": "local/olmo3-7b-think-gpt52-high-reasoning-original",
+  "model_revision": "local",
+  "load_model_id": "allenai/Olmo-3-7B-Think",
+  "load_model_revision": "d97e442d7cc678210054dbcc9b440894d62c89a4",
+  "lora_model_id": "local/olmo3-7b-think-gpt52-high-reasoning-original",
+  "lora_rank": 32,
+  "reasonif_commit": "706b953feb9408a802e1ad6972c10ad7fbad3da8",
+  "num_questions": 300,
+  "generation_seed_rule": "42 + dataset_index",
+  "temperature": 1.0,
+  "top_p": 0.95,
+  "max_input_tokens": 2048,
+  "max_new_tokens": 16384,
+  "max_model_len": 18432,
+  "dtype": "bfloat16",
+  "python": "3.12.14",
+  "chat_template_sha256": "6d549883b5ed12879e191845c256a30c7dfd4eced0a4f160060a3ea0199d9e3a",
+  "maximum_observed_input_tokens": 888,
+  "vllm_version": "0.16.0"
+}

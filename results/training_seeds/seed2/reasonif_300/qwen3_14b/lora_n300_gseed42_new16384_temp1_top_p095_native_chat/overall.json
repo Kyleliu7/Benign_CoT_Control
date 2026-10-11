@@ -1,0 +1,14 @@
+[
+  {
+    "model":"qwen3-14b-gpt52-high-reasoning-seed2",
+    "questions":300,
+    "instruction_following":0.33,
+    "answer_correct":0.6166666667,
+    "joint_success":0.21,
+    "format_valid":0.8833333333,
+    "missing_answer":0.1166666667,
+    "truncated":0.0233333333,
+    "mean_output_tokens":1847.4466666667,
+    "median_output_tokens":625.5
+  }
+]
