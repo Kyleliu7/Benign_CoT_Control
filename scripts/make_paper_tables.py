@@ -459,6 +459,21 @@ if t29 is not None and t30 is not None:
           "lrrlrrr", ["Run", "IFS passes", "Excluded", "Items", "IFS (\\%)", "IFS excluding (\\%)", "Gain vs Base excluding"], rows,
           note=r"Candidates were all passes of non-English language constraints and all passes with fewer than 20 words of reasoning; each was read, and only reasoning that is "
                r"a heading, a boilerplate sentence, unrelated text or word salad was excluded (\texttt{data/manual\_review/reasonif\_pass\_review.json}). The grader output is unchanged.")
+t31 = _opt("table31_qwen_training_variants.csv")
+if t31 is not None:
+    groups = list(dict.fromkeys(t31.Group))
+    rows, rules = [], []
+    for g in groups:
+        for r in t31[t31.Group == g].itertuples():
+            rows.append([r.Condition + (r" $^\dagger$" if r.Note else ""), int(r.IFS), f1(r.IFS_Pct),
+                         "--" if str(r.IFS_Gain_vs_Base) == "" else gcell(r.IFS_Gain_vs_Base, r.IFS_Gain_CI), f1(r.Accuracy_Pct), f"{float(r.Mean_Tokens):,.0f}",
+                         int(r.Starts_Bold_Heading)])
+        rules.append(len(rows) - 1)
+    write("t14_training_variants", "Other Qwen3-14B fine-tunes on the same prompts, evaluated on ReasonIF (300 questions; one training run each).", "tab:variants",
+          "lrrlrrr", ["Training data", "IFS", "IFS (\\%)", "Gain vs Base (95\\% CI)", "Accuracy (\\%)", "Mean output tokens", "Opens with heading"], rows, rule_after=tuple(rules[:-1]),
+          note=r"All adapters use the reported recipe (LoRA $r=32$, learning rate $10^{-4}$, 3 epochs, seed 42, lowest-validation-loss checkpoint) and the same ReasonIF "
+               r"settings. The two runs at the bottom are not part of the study: one used a corrupted copy of the data, one a different dataset. "
+               r"$^\dagger$Evaluated with a standalone script with the same prompts and sampling settings. Gains are paired differences with bootstrap intervals over the 300 questions.")
 t23 = _opt("table23_length_controlled_curve.csv")
 if t23 is not None:
     sub = t23[(t23.Basis == "paired: both traces reach L") & (t23.Length_Words.astype(str).isin(["100", "200", "300"]))]

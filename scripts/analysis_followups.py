@@ -15,6 +15,8 @@ Follow-up analyses added on 2026-10-10/11 (all from raw records in results/):
                                     are scored 0. The rule was written after seeing OLMo outputs; it is a post-hoc sensitivity check.
   table30_reasonif_excluded.csv     ReasonIF IFS with and without the passes listed as no_reasoning / incoherent in
                                     data/manual_review/reasonif_pass_review.json (manual review; grader output unchanged).
+  table31_qwen_training_variants.csv ReasonIF for the other Qwen3-14B fine-tunes (data/training_variants.json): loss on reasoning only or
+                                    answer only, plain-prose rewrite, other reasoning sources, answers only, and two excluded runs.
 
 Scores use the paper scorer and the original paper's grading rule (binary for word suppression, multiple word suppression,
 end-of-sentence and meow; fractional otherwise). Missing runs are skipped, so the tables are empty until the runs are added.
@@ -111,9 +113,10 @@ def reasonif_runs() -> dict:
     return out
 
 
-def _ci(values, rng):
+def _ci(values, rng=None):
+    # a fresh generator per interval, so the same paired differences always give the same interval in every table
     v = np.asarray(values, dtype=float)
-    b = v[rng.integers(0, len(v), (N_BOOT, len(v)))].mean(1)
+    b = v[np.random.default_rng(SEED).integers(0, len(v), (N_BOOT, len(v)))].mean(1)
     return float(np.percentile(b, 2.5)), float(np.percentile(b, 97.5))
 
 
@@ -256,13 +259,46 @@ def table_reasonif_excluded(R: dict) -> pd.DataFrame:
     return df
 
 
+def table_training_variants(R: dict) -> pd.DataFrame:
+    """ReasonIF for the other Qwen3-14B fine-tunes listed in data/training_variants.json (one run each)."""
+    meta = json.loads((A.REPO_ROOT / "data" / "training_variants.json").read_text(encoding="utf-8"))["variants"]
+    root = RES / "reasonif_300" / "qwen3_14b_training_variants"
+    rng = np.random.default_rng(SEED)
+    base = {r["dataset_index"]: bool(r["instruction_following"]) for r in R["Qwen3-14B Base"][1]}
+    runs = [("reference", "Base (no fine-tuning)", "Qwen/Qwen3-14B", R["Qwen3-14B Base"][1], ""),
+            ("reference", "Reported adapter: GPT-5.2 reasoning summaries, loss on reasoning and answer",
+             "kyleliu789/qwen3-14b-gpt52-high-reasoning-original", R["Qwen3-14B SFT seed 42"][1], "")]
+    for v in meta:
+        f = root / v["folder"] / "scored_responses.jsonl"
+        if f.exists():
+            runs.append((v["group"], v["label"], v["adapter"], _jl(f), v.get("note", "")))
+    rows = []
+    for group, label, adapter, recs, note in runs:
+        n = len(recs)
+        ifs = np.array([int(bool(r["instruction_following"])) for r in recs])
+        tok = [r.get("output_tokens", r.get("total_tokens")) for r in recs]
+        row = dict(Group=group, Condition=label, Adapter=adapter, N=n, IFS=int(ifs.sum()), IFS_Pct=_r2(100 * ifs.mean()),
+                   Accuracy_Pct=_r2(100 * np.mean([bool(r["answer_correct"]) for r in recs])),
+                   Joint=int(sum(bool(r["joint_success"]) for r in recs)), Mean_Tokens=round(float(np.mean(tok)), 1),
+                   Starts_Bold_Heading=int(sum(str(r.get("reasoning_content") or "").lstrip().startswith("**") for r in recs)), Note=note)
+        if label.startswith("Base"):
+            row.update(IFS_Gain_vs_Base="", IFS_Gain_CI="")
+        else:
+            diff = np.array([int(bool(r["instruction_following"])) - int(base[r["dataset_index"]]) for r in recs])
+            lo, hi = _ci(diff, rng)
+            row.update(IFS_Gain_vs_Base=_r2(100 * diff.mean()), IFS_Gain_CI=f"[{100*lo:.2f}, {100*hi:.2f}]")
+        rows.append(row)
+    return pd.DataFrame(rows)
+
+
 def followup_tables() -> dict:
     H, R = haskins_runs(), reasonif_runs()
     tables = {"table26_training_seeds.csv": table_training_seeds(H, R),
               "table27_olmo_haskins_per_task.csv": table_olmo_per_task(H),
               "table28_olmo_summary.csv": table_olmo_summary(H, R),
               "table29_haskins_degenerate.csv": table_haskins_degenerate(H),
-              "table30_reasonif_excluded.csv": table_reasonif_excluded(R)}
+              "table30_reasonif_excluded.csv": table_reasonif_excluded(R),
+              "table31_qwen_training_variants.csv": table_training_variants(R)}
     # integer counts stay integers; cells that do not apply (e.g. gains for the Base row) are empty strings
     return {k: v.convert_dtypes().astype(object).fillna("") for k, v in tables.items() if not v.empty}
 

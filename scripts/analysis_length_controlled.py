@@ -63,9 +63,10 @@ def _windowed(d: pd.DataFrame, w: int) -> pd.Series:
                      index=d.index)
 
 
-def _cluster_ci(diff_by_q: pd.Series, rng) -> tuple:
+def _cluster_ci(diff_by_q: pd.Series, rng=None) -> tuple:
+    # a fresh generator per interval, so the same paired differences always give the same interval in every table
     v = diff_by_q.to_numpy()
-    idx = rng.integers(0, len(v), size=(N_BOOT, len(v)))
+    idx = np.random.default_rng(SEED).integers(0, len(v), size=(N_BOOT, len(v)))
     boots = v[idx].mean(axis=1)
     return np.percentile(boots, 2.5), np.percentile(boots, 97.5)
 

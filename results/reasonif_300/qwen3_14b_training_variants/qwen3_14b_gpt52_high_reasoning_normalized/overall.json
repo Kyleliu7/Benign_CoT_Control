@@ -1,0 +1,61 @@
+{
+  "model": "Qwen/Qwen3-14B + GPT-5.2 High Reasoning Normalized SFT (LoRA)",
+  "lora_path": "/home/kyleliu789/workspace/LlamaFactory/qwen3-14b-gpt52-high-reasoning-normalized",
+  "questions": 300,
+  "ifs": 26.333333333333332,
+  "accuracy": 72.0,
+  "joint_success": 18.0,
+  "format_valid": 87.33333333333333,
+  "mean_reasoning_tokens": 2286.346666666667,
+  "mean_total_tokens": 2513.17,
+  "constraint_breakdown": [
+    {
+      "constraint": "punctuation:no_comma",
+      "N": 56,
+      "ifs": 37.5,
+      "accuracy": 82.14285714285714,
+      "joint": 35.714285714285715,
+      "mean_reasoning_tokens": 3758.589285714286
+    },
+    {
+      "constraint": "language:reasoning_language",
+      "N": 52,
+      "ifs": 30.76923076923077,
+      "accuracy": 67.3076923076923,
+      "joint": 21.153846153846153,
+      "mean_reasoning_tokens": 2366.8846153846152
+    },
+    {
+      "constraint": "change_case:english_capital",
+      "N": 43,
+      "ifs": 2.3255813953488373,
+      "accuracy": 81.3953488372093,
+      "joint": 2.3255813953488373,
+      "mean_reasoning_tokens": 2510.6976744186045
+    },
+    {
+      "constraint": "length_constraint_checkers:number_words",
+      "N": 53,
+      "ifs": 41.509433962264154,
+      "accuracy": 71.69811320754717,
+      "joint": 22.641509433962266,
+      "mean_reasoning_tokens": 1218.3962264150944
+    },
+    {
+      "constraint": "detectable_format:json_format",
+      "N": 47,
+      "ifs": 0.0,
+      "accuracy": 68.08510638297872,
+      "joint": 0.0,
+      "mean_reasoning_tokens": 2167.8936170212764
+    },
+    {
+      "constraint": "startend:end_checker",
+      "N": 49,
+      "ifs": 38.775510204081634,
+      "accuracy": 61.224489795918366,
+      "joint": 20.408163265306122,
+      "mean_reasoning_tokens": 1590.1836734693877
+    }
+  ]
+}
