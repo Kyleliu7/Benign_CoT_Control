@@ -1,0 +1,5702 @@
+{
+  "0": {
+    "dataset_index": 0,
+    "question": "Find the number of collections of $16$ distinct subsets of $\\{1,2,3,4,5\\}$ with ",
+    "prefix_text": "We are asked: \"Find the number of collections",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      10086,
+      279,
+      1396,
+      315,
+      15661
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "1": {
+    "dataset_index": 1,
+    "question": "A $\\emph{triangular number}$ is a positive integer that can be expressed in the ",
+    "prefix_text": "We are given a triangular number: T_n =",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      66594,
+      1396,
+      25,
+      350,
+      1107,
+      284
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "2": {
+    "dataset_index": 2,
+    "question": "There exists a unique positive integer $a$ for which the sum \\[U=\\sum_{n=1}^{202",
+    "prefix_text": "We are given: \n$$\nU=\\sum",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      720,
+      14415,
+      198,
+      52,
+      35533,
+      1264
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "3": {
+    "dataset_index": 3,
+    "question": "James has a rainwater collection barrel.  For each inch of rain he collects 15 g",
+    "prefix_text": "We are asked: \"James has a rainwater",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      29184,
+      706,
+      264,
+      11422,
+      13284
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "4": {
+    "dataset_index": 4,
+    "question": "Recall that a palindrome is a number that reads the same forward and backward. F",
+    "prefix_text": "We are asked: \"Recall that a palindrome",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      3905,
+      543,
+      430,
+      264,
+      74197
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "5": {
+    "dataset_index": 5,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Let\u2019s analyze:** When sanding, friction",
+    "prefix_token_ids": [
+      334,
+      10267,
+      753,
+      24564,
+      68063,
+      3277,
+      9462,
+      287,
+      11,
+      39676
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "6": {
+    "dataset_index": 6,
+    "question": "Jennifer purchased 40 cans of milk at the store before meeting her classmate Mar",
+    "prefix_text": "We are asked: \"Jennifer purchased 40 cans",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      72526,
+      15075,
+      220,
+      1272,
+      43732
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "7": {
+    "dataset_index": 7,
+    "question": "When $n$ standard six-sided dice are rolled, the product of the numbers rolled c",
+    "prefix_text": "We are asked: \"When n standard six-sided",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      4599,
+      308,
+      5410,
+      4848,
+      50858
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "8": {
+    "dataset_index": 8,
+    "question": "Natalia sold clips to 48 of her friends in April, and then she sold half as many",
+    "prefix_text": "We have a straightforward problem: Natalia sold clips",
+    "prefix_token_ids": [
+      1687,
+      617,
+      264,
+      31439,
+      3575,
+      25,
+      42701,
+      689,
+      6216,
+      27203
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "9": {
+    "dataset_index": 9,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "## Analyzing product transformations:\n\nConsider starting with ",
+    "prefix_token_ids": [
+      567,
+      38527,
+      20994,
+      2027,
+      54070,
+      1473,
+      38275,
+      6041,
+      449,
+      220
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "10": {
+    "dataset_index": 10,
+    "question": "Find the number of ways to place a digit in each cell of a 2x3 grid so that the ",
+    "prefix_text": "We are given a 2x3 grid,",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      220,
+      17,
+      87,
+      18,
+      5950,
+      11
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "11": {
+    "dataset_index": 11,
+    "question": "Consider the L-shaped region formed by three unit squares joined at their sides,",
+    "prefix_text": "We are given an L-shaped region formed by three",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      459,
+      445,
+      35831,
+      5654,
+      14454,
+      555,
+      2380
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "12": {
+    "dataset_index": 12,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are asked:\n\n\"In the CERN Bubble Chamber",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      1473,
+      33703,
+      279,
+      356,
+      13974,
+      54424,
+      32479
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "13": {
+    "dataset_index": 13,
+    "question": "A bear is preparing to hibernate for the winter and needs to gain 1000 pounds. A",
+    "prefix_text": "We are Phi. I need to solve the problem",
+    "prefix_token_ids": [
+      1687,
+      527,
+      64913,
+      13,
+      358,
+      1205,
+      311,
+      11886,
+      279,
+      3575
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "14": {
+    "dataset_index": 14,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Understanding the Problem**\n\nUser prompt involves a chemistry",
+    "prefix_token_ids": [
+      334,
+      71251,
+      279,
+      22854,
+      57277,
+      1502,
+      10137,
+      18065,
+      264,
+      30903
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "15": {
+    "dataset_index": 15,
+    "question": "Define $x\\diamond y$ to be $|x-y|$ for all real numbers $x$ and $y.$ What is the",
+    "prefix_text": "We are given the diamond operator as defined in the",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      279,
+      22996,
+      5793,
+      439,
+      4613,
+      304,
+      279
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "16": {
+    "dataset_index": 16,
+    "question": "On Halloween $31$ children walked into the principal's office asking for candy. ",
+    "prefix_text": "We are given that on Halloween 31 children walked",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      430,
+      389,
+      27711,
+      220,
+      2148,
+      2911,
+      15203
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "17": {
+    "dataset_index": 17,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are asked: \"You have prepared an unknown",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      2675,
+      617,
+      10235,
+      459,
+      9987
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "18": {
+    "dataset_index": 18,
+    "question": "Let $\\ell_A$ and $\\ell_B$ be two distinct parallel lines. For positive integers ",
+    "prefix_text": "We are asked: Let \u2113_A and",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      6914,
+      29753,
+      241,
+      1596,
+      323,
+      29753
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "19": {
+    "dataset_index": 19,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "##**Understanding the Question**\n\nI need to choose",
+    "prefix_token_ids": [
+      567,
+      334,
+      71251,
+      279,
+      16225,
+      57277,
+      40,
+      1205,
+      311,
+      5268
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "20": {
+    "dataset_index": 20,
+    "question": "It's Ava's birthday party. Her parents bought a unicorn pi\u00f1ata for $13 and fille",
+    "prefix_text": "We are Phi addressing a math question about a unicorn",
+    "prefix_token_ids": [
+      1687,
+      527,
+      64913,
+      28118,
+      264,
+      7033,
+      3488,
+      922,
+      264,
+      82930
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "21": {
+    "dataset_index": 21,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Question:**\nThe multiple-choice question: \"",
+    "prefix_token_ids": [
+      334,
+      14924,
+      25,
+      1035,
+      791,
+      5361,
+      63726,
+      3488,
+      25,
+      330
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "22": {
+    "dataset_index": 22,
+    "question": "Let $\\omega = \\cos\\frac{2\\pi}{7} + i \\cdot \\sin\\frac{2\\pi}{7},$ where $i = \\sqrt",
+    "prefix_text": "We are asked: Let \u03c9 = exp(",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      6914,
+      17839,
+      231,
+      284,
+      1367,
+      7
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "23": {
+    "dataset_index": 23,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are asked: \"Let there be a di",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      10267,
+      1070,
+      387,
+      264,
+      1891
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "24": {
+    "dataset_index": 24,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We have problem: \"Calculate the enthalpy",
+    "prefix_token_ids": [
+      1687,
+      617,
+      3575,
+      25,
+      330,
+      48966,
+      279,
+      1218,
+      12130,
+      3368
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "25": {
+    "dataset_index": 25,
+    "question": "For complex number $u = a+bi$ and $v = c+di$ (where $i=\\sqrt{-1}$), define the b",
+    "prefix_text": "We are given: For complex numbers u = a",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      1789,
+      6485,
+      5219,
+      577,
+      284,
+      264
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "26": {
+    "dataset_index": 26,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "Let's read the question carefully:\n\n\"In a parallel",
+    "prefix_token_ids": [
+      10267,
+      596,
+      1373,
+      279,
+      3488,
+      15884,
+      1473,
+      33703,
+      264,
+      15638
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "27": {
+    "dataset_index": 27,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Analyzing and answering the question**\n\nI need",
+    "prefix_token_ids": [
+      334,
+      74407,
+      20994,
+      323,
+      36864,
+      279,
+      3488,
+      57277,
+      40,
+      1205
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "28": {
+    "dataset_index": 28,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "User says: \"Read the following multiple-choice question",
+    "prefix_token_ids": [
+      1502,
+      2795,
+      25,
+      330,
+      4518,
+      279,
+      2768,
+      5361,
+      63726,
+      3488
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "29": {
+    "dataset_index": 29,
+    "question": "Each square in a $5 \\times 5$ grid is either filled or empty, and has up to eigh",
+    "prefix_text": "We are given a $5\\times 5",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      400,
+      20,
+      5061,
+      1769,
+      220,
+      20
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "30": {
+    "dataset_index": 30,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Interpretation of the metaphor**\n\nI need",
+    "prefix_token_ids": [
+      334,
+      3386,
+      8203,
+      367,
+      315,
+      279,
+      46450,
+      57277,
+      40,
+      1205
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "31": {
+    "dataset_index": 31,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "The problem states: \"Two quantum states with energies",
+    "prefix_token_ids": [
+      791,
+      3575,
+      5415,
+      25,
+      330,
+      11874,
+      31228,
+      5415,
+      449,
+      49969
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "32": {
+    "dataset_index": 32,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Identifying the correct answer**\n\nThe question:",
+    "prefix_token_ids": [
+      334,
+      29401,
+      7922,
+      279,
+      4495,
+      4320,
+      57277,
+      791,
+      3488,
+      25
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "33": {
+    "dataset_index": 33,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "Observing the problem: \"Laura adds 50",
+    "prefix_token_ids": [
+      38863,
+      287,
+      279,
+      3575,
+      25,
+      330,
+      77560,
+      11621,
+      220,
+      1135
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "34": {
+    "dataset_index": 34,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Setting the stage**\n\nThe multiple-choice question asks",
+    "prefix_token_ids": [
+      334,
+      15762,
+      279,
+      6566,
+      57277,
+      791,
+      5361,
+      63726,
+      3488,
+      17501
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "35": {
+    "dataset_index": 35,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "## Multiple Choice: Determine correct answer.\nReading the",
+    "prefix_token_ids": [
+      567,
+      29911,
+      28206,
+      25,
+      31001,
+      4495,
+      4320,
+      627,
+      32999,
+      279
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "36": {
+    "dataset_index": 36,
+    "question": "Let $w = \\dfrac{\\sqrt{3} + i}{2}$ and $z = \\dfrac{-1 + i\\sqrt{3}}{2},$ where $i ",
+    "prefix_text": "We are asked: Let w = (sqrt(",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      6914,
+      289,
+      284,
+      320,
+      27986,
+      7
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "37": {
+    "dataset_index": 37,
+    "question": "To make pizza, together with other ingredients, Kimber needs 10 cups of water, 1",
+    "prefix_text": "We are asked: \"To make pizza, together",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      1271,
+      1304,
+      23317,
+      11,
+      3871
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "38": {
+    "dataset_index": 38,
+    "question": "Jen enters a lottery by picking $4$ distinct numbers from $S=\\{1,2,3,\\cdots,9,10",
+    "prefix_text": "We are asked: \"Jen enters a lottery",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      41,
+      268,
+      29933,
+      264,
+      39339
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "39": {
+    "dataset_index": 39,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Before I answer**, I need to consider this",
+    "prefix_token_ids": [
+      334,
+      10438,
+      358,
+      4320,
+      98319,
+      358,
+      1205,
+      311,
+      2980,
+      420
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "40": {
+    "dataset_index": 40,
+    "question": "Caleb bought 10 cartons of ice cream and 4 cartons of frozen yoghurt. Each carto",
+    "prefix_text": "We are tasked with: \"Caleb bought ",
+    "prefix_token_ids": [
+      1687,
+      527,
+      51920,
+      449,
+      25,
+      330,
+      34,
+      65030,
+      11021,
+      220
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "41": {
+    "dataset_index": 41,
+    "question": "Let $f(n) = \\left( \\frac{-1+i\\sqrt{3}}{2} \\right)^n + \\left( \\frac{-1-i\\sqrt{3}}",
+    "prefix_text": "We are asked: Let \\(f(n) =",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      6914,
+      18240,
+      69,
+      1471,
+      8,
+      284
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "42": {
+    "dataset_index": 42,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are asked: \"Two stars (Star_",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      11874,
+      9958,
+      320,
+      12988,
+      62
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "43": {
+    "dataset_index": 43,
+    "question": "What is the degree measure of the acute angle formed by lines with slopes $2$ an",
+    "prefix_text": "We are asked: \"What is the degree measure",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      3923,
+      374,
+      279,
+      8547,
+      6767
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "44": {
+    "dataset_index": 44,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are tasked: \"Read the following multiple-choice",
+    "prefix_token_ids": [
+      1687,
+      527,
+      51920,
+      25,
+      330,
+      4518,
+      279,
+      2768,
+      5361,
+      63726
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "45": {
+    "dataset_index": 45,
+    "question": "Bella bought stamps at the post office. Some of the stamps had a snowflake desig",
+    "prefix_text": "We are asked: \"Bella bought stamps at",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      33,
+      6985,
+      11021,
+      50312,
+      520
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "46": {
+    "dataset_index": 46,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "The question: \"The source of energy for the",
+    "prefix_token_ids": [
+      791,
+      3488,
+      25,
+      330,
+      791,
+      2592,
+      315,
+      4907,
+      369,
+      279
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "47": {
+    "dataset_index": 47,
+    "question": "Azar, Carl, Jon, and Sergey are the four players left in a singles tennis tourna",
+    "prefix_text": "We are given: Four players: Azar,",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      13625,
+      4311,
+      25,
+      15757,
+      277,
+      11
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "48": {
+    "dataset_index": 48,
+    "question": "Kayla rolls four fair $6$-sided dice. What is the denominator minus the numerato",
+    "prefix_text": "We are asked: \"Kayla rolls four fair",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      67417,
+      4355,
+      28473,
+      3116,
+      6762
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "49": {
+    "dataset_index": 49,
+    "question": "Ann is cutting fabric to make curtains. She cuts a 4 foot by 6 foot rectangle fo",
+    "prefix_text": "We are given question: \"Ann is cutting fabric",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      3488,
+      25,
+      330,
+      28192,
+      374,
+      14713,
+      13354
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "50": {
+    "dataset_index": 50,
+    "question": "How many complex numbers satisfy the equation $z^5=\\overline{z}$, where $\\overli",
+    "prefix_text": "We are asked: \"How many complex numbers satisfy",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      4438,
+      1690,
+      6485,
+      5219,
+      27651
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "51": {
+    "dataset_index": 51,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Identifying Option C**\n\nI'll now re",
+    "prefix_token_ids": [
+      334,
+      29401,
+      7922,
+      7104,
+      356,
+      57277,
+      40,
+      3358,
+      1457,
+      312
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "52": {
+    "dataset_index": 52,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Organizing Reaction Information**\n\nWe\u2019re asked about",
+    "prefix_token_ids": [
+      334,
+      24105,
+      4954,
+      67941,
+      8245,
+      57277,
+      1687,
+      3207,
+      4691,
+      922
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "53": {
+    "dataset_index": 53,
+    "question": "Let $x_0,x_1,x_2,\\dotsc$ be a sequence of numbers, where each $x_k$ is either $0",
+    "prefix_text": "We are given a sequence x_k in {0",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      8668,
+      865,
+      4803,
+      304,
+      314,
+      15
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "54": {
+    "dataset_index": 54,
+    "question": "What is the area of the region in the coordinate plane defined by\n$| | x | - 1 |",
+    "prefix_text": "We are asked: \"What is the area of",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      3923,
+      374,
+      279,
+      3158,
+      315
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "55": {
+    "dataset_index": 55,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Clarifying the meaning of \"circle graph\"",
+    "prefix_token_ids": [
+      334,
+      100069,
+      7922,
+      279,
+      7438,
+      315,
+      330,
+      26942,
+      4876,
+      1
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "56": {
+    "dataset_index": 56,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "I need to clarify that I'm following specific principles",
+    "prefix_token_ids": [
+      40,
+      1205,
+      311,
+      38263,
+      430,
+      358,
+      2846,
+      2768,
+      3230,
+      16565
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "57": {
+    "dataset_index": 57,
+    "question": "The sum of all positive integers $m$ such that $\\frac{13!}{m}$ is a perfect squa",
+    "prefix_text": "We are asked: \"The sum of all positive",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      791,
+      2694,
+      315,
+      682,
+      6928
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "58": {
+    "dataset_index": 58,
+    "question": "Every morning Aya goes for a $9$-kilometer-long walk and stops at a coffee shop ",
+    "prefix_text": "We are given story: Aya goes for a",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      3446,
+      25,
+      362,
+      7911,
+      5900,
+      369,
+      264
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "59": {
+    "dataset_index": 59,
+    "question": "In a table tennis tournament every participant played every other participant ex",
+    "prefix_text": "We are asked: \"In a table tennis tournament",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      644,
+      264,
+      2007,
+      32515,
+      16520
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "60": {
+    "dataset_index": 60,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Selecting the most appropriate option for the calibration",
+    "prefix_token_ids": [
+      334,
+      3461,
+      287,
+      279,
+      1455,
+      8475,
+      3072,
+      369,
+      279,
+      38711
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "61": {
+    "dataset_index": 61,
+    "question": "There are 25 roses in a garden. There are 40 tulips. There are 35 daisies. What ",
+    "prefix_text": "We're given: 25 roses, 40",
+    "prefix_token_ids": [
+      1687,
+      2351,
+      2728,
+      25,
+      220,
+      914,
+      61741,
+      11,
+      220,
+      1272
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "62": {
+    "dataset_index": 62,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "The question says: \"Read the following multiple-choice",
+    "prefix_token_ids": [
+      791,
+      3488,
+      2795,
+      25,
+      330,
+      4518,
+      279,
+      2768,
+      5361,
+      63726
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "63": {
+    "dataset_index": 63,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Considering a multiple-choice question: two stars at",
+    "prefix_token_ids": [
+      334,
+      83896,
+      264,
+      5361,
+      63726,
+      3488,
+      25,
+      1403,
+      9958,
+      520
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "64": {
+    "dataset_index": 64,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are Phi and must answer the following question.",
+    "prefix_token_ids": [
+      1687,
+      527,
+      64913,
+      323,
+      2011,
+      4320,
+      279,
+      2768,
+      3488,
+      13
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "65": {
+    "dataset_index": 65,
+    "question": "There is a polynomial $P(x)$ with integer coefficients such that\\[P(x)=\\frac{(x^",
+    "prefix_text": "We are asked: There is a polynomial P(x",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      2684,
+      374,
+      264,
+      48411,
+      393,
+      2120
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "66": {
+    "dataset_index": 66,
+    "question": "Let $P$ be a point on the circle circumscribing square $ABCD$ that satisfies $PA",
+    "prefix_text": "We are told that P lies on circle circums",
+    "prefix_token_ids": [
+      1687,
+      527,
+      3309,
+      430,
+      393,
+      15812,
+      389,
+      12960,
+      4319,
+      6370
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "67": {
+    "dataset_index": 67,
+    "question": "Alice chooses a set $A$ of positive integers. Then Bob lists all finite nonempty",
+    "prefix_text": "We are given: Alice chooses a set A of",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      30505,
+      41011,
+      264,
+      743,
+      362,
+      315
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "68": {
+    "dataset_index": 68,
+    "question": "Paityn has 20 red hats and 24 blue hats. Her friend Zola has 4/5 times as many r",
+    "prefix_text": "We are asked: \"Paityn has ",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      20908,
+      488,
+      77,
+      706,
+      220
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "69": {
+    "dataset_index": 69,
+    "question": "Let $x,y$ and $z$ be positive real numbers that satisfy the following system of ",
+    "prefix_text": "We are given three equations:\n\nlog2(x/(",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      2380,
+      39006,
+      1473,
+      848,
+      17,
+      2120,
+      12148
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "70": {
+    "dataset_index": 70,
+    "question": "Let $ABC$ be a triangle inscribed in circle $\\omega$. Let the tangents to $\\omeg",
+    "prefix_text": "We are given triangle ABC inscribed in circle",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      22217,
+      19921,
+      1672,
+      17890,
+      304,
+      12960,
+      17839
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "71": {
+    "dataset_index": 71,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are given multiple-choice question. Let me parse",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      5361,
+      63726,
+      3488,
+      13,
+      6914,
+      757,
+      4820
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "72": {
+    "dataset_index": 72,
+    "question": "Let $x_1\\leq x_2\\leq \\cdots\\leq x_{100}$ be real numbers such that $|x_1| + |x_2",
+    "prefix_text": "We are asked: \"Let $x_1",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      10267,
+      400,
+      87,
+      62,
+      16
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "73": {
+    "dataset_index": 73,
+    "question": "Let $\\omega\\neq 1$ be a 13th root of unity. Find the remainder when\n\\[\\prod_{k=0",
+    "prefix_text": "We are given the expression:\n\\[\n\\prod",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      279,
+      7645,
+      512,
+      59,
+      9837,
+      59,
+      20329
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "74": {
+    "dataset_index": 74,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We have a multi-choice question: \"Determine",
+    "prefix_token_ids": [
+      1687,
+      617,
+      264,
+      7447,
+      63726,
+      3488,
+      25,
+      330,
+      35,
+      25296
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "75": {
+    "dataset_index": 75,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are asked: \"Read the following multiple-choice",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      4518,
+      279,
+      2768,
+      5361,
+      63726
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "76": {
+    "dataset_index": 76,
+    "question": "James is a first-year student at a University in Chicago. He has a budget of $10",
+    "prefix_text": "We have: James is first-year student at University",
+    "prefix_token_ids": [
+      1687,
+      617,
+      25,
+      7957,
+      374,
+      1176,
+      4771,
+      5575,
+      520,
+      3907
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "77": {
+    "dataset_index": 77,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Reasoning**\n\nLet's examine this question:",
+    "prefix_token_ids": [
+      334,
+      26197,
+      287,
+      57277,
+      10267,
+      596,
+      21635,
+      420,
+      3488,
+      25
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "78": {
+    "dataset_index": 78,
+    "question": "A boxer weighs 97 kg at 4 months from a fight. He is on a diet that allows him t",
+    "prefix_text": "We are asked: \"A boxer weighs 97",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      32,
+      79557,
+      50542,
+      220,
+      3534
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "79": {
+    "dataset_index": 79,
+    "question": "James spends 40 years teaching.  His partner has been teaching for 10 years less",
+    "prefix_text": "**Understanding the Problem**\n\nWe're given a problem",
+    "prefix_token_ids": [
+      334,
+      71251,
+      279,
+      22854,
+      57277,
+      1687,
+      2351,
+      2728,
+      264,
+      3575
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "80": {
+    "dataset_index": 80,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "I need to answer question multiple-choice option given the",
+    "prefix_token_ids": [
+      40,
+      1205,
+      311,
+      4320,
+      3488,
+      5361,
+      63726,
+      3072,
+      2728,
+      279
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "81": {
+    "dataset_index": 81,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Analyzing the situation**\n\nI'm considering the",
+    "prefix_token_ids": [
+      334,
+      74407,
+      20994,
+      279,
+      6671,
+      57277,
+      40,
+      2846,
+      13126,
+      279
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "82": {
+    "dataset_index": 82,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We have a multiple-choice question: dilute ",
+    "prefix_token_ids": [
+      1687,
+      617,
+      264,
+      5361,
+      63726,
+      3488,
+      25,
+      19371,
+      1088,
+      220
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "83": {
+    "dataset_index": 83,
+    "question": "Jack is stranded on a desert island. He wants some salt to season his fish. He c",
+    "prefix_text": "We're asked: \"Jack is stranded on a",
+    "prefix_token_ids": [
+      1687,
+      2351,
+      4691,
+      25,
+      330,
+      33731,
+      374,
+      63205,
+      389,
+      264
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "84": {
+    "dataset_index": 84,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Interpreting the question and evaluating choices**\n\n",
+    "prefix_token_ids": [
+      334,
+      3386,
+      1762,
+      1303,
+      279,
+      3488,
+      323,
+      38663,
+      11709,
+      57277
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "85": {
+    "dataset_index": 85,
+    "question": "Betty is saving money for a new wallet which costs $100. Betty has only half of ",
+    "prefix_text": "We are asked: \"Betty is saving money",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      57299,
+      1919,
+      374,
+      14324,
+      3300
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "86": {
+    "dataset_index": 86,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "The question appears to be an analogy that mentions a",
+    "prefix_token_ids": [
+      791,
+      3488,
+      8111,
+      311,
+      387,
+      459,
+      56203,
+      430,
+      34945,
+      264
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "87": {
+    "dataset_index": 87,
+    "question": "Find the number of positive integers $n \\le 600$ whose value can be uniquely det",
+    "prefix_text": "We are asked: \"Find the number of positive",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      10086,
+      279,
+      1396,
+      315,
+      6928
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "88": {
+    "dataset_index": 88,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "The given problem states: A spin-half particle is",
+    "prefix_token_ids": [
+      791,
+      2728,
+      3575,
+      5415,
+      25,
+      362,
+      12903,
+      34902,
+      19320,
+      374
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "89": {
+    "dataset_index": 89,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "### Attempting to provide an accurate explanation for the",
+    "prefix_token_ids": [
+      14711,
+      44617,
+      287,
+      311,
+      3493,
+      459,
+      13687,
+      16540,
+      369,
+      279
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "90": {
+    "dataset_index": 90,
+    "question": "A Statistics student wants to find out the average daily allowance of the middle",
+    "prefix_text": "We have a problem about average allowance. The problem",
+    "prefix_token_ids": [
+      1687,
+      617,
+      264,
+      3575,
+      922,
+      5578,
+      41458,
+      13,
+      578,
+      3575
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "91": {
+    "dataset_index": 91,
+    "question": "Nancy is filling an aquarium for her fish. She fills it halfway and goes to answ",
+    "prefix_text": "We are given a problem. I'll restate",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      3575,
+      13,
+      358,
+      3358,
+      312,
+      2513
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "92": {
+    "dataset_index": 92,
+    "question": "Find the number of ordered pairs of integers $(a, b)$ such that the sequence\\[3,",
+    "prefix_text": "We are asked: \"Find the number of ordered",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      10086,
+      279,
+      1396,
+      315,
+      11713
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "93": {
+    "dataset_index": 93,
+    "question": "What is the product of all solutions to the equation\n\\[\\log_{7x}2023\\cdot \\log_{",
+    "prefix_text": "We are given equation: \n\\[\n\\log",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      24524,
+      25,
+      720,
+      59,
+      9837,
+      59,
+      848
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "94": {
+    "dataset_index": 94,
+    "question": "Let $A$, $B$, $C$, and $D$ be point on the hyperbola $\\frac{x^2}{20}- \\frac{y^2}",
+    "prefix_text": "We are given points A, B, C,",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      3585,
+      362,
+      11,
+      426,
+      11,
+      356,
+      11
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "95": {
+    "dataset_index": 95,
+    "question": "Let $a, b, x,$ and $y$ be real numbers with $a>4$ and $b>1$ such that\\[\\frac{x^2",
+    "prefix_text": "We are given the ellipse equations with parameters $a",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      279,
+      58497,
+      39006,
+      449,
+      5137,
+      400,
+      64
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "96": {
+    "dataset_index": 96,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We have: \"Four identical spin-1/",
+    "prefix_token_ids": [
+      1687,
+      617,
+      25,
+      330,
+      28070,
+      20086,
+      12903,
+      12,
+      16,
+      14
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "97": {
+    "dataset_index": 97,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "The question: \"By considering different factors like heat",
+    "prefix_token_ids": [
+      791,
+      3488,
+      25,
+      330,
+      1383,
+      13126,
+      2204,
+      9547,
+      1093,
+      8798
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "98": {
+    "dataset_index": 98,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "## Analyzing Question Options and Concepts\n\n1.",
+    "prefix_token_ids": [
+      567,
+      38527,
+      20994,
+      16225,
+      14908,
+      323,
+      76872,
+      271,
+      16,
+      13
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "99": {
+    "dataset_index": 99,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "The question reads: \"According to a pH scale",
+    "prefix_token_ids": [
+      791,
+      3488,
+      16181,
+      25,
+      330,
+      11439,
+      311,
+      264,
+      37143,
+      5569
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "100": {
+    "dataset_index": 100,
+    "question": "The sequence $a_0,a_1,a_2,\\cdots$ is a strictly increasing arithmetic sequence o",
+    "prefix_text": "We are given: \"The sequence $a_",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      330,
+      791,
+      8668,
+      400,
+      64,
+      62
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "101": {
+    "dataset_index": 101,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Understanding properties**\n\nThe question is: Which of",
+    "prefix_token_ids": [
+      334,
+      71251,
+      6012,
+      57277,
+      791,
+      3488,
+      374,
+      25,
+      16299,
+      315
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "102": {
+    "dataset_index": 102,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Explanation:**\n\nThe astronaut's weight on the",
+    "prefix_token_ids": [
+      334,
+      70869,
+      25,
+      57277,
+      791,
+      47733,
+      596,
+      4785,
+      389,
+      279
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "103": {
+    "dataset_index": 103,
+    "question": "Gerald spends $100 a month on baseball supplies. His season is 4 months long. He",
+    "prefix_text": "We are given problem: \"Gerald spends $",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      3575,
+      25,
+      330,
+      38,
+      25380,
+      38202,
+      400
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "104": {
+    "dataset_index": 104,
+    "question": "Call a positive integer $n$ extra-distinct if the remainders when $n$ is divided",
+    "prefix_text": "We are given a problem: \"Call a positive",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      3575,
+      25,
+      330,
+      7368,
+      264,
+      6928
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "105": {
+    "dataset_index": 105,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "## Evaluating options\nThe correct explanation: heat",
+    "prefix_token_ids": [
+      567,
+      76198,
+      1113,
+      2671,
+      198,
+      791,
+      4495,
+      16540,
+      25,
+      8798
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "106": {
+    "dataset_index": 106,
+    "question": "Let $f$ be the unique function defined on the positive integers such that \\[\\sum",
+    "prefix_text": "We are asked: Let $f$ be the",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      6914,
+      400,
+      69,
+      3,
+      387,
+      279
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "107": {
+    "dataset_index": 107,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Examining Choices and Selecting Most Appropriate",
+    "prefix_token_ids": [
+      334,
+      67794,
+      5859,
+      79291,
+      323,
+      8593,
+      287,
+      7648,
+      1883,
+      25264
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "108": {
+    "dataset_index": 108,
+    "question": "Consider the following $100$ sets of $10$ elements each:\n\\begin{align*} &\\{1,2,3",
+    "prefix_text": "We are asked: \"Consider the following 100",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      38275,
+      279,
+      2768,
+      220,
+      1041
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "109": {
+    "dataset_index": 109,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We need to select the correct starting material to yield",
+    "prefix_token_ids": [
+      1687,
+      1205,
+      311,
+      3373,
+      279,
+      4495,
+      6041,
+      3769,
+      311,
+      7692
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "110": {
+    "dataset_index": 110,
+    "question": "Carolyn practices the piano for 20 minutes a day and the violin for three times ",
+    "prefix_text": "We have the problem that states: \"Carolyn",
+    "prefix_token_ids": [
+      1687,
+      617,
+      279,
+      3575,
+      430,
+      5415,
+      25,
+      330,
+      94372,
+      1910
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "111": {
+    "dataset_index": 111,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Structuring**\n\nGiven: phase shifts \u03b4\u2080",
+    "prefix_token_ids": [
+      334,
+      9609,
+      1711,
+      57277,
+      22818,
+      25,
+      10474,
+      29735,
+      70434,
+      90769
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "112": {
+    "dataset_index": 112,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Clarifications:**\n\nUser asks: \"Read",
+    "prefix_token_ids": [
+      334,
+      100069,
+      7174,
+      25,
+      57277,
+      1502,
+      17501,
+      25,
+      330,
+      4518
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "113": {
+    "dataset_index": 113,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Identifying the correct answer**  \nI need",
+    "prefix_token_ids": [
+      334,
+      29401,
+      7922,
+      279,
+      4495,
+      4320,
+      334,
+      2355,
+      40,
+      1205
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "114": {
+    "dataset_index": 114,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "The question: \"Which of the following symmet",
+    "prefix_token_ids": [
+      791,
+      3488,
+      25,
+      330,
+      23956,
+      315,
+      279,
+      2768,
+      8045,
+      4150
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "115": {
+    "dataset_index": 115,
+    "question": "Find the three-digit positive integer $\\underline{a}\\,\\underline{b}\\,\\underline{",
+    "prefix_text": "We are given: Find three-digit positive integer abc",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      7531,
+      2380,
+      49442,
+      6928,
+      7698,
+      40122
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "116": {
+    "dataset_index": 116,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Identifying the Correct Option**  \nFor energy",
+    "prefix_token_ids": [
+      334,
+      29401,
+      7922,
+      279,
+      41070,
+      7104,
+      334,
+      2355,
+      2520,
+      4907
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "117": {
+    "dataset_index": 117,
+    "question": "Let $P(x)$ be a polynomial with rational coefficients such that when $P(x)$ is d",
+    "prefix_text": "We are given two polynomial division properties: Let P",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      1403,
+      48411,
+      13096,
+      6012,
+      25,
+      6914,
+      393
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "118": {
+    "dataset_index": 118,
+    "question": "Given $\\triangle ABC$ and a point $P$ on one of its sides, call line $\\ell$ the ",
+    "prefix_text": "We are given triangle ABC, BC = 219",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      22217,
+      19921,
+      11,
+      18531,
+      284,
+      220,
+      13762
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "119": {
+    "dataset_index": 119,
+    "question": "Carlos went to a sports store to buy running shoes. Running shoes were on sale, ",
+    "prefix_text": "We are given problem \"Carlos went to sports store",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      3575,
+      330,
+      93599,
+      4024,
+      311,
+      10034,
+      3637
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "120": {
+    "dataset_index": 120,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Explaining Magnet Attraction**\n\nMagnets stick",
+    "prefix_token_ids": [
+      334,
+      45053,
+      2101,
+      82328,
+      2468,
+      27523,
+      57277,
+      88755,
+      1441,
+      9396
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "121": {
+    "dataset_index": 121,
+    "question": "A circle with radius $6$ is externally tangent to a circle with radius $24$. Fin",
+    "prefix_text": "We are given: \"A circle with radius ",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      330,
+      32,
+      12960,
+      449,
+      10801,
+      220
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "122": {
+    "dataset_index": 122,
+    "question": "Camila writes down five positive integers. The unique mode of these integers is ",
+    "prefix_text": "We are given: \"Camila writes down five",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      330,
+      26479,
+      10746,
+      14238,
+      1523,
+      4330
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "123": {
+    "dataset_index": 123,
+    "question": "Among the 900 residents of Aimeville, there are 195 who own a diamond ring, 367 ",
+    "prefix_text": "We are given that there are 900 residents.",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      430,
+      1070,
+      527,
+      220,
+      7467,
+      11062,
+      13
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "124": {
+    "dataset_index": 124,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are given a multiple-choice question regarding an experiment",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      5361,
+      63726,
+      3488,
+      9002,
+      459,
+      9526
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "125": {
+    "dataset_index": 125,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Analyzing the riddle-like clues**\n\nLet",
+    "prefix_token_ids": [
+      334,
+      74407,
+      20994,
+      279,
+      436,
+      3390,
+      12970,
+      43775,
+      57277,
+      10267
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "126": {
+    "dataset_index": 126,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are asked: \"A benzene ring has",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      32,
+      72046,
+      1994,
+      10264,
+      706
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "127": {
+    "dataset_index": 127,
+    "question": "Let $K$ be the number of sequences $A_1$, $A_2$, $\\dots$, $A_n$ such that $n$ is",
+    "prefix_text": "We are given:\n\n\"Let $K$ be",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      1473,
+      1,
+      10267,
+      400,
+      42,
+      3,
+      387
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "128": {
+    "dataset_index": 128,
+    "question": "James earns $20 an hour while working at his main job.  He earns 20% less while ",
+    "prefix_text": "We are given: James earns $20 per hour",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      7957,
+      64859,
+      400,
+      508,
+      824,
+      6596
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "129": {
+    "dataset_index": 129,
+    "question": "Let $N$ be the number of ways to place the integers $1$ through $12$ in the $12$",
+    "prefix_text": "We are given an arrangement problem: Place integers ",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      459,
+      27204,
+      3575,
+      25,
+      11004,
+      26864,
+      220
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "130": {
+    "dataset_index": 130,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Comparing density of celestial objects: Nebula",
+    "prefix_token_ids": [
+      334,
+      17561,
+      287,
+      17915,
+      315,
+      77480,
+      6302,
+      25,
+      52809,
+      5724
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "131": {
+    "dataset_index": 131,
+    "question": "The graph of $y=x^2+2x-15$ intersects the $x$-axis at points $A$ and $C$ and the",
+    "prefix_text": "We are given quadratic function y = x^2",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      80251,
+      734,
+      379,
+      284,
+      865,
+      61,
+      17
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "132": {
+    "dataset_index": 132,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "## Academic Evaluation: Security and Ethical Guidelines\n\n",
+    "prefix_token_ids": [
+      567,
+      42170,
+      40388,
+      25,
+      8398,
+      323,
+      14693,
+      950,
+      48528,
+      271
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "133": {
+    "dataset_index": 133,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Identifying the answer**\n\nOption A: \u201c",
+    "prefix_token_ids": [
+      334,
+      29401,
+      7922,
+      279,
+      4320,
+      57277,
+      5454,
+      362,
+      25,
+      1054
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "134": {
+    "dataset_index": 134,
+    "question": "How many digits are in the base-ten representation of $8^5 \\cdot 5^{10} \\cdot 15",
+    "prefix_text": "We are asked: \"How many digits are in",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      4438,
+      1690,
+      19016,
+      527,
+      304
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "135": {
+    "dataset_index": 135,
+    "question": "Alexis is applying for a new job and bought a new set of business clothes to wea",
+    "prefix_text": "We are given budget and spent amounts. The problem",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      8199,
+      323,
+      7543,
+      15055,
+      13,
+      578,
+      3575
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "136": {
+    "dataset_index": 136,
+    "question": "Let $N$ be the greatest four-digit positive integer with the property that whene",
+    "prefix_text": "We are asked: \"Let N be the greatest",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      10267,
+      452,
+      387,
+      279,
+      12474
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "137": {
+    "dataset_index": 137,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Analyzing the question:**\n\nWe're presented",
+    "prefix_token_ids": [
+      334,
+      74407,
+      20994,
+      279,
+      3488,
+      25,
+      57277,
+      1687,
+      2351,
+      10666
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "138": {
+    "dataset_index": 138,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "Let's analyze details: speed = 0.",
+    "prefix_token_ids": [
+      10267,
+      596,
+      24564,
+      3649,
+      25,
+      4732,
+      284,
+      220,
+      15,
+      13
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "139": {
+    "dataset_index": 139,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We have a multiple-choice question. It states:",
+    "prefix_token_ids": [
+      1687,
+      617,
+      264,
+      5361,
+      63726,
+      3488,
+      13,
+      1102,
+      5415,
+      25
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "140": {
+    "dataset_index": 140,
+    "question": "The roots of the polynomial $10x^3 - 39x^2 + 29x - 6$ are the height, length, an",
+    "prefix_text": "We are asked: \"The roots of the polynomial",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      791,
+      20282,
+      315,
+      279,
+      48411
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "141": {
+    "dataset_index": 141,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Option D** is the correct answer. \n\n",
+    "prefix_token_ids": [
+      334,
+      5454,
+      423,
+      334,
+      374,
+      279,
+      4495,
+      4320,
+      13,
+      4815
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "142": {
+    "dataset_index": 142,
+    "question": "Irene earns $500 if she works for 40 hours a week and gets an extra $20 for ever",
+    "prefix_text": "We are Phi. We need to solve the problem",
+    "prefix_token_ids": [
+      1687,
+      527,
+      64913,
+      13,
+      1226,
+      1205,
+      311,
+      11886,
+      279,
+      3575
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "143": {
+    "dataset_index": 143,
+    "question": "Peter goes to the store to buy a soda. The soda costs $.25 an ounce. He brought ",
+    "prefix_text": "We are tasked with solving the problem: Peter goes",
+    "prefix_token_ids": [
+      1687,
+      527,
+      51920,
+      449,
+      22581,
+      279,
+      3575,
+      25,
+      11291,
+      5900
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "144": {
+    "dataset_index": 144,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Clarifying response:** I want to ensure I",
+    "prefix_token_ids": [
+      334,
+      100069,
+      7922,
+      2077,
+      68063,
+      358,
+      1390,
+      311,
+      6106,
+      358
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "145": {
+    "dataset_index": 145,
+    "question": "What is the product of all real numbers $x$ such that the distance on the number",
+    "prefix_text": "We are asked: \"What is the product of",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      3923,
+      374,
+      279,
+      2027,
+      315
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "146": {
+    "dataset_index": 146,
+    "question": "Mrs. Jones is pouring orange juice into four identical glasses for her four sons",
+    "prefix_text": "We are given: \"Mrs. Jones is pouring",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      330,
+      50329,
+      13,
+      12201,
+      374,
+      51513
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "147": {
+    "dataset_index": 147,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**First**, let's parse the question details regarding",
+    "prefix_token_ids": [
+      334,
+      5451,
+      98319,
+      1095,
+      596,
+      4820,
+      279,
+      3488,
+      3649,
+      9002
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "148": {
+    "dataset_index": 148,
+    "question": "Three spheres with radii $11$, $13$, and $19$ are mutually externally tangent. A",
+    "prefix_text": "We are given three spheres with radii 11",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      2380,
+      66818,
+      449,
+      12164,
+      72,
+      220,
+      806
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "149": {
+    "dataset_index": 149,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "I will analyze the NMR data given: proton",
+    "prefix_token_ids": [
+      40,
+      690,
+      24564,
+      279,
+      452,
+      18953,
+      828,
+      2728,
+      25,
+      82586
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "150": {
+    "dataset_index": 150,
+    "question": "Positive real numbers $x$ and $y$ satisfy $y^3=x^2$ and $(y-x)^2=4y^2$. What is ",
+    "prefix_text": "We are given a problem: \"Positive real numbers",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      3575,
+      25,
+      330,
+      36590,
+      1972,
+      5219
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "151": {
+    "dataset_index": 151,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "User asks: \"Read the following multiple-choice question",
+    "prefix_token_ids": [
+      1502,
+      17501,
+      25,
+      330,
+      4518,
+      279,
+      2768,
+      5361,
+      63726,
+      3488
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "152": {
+    "dataset_index": 152,
+    "question": "How many of the first ten numbers of the sequence $121, 11211, 1112111, \\ldots$ ",
+    "prefix_text": "We are given a sequence: \"121, ",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      8668,
+      25,
+      330,
+      7994,
+      11,
+      220
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "153": {
+    "dataset_index": 153,
+    "question": "Maureen is keeping track of the mean of her quiz scores this semester. If Mauree",
+    "prefix_text": "We are given: Maureen is keeping track of",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      11583,
+      96672,
+      374,
+      10494,
+      3839,
+      315
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "154": {
+    "dataset_index": 154,
+    "question": "Five men and nine women stand equally spaced around a circle in random order. Th",
+    "prefix_text": "We are told: \"Five men and nine women",
+    "prefix_token_ids": [
+      1687,
+      527,
+      3309,
+      25,
+      330,
+      38120,
+      3026,
+      323,
+      11888,
+      3278
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "155": {
+    "dataset_index": 155,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Identifying decision for biohazard**  \n",
+    "prefix_token_ids": [
+      334,
+      29401,
+      7922,
+      5597,
+      369,
+      17332,
+      71,
+      58757,
+      334,
+      2355
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "156": {
+    "dataset_index": 156,
+    "question": "Rows 1, 2, 3, 4, and 5 of a triangular array of integers are shown below.\n1\n1 1\n",
+    "prefix_text": "We are given rows of triangular array. First few",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      7123,
+      315,
+      66594,
+      1358,
+      13,
+      5629,
+      2478
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "157": {
+    "dataset_index": 157,
+    "question": "Two externally tangent circles $\\omega_1$ and $\\omega_2$ have centers $O_1$ and ",
+    "prefix_text": "We are given two externally tangent circles \u03c91",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      1403,
+      69442,
+      69760,
+      26432,
+      17839,
+      231,
+      16
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "158": {
+    "dataset_index": 158,
+    "question": "Mary does her grocery shopping on Saturday. She does her shopping only at a spec",
+    "prefix_text": "The problem:\n- Mary does grocery shopping Saturday,",
+    "prefix_token_ids": [
+      791,
+      3575,
+      512,
+      12,
+      10455,
+      1587,
+      30687,
+      12185,
+      7884,
+      11
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "159": {
+    "dataset_index": 159,
+    "question": "Flora the frog starts at 0 on the number line and makes a sequence of jumps to t",
+    "prefix_text": "We are asked: \"Flora the frog starts",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      3968,
+      6347,
+      279,
+      60981,
+      8638
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "160": {
+    "dataset_index": 160,
+    "question": "Find the largest possible real part of \\[(75+117i)z+\\frac{96+144i}{z}\\]where $z$",
+    "prefix_text": "We are asked: \"Find the largest possible real",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      10086,
+      279,
+      7928,
+      3284,
+      1972
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "161": {
+    "dataset_index": 161,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Answering the physics question**\n\nI need to",
+    "prefix_token_ids": [
+      334,
+      16533,
+      287,
+      279,
+      22027,
+      3488,
+      57277,
+      40,
+      1205,
+      311
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "162": {
+    "dataset_index": 162,
+    "question": "How many ordered pairs of positive real numbers $(a,b)$ satisfy the equation\n\\[(",
+    "prefix_text": "We are asked: \"How many ordered pairs of",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      4438,
+      1690,
+      11713,
+      13840,
+      315
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "163": {
+    "dataset_index": 163,
+    "question": "Find the number of triples of nonnegative integers \\((a,b,c)\\) satisfying \\(a + ",
+    "prefix_text": "We are given: find the number of triples of",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      1505,
+      279,
+      1396,
+      315,
+      89661,
+      315
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "164": {
+    "dataset_index": 164,
+    "question": "Four regular hexagons surround a square with side length 1, each one sharing an ",
+    "prefix_text": "We are given: \"Four regular hexagons",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      330,
+      28070,
+      5912,
+      12651,
+      351,
+      2439
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "165": {
+    "dataset_index": 165,
+    "question": "The ratio of coins that Elsa has to that which Amalie has is 10:45. If the total",
+    "prefix_text": "We are asked: \"The ratio of coins that",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      791,
+      11595,
+      315,
+      19289,
+      430
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "166": {
+    "dataset_index": 166,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are given: The atomic nucleus is supposed to",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      578,
+      25524,
+      62607,
+      374,
+      10171,
+      311
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "167": {
+    "dataset_index": 167,
+    "question": "Leo's assignment was divided into three parts. He finished the first part of his",
+    "prefix_text": "We have assignment, divided into three parts. Part",
+    "prefix_token_ids": [
+      1687,
+      617,
+      16720,
+      11,
+      18255,
+      1139,
+      2380,
+      5596,
+      13,
+      3744
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "168": {
+    "dataset_index": 168,
+    "question": "Calculate the maximum area of an isosceles trapezoid that has legs of length $1$",
+    "prefix_text": "We are asked: \"Calculate the maximum area of",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      48966,
+      279,
+      7340,
+      3158,
+      315
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "169": {
+    "dataset_index": 169,
+    "question": "Tim rides his bike back and forth to work for each of his 5 workdays.  His work ",
+    "prefix_text": "We have Tim rides his bike back and forth to",
+    "prefix_token_ids": [
+      1687,
+      617,
+      9538,
+      32327,
+      813,
+      13260,
+      1203,
+      323,
+      13544,
+      311
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "170": {
+    "dataset_index": 170,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "## First Interaction\nSince the user is asking a",
+    "prefix_token_ids": [
+      567,
+      5629,
+      43807,
+      198,
+      12834,
+      279,
+      1217,
+      374,
+      10371,
+      264
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "171": {
+    "dataset_index": 171,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are provided with a multiple-choice question regarding di",
+    "prefix_token_ids": [
+      1687,
+      527,
+      3984,
+      449,
+      264,
+      5361,
+      63726,
+      3488,
+      9002,
+      1891
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "172": {
+    "dataset_index": 172,
+    "question": "Let $p$ be the least prime number for which there exists a positive integer $n$ ",
+    "prefix_text": "We are asked: \"Let $p$ be",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      10267,
+      400,
+      79,
+      3,
+      387
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "173": {
+    "dataset_index": 173,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Explaining the option selection**\n\nI'm examining",
+    "prefix_token_ids": [
+      334,
+      45053,
+      2101,
+      279,
+      3072,
+      6727,
+      57277,
+      40,
+      2846,
+      38936
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "174": {
+    "dataset_index": 174,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Considering experimental options**\n\nUser is asking about choosing",
+    "prefix_token_ids": [
+      334,
+      83896,
+      22772,
+      2671,
+      57277,
+      1502,
+      374,
+      10371,
+      922,
+      19301
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "175": {
+    "dataset_index": 175,
+    "question": "Jerry\u2019s two daughters play softball on different teams. They each have 8 games t",
+    "prefix_text": "We are asked \"Jerry\u2019s two daughters play softball",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      330,
+      90757,
+      753,
+      1403,
+      30968,
+      1514,
+      96368
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "176": {
+    "dataset_index": 176,
+    "question": "For any finite set $X$, let $| X |$ denote the number of elements in $X$. Define",
+    "prefix_text": "We are asked: \"For any finite set X",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      2520,
+      904,
+      35326,
+      743,
+      1630
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "177": {
+    "dataset_index": 177,
+    "question": "It is Roger\u2019s turn to provide a snack for the baseball team after the game and h",
+    "prefix_text": "We are asked: \"It is Roger\u2019s turn",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      2181,
+      374,
+      29607,
+      753,
+      2543
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "178": {
+    "dataset_index": 178,
+    "question": "A $3-4-5$ right triangle is inscribed in circle $A$, and a $5-12-13$ right trian",
+    "prefix_text": "We are asked: \"A 3-4",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      32,
+      220,
+      18,
+      12,
+      19
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "179": {
+    "dataset_index": 179,
+    "question": "Julie is reading a 120-page book. Yesterday, she was able to read 12 pages and t",
+    "prefix_text": "We are provided problem: \"Julie is reading",
+    "prefix_token_ids": [
+      1687,
+      527,
+      3984,
+      3575,
+      25,
+      330,
+      29185,
+      648,
+      374,
+      5403
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "180": {
+    "dataset_index": 180,
+    "question": "A data set consists of $6$ (not distinct) positive integers: $1$, $7$, $5$, $2$,",
+    "prefix_text": "We are asked: \"A data set consists of",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      32,
+      828,
+      743,
+      17610,
+      315
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "181": {
+    "dataset_index": 181,
+    "question": "Let $\\triangle ABC$ be an isosceles triangle with $\\angle A = 90^\\circ.$ There e",
+    "prefix_text": "We are given isosceles right triangle with",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      374,
+      437,
+      346,
+      645,
+      1314,
+      22217,
+      449
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "182": {
+    "dataset_index": 182,
+    "question": "How many nonempty subsets $B$ of ${0, 1, 2, 3, \\cdots, 12}$ have the property th",
+    "prefix_text": "We are asked: \"How many nonempty subsets",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      4438,
+      1690,
+      2536,
+      3274,
+      75605
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "183": {
+    "dataset_index": 183,
+    "question": "Let \\(b\\ge 2\\) be an integer. Call a positive integer \\(n\\) \\(b\\text-\\textit{eau",
+    "prefix_text": "We are given b\u22652, and calling",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      293,
+      60094,
+      98,
+      17,
+      11,
+      323,
+      8260
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "184": {
+    "dataset_index": 184,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Identifying the correct option**\n\nI need to",
+    "prefix_token_ids": [
+      334,
+      29401,
+      7922,
+      279,
+      4495,
+      3072,
+      57277,
+      40,
+      1205,
+      311
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "185": {
+    "dataset_index": 185,
+    "question": "For how many values of the constant $k$ will the polynomial $x^{2}+kx+36$ have t",
+    "prefix_text": "We are asked: \"For how many values of",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      2520,
+      1268,
+      1690,
+      2819,
+      315
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "186": {
+    "dataset_index": 186,
+    "question": "What is the value of \\[(\\log 5)^{3}+(\\log 20)^{3}+(\\log 8)(\\log 0.25)\\] where $\\",
+    "prefix_text": "We are asked: \"What is the value of",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      3923,
+      374,
+      279,
+      907,
+      315
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "187": {
+    "dataset_index": 187,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Disclaimer: I'm not a certified professional in",
+    "prefix_token_ids": [
+      334,
+      52125,
+      25,
+      358,
+      2846,
+      539,
+      264,
+      23759,
+      6721,
+      304
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "188": {
+    "dataset_index": 188,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We have two planets, we assume same albedo",
+    "prefix_token_ids": [
+      1687,
+      617,
+      1403,
+      33975,
+      11,
+      584,
+      9855,
+      1890,
+      453,
+      90087
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "189": {
+    "dataset_index": 189,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "The user provided a multiple-choice question regarding star classification",
+    "prefix_token_ids": [
+      791,
+      1217,
+      3984,
+      264,
+      5361,
+      63726,
+      3488,
+      9002,
+      6917,
+      24790
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "190": {
+    "dataset_index": 190,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "Given: angular size of event horizon: \u03b8",
+    "prefix_token_ids": [
+      22818,
+      25,
+      20932,
+      1404,
+      315,
+      1567,
+      35174,
+      25,
+      8008,
+      116
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "191": {
+    "dataset_index": 191,
+    "question": "The file, 90 megabytes in size, downloads at the rate of 5 megabytes per second ",
+    "prefix_text": "We are given a problem: \"The file is",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      3575,
+      25,
+      330,
+      791,
+      1052,
+      374
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "192": {
+    "dataset_index": 192,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Considering genetic dominance in flower color**\nWe need",
+    "prefix_token_ids": [
+      334,
+      83896,
+      19465,
+      44592,
+      304,
+      23153,
+      1933,
+      1035,
+      1687,
+      1205
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "193": {
+    "dataset_index": 193,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Explaining:**\n\nI\u2019m here to assist",
+    "prefix_token_ids": [
+      334,
+      45053,
+      2101,
+      25,
+      57277,
+      40,
+      4344,
+      1618,
+      311,
+      7945
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "194": {
+    "dataset_index": 194,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Step 1: Calculate distance and orbits**\n\n",
+    "prefix_token_ids": [
+      334,
+      8468,
+      220,
+      16,
+      25,
+      21157,
+      6138,
+      323,
+      86228,
+      57277
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "195": {
+    "dataset_index": 195,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We have a question asking \"Determine the product",
+    "prefix_token_ids": [
+      1687,
+      617,
+      264,
+      3488,
+      10371,
+      330,
+      35,
+      25296,
+      279,
+      2027
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "196": {
+    "dataset_index": 196,
+    "question": "Brennan was researching his school project and had to download files from the in",
+    "prefix_text": "We are asked: \"Brennan was researching",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      33,
+      1466,
+      19285,
+      574,
+      45243
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "197": {
+    "dataset_index": 197,
+    "question": "A digital display shows the current date as an $8$-digit integer consisting of a",
+    "prefix_text": "We are asked: \"For how many dates in",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      2520,
+      1268,
+      1690,
+      13003,
+      304
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "198": {
+    "dataset_index": 198,
+    "question": "There are 290 liters of oil in 24 cans. If 10 of the cans are holding 8 liters e",
+    "prefix_text": "We are asked: \"There are 290 liters",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      3947,
+      527,
+      220,
+      13754,
+      93966
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "199": {
+    "dataset_index": 199,
+    "question": "Let $a,b,c,d,e,f,g,h,i$ be distinct integers from $1$ to $9.$ The minimum possib",
+    "prefix_text": "We are asked: Let a, b, c",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      6914,
+      264,
+      11,
+      293,
+      11,
+      272
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "200": {
+    "dataset_index": 200,
+    "question": "Let ABCDEF be a convex equilateral hexagon in which all pairs of opposite sides ",
+    "prefix_text": "We are given a convex equilateral hexagon \\(",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      67030,
+      3312,
+      44039,
+      12651,
+      6241,
+      18240
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "201": {
+    "dataset_index": 201,
+    "question": "Ellina has twelve blocks, two each of red ($\\textbf{R}$), blue ($\\textbf{B}$), y",
+    "prefix_text": "We are given 12 blocks, 2 of",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      220,
+      717,
+      10215,
+      11,
+      220,
+      17,
+      315
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "202": {
+    "dataset_index": 202,
+    "question": "In rhombus $ABCD$, point $P$ lies on segment $\\overline{AD}$ so that $\\overline{",
+    "prefix_text": "We are asked \"In rhombus ABCD",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      330,
+      644,
+      22408,
+      2925,
+      355,
+      19921,
+      35
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "203": {
+    "dataset_index": 203,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "Analyzing provided question: \"Corn is widely being",
+    "prefix_token_ids": [
+      74407,
+      20994,
+      3984,
+      3488,
+      25,
+      330,
+      91641,
+      374,
+      13882,
+      1694
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "204": {
+    "dataset_index": 204,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are asked: \"Dienes are organic compounds",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      35,
+      57962,
+      527,
+      17808,
+      32246
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "205": {
+    "dataset_index": 205,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Considering that it\u2019s about the [4+",
+    "prefix_token_ids": [
+      334,
+      83896,
+      430,
+      433,
+      753,
+      922,
+      279,
+      510,
+      19,
+      10
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "206": {
+    "dataset_index": 206,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Delving into gravitational force fundamentals**\n\nI'll",
+    "prefix_token_ids": [
+      334,
+      16939,
+      4504,
+      1139,
+      71019,
+      5457,
+      57940,
+      57277,
+      40,
+      3358
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "207": {
+    "dataset_index": 207,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are asked: \"Read the following multiple-choice",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      4518,
+      279,
+      2768,
+      5361,
+      63726
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "208": {
+    "dataset_index": 208,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Understanding the Reaction**\n\nI need to analyze the",
+    "prefix_token_ids": [
+      334,
+      71251,
+      279,
+      67941,
+      57277,
+      40,
+      1205,
+      311,
+      24564,
+      279
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "209": {
+    "dataset_index": 209,
+    "question": "Artemis is making tea for a party. She knows her mom drinks an 8-ounce cup of te",
+    "prefix_text": "We are asked:\nArtemis is making tea",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      512,
+      7098,
+      880,
+      285,
+      374,
+      3339,
+      15600
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "210": {
+    "dataset_index": 210,
+    "question": "In isosceles trapezoid $ABCD$, parallel bases $\\overline{AB}$ and $\\overline{CD}",
+    "prefix_text": "We are asked: \"In isosceles",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      644,
+      374,
+      437,
+      346,
+      645
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "211": {
+    "dataset_index": 211,
+    "question": "Mrs. Snyder used to spend 40% of her monthly income on rent and utilities. Her s",
+    "prefix_text": "We have: \"Mrs. Snyder used to spend",
+    "prefix_token_ids": [
+      1687,
+      617,
+      25,
+      330,
+      50329,
+      13,
+      54231,
+      1511,
+      311,
+      8493
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "212": {
+    "dataset_index": 212,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "I have to respond to a multiple-choice question regarding",
+    "prefix_token_ids": [
+      40,
+      617,
+      311,
+      6013,
+      311,
+      264,
+      5361,
+      63726,
+      3488,
+      9002
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "213": {
+    "dataset_index": 213,
+    "question": "Krystian works in the library. He borrows an average of 40 books every day. Ever",
+    "prefix_text": "We need the answer: Monday = 40,",
+    "prefix_token_ids": [
+      1687,
+      1205,
+      279,
+      4320,
+      25,
+      7159,
+      284,
+      220,
+      1272,
+      11
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "214": {
+    "dataset_index": 214,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "I'll produce an answer in markdown with brief explanation",
+    "prefix_token_ids": [
+      40,
+      3358,
+      8356,
+      459,
+      4320,
+      304,
+      51594,
+      449,
+      10015,
+      16540
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "215": {
+    "dataset_index": 215,
+    "question": "Hector purchased a container of gumballs.  He gave 4 to Todd, then he gave twice",
+    "prefix_text": "We have the problem. The problem is simple:\n",
+    "prefix_token_ids": [
+      1687,
+      617,
+      279,
+      3575,
+      13,
+      578,
+      3575,
+      374,
+      4382,
+      512
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "216": {
+    "dataset_index": 216,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**You are asked to choose the most appropriate option",
+    "prefix_token_ids": [
+      334,
+      2675,
+      527,
+      4691,
+      311,
+      5268,
+      279,
+      1455,
+      8475,
+      3072
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "217": {
+    "dataset_index": 217,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We're asked: \"If a new moon occurred",
+    "prefix_token_ids": [
+      1687,
+      2351,
+      4691,
+      25,
+      330,
+      2746,
+      264,
+      502,
+      18266,
+      10222
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "218": {
+    "dataset_index": 218,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are asked \"Which one is equal in magnitude",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      330,
+      23956,
+      832,
+      374,
+      6273,
+      304,
+      26703
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "219": {
+    "dataset_index": 219,
+    "question": "Janet rolls a standard $6$-sided die $4$ times and keeps a running total of the ",
+    "prefix_text": "We are asked: \"Janet rolls a standard",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      18820,
+      295,
+      28473,
+      264,
+      5410
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "220": {
+    "dataset_index": 220,
+    "question": "Let $\\mathcal{R}$ be the region in the complex plane consisting of all complex n",
+    "prefix_text": "We are asked: \"Let $\\mathcal{",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      10267,
+      59060,
+      10590,
+      5531,
+      90
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "221": {
+    "dataset_index": 221,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "## Reflecting on possible interpretations and details\n\n**",
+    "prefix_token_ids": [
+      567,
+      35698,
+      287,
+      389,
+      3284,
+      58689,
+      323,
+      3649,
+      271,
+      334
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "222": {
+    "dataset_index": 222,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are given multiple-choice question: \"What is",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      5361,
+      63726,
+      3488,
+      25,
+      330,
+      3923,
+      374
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "223": {
+    "dataset_index": 223,
+    "question": "Randy has 60 mango trees on his farm. He also has 5 less than half as many cocon",
+    "prefix_text": "We are asked: \"Randy has 60",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      49,
+      13634,
+      706,
+      220,
+      1399
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "224": {
+    "dataset_index": 224,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "I am tasked with a multiple-choice question about product",
+    "prefix_token_ids": [
+      40,
+      1097,
+      51920,
+      449,
+      264,
+      5361,
+      63726,
+      3488,
+      922,
+      2027
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "225": {
+    "dataset_index": 225,
+    "question": "Jesse and Mia are competing in a week long race. They have one week to run 30 mi",
+    "prefix_text": "The problem states: \"Jesse and Mia are",
+    "prefix_token_ids": [
+      791,
+      3575,
+      5415,
+      25,
+      330,
+      41,
+      24201,
+      323,
+      61697,
+      527
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "226": {
+    "dataset_index": 226,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "The user states: \u201cYou are Phi, a",
+    "prefix_token_ids": [
+      791,
+      1217,
+      5415,
+      25,
+      1054,
+      2675,
+      527,
+      64913,
+      11,
+      264
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "227": {
+    "dataset_index": 227,
+    "question": "Hans booked a room in a hotel. The hotel has 10 floors with 10 identical rooms o",
+    "prefix_text": "We are given a situation: Hans booked a room",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      6671,
+      25,
+      25844,
+      34070,
+      264,
+      3130
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "228": {
+    "dataset_index": 228,
+    "question": "The weight of $\\frac{1}{3}$ of a large pizza together with $3 \\frac{1}{2}$ cups ",
+    "prefix_text": "We are given: \"The weight of 1",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      330,
+      791,
+      4785,
+      315,
+      220,
+      16
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "229": {
+    "dataset_index": 229,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Let's analyze the problem**\n\nWe have a",
+    "prefix_token_ids": [
+      334,
+      10267,
+      596,
+      24564,
+      279,
+      3575,
+      57277,
+      1687,
+      617,
+      264
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "230": {
+    "dataset_index": 230,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Deconstructing reactions**\nI'm analyzing the",
+    "prefix_token_ids": [
+      334,
+      1951,
+      7750,
+      287,
+      25481,
+      1035,
+      40,
+      2846,
+      42118,
+      279
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "231": {
+    "dataset_index": 231,
+    "question": "Let $S$ be the set of all rational numbers that can be expressed as a repeating ",
+    "prefix_text": "We are asked: \"Let S be the set",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      10267,
+      328,
+      387,
+      279,
+      743
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "232": {
+    "dataset_index": 232,
+    "question": "How many $4 \\times 4$ arrays whose entries are $0$s and $1$s are there such that",
+    "prefix_text": "We are asked: How many 4x4",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      2650,
+      1690,
+      220,
+      19,
+      87,
+      19
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "233": {
+    "dataset_index": 233,
+    "question": "Ann, Bill, Cate, and Dale each buy personal pan pizzas cut into 4 pieces. If Bil",
+    "prefix_text": "We are asked: \"Ann, Bill, C",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      28192,
+      11,
+      8766,
+      11,
+      356
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "234": {
+    "dataset_index": 234,
+    "question": "Ken created a care package to send to his brother, who was away at boarding scho",
+    "prefix_text": "We are asked: \"Ken created a care package",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      48341,
+      3549,
+      264,
+      2512,
+      6462
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "235": {
+    "dataset_index": 235,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We have a question: \"Racemic ",
+    "prefix_token_ids": [
+      1687,
+      617,
+      264,
+      3488,
+      25,
+      330,
+      49,
+      582,
+      8274,
+      220
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "236": {
+    "dataset_index": 236,
+    "question": "Torus $T$ is the surface produced by revolving a circle with radius $3$ around a",
+    "prefix_text": "We are asked: \"Torus $T$",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      51,
+      30969,
+      400,
+      51,
+      3
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "237": {
+    "dataset_index": 237,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "Question interpretation:\n\nWe have benzene that goes through",
+    "prefix_token_ids": [
+      14924,
+      23692,
+      1473,
+      1687,
+      617,
+      72046,
+      1994,
+      430,
+      5900,
+      1555
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "238": {
+    "dataset_index": 238,
+    "question": "Ralph is going to practice playing tennis with a tennis ball machine that shoots",
+    "prefix_text": "We have a problem: \"Ralph is going",
+    "prefix_token_ids": [
+      1687,
+      617,
+      264,
+      3575,
+      25,
+      330,
+      49,
+      31323,
+      374,
+      2133
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "239": {
+    "dataset_index": 239,
+    "question": "Sally and Bob have made plans to go on a trip at the end of the year. They both ",
+    "prefix_text": "We are asked: \"Sally and Bob have",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      50,
+      750,
+      323,
+      14596,
+      617
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "240": {
+    "dataset_index": 240,
+    "question": "Each vertex of a regular dodecagon ($12$-gon) is to be colored either red or blu",
+    "prefix_text": "We are asked: \"Each vertex of a regular",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      4959,
+      12202,
+      315,
+      264,
+      5912
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "241": {
+    "dataset_index": 241,
+    "question": "There exist real numbers $x$ and $y$, both greater than 1, such that $\\log_x\\lef",
+    "prefix_text": "We are given: There exist real numbers x and",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      2684,
+      3073,
+      1972,
+      5219,
+      865,
+      323
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "242": {
+    "dataset_index": 242,
+    "question": "John works a job that offers performance bonuses.  He makes $80 a day and works ",
+    "prefix_text": "We are asked:\n\n\"John works a job that",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      1473,
+      1,
+      13379,
+      4375,
+      264,
+      2683,
+      430
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "243": {
+    "dataset_index": 243,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "The compound C9H11NO2 features:",
+    "prefix_token_ids": [
+      791,
+      24549,
+      356,
+      24,
+      39,
+      806,
+      9173,
+      17,
+      4519,
+      25
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "244": {
+    "dataset_index": 244,
+    "question": "Rectangles $ABCD$ and $EFGH$ are drawn such that $D,E,C,F$ are collinear. Also, ",
+    "prefix_text": "We are given two rectangles $ABCD$ and",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      1403,
+      77292,
+      400,
+      1905,
+      6620,
+      3,
+      323
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "245": {
+    "dataset_index": 245,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Clarifying Note**\n\nI need to select an",
+    "prefix_token_ids": [
+      334,
+      100069,
+      7922,
+      7181,
+      57277,
+      40,
+      1205,
+      311,
+      3373,
+      459
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "246": {
+    "dataset_index": 246,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Reactions and Mechanism Overview**\nPinac",
+    "prefix_token_ids": [
+      334,
+      697,
+      4109,
+      323,
+      28901,
+      2191,
+      35907,
+      1035,
+      20452,
+      582
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "247": {
+    "dataset_index": 247,
+    "question": "When the roots of the polynomial \n\\[P(x)  = (x-1)^1 (x-2)^2 (x-3)^3 \\cdot \\cdot ",
+    "prefix_text": "We are asked: \"When the roots of the",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      4599,
+      279,
+      20282,
+      315,
+      279
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "248": {
+    "dataset_index": 248,
+    "question": "A concert ticket costs $40. Mr. Benson bought 12 tickets and received a 5% disco",
+    "prefix_text": "We are asked: \"A concert ticket costs \\$",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      32,
+      21497,
+      11989,
+      7194,
+      33982
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "249": {
+    "dataset_index": 249,
+    "question": "Quadratic polynomials $P(x)$ and $Q(x)$ have leading coefficients $2$ and $-2,$ ",
+    "prefix_text": "We are asked:\n\"Quadratic polynomials $",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      512,
+      1,
+      2232,
+      89778,
+      1499,
+      78061,
+      400
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "250": {
+    "dataset_index": 250,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "You're here to help by providing accurate, clear",
+    "prefix_token_ids": [
+      2675,
+      2351,
+      1618,
+      311,
+      1520,
+      555,
+      8405,
+      13687,
+      11,
+      2867
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "251": {
+    "dataset_index": 251,
+    "question": "Each vertex of a regular octagon is independently colored either red or blue wit",
+    "prefix_text": "We are asked: \"Each vertex of a regular",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      4959,
+      12202,
+      315,
+      264,
+      5912
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "252": {
+    "dataset_index": 252,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Determining possible gametes and outcomes**\n\nI",
+    "prefix_token_ids": [
+      334,
+      93748,
+      287,
+      3284,
+      9192,
+      96281,
+      323,
+      20124,
+      57277,
+      40
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "253": {
+    "dataset_index": 253,
+    "question": "Suppose that $13$ cards numbered $1, 2, 3, \\ldots, 13$ are arranged in a row. Th",
+    "prefix_text": "We are given that there are 13 cards numbered",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      430,
+      1070,
+      527,
+      220,
+      1032,
+      7563,
+      49926
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "254": {
+    "dataset_index": 254,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "## Understanding the problem\nWe have a boat in",
+    "prefix_token_ids": [
+      567,
+      46551,
+      279,
+      3575,
+      198,
+      1687,
+      617,
+      264,
+      15688,
+      304
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "255": {
+    "dataset_index": 255,
+    "question": "Dale and Andrew had breakfast at a cafe. A slice of toast costs \u00a31, and eggs cos",
+    "prefix_text": "We have: Dale and Andrew had breakfast at cafe",
+    "prefix_token_ids": [
+      1687,
+      617,
+      25,
+      37828,
+      323,
+      13929,
+      1047,
+      17954,
+      520,
+      42030
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "256": {
+    "dataset_index": 256,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are asked: \"If a charge q is",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      2746,
+      264,
+      6900,
+      2874,
+      374
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "257": {
+    "dataset_index": 257,
+    "question": "The figure below depicts a regular $7$-gon inscribed in a unit circle.\n[asy]    ",
+    "prefix_text": "We are given a regular 7-gon ins",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      5912,
+      220,
+      22,
+      2427,
+      263,
+      1672
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "258": {
+    "dataset_index": 258,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Explaining the correct choice**\n\nI\u2019m going",
+    "prefix_token_ids": [
+      334,
+      45053,
+      2101,
+      279,
+      4495,
+      5873,
+      57277,
+      40,
+      4344,
+      2133
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "259": {
+    "dataset_index": 259,
+    "question": "Define $f(x)=|| x|-\\tfrac{1}{2}|$ and $g(x)=|| x|-\\tfrac{1}{4}|$. Find the numbe",
+    "prefix_text": "We are given f(x)=||x| -",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      282,
+      2120,
+      11992,
+      8651,
+      87,
+      91,
+      482
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "260": {
+    "dataset_index": 260,
+    "question": "A cube-shaped container has vertices $A,$ $B,$ $C,$ and $D,$ where $\\overline{AB",
+    "prefix_text": "We are given a cube. We are given vertices",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      24671,
+      13,
+      1226,
+      527,
+      2728,
+      17672
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "261": {
+    "dataset_index": 261,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "I need to provide a helpful explanation about the correct",
+    "prefix_token_ids": [
+      40,
+      1205,
+      311,
+      3493,
+      264,
+      11190,
+      16540,
+      922,
+      279,
+      4495
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "262": {
+    "dataset_index": 262,
+    "question": "Tim has 30 less apples than Martha, and Harry has half as many apples as Tim. If",
+    "prefix_text": "We are asked: \"Tim has 30 less",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      20830,
+      706,
+      220,
+      966,
+      2753
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "263": {
+    "dataset_index": 263,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "User provides a multiple-choice question on quantum mechanics about",
+    "prefix_token_ids": [
+      1502,
+      5825,
+      264,
+      5361,
+      63726,
+      3488,
+      389,
+      31228,
+      30126,
+      922
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "264": {
+    "dataset_index": 264,
+    "question": "Find the number of subsets of $\\{1,2,3,\\ldots,10\\}$ that contain exactly one pai",
+    "prefix_text": "We have to find the number of subsets of {",
+    "prefix_token_ids": [
+      1687,
+      617,
+      311,
+      1505,
+      279,
+      1396,
+      315,
+      75605,
+      315,
+      314
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "265": {
+    "dataset_index": 265,
+    "question": "For how many ordered pairs $(a,b)$ of integers does the polynomial $x^3+ax^2+bx+",
+    "prefix_text": "We are asked: \"For how many ordered pairs",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      2520,
+      1268,
+      1690,
+      11713,
+      13840
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "266": {
+    "dataset_index": 266,
+    "question": "Leah earned $28 working odd jobs around the neighborhood. She spent a seventh of",
+    "prefix_text": "We're tasked: \"Leah earned $28",
+    "prefix_token_ids": [
+      1687,
+      2351,
+      51920,
+      25,
+      330,
+      2356,
+      1494,
+      15662,
+      400,
+      1591
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "267": {
+    "dataset_index": 267,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Proposed Answer**\nMy answer is Option C",
+    "prefix_token_ids": [
+      334,
+      2051,
+      20158,
+      22559,
+      1035,
+      5159,
+      4320,
+      374,
+      7104,
+      356
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "268": {
+    "dataset_index": 268,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "### Developing a Multiple-Choice Answer with Explanation in",
+    "prefix_token_ids": [
+      14711,
+      81745,
+      264,
+      29911,
+      12,
+      25759,
+      22559,
+      449,
+      72387,
+      304
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "269": {
+    "dataset_index": 269,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Interpretation**\n\nI need to decipher which",
+    "prefix_token_ids": [
+      334,
+      3386,
+      8203,
+      367,
+      57277,
+      40,
+      1205,
+      311,
+      75277,
+      902
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "270": {
+    "dataset_index": 270,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are asked: \"How many of the following",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      4438,
+      1690,
+      315,
+      279,
+      2768
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "271": {
+    "dataset_index": 271,
+    "question": "A plane contains $40$ lines, no $2$ of which are parallel. Suppose that there ar",
+    "prefix_text": "We are given: a plane contains 40 lines",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      264,
+      11277,
+      5727,
+      220,
+      1272,
+      5238
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "272": {
+    "dataset_index": 272,
+    "question": "Find the number of cubic polynomials $p(x) = x^3 + ax^2 + bx + c,$ where $a, b,$",
+    "prefix_text": "We are asked: \"Find the number of cubic",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      10086,
+      279,
+      1396,
+      315,
+      41999
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "273": {
+    "dataset_index": 273,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Explaining Options**\n\nI'll begin by acknowledging",
+    "prefix_token_ids": [
+      334,
+      45053,
+      2101,
+      14908,
+      57277,
+      40,
+      3358,
+      3240,
+      555,
+      61708
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "274": {
+    "dataset_index": 274,
+    "question": "There is a collection of $25$ indistinguishable white chips and $25$ indistingui",
+    "prefix_text": "We are told that there is a grid $5",
+    "prefix_token_ids": [
+      1687,
+      527,
+      3309,
+      430,
+      1070,
+      374,
+      264,
+      5950,
+      400,
+      20
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "275": {
+    "dataset_index": 275,
+    "question": "Alice has 20 quarters. She wants to exchange them for nickels and so she goes to",
+    "prefix_text": "We are asked: \"Alice has 20 quarters",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      62786,
+      706,
+      220,
+      508,
+      32573
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "276": {
+    "dataset_index": 276,
+    "question": "Alice and Bob play the following game. A stack of $n$ tokens lies before them. T",
+    "prefix_text": "We are given: \"Alice and Bob play the",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      330,
+      62786,
+      323,
+      14596,
+      1514,
+      279
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "277": {
+    "dataset_index": 277,
+    "question": "Alice knows that $3$ red cards and $3$ black cards will be revealed to her one a",
+    "prefix_text": "We are given a problem where Alice knows that there",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      3575,
+      1405,
+      30505,
+      8964,
+      430,
+      1070
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "278": {
+    "dataset_index": 278,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Part 1: Providing Context**\n\nI need",
+    "prefix_token_ids": [
+      334,
+      5920,
+      220,
+      16,
+      25,
+      81200,
+      9805,
+      57277,
+      40,
+      1205
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "279": {
+    "dataset_index": 279,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are given problem in Russian likely: \"An",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      3575,
+      304,
+      8690,
+      4461,
+      25,
+      330,
+      2127
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "280": {
+    "dataset_index": 280,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "## We need to answer the following multiple-choice question",
+    "prefix_token_ids": [
+      567,
+      1226,
+      1205,
+      311,
+      4320,
+      279,
+      2768,
+      5361,
+      63726,
+      3488
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "281": {
+    "dataset_index": 281,
+    "question": "Let $\\triangle ABC$ have circumcenter $O$ and incenter $I$ with $\\overline{IA}\\p",
+    "prefix_text": "We are given a triangle with circumcenter O and",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      22217,
+      449,
+      10408,
+      3133,
+      507,
+      323
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "282": {
+    "dataset_index": 282,
+    "question": "The $\\textit{taxicab distance}$ between points $(x_1, y_1)$ and $(x_2, y_2)$ in ",
+    "prefix_text": "We are asked: \"The taxicab distance",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      791,
+      3827,
+      292,
+      370,
+      6138
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "283": {
+    "dataset_index": 283,
+    "question": "The numbers of apples growing on each of six apple trees form an arithmetic sequ",
+    "prefix_text": "We have an arithmetic sequence with 6 terms:",
+    "prefix_token_ids": [
+      1687,
+      617,
+      459,
+      35884,
+      8668,
+      449,
+      220,
+      21,
+      3878,
+      25
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "284": {
+    "dataset_index": 284,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "The structure: \"3,3,6-tr",
+    "prefix_token_ids": [
+      791,
+      6070,
+      25,
+      330,
+      18,
+      11,
+      18,
+      11,
+      21,
+      10398
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "285": {
+    "dataset_index": 285,
+    "question": "Brandon sold 86 geckos last year. He sold twice that many the year before. How m",
+    "prefix_text": "We have the following data:\n Brandon sold 86",
+    "prefix_token_ids": [
+      1687,
+      617,
+      279,
+      2768,
+      828,
+      512,
+      32866,
+      6216,
+      220,
+      4218
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "286": {
+    "dataset_index": 286,
+    "question": "There is a unique sequence of integers $a_1, a_2, \\cdots a_{2023}$ such that\n\\[\\",
+    "prefix_text": "We are given:\nThere is a unique sequence of",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      512,
+      3947,
+      374,
+      264,
+      5016,
+      8668,
+      315
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "287": {
+    "dataset_index": 287,
+    "question": "Let $S$ be the set of all positive rational numbers $r$ such that when the two n",
+    "prefix_text": "We are asked: \"Let S be the set",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      10267,
+      328,
+      387,
+      279,
+      743
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "288": {
+    "dataset_index": 288,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "Let\u2019s restate the question. It asks:",
+    "prefix_token_ids": [
+      10267,
+      753,
+      312,
+      2513,
+      279,
+      3488,
+      13,
+      1102,
+      17501,
+      25
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "289": {
+    "dataset_index": 289,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are given a multiple-choice question where we consider",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      264,
+      5361,
+      63726,
+      3488,
+      1405,
+      584,
+      2980
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "290": {
+    "dataset_index": 290,
+    "question": "Five friends eat at a fast-food chain and order the following: 5 pieces of hambu",
+    "prefix_text": "We are asked: \"Five friends eat at a",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      38120,
+      4885,
+      8343,
+      520,
+      264
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "291": {
+    "dataset_index": 291,
+    "question": "A rectangular box $P$ has distinct edge lengths $a$, $b$, and $c$. The sum of th",
+    "prefix_text": "We are given: A rectangular box P has distinct",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      362,
+      52524,
+      3830,
+      393,
+      706,
+      12742
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "292": {
+    "dataset_index": 292,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**We start by representing relationship, using T",
+    "prefix_token_ids": [
+      334,
+      1687,
+      1212,
+      555,
+      14393,
+      5133,
+      11,
+      1701,
+      350,
+      22447
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "293": {
+    "dataset_index": 293,
+    "question": "What is the value of\n\\[2^3 - 1^3 + 4^3 - 3^3 + 6^3 - 5^3 + \\dots + 18^3 - 17^3?\\",
+    "prefix_text": "We are asked: \"What is the value of",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      25,
+      330,
+      3923,
+      374,
+      279,
+      907,
+      315
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "294": {
+    "dataset_index": 294,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are asked:\n\"Read the following multiple-choice",
+    "prefix_token_ids": [
+      1687,
+      527,
+      4691,
+      512,
+      1,
+      4518,
+      279,
+      2768,
+      5361,
+      63726
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "295": {
+    "dataset_index": 295,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "Choosing option B: The correct answer is B,",
+    "prefix_token_ids": [
+      96144,
+      3072,
+      426,
+      25,
+      578,
+      4495,
+      4320,
+      374,
+      426,
+      11
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "296": {
+    "dataset_index": 296,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "We are provided multiple choice question about Ca ions in",
+    "prefix_token_ids": [
+      1687,
+      527,
+      3984,
+      5361,
+      5873,
+      3488,
+      922,
+      14751,
+      65125,
+      304
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "297": {
+    "dataset_index": 297,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "**Understanding the task**\n\nI need to provide the",
+    "prefix_token_ids": [
+      334,
+      71251,
+      279,
+      3465,
+      57277,
+      40,
+      1205,
+      311,
+      3493,
+      279
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "298": {
+    "dataset_index": 298,
+    "question": "How many strings of length $5$ formed from the digits $0$, $1$, $2$, $3$, $4$ ar",
+    "prefix_text": "We are given: \"How many strings of length",
+    "prefix_token_ids": [
+      1687,
+      527,
+      2728,
+      25,
+      330,
+      4438,
+      1690,
+      9246,
+      315,
+      3160
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  },
+  "299": {
+    "dataset_index": 299,
+    "question": "Read the following multiple-choice question and select the most appropriate opti",
+    "prefix_text": "### Considering weight restrictions for laptops\n\nThere are multiple",
+    "prefix_token_ids": [
+      14711,
+      56877,
+      4785,
+      17294,
+      369,
+      48985,
+      271,
+      3947,
+      527,
+      5361
+    ],
+    "donor_model": "kyleliu789/phi4-reasoning-14b-gpt52-high-reasoning-original",
+    "constraint_mode": "constraint_off"
+  }
+}

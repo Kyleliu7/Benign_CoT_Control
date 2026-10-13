@@ -1,0 +1,16 @@
+[
+  {
+    "model":"microsoft\/Phi-4-reasoning",
+    "questions":300,
+    "official_instruction_following":0.0666666667,
+    "continuation_instruction_following":0.06,
+    "answer_correct":0.7433333333,
+    "official_joint_success":0.0366666667,
+    "continuation_joint_success":0.0366666667,
+    "format_valid":0.96,
+    "missing_answer":0.04,
+    "truncated":0.0366666667,
+    "mean_output_tokens":3793.4,
+    "median_output_tokens":2057.0
+  }
+]
