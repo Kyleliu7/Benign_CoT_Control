@@ -40,16 +40,16 @@ def haskins(tag, lora_value, out_root):
     return True
 
 
-def reasonif(tag, sft):
+def reasonif(tag, sft, lora=LORA, dest_subdir="reasonif_300"):
     reps = {'FULL_MODEL_ID = "Jackrong/gpt-oss-120b-Distill-Qwen3-4B-Thinking"': f'FULL_MODEL_ID = "{OLMO}"',
             'BASE_MODEL_ID = "Qwen/Qwen3-14B"': f'BASE_MODEL_ID = "{OLMO}"'}
     if sft:
         reps.update({
             "LORA_MODEL_ID = 'kyleliu789/qwen3-14b-qwen3-gpt-52-long-high-reasoning-original'":
-                "LORA_MODEL_ID = 'local/olmo3-7b-think-gpt52-high-reasoning-original'",
+                f"LORA_MODEL_ID = 'local/{Path(lora).name}'",
             "target_info = api.model_info(MODEL_ID, token=HF_TOKEN)\nresolved_revision = MODEL_REVISION or target_info.sha":
                 "resolved_revision = 'local'",
-            "lora_path = snapshot_download(repo_id=LORA_MODEL_ID, revision=resolved_revision, token=HF_TOKEN)": f"lora_path = '{LORA}'",
+            "lora_path = snapshot_download(repo_id=LORA_MODEL_ID, revision=resolved_revision, token=HF_TOKEN)": f"lora_path = '{lora}'",
         })
     else:
         reps['EVAL_MODE = "lora"  # "full" or "lora"'] = 'EVAL_MODE = "full"  # "full" or "lora"'
@@ -61,7 +61,7 @@ def reasonif(tag, sft):
     if rc != 0 or len(scored) != 1:
         R.log(f"FAILED {tag}: rc={rc}, scored files={scored}")
         return False
-    R.copy_run(scored[0].parent, "reasonif_300")
+    R.copy_run(scored[0].parent, dest_subdir)
     return True
 
 
@@ -71,7 +71,10 @@ def main(which):
             "reasonif_base": lambda: reasonif("reasonif_base", sft=False),
             "haskins_sft": lambda: haskins("haskins_sft", LORA, "haskins_vllm_runs_olmo3_sft"),
             "reasonif_sft": lambda: reasonif("reasonif_sft", sft=True),
-            "haskins_sft_lr2e-4": lambda: haskins("haskins_sft_lr2e-4", str(WORK / "olmo3-7b-think-gpt52-high-reasoning-original-lr2e-4"), "haskins_vllm_runs_olmo3_sft_lr2e-4")}
+            "haskins_sft_lr2e-4": lambda: haskins("haskins_sft_lr2e-4", str(WORK / "olmo3-7b-think-gpt52-high-reasoning-original-lr2e-4"), "haskins_vllm_runs_olmo3_sft_lr2e-4"),
+            "reasonif_sft_lr2e-4": lambda: reasonif("reasonif_sft_lr2e-4", sft=True,
+                                                     lora=str(WORK / "olmo3-7b-think-gpt52-high-reasoning-original-lr2e-4"),
+                                                     dest_subdir="reasonif_300_sft_lr2e-4")}
     names = list(jobs) if which == "all" else which.split(",")
     ok = [jobs[n]() for n in names]
     R.log(f"ALL DONE ({which}) ok={all(ok)}")
