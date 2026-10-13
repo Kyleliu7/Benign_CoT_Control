@@ -170,7 +170,7 @@ scripts/                analysis_prefix_length_paired.py (prefix content, window
 MIT License. The manuscript is not yet on arXiv; cite the repository until it is.
 
 ```bibtex
-@misc{liu2026benign,
+@misc{benign2026cotcontrol,
   title  = {Benign Reasoning Distillation and Early-Token Steering of Chain-of-Thought Controllability},
   author = {Liu, Kyle},
   year   = {2026},
