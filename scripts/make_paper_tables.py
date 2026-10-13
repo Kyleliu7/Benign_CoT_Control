@@ -96,11 +96,10 @@ fig1 = pd.read_csv(REPO / "reproducible_figures" / "figure1_haskins_crossed_sour
 # ----------------------------------------------------------------------------------------------- Table 1
 rows = []
 for r in t1.itertuples():
-    rows.append([f"{r.Model.split('-')[0]} {r.Condition.replace(' (continuation-scored)', '').replace(' (Untouched)', '').replace(' (gpt52-high)', '')}"
-                 + (r"$^\dagger$" if "aggregate" in r.Status else ""),
+    name = f"{r.Model.split('-')[0]} {r.Condition.replace(' (continuation-scored)', '').replace(' (Untouched)', '').replace(' (gpt52-high)', '')}"
+    rows.append([R(esc(name) + r"$^\dagger$") if "aggregate" in r.Status else name,
                  f"{r.IFS_Pct} ({r.IFS_Count})", f"{r.Acc_Pct} ({r.Acc_Count})", f"{r.Joint_Pct} ({r.Joint_Count})",
                  f"{float(r.Mean_Tokens):,.1f}", r.Truncated])
-rows = [[R(esc(c)) if i == 0 and "dagger" in str(c) else c for i, c in enumerate(row)] for row in rows]
 write("t1_reasonif", "ReasonIF outcomes (300 questions per condition). Percent with counts. Prefix rows are scored on the recipient continuation only.",
       "tab:reasonif", "lrrrrr", ["Condition", "IFS", "Accuracy", "Joint", "Mean tokens", "Truncated"], rows,
       note=r"IFS: all instructions followed. Joint: IFS and correct answer. $^\dagger$ Aggregate CSV only; raw records for the Phi prefix runs are not in the "
@@ -246,9 +245,9 @@ for name, f in files:
     rows.append([name, f"{tk.mean():,.1f}", f"{np.median(tk):,.1f}", sum(truthy(r.get("truncated")) for r in rec)])
 for name, folder in (("Phi Prefix-OFF", "prefix_off"), ("Phi Prefix-ON", "prefix_on")):
     d = pd.read_csv(p / folder / "overall.csv").iloc[0]
-    rows.append([name + r"$^\dagger$", f"{d.mean_output_tokens:,.1f}", f"{d.median_output_tokens:,.1f}", round(d.truncated * d.questions)])
+    rows.append([R(esc(name) + r"$^\dagger$"), f"{d.mean_output_tokens:,.1f}", f"{d.median_output_tokens:,.1f}", round(d.truncated * d.questions)])
 write("a1_reasonif_length", "ReasonIF output length and truncation.", "tab:reasonif-length", "lrrr", ["Condition", "Mean tokens", "Median tokens", "Truncated / 300"],
-      [[R(esc(c)) if i == 0 and "dagger" in str(c) else c for i, c in enumerate(row)] for row in rows],
+      rows,
       note=r"Total output tokens as recorded (not reasoning-only, not donor plus recipient cost). $^\dagger$ aggregate CSV only.")
 
 # ----------------------------------------------------------------------------------------------- Appendix: per task
@@ -461,18 +460,19 @@ if t29 is not None and t30 is not None:
                r"a heading, a boilerplate sentence, unrelated text or word salad was excluded (\texttt{data/manual\_review/reasonif\_pass\_review.json}). The grader output is unchanged.")
 t31 = _opt("table31_qwen_training_variants.csv")
 if t31 is not None:
+    t31 = t31[t31.Group != "excluded"]
     groups = list(dict.fromkeys(t31.Group))
     rows, rules = [], []
     for g in groups:
         for r in t31[t31.Group == g].itertuples():
-            rows.append([r.Condition + (r" $^\dagger$" if r.Note else ""), int(r.IFS), f1(r.IFS_Pct),
+            rows.append([R(esc(r.Condition) + r" $^\dagger$") if r.Note else r.Condition, int(r.IFS), f1(r.IFS_Pct),
                          "--" if str(r.IFS_Gain_vs_Base) == "" else gcell(r.IFS_Gain_vs_Base, r.IFS_Gain_CI), f1(r.Accuracy_Pct), f"{float(r.Mean_Tokens):,.0f}",
                          int(r.Starts_Bold_Heading)])
         rules.append(len(rows) - 1)
     write("t14_training_variants", "Other Qwen3-14B fine-tunes on the same prompts, evaluated on ReasonIF (300 questions; one training run each).", "tab:variants",
           "lrrlrrr", ["Training data", "IFS", "IFS (\\%)", "Gain vs Base (95\\% CI)", "Accuracy (\\%)", "Mean output tokens", "Opens with heading"], rows, rule_after=tuple(rules[:-1]),
           note=r"All adapters use the reported recipe (LoRA $r=32$, learning rate $10^{-4}$, 3 epochs, seed 42, lowest-validation-loss checkpoint) and the same ReasonIF "
-               r"settings. The two runs at the bottom are not part of the study: one used a corrupted copy of the data, one a different dataset. "
+               r"settings. "
                r"$^\dagger$Evaluated with a standalone script with the same prompts and sampling settings. Gains are paired differences with bootstrap intervals over the 300 questions.")
 t23 = _opt("table23_length_controlled_curve.csv")
 if t23 is not None:
