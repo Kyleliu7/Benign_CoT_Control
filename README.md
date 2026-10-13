@@ -18,7 +18,7 @@ See [`AUDIT.md`](AUDIT.md) for the audit that produced this version, what change
 | ReasonIF Qwen3-14B SFT, Prefix-OFF, Prefix-ON | Raw records present |
 | ReasonIF Qwen3-14B Base | Raw records present (`base_model_id: Qwen/Qwen3-14B`, revision `40c06982…`). The file previously under this name was a GPT-OSS-20B run; it is kept as `results/reasonif_300/gpt_oss_20b/reasonif_gpt_oss_20b_medium.jsonl` |
 | ReasonIF Phi-4 Base / SFT | Raw records present |
-| ReasonIF Phi-4 Prefix-OFF / Prefix-ON | Aggregate CSV only; raw records absent |
+| ReasonIF Phi-4 Prefix-OFF / Prefix-ON | Raw and scored records present (recovered 2026-10-13); counts match the summary files |
 | Forward-KL caches (4 × float32) | Present; Table 4 reproduces exactly |
 | Token-level "policing" examples | Previous table did not match the stored spike records and was removed (see `AUDIT.md`) |
 
@@ -73,7 +73,7 @@ Prefix rows are scored on the recipient continuation only. IFS = all instruction
 | Phi-4-reasoning | Prefix-OFF† | 4.7 % (14) | 73.7 % (221) | 3.0 % (9) | 3,993.3 | 14 |
 | Phi-4-reasoning | Prefix-ON† | 6.0 % (18) | 74.3 % (223) | 3.7 % (11) | 3,793.4 | 11 |
 
-† aggregate CSV only. In the Qwen prefix runs the forced prefix is shorter than 10 tokens for 16 (OFF) and 15 (ON) of 300 questions
+† summary CSV in the table pipeline; the per-question records are now in the same folders and give the same counts. In the Qwen prefix runs the forced prefix is shorter than 10 tokens for 16 (OFF) and 15 (ON) of 300 questions
 (15 OFF prefixes are empty), so those items are effectively unprefixed. Scores re-checked with the official grader: 0 mismatches on the 205
 non-language items per file; language / english_capital items need the fast-langdetect model (see Quickstart step 3).
 
