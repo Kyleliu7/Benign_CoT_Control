@@ -188,7 +188,7 @@ bars = ax.bar(x_pos, q_data["continuation_mean_pct"], width=width, color=COND_CO
 yerr_low = q_data["continuation_mean_pct"] - q_data["comp_ci95_low"]
 yerr_high = q_data["comp_ci95_high"] - q_data["continuation_mean_pct"]
 ax.errorbar(x_pos, q_data["continuation_mean_pct"], yerr=[yerr_low, yerr_high], fmt="none", ecolor="#111111", elinewidth=1.2, capsize=4, capthick=1.2, zorder=4)
-ax.set_title("Qwen: Continuation Mean (%)", fontsize=10.5, fontweight="bold", pad=6)
+ax.set_title("Qwen3-14B: Continuation Mean (%)", fontsize=10.5, fontweight="bold", pad=6)
 ax.set_ylabel("Compliance (%)", fontsize=9.5)
 ax.set_ylim(0, 50)
 ax.set_xticks(x_pos)
@@ -206,7 +206,7 @@ bars = ax.bar(x_pos, q_data["strict_pct"], width=width, color=COND_COLORS, edgec
 yerr_low = q_data["strict_pct"] - q_data["strict_ci95_low"]
 yerr_high = q_data["strict_ci95_high"] - q_data["strict_pct"]
 ax.errorbar(x_pos, q_data["strict_pct"], yerr=[yerr_low, yerr_high], fmt="none", ecolor="#111111", elinewidth=1.2, capsize=4, capthick=1.2, zorder=4)
-ax.set_title("Qwen: Strict Rate (%)", fontsize=10.5, fontweight="bold", pad=6)
+ax.set_title("Qwen3-14B: Strict Rate (%)", fontsize=10.5, fontweight="bold", pad=6)
 ax.set_ylabel("Strict Pass (%)", fontsize=9.5)
 ax.set_ylim(0, 32)
 ax.set_xticks(x_pos)
@@ -225,7 +225,7 @@ bars = ax.bar(x_pos, p_data["continuation_mean_pct"], width=width, color=COND_CO
 yerr_low = p_data["continuation_mean_pct"] - p_data["comp_ci95_low"]
 yerr_high = p_data["comp_ci95_high"] - p_data["continuation_mean_pct"]
 ax.errorbar(x_pos, p_data["continuation_mean_pct"], yerr=[yerr_low, yerr_high], fmt="none", ecolor="#111111", elinewidth=1.2, capsize=4, capthick=1.2, zorder=4)
-ax.set_title("Phi-4: Continuation Mean (%)", fontsize=10.5, fontweight="bold", pad=6)
+ax.set_title("Phi-4-reasoning: Continuation Mean (%)", fontsize=10.5, fontweight="bold", pad=6)
 ax.set_ylabel("Compliance (%)", fontsize=9.5)
 ax.set_ylim(0, 28)
 ax.set_xticks(x_pos)
@@ -243,7 +243,7 @@ bars = ax.bar(x_pos, p_data["strict_pct"], width=width, color=COND_COLORS, edgec
 yerr_low = p_data["strict_pct"] - p_data["strict_ci95_low"]
 yerr_high = p_data["strict_ci95_high"] - p_data["strict_pct"]
 ax.errorbar(x_pos, p_data["strict_pct"], yerr=[yerr_low, yerr_high], fmt="none", ecolor="#111111", elinewidth=1.2, capsize=4, capthick=1.2, zorder=4)
-ax.set_title("Phi-4: Strict Rate (%)", fontsize=10.5, fontweight="bold", pad=6)
+ax.set_title("Phi-4-reasoning: Strict Rate (%)", fontsize=10.5, fontweight="bold", pad=6)
 ax.set_ylabel("Strict Pass (%)", fontsize=9.5)
 ax.set_ylim(0, 24)
 ax.set_xticks(x_pos)
@@ -255,7 +255,7 @@ for bar, (_, row), err_top in zip(bars, p_data.iterrows(), yerr_high):
     y_text = h + err_top + 0.6
     ax.annotate(f"{h:.1f}%\n({int(row['strict_count'])})", xy=(bar.get_x() + bar.get_width()/2, y_text), ha="center", va="bottom", fontsize=7.8, fontweight="bold")
 
-fig.suptitle("Haskins 500: 2×2 Crossed Transfer Matrix (95% Cluster-Bootstrap CIs)", fontsize=12, fontweight="bold", y=0.97)
+fig.suptitle("CoT-Control: Crossed Donor→Recipient Runs (95% Cluster-Bootstrap CIs)", fontsize=12, fontweight="bold", y=0.97)
 
 save_and_mirror(fig, "figure1_haskins_crossed")
 plt.close()
@@ -343,7 +343,7 @@ for i, (m_col, m_low, m_high, label) in enumerate([
         y_text = val + eh + 2.0
         ax1.annotate(f"{val:.1f}%", xy=(bar.get_x() + bar.get_width()/2, y_text), ha="center", va="bottom", fontsize=7.5, fontweight="medium")
 
-ax1.set_title("Qwen 3 14B (N = 300)", fontsize=11, fontweight="bold", pad=8)
+ax1.set_title("Qwen3-14B (N = 300)", fontsize=11, fontweight="bold", pad=8)
 ax1.set_xticks(x_q)
 ax1.set_xticklabels(q_conds, fontsize=9.5)
 ax1.set_ylabel("Success Rate (%)", fontsize=10)
@@ -370,7 +370,7 @@ for i, (m_col, m_low, m_high, label) in enumerate([
         y_text = val + eh + 2.0
         ax2.annotate(f"{val:.1f}%", xy=(bar.get_x() + bar.get_width()/2, y_text), ha="center", va="bottom", fontsize=7.5, fontweight="medium")
 
-ax2.set_title("Phi-4 Reasoning (N = 300)", fontsize=11, fontweight="bold", pad=8)
+ax2.set_title("Phi-4-reasoning (N = 300)", fontsize=11, fontweight="bold", pad=8)
 ax2.set_xticks(x_p)
 ax2.set_xticklabels(p_conds, fontsize=9.5)
 ax2.grid(axis="y", zorder=0)
@@ -723,17 +723,17 @@ def plot_heatmap(ax, matrix, title):
             ax.text(c, r, f"{val:.1f}%", ha="center", va="center", color=txt_color, fontsize=8.2, fontweight="medium")
     return im
 
-im1 = plot_heatmap(axes[0, 0], q_mean_matrix, "Qwen: Continuation Mean (%)")
-im2 = plot_heatmap(axes[0, 1], q_strict_matrix, "Qwen: Strict Rate (%)")
-im3 = plot_heatmap(axes[1, 0], p_mean_matrix, "Phi-4: Continuation Mean (%)")
-im4 = plot_heatmap(axes[1, 1], p_strict_matrix, "Phi-4: Strict Rate (%)")
+im1 = plot_heatmap(axes[0, 0], q_mean_matrix, "Qwen3-14B: Continuation Mean (%)")
+im2 = plot_heatmap(axes[0, 1], q_strict_matrix, "Qwen3-14B: Strict Rate (%)")
+im3 = plot_heatmap(axes[1, 0], p_mean_matrix, "Phi-4-reasoning: Continuation Mean (%)")
+im4 = plot_heatmap(axes[1, 1], p_strict_matrix, "Phi-4-reasoning: Strict Rate (%)")
 
 cbar_ax = fig.add_axes([0.25, 0.038, 0.50, 0.018])
 cbar = fig.colorbar(im1, cax=cbar_ax, orientation="horizontal")
 cbar.set_label("Adherence Rate (Shared 0–100% Scale, N = 50 per task)", fontsize=9.2, fontweight="medium")
 cbar.set_ticks(np.linspace(0, 100, 11))
 
-fig.suptitle("Haskins 500 Task-by-Task 2×2 Transfer Matrices", fontsize=12, fontweight="bold", y=0.97)
+fig.suptitle("CoT-Control: Crossed Donor→Recipient Runs by Task", fontsize=12, fontweight="bold", y=0.97)
 
 save_and_mirror(fig, "figure4_appendix_heatmaps")
 plt.close()
