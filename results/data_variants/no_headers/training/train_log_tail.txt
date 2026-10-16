@@ -1,0 +1,40 @@
+[INFO|trainer.py:2810] 2026-10-16 02:09:26,214 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+[INFO|trainer.py:3033] 2026-10-16 02:09:26,214 >> Loading best model from /home/kyleliu789/variant_runs/qwen3-14b-no_headers/checkpoint-70 (score: 1.6127636432647705).
+
+                                               
+
+[INFO|trainer.py:4309] 2026-10-16 02:09:26,278 >> Saving model checkpoint to /home/kyleliu789/variant_runs/qwen3-14b-no_headers
+/home/kyleliu789/llamafactory-env/lib/python3.12/site-packages/peft/utils/save_and_load.py:295: UserWarning: Could not find a config file in Qwen/Qwen3-14B - will assume that the vocabulary was not modified.
+  warnings.warn(
+[INFO|tokenization_utils_base.py:2561] 2026-10-16 02:09:26,429 >> chat template saved in /home/kyleliu789/variant_runs/qwen3-14b-no_headers/chat_template.jinja
+[INFO|tokenization_utils_base.py:2730] 2026-10-16 02:09:26,429 >> tokenizer config file saved in /home/kyleliu789/variant_runs/qwen3-14b-no_headers/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2739] 2026-10-16 02:09:26,429 >> Special tokens file saved in /home/kyleliu789/variant_runs/qwen3-14b-no_headers/special_tokens_map.json
+{'eval_loss': 1.6127636432647705, 'eval_runtime': 10.5009, 'eval_samples_per_second': 2.095, 'eval_steps_per_second': 1.048, 'epoch': 2.93}
+{'train_runtime': 1155.6166, 'train_samples_per_second': 0.493, 'train_steps_per_second': 0.062, 'train_loss': 1.6402342021465302, 'epoch': 3.0}
+***** train metrics *****
+  epoch                    =         3.0
+  total_flos               = 135704787GF
+  train_loss               =      1.6402
+  train_runtime            =  0:19:15.61
+  train_samples_per_second =       0.493
+  train_steps_per_second   =       0.062
+Figure saved at: /home/kyleliu789/variant_runs/qwen3-14b-no_headers/training_loss.png
+Figure saved at: /home/kyleliu789/variant_runs/qwen3-14b-no_headers/training_eval_loss.png
+[WARNING|2026-10-16 02:09:26] llamafactory.extras.ploting:149 >> No metric eval_accuracy to plot.
+[INFO|trainer.py:4643] 2026-10-16 02:09:26,661 >> 
+***** Running Evaluation *****
+[INFO|trainer.py:4645] 2026-10-16 02:09:26,661 >>   Num examples = 22
+[INFO|trainer.py:4648] 2026-10-16 02:09:26,661 >>   Batch size = 2
+
+[INFO|modelcard.py:456] 2026-10-16 02:09:37,160 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}
+***** eval metrics *****
+  epoch                   =        3.0
+  eval_loss               =     1.6128
+  eval_runtime            = 0:00:10.50
+  eval_samples_per_second =      2.095
+  eval_steps_per_second   =      1.047
