@@ -9,6 +9,8 @@ registers it (and the untouched Qwen3-235B set, copied to data/training/qwen3_23
 data/training/dataset_info.json.
 
   python scripts/make_header_transplant_dataset.py <path to qwen3_235b_gpt52_prompts_sft.json>
+  python scripts/make_header_transplant_dataset.py <source.json> <copy name> <output name>
+      e.g. qwen3_14b_gpt52_prompts_sft.json qwen3_14b_gpt52_prompts_sft qwen3_14b_self_gpt52_headers (self-distillation)
 """
 import json
 import re
@@ -20,7 +22,9 @@ D = Path(__file__).resolve().parents[1] / "data" / "training"
 HEAD = re.compile(r"\*\*[^*\n]{1,120}\*\*")
 
 src = Path(sys.argv[1])
-dst_orig = D / "qwen3_235b_gpt52_prompts_sft.json"
+ORIG = sys.argv[2] if len(sys.argv) > 2 else "qwen3_235b_gpt52_prompts_sft"
+OUT = sys.argv[3] if len(sys.argv) > 3 else "qwen3_235b_gpt52_headers"
+dst_orig = D / f"{ORIG}.json"
 if not dst_orig.exists():
     shutil.copyfile(src, dst_orig)
 q235 = json.loads(dst_orig.read_text(encoding="utf-8"))
@@ -46,9 +50,9 @@ for ex in q235:
         continue
     out.append({**ex, "output": "<think>" + head + "\n\n" + body.lstrip("\n")})
 
-(D / "qwen3_235b_gpt52_headers.json").write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+(D / f"{OUT}.json").write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
 info = json.loads((D / "dataset_info.json").read_text(encoding="utf-8"))
-for name in ("qwen3_235b_gpt52_prompts_sft", "qwen3_235b_gpt52_headers"):
+for name in (ORIG, OUT):
     info[name] = {**info["gpt52_high_reasoning_original"], "file_name": name + ".json"}
 (D / "dataset_info.json").write_text(json.dumps(info, indent=2) + "\n", encoding="utf-8")
 print(json.dumps({"n": len(out), "matched_gpt52_instruction": n_match, "already_had_header": n_had_header,
