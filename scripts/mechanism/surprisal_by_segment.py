@@ -51,7 +51,14 @@ def segment_labels(output: str):
 
 
 def val_indices(n):
-    from datasets import Dataset
+    try:
+        from datasets import Dataset
+    except ImportError:  # environments without `datasets`: reuse the split recorded by an earlier run of this script
+        prev = sorted((REPO / "results" / "mechanism").glob("surprisal_*.json"))
+        assert prev, "datasets is not installed and no earlier surprisal output to take the split from"
+        rows = json.loads(prev[0].read_text())["rows"]
+        assert len(rows) == n
+        return {r["idx"] for r in rows if r["split"] == "val"}
     sp = Dataset.from_dict({"i": list(range(n))}).train_test_split(test_size=0.1, seed=42)
     return set(sp["test"]["i"])
 
@@ -69,7 +76,7 @@ def main():
     data = json.loads(DATA.read_text(encoding="utf-8"))
     val = val_indices(len(data))
     tok = AutoTokenizer.from_pretrained(args.base, trust_remote_code=True)
-    model = AutoModelForCausalLM.from_pretrained(args.base, torch_dtype=torch.bfloat16, device_map="cuda", trust_remote_code=True)
+    model = AutoModelForCausalLM.from_pretrained(args.base, dtype=torch.bfloat16, device_map="cuda", trust_remote_code=True)
     adapters = dict(a.split("=", 1) for a in args.adapter)
     for i, (name, path) in enumerate(adapters.items()):
         if i == 0:
