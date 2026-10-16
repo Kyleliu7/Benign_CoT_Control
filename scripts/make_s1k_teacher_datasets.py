@@ -11,7 +11,7 @@ the 50 CoT-Control questions. 212 eligible questions are drawn with random.Rando
 data/training/s1k_claude37_212.json, data/training/s1k_deepseek_r1_212.json, data/training/s1k_selection.json, and
 registers both sets in data/training/dataset_info.json.
 
-  python scripts/make_s1k_teacher_datasets.py [CUTOFF]      (default 8192)
+  python scripts/make_s1k_teacher_datasets.py [CUTOFF]      (default 12288; at 8192 only 87 questions fit for both teachers)
 """
 import json
 import random
@@ -21,7 +21,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 D = REPO / "data" / "training"
-CUTOFF = int(sys.argv[1]) if len(sys.argv) > 1 else 8192
+CUTOFF = int(sys.argv[1]) if len(sys.argv) > 1 else 12288
 N = 212
 
 

@@ -16,7 +16,7 @@ lora_dropout: 0.05
 dataset: s1k_claude37_212
 dataset_dir: data/training
 template: qwen3
-cutoff_len: 8192
+cutoff_len: 12288
 train_on_prompt: false
 packing: false
 overwrite_cache: true

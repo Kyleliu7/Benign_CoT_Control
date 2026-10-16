@@ -50,6 +50,7 @@ for ex in q235:
         continue
     out.append({**ex, "output": "<think>" + head + "\n\n" + body.lstrip("\n")})
 
+out = [{"instruction": e["instruction"], "input": e.get("input", ""), **{k: v for k, v in e.items() if k not in ("instruction", "input")}} for e in out]
 (D / f"{OUT}.json").write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
 info = json.loads((D / "dataset_info.json").read_text(encoding="utf-8"))
 for name in (ORIG, OUT):
