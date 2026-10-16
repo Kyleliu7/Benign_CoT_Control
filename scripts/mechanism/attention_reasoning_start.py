@@ -1,14 +1,15 @@
 """Attention at the start of the reasoning, Qwen3-14B base vs LoRA adapters, on identical inputs.
 
-Part 1 (measurement). For each of the 500 CoT-Control items the input is the exact evaluation prompt plus "<think>\n",
-the point at which the model writes its first reasoning token. With adapters off (base) and on (each adapter), we
+Part 1 (measurement). For each of the 500 CoT-Control items the input is the exact evaluation prompt plus "<think>"
+with no newline (the SFT model writes "<think>**", the base model "<think>\n"), the point at which the model chooses
+its first reasoning token. With adapters off (base) and on (each adapter), we
 record, for every layer and head, the attention weight that the last position puts on (a) the constraint instruction,
 (b) the question and (c) everything else, plus the probability that the next token is "**" (a bold heading).
 
 Part 2 (attention-pattern patching, after the method in abhayesian's LessWrong shortform on steering CoT
 controllability). The opening O is the first 10 reasoning tokens that the SFT model actually wrote for that item
 (results/haskins_500/qwen3_14b/haskins_qwen3_14b_vllm_calibrated_sft_31pct.jsonl). We teacher-force prompt +
-"<think>\n" + O and compute log p(O) under: base; SFT; base with the SFT model's attention probabilities substituted
+"<think>" + O and compute log p(O) under: base; SFT; base with the SFT model's attention probabilities substituted
 in a set of layers (values, MLPs and everything else stay base); and SFT with the base model's attention substituted.
 "Gap recovered" = sum(patched - base) / sum(SFT - base). Sanity check: substituting a model's own attention must
 leave log p unchanged.
@@ -26,7 +27,7 @@ import numpy as np
 import torch
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from haskins_prompts import REPO, items, render  # noqa: E402
+from haskins_prompts import OPENER, REPO, items, render  # noqa: E402
 
 BASE = "Qwen/Qwen3-14B"
 SFT_RECORDS = REPO / "results/haskins_500/qwen3_14b/haskins_qwen3_14b_vllm_calibrated_sft_31pct.jsonl"
@@ -101,7 +102,7 @@ def main():
     res = {k: {"constraint": [], "question": [], "p_star": [], "top1": []} for k in labels}
     rows = []
     for it in its:
-        text = render(tok, it["messages"]) + "<think>\n"
+        text = render(tok, it["messages"]) + OPENER
         ids, m = spans(tok, text, {"constraint": it["instruction"], "question": it["question"]})
         x = torch.tensor([ids], device="cuda")
         rows.append({"task": it["task"], "q": it["q"], "n_tokens": len(ids),
@@ -148,7 +149,7 @@ def main():
         open_ids = tok.encode(reasoning.lstrip("\n"), add_special_tokens=False)[:10]
         if len(open_ids) < 10:
             continue
-        pre = tok.encode(render(tok, it["messages"]) + "<think>\n", add_special_tokens=False)
+        pre = tok.encode(render(tok, it["messages"]) + OPENER, add_special_tokens=False)
         x = torch.tensor([pre + open_ids], device="cuda")
         r = {"task": it["task"], "q": it["q"], "opening": tok.decode(open_ids)}
         with torch.no_grad():

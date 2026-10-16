@@ -42,3 +42,21 @@ def items():
 
 def render(tokenizer, messages) -> str:
     return tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=True)
+
+
+# The SFT models write "<think>" and then "**" directly, as in the training data ("<think>**Heading**"); the base models
+# write "<think>\n". The first reasoning decision is therefore taken right after "<think>", so analyses append exactly
+# this opener (with no newline) to the generation prompt.
+OPENER = "<think>"
+
+
+def load_causal_lm(name, torch_dtype):
+    """Base model for text-only forward passes. Qwen3.5 checkpoints are multimodal (Qwen3_5ForConditionalGeneration),
+    and LoRA adapters trained on them name their modules model.language_model.*, so they are loaded with the
+    image-text class (transformers >= 5) to keep adapter module names matching."""
+    from transformers import AutoConfig, AutoModelForCausalLM
+    cfg = AutoConfig.from_pretrained(name, trust_remote_code=True)
+    if getattr(cfg, "model_type", "") == "qwen3_5":
+        from transformers import AutoModelForImageTextToText
+        return AutoModelForImageTextToText.from_pretrained(name, dtype=torch_dtype, device_map="cuda", trust_remote_code=True)
+    return AutoModelForCausalLM.from_pretrained(name, dtype=torch_dtype, device_map="cuda", trust_remote_code=True)

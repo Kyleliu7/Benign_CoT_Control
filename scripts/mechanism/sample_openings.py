@@ -24,9 +24,10 @@ def main():
     ap.add_argument("--max-new-tokens", type=int, default=150)
     args = ap.parse_args()
     import torch
-    from transformers import AutoModelForCausalLM, AutoTokenizer
+    from transformers import AutoTokenizer
+    from haskins_prompts import load_causal_lm
     tok = AutoTokenizer.from_pretrained(args.base, trust_remote_code=True)
-    model = AutoModelForCausalLM.from_pretrained(args.base, dtype=torch.bfloat16, device_map="cuda", trust_remote_code=True)
+    model = load_causal_lm(args.base, torch.bfloat16)
     if args.adapter:
         from peft import PeftModel
         model = PeftModel.from_pretrained(model, args.adapter)

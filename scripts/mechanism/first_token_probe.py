@@ -21,14 +21,16 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--base", required=True)
     ap.add_argument("--adapter", action="append", default=[], help="name=path")
-    ap.add_argument("--opener", default="<think>\n", help="appended unless the rendered prompt already ends with <think>")
+    ap.add_argument("--opener", default="<think>", help="appended unless the rendered prompt already ends with <think>; "
+                    "no newline, because the SFT models write <think>** directly")
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
     import torch
-    from transformers import AutoModelForCausalLM, AutoTokenizer
+    from transformers import AutoTokenizer
     from peft import PeftModel
+    from haskins_prompts import load_causal_lm
     tok = AutoTokenizer.from_pretrained(args.base, trust_remote_code=True)
-    model = AutoModelForCausalLM.from_pretrained(args.base, dtype=torch.bfloat16, device_map="cuda", trust_remote_code=True)
+    model = load_causal_lm(args.base, torch.bfloat16)
     adapters = dict(a.split("=", 1) for a in args.adapter)
     for i, (n, p) in enumerate(adapters.items()):
         model = PeftModel.from_pretrained(model, p, adapter_name=n) if i == 0 else model

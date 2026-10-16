@@ -70,13 +70,16 @@ def main():
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
     import torch
-    from transformers import AutoModelForCausalLM, AutoTokenizer
+    import sys
+    from transformers import AutoTokenizer
     from peft import PeftModel
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from haskins_prompts import load_causal_lm
 
     data = json.loads(DATA.read_text(encoding="utf-8"))
     val = val_indices(len(data))
     tok = AutoTokenizer.from_pretrained(args.base, trust_remote_code=True)
-    model = AutoModelForCausalLM.from_pretrained(args.base, dtype=torch.bfloat16, device_map="cuda", trust_remote_code=True)
+    model = load_causal_lm(args.base, torch.bfloat16)
     adapters = dict(a.split("=", 1) for a in args.adapter)
     for i, (name, path) in enumerate(adapters.items()):
         if i == 0:
