@@ -222,3 +222,28 @@ How the runs were produced (`scripts/vm/`, run on the same single RTX PRO 6000 V
   notebooks) with only the model id, adapter path, output folder and model-family checks changed. OLMo Haskins runs set `VLLM_USE_AOT_COMPILE=0`
   to avoid a vLLM 0.29 start-up error. The ReasonIF notebook is the one used for the Qwen3-14B ReasonIF runs (vLLM 0.16.0, per its run manifest).
 * Adapters (private on the Hugging Face Hub): `kyleliu789/olmo3-7b-think-gpt52-high-reasoning-original` and `...-lr2e-4`. The seed-1/2 Qwen adapters are not published.
+
+## Post-ARR follow-ups (2026-10-15/16): heading ablations, review requests, mechanism analyses
+
+All runs use the reported Qwen3-14B recipe (LoRA r=32, lr 1e-4, 3 epochs, seed 42, seed-42 split, lowest-validation-loss
+checkpoint) and the reported evaluation notebooks; one training run each.
+
+| Run | Training data | Results |
+|---|---|---|
+| No headings | `data/training/gpt52_high_reasoning_no_headers.json` (`scripts/make_no_header_dataset.py`) | `results/data_variants/no_headers/` |
+| Fixed heading | `data/training/gpt52_high_reasoning_neutral_header.json` (`scripts/make_neutral_header_dataset.py`) | `results/data_variants/neutral_header/` |
+| Header transplant | `data/training/qwen3_235b_gpt52_headers.json` (`scripts/make_header_transplant_dataset.py`, from `qwen3_235b_gpt52_prompts_sft.json`) | `results/data_variants/header_transplant/` |
+| Table 2 adapters on CoT-Control | existing Hub adapters | `results/haskins_500/qwen3_14b_training_variants/` |
+
+* **Heading-stripped grading.** The CoT-Control grader counts a heading line as a sentence; `scripts/haskins_header_stripped.py`
+  grades every model with a leading `**...**` heading removed, and `scripts/reasonif_header_stripped.py` does the same for ReasonIF.
+* **Summaries.** `scripts/variant_summary.py`, `scripts/heading_obeys_rule.py`, `scripts/review_followups.py` (numbers requested by
+  the October 2026 review), `scripts/make_review_tables.py` (LaTeX: `tab:headings`, `tab:standalone-task`, `tab:variants-cot`,
+  `tab:mechanism`). Text outputs are in `results/summary_tables/` (`review_followups.txt`, `variant_summary.txt`,
+  `haskins_header_stripped.txt`, `heading_obeys_rule.txt`, `reasonif_header_stripped.csv`, `training_length_counts.json`).
+* **Mechanism analyses** (`scripts/mechanism/`, outputs and notes in `results/mechanism/README.md`): per-segment surprisal of the
+  training targets, the probability that the first reasoning token starts a heading, attention at the first reasoning position, and
+  attention-pattern patching. Measurements are taken right after `<think>` with no newline, because the fine-tuned models write
+  `<think>**`; files measured after `<think>\n` are kept and marked superseded.
+* **VM.** `scripts/vm/run_variant_chain.sh`, `run_variant_evals.py`, `mechanism_chain*.sh`; folder map in `scripts/vm/VM_INDEX.md`.
+  The session ran from a `git archive` snapshot of commit 09ab1e1; later script fixes are recorded in the VM's `mechanism_runs/paths.txt`.

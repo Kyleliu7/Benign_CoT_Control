@@ -1,0 +1,4512 @@
+{
+ "meta": {
+  "base": "Qwen/Qwen3.5-9B",
+  "adapters": {
+   "sft": "/home/kyleliu789/.cache/huggingface/hub/models--kyleliu789--qwen3.5-9b-gpt52-high-reasoning-original/snapshots/3082d3000b91a25bee02eb50ac644ca040a728d7"
+  },
+  "n_star_tokens": 87,
+  "finished": "2026-10-16T14:31:12Z"
+ },
+ "rows": [
+  {
+   "task": "arrow_prefix",
+   "q": 0,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.203659204586984e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9724550247192383,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 1,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.346075689274585e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9842771887779236,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 2,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.2547226004360255e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9501465559005737,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 3,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.3169208773765604e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9776108264923096,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 4,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.4782298052296028e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9822636246681213,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 5,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.331997788791341e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9913855195045471,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 6,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.425549621738355e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9295496344566345,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 7,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.89073614729341e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.95793217420578,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 8,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.812137094882928e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9860383868217468,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 9,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.893024264594146e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9466577172279358,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 10,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.0344759832369164e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9821665287017822,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 11,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.239884449612873e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9857933521270752,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 12,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.044668682785414e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9799432754516602,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 13,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.899164865601051e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9826640486717224,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 14,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.18362695597807e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9866514801979065,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 15,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.09874144729838e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.981571614742279,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 16,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.6316977990982195e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9879332780838013,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 17,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.0243708931388937e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.985812783241272,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 18,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.81919890052518e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.988755464553833,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 19,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.44119426895395e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9915534853935242,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 20,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.6671717279214135e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9912559390068054,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 21,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.946136276222205e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9912031292915344,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 22,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.232003553677032e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9915550947189331,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 23,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.319052836545325e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9928367137908936,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 24,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.811903847074973e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9891897439956665,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 25,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.5187659957737196e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9921327233314514,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 26,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.615933342691278e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9880400896072388,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 27,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.844341023295783e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9878502488136292,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 28,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.1537202243848697e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9850910305976868,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 29,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.8912963639650116e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.989612877368927,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 30,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.066267867917304e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9875583052635193,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 31,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.522934667264053e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9887382984161377,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 32,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.669875318721097e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9874932765960693,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 33,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.914166425365238e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.983700692653656,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 34,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.335290988890847e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9840530753135681,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 35,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.8340385916390005e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9739963412284851,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 36,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.4215186183719197e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9771310091018677,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 37,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.212083457692643e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.98508620262146,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 38,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1186027393250697e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.987023115158081,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 39,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.2159845514124754e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.985619068145752,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 40,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.9663574707683438e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9741355776786804,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 41,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1267898969435919e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9760776162147522,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 42,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.673100934520335e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9786339998245239,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 43,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.769657545646623e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9881591796875,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 44,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.080481730284191e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.985308825969696,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 45,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.1927483828676486e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9883397221565247,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 46,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1834529090037904e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.983001708984375,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 47,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.505054818082499e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9886587858200073,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 48,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.696012550515661e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.990991473197937,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 49,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.322381741417303e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9865581393241882,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 0,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.0749452289692272e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9784743785858154,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 1,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.9171648091287352e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9775814414024353,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 2,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.957968671869821e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.971892774105072,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 3,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.1786460990824708e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.978607177734375,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 4,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.429989140433463e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9823204874992371,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 5,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1119349352384233e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.988987147808075,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 6,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.067065238037685e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9525338411331177,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 7,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.758603169984781e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.970053493976593,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 8,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.422559279262714e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9843572378158569,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 9,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.052421687106289e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9447089433670044,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 10,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.030256389204624e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9823336005210876,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 11,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.3600171061843866e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9740992188453674,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 12,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.41046807964085e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9770523309707642,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 13,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.227290671427909e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9756506085395813,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 14,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.251021473080982e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.978069007396698,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 15,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.357236076974914e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9793727993965149,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 16,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.2868408317863214e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9824533462524414,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 17,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.42859143088026e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9804787039756775,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 18,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.3414193606186018e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9840956926345825,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 19,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.0118482641228184e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9861230850219727,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 20,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.0448045486555202e-06,
+   "base__top1": "\n",
+   "sft__p_star": 0.9876313805580139,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 21,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.70212035250006e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9854125380516052,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 22,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.4186842274029914e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9881786704063416,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 23,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.20782691637578e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9869733452796936,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 24,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.8435702031638357e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9849674701690674,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 25,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.734639441674517e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9863842129707336,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 26,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.855950687167933e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9827094078063965,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 27,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.8974705540131254e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9848667979240417,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 28,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.301127962795363e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9832011461257935,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 29,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.1048890630481765e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9851791262626648,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 30,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.497066186104348e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9818022847175598,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 31,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.929365561816667e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9836938977241516,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 32,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1938269608435803e-06,
+   "base__top1": "\n",
+   "sft__p_star": 0.9832721948623657,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 33,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.6336877567700867e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9815061092376709,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 34,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.229109151765442e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9847576022148132,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 35,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.695458327181768e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.973866879940033,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 36,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.1295212465920486e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9791650176048279,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 37,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.6023781768126355e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9826231002807617,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 38,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.632464486396202e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9785205721855164,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 39,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.696329772788886e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9835903644561768,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 40,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.672199586750139e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9804559946060181,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 41,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2118752579226566e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9753585457801819,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 42,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.60795097423761e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9795276522636414,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 43,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.0036750097697222e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9818383455276489,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 44,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.8116786527098157e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9826975464820862,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 45,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.171092425371171e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9829453229904175,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 46,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1098064760517445e-06,
+   "base__top1": "\n",
+   "sft__p_star": 0.9744893312454224,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 47,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.758287784374261e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9849832653999329,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 48,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.02027245879799e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9834178686141968,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 49,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.3571917040499102e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9818702340126038,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 0,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.274615423265459e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9832618236541748,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 1,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.5725524821496037e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9897612929344177,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 2,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.875194718565126e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9807586073875427,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 3,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.247280819910884e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9869805574417114,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 4,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.044575886372968e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.988174319267273,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 5,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.64830190291832e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9933712482452393,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 6,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.696268345900535e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9807209968566895,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 7,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.619921582602274e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9799264073371887,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 8,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1243918685011067e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9901008009910583,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 9,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.949604199249279e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.977033257484436,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 10,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.8498731192457853e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9854320883750916,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 11,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.6989438239866104e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9834669232368469,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 12,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.9330325073951826e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9863250255584717,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 13,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.3525137393676232e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9785458445549011,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 14,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.9452678518282482e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9869332313537598,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 15,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.2250962672387686e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9829444885253906,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 16,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.788863457363732e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9831588268280029,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 17,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.488116545076082e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9851849675178528,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 18,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.849006281418042e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9872384667396545,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 19,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.5146405846498965e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9924396872520447,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 20,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.5396240605223284e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9880856275558472,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 21,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.5016262839017145e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9911431074142456,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 22,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.180688329327495e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9898656010627747,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 23,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.438587998199182e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9915999174118042,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 24,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.56114000510388e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9886426329612732,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 25,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.0245048182896426e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9887867569923401,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 26,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.281170511902019e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9858686327934265,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 27,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.994292161583871e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9899195432662964,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 28,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.6437094529919705e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.98818039894104,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 29,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.302640649849309e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9868093729019165,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 30,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.1595880045642843e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9868333339691162,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 31,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.26896508038044e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.989450991153717,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 32,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.4594890274111094e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9848300814628601,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 33,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.9412957281447234e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9860802292823792,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 34,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.917688218280091e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9884324669837952,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 35,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.0411570744727214e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9826024770736694,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 36,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.504679059711634e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9871330857276917,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 37,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.4559704197836254e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9878793954849243,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 38,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.2284840639485992e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.988510251045227,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 39,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1771204100341492e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9896823763847351,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 40,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.266522317195268e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9905990958213806,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 41,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.525440916973821e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9883931279182434,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 42,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.8044502537768494e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.982163667678833,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 43,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.423778475233121e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9853578209877014,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 44,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2828515139062802e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9821856617927551,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 45,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.2493494472873863e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9829368591308594,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 46,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.030739451214686e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9817810654640198,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 47,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.5909509443190473e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9845352172851562,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 48,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.647391283971956e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.989665150642395,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 49,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.477273343652996e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9816446900367737,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 0,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.546098063608952e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9790468215942383,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 1,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.3818913064133085e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9881530404090881,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 2,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.8995191197745953e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9781926274299622,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 3,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1689242285228829e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.985811710357666,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 4,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.485110511292078e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9868400692939758,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 5,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.293683737912943e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9936124086380005,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 6,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.690696885414127e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9840595126152039,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 7,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.177908070028934e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9838656783103943,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 8,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.863403096384445e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9897210597991943,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 9,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2815801753163214e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9780765771865845,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 10,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.452317873912762e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9863467216491699,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 11,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.4503926948350454e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9864929914474487,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 12,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.6319957530395186e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9885626435279846,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 13,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.8023550651946607e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9829319715499878,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 14,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.204109060879091e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9865677356719971,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 15,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.400069038481888e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9857000112533569,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 16,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.4850455915270686e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9857261776924133,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 17,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.5559075683977426e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9881590604782104,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 18,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.945192427248003e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9833278059959412,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 19,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.4541813914424893e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9915869832038879,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 20,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.9001557417559525e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.989595890045166,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 21,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.84590225116699e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9912369251251221,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 22,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.546195490704122e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9898970127105713,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 23,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.526030312173134e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9903008937835693,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 24,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.4739772896964496e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9891813397407532,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 25,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.231720432315342e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9900907278060913,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 26,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.5195687192745027e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9897341728210449,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 27,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.590613648744693e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.98831707239151,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 28,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.846655591947638e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9911583662033081,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 29,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.968927834805072e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9881865382194519,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 30,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.0639838282932033e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9894000291824341,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 31,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.228446629094833e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9895771741867065,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 32,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.505641762378218e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9885872602462769,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 33,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.562662318605362e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9870463609695435,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 34,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1811929567784318e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9877659678459167,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 35,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.0717855047914782e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9848400950431824,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 36,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.9753950886733946e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9860120415687561,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 37,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.0045539268239736e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9868955612182617,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 38,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.0833330555424254e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9924188256263733,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 39,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.412472781543329e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9907258749008179,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 40,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.41350398052964e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9894247651100159,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 41,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.7597147916603717e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9901998043060303,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 42,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.9615119245818278e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9857730865478516,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 43,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.800171389731986e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9860023856163025,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 44,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.918973210507829e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9819647073745728,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 45,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.913288087962428e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9867790341377258,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 46,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.3834141649767844e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9853776097297668,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 47,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.250726029411453e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9865519404411316,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 48,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.0195707034199586e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9904686808586121,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 49,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.29007375448964e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9838938117027283,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 0,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.5009861082689895e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.978173553943634,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 1,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.21788570292847e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9801315665245056,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 2,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.387020784539345e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9694115519523621,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 3,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.6588710372598143e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9774866700172424,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 4,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.6330469065906073e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.976849377155304,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 5,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.4979115664791607e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9904741048812866,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 6,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.9484147034963826e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.961567759513855,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 7,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.438308683849755e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9764512181282043,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 8,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.275439652838941e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9873226881027222,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 9,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.94018593144574e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9620176553726196,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 10,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.921833690081257e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9723891615867615,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 11,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.806956539951443e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9863282442092896,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 12,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.97559627838018e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9728891253471375,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 13,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.4472942783404505e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9836755394935608,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 14,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.1740794053926038e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9873508810997009,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 15,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.3264754506490135e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9798994064331055,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 16,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.3278950383721622e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9853658080101013,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 17,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.94843132925871e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9851081371307373,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 18,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.313305813572697e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9893839955329895,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 19,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.4491462009309544e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9907016754150391,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 20,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.570056143573311e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9847950339317322,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 21,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2295067186585129e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9900526404380798,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 22,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.3179102253957353e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9917299151420593,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 23,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.684523631695356e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9914024472236633,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 24,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.3823968575698018e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9896559119224548,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 25,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.1077914403331306e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9897899627685547,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 26,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.450044351258839e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9846913814544678,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 27,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.2632258612229634e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9872381687164307,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 28,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.065777486379375e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9843561053276062,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 29,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.217733065725042e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9767979979515076,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 30,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2981058716832194e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9792227745056152,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 31,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.522024082438293e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.987858772277832,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 32,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.5096057381924766e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9894347190856934,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 33,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.862675488468085e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.986284077167511,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 34,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.250153887776833e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9878714680671692,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 35,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.033648330434517e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9711281061172485,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 36,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.146974284438329e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9845033288002014,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 37,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.0148132787435316e-06,
+   "base__top1": "\n",
+   "sft__p_star": 0.9842799305915833,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 38,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.8945385111001087e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9897117018699646,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 39,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.332826850055426e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9865842461585999,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 40,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.262777508756699e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9844598174095154,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 41,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.744989219787385e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9733694195747375,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 42,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.962636986263533e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9846743941307068,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 43,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.18701268042787e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9806674718856812,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 44,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.915282817019033e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9834104776382446,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 45,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.225250561124994e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9813773036003113,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 46,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.7595577257197874e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9859631657600403,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 47,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.716258375647158e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9871439337730408,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 48,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.9828910303185694e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9819004535675049,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 49,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.535274177262181e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9843946099281311,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 0,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.622678690362591e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9763739705085754,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 1,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.716123752108615e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9799768924713135,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 2,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.299924473092574e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9596149325370789,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 3,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.515142399379556e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9518923163414001,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 4,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.7044284084686296e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9781579375267029,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 5,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.4825171130469244e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.992231011390686,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 6,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.5331492519976564e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.7253817319869995,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 7,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.435846439638681e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.8806337714195251,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 8,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2145389582940425e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9892173409461975,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 9,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.840552320610868e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.8080491423606873,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 10,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.155744016045901e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9791643619537354,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 11,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.8597940965037196e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9843937754631042,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 12,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.266907348617679e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9698067903518677,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 13,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.6030964999913522e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9811660051345825,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 14,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.859766562972709e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9858667850494385,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 15,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.24743446262255e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9786760807037354,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 16,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.1771990311190166e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9857715964317322,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 17,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.669629571907308e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9815189838409424,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 18,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.1913471037748877e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.992347002029419,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 19,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.1651747889327453e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9914506673812866,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 20,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.447739053783152e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9870586395263672,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 21,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.9707124820911304e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9904357194900513,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 22,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.319642142926796e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9922189712524414,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 23,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.9430422543441637e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.993035078048706,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 24,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.607069449211963e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9908871650695801,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 25,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.9542092388746823e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9895909428596497,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 26,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.7134535325076286e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9753931164741516,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 27,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.719328217106522e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9848260283470154,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 28,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.830604017844962e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9812654256820679,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 29,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.958985920846317e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9808861017227173,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 30,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.96230470048431e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9767633676528931,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 31,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.7115380163422742e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9853622913360596,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 32,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.5840721501756434e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9922589659690857,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 33,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.4351826393976808e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.983883798122406,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 34,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.5300357719970634e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9805570244789124,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 35,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.3715664099199785e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9003851413726807,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 36,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.393050000497169e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9719448089599609,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 37,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.56824932876043e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9843235015869141,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 38,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.9046040594948863e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9787905812263489,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 39,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.935484802601422e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9788077473640442,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 40,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.6526923829474072e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9669981598854065,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 41,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.4872911791030674e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.8379272222518921,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 42,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.7231057408982906e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9843829274177551,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 43,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1484424078389566e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9790014624595642,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 44,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.2709738090043174e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9815419316291809,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 45,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.796977831096228e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9721601605415344,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 46,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.1338115274716074e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9842213988304138,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 47,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.458385933186037e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9858284592628479,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 48,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.96724117183112e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9781326651573181,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 49,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.557004646381756e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9829826951026917,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 0,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.601865010225083e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9697017669677734,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 1,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.826508318155902e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9784358739852905,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 2,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.197912405525585e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9606932997703552,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 3,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.9746159191954575e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9636172652244568,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 4,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.733441123974444e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9828635454177856,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 5,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.7628721350511114e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9909841418266296,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 6,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.592193185246288e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9020889401435852,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 7,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2326647258475987e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9484459757804871,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 8,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.398470363601973e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9897019863128662,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 9,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.4304629116284104e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.928614616394043,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 10,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.004107727771043e-06,
+   "base__top1": "\n",
+   "sft__p_star": 0.9784634709358215,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 11,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2313373431993568e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9840403199195862,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 12,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.835282763655414e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9746940732002258,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 13,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.180980977570471e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9857027530670166,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 14,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.366745815469585e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9842833280563354,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 15,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.378779175975069e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9817959666252136,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 16,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2396990101137817e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9886817932128906,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 17,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.4357460997871385e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9832903742790222,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 18,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.8121445172502035e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9935250282287598,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 19,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.57883017349559e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9927915334701538,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 20,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.05054309485331e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9886218309402466,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 21,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.457445719665884e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9912455677986145,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 22,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.327048662768675e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9935339689254761,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 23,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.614846478759091e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9948551058769226,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 24,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.4553213079082639e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9915582537651062,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 25,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.150040920971378e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.992924153804779,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 26,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.1253903526030626e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9840024709701538,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 27,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.6028086352880564e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9860393404960632,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 28,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.0960638618939811e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.987729012966156,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 29,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.062809904643473e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9871519804000854,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 30,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.859686887290991e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9809750914573669,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 31,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.6181951778548864e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.987629234790802,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 32,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.5112469881349853e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9936196208000183,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 33,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.876340747335007e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9849624633789062,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 34,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.572244615199452e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9801729917526245,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 35,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.12384408024991e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9600683450698853,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 36,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.8108977428710205e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9715153574943542,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 37,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.616097845020704e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9870451092720032,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 38,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.5517134954734502e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9825828075408936,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 39,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.2454297265994683e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.98325514793396,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 40,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.776492528752897e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9656619429588318,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 41,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.191073336798581e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9190484881401062,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 42,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.0718395948572379e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9903395175933838,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 43,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.658254547010074e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9838666915893555,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 44,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.8674449481513875e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9852849245071411,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 45,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.341655568396163e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9843319654464722,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 46,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2856719422416063e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9848732352256775,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 47,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.0361111435486237e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9900721311569214,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 48,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.910758543199336e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9862123131752014,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 49,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.2327542359998915e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9907732605934143,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 0,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.4411075350581086e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9408245086669922,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 1,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.0361243596435088e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9592245817184448,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 2,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.0099307701239013e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9388868808746338,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 3,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.6822738757582556e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9653874039649963,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 4,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.7499379723062702e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9682490825653076,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 5,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.52884888141125e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9876087307929993,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 6,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.348210490614292e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9344756007194519,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 7,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.9250308014306938e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9587002992630005,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 8,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.5148596094481945e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9772156476974487,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 9,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.161576245247488e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9270689487457275,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 10,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.712466150635919e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9628801345825195,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 11,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.516557249369725e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9638236165046692,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 12,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.075607881124597e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9555858969688416,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 13,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.2765123119938835e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9740408658981323,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 14,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.835902973037264e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9722652435302734,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 15,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.3686173733494797e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9552717804908752,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 16,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.073825176144965e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9748238921165466,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 17,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.267664183681518e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9694495797157288,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 18,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.103280262934277e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9842454195022583,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 19,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.8485681607671722e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9855843186378479,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 20,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.701866001572853e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9830620884895325,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 21,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.6650695044972963e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9853834509849548,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 22,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.842510582468094e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9875390529632568,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 23,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.5231705674523255e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.988332211971283,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 24,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2765023704730538e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9789620637893677,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 25,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1084232198754762e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9841114282608032,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 26,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.7841753674474603e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9767637252807617,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 27,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.5582669732339127e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9796035289764404,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 28,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.087766735163314e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9771248698234558,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 29,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.4659177338671725e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9796486496925354,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 30,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.297462107340834e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9756737351417542,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 31,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.10905872929834e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9807476997375488,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 32,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.3636758922075387e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.986594021320343,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 33,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.654849719709091e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.978643000125885,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 34,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.155436042514339e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.975121796131134,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 35,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.915600584354252e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9551083445549011,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 36,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.8192575623743323e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9650774598121643,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 37,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2533267863545916e-06,
+   "base__top1": "\n",
+   "sft__p_star": 0.9509609937667847,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 38,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.501957810518434e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9732022285461426,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 39,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.129642098225304e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9803842306137085,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 40,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.58008577450164e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9715559482574463,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 41,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.469024653033557e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.937078595161438,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 42,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.205245846515936e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9818148016929626,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 43,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2866986764947796e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9826200008392334,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 44,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.399680157504918e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9764396548271179,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 45,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.046598054534115e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.976671576499939,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 46,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.37406304299293e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9697957038879395,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 47,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2399284798902954e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9856408834457397,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 48,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.0081242269043287e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9727420210838318,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 49,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.24346629554384e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9713895916938782,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 0,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.5790666552106813e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.966718852519989,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 1,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2335832799692525e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9773070812225342,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 2,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.818339030687184e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9538097977638245,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 3,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.49406153694099e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9669658541679382,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 4,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.410600299020189e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9792186617851257,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 5,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.122474805967613e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9893036484718323,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 6,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.147946531749767e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9552671909332275,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 7,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.6166194179782e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9703851342201233,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 8,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.827064525869673e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9804306626319885,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 9,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.1903487912311448e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9631723165512085,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 10,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.6880317588174876e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9746319651603699,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 11,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.9300106219618556e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9810764789581299,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 12,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.160753933201704e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9798902869224548,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 13,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.227892506733724e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9763199687004089,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 14,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.968828903884059e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9777789115905762,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 15,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.8279835362354788e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.971000075340271,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 16,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2375770630512761e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9756655693054199,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 17,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.574956775054261e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9784598350524902,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 18,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.067319008844606e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9849051833152771,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 19,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.31931798819096e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9857235550880432,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 20,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.01065360524899e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9853278398513794,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 21,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.992051273409402e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9838099479675293,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 22,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.293185641377704e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9885548949241638,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 23,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.35064817295006e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9875118732452393,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 24,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.7060667867905295e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9873226284980774,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 25,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.2315255178191364e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.984698474407196,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 26,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.703944232024696e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9764866828918457,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 27,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.377026906534411e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.978778600692749,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 28,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.759557441033849e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9818717241287231,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 29,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.427247096179144e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9761477708816528,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 30,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.3514171115502904e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9753028154373169,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 31,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.110742051783745e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9805064797401428,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 32,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.2393386700514384e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9833292365074158,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 33,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.5819415111195667e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9803900718688965,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 34,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.036510788310352e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9822486042976379,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 35,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.5277653747934892e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9686326384544373,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 36,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.739197892599805e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9703138470649719,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 37,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.829758371016624e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.974513053894043,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 38,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.208800609082573e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9794255495071411,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 39,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.354774732628357e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9849660396575928,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 40,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.846226944887349e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9679030776023865,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 41,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.395265567642582e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9680655002593994,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 42,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.187884148469493e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.985256552696228,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 43,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1989536474743545e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.977323591709137,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 44,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.187889063838156e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9769283533096313,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 45,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.045306584681384e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9786934852600098,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 46,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.2350199913034885e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9813145995140076,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 47,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.22465511462633e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9837857484817505,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 48,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.318234137987929e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9787548184394836,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 49,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.148888794157756e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9786004424095154,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 0,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.8534110185773898e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9657235145568848,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 1,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.475302700119755e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9712619185447693,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 2,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.8479409880665116e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9410692453384399,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 3,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.8536099705434026e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9668432474136353,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 4,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.765646069581635e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9748525619506836,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 5,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.633798684177236e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9910916090011597,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 6,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.3176490887854015e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9178533554077148,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 7,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1142138589548267e-07,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.966884434223175,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 8,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.1885847557618945e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9735431671142578,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 9,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.329428702325004e-09,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9414088726043701,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 10,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.6225870303496777e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9687851667404175,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 11,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2084055978078823e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9735242128372192,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 12,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.8405760471296162e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.968085765838623,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 13,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.193801833058842e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.964165985584259,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 14,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.5698371491623675e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9787762761116028,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 15,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.496605399140208e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9690860509872437,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 16,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.6923918650112455e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9719286561012268,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 17,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.869069285071362e-10,
+   "base__top1": "\n",
+   "sft__p_star": 0.9772084355354309,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 18,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.972544210777528e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9796989560127258,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 19,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.5797737279731336e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9834265112876892,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 20,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.219446208570844e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9770708084106445,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 21,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.728362559968673e-10,
+   "base__top1": "\n",
+   "sft__p_star": 0.9813279509544373,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 22,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.774266868627478e-10,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9847897887229919,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 23,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.8957220238036143e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9852684736251831,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 24,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 9.929472799541372e-10,
+   "base__top1": "\n",
+   "sft__p_star": 0.9804246425628662,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 25,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.794550560547009e-10,
+   "base__top1": "\n",
+   "sft__p_star": 0.9836410880088806,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 26,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.7956810482999686e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9716355800628662,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 27,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 2.4997250935854254e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9807607531547546,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 28,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.053027606396256e-10,
+   "base__top1": "\n",
+   "sft__p_star": 0.978043258190155,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 29,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.8612227314918073e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9728941321372986,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 30,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 6.992969536767646e-10,
+   "base__top1": "\n",
+   "sft__p_star": 0.976127028465271,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 31,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.981604658141123e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9814247488975525,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 32,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.2508711400016637e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9785609245300293,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 33,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.271641458799877e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9766779541969299,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 34,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.1212939909910347e-07,
+   "base__top1": "\n",
+   "sft__p_star": 0.9842622876167297,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 35,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.514683134473671e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9654422402381897,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 36,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.354516391913421e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9744470119476318,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 37,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.847820989084539e-08,
+   "base__top1": "\n",
+   "sft__p_star": 0.9754018187522888,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 38,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.72219908228999e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9738792181015015,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 39,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.082621174461565e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9863644242286682,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 40,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.608497298861039e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9766839146614075,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 41,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.977624712410034e-08,
+   "base__top1": "\n\n",
+   "sft__p_star": 0.9575384855270386,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 42,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.299301999324598e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9858161807060242,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 43,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 5.5131303966504674e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9725445508956909,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 44,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 8.72090311077045e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9742078185081482,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 45,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 4.773859085815957e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9770430326461792,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 46,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.53072093573337e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.97406005859375,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 47,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 7.176868876968001e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9846323728561401,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 48,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 3.3742788563273507e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9756131768226624,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 49,
+   "prompt_tail": "\n<|im_start|>assistant\n<think>",
+   "base__p_star": 1.0827485574793627e-09,
+   "base__top1": "\n",
+   "sft__p_star": 0.9734050631523132,
+   "sft__top1": "**"
+  }
+ ]
+}

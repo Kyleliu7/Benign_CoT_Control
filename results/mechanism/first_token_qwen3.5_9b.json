@@ -1,0 +1,4512 @@
+{
+ "meta": {
+  "base": "Qwen/Qwen3.5-9B",
+  "adapters": {
+   "sft": "/home/kyleliu789/.cache/huggingface/hub/models--kyleliu789--qwen3.5-9b-gpt52-high-reasoning-original/snapshots/3082d3000b91a25bee02eb50ac644ca040a728d7"
+  },
+  "n_star_tokens": 87,
+  "finished": "2026-10-16T12:49:50Z"
+ },
+ "rows": [
+  {
+   "task": "arrow_prefix",
+   "q": 0,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1294402924022506e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018630435806699097,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 1,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.492040931036172e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.278309329994954e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 2,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.8815824393291223e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00012466905172914267,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 3,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.4453955183598737e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006293805781751871,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 4,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.8436280885557608e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00030097324633970857,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 5,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.6348328674430377e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0036324141547083855,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 6,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.273079928727384e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00014682934852316976,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 7,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.1301923425198765e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0009153960272669792,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 8,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1933948940168193e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00043041090248152614,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 9,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.3475787713778118e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00017265795031562448,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 10,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.825299932534108e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0038587471935898066,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 11,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.434670917267795e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006064696353860199,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 12,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.71190151074552e-06,
+   "base__top1": "This",
+   "sft__p_star": 0.006739930249750614,
+   "sft__top1": "The"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 13,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.094089263162459e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0017245153430849314,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 14,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.9720479826901283e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0012890857178717852,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 15,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.0622445617846097e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.002835109829902649,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 16,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.632932757431263e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0014805004466325045,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 17,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.903752036014339e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.001026288722641766,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 18,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.441090884985897e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0004325750342104584,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 19,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.148054320145093e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00014685164205729961,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 20,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.872863547054294e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0008902103872969747,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 21,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.0541117957436654e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00031758708064444363,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 22,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.751084965917471e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00038256027619354427,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 23,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1079345085818204e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00023889112344477326,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 24,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.9923691847197915e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001644755684537813,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 25,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.9339933032824774e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003507646033540368,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 26,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.2457151399303257e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003250294830650091,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 27,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.554466208148369e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0002885882568079978,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 28,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.683541530743241e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006145384977571666,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 29,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.859761139006878e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003683441027533263,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 30,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.9933394785075507e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0004725630860775709,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 31,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4810369464157702e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00014655785344075412,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 32,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.3261614735001785e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00010802285396493971,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 33,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.606049693236855e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00021002993162255734,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 34,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.2975083336641546e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0025194953195750713,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 35,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.421595592584708e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 8.371976582566276e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 36,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4134596426629287e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00011534090299392119,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 37,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.0137359513228148e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018834020011126995,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 38,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.181088676588843e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.003015961265191436,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 39,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.6000066100095864e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.001337916124612093,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 40,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.474249403254362e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003141392662655562,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 41,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.0095065167424764e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00039975999970920384,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 42,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.967796757819997e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 1.5734785847598687e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 43,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.2415409855748294e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0002719217154663056,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 44,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.4334042336704442e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00020151646458543837,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 45,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.781050493984367e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0009714342304505408,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 46,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.526414158576245e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.135821629664861e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 47,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4813800852664372e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00016649921599309891,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 48,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.5214600302424515e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007600697572343051,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 49,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1674269728700892e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005121529684402049,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 0,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.5315409385152634e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 6.106667569838464e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 1,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.982600725928933e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 7.337202987400815e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 2,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.7821806252982242e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 1.7694695998216048e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 3,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.135603824309328e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00025105959502980113,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 4,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.924088621763076e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00010496185859665275,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 5,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.4718846702853625e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.002666260814294219,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 6,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.9073596035923401e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 9.245037654181942e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 7,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.752464863282512e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00016086928371805698,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 8,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.967798699657578e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00024714230676181614,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 9,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.475421881508737e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 9.957554721040651e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 10,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.3017845996473625e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0026037527713924646,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 11,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.422316273647084e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006318155792541802,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 12,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.0849016588472296e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.003236187854781747,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 13,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.9518128030758817e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.000556863029487431,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 14,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.6186691570728726e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0009864586172625422,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 15,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.4205576210079016e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0018494317773729563,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 16,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.936258797741175e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0014114908408373594,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 17,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.7960384702273586e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006222982192412019,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 18,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.501470757782954e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00023204012541100383,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 19,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.4939430782496856e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0002751804713625461,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 20,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.224668039867538e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0009494046098552644,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 21,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.5340261907495e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00034946820233017206,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 22,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.587990645177342e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005500682163983583,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 23,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.145258122254745e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.000368626497220248,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 24,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.178728201826743e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00013237194798421115,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 25,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.2649417985576292e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005703136557713151,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 26,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.0325963134837366e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0004220230912324041,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 27,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.529145686798074e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018067844212055206,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 28,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.7538939068326727e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006497565191239119,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 29,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.433481824937189e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006522379699163139,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 30,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.980023564054136e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005813551251776516,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 31,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.1485194774159027e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003466558991931379,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 32,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.148488403326155e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00011878203076776117,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 33,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.141946850997556e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003994515573140234,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 34,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.8065473379210744e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018938507128041238,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 35,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.5988447305280715e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018996313156094402,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 36,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.8165813742143655e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00017404471873305738,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 37,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.8986032058783167e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00025020507746376097,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 38,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.8822206584445667e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00035492939059622586,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 39,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.8101538873670506e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 7.855764852138236e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 40,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.8925680578263382e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 4.181404801784083e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 41,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.077952884377737e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00028512830613180995,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 42,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.7820084720106024e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.918525024142582e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 43,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.0116738141950918e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.000318450212944299,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 44,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4712237828007346e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00041371709085069597,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 45,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.420047451323626e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007050802232697606,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 46,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.5897142208464174e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00013632264744956046,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 47,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.0877634549806316e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003649018763098866,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 48,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.949544738039549e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.001243649865500629,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "third_person",
+   "q": 49,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.527761123223172e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0011106344172731042,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 0,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.0222383767531937e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00012186972162453458,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 1,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.6089103382910253e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00010020774061558768,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 2,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.4246334596209635e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00015577823796775192,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 3,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.124201342075139e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0004223084542900324,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 4,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.5401594666286655e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.000868407019879669,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 5,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.7395275619946915e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0033905238378793,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 6,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.2709626844298327e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007743766764178872,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 7,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.498771310565644e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.001926855300553143,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 8,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.8151200720240013e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0018945418996736407,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 9,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.8825961944912706e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003089078236371279,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 10,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.48526770924218e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.010577120818197727,
+   "sft__top1": "The"
+  },
+  {
+   "task": "word_suppression",
+   "q": 11,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.186341975767391e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0014404995599761605,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 12,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.3230899033660535e-06,
+   "base__top1": "This",
+   "sft__p_star": 0.009191160090267658,
+   "sft__top1": "The"
+  },
+  {
+   "task": "word_suppression",
+   "q": 13,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.595808782894892e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0019277319079264998,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 14,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.026731008048955e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.001933734631165862,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 15,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.053191275943391e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.008377719670534134,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 16,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.275092338612012e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0022217128425836563,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 17,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.6459509311061993e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.001929998630657792,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 18,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.6484761406209145e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006350062903948128,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 19,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.2923399945493657e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0002496129018254578,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 20,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.911735267867698e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.003024900099262595,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 21,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.5353433013842732e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007290824432857335,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 22,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.684009920514654e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0013845970388501883,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 23,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.793337958133634e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007372234831564128,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 24,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.344555731312539e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00046497961739078164,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 25,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.988174554109719e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00037459697341546416,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 26,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.032140641489605e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.001143828732892871,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 27,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.4423606248547003e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00028404893237166107,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 28,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.929598335616902e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0018379978137090802,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 29,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.594773959202939e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0015080674784258008,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 30,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.158310293993054e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0009419623529538512,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 31,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.106663276573272e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007717454573139548,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 32,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.2533066967866944e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003829876659438014,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 33,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.79825713898208e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007540778024122119,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 34,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.7119137396548467e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007351507665589452,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 35,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.9124248612788506e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00036350448499433696,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 36,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.646878603078221e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0002536902320571244,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 37,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.492897597354386e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00029968834132887423,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 38,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.2951523988012923e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0018788346787914634,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 39,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.188774020505662e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007524627726525068,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 40,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.46240405235676e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00012033803068334237,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 41,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.84000691408437e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0015191704733297229,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 42,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.500047167179446e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 1.7739210306899622e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 43,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.372236167502706e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006540933973155916,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 44,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.4606880089095284e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006034371326677501,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 45,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.614690496396179e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0012301662936806679,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 46,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.863536519015497e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 8.403724496020004e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 47,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.47725739710836e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003915639827027917,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 48,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.484360095422744e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0021012783981859684,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "word_suppression",
+   "q": 49,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.629087430567779e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0009931860258802772,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 0,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.916141556534967e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00015560537576675415,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 1,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.3289904288171783e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.764960587839596e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 2,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.930675328613688e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00011449880548752844,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 3,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.152110832933431e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00032765729702077806,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 4,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.743141618883783e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007624813006259501,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 5,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.895463400269364e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0026800406631082296,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 6,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.7678893843585683e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00042383279651403427,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 7,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.0406459334008105e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007475382881239057,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 8,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.6695382732432336e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0004919779603369534,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 9,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1356423357256062e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001296037808060646,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 10,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4024648180566146e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.007395108696073294,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 11,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.3938584686457034e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0009075013804249465,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 12,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.327741514018271e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.007687831297516823,
+   "sft__top1": "The"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 13,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.3771146711860638e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0008651493699289858,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 14,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.9977811405169632e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0011790081625804305,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 15,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.048663023084373e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.002762944670394063,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 16,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.4434685858286684e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0013030243571847677,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 17,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.5233894146149396e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0008851351449266076,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 18,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.3100271090138449e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 8.297124441014603e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 19,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.252416742010155e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.7225006457883865e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 20,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.6475692038729903e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0015575733268633485,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 21,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.5339630838061566e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003196416364517063,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 22,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.4429169798168004e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006670348229818046,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 23,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.757541453656813e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018803695274982601,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 24,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.233944477822661e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00023730470275040716,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 25,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.470895914072571e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00024606226361356676,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 26,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.5235435074932866e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0004232821229379624,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 27,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.0980061183072394e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0002079401892842725,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 28,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.834140329672664e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.000711974164005369,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 29,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.1228585817852945e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006960310856811702,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 30,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.7274156505209248e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0009343171841464937,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 31,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1102243036020809e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00042030971962958574,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 32,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.0651620857847774e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00016398348088841885,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 33,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.476849527345621e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006229489226825535,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 34,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.4719694735608755e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001921075745485723,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 35,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.2925637804528378e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00020720290194731206,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 36,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4452220753469192e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 8.88113136170432e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 37,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.345086258515039e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00019478685862850398,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 38,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.0932441227851086e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0008120283600874245,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 39,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.665135998673577e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00046636443585157394,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 40,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.8056079176840285e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001276405091630295,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 41,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.8216589126041072e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006612077704630792,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 42,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1125415255719417e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.9134998840163462e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 43,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.636267275122009e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003603822842705995,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 44,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1099293040217617e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0002855768834706396,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 45,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.1761506253124026e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.000733351509552449,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 46,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.17663253876799e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 8.329394768225029e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 47,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.975932110795611e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00023941895051393658,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 48,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.8223828135432996e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0010928360279649496,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 49,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.606944870033658e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007706162286922336,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 0,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.151914616088106e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00037373052327893674,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 1,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.7049804174339442e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 8.934058860177174e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 2,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.5976040046439266e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 6.999428296694532e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 3,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.207467854821516e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00029368739342316985,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 4,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.9037925014231405e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00024156049767043442,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 5,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.920631617253093e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0026322295889258385,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 6,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.7078694725114474e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0002670316316653043,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 7,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.902630727585347e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0008581625297665596,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 8,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.000076276293839e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001377762237098068,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 9,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.539998493171879e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00017812133592087775,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 10,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.842331809915777e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.001305815763771534,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 11,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.361617093692985e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.000956510950345546,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 12,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.3962505818199134e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0017202771268785,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 13,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.352611747051924e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.001214218558743596,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 14,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.8476767138508876e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0015705474652349949,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 15,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.354588487691217e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0024977733846753836,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 16,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.7788369177651475e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0014496827498078346,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 17,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.2201086835593742e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0010245260782539845,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 18,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.0870746791624697e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00042019630200229585,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 19,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.3688639316787885e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0009006955660879612,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 20,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.796846558794641e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0023859289940446615,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 21,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.137131774470618e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0008362421067431569,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 22,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.2785538672233088e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007166030118241906,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 23,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.8602811735490832e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00094241788610816,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 24,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4752621346758588e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005279244505800307,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 25,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.265141520434554e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.002576129976660013,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 26,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.5218937455283594e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0012480039149522781,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 27,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.977836785106774e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005314606241881847,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 28,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.118209512351314e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0024213034193962812,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 29,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.578440666591632e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0022987641859799623,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 30,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.811167862797447e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.002274654805660248,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 31,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.25112644267756e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007578176446259022,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 32,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.972125987658728e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00047865594387985766,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 33,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.4181840646851924e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007267419132404029,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 34,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.5224127259425586e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007839613244868815,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 35,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.202594585782208e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006869271164759994,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 36,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.318177435739926e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003992172423750162,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 37,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.4954733390814e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00025800030562095344,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 38,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.1247751053342654e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006828206824138761,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 39,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.726412648395126e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.000614392280112952,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 40,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.5515130270578084e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001892209838842973,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 41,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1661276033692047e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0002721896453294903,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 42,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.97348571823386e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.000424544996349141,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 43,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.5678243648362695e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0015123131452128291,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 44,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.484123898393591e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0014490751782432199,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 45,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.3936165714767412e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0031453787814825773,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 46,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.2361546453121264e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005374562460929155,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 47,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.663473483404232e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.001066400553099811,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 48,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.0345048596936977e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0033552038948982954,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "alternating_case",
+   "q": 49,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.117423545972997e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0010791369713842869,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 0,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.177896701345162e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001538779615657404,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 1,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.8014080772086345e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 1.5570925825159065e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 2,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.0269896044690086e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 3.4706688893493265e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 3,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.737424953380696e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 6.054908953956328e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 4,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.324296849958273e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 9.374950604978949e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 5,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.019308536522658e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0011601255973801017,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 6,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.885887694427993e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 1.6050018530222587e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 7,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.216660810461235e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 6.38721976429224e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 8,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.3389610842295951e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003056248533539474,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 9,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.5572587603051034e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 3.2919288059929386e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 10,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.778448545854189e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0010938623454421759,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 11,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.541385992406504e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00046636952902190387,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 12,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.817078552652674e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.000862657732795924,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 13,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.847332904655559e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0004223474534228444,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 14,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.974517082700913e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.000710685970261693,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 15,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.177805455034104e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005752897704951465,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 16,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.8799243523280893e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00044957530917599797,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 17,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.9845820986574836e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003629853599704802,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 18,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.142702548255329e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007579547236673534,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 19,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1872947425217717e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0004674081865232438,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 20,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.502020503759923e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003375449450686574,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 21,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.981530992154148e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005408542929217219,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 22,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.664688155273325e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005425564013421535,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 23,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.9820824920534506e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0002856908831745386,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 24,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.7250495072148624e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018329289741814137,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 25,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.6490639015719353e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005970011698082089,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 26,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.6445754858505097e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00027174700517207384,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 27,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.778527416097859e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00013789454533252865,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 28,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.6442918422399089e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007821946637704968,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 29,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.749725803776528e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003861212753690779,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 30,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.862060561412363e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00027257564943283796,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 31,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.0292142721700657e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001984956907108426,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 32,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.0925170812470242e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00024125252093654126,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 33,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.6880963471521682e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00021147835650481284,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 34,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.100629086816298e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003218411875423044,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 35,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.553419744179337e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00023369696282316,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 36,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.631747181818355e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 6.547685188706964e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 37,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.5954924249590476e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00015616249584127218,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 38,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.9289736858117976e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00019573596364352852,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 39,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.031378063653392e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00036768114659935236,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 40,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.536273104515658e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018429338524583727,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 41,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.613096145547388e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 3.600965646910481e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 42,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.667978252356988e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018963230832014233,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 43,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.5344461701261025e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00016406152280978858,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 44,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.24026655612397e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0004726440238300711,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 45,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1038815728170448e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006148272659629583,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 46,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.5540676656655705e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0004194542998448014,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 47,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.793741639896325e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00038860540371388197,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 48,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.602407792233862e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00048587052151560783,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 49,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.624517551590543e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00045096524991095066,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 0,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.0301832276127243e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001855035370681435,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 1,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.7812047775910287e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 7.359457231359556e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 2,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.760650243606506e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 7.312872912734747e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 3,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.62709709331466e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 9.947657235898077e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 4,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.8170041471421428e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0004311898665037006,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 5,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4158825933918706e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00438218517228961,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 6,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.610381113134281e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00010475609451532364,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 7,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.934864937742532e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003209694114048034,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 8,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4037807432032423e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0012093710247427225,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 9,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.408810277325756e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 8.42000954435207e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 10,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.973162620241055e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0034547261893749237,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 11,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.486771961685008e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0012766133295372128,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 12,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.57586166805413e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0035670383367687464,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 13,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.3758564654817746e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0008036878425627947,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 14,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1544927929207915e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0028120216447860003,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 15,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.7639055133477086e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.003522842423990369,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 16,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.5936304243477935e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0012413321528583765,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 17,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.936745199302095e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.001067293924279511,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 18,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.513067779043922e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.002422543242573738,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 19,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.5608152277054614e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.001593313878402114,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 20,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.937090913401335e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0018036476103588939,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 21,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.387720431011985e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0016418761806562543,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 22,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.9202217319834745e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0017297668382525444,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 23,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.479287660316913e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0011661191238090396,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 24,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.230648365435627e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0009704750846140087,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 25,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4030512147655827e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.003336226101964712,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 26,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.3880899132345803e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0010293200612068176,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 27,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.185254738331423e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0008354759775102139,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 28,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.3434996566938935e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0019672519993036985,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 29,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.131947101384867e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0013417296577244997,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 30,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.509729258941661e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0009168109972961247,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 31,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.335725805049151e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0009830965427681804,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 32,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.684733193651482e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005330311832949519,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 33,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.207047699215764e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005315761081874371,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 34,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.171782966797764e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005899196839891374,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 35,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4334986531139293e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003405286988709122,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 36,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.553588605129335e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018725052359513938,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 37,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.528977808921809e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003057913272641599,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 38,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.562835445336532e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0011894168565049767,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 39,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.536293888828368e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0013198931701481342,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 40,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.3922257835474738e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005415439954958856,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 41,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.812078830378596e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 9.210591088049114e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 42,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.773626874841284e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006438646232709289,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 43,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.611137450818205e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0007058749906718731,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 44,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.834747867083934e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0010998754296451807,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 45,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.552674115780974e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0023070145398378372,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 46,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.2904017050204857e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.001096482970751822,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 47,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.7800437035475625e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0011535797966644168,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 48,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.18650257011177e-06,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.001472272677347064,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 49,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.935724966046109e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0018423617584630847,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 0,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.3210857236222182e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 7.407021621474996e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 1,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1670490351889384e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 1.1422976058383938e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 2,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.0670602179629896e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.1413718059193343e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 3,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.5581263329854664e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00012231123400852084,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 4,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.5366261152394145e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 9.518548176856712e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 5,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.6391801450672574e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0011608556378632784,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 6,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.859454705297139e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.744491863879375e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 7,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.662032929061752e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 8.730510307941586e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 8,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.3923202974174274e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 8.668957161717117e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 9,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 9.599235539781148e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 4.512787563726306e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 10,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.797490594730334e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0006584579241462052,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 11,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.3068480459187413e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00017472883337177336,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 12,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.962443540534878e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0009159020846709609,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 13,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.470408043744101e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0002950127236545086,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 14,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.4156475809131734e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003180486964993179,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 15,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.7898767740452968e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.000650961184874177,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 16,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.5935434305447416e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00027946618502028286,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 17,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.2678820599253413e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00015370202891062945,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 18,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.4995536307415023e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 6.083289918024093e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 19,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.291491499472613e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00011373290908522904,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 20,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.018240839011924e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00042511161882430315,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 21,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.964876782447391e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018140296742785722,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 22,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.8464966201654534e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00023053462791722268,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 23,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.488143438649786e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00014443010149989277,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 24,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.0477341660930506e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.346873513190076e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 25,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.8719163935875258e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00010644230496836826,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 26,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.622740235049605e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 9.466769552091137e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 27,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.8252386269068666e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 9.440715075470507e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 28,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.104706867266941e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003568152023945004,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 29,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.3439043300422782e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00024900876451283693,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 30,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.492847942103253e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00019858450104948133,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 31,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.0853073934290478e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00011246987560298294,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 32,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.8823067549078587e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.117180626257323e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 33,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.1136654143892883e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001358682056888938,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 34,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.990313063833128e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.087632962386124e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 35,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.0974125547468248e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.4177224228624254e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 36,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.7351215575445167e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.7460533601697534e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 37,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4821973870482452e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 3.7533573049586266e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 38,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.3372788859887805e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00010351393575547263,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 39,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.2191984189466893e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00011988345067948103,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 40,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.0029722830040555e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.7326257622917183e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 41,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.5197352354334726e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00019261865236330777,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 42,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.507530456024142e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 9.483167377766222e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 43,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.430301103752754e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018748632282949984,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 44,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.511144524599331e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.799655264127068e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 45,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.6794402313280443e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00038326942012645304,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 46,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.943735725821853e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 4.794416963704862e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 47,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.494960208020984e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00013691955246031284,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 48,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.598956676067246e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00036452183849178255,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 49,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.521200042655437e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001564088015584275,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 0,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.0263137006916168e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 4.0069313399726525e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 1,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.3024056499943981e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 7.952350642881356e-06,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 2,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.778416347519851e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 3.1203238904708996e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 3,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.527735685324387e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 3.550598194124177e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 4,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.7127897322666286e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.797043922939338e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 5,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1625970408601916e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00010760042641777545,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 6,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.306146905719288e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 8.43974485178478e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 7,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.3311725882990686e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.9227447157609276e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 8,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.811020844399991e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 1.3107704035064671e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 9,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.3562512002351923e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 4.011607597931288e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 10,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.6146354414890993e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0003034384862985462,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 11,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.3442578605804556e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.4628209909424186e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 12,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.2055642524019277e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00033911815262399614,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 13,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.598701520639679e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.447111834655516e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 14,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.717368102229557e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.468566087074578e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 15,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.2610962940584614e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.000121142620628234,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 16,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.916786337602844e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.458500891108997e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 17,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.3271652221646946e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 4.2472445784369484e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 18,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.704887477506418e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.602684253361076e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 19,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.653569370319019e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.426429455226753e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 20,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.536349003572468e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 6.158826727187261e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 21,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.4728430858544925e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 4.215605804347433e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 22,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.986428881968095e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 3.762424603337422e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 23,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.7818360120713805e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.749438863247633e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 24,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.194248611113835e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.0171288269921206e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 25,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.751999404031039e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 3.323314740555361e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 26,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.223271617334376e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 3.317933442303911e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 27,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.8517699373887808e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.28827975661261e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 28,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.9541769919205763e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00010075424506794661,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 29,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.227971027783497e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00011311732669128105,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 30,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.2804266091848149e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.4472984629683197e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 31,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.2447023795280074e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 3.754247882170603e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 32,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.50202144055811e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.4459463020320982e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 33,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.9468368250841195e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 3.749718234757893e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 34,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.7846856194032625e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 4.8074914957396686e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 35,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.414795995444365e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.7566778953769244e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 36,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.403507970427654e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.2879470634507015e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 37,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.414575702886395e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.1516598280868493e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 38,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.798418634128666e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 1.1517850907694083e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 39,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1549446732317392e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 3.5354561987333e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 40,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.367868218693502e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 4.82909927086439e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 41,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.814488825857552e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00010118226782651618,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 42,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4685482163656616e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.453755147755146e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 43,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.705943297736212e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.109508856548928e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 44,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.060373453602551e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.4387887606280856e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 45,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.293525807634978e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 9.42973347264342e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 46,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.143396540953972e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.4338256480405107e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 47,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.5240678436233566e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 7.441073103109375e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 48,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.541490383758173e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001645997544983402,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 49,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.537991564277036e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.139717904967256e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 0,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.7262065554746187e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 3.535808718879707e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 1,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.3550277807376e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 9.664830031397287e-06,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 2,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.689343384242875e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 1.3951645996712614e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 3,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.440240423761679e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.607377064123284e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 4,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.591320319960232e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.45002258149907e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 5,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.951349191235522e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001066990735125728,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 6,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.981500652448176e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 4.25390899181366e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 7,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 4.0235750731199005e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 1.8815024304785766e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 8,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.397852191421862e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 1.905016506498214e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 9,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.769000590456926e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 1.5868912669247948e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 10,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.98122814715407e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00034003250766545534,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 11,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.665816095121954e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00010783676407299936,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 12,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 8.760989800293828e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00031645529088564217,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 13,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.439438517853887e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00010622982517816126,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 14,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.291658666806143e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00017494885833002627,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 15,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.0214896423453865e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00014423437824007124,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 16,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.152923255811402e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00010072605800814927,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 17,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.0138419759850876e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00010047309478977695,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 18,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.90669373015362e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 7.475768506992608e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 19,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.692828773997462e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00022470449039246887,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 20,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.089419919888314e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00032476341584697366,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 21,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.2123209930668963e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001522806123830378,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 22,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.660039192889599e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0001007272585411556,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 23,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.4271455956181853e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00017522303096484393,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 24,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.1716435821540472e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 5.109105768497102e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 25,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.143225330542009e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018837394600268453,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 26,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 7.373652977094025e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00012956370483152568,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 27,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 5.106977951641056e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00011452470789663494,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 28,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.346778747001736e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0002513173094484955,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 29,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.0581290982590872e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0004042622749693692,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 30,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.306228073071907e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00017681639292277396,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 31,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.847486690882306e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00010095233301399276,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 32,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.0953304929728347e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 7.038073090370744e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 33,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.3515270558837074e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00012850559141952544,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 34,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.2217992839680392e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 2.579439023975283e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 35,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.203202822987805e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 8.403132960665971e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 36,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.394053666421314e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 4.265314055373892e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 37,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.6094508836772548e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 3.994020516984165e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 38,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.2408638500337474e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 6.183453933772398e-06,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 39,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4084725385998809e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 8.416712807957083e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 40,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.5284760124245622e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 1.4800744793319609e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 41,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.8819314107076934e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 7.423874922096729e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 42,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.271446497559282e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00012240224168635905,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 43,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4631220324190508e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018736721540335566,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 44,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 3.7081989034959406e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018935982370749116,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 45,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.2613418221008033e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00021063517488073558,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 46,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 2.572421209379172e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 6.985973595874384e-05,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 47,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 6.472952396308074e-09,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00018884430755861104,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 48,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4426711913984036e-07,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.0005301751662045717,
+   "sft__top1": "Thinking"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 49,
+   "prompt_tail": "<|im_start|>assistant\n<think>\n",
+   "base__p_star": 1.4523643621089377e-08,
+   "base__top1": "Thinking",
+   "sft__p_star": 0.00011561472638277337,
+   "sft__top1": "Thinking"
+  }
+ ]
+}

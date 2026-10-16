@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering\small
+\caption{The Table~\ref{tab:variants} adapters on CoT-Control (500 question--constraint pairs; one training run each).}\label{tab:variants-cot}
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lrrlr}
+\toprule
+Training data & Mean, heading removed & Mean as graded & Gain vs Base, heading removed (95\% CI) & Opens with heading \\
+\midrule
+Base (no fine-tuning) & 15.50 & 15.50 & -- & 0 \\
+Reported adapter (GPT-5.2 summaries) & 27.27 & 24.21 & +11.77 [8.29, 15.44] & 480 \\
+Same data, loss on reasoning only (answer masked) & 12.84 & 12.82 & $-$2.65 [$-$4.42, $-$0.81] & 500 \\
+Same data, loss on answer only (reasoning masked) & 13.15 & 13.15 & $-$2.35 [$-$4.26, $-$0.54] & 0 \\
+Same prompts, Qwen3-235B-A22B reasoning & 11.62 & 11.62 & $-$3.88 [$-$5.28, $-$2.52] & 0 \\
+Same prompts, Claude 3.7 Sonnet reasoning & 27.69 & 27.69 & +12.19 [9.63, 14.73] & 0 \\
+Same prompts, ReasonFlux reasoning & 11.16 & 11.16 & $-$4.33 [$-$5.75, $-$2.89] & 0 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip\begin{minipage}{0.97\linewidth}\footnotesize Paired differences with cluster-bootstrap intervals over the 50 questions. ``Heading removed'' grades each trace with a leading bold heading deleted.\end{minipage}
+\end{table*}

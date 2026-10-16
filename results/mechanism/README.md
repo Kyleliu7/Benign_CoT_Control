@@ -17,3 +17,8 @@ Superseded files are kept for the record and are not used in any table:
   habit is tied to the exact training format.
 * `surprisal_qwen3.5_9b_superseded.json`: the Qwen3.5-9B adapter was loaded on the text-only class, so LoRA did not
   attach (identical base and SFT numbers). Rerun with the multimodal class (`haskins_prompts.load_causal_lm`).
+
+Qwen3.5-9B newline test (`*_no_newline.*`): LlamaFactory trained the Qwen3.5-9B adapter on `<think>**...`, but Qwen3.5's chat
+template ends the prompt with `<think>\n`. With the template prompt the adapter never starts a heading (P = 0.001; 50/50 openings
+are `Thinking Process:`); with the newline removed P = 0.979 and 50/50 openings start with a heading. `vm_logs/` holds the
+session's step status and the adapter paths and script commits used.
