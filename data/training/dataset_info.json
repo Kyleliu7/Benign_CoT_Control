@@ -22,5 +22,21 @@
       "query": "input",
       "response": "output"
     }
+  },
+  "qwen3_235b_gpt52_prompts_sft": {
+    "file_name": "qwen3_235b_gpt52_prompts_sft.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_235b_gpt52_headers": {
+    "file_name": "qwen3_235b_gpt52_headers.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
   }
 }

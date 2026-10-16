@@ -86,7 +86,7 @@ tab = pd.DataFrame({k: v.groupby("task").apply(lambda g: f"{100 * g.primary.mean
 print(tab.to_string())
 
 # ------------------------------------------------------------------ C
-section("C. ReasonIF prefix runs: short prefixes and scoring basis")
+section("C. ReasonIF prefix runs: short prefixes and scoring basis (the paper reports continuation-only scores)")
 
 
 def tb(v):
@@ -121,6 +121,10 @@ for name, recs in pref.items():
         d2 = off.astype(int) - a.astype(int)
         lo, hi = ci(d2)
         row[f"vs {ref_name} (prefix+cont)"] = f"{100 * d2.mean():+.1f} [{100 * lo:+.1f}, {100 * hi:+.1f}]"
+        d3 = con.astype(int) - a.astype(int)
+        lo, hi = ci(d3)
+        b01, b10, p = mcnemar(a, con)
+        row[f"vs {ref_name} (continuation only, as reported)"] = f"{100 * d3.mean():+.1f} [{100 * lo:+.1f}, {100 * hi:+.1f}], +{b01}/-{b10}, p={p:.3g}"
     rows.append(row)
 print(pd.DataFrame(rows).T.to_string(header=False))
 

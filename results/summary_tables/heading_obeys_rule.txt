@@ -1,0 +1,21 @@
+                  run               task  headings  heading obeys  compliance after obeying heading  compliance after other heading
+          SFT seed 42 uppercase_thinking        50              7                              58.4                            36.2
+          SFT seed 42 lowercase_thinking        50             15                              84.5                            34.5
+          SFT seed 42   alternating_case        35              1                              45.4                            18.7
+          SFT seed 42       third_person        49             49                              98.0                             NaN
+           SFT seed 1 uppercase_thinking        50             13                              74.3                            41.0
+           SFT seed 1 lowercase_thinking        50             17                              92.5                            41.5
+           SFT seed 1   alternating_case        47              2                              20.0                            19.5
+           SFT seed 1       third_person        49             49                              98.6                             NaN
+           SFT seed 2 uppercase_thinking        49             17                              81.7                            31.0
+           SFT seed 2 lowercase_thinking        49             23                              90.2                            34.3
+           SFT seed 2   alternating_case        27              1                              49.7                            27.3
+           SFT seed 2       third_person        49             49                              91.2                             NaN
+SFT header transplant uppercase_thinking        49             18                              72.7                            42.8
+SFT header transplant lowercase_thinking        48             41                              97.8                            46.5
+SFT header transplant   alternating_case        50              0                               NaN                            11.2
+SFT header transplant       third_person        49             49                              98.1                             NaN
+   SFT neutral header uppercase_thinking        50              0                               NaN                             7.2
+   SFT neutral header lowercase_thinking        50              0                               NaN                             1.4
+   SFT neutral header   alternating_case        50              0                               NaN                            10.8
+   SFT neutral header       third_person        50             50                              38.5                             NaN

@@ -1,0 +1,34 @@
+{
+ "Qwen/Qwen3-14B": {
+  "examples": 212,
+  "over_cutoff": 2,
+  "max_tokens": 9654,
+  "median_tokens": 2799,
+  "reasoning_reaches_cutoff": 0,
+  "tokens_beyond_cutoff_total": 5564
+ },
+ "microsoft/Phi-4-reasoning": {
+  "examples": 212,
+  "over_cutoff": 4,
+  "max_tokens": 9685,
+  "median_tokens": 3001,
+  "reasoning_reaches_cutoff": 0,
+  "tokens_beyond_cutoff_total": 5862
+ },
+ "allenai/Olmo-3-7B-Think": {
+  "examples": 212,
+  "over_cutoff": 2,
+  "max_tokens": 9536,
+  "median_tokens": 2852,
+  "reasoning_reaches_cutoff": 0,
+  "tokens_beyond_cutoff_total": 5497
+ },
+ "Qwen/Qwen3.5-9B": {
+  "examples": 212,
+  "over_cutoff": 3,
+  "max_tokens": 10255,
+  "median_tokens": 2925,
+  "reasoning_reaches_cutoff": 0,
+  "tokens_beyond_cutoff_total": 6419
+ }
+}
