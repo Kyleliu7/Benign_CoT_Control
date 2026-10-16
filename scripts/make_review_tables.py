@@ -136,7 +136,7 @@ tbl("table_standalone_task", "Standalone CoT-Control per task (mean compliance i
 
 # ---------------------------------------------------------------- Table 2 adapters on CoT-Control
 lab = {"output_mask": "Same data, loss on reasoning only (answer masked)", "think_mask": "Same data, loss on answer only (reasoning masked)",
-       "teacher_qwen3_235b": "Same prompts, Qwen3-235B-A22B reasoning", "teacher_sonnet_3_7": "Same prompts, Claude 3.7 Sonnet reasoning",
+       "teacher_qwen3_235b": "Same prompts, Qwen3-235B-A22B reasoning", "teacher_sonnet_3_7": "Same prompts, Claude Sonnet 4.5 reasoning",
        "teacher_reasonflux": "Same prompts, ReasonFlux reasoning"}
 rows = [["Base (no fine-tuning)", f"{100 * base_h.primary_s.mean():.2f}", f"{100 * H['Qwen3-14B Base'].primary.mean():.2f}", "--", "0"],
         ["Reported adapter (GPT-5.2 summaries)"] + [""] * 4]
