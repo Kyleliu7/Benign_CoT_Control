@@ -22,6 +22,8 @@ def main():
     ap.add_argument("--out", required=True)
     ap.add_argument("--per-task", type=int, default=5)
     ap.add_argument("--max-new-tokens", type=int, default=150)
+    ap.add_argument("--strip-template-newline", action="store_true",
+                    help="drop the newline of a template-final '<think>\\n' (Qwen3.5), matching the training format '<think>**...'")
     args = ap.parse_args()
     import torch
     from transformers import AutoTokenizer
@@ -37,6 +39,8 @@ def main():
     with open(args.out, "w", encoding="utf-8") as f:
         for i, it in enumerate(sel):
             prompt = render(tok, it["messages"])
+            if args.strip_template_newline and prompt.endswith("<think>\n"):
+                prompt = prompt[:-1]
             x = tok(prompt, return_tensors="pt", add_special_tokens=False).to("cuda")
             torch.manual_seed(42 + i)
             with torch.no_grad():

@@ -23,6 +23,9 @@ def main():
     ap.add_argument("--adapter", action="append", default=[], help="name=path")
     ap.add_argument("--opener", default="<think>", help="appended unless the rendered prompt already ends with <think>; "
                     "no newline, because the SFT models write <think>** directly")
+    ap.add_argument("--strip-template-newline", action="store_true",
+                    help="if the chat template already ends the prompt with '<think>\\n' (Qwen3.5), drop that newline, matching the "
+                         "LlamaFactory training format '<think>**...'")
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
     import torch
@@ -42,6 +45,8 @@ def main():
     rows = []
     for it in items():
         prompt = render(tok, it["messages"])
+        if args.strip_template_newline and prompt.endswith("<think>\n"):
+            prompt = prompt[:-1]
         text = prompt if prompt.rstrip().endswith("<think>") else prompt + args.opener
         x = tok(text, return_tensors="pt", add_special_tokens=False).to("cuda")
         row = {"task": it["task"], "q": it["q"], "prompt_tail": text[-30:]}
