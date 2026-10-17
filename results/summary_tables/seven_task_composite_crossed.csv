@@ -1,0 +1,21 @@
+Model,Row,N,Cont_Mean7,Strict7,Estimate,CI95
+Phi-4-reasoning,Base->Base,350,12.63,11,,
+Phi-4-reasoning,Base->SFT,350,17.09,36,,
+Phi-4-reasoning,SFT->Base,350,13.34,15,,
+Phi-4-reasoning,SFT->SFT,350,21.91,69,,
+Phi-4-reasoning,SFT->Base (OFF),350,11.92,12,,
+Phi-4-reasoning,"SFT->Base minus Base->Base (donor effect, base recipient)",50,,,0.71,"[-1.15, 2.60]"
+Phi-4-reasoning,"SFT->SFT minus Base->SFT (donor effect, SFT recipient)",50,,,4.82,"[2.11, 7.61]"
+Phi-4-reasoning,"Base->SFT minus Base->Base (recipient effect, base donor)",50,,,4.46,"[1.93, 6.86]"
+Phi-4-reasoning,"SFT->SFT minus SFT->Base (recipient effect, SFT donor)",50,,,8.57,"[5.81, 11.35]"
+Phi-4-reasoning,SFT->Base OFF minus Base->Base,50,,,-0.71,"[-2.51, 1.25]"
+Qwen3-14B,Base->Base,350,14.25,10,,
+Qwen3-14B,Base->SFT,350,13.83,8,,
+Qwen3-14B,SFT->Base,350,21.12,67,,
+Qwen3-14B,SFT->SFT,350,18.96,62,,
+Qwen3-14B,SFT->Base (OFF),350,19.93,52,,
+Qwen3-14B,"SFT->Base minus Base->Base (donor effect, base recipient)",50,,,6.87,"[4.46, 9.42]"
+Qwen3-14B,"SFT->SFT minus Base->SFT (donor effect, SFT recipient)",50,,,5.13,"[2.88, 7.58]"
+Qwen3-14B,"Base->SFT minus Base->Base (recipient effect, base donor)",50,,,-0.41,"[-1.70, 0.84]"
+Qwen3-14B,"SFT->SFT minus SFT->Base (recipient effect, SFT donor)",50,,,-2.16,"[-4.99, 0.70]"
+Qwen3-14B,SFT->Base OFF minus Base->Base,50,,,5.68,"[3.09, 8.38]"
