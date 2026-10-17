@@ -887,5 +887,9 @@
   "lo": -2.63,
   "hi": 3.4,
   "n": 287
- }
+ },
+ "rif_s1k_exact_all": 4,
+ "rif_s1k_exact_used": 1,
+ "rif_s1k_8gram_all": 37,
+ "rif_s1k_8gram_used": 24
 }

@@ -355,5 +355,13 @@ if "Phi-4-reasoning SFT s1k claude37" in H and "Phi-4-reasoning SFT s1k deepseek
     put("phi_claude37_minus_r1_7", gain(H["Phi-4-reasoning SFT s1k deepseek r1"], H["Phi-4-reasoning SFT s1k claude37"]))
     put("phi_claude37_minus_r1_7_first100", gain(H["Phi-4-reasoning SFT s1k deepseek r1"], H["Phi-4-reasoning SFT s1k claude37"], window=100))
 
+ov = RES / "summary_tables/s1k_reasonif_overlap.json"
+if ov.exists():
+    o = json.loads(ov.read_text(encoding="utf-8"))
+    NUM["rif_s1k_exact_all"] = o["all_1000"]["reasonif_exact"]
+    NUM["rif_s1k_exact_used"] = o["used_212"]["reasonif_exact"]
+    NUM["rif_s1k_8gram_all"] = o["all_1000"]["reasonif_with_shared_8gram"]
+    NUM["rif_s1k_8gram_used"] = o["used_212"]["reasonif_with_shared_8gram"]
+
 (OUT / "numbers7.json").write_text(json.dumps(NUM, indent=1), encoding="utf-8")
 print("wrote", OUT / "numbers7.json", len(NUM), "entries")
