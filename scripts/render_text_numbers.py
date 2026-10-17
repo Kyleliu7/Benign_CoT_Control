@@ -37,11 +37,13 @@ def sub(m):
     if not mode:
         if isinstance(v, dict):
             raise KeyError(f"{key} needs a mode")
-        return f"{v:.1f}" if isinstance(v, float) and key.startswith(("lower_", "task_")) else (f"{v:.2f}" if isinstance(v, float) else str(v))
+        return f"{v:.1f}" if isinstance(v, float) and key.startswith(("lower_", "task_", "rif_")) else (f"{v:.2f}" if isinstance(v, float) else str(v))
     if mode == "est":
         return f"${sg(v['est'])}$"
     if mode == "ci":
         return f"${sg(v['est'])}$, $[{fmt(v['lo'])}, {fmt(v['hi'])}]$"
+    if mode == "ci1":
+        return f"${'+' if v['est'] >= 0 else '-'}{abs(v['est']):.1f}$, $[{v['lo']:.1f}, {v['hi']:.1f}]$"
     if mode == "n":
         return str(v["n"])
     raise ValueError(mode)

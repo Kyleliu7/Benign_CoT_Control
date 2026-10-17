@@ -189,6 +189,8 @@ for label, hk, rk in HEAD_ROWS:
             dd = np.array([int(bool(r["instruction_following"])) - int(bool(base_r[r["dataset_index"]]["instruction_following"])) for r in recs])
             lo, hi = F._ci(dd)
             row.append(ci(100 * dd.mean(), 100 * lo, 100 * hi, 1))
+            NUM[f"rif_{hk.replace(' ', '_')}"] = round(100 * ifs.mean(), 1)
+            NUM[f"rif_gain_{hk.replace(' ', '_')}"] = {"est": round(100 * dd.mean(), 1), "lo": round(100 * lo, 1), "hi": round(100 * hi, 1)}
     else:
         row += ["", ""]
     rows.append(row)
@@ -331,7 +333,7 @@ for k in ("SFT seed 42", "Phi-4-reasoning SFT", "SFT s1k claude37", "SFT s1k dee
         NUM[f"task_mean_{k.replace(' ', '_')}_{t}"] = round(100 * d[d.task == t].primary.mean(), 1)
         NUM[f"task_mean_{base_of(k).replace(' ', '_')}_{t}"] = round(100 * b[b.task == t].primary.mean(), 1)
 
-for k in ("Base", "SFT seed 42", "SFT self distill", "SFT s1k claude37", "SFT s1k deepseek r1", "SFT teacher sonnet 3 7"):
+for k in ("Base", "SFT seed 42", "SFT self distill", "SFT self headers", "SFT s1k claude37", "SFT s1k deepseek r1", "SFT teacher sonnet 3 7"):
     if k in H:
         NUM[f"lower_{k.replace(' ', '_')}"] = round(100 * H[k][H[k].task == "lowercase_thinking"].primary_s.mean(), 1)
 for k in ("SFT s1k claude37", "SFT s1k deepseek r1"):
