@@ -363,5 +363,17 @@ if ov.exists():
     NUM["rif_s1k_8gram_all"] = o["all_1000"]["reasonif_with_shared_8gram"]
     NUM["rif_s1k_8gram_used"] = o["used_212"]["reasonif_with_shared_8gram"]
 
+oo = RES / "summary_tables/opening_obeys_rule.json"
+if oo.exists():
+    for k2, v2 in json.loads(oo.read_text(encoding="utf-8")).items():
+        NUM[f"open_{k2}"] = v2
+pt = RES / "summary_tables/s1k_phi_tokens.json"  # count_s1k_tokens.py output for Phi-4-reasoning (run on the VM)
+if pt.exists():
+    o = json.loads(pt.read_text(encoding="utf-8"))
+    NUM["phitok_cutoff"] = o["cutoff"]
+    for t in ("claude37", "deepseek_r1"):
+        NUM[f"phitok_over_{t}"] = o[f"s1k_{t}_212"]["over_cutoff"]
+        NUM[f"phitok_excess_{t}"] = o[f"s1k_{t}_212"]["max_tokens"] - o["cutoff"]
+
 (OUT / "numbers7.json").write_text(json.dumps(NUM, indent=1), encoding="utf-8")
 print("wrote", OUT / "numbers7.json", len(NUM), "entries")

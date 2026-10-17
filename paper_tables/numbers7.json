@@ -891,5 +891,17 @@
  "rif_s1k_exact_all": 4,
  "rif_s1k_exact_used": 1,
  "rif_s1k_8gram_all": 37,
- "rif_s1k_8gram_used": 24
+ "rif_s1k_8gram_used": 24,
+ "open_rho_lowercase_thinking": 0.91,
+ "open_n_runs": 16,
+ "open_rho_uppercase_thinking": 0.82,
+ "open_rest_after_obeying": 82.5,
+ "open_rest_after_other": 22.0,
+ "open_selfheaders_lower_obeying": 46,
+ "open_selfheaders_lower_after_obeying": 37.7,
+ "phitok_cutoff": 12288,
+ "phitok_over_claude37": 0,
+ "phitok_excess_claude37": -53,
+ "phitok_over_deepseek_r1": 1,
+ "phitok_excess_deepseek_r1": 157
 }
