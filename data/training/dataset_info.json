@@ -38,5 +38,21 @@
       "query": "input",
       "response": "output"
     }
+  },
+  "s1k_claude37_212": {
+    "file_name": "s1k_claude37_212.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "s1k_deepseek_r1_212": {
+    "file_name": "s1k_deepseek_r1_212.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
   }
 }

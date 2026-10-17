@@ -87,7 +87,7 @@ def crossed():
             if x not in per_q or y not in per_q:
                 continue
             a, b = per_q[x].comp.align(per_q[y].comp, join="inner")
-            est, lo, hi = A._boot_prompt_diff(a.to_numpy(), b.to_numpy(), rng)
+            est, lo, hi = A._boot_prompt_diff(a.to_numpy(), b.to_numpy(), np.random.default_rng(F.SEED))
             rows.append(dict(Model=model, Row=label, N=len(a), Cont_Mean7="", Strict7="", Estimate=round(100 * est, 2),
                              CI95=f"[{100 * lo:.2f}, {100 * hi:.2f}]"))
     return pd.DataFrame(rows)
