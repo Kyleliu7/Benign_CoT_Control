@@ -79,6 +79,8 @@ for v in ("output_mask", "think_mask", "teacher_qwen3_235b", "teacher_sonnet_3_7
     f = first(RES / f"haskins_500/qwen3_14b_training_variants/{v}/haskins_500/qwen3_14b/*/results.csv")
     if f:
         H["SFT " + v.replace("_", " ")] = F._prep(pd.read_csv(f))
+for f in sorted((RES / "data_variants").glob("phi4_*/haskins_500/phi4_reasoning/*/results.csv")):
+    H["Phi-4-reasoning SFT " + f.parts[-5].replace("phi4_", "").replace("_", " ")] = F._prep(pd.read_csv(f))
 H = {k: rescore(v) for k, v in H.items()}
 for d in H.values():
     d["primary_d0"] = np.where(d.degen, 0.0, d.primary)
@@ -305,7 +307,8 @@ LAB = {"Base": "Qwen3-14B Base", "SFT seed 42": "Qwen3-14B SFT, seed 42 (reporte
        "SFT teacher qwen3 235b": "Qwen3-235B-A22B reasoning", "SFT teacher sonnet 3 7": "Claude Sonnet 4.5 reasoning",
        "SFT teacher reasonflux": "ReasonFlux reasoning", "SFT self distill": "Qwen3-14B's own reasoning",
        "SFT s1k claude37": "s1K, Claude 3.7 Sonnet reasoning", "SFT s1k deepseek r1": "s1K, DeepSeek R1 reasoning",
-       "Phi-4-reasoning Base": "Phi-4-reasoning Base", "Phi-4-reasoning SFT": "Phi-4-reasoning SFT", "OLMo-3-7B-Think Base": "OLMo-3-7B-Think Base",
+       "Phi-4-reasoning Base": "Phi-4-reasoning Base", "Phi-4-reasoning SFT": "Phi-4-reasoning SFT",
+       "Phi-4-reasoning SFT s1k claude37": "Phi-4-reasoning, s1K Claude 3.7 Sonnet reasoning", "Phi-4-reasoning SFT s1k deepseek r1": "Phi-4-reasoning, s1K DeepSeek R1 reasoning", "OLMo-3-7B-Think Base": "OLMo-3-7B-Think Base",
        "OLMo-3-7B-Think SFT lr1e-4": "OLMo-3-7B-Think SFT", "OLMo-3-7B-Think SFT lr2e-4": r"OLMo-3-7B-Think SFT, lr $2\times10^{-4}$"}
 rows = []
 for k, nm in LAB.items():
@@ -340,6 +343,17 @@ for k in ("SFT s1k claude37", "SFT s1k deepseek r1"):
     if k in H:
         NUM[f"capped_{k.replace(' ', '_')}"] = int(H[k].capped.sum())
 NUM["capped_Base"] = int(H["Base"].capped.sum())
+
+PB = "Phi-4-reasoning Base"
+for v in ("s1k claude37", "s1k deepseek r1"):
+    k = f"Phi-4-reasoning SFT {v}"
+    if k in H:
+        key = k.replace(" ", "_")
+        put(f"gain7_{key}", gain(H[PB], H[k]))
+        put(f"gain7_first100_{key}", gain(H[PB], H[k], window=100))
+if "Phi-4-reasoning SFT s1k claude37" in H and "Phi-4-reasoning SFT s1k deepseek r1" in H:
+    put("phi_claude37_minus_r1_7", gain(H["Phi-4-reasoning SFT s1k deepseek r1"], H["Phi-4-reasoning SFT s1k claude37"]))
+    put("phi_claude37_minus_r1_7_first100", gain(H["Phi-4-reasoning SFT s1k deepseek r1"], H["Phi-4-reasoning SFT s1k claude37"], window=100))
 
 (OUT / "numbers7.json").write_text(json.dumps(NUM, indent=1), encoding="utf-8")
 print("wrote", OUT / "numbers7.json", len(NUM), "entries")

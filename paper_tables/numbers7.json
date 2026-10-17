@@ -748,6 +748,42 @@
   "hi": 1.61,
   "n": 350
  },
+ "gain7_Phi-4-reasoning_SFT_s1k_claude37": {
+  "est": 8.56,
+  "lo": 5.55,
+  "hi": 11.59,
+  "n": 350
+ },
+ "gain7_stripped_Phi-4-reasoning_SFT_s1k_claude37": {
+  "est": 8.56,
+  "lo": 5.55,
+  "hi": 11.59,
+  "n": 350
+ },
+ "gain10_Phi-4-reasoning_SFT_s1k_claude37": {
+  "est": 8.65,
+  "lo": 6.51,
+  "hi": 10.77,
+  "n": 500
+ },
+ "gain7_Phi-4-reasoning_SFT_s1k_deepseek_r1": {
+  "est": 3.41,
+  "lo": 1.55,
+  "hi": 5.18,
+  "n": 350
+ },
+ "gain7_stripped_Phi-4-reasoning_SFT_s1k_deepseek_r1": {
+  "est": 3.41,
+  "lo": 1.55,
+  "hi": 5.18,
+  "n": 350
+ },
+ "gain10_Phi-4-reasoning_SFT_s1k_deepseek_r1": {
+  "est": 3.43,
+  "lo": 2.08,
+  "hi": 4.75,
+  "n": 500
+ },
  "task_gain7_SFT_seed_42_third_person": 13.3,
  "task_mean_SFT_seed_42_third_person": 98.2,
  "task_mean_Base_third_person": 84.8,
@@ -827,5 +863,29 @@
  "lower_SFT_teacher_sonnet_3_7": 59.2,
  "capped_SFT_s1k_claude37": 137,
  "capped_SFT_s1k_deepseek_r1": 18,
- "capped_Base": 25
+ "capped_Base": 25,
+ "gain7_first100_Phi-4-reasoning_SFT_s1k_claude37": {
+  "est": 0.75,
+  "lo": -3.08,
+  "hi": 3.16,
+  "n": 287
+ },
+ "gain7_first100_Phi-4-reasoning_SFT_s1k_deepseek_r1": {
+  "est": 0.43,
+  "lo": -2.39,
+  "hi": 3.41,
+  "n": 350
+ },
+ "phi_claude37_minus_r1_7": {
+  "est": 5.15,
+  "lo": 2.76,
+  "hi": 7.74,
+  "n": 350
+ },
+ "phi_claude37_minus_r1_7_first100": {
+  "est": 1.23,
+  "lo": -2.63,
+  "hi": 3.4,
+  "n": 287
+ }
 }
