@@ -10,6 +10,7 @@ openings and the task mean.
   python scripts/opening_obeys_rule.py
 """
 import glob
+import json
 import re
 import sys
 from pathlib import Path
@@ -54,7 +55,7 @@ def obeys(task, s):
 
 
 H = runs()
-for v in ("output_mask", "think_mask", "teacher_qwen3_235b", "teacher_sonnet_3_7", "teacher_reasonflux"):
+for v in ("output_mask", "think_mask", "teacher_qwen3_235b", "teacher_sonnet_3_7", "teacher_reasonflux", "self_distill"):
     f = glob.glob(str(F.RES / f"haskins_500/qwen3_14b_training_variants/{v}/haskins_500/qwen3_14b/*/results.csv"))
     if f:
         H[v] = F._prep(pd.read_csv(f[0]))
@@ -74,12 +75,24 @@ for name, d in H.items():
 t = pd.DataFrame(rows)
 pd.set_option("display.width", 250)
 print(t.to_string(index=False))
+SUMMARY = {}
 for task in ("lowercase_thinking", "uppercase_thinking"):
     s = t[t.task == task]
     r, p = spearmanr(s["openings obeying"], s["task mean"])
     print(f"{task}: Spearman across {len(s)} runs, obeying openings vs task mean: rho={r:.2f} (p={p:.3g})")
+    SUMMARY[f"rho_{task}"] = round(float(r), 2)
+    SUMMARY["n_runs"] = int(len(s))
 pooled = t.dropna(subset=["after obeying opening", "after other opening"])
 print("runs with both kinds of opening:", len(pooled), "| mean compliance after obeying vs other opening:",
       round(pooled["after obeying opening"].mean(), 1), "vs", round(pooled["after other opening"].mean(), 1),
       "| grading only the reasoning after the opening:", round(pooled["rest only, after obeying"].mean(), 1), "vs",
       round(pooled["rest only, after other"].mean(), 1))
+SUMMARY.update({"rest_after_obeying": round(float(pooled["rest only, after obeying"].mean()), 1),
+                "rest_after_other": round(float(pooled["rest only, after other"].mean()), 1)})
+sh = t[(t.run == "SFT self headers") & (t.task == "lowercase_thinking")]
+if len(sh):
+    SUMMARY["selfheaders_lower_obeying"] = int(sh["openings obeying"].iloc[0])
+    SUMMARY["selfheaders_lower_after_obeying"] = float(sh["after obeying opening"].iloc[0])
+OUTJ = Path(__file__).resolve().parents[1] / "results" / "summary_tables" / "opening_obeys_rule.json"
+OUTJ.write_text(json.dumps(SUMMARY, indent=1), encoding="utf-8")
+print(SUMMARY)

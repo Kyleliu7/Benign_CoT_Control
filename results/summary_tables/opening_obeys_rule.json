@@ -1,0 +1,9 @@
+{
+ "rho_lowercase_thinking": 0.91,
+ "n_runs": 16,
+ "rho_uppercase_thinking": 0.82,
+ "rest_after_obeying": 82.5,
+ "rest_after_other": 22.0,
+ "selfheaders_lower_obeying": 46,
+ "selfheaders_lower_after_obeying": 37.7
+}
