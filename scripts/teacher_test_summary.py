@@ -75,3 +75,8 @@ print("\nFirst 120 characters of the first trace per run (lowercase_thinking, qu
 for k, d in H.items():
     x = d[(d.task == "lowercase_thinking") & (d.q == d.q.min())].reasoning
     print(f"{k}: {x.iloc[0][:120]!r}" if len(x) else f"{k}: -")
+if "SFT s1k claude37" in H and "SFT s1k deepseek r1" in H:
+    print("\nClaude 3.7 student minus DeepSeek R1 student (same 212 s1K questions), paired over the 50 questions")
+    for name, tasks in (("all 10 tasks", None), ("7 non-character tasks", sorted(set(base.task) - CHAR))):
+        n, _, _, g, lo, hi = F._paired_gain(H["SFT s1k deepseek r1"], H["SFT s1k claude37"], None, col="primary_s", tasks=tasks)
+        print(f"  {name}: {g:+.2f} [{lo:+.2f}, {hi:+.2f}] (n={n})")
