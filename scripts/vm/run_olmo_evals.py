@@ -3,6 +3,7 @@
 Qwen3-14B runs. Only the model id, the adapter path, the output location and the model-family checks are changed.
 Results are copied to ~/Benign_CoT_Control/results/olmo3_7b_think/ (never overwriting)."""
 import importlib.util
+import os
 import sys
 from pathlib import Path
 
@@ -32,6 +33,11 @@ def haskins(tag, lora_value, out_root):
     src = R.NB / "Haskins_500_vLLM_Evaluation.ipynb"
     nb_path, kernel = R.patched_copy(src, f"OLMO3_{tag}.ipynb", reps)
     rc = R.execute(nb_path, kernel, tag)
+    if rc != 0 and not os.environ.get("VLLM_USE_AOT_COMPILE"):  # same fallback as run_seed_evals.haskins_job (stale torch AOT compile cache)
+        R.log(f"RETRY {tag} with VLLM_USE_AOT_COMPILE=0")
+        os.environ["VLLM_USE_AOT_COMPILE"] = "0"
+        rc = R.execute(nb_path, kernel, tag + "_retry")
+        del os.environ["VLLM_USE_AOT_COMPILE"]
     runs = sorted((R.NB / out_root).glob("*/COMPLETE.json"))
     if rc != 0 or len(runs) != 1:
         R.log(f"FAILED {tag}: rc={rc}, complete runs={runs}")
