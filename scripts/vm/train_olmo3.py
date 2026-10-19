@@ -7,7 +7,7 @@ final assistant turn ends with <|endoftext|>. The training outputs already start
 generation prompt "<|im_start|>assistant\n<think>".
 
 Usage: python train_olmo3.py check            # compare LlamaFactory encoding with the official template, no training
-       python train_olmo3.py train <out_dir> [learning_rate]
+       python train_olmo3.py train <out_dir> [learning_rate] [config]   (config default: the reported Qwen3-14B GPT-5.2 config)
 """
 import sys
 from pathlib import Path
@@ -56,8 +56,8 @@ def check():
     print(f"{mismatches} mismatches in 20 examples")
 
 
-def train(out_dir, lr=None):
-    cfg = yaml.safe_load(open("configs/qwen3_14b_sft_lora-gpt-52-high-reasoning-original.yaml"))
+def train(out_dir, lr=None, config="configs/qwen3_14b_sft_lora-gpt-52-high-reasoning-original.yaml"):
+    cfg = yaml.safe_load(open(config))
     cfg.update(model_name_or_path=MODEL, model_revision=REVISION, template="olmo3_think", output_dir=out_dir)
     if lr is not None:
         cfg["learning_rate"] = float(lr)
@@ -68,4 +68,7 @@ def train(out_dir, lr=None):
 
 
 if __name__ == "__main__":
-    check() if sys.argv[1] == "check" else train(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
+    if sys.argv[1] == "check":
+        check()
+    else:
+        train(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None, *sys.argv[4:5])
