@@ -375,5 +375,10 @@ if pt.exists():
         NUM[f"phitok_over_{t}"] = o[f"s1k_{t}_212"]["over_cutoff"]
         NUM[f"phitok_excess_{t}"] = o[f"s1k_{t}_212"]["max_tokens"] - o["cutoff"]
 
+for hk, rk in (("Base", "Qwen3-14B Base"), ("SFT seed 42", "Qwen3-14B SFT seed 42"), ("SFT seed 1", "Qwen3-14B SFT seed 1"), ("SFT seed 2", "Qwen3-14B SFT seed 2")):
+    ifs, acc = rif(rk)
+    NUM[f"rifIFS_{hk.replace(' ', '_')}"] = float(ifs)
+    NUM[f"rifACC_{hk.replace(' ', '_')}"] = float(acc)
+
 (OUT / "numbers7.json").write_text(json.dumps(NUM, indent=1), encoding="utf-8")
 print("wrote", OUT / "numbers7.json", len(NUM), "entries")

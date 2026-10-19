@@ -31,19 +31,22 @@ def sub(m):
     if body.startswith(("min:", "max:")):
         vals = [val(k) for k in body[4:].split(",")]
         x = min(vals) if body.startswith("min:") else max(vals)
-        return f"{x:.2f}" if isinstance(x, float) else str(x)
+        nd = 1 if body[4:].startswith(("rifIFS_", "rifACC_")) else 2
+        return f"{x:.{nd}f}" if isinstance(x, float) else str(x)
     key, _, mode = body.partition("|")
     v = NUM[key]
     if not mode:
         if isinstance(v, dict):
             raise KeyError(f"{key} needs a mode")
-        return f"{v:.1f}" if isinstance(v, float) and key.startswith(("lower_", "task_", "rif_", "open_rest", "open_selfheaders_lower_after")) else (f"{v:.2f}" if isinstance(v, float) else str(v))
+        return f"{v:.1f}" if isinstance(v, float) and key.startswith(("lower_", "task_", "rif_", "rifIFS_", "rifACC_", "open_rest", "open_selfheaders_lower_after")) else (f"{v:.2f}" if isinstance(v, float) else str(v))
     if mode == "est":
         return f"${sg(v['est'])}$"
     if mode == "ci":
         return f"${sg(v['est'])}$, $[{fmt(v['lo'])}, {fmt(v['hi'])}]$"
     if mode == "ci1":
         return f"${'+' if v['est'] >= 0 else '-'}{abs(v['est']):.1f}$, $[{v['lo']:.1f}, {v['hi']:.1f}]$"
+    if mode == "num":
+        return f"{v['est']:.2f}"
     if mode == "n":
         return str(v["n"])
     raise ValueError(mode)

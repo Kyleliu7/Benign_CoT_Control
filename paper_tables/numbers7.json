@@ -903,5 +903,13 @@
  "phitok_over_claude37": 0,
  "phitok_excess_claude37": -53,
  "phitok_over_deepseek_r1": 1,
- "phitok_excess_deepseek_r1": 157
+ "phitok_excess_deepseek_r1": 157,
+ "rifIFS_Base": 14.0,
+ "rifACC_Base": 80.3,
+ "rifIFS_SFT_seed_42": 33.3,
+ "rifACC_SFT_seed_42": 65.3,
+ "rifIFS_SFT_seed_1": 33.7,
+ "rifACC_SFT_seed_1": 59.3,
+ "rifIFS_SFT_seed_2": 33.0,
+ "rifACC_SFT_seed_2": 61.7
 }
