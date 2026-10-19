@@ -47,6 +47,8 @@ def standalone():
             H["SFT " + v.replace("_", " ")] = F._prep(pd.read_csv(f[0]))
     for f in sorted((F.RES / "data_variants").glob("phi4_*/haskins_500/phi4_reasoning/*/results.csv")):
         H["Phi-4-reasoning SFT " + f.parts[-5].replace("phi4_", "").replace("_", " ")] = F._prep(pd.read_csv(f))
+    for f in sorted((F.RES / "data_variants").glob("olmo3_*/haskins_500/olmo3_7b_think/*/results.csv")):
+        H["OLMo-3-7B-Think SFT " + f.parts[-5].replace("olmo3_", "").replace("_", " ")] = F._prep(pd.read_csv(f))
     H = {k: rescore(v) for k, v in H.items()}
     for d in H.values():
         d["primary_d0"] = np.where(d.degen, 0.0, d.primary)

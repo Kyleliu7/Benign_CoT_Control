@@ -81,6 +81,8 @@ for v in ("output_mask", "think_mask", "teacher_qwen3_235b", "teacher_sonnet_3_7
         H["SFT " + v.replace("_", " ")] = F._prep(pd.read_csv(f))
 for f in sorted((RES / "data_variants").glob("phi4_*/haskins_500/phi4_reasoning/*/results.csv")):
     H["Phi-4-reasoning SFT " + f.parts[-5].replace("phi4_", "").replace("_", " ")] = F._prep(pd.read_csv(f))
+for f in sorted((RES / "data_variants").glob("olmo3_*/haskins_500/olmo3_7b_think/*/results.csv")):
+    H["OLMo-3-7B-Think SFT " + f.parts[-5].replace("olmo3_", "").replace("_", " ")] = F._prep(pd.read_csv(f))
 H = {k: rescore(v) for k, v in H.items()}
 for d in H.values():
     d["primary_d0"] = np.where(d.degen, 0.0, d.primary)
@@ -355,6 +357,19 @@ if "Phi-4-reasoning SFT s1k claude37" in H and "Phi-4-reasoning SFT s1k deepseek
     put("phi_claude37_minus_r1_7", gain(H["Phi-4-reasoning SFT s1k deepseek r1"], H["Phi-4-reasoning SFT s1k claude37"]))
     put("phi_claude37_minus_r1_7_first100", gain(H["Phi-4-reasoning SFT s1k deepseek r1"], H["Phi-4-reasoning SFT s1k claude37"], window=100))
 
+OB = "OLMo-3-7B-Think Base"
+for v in ("s1k claude37", "s1k deepseek r1"):
+    k = f"OLMo-3-7B-Think SFT {v}"
+    if k in H:
+        key = k.replace(" ", "_")
+        put(f"gain7_{key}", gain(H[OB], H[k]))
+        put(f"gain7_first100_{key}", gain(H[OB], H[k], window=100))
+        NUM[f"mean7_{key}"] = round(100 * H[k][H[k].task.isin(SEVEN)].primary.mean(), 2)
+        NUM[f"degen_{key}"] = int(H[k].degen.sum())
+if "OLMo-3-7B-Think SFT s1k claude37" in H and "OLMo-3-7B-Think SFT s1k deepseek r1" in H:
+    put("olmo_claude37_minus_r1_7", gain(H["OLMo-3-7B-Think SFT s1k deepseek r1"], H["OLMo-3-7B-Think SFT s1k claude37"]))
+    put("olmo_claude37_minus_r1_7_first100", gain(H["OLMo-3-7B-Think SFT s1k deepseek r1"], H["OLMo-3-7B-Think SFT s1k claude37"], window=100))
+
 ov = RES / "summary_tables/s1k_reasonif_overlap.json"
 if ov.exists():
     o = json.loads(ov.read_text(encoding="utf-8"))
@@ -367,6 +382,11 @@ oo = RES / "summary_tables/opening_obeys_rule.json"
 if oo.exists():
     for k2, v2 in json.loads(oo.read_text(encoding="utf-8")).items():
         NUM[f"open_{k2}"] = v2
+ot = RES / "summary_tables/s1k_olmo_tokens.json"  # count_s1k_tokens.py output for OLMo-3-7B-Think (run on the VM)
+if ot.exists():
+    o = json.loads(ot.read_text(encoding="utf-8"))
+    for t in ("claude37", "deepseek_r1"):
+        NUM[f"olmotok_over_{t}"] = o[f"s1k_{t}_212"]["over_cutoff"]
 pt = RES / "summary_tables/s1k_phi_tokens.json"  # count_s1k_tokens.py output for Phi-4-reasoning (run on the VM)
 if pt.exists():
     o = json.loads(pt.read_text(encoding="utf-8"))
