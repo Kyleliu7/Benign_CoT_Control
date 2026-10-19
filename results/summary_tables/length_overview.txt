@@ -47,3 +47,16 @@ SFT s1k deepseek r1 | case tasks     1.0 (n=4)   5.6 (n=22)    9.9 (n=54)    7.0
    Phi-4-reasoning SFT: correlation of log reasoning tokens with seven-task compliance r = +0.094 (n=350)
    Phi-4-reasoning SFT s1k claude37: correlation of log reasoning tokens with seven-task compliance r = -0.172 (n=350)
    Phi-4-reasoning SFT s1k deepseek r1: correlation of log reasoning tokens with seven-task compliance r = -0.046 (n=350)
+
+4. Phi-4-reasoning: gain over Base matched on reasoning-token bin within each task (seven tasks); n = matched trace weight
+
+   SFT: unmatched gain +8.3; length-matched within task +5.0 [-3.4, +15.9] (n=35)
+   SFT s1k claude37: unmatched gain +8.6; length-matched within task +5.7 [+1.6, +9.1] (n=158)
+   SFT s1k deepseek r1: unmatched gain +3.4; length-matched within task +4.0 [+1.7, +6.3] (n=246)
+
+   Share of third-person traces among the seven-task traces in each token bin (%)
+tokens               <250  250-500  500-1k  1k-2k  >=2k
+Base                  NaN     16.0    14.0   15.0  11.0
+SFT                  12.0     27.0    43.0    0.0  50.0
+SFT s1k claude37      6.0     16.0    24.0   26.0  12.0
+SFT s1k deepseek r1   0.0     20.0    12.0   16.0  13.0

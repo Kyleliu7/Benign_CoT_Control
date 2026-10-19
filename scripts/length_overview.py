@@ -91,3 +91,53 @@ for k in [x for x in H if x.startswith("Phi-4-reasoning")]:
 text = "\n\n".join(out[:3]) + "\n" + "\n".join(out[3:])
 print(text)
 (F.RES / "summary_tables" / "length_overview.txt").write_text(text + "\n", encoding="utf-8")
+
+# 4. Phi-4-reasoning, length-matched within task: for each of the seven tasks and each token bin that holds traces from
+# both Base and the trained run, the difference in mean compliance weighted by the smaller of the two counts; the
+# estimate pools these over tasks and bins. 95% interval: bootstrap over the 50 questions (resampling questions, 2,000
+# draws, rng 42). Also the share of third-person traces per bin, since third person scores far above the other six tasks.
+BINS7 = [0, 250, 500, 1000, 2000, np.inf]
+
+
+def matched(b, d):
+    num = den = 0.0
+    for t in SEVEN:
+        x, y = b[b.task == t], d[d.task == t]
+        bx = pd.cut(x.tokens, BINS7, right=False, labels=False)
+        by = pd.cut(y.tokens, BINS7, right=False, labels=False)
+        for k in range(len(BINS7) - 1):
+            xs, ys = x.primary[bx == k], y.primary[by == k]
+            w = min(len(xs), len(ys))
+            if w:
+                num += w * (ys.mean() - xs.mean())
+                den += w
+    return (100 * num / den if den else np.nan), int(den)
+
+
+lines = ["\n4. Phi-4-reasoning: gain over Base matched on reasoning-token bin within each task (seven tasks); "
+         "n = matched trace weight", ""]
+PBASE = H["Phi-4-reasoning Base"]
+qs = np.array(sorted(PBASE.q.unique()))
+for k in [x for x in H if x.startswith("Phi-4-reasoning") and x != "Phi-4-reasoning Base"]:
+    d = H[k]
+    est, n = matched(PBASE, d)
+    rng = np.random.default_rng(42)
+    boots = []
+    for _ in range(2000):
+        pick = rng.choice(qs, len(qs))
+        bb = pd.concat([PBASE[PBASE.q == q] for q in pick])
+        dd = pd.concat([d[d.q == q] for q in pick])
+        boots.append(matched(bb, dd)[0])
+    lo, hi = np.nanpercentile(boots, [2.5, 97.5])
+    full = 100 * (d[d.task.isin(SEVEN)].primary.mean() - PBASE[PBASE.task.isin(SEVEN)].primary.mean())
+    lines.append(f"   {k.replace('Phi-4-reasoning ', '')}: unmatched gain {full:+.1f}; length-matched within task {est:+.1f} [{lo:+.1f}, {hi:+.1f}] (n={n})")
+lines.append("\n   Share of third-person traces among the seven-task traces in each token bin (%)")
+sh = {}
+for k in [x for x in H if x.startswith("Phi-4-reasoning")]:
+    s = H[k][H[k].task.isin(SEVEN)]
+    b = pd.cut(s.tokens, BINS7, right=False, labels=["<250", "250-500", "500-1k", "1k-2k", ">=2k"])
+    sh[k.replace("Phi-4-reasoning ", "")] = (100 * s.groupby(b, observed=False).task.apply(lambda t: (t == "third_person").mean())).round(0)
+lines.append(pd.DataFrame(sh).T.to_string())
+print("\n".join(lines))
+with open(F.RES / "summary_tables" / "length_overview.txt", "a", encoding="utf-8") as fh:
+    fh.write("\n".join(lines) + "\n")
