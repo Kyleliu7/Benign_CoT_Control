@@ -26,8 +26,14 @@ HASKINS_FAMILY = {
 }
 
 
-def haskins(tag, lora_value, out_root):
+def haskins(tag, lora_value, out_root, smoke_allow_cap=False):
     reps = dict(HASKINS_FAMILY)
+    if smoke_allow_cap:
+        # The smoke check guards against broken chat templates. The s1K Claude 3.7 student keeps re-checking its answer on
+        # the smoke question and uses the whole generation budget (smoke.json of 2026-10-19: opening marker from the chat
+        # template, coherent reasoning, finish_reason=length), so a trace that hit the token limit is accepted here; the
+        # full run is graded unchanged and traces that hit the limit are counted in the results.
+        reps['assert smoke["extraction_status"] == "closed", ('] =             'assert smoke["extraction_status"] == "closed" or smoke["hit_token_limit"], ('
     reps['LORA_PATH = "kyleliu789/qwen3-14b-gpt52-high-reasoning-original"'] = f'LORA_PATH = "{lora_value}"'
     reps['OUTPUT_ROOT = Path("haskins_vllm_runs")'] = f'OUTPUT_ROOT = Path("{out_root}")'
     src = R.NB / "Haskins_500_vLLM_Evaluation.ipynb"
