@@ -72,3 +72,19 @@ print("\nThird person (OLMo): share of traces that hit the token limit, and mean
 for k in o:
     d = H[k][H[k].task == "third_person"]
     print(f"  {k}: capped {int(d.capped.sum())}/50; mean capped {100 * d[d.capped].primary.mean():.1f}, uncapped {100 * d[~d.capped].primary.mean():.1f}")
+
+print("\nOLMo-3-7B-Think by CoT-Control category: mean compliance (%) and paired gain over Base [95% CI over questions]")
+CATS = {"suppression": ["word_suppression", "multiple_word_suppression"],
+        "addition": ["end_of_sentence", "meow_between_words", "arrow_prefix", "repeat_sentences"],
+        "third person": ["third_person"], "case (not in 7-task)": ["lowercase_thinking", "uppercase_thinking", "alternating_case"],
+        "7-task composite": SEVEN, "all ten": sorted(b.task.unique())}
+OL = dict(F.haskins_runs())
+runs_o = {"Base": H[o[0]], "SFT GPT-5.2": rescore(OL["OLMo-3-7B-Think SFT lr1e-4"]), "s1K Claude 3.7": H[o[1]], "s1K R1": H[o[2]]}
+rows = []
+for cat, tasks in CATS.items():
+    row = {"Category": cat, "Base %": round(100 * b[b.task.isin(tasks)].primary.mean(), 1)}
+    for lab, d in list(runs_o.items())[1:]:
+        n, _, _, est, lo, hi = F._paired_gain(b, d, None, col="primary", tasks=tasks)
+        row[lab] = f"{100 * d[d.task.isin(tasks)].primary.mean():.1f} ({est:+.1f} [{lo:+.1f}, {hi:+.1f}])"
+    rows.append(row)
+print(pd.DataFrame(rows).to_string(index=False))

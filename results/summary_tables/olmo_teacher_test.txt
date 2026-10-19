@@ -46,3 +46,12 @@ Third person (OLMo): share of traces that hit the token limit, and mean score am
   OLMo-3-7B-Think Base: capped 24/50; mean capped 87.8, uncapped 86.5
   OLMo-3-7B-Think SFT s1k claude37: capped 24/50; mean capped 69.9, uncapped 76.4
   OLMo-3-7B-Think SFT s1k deepseek r1: capped 12/50; mean capped 93.1, uncapped 89.1
+
+OLMo-3-7B-Think by CoT-Control category: mean compliance (%) and paired gain over Base [95% CI over questions]
+            Category  Base %               SFT GPT-5.2              s1K Claude 3.7                   s1K R1
+         suppression     3.0   1.0 (-2.0 [-5.0, +0.0])     3.0 (+0.0 [-4.0, +4.0])  1.0 (-2.0 [-6.0, +2.0])
+            addition     0.1   3.1 (+3.0 [+1.0, +5.4])     0.7 (+0.5 [-0.1, +1.7])  0.1 (-0.0 [-0.2, +0.2])
+        third person    87.2  84.2 (-2.9 [-4.5, -1.3]) 73.3 (-13.9 [-17.4, -10.6]) 90.0 (+2.9 [+1.7, +4.2])
+case (not in 7-task)     8.7 15.2 (+6.5 [+2.4, +10.8]) 36.4 (+27.8 [+21.5, +34.3])  7.0 (-1.6 [-3.2, -0.2])
+    7-task composite    13.4  14.1 (+0.7 [-0.8, +2.3])    11.7 (-1.7 [-2.9, -0.4]) 13.2 (-0.2 [-1.3, +0.9])
+             all ten    12.0  14.4 (+2.4 [+0.8, +4.2])    19.1 (+7.2 [+5.0, +9.4]) 11.4 (-0.6 [-1.6, +0.3])
