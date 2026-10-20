@@ -117,3 +117,15 @@ for name, ks in (("Base, Claude 3.7 student and R1 student", ["Base", "s1K Claud
 print("\n".join(extra))
 with open(F.RES / "summary_tables/reasonif_s1k_teacher.txt", "a", encoding="utf-8") as fh:
     fh.write("\n".join(extra) + "\n")
+
+# Selection that does not use the Claude 3.7 student's own outcome: questions on which Base and the R1 student both finished.
+keep = ~(T["Base"] | T["s1K DeepSeek R1"])
+extra = [f"\nQuestions on which Base and the R1 student both finished (selection independent of the Claude 3.7 student; n={int(keep.sum())})",
+         f"  Claude 3.7 student truncated on {int(T['s1K Claude 3.7'][keep].sum())} of them (kept, scored as they are)",
+         f"  Claude 3.7 student minus R1 student: IFS {diff(r, c, 'ifs', keep)}; accuracy {diff(r, c, 'acc', keep)}",
+         f"  Claude 3.7 student vs Base: IFS {diff(D['Base'], c, 'ifs', keep)}; R1 student vs Base: IFS {diff(D['Base'], r, 'ifs', keep)}",
+         f"  Base accuracy on the kept questions {100 * D['Base'].acc[keep].mean():.1f} vs {100 * D['Base'].acc.mean():.1f} on all 300; "
+         f"on questions the Claude 3.7 student truncated {100 * D['Base'].acc[T['s1K Claude 3.7']].mean():.1f} (Base IFS there {100 * D['Base'].ifs[T['s1K Claude 3.7']].mean():.1f})"]
+print("\n".join(extra))
+with open(F.RES / "summary_tables/reasonif_s1k_teacher.txt", "a", encoding="utf-8") as fh:
+    fh.write("\n".join(extra) + "\n")
