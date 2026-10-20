@@ -31,3 +31,31 @@ number_words        53   5.7                   49.1            32.1             
 reasoning_language  52  42.3                   57.7            32.7             34.6
 
 Without the word-limit constraint (n=247): Claude 3.7 student IFS vs Base +13.0 [+6.9, +19.0]; R1 student vs Base -0.8 [-5.3, +3.6]; Claude 3.7 minus R1 +13.8 [+8.1, +19.4]
+
+Truncation (hit the 16,384-token limit) and scores within truncated / complete responses
+  Base: truncated 19/300; IFS truncated 15.8, complete 13.9; accuracy truncated 0.0, complete 85.8
+  SFT GPT-5.2 (seed 42): truncated 6/300; IFS truncated 16.7, complete 33.7; accuracy truncated 0.0, complete 66.7
+  Self-distillation: truncated 19/300; IFS truncated 10.5, complete 15.3; accuracy truncated 0.0, complete 85.1
+  Sonnet 4.5 teacher (GPT-5.2 prompts): truncated 13/300; IFS truncated 30.8, complete 11.5; accuracy truncated 0.0, complete 81.2
+  s1K Claude 3.7: truncated 73/300; IFS truncated 4.1, complete 37.4; accuracy truncated 0.0, complete 75.8
+  s1K DeepSeek R1: truncated 18/300; IFS truncated 16.7, complete 12.8; accuracy truncated 0.0, complete 75.2
+
+Questions on which none of Base, Claude 3.7 student and R1 student was truncated (n=222)
+                                 Run  IFS %  Accuracy %          IFS vs Base    Accuracy vs Base
+                                Base   13.5        86.5                                         
+               SFT GPT-5.2 (seed 42)   37.8        73.0 +24.3 [+17.6, +31.1] -13.5 [-18.9, -7.7]
+                   Self-distillation   14.4        86.5    +0.9 [-3.2, +5.4]   +0.0 [-3.2, +3.2]
+Sonnet 4.5 teacher (GPT-5.2 prompts)   11.7        85.6    -1.8 [-5.9, +2.3]   -0.9 [-5.0, +3.2]
+                      s1K Claude 3.7   37.8        76.6 +24.3 [+17.6, +30.6]  -9.9 [-15.8, -4.1]
+                     s1K DeepSeek R1   12.6        79.7    -0.9 [-5.4, +3.6]  -6.8 [-12.2, -1.8]
+  Claude 3.7 student minus R1 student: IFS +25.2 [+18.9, +31.5]; accuracy -3.2 [-9.0, +2.7]
+
+Questions on which none of all six runs was truncated (n=220)
+                                 Run  IFS %  Accuracy %          IFS vs Base    Accuracy vs Base
+                                Base   13.6        86.8                                         
+               SFT GPT-5.2 (seed 42)   37.7        73.6 +24.1 [+17.3, +30.9] -13.2 [-19.1, -7.3]
+                   Self-distillation   14.5        87.3    +0.9 [-3.6, +5.0]   +0.5 [-2.7, +3.6]
+Sonnet 4.5 teacher (GPT-5.2 prompts)   11.8        85.9    -1.8 [-5.9, +2.3]   -0.9 [-5.0, +3.2]
+                      s1K Claude 3.7   38.2        77.3 +24.5 [+17.7, +30.9]  -9.5 [-15.5, -3.6]
+                     s1K DeepSeek R1   12.7        80.0    -0.9 [-5.5, +3.6]  -6.8 [-12.3, -1.8]
+  Claude 3.7 student minus R1 student: IFS +25.5 [+19.5, +31.8]; accuracy -2.7 [-8.6, +3.2]

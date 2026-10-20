@@ -87,3 +87,33 @@ extra.append(f"\nWithout the word-limit constraint (n={int(nw.sum())}): Claude 3
 print("\n".join(extra))
 with open(F.RES / "summary_tables/reasonif_s1k_teacher.txt", "a", encoding="utf-8") as fh:
     fh.write("\n".join(extra) + "\n")
+
+
+def trunc(p):
+    d = pd.DataFrame([json.loads(x) for x in p.read_text(encoding="utf-8").split("\n") if x.strip()]).sort_values("dataset_index")
+    return d.truncated.astype(str).str.lower().eq("true").to_numpy()
+
+
+T = {k: trunc(p) for k, p in PATHS.items()}
+extra = ["\nTruncation (hit the 16,384-token limit) and scores within truncated / complete responses"]
+for k in D:
+    t = T[k]
+    extra.append(f"  {k}: truncated {int(t.sum())}/300; IFS truncated {100 * D[k].ifs[t].mean() if t.any() else float('nan'):.1f}, "
+                 f"complete {100 * D[k].ifs[~t].mean():.1f}; accuracy truncated {100 * D[k].acc[t].mean() if t.any() else float('nan'):.1f}, "
+                 f"complete {100 * D[k].acc[~t].mean():.1f}")
+for name, ks in (("Base, Claude 3.7 student and R1 student", ["Base", "s1K Claude 3.7", "s1K DeepSeek R1"]),
+                 ("all six runs", list(D))):
+    keep = ~np.any([T[k] for k in ks], axis=0)
+    extra.append(f"\nQuestions on which none of {name} was truncated (n={int(keep.sum())})")
+    rows = []
+    for k in D:
+        row = {"Run": k, "IFS %": round(100 * D[k].ifs[keep].mean(), 1), "Accuracy %": round(100 * D[k].acc[keep].mean(), 1)}
+        if k != "Base":
+            row["IFS vs Base"] = diff(D["Base"], D[k], "ifs", keep)
+            row["Accuracy vs Base"] = diff(D["Base"], D[k], "acc", keep)
+        rows.append(row)
+    extra.append(pd.DataFrame(rows).fillna("").to_string(index=False))
+    extra.append(f"  Claude 3.7 student minus R1 student: IFS {diff(r, c, 'ifs', keep)}; accuracy {diff(r, c, 'acc', keep)}")
+print("\n".join(extra))
+with open(F.RES / "summary_tables/reasonif_s1k_teacher.txt", "a", encoding="utf-8") as fh:
+    fh.write("\n".join(extra) + "\n")
