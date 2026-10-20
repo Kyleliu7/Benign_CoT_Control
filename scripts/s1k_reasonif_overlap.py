@@ -49,13 +49,14 @@ for name, pool in (("all_1000", S), ("used_212", [s for s in S if s[0] in used])
     rows = []
     for r in rif:
         shared, best, exact = check(r["question"], pool)
-        rows.append({"source": r["source"], "shared_8gram": shared, "max_share": best, "exact": exact})
+        rows.append({"source": r["source"], "shared_8gram": shared, "max_share": best, "exact": exact, "dataset_index": r["dataset_index"]})
     df = pd.DataFrame(rows)
     out[name] = {"reasonif_with_shared_8gram": int(df.shared_8gram.sum()), "reasonif_with_half_8grams_in_one_s1k_question": int((df.max_share >= 0.5).sum()),
                  "reasonif_exact": int(df.exact.sum()),
                  "by_source_shared": {k: int(v) for k, v in df[df.shared_8gram].source.value_counts().items()},
                  "by_source_half": {k: int(v) for k, v in df[df.max_share >= 0.5].source.value_counts().items()},
-                 "cot_control_with_shared_8gram": sum(check(q, pool)[0] for q in cot)}
+                 "cot_control_with_shared_8gram": sum(check(q, pool)[0] for q in cot),
+                 "dataset_index_shared_8gram_or_exact": sorted(int(i) for i in df[df.shared_8gram | df.exact].dataset_index)}
 out["reasonif_sources"] = dict(Counter(r["source"] for r in rif))
 (REPO / "results/summary_tables/s1k_reasonif_overlap.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
 print(json.dumps(out, indent=1))

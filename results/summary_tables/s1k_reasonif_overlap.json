@@ -11,7 +11,46 @@
   "by_source_half": {
    "aime": 4
   },
-  "cot_control_with_shared_8gram": 0
+  "cot_control_with_shared_8gram": 0,
+  "dataset_index_shared_8gram_or_exact": [
+   4,
+   11,
+   38,
+   47,
+   66,
+   69,
+   70,
+   72,
+   75,
+   87,
+   88,
+   92,
+   95,
+   115,
+   118,
+   129,
+   146,
+   148,
+   149,
+   154,
+   164,
+   168,
+   172,
+   176,
+   178,
+   199,
+   201,
+   219,
+   228,
+   231,
+   236,
+   251,
+   260,
+   276,
+   277,
+   287,
+   291
+  ]
  },
  "used_212": {
   "reasonif_with_shared_8gram": 24,
@@ -25,7 +64,33 @@
   "by_source_half": {
    "aime": 1
   },
-  "cot_control_with_shared_8gram": 0
+  "cot_control_with_shared_8gram": 0,
+  "dataset_index_shared_8gram_or_exact": [
+   11,
+   38,
+   69,
+   70,
+   72,
+   87,
+   129,
+   146,
+   148,
+   149,
+   154,
+   164,
+   168,
+   178,
+   199,
+   201,
+   219,
+   228,
+   231,
+   236,
+   251,
+   260,
+   277,
+   291
+  ]
  },
  "reasonif_sources": {
   "aime": 61,

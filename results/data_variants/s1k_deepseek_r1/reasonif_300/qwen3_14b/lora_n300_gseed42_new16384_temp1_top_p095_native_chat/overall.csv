@@ -1,0 +1,2 @@
+model,questions,instruction_following,answer_correct,joint_success,format_valid,missing_answer,truncated,mean_output_tokens,median_output_tokens
+qwen3-14b-s1k_deepseek_r1,300,0.13,0.7066666666666667,0.09,0.7033333333333334,0.2966666666666667,0.06,4003.963333333333,1874.5
