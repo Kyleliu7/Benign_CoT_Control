@@ -1,0 +1,14 @@
+ReasonIF responses (300 questions)
+                        ReasonIF run  Reasoning words mean  Reasoning words median  Answer words mean  Output tokens mean  Truncated
+                                Base                  2352                     920                151                4402         19
+                         SFT GPT-5.2                  1033                     289                 94                2024          6
+Sonnet 4.5 teacher (GPT-5.2 prompts)                  1801                     526                125                3515         13
+                      s1K Claude 3.7                  2897                     553                 85                5708         73
+                     s1K DeepSeek R1                  2075                    1018                 74                4004         18
+
+Training data
+                            Training data (212 examples)  Reasoning words median Reasoning words mean  Answer words median
+        GPT-5.2 summaries (software-engineering prompts)                     180                  222                 1387
+                           s1K Claude 3.7 (math/science)                    3929                 3833                  291
+                          s1K DeepSeek R1 (math/science)                    2728                 3174                  255
+Sonnet 4.5 (software-engineering prompts; VM inspection)                      68                                      2247
