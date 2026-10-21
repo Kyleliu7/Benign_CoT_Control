@@ -1,0 +1,8 @@
+commit 09ab1e1
+SFT42=/home/kyleliu789/.cache/huggingface/hub/models--kyleliu789--qwen3-14b-gpt52-high-reasoning-original/snapshots/2ab1f5bfd74447cb3616be9004e286f677273502
+PHI=/home/kyleliu789/.cache/huggingface/hub/models--kyleliu789--phi4-reasoning-14b-gpt52-high-reasoning-original/snapshots/eb831e623581632779d515558686d6975c4fa0b4
+Q35=/home/kyleliu789/.cache/huggingface/hub/models--kyleliu789--qwen3.5-9b-gpt52-high-reasoning-original/snapshots/3082d3000b91a25bee02eb50ac644ca040a728d7
+first_token_probe.py added from commit fde5d13
+surprisal_by_segment.py, sample_openings.py, qwen35_steps.sh updated from commit 4be9dfa
+mechanism scripts and mechanism_chain2.sh updated from commit b5e6a46
+probe/sampler and mechanism_chain3.sh from commit f081982

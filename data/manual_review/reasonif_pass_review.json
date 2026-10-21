@@ -1,0 +1,146 @@
+{
+  "description": "Manual review of ReasonIF instruction-following passes whose reasoning could be empty or incoherent. Candidates: every pass of a language constraint whose target language is not English, and every pass whose reasoning has fewer than 20 words (CJK characters counted as words). Each candidate was read; only passes judged 'no_reasoning' (the reasoning is a heading, a boilerplate sentence or unrelated text) or 'incoherent' (word salad) are listed in 'excluded'. All other candidates were kept, including short but genuine explanations (e.g. 18-word answers to word-limit items) and traces with some garbled fragments. Grader output is unchanged; this file only drives the sensitivity rows in table30.",
+  "reviewer": "AI assistant (Claude), 2026-10-11; verdicts to be confirmed by the author",
+  "excluded": {
+    "qwen3_14b/seed42": {
+      "62": [
+        "no_reasoning",
+        "reasoning is only '**Answer**' (word-limit item)"
+      ],
+      "94": [
+        "no_reasoning",
+        "reasoning is only '**Final Answer** \\boxed{200}'"
+      ],
+      "97": [
+        "no_reasoning",
+        "reasoning is only '**Answer**' (no-comma item)"
+      ],
+      "166": [
+        "no_reasoning",
+        "reasoning is only 'Legend'"
+      ],
+      "188": [
+        "no_reasoning",
+        "French text is a fake model-timing table, not reasoning about the question"
+      ],
+      "234": [
+        "no_reasoning",
+        "reasoning is only '**Final Answer**'"
+      ]
+    },
+    "qwen3_14b/seed1": {
+      "57": [
+        "no_reasoning",
+        "reasoning is only '**Final Answer**'"
+      ],
+      "62": [
+        "no_reasoning",
+        "reasoning is only '**Answer**'"
+      ],
+      "94": [
+        "no_reasoning",
+        "reasoning is only '**Final Answer** \\boxed{200}'"
+      ],
+      "106": [
+        "no_reasoning",
+        "reasoning is only '**Problem Analysis**'"
+      ],
+      "166": [
+        "no_reasoning",
+        "reasoning is only 'Legend'"
+      ],
+      "188": [
+        "no_reasoning",
+        "French text is a fake model-timing table"
+      ],
+      "234": [
+        "no_reasoning",
+        "reasoning is only '**Final Answer**'"
+      ]
+    },
+    "qwen3_14b/seed2": {
+      "57": [
+        "no_reasoning",
+        "reasoning is only '**Final Answer**'"
+      ],
+      "94": [
+        "no_reasoning",
+        "reasoning is only '**Final Answer** \\boxed{200}'"
+      ],
+      "106": [
+        "no_reasoning",
+        "reasoning is only '**Problem Analysis**'"
+      ],
+      "188": [
+        "no_reasoning",
+        "French text is a fake model-timing table"
+      ],
+      "234": [
+        "no_reasoning",
+        "reasoning is only '**Final Answer**'"
+      ]
+    },
+    "phi4_reasoning/sft": {
+      "77": [
+        "no_reasoning",
+        "reasoning is a generic 'I'm not a legal/financial/medical professional' disclaimer"
+      ]
+    },
+    "olmo3_7b_think/sft_lr1e-4": {
+      "41": [
+        "incoherent",
+        "Arabic word salad unrelated to the problem, then English"
+      ]
+    },
+    "olmo3_7b_think/sft_lr2e-4": {
+      "44": [
+        "incoherent",
+        "French-English word salad ('Compring prevoit le bromisation de la cev datetime 1 ...')"
+      ],
+      "71": [
+        "no_reasoning",
+        "18 words of mixed-language filler ('Answering in French ... write the final answer')"
+      ],
+      "92": [
+        "no_reasoning",
+        "reasoning is only '**Answer**' (no-comma item)"
+      ],
+      "289": [
+        "no_reasoning",
+        "reasoning is only '**REASONING**' (all-capitals item)"
+      ]
+    }
+  },
+  "kept_but_noted": {
+    "olmo3_7b_think/base": {
+      "266": "Russian with garbled fragments ('Schema за_rq'), then coherent arithmetic"
+    },
+    "olmo3_7b_think/sft_lr1e-4": {
+      "127": "Arabic, partly muddled but on-topic",
+      "141": "Russian with garbled fragments",
+      "266": "Russian with garbled fragments"
+    },
+    "phi4_reasoning/sft": {
+      "18": "French drifting into English, passes the language detector",
+      "44": "mostly English chemistry with French phrases, passes the language detector",
+      "192": "15-word answer statement (word-limit item)"
+    },
+    "qwen3_14b/seed42": {
+      "242": "18-word genuine explanation (word-limit item)"
+    },
+    "qwen3_14b/seed1": {
+      "101": "18-word genuine explanation",
+      "242": "18-word genuine explanation"
+    },
+    "qwen3_14b/seed2": {
+      "242": "18-word genuine explanation"
+    },
+    "olmo3_7b_think/sft_lr2e-4": {
+      "18": "opens with '**Final Answer** \\boxed{211}' but then reasons in French for ~10k words",
+      "127": "Arabic reasoning on topic but semantically garbled; kept (not word salad)",
+      "41": "switches from Arabic to English mid-trace; grader output unchanged",
+      "223": "Chinese reasoning followed by an English check; grader output unchanged"
+    }
+  },
+  "reviewer_olmo_lr2e-4": "AI assistant (Claude), 2026-10-13; same candidate rule and verdict categories as above; verdicts to be confirmed by the author"
+}

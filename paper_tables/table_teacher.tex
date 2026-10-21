@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering\small
+\caption{Does the teacher matter? Qwen3-14B fine-tuned with the reported recipe on reasoning from different teachers (one run each). CoT-Control on the seven non-character tasks; gains over Base.}\label{tab:teacher}
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lllrllllrr}
+\toprule
+Teacher & Prompts & Teacher stylistic / addition (\%) & 7-task mean & Gain [95\% CI] & Gain, first 100 words & Gain, degenerate $=0$ & 10-task gain & Median words & Hit cap \\
+\midrule
+Base (no fine-tuning) & -- & -- & 13.55 & -- & -- & -- & -- & 380 & 25 \\
+Claude 3.7 Sonnet reasoning & s1K, 212 questions & 51.1 / 49.9 & 20.98 & +7.43 [4.89, 10.14] & +9.07 [5.93, 12.22] & +7.72 [5.28, 10.37] & +2.55 [0.32, 4.89] & 426 & 137 \\
+DeepSeek R1 reasoning & s1K, 212 questions & 0.2 / 0.0 & 13.86 & +0.31 [$-$1.05, 1.61] & +1.02 [$-$0.63, 2.71] & +0.59 [$-$0.61, 1.79] & $-$3.62 [$-$5.22, $-$1.98] & 395 & 18 \\
+Claude Sonnet 4.5 reasoning & GPT-5.2 prompts & 0.2 / 0.0 & 25.68 & +12.13 [9.31, 15.01] & +5.88 [2.59, 9.60] & +6.70 [4.41, 9.14] & +12.19 [9.63, 14.73] & 225 & 16 \\
+Qwen3-14B's own reasoning & GPT-5.2 prompts & 0.1 / 0.0 & 14.53 & +0.98 [$-$0.22, 2.30] & +0.31 [$-$1.04, 1.63] & +1.27 [0.28, 2.47] & $-$3.22 [$-$4.87, $-$1.49] & 396 & 31 \\
+GPT-5.2 reasoning summaries (reported adapter) & GPT-5.2 prompts &  & 19.71 & +6.16 [3.73, 8.80] & +4.50 [1.78, 7.86] & +6.16 [3.87, 8.67] & +8.71 [5.80, 11.68] & 194 & 13 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip\begin{minipage}{0.97\linewidth}\footnotesize Teacher controllability: stylistic-modification and addition compliance from \citet[Table 2]{chen2026cotcontrol} (GPT-5.2 is not in that table). The s1K sets pair the same 212 questions of \texttt{simplescaling/s1K-claude-3-7-sonnet} and \texttt{simplescaling/s1K-1.1} with each teacher's raw reasoning and answer (training cutoff 12,288 tokens, batch $1\times8$; questions sharing an 8-gram with CoT-Control excluded); the other rows use the 212 GPT-5.2 prompts. Hit cap: traces (of 500) that reached the 3,000-token limit. Paired differences with cluster-bootstrap intervals over the 50 questions.\end{minipage}
+\end{table*}

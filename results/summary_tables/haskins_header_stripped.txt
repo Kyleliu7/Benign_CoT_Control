@@ -1,0 +1,22 @@
+                Model Leading header  Mean raw  Mean header-stripped  Strict raw  Strict header-stripped Gain vs Base, stripped [95% CI]
+                 Base          0/500     15.50                 15.50          23                      23                             NaN
+          SFT seed 42        480/500     24.21                 27.27          80                     112          +11.77 [+8.29, +15.44]
+           SFT seed 1        496/500     25.95                 28.65          87                     117          +13.16 [+9.76, +16.71]
+           SFT seed 2        471/500     26.79                 29.13          95                     110         +13.64 [+10.63, +16.81]
+SFT header transplant        490/500     27.47                 28.07          95                     109         +12.57 [+10.40, +14.85]
+   SFT neutral header        500/500      8.73                  8.21          15                      18            -7.28 [-9.61, -4.82]
+       SFT no headers          0/500     13.50                 13.50          38                      38            -2.00 [-4.16, +0.18]
+
+Per task, header-stripped mean (%)
+                           Base  SFT seed 42  SFT seed 1  SFT seed 2  SFT header transplant  SFT neutral header  SFT no headers
+task                                                                                                                           
+alternating_case           11.5         15.5        18.8        19.4                   11.2                10.8            11.3
+arrow_prefix                0.0          0.0         0.0         0.7                    6.6                 0.0             0.0
+end_of_sentence             0.0         10.0         6.0         6.0                    0.0                 0.0             0.0
+lowercase_thinking         45.7         49.5        58.9        61.3                   87.2                 1.4             3.8
+meow_between_words          2.0         22.0        20.0        24.0                   12.0                 0.0             2.0
+multiple_word_suppression   4.0         12.0         8.0         8.0                    2.0                 8.0            10.0
+repeat_sentences            0.0          4.3         2.6         6.9                    0.7                 0.2             2.5
+third_person               84.8         98.1        98.7        91.3                   97.9                38.5            57.3
+uppercase_thinking          2.9         39.3        49.6        47.6                   53.1                 7.2            34.1
+word_suppression            4.0         22.0        24.0        26.0                   10.0                16.0            14.0

@@ -1,0 +1,14 @@
+{
+  "RESULTS_SUMMARY.md": "0b6cbb78e261789515a70dd1d13f59cca8b3278164f9bfa3a6e6e52eefdd042a",
+  "by_constraint.csv": "2ff2b49e64fd7547d49a6c5f0bdfb03af4d4333557569e0cf2e59d934ace2520",
+  "by_source.csv": "26ec9085f37e9fb13d1b4e0ee95c3e31eebd3569155fb0b6f9a016bee50f7588",
+  "overall.csv": "b86312a1142e1a3f7f57c021891d6f0dd28325ebc546c70bd17a092fb9c4ae38",
+  "overall.json": "b97b11ee24c6bf3c5c8c2e76c26ec6f4a9a10295d68b59f209e4b395ab66097d",
+  "overall_metrics_with_ci95.csv": "9fb7840d0d22fe9abd335588295f41ed0e482187894eb256164abd49835bc773",
+  "prompt_audit.json": "13188409f153d255bdc410b9512a0d1a3d28783a58c41d2222a4a7d6207f8d44",
+  "raw_responses.jsonl": "d2dc84efba33e3884a7473d2383815db450fa29db50327de62c9918695383a51",
+  "reasonif_category_analysis.png": "6f4453a6a584f486b70cad9fc23f1546ebb9e1a4c31aca312322dbc67844ee7e",
+  "reasonif_dataset_after_official_preparation.json": "1b4da62655e4f2f41f3356fce4a40175c4e9a900dafbf64911fcb4216dc7ac58",
+  "run_manifest.json": "e7b3337a33f59cfda02a0b2cd5ad15d0032bfb6e4f40a1b0f7b9d03b61f07a45",
+  "scored_responses.jsonl": "8f844c9bda41832e1b18c8ac018da19dda5b29aa005985864ed932ac60cd2941"
+}

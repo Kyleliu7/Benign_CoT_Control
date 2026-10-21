@@ -1,0 +1,2 @@
+model,questions,instruction_following,answer_correct,joint_success,format_valid,missing_answer,truncated,mean_output_tokens,median_output_tokens
+olmo3-7b-think-gpt52-high-reasoning-original-lr2e-4,300,0.20333333333333334,0.59,0.14333333333333334,0.44666666666666666,0.5533333333333333,0.14666666666666667,5809.033333333334,2692.5

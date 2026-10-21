@@ -96,11 +96,10 @@ fig1 = pd.read_csv(REPO / "reproducible_figures" / "figure1_haskins_crossed_sour
 # ----------------------------------------------------------------------------------------------- Table 1
 rows = []
 for r in t1.itertuples():
-    rows.append([f"{r.Model.split('-')[0]} {r.Condition.replace(' (continuation-scored)', '').replace(' (Untouched)', '').replace(' (gpt52-high)', '')}"
-                 + (r"$^\dagger$" if "aggregate" in r.Status else ""),
+    name = f"{r.Model.split('-')[0]} {r.Condition.replace(' (continuation-scored)', '').replace(' (Untouched)', '').replace(' (gpt52-high)', '')}"
+    rows.append([R(esc(name) + r"$^\dagger$") if "aggregate" in r.Status else name,
                  f"{r.IFS_Pct} ({r.IFS_Count})", f"{r.Acc_Pct} ({r.Acc_Count})", f"{r.Joint_Pct} ({r.Joint_Count})",
                  f"{float(r.Mean_Tokens):,.1f}", r.Truncated])
-rows = [[R(esc(c)) if i == 0 and "dagger" in str(c) else c for i, c in enumerate(row)] for row in rows]
 write("t1_reasonif", "ReasonIF outcomes (300 questions per condition). Percent with counts. Prefix rows are scored on the recipient continuation only.",
       "tab:reasonif", "lrrrrr", ["Condition", "IFS", "Accuracy", "Joint", "Mean tokens", "Truncated"], rows,
       note=r"IFS: all instructions followed. Joint: IFS and correct answer. $^\dagger$ Aggregate CSV only; raw records for the Phi prefix runs are not in the "
@@ -246,9 +245,9 @@ for name, f in files:
     rows.append([name, f"{tk.mean():,.1f}", f"{np.median(tk):,.1f}", sum(truthy(r.get("truncated")) for r in rec)])
 for name, folder in (("Phi Prefix-OFF", "prefix_off"), ("Phi Prefix-ON", "prefix_on")):
     d = pd.read_csv(p / folder / "overall.csv").iloc[0]
-    rows.append([name + r"$^\dagger$", f"{d.mean_output_tokens:,.1f}", f"{d.median_output_tokens:,.1f}", round(d.truncated * d.questions)])
+    rows.append([R(esc(name) + r"$^\dagger$"), f"{d.mean_output_tokens:,.1f}", f"{d.median_output_tokens:,.1f}", round(d.truncated * d.questions)])
 write("a1_reasonif_length", "ReasonIF output length and truncation.", "tab:reasonif-length", "lrrr", ["Condition", "Mean tokens", "Median tokens", "Truncated / 300"],
-      [[R(esc(c)) if i == 0 and "dagger" in str(c) else c for i, c in enumerate(row)] for row in rows],
+      rows,
       note=r"Total output tokens as recorded (not reasoning-only, not donor plus recipient cost). $^\dagger$ aggregate CSV only.")
 
 # ----------------------------------------------------------------------------------------------- Appendix: per task
@@ -370,4 +369,117 @@ rows.sort(key=lambda x: (x[0] != "Qwen", x[1]))
 write("a16_prefix_by_task", "SFT$\\to$Base continuation score split by whether the SFT-donor opening names or demonstrates the constraint, within task (tasks with at least five items in each group).", "tab:prefix-by-task",
       "llrrrrr", ["Model", "Task", "Names (n)", "Mean", "Does not (n)", "Mean", "Difference"], rows,
       note=r"Observational. The indicator is a regular expression on the ten-token opening. Third person is at ceiling in both groups; meow is near floor under the binary rule.")
+# ----------------------------------------------------------------------------------------------- Fixed-opening controls (Section 5.4, appendix)
+t16 = pd.read_csv(T / "table16_prefix_controls.csv")
+t16b = pd.read_csv(T / "table16b_prefix_controls_per_task.csv")
+t17 = pd.read_csv(T / "table17_prefix_length.csv")
+def dcell(est, ci):
+    if str(est) == "nan":
+        return "--"
+    return R(("%+.2f %s" % (float(est), ci)).replace("-", "$-$"))
+rows = [[r.Condition, f2(r.Continuation_Mean), int(r.Strict_Count), dcell(r.Diff_vs_BB, r.Diff_vs_BB_CI95), dcell(r.Diff_vs_SB, r.Diff_vs_SB_CI95)] for r in t16.itertuples()]
+write("t12_controls", "Qwen3-14B base recipient continuing from a fixed ten-token opening (eight style tasks, 400 items per condition, continuation scored).", "tab:controls",
+      "lrrll", ["Opening", "Mean", "Strict", "Difference from base donor (95\\% CI)", "Difference from SFT donor (95\\% CI)"], rows, rule_after=(1,),
+      note=r"Paired differences in percentage points with cluster-bootstrap intervals over the 50 questions (10{,}000 resamples, seed 42). The two suppression tasks are excluded. "
+           r"Base donor and SFT donor are the Base$\to$Base and SFT$\to$Base crossed runs restricted to the same eight tasks. Openings are listed in Appendix Table~\ref{tab:control-openings}.")
+cols = list(t16b.columns[1:])
+short = {"Base donor (reference)": "Base donor", "SFT donor (reference)": "SFT donor", "Handcrafted, obeys the rule": "Obeys rule", "Names the rule only": "Names rule",
+         "Obeys a different rule": "Wrong rule", "SFT-donor opening of another question": "Other question",
+         "Most frequent SFT opening of the task (same for every question)": "Modal SFT"}
+rows = [[TASK_NAMES.get(r.Task, r.Task)] + [f2(getattr(r, "_%d" % (i + 2))) if False else f2(v) for i, v in enumerate(r[2:])] for r in t16b.itertuples()]
+write("a17_controls_per_task", "Fixed-opening controls by task: continuation score of the Qwen3-14B base recipient (50 items per cell).", "tab:controls-task",
+      "l" + "r" * len(cols), ["Task"] + [short.get(c, c) for c in cols], rows,
+      note=r"Binary scoring for end of sentence and meow, fractional for the other tasks. Third person is at ceiling and repeat sentences at floor in every condition.")
+rows = [[int(r.Opening_Tokens), f2(r.Continuation_Mean), f2(r.Continuation_Mean_Excluding_Finished), f2(r.Full_Trace_Mean), int(r.Strict_Continuation), int(r.Donor_Finished_Inside_Opening)] for r in t17.itertuples()]
+write("a18_prefix_length", "SFT donor writes the first $N$ tokens (including the opening think token), the unchanged base model continues (eight style tasks, 400 items).", "tab:prefix-length",
+      "rrrrrr", ["$N$", "Continuation mean", "Without finished openings", "Prefix + continuation", "Strict", "Donor finished in opening"], rows,
+      note=r"Continuation means are scored on different windows (the continuation starts after token $N$). ``Finished'' counts openings that already contain the closing think tag.")
+import json as _json
+ctrl = _json.loads((REPO / "data" / "prefix_controls" / "prefix_controls.json").read_text(encoding="utf-8"))
+order = ["third_person", "lowercase_thinking", "uppercase_thinking", "alternating_case", "meow_between_words", "end_of_sentence", "arrow_prefix", "repeat_sentences"]
+rows = [[TASK_NAMES.get(t, t), R(r"\texttt{" + esc(ctrl["conditions"]["handcrafted"][t].replace("\n\n", " [two newlines]")) + "}"), R(r"\texttt{" + esc(ctrl["conditions"]["named"][t]) + "}"),
+         TASK_NAMES.get(ctrl["mismatch_map"][t], ctrl["mismatch_map"][t])] for t in order]
+write("a19_control_openings", "Fixed openings used in the control runs (text after the opening think token).", "tab:control-openings", "lp{4.6cm}p{4.6cm}l",
+      ["Task", "Obeys the rule", "Names the rule only", "Wrong-rule opening taken from"], rows,
+      note=r"Each text is at most nine tokens (checked with the Qwen3 tokenizer before any generation). The wrong-rule condition gives each task the obeying opening of the next task in the list. "
+           r"The other-question condition uses the SFT-donor opening generated for question $(q+17) \bmod 50$ of the same task; the modal condition uses each task's most frequent SFT-donor opening.")
+
+# ----------------------------------------------------------------------------------------------- Follow-ups (2026-10-10/11)
+def _opt(name):
+    p = T / name
+    return pd.read_csv(p, keep_default_na=False) if p.exists() else None
+
+
+def gcell(est, ci_text):
+    return "--" if str(est) == "" else R(("%+.2f %s" % (float(est), ci_text)).replace("-", "$-$"))
+
+
+t26 = _opt("table26_training_seeds.csv")
+if t26 is not None:
+    rows = [[r.Condition, f2(r.Haskins_Mean), int(r.Haskins_Strict), gcell(r.Haskins_Gain_Full, r.Haskins_Gain_Full_CI),
+             gcell(r.Haskins_Gain_First100, r.Haskins_Gain_First100_CI), f1(r.ReasonIF_IFS_Pct),
+             gcell(r.ReasonIF_IFS_Gain, r.ReasonIF_IFS_Gain_CI), f1(r.ReasonIF_Accuracy_Pct)] for r in t26.itertuples()]
+    write("t13_training_seeds", "Qwen3-14B SFT with three training seeds: standalone Haskins (500 pairs) and ReasonIF (300 questions).", "tab:seeds",
+          "lrrllrlr", ["Condition", "Haskins mean", "Strict", "Gain vs Base", "Gain, first 100 words", "ReasonIF IFS (\\%)", "IFS gain vs Base", "Accuracy (\\%)"], rows,
+          note=r"Seed 42 is the published adapter. Only the training seed differs (LoRA initialisation, data order, dropout); the validation split, hyperparameters, "
+               r"checkpoint rule (lowest validation loss; step 70 for every seed) and evaluation sampling seeds are identical. Gains are paired differences in percentage points "
+               r"with 95\% bootstrap intervals over questions (Haskins: 50-question cluster bootstrap; first-100-words rows keep pairs in which both traces reach 100 words).")
+t28 = _opt("table28_olmo_summary.csv")
+if t28 is not None:
+    rows = []
+    for r in t28.itertuples():
+        rows.append([r.Run, f2(r.Haskins_Mean), f"{int(r.Haskins_Strict)} ({int(r.Haskins_Strict_Degenerate)})", int(r.Haskins_Degenerate_Traces),
+                     f2(r.Haskins_Mean_Degenerate_Scored_0), int(r.Haskins_Starts_Bold_Heading), f"{float(r.Haskins_Median_Words):.0f}",
+                     gcell(r.Gain_Full, r.Gain_Full_CI), gcell(r.Gain_Degenerate_Scored_0, r.Gain_Degenerate_Scored_0_CI),
+                     gcell(r.Gain_First100_Case, r.Gain_First100_Case_CI),
+                     "--" if str(r.ReasonIF_IFS) == "" else f"{int(r.ReasonIF_IFS)} / {int(r.ReasonIF_Accuracy)}"])
+    write("a20_olmo_summary", "OLMo-3-7B-Think: Base and two SFT runs on the same 212 examples (standalone Haskins, 500 pairs; ReasonIF, 300 questions).", "tab:olmo",
+          "lrrrrrrllll", ["Run", "Mean", "Strict (degen.)", "Degen. traces", "Mean, degen. = 0", "Opens with heading", "Median words",
+                          "Gain vs Base", "Gain, degen. = 0", "Gain, case tasks, first 100 words", "ReasonIF IFS / correct"], rows,
+          note=r"lr 1e-4 is the Qwen3-14B recipe; lr 2e-4 was chosen after seeing the lr 1e-4 result and was evaluated on Haskins only. A trace is degenerate if its reasoning has "
+               r"fewer than 20 words or, for meow, more than 90\% of its words are ``meow'' (post-hoc rule). Case tasks are lowercase, uppercase and alternating case. "
+               r"Gains are paired differences with 50-question cluster-bootstrap 95\% intervals.")
+t27 = _opt("table27_olmo_haskins_per_task.csv")
+if t27 is not None:
+    rows = [[TASK_NAMES.get(r["Task"], r["Task"]), r["Grading"], f1(r["Mean_Base"]), f1(r["Mean_SFT_lr1e-4"]), f1(r["Mean_SFT_lr2e-4"]), int(r["Strict_Base"]),
+             f"{int(r['Strict_SFT_lr1e-4'])} ({int(r['Strict_Degenerate_SFT_lr1e-4'])})", f"{int(r['Strict_SFT_lr2e-4'])} ({int(r['Strict_Degenerate_SFT_lr2e-4'])})"]
+            for r in t27.to_dict("records")]
+    write("a21_olmo_per_task", "OLMo-3-7B-Think Haskins results by task (50 items per cell).", "tab:olmo-task", "llrrrrrr",
+          ["Task", "Grading", "Mean Base", "Mean lr 1e-4", "Mean lr 2e-4", "Strict Base", "Strict lr 1e-4 (degen.)", "Strict lr 2e-4 (degen.)"], rows)
+t29, t30 = _opt("table29_haskins_degenerate.csv"), _opt("table30_reasonif_excluded.csv")
+if t29 is not None and t30 is not None:
+    rows = [[r.Run, f2(r.Mean), f"{int(r.Strict)} ({int(r.Strict_Degenerate)})", int(r.Degenerate_Traces), f2(r.Mean_Degenerate_Scored_0)] for r in t29.itertuples()]
+    write("a22_haskins_degenerate", "Standalone Haskins runs: strict passes and means when degenerate reasoning traces are scored 0.", "tab:degenerate-haskins",
+          "lrrrr", ["Run", "Mean", "Strict (degenerate)", "Degenerate traces", "Mean, degenerate = 0"], rows,
+          note=r"Degenerate: reasoning with fewer than 20 words, or meow traces in which more than 90\% of the words are ``meow''. The rule was written after inspecting OLMo outputs.")
+    rows = [[r.Run, int(r.IFS), int(r.Excluded), R(r"\texttt{" + esc(str(r.Excluded_Items)) + "}") if str(r.Excluded_Items) else "--", f1(r.IFS_Pct), f1(r.IFS_Pct_Excluding),
+             "--" if str(r.Gain_vs_Base_Excluding) == "" else f1(r.Gain_vs_Base_Excluding)] for r in t30.itertuples()]
+    write("a23_reasonif_excluded", "ReasonIF instruction-following passes judged to contain no reasoning or incoherent text (manual review).", "tab:reasonif-excluded",
+          "lrrlrrr", ["Run", "IFS passes", "Excluded", "Items", "IFS (\\%)", "IFS excluding (\\%)", "Gain vs Base excluding"], rows,
+          note=r"Candidates were all passes of non-English language constraints and all passes with fewer than 20 words of reasoning; each was read, and only reasoning that is "
+               r"a heading, a boilerplate sentence, unrelated text or word salad was excluded (\texttt{data/manual\_review/reasonif\_pass\_review.json}). The grader output is unchanged.")
+t31 = _opt("table31_qwen_training_variants.csv")
+if t31 is not None:
+    t31 = t31[t31.Group != "excluded"]
+    groups = list(dict.fromkeys(t31.Group))
+    rows, rules = [], []
+    for g in groups:
+        for r in t31[t31.Group == g].itertuples():
+            rows.append([R(esc(r.Condition) + r" $^\dagger$") if r.Note else r.Condition, int(r.IFS), f1(r.IFS_Pct),
+                         "--" if str(r.IFS_Gain_vs_Base) == "" else gcell(r.IFS_Gain_vs_Base, r.IFS_Gain_CI), f1(r.Accuracy_Pct), f"{float(r.Mean_Tokens):,.0f}",
+                         int(r.Starts_Bold_Heading)])
+        rules.append(len(rows) - 1)
+    write("t14_training_variants", "Other Qwen3-14B fine-tunes on the same prompts, evaluated on ReasonIF (300 questions; one training run each).", "tab:variants",
+          "lrrlrrr", ["Training data", "IFS", "IFS (\\%)", "Gain vs Base (95\\% CI)", "Accuracy (\\%)", "Mean output tokens", "Opens with heading"], rows, rule_after=tuple(rules[:-1]),
+          note=r"All adapters use the reported recipe (LoRA $r=32$, learning rate $10^{-4}$, 3 epochs, seed 42, lowest-validation-loss checkpoint) and the same ReasonIF "
+               r"settings. "
+               r"$^\dagger$Evaluated with a standalone script with the same prompts and sampling settings. Gains are paired differences with bootstrap intervals over the 300 questions.")
+t23 = _opt("table23_length_controlled_curve.csv")
+if t23 is not None:
+    sub = t23[(t23.Basis == "paired: both traces reach L") & (t23.Length_Words.astype(str).isin(["100", "200", "300"]))]
+    rows = [[r.Model, r.Tasks, int(r.Length_Words), int(r.N_Base), f2(r.Base), f2(r.SFT), gcell(r.Gain, f"[{float(r.CI_Low):.2f}, {float(r.CI_High):.2f}]")] for r in sub.itertuples()]
+    write("a24_length_controlled", "Length-controlled controllability (standalone Haskins): every reasoning trace scored on its first $L$ words, pairs in which both traces reach $L$.",
+          "tab:length-controlled", "llrrrrl", ["Model", "Tasks", "$L$", "Pairs", "Base", "SFT", "SFT $-$ Base (95\\% CI)"], rows,
+          note=r"Following Chen et al.\ (2026, Sec.~5.3), compliance is computed from the first word up to word $L$. Seed-42 adapters; 50-question cluster-bootstrap intervals.")
+
 print("wrote", len(list(OUT.glob("*.tex"))), "tables to", OUT)

@@ -1,0 +1,2 @@
+model,questions,instruction_following,answer_correct,joint_success,format_valid,missing_answer,truncated,mean_output_tokens,median_output_tokens
+qwen3-14b-header_transplant,300,0.3466666666666667,0.62,0.23333333333333334,0.7166666666666667,0.2833333333333333,0.06666666666666667,3530.58,1038.5

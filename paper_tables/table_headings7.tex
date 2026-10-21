@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering\small
+\caption{Heading experiments (Qwen3-14B, one training run each except the reported adapter). CoT-Control is graded with a leading bold heading removed from every trace.}\label{tab:headings}
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lrrllrl}
+\toprule
+Training data & Opens with heading & 7-task mean & 7-task gain (95\% CI) & 10-task gain (95\% CI) & ReasonIF IFS (\%) & IFS gain (95\% CI) \\
+\midrule
+Base (no fine-tuning) & 0 & 13.55 & -- & -- & 14.0 & -- \\
+GPT-5.2 summaries (reported adapter) & 480 & 24.05 & +10.50 [7.24, 14.00] & +11.77 [8.29, 15.44] & 33.3 & +19.3 [13.7, 25.0] \\
+GPT-5.2 summaries, headings removed & 0 & 12.25 & $-$1.30 [$-$3.69, 1.18] & $-$2.00 [$-$4.16, 0.18] & 26.7 & +12.7 [7.7, 17.7] \\
+GPT-5.2 summaries, one fixed \texttt{**Reasoning**} heading & 500 & 8.95 & $-$4.60 [$-$7.09, $-$1.99] & $-$7.28 [$-$9.61, $-$4.82] & 38.0 & +24.0 [18.3, 29.7] \\
+Qwen3-235B-A22B reasoning (same prompts) & 0 & 13.48 & $-$0.07 [$-$1.44, 1.30] & $-$3.88 [$-$5.28, $-$2.52] & 18.0 & +4.0 [$-$0.3, 8.3] \\
+Qwen3-235B-A22B reasoning with the GPT-5.2 opening heading & 490 & 18.46 & +4.91 [2.84, 7.07] & +12.57 [10.40, 14.85] & 34.7 & +20.7 [15.0, 26.3] \\
+Qwen3-14B's own reasoning (self-distillation) & 0 & 14.53 & +0.98 [$-$0.22, 2.30] & $-$3.22 [$-$4.87, $-$1.49] & 15.0 & +1.0 [$-$2.7, 5.0] \\
+Qwen3-14B's own reasoning with the GPT-5.2 opening heading & 468 & 17.47 & +3.92 [1.75, 6.30] & +3.60 [0.82, 6.45] & 28.7 & +14.7 [9.3, 20.3] \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip\begin{minipage}{0.97\linewidth}\footnotesize Opens with heading: CoT-Control traces (of 500) whose reasoning starts with a bold heading. 7-task: the seven tasks that are not character-level (350 pairs); 10-task: all 500 pairs. CoT-Control gains are paired differences with cluster-bootstrap intervals over the 50 questions; ReasonIF gains with bootstrap intervals over the 300 questions. Same recipe for every adapter (LoRA $r=32$, learning rate $10^{-4}$, 3 epochs, seed 42, lowest-validation-loss checkpoint).\end{minipage}
+\end{table*}

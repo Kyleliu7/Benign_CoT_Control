@@ -1,0 +1,37 @@
+                  run               task  openings obeying  task mean  after obeying opening  after other opening  rest only, after obeying  rest only, after other
+                 Base lowercase_thinking                21       45.7                   97.9                  7.9                      97.8                     8.1
+                 Base uppercase_thinking                 0        2.9                    NaN                  2.9                       NaN                     3.2
+          SFT seed 42 lowercase_thinking                15       49.5                   84.5                 34.5                      84.5                    34.5
+          SFT seed 42 uppercase_thinking                 7       39.3                   58.4                 36.2                      58.4                    36.2
+           SFT seed 1 lowercase_thinking                17       58.9                   92.5                 41.5                      92.5                    41.5
+           SFT seed 1 uppercase_thinking                13       49.6                   74.3                 41.0                      74.3                    41.0
+           SFT seed 2 lowercase_thinking                24       61.3                   90.6                 34.3                      90.6                    34.3
+           SFT seed 2 uppercase_thinking                17       47.6                   81.7                 30.1                      81.7                    30.1
+SFT header transplant lowercase_thinking                42       87.2                   95.5                 43.3                      95.5                    43.3
+SFT header transplant uppercase_thinking                18       53.1                   72.7                 42.1                      72.7                    42.1
+   SFT neutral header lowercase_thinking                 0        1.4                    NaN                  1.4                       NaN                     1.4
+   SFT neutral header uppercase_thinking                 0        7.2                    NaN                  7.2                       NaN                     7.2
+       SFT no headers lowercase_thinking                 0        3.8                    NaN                  3.8                       NaN                     3.9
+       SFT no headers uppercase_thinking                17       34.1                   95.0                  2.7                      94.6                     2.8
+     SFT s1k claude37 lowercase_thinking                 4       16.0                   98.1                  8.8                      98.0                     9.1
+     SFT s1k claude37 uppercase_thinking                 0        4.0                    NaN                  4.0                       NaN                     4.1
+  SFT s1k deepseek r1 lowercase_thinking                 1        7.8                  100.0                  5.9                     100.0                     6.1
+  SFT s1k deepseek r1 uppercase_thinking                 0        1.7                    NaN                  1.7                       NaN                     1.8
+     SFT self headers lowercase_thinking                46       34.8                   37.7                  2.0                      37.7                     2.0
+     SFT self headers uppercase_thinking                30       22.3                   27.5                 14.6                      27.4                    14.6
+          output_mask lowercase_thinking                 0        1.3                    NaN                  1.3                       NaN                     1.3
+          output_mask uppercase_thinking                 0        0.2                    NaN                  0.2                       NaN                     0.2
+           think_mask lowercase_thinking                 7       17.3                   93.3                  4.9                      92.9                     5.0
+           think_mask uppercase_thinking                 0        1.1                    NaN                  1.1                       NaN                     1.2
+   teacher_qwen3_235b lowercase_thinking                 2        8.1                   98.5                  4.4                      98.5                     4.4
+   teacher_qwen3_235b uppercase_thinking                 0        2.2                    NaN                  2.2                       NaN                     2.2
+   teacher_sonnet_3_7 lowercase_thinking                30       59.2                   87.5                 16.8                      87.4                    17.4
+   teacher_sonnet_3_7 uppercase_thinking                 3       26.3                  100.0                 21.6                     100.0                    23.0
+   teacher_reasonflux lowercase_thinking                 0        4.9                    NaN                  4.9                       NaN                     4.9
+   teacher_reasonflux uppercase_thinking                 0        2.1                    NaN                  2.1                       NaN                     2.2
+         self_distill lowercase_thinking                 0        6.8                    NaN                  6.8                       NaN                     7.0
+         self_distill uppercase_thinking                 0        2.6                    NaN                  2.6                       NaN                     2.7
+lowercase_thinking: Spearman across 16 runs, obeying openings vs task mean: rho=0.91 (p=9.67e-07)
+uppercase_thinking: Spearman across 16 runs, obeying openings vs task mean: rho=0.82 (p=9.8e-05)
+runs with both kinds of opening: 18 | mean compliance after obeying vs other opening: 82.5 vs 21.8 | grading only the reasoning after the opening: 82.5 vs 22.0
+{'rho_lowercase_thinking': 0.91, 'n_runs': 16, 'rho_uppercase_thinking': 0.82, 'rest_after_obeying': 82.5, 'rest_after_other': 22.0, 'selfheaders_lower_obeying': 46, 'selfheaders_lower_after_obeying': 37.7}

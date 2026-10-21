@@ -1,0 +1,3 @@
+aggregate,complete,mean_compliance,strict_pass_rate
+all_10,True,0.11641013854689375,0.022000000000000002
+seven_non_character,True,0.14957395704196744,0.03142857142857143

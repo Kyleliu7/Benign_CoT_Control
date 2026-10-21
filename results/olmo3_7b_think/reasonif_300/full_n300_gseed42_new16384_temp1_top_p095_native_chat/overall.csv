@@ -1,0 +1,2 @@
+model,questions,instruction_following,answer_correct,joint_success,format_valid,missing_answer,truncated,mean_output_tokens,median_output_tokens
+Olmo-3-7B-Think,300,0.08333333333333333,0.5866666666666667,0.04,0.43,0.57,0.16666666666666666,6993.986666666667,5169.0

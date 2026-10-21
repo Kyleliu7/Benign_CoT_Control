@@ -1,0 +1,7 @@
+model,metric,successes,questions,rate,ci95_low,ci95_high
+olmo3-7b-think-gpt52-high-reasoning-original,instruction_following,35,300,0.11666666666666667,0.08509313461466292,0.15793314332415567
+olmo3-7b-think-gpt52-high-reasoning-original,answer_correct,178,300,0.5933333333333334,0.5369084052348393,0.6473982401365789
+olmo3-7b-think-gpt52-high-reasoning-original,joint_success,21,300,0.07,0.046236944827176336,0.10463601042593323
+olmo3-7b-think-gpt52-high-reasoning-original,format_valid,138,300,0.46,0.4044631474970939,0.5165482902008698
+olmo3-7b-think-gpt52-high-reasoning-original,missing_answer,162,300,0.54,0.4834517097991302,0.5955368525029061
+olmo3-7b-think-gpt52-high-reasoning-original,truncated,53,300,0.17666666666666667,0.13767670929949632,0.22383241209237675

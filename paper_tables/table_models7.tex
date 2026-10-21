@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering\small
+\caption{Base and SFT models on ReasonIF (300 questions) and CoT-Control. The CoT-Control columns use the seven tasks that are not character-level (350 question--task pairs), the composite that predicts obfuscation in \citet{haskins2026obfuscation}; the last column is the ten-task mean.}\label{tab:models}
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llrrrrllll}
+\toprule
+ & & \multicolumn{2}{c}{ReasonIF (\%)} & \multicolumn{5}{c}{CoT-Control, seven tasks} & \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-9}
+Model & Run & IFS & Accuracy & Mean & Strict & Gain [95\% CI] & Gain, first 100 words & Gain, degenerate $=0$ & 10-task mean \\
+\midrule
+Qwen3-14B & Base & 14.0 & 80.3 & 13.55 & 7 & -- & -- & -- & 15.50 \\
+ & SFT (seed 42) & 33.3 & 65.3 & 19.71 & 63 & +6.16 [3.73, 8.80] & +4.50 [1.78, 7.86] & +6.16 [3.87, 8.67] & 24.21 \\
+ & SFT (seed 1) & 33.7 & 59.3 & 19.02 & 63 & +5.47 [2.95, 7.86] & +3.94 [1.55, 6.48] & +5.47 [3.11, 7.67] & 25.95 \\
+ & SFT (seed 2) & 33.0 & 61.7 & 19.77 & 62 & +6.22 [3.88, 8.55] & +2.53 [0.46, 5.65] & +5.36 [3.36, 7.39] & 26.79 \\
+\midrule
+Phi-4-reasoning & Base & 5.0 & 75.3 & 12.40 & 13 & -- & -- & -- & 9.85 \\
+ & SFT & 12.0 & 69.0 & 20.66 & 62 & +8.27 [5.70, 10.89] & $-$0.50 [$-$4.56, 4.60] & +8.27 [5.70, 10.89] & 16.11 \\
+\midrule
+OLMo-3-7B-Think & Base & 8.3 & 58.7 & 13.39 & 3 & -- & -- & -- & 11.97 \\
+ & SFT & 11.7 & 59.3 & 14.09 & 9 & +0.70 [$-$0.78, 2.28] & +0.33 [$-$1.24, 1.85] & $-$1.01 [$-$1.90, $-$0.34] & 14.42 \\
+ & SFT, lr $2\times10^{-4}$ & 20.3 & 59.0 & 10.37 & 11 & $-$3.01 [$-$5.62, $-$0.16] & $-$2.82 [$-$5.41, $-$0.20] & $-$4.82 [$-$6.81, $-$2.54] & 13.81 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip\begin{minipage}{0.97\linewidth}\footnotesize Seed 42 is the reported Qwen adapter; seeds 1 and 2 change only the training seed. OLMo SFT uses the Qwen recipe; the learning rate $2\times10^{-4}$ run was added after the first result. Gains are paired differences in percentage points with 95\% cluster-bootstrap intervals over the 50 questions; the first-100-words column keeps only pairs in which both traces reach 100 words; the degenerate column scores degenerate traces (fewer than 20 words of reasoning, or more than 90\% ``meow'') as 0. Strict: pairs with a compliance score of exactly 1, out of 350.\end{minipage}
+\end{table*}

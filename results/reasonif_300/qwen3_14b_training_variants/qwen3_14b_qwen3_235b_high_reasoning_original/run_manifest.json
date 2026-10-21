@@ -1,0 +1,22 @@
+{
+  "evaluation_mode": "lora",
+  "model_id": "kyleliu789/qwen3-14b-qwen3-235b-high-reasoning-original",
+  "model_revision": "673fb00da946a25234f2943c5497915c95230cec",
+  "load_model_id": "Qwen/Qwen3-14B",
+  "load_model_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+  "lora_model_id": "kyleliu789/qwen3-14b-qwen3-235b-high-reasoning-original",
+  "lora_rank": 32,
+  "reasonif_commit": "706b953feb9408a802e1ad6972c10ad7fbad3da8",
+  "num_questions": 300,
+  "generation_seed_rule": "42 + dataset_index",
+  "temperature": 1.0,
+  "top_p": 0.95,
+  "max_input_tokens": 2048,
+  "max_new_tokens": 16384,
+  "max_model_len": 18432,
+  "dtype": "bfloat16",
+  "python": "3.12.14",
+  "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+  "maximum_observed_input_tokens": 837,
+  "vllm_version": "0.16.0"
+}

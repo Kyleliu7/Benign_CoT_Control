@@ -1,0 +1,2 @@
+model,questions,instruction_following,answer_correct,joint_success,format_valid,missing_answer,truncated,mean_output_tokens,median_output_tokens
+qwen3-14b-s1k_claude37,300,0.29333333333333333,0.5733333333333334,0.19333333333333333,0.67,0.33,0.24333333333333335,5708.366666666667,1167.5

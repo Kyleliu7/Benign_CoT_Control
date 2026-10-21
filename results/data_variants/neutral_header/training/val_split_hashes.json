@@ -1,0 +1,29 @@
+{
+ "split_seed": 42,
+ "n_val": 22,
+ "n_train": 190,
+ "hashes": [
+  "063402410275fea3",
+  "17504f442490dd3a",
+  "26d23918790424e6",
+  "2d0055d5f25ac734",
+  "4a4aaca7e6fe9aa6",
+  "56b9dcba0a5b14b5",
+  "5e697dfb4ee530be",
+  "5eb0827a545c87f7",
+  "5fcaf1098cf68559",
+  "64fa1ffd1bf993a7",
+  "6970a6383d827dbc",
+  "768c00b195395824",
+  "77a75b2879a2232a",
+  "7bcc1f97aa5637ef",
+  "7d30ba48ddb409a5",
+  "9c31da46b7f2761e",
+  "a0cf94356fc97567",
+  "a7d459c5b831dd5d",
+  "ad65f64ebd8196da",
+  "c0b907efb4af60c9",
+  "cc538b31a461360c",
+  "fce20fd62797634f"
+ ]
+}

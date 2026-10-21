@@ -1,0 +1,1801 @@
+run,dataset_index,constraint,stored,recomputed,header_stripped
+Base,0,punctuation:no_comma,False,False,False
+Base,1,language:reasoning_language,True,True,True
+Base,2,punctuation:no_comma,False,False,False
+Base,3,change_case:english_capital,False,False,False
+Base,4,length_constraint_checkers:number_words,False,False,False
+Base,5,length_constraint_checkers:number_words,False,False,False
+Base,6,length_constraint_checkers:number_words,False,False,False
+Base,7,punctuation:no_comma,False,False,False
+Base,8,language:reasoning_language,False,False,False
+Base,9,punctuation:no_comma,False,False,False
+Base,10,detectable_format:json_format,False,False,False
+Base,11,language:reasoning_language,False,False,False
+Base,12,startend:end_checker,False,False,False
+Base,13,language:reasoning_language,True,True,True
+Base,14,length_constraint_checkers:number_words,False,False,False
+Base,15,length_constraint_checkers:number_words,False,False,False
+Base,16,detectable_format:json_format,False,False,False
+Base,17,detectable_format:json_format,False,False,False
+Base,18,language:reasoning_language,False,False,False
+Base,19,length_constraint_checkers:number_words,False,False,False
+Base,20,punctuation:no_comma,False,False,False
+Base,21,punctuation:no_comma,False,False,False
+Base,22,punctuation:no_comma,False,False,False
+Base,23,detectable_format:json_format,False,False,False
+Base,24,startend:end_checker,True,True,True
+Base,25,startend:end_checker,False,False,False
+Base,26,change_case:english_capital,False,False,False
+Base,27,language:reasoning_language,False,False,False
+Base,28,length_constraint_checkers:number_words,False,False,False
+Base,29,punctuation:no_comma,False,False,False
+Base,30,startend:end_checker,False,False,False
+Base,31,change_case:english_capital,False,False,False
+Base,32,length_constraint_checkers:number_words,False,False,False
+Base,33,length_constraint_checkers:number_words,False,False,False
+Base,34,change_case:english_capital,False,False,False
+Base,35,language:reasoning_language,True,True,True
+Base,36,startend:end_checker,False,False,False
+Base,37,change_case:english_capital,False,False,False
+Base,38,change_case:english_capital,False,False,False
+Base,39,detectable_format:json_format,False,False,False
+Base,40,change_case:english_capital,False,False,False
+Base,41,language:reasoning_language,False,False,False
+Base,42,startend:end_checker,True,True,True
+Base,43,language:reasoning_language,False,False,False
+Base,44,language:reasoning_language,False,False,False
+Base,45,change_case:english_capital,False,False,False
+Base,46,punctuation:no_comma,False,False,False
+Base,47,detectable_format:json_format,False,False,False
+Base,48,change_case:english_capital,False,False,False
+Base,49,detectable_format:json_format,False,False,False
+Base,50,length_constraint_checkers:number_words,False,False,False
+Base,51,punctuation:no_comma,False,False,False
+Base,52,language:reasoning_language,True,True,True
+Base,53,punctuation:no_comma,False,False,False
+Base,54,length_constraint_checkers:number_words,False,False,False
+Base,55,change_case:english_capital,False,False,False
+Base,56,language:reasoning_language,False,False,False
+Base,57,length_constraint_checkers:number_words,False,False,False
+Base,58,language:reasoning_language,False,False,False
+Base,59,change_case:english_capital,False,False,False
+Base,60,startend:end_checker,False,False,False
+Base,61,change_case:english_capital,False,False,False
+Base,62,length_constraint_checkers:number_words,False,False,False
+Base,63,change_case:english_capital,False,False,False
+Base,64,change_case:english_capital,False,False,False
+Base,65,length_constraint_checkers:number_words,False,False,False
+Base,66,punctuation:no_comma,False,False,False
+Base,67,change_case:english_capital,False,False,False
+Base,68,punctuation:no_comma,False,False,False
+Base,69,punctuation:no_comma,False,False,False
+Base,70,punctuation:no_comma,False,False,False
+Base,71,language:reasoning_language,False,False,False
+Base,72,punctuation:no_comma,False,False,False
+Base,73,length_constraint_checkers:number_words,False,False,False
+Base,74,detectable_format:json_format,False,False,False
+Base,75,punctuation:no_comma,False,False,False
+Base,76,length_constraint_checkers:number_words,False,False,False
+Base,77,length_constraint_checkers:number_words,True,True,True
+Base,78,startend:end_checker,True,True,True
+Base,79,change_case:english_capital,False,False,False
+Base,80,punctuation:no_comma,False,False,False
+Base,81,punctuation:no_comma,False,False,False
+Base,82,detectable_format:json_format,False,False,False
+Base,83,length_constraint_checkers:number_words,False,False,False
+Base,84,punctuation:no_comma,False,False,False
+Base,85,change_case:english_capital,False,False,False
+Base,86,language:reasoning_language,True,True,True
+Base,87,language:reasoning_language,True,True,True
+Base,88,change_case:english_capital,False,False,False
+Base,89,startend:end_checker,False,False,False
+Base,90,language:reasoning_language,True,True,True
+Base,91,detectable_format:json_format,False,False,False
+Base,92,punctuation:no_comma,False,False,False
+Base,93,change_case:english_capital,False,False,False
+Base,94,length_constraint_checkers:number_words,False,False,False
+Base,95,punctuation:no_comma,False,False,False
+Base,96,startend:end_checker,False,False,False
+Base,97,punctuation:no_comma,False,False,False
+Base,98,startend:end_checker,False,False,False
+Base,99,change_case:english_capital,False,False,False
+Base,100,length_constraint_checkers:number_words,False,False,False
+Base,101,length_constraint_checkers:number_words,False,False,False
+Base,102,punctuation:no_comma,False,False,False
+Base,103,detectable_format:json_format,False,False,False
+Base,104,detectable_format:json_format,False,False,False
+Base,105,change_case:english_capital,False,False,False
+Base,106,punctuation:no_comma,False,False,False
+Base,107,detectable_format:json_format,False,False,False
+Base,108,startend:end_checker,False,False,False
+Base,109,startend:end_checker,False,False,False
+Base,110,length_constraint_checkers:number_words,False,False,False
+Base,111,length_constraint_checkers:number_words,False,False,False
+Base,112,detectable_format:json_format,False,False,False
+Base,113,startend:end_checker,False,False,False
+Base,114,language:reasoning_language,False,False,False
+Base,115,language:reasoning_language,True,True,True
+Base,116,punctuation:no_comma,False,False,False
+Base,117,length_constraint_checkers:number_words,False,False,False
+Base,118,punctuation:no_comma,False,False,False
+Base,119,startend:end_checker,False,False,False
+Base,120,language:reasoning_language,False,False,False
+Base,121,startend:end_checker,False,False,False
+Base,122,startend:end_checker,False,False,False
+Base,123,change_case:english_capital,False,False,False
+Base,124,detectable_format:json_format,False,False,False
+Base,125,language:reasoning_language,False,False,False
+Base,126,punctuation:no_comma,False,False,False
+Base,127,language:reasoning_language,False,False,False
+Base,128,detectable_format:json_format,False,False,False
+Base,129,change_case:english_capital,False,False,False
+Base,130,punctuation:no_comma,False,False,False
+Base,131,change_case:english_capital,False,False,False
+Base,132,language:reasoning_language,False,False,False
+Base,133,startend:end_checker,False,False,False
+Base,134,startend:end_checker,False,False,False
+Base,135,punctuation:no_comma,True,True,True
+Base,136,punctuation:no_comma,False,False,False
+Base,137,change_case:english_capital,False,False,False
+Base,138,detectable_format:json_format,False,False,False
+Base,139,length_constraint_checkers:number_words,False,False,False
+Base,140,detectable_format:json_format,False,False,False
+Base,141,language:reasoning_language,False,False,False
+Base,142,punctuation:no_comma,True,True,True
+Base,143,change_case:english_capital,False,False,False
+Base,144,punctuation:no_comma,False,False,False
+Base,145,detectable_format:json_format,False,False,False
+Base,146,detectable_format:json_format,False,False,False
+Base,147,length_constraint_checkers:number_words,True,True,True
+Base,148,length_constraint_checkers:number_words,False,False,False
+Base,149,change_case:english_capital,False,False,False
+Base,150,length_constraint_checkers:number_words,False,False,False
+Base,151,detectable_format:json_format,False,False,False
+Base,152,detectable_format:json_format,False,False,False
+Base,153,language:reasoning_language,False,False,False
+Base,154,change_case:english_capital,False,False,False
+Base,155,startend:end_checker,False,False,False
+Base,156,language:reasoning_language,False,False,False
+Base,157,change_case:english_capital,False,False,False
+Base,158,length_constraint_checkers:number_words,True,True,True
+Base,159,language:reasoning_language,True,True,True
+Base,160,detectable_format:json_format,False,False,False
+Base,161,language:reasoning_language,True,True,True
+Base,162,punctuation:no_comma,False,False,False
+Base,163,startend:end_checker,True,True,True
+Base,164,detectable_format:json_format,False,False,False
+Base,165,length_constraint_checkers:number_words,False,False,False
+Base,166,length_constraint_checkers:number_words,False,False,False
+Base,167,punctuation:no_comma,False,False,False
+Base,168,startend:end_checker,True,True,True
+Base,169,length_constraint_checkers:number_words,False,False,False
+Base,170,change_case:english_capital,False,False,False
+Base,171,detectable_format:json_format,False,False,False
+Base,172,detectable_format:json_format,False,False,False
+Base,173,startend:end_checker,False,False,False
+Base,174,detectable_format:json_format,False,False,False
+Base,175,punctuation:no_comma,True,True,True
+Base,176,punctuation:no_comma,False,False,False
+Base,177,length_constraint_checkers:number_words,False,False,False
+Base,178,punctuation:no_comma,True,True,True
+Base,179,change_case:english_capital,False,False,False
+Base,180,startend:end_checker,False,False,False
+Base,181,punctuation:no_comma,False,False,False
+Base,182,change_case:english_capital,False,False,False
+Base,183,startend:end_checker,False,False,False
+Base,184,startend:end_checker,True,True,True
+Base,185,length_constraint_checkers:number_words,False,False,False
+Base,186,length_constraint_checkers:number_words,False,False,False
+Base,187,language:reasoning_language,False,False,False
+Base,188,language:reasoning_language,False,False,False
+Base,189,detectable_format:json_format,False,False,False
+Base,190,length_constraint_checkers:number_words,False,False,False
+Base,191,detectable_format:json_format,False,False,False
+Base,192,length_constraint_checkers:number_words,False,False,False
+Base,193,language:reasoning_language,True,True,True
+Base,194,punctuation:no_comma,True,True,True
+Base,195,punctuation:no_comma,False,False,False
+Base,196,language:reasoning_language,True,True,True
+Base,197,language:reasoning_language,True,True,True
+Base,198,change_case:english_capital,False,False,False
+Base,199,language:reasoning_language,False,False,False
+Base,200,length_constraint_checkers:number_words,False,False,False
+Base,201,change_case:english_capital,False,False,False
+Base,202,punctuation:no_comma,False,False,False
+Base,203,startend:end_checker,False,False,False
+Base,204,detectable_format:json_format,False,False,False
+Base,205,length_constraint_checkers:number_words,False,False,False
+Base,206,punctuation:no_comma,False,False,False
+Base,207,detectable_format:json_format,False,False,False
+Base,208,detectable_format:json_format,False,False,False
+Base,209,startend:end_checker,True,True,True
+Base,210,startend:end_checker,True,True,True
+Base,211,length_constraint_checkers:number_words,False,False,False
+Base,212,language:reasoning_language,True,True,True
+Base,213,punctuation:no_comma,False,False,False
+Base,214,startend:end_checker,True,True,True
+Base,215,startend:end_checker,False,False,False
+Base,216,startend:end_checker,False,False,False
+Base,217,language:reasoning_language,False,False,False
+Base,218,punctuation:no_comma,False,False,False
+Base,219,punctuation:no_comma,False,False,False
+Base,220,language:reasoning_language,True,True,True
+Base,221,startend:end_checker,False,False,False
+Base,222,change_case:english_capital,False,False,False
+Base,223,language:reasoning_language,True,True,True
+Base,224,length_constraint_checkers:number_words,False,False,False
+Base,225,length_constraint_checkers:number_words,False,False,False
+Base,226,detectable_format:json_format,False,False,False
+Base,227,startend:end_checker,False,False,False
+Base,228,startend:end_checker,True,True,True
+Base,229,change_case:english_capital,False,False,False
+Base,230,startend:end_checker,False,False,False
+Base,231,language:reasoning_language,False,False,False
+Base,232,detectable_format:json_format,False,False,False
+Base,233,language:reasoning_language,True,True,True
+Base,234,punctuation:no_comma,False,False,False
+Base,235,detectable_format:json_format,False,False,False
+Base,236,language:reasoning_language,True,True,True
+Base,237,length_constraint_checkers:number_words,False,False,False
+Base,238,length_constraint_checkers:number_words,False,False,False
+Base,239,startend:end_checker,False,False,False
+Base,240,startend:end_checker,False,False,False
+Base,241,startend:end_checker,False,False,False
+Base,242,length_constraint_checkers:number_words,False,False,False
+Base,243,startend:end_checker,False,False,False
+Base,244,startend:end_checker,False,False,False
+Base,245,startend:end_checker,False,False,False
+Base,246,startend:end_checker,False,False,False
+Base,247,punctuation:no_comma,False,False,False
+Base,248,detectable_format:json_format,False,False,False
+Base,249,punctuation:no_comma,False,False,False
+Base,250,punctuation:no_comma,False,False,False
+Base,251,startend:end_checker,False,False,False
+Base,252,length_constraint_checkers:number_words,False,False,False
+Base,253,change_case:english_capital,False,False,False
+Base,254,length_constraint_checkers:number_words,False,False,False
+Base,255,language:reasoning_language,False,False,False
+Base,256,punctuation:no_comma,False,False,False
+Base,257,detectable_format:json_format,False,False,False
+Base,258,language:reasoning_language,False,False,False
+Base,259,change_case:english_capital,False,False,False
+Base,260,language:reasoning_language,True,True,True
+Base,261,detectable_format:json_format,False,False,False
+Base,262,startend:end_checker,False,False,False
+Base,263,detectable_format:json_format,False,False,False
+Base,264,length_constraint_checkers:number_words,False,False,False
+Base,265,language:reasoning_language,False,False,False
+Base,266,language:reasoning_language,True,True,True
+Base,267,length_constraint_checkers:number_words,False,False,False
+Base,268,language:reasoning_language,False,False,False
+Base,269,language:reasoning_language,False,False,False
+Base,270,length_constraint_checkers:number_words,False,False,False
+Base,271,startend:end_checker,False,False,False
+Base,272,detectable_format:json_format,False,False,False
+Base,273,length_constraint_checkers:number_words,False,False,False
+Base,274,detectable_format:json_format,False,False,False
+Base,275,detectable_format:json_format,False,False,False
+Base,276,language:reasoning_language,False,False,False
+Base,277,language:reasoning_language,False,False,False
+Base,278,punctuation:no_comma,False,False,False
+Base,279,detectable_format:json_format,False,False,False
+Base,280,detectable_format:json_format,False,False,False
+Base,281,detectable_format:json_format,False,False,False
+Base,282,change_case:english_capital,False,False,False
+Base,283,change_case:english_capital,False,False,False
+Base,284,length_constraint_checkers:number_words,False,False,False
+Base,285,punctuation:no_comma,True,True,True
+Base,286,punctuation:no_comma,False,False,False
+Base,287,change_case:english_capital,False,False,False
+Base,288,length_constraint_checkers:number_words,False,False,False
+Base,289,change_case:english_capital,False,False,False
+Base,290,startend:end_checker,True,True,True
+Base,291,punctuation:no_comma,False,False,False
+Base,292,punctuation:no_comma,False,False,False
+Base,293,change_case:english_capital,False,False,False
+Base,294,startend:end_checker,False,False,False
+Base,295,language:reasoning_language,True,True,True
+Base,296,startend:end_checker,False,False,False
+Base,297,detectable_format:json_format,False,False,False
+Base,298,language:reasoning_language,True,True,True
+Base,299,detectable_format:json_format,False,False,False
+SFT seed 42,0,punctuation:no_comma,False,False,False
+SFT seed 42,1,language:reasoning_language,True,True,True
+SFT seed 42,2,punctuation:no_comma,False,False,False
+SFT seed 42,3,change_case:english_capital,False,False,False
+SFT seed 42,4,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,5,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,6,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,7,punctuation:no_comma,False,False,False
+SFT seed 42,8,language:reasoning_language,False,False,False
+SFT seed 42,9,punctuation:no_comma,False,False,False
+SFT seed 42,10,detectable_format:json_format,False,False,False
+SFT seed 42,11,language:reasoning_language,False,False,False
+SFT seed 42,12,startend:end_checker,True,True,True
+SFT seed 42,13,language:reasoning_language,True,True,True
+SFT seed 42,14,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,15,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,16,detectable_format:json_format,False,False,False
+SFT seed 42,17,detectable_format:json_format,False,False,False
+SFT seed 42,18,language:reasoning_language,True,True,True
+SFT seed 42,19,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,20,punctuation:no_comma,True,True,True
+SFT seed 42,21,punctuation:no_comma,False,False,False
+SFT seed 42,22,punctuation:no_comma,False,False,False
+SFT seed 42,23,detectable_format:json_format,False,False,False
+SFT seed 42,24,startend:end_checker,False,False,False
+SFT seed 42,25,startend:end_checker,False,False,False
+SFT seed 42,26,change_case:english_capital,False,False,False
+SFT seed 42,27,language:reasoning_language,False,False,False
+SFT seed 42,28,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,29,punctuation:no_comma,False,False,False
+SFT seed 42,30,startend:end_checker,True,True,True
+SFT seed 42,31,change_case:english_capital,False,False,False
+SFT seed 42,32,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,33,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,34,change_case:english_capital,False,False,False
+SFT seed 42,35,language:reasoning_language,True,True,True
+SFT seed 42,36,startend:end_checker,False,False,False
+SFT seed 42,37,change_case:english_capital,False,False,False
+SFT seed 42,38,change_case:english_capital,False,False,False
+SFT seed 42,39,detectable_format:json_format,False,False,False
+SFT seed 42,40,change_case:english_capital,False,False,False
+SFT seed 42,41,language:reasoning_language,False,False,False
+SFT seed 42,42,startend:end_checker,False,False,False
+SFT seed 42,43,language:reasoning_language,True,True,True
+SFT seed 42,44,language:reasoning_language,False,False,False
+SFT seed 42,45,change_case:english_capital,False,False,False
+SFT seed 42,46,punctuation:no_comma,True,True,True
+SFT seed 42,47,detectable_format:json_format,False,False,False
+SFT seed 42,48,change_case:english_capital,False,False,False
+SFT seed 42,49,detectable_format:json_format,False,False,False
+SFT seed 42,50,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,51,punctuation:no_comma,True,True,True
+SFT seed 42,52,language:reasoning_language,True,True,True
+SFT seed 42,53,punctuation:no_comma,False,False,False
+SFT seed 42,54,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,55,change_case:english_capital,False,False,False
+SFT seed 42,56,language:reasoning_language,True,True,True
+SFT seed 42,57,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,58,language:reasoning_language,False,False,False
+SFT seed 42,59,change_case:english_capital,False,False,False
+SFT seed 42,60,startend:end_checker,True,True,True
+SFT seed 42,61,change_case:english_capital,False,False,False
+SFT seed 42,62,length_constraint_checkers:number_words,True,True,False
+SFT seed 42,63,change_case:english_capital,False,False,False
+SFT seed 42,64,change_case:english_capital,False,False,False
+SFT seed 42,65,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,66,punctuation:no_comma,False,False,False
+SFT seed 42,67,change_case:english_capital,False,False,False
+SFT seed 42,68,punctuation:no_comma,True,True,True
+SFT seed 42,69,punctuation:no_comma,False,False,False
+SFT seed 42,70,punctuation:no_comma,False,False,False
+SFT seed 42,71,language:reasoning_language,False,False,False
+SFT seed 42,72,punctuation:no_comma,False,False,False
+SFT seed 42,73,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,74,detectable_format:json_format,False,False,False
+SFT seed 42,75,punctuation:no_comma,False,False,False
+SFT seed 42,76,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,77,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,78,startend:end_checker,True,True,True
+SFT seed 42,79,change_case:english_capital,False,False,False
+SFT seed 42,80,punctuation:no_comma,True,True,True
+SFT seed 42,81,punctuation:no_comma,True,True,True
+SFT seed 42,82,detectable_format:json_format,False,False,False
+SFT seed 42,83,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,84,punctuation:no_comma,False,False,False
+SFT seed 42,85,change_case:english_capital,False,False,False
+SFT seed 42,86,language:reasoning_language,True,True,True
+SFT seed 42,87,language:reasoning_language,False,False,False
+SFT seed 42,88,change_case:english_capital,False,False,False
+SFT seed 42,89,startend:end_checker,True,True,True
+SFT seed 42,90,language:reasoning_language,False,False,False
+SFT seed 42,91,detectable_format:json_format,False,False,False
+SFT seed 42,92,punctuation:no_comma,False,False,False
+SFT seed 42,93,change_case:english_capital,False,False,False
+SFT seed 42,94,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,95,punctuation:no_comma,False,False,False
+SFT seed 42,96,startend:end_checker,False,False,False
+SFT seed 42,97,punctuation:no_comma,True,True,False
+SFT seed 42,98,startend:end_checker,False,False,False
+SFT seed 42,99,change_case:english_capital,False,False,False
+SFT seed 42,100,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,101,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,102,punctuation:no_comma,False,False,False
+SFT seed 42,103,detectable_format:json_format,False,False,False
+SFT seed 42,104,detectable_format:json_format,False,False,False
+SFT seed 42,105,change_case:english_capital,False,False,False
+SFT seed 42,106,punctuation:no_comma,False,False,False
+SFT seed 42,107,detectable_format:json_format,False,False,False
+SFT seed 42,108,startend:end_checker,False,False,False
+SFT seed 42,109,startend:end_checker,False,False,False
+SFT seed 42,110,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,111,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,112,detectable_format:json_format,False,False,False
+SFT seed 42,113,startend:end_checker,False,False,False
+SFT seed 42,114,language:reasoning_language,True,True,True
+SFT seed 42,115,language:reasoning_language,False,False,False
+SFT seed 42,116,punctuation:no_comma,True,True,True
+SFT seed 42,117,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,118,punctuation:no_comma,False,False,False
+SFT seed 42,119,startend:end_checker,False,False,False
+SFT seed 42,120,language:reasoning_language,True,True,True
+SFT seed 42,121,startend:end_checker,True,True,True
+SFT seed 42,122,startend:end_checker,True,True,True
+SFT seed 42,123,change_case:english_capital,False,False,False
+SFT seed 42,124,detectable_format:json_format,False,False,False
+SFT seed 42,125,language:reasoning_language,False,False,False
+SFT seed 42,126,punctuation:no_comma,False,False,False
+SFT seed 42,127,language:reasoning_language,False,False,False
+SFT seed 42,128,detectable_format:json_format,False,False,False
+SFT seed 42,129,change_case:english_capital,False,False,False
+SFT seed 42,130,punctuation:no_comma,True,True,True
+SFT seed 42,131,change_case:english_capital,False,False,False
+SFT seed 42,132,language:reasoning_language,False,False,False
+SFT seed 42,133,startend:end_checker,False,False,False
+SFT seed 42,134,startend:end_checker,False,False,False
+SFT seed 42,135,punctuation:no_comma,True,True,True
+SFT seed 42,136,punctuation:no_comma,False,False,False
+SFT seed 42,137,change_case:english_capital,False,False,False
+SFT seed 42,138,detectable_format:json_format,False,False,False
+SFT seed 42,139,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,140,detectable_format:json_format,False,False,False
+SFT seed 42,141,language:reasoning_language,True,True,True
+SFT seed 42,142,punctuation:no_comma,True,True,True
+SFT seed 42,143,change_case:english_capital,False,False,False
+SFT seed 42,144,punctuation:no_comma,False,False,False
+SFT seed 42,145,detectable_format:json_format,False,False,False
+SFT seed 42,146,detectable_format:json_format,False,False,False
+SFT seed 42,147,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,148,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,149,change_case:english_capital,False,False,False
+SFT seed 42,150,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,151,detectable_format:json_format,False,False,False
+SFT seed 42,152,detectable_format:json_format,False,False,False
+SFT seed 42,153,language:reasoning_language,False,False,False
+SFT seed 42,154,change_case:english_capital,False,False,False
+SFT seed 42,155,startend:end_checker,True,True,True
+SFT seed 42,156,language:reasoning_language,False,False,False
+SFT seed 42,157,change_case:english_capital,False,False,False
+SFT seed 42,158,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,159,language:reasoning_language,False,False,False
+SFT seed 42,160,detectable_format:json_format,False,False,False
+SFT seed 42,161,language:reasoning_language,True,True,True
+SFT seed 42,162,punctuation:no_comma,False,False,False
+SFT seed 42,163,startend:end_checker,True,True,True
+SFT seed 42,164,detectable_format:json_format,False,False,False
+SFT seed 42,165,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,166,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,167,punctuation:no_comma,True,True,True
+SFT seed 42,168,startend:end_checker,True,True,True
+SFT seed 42,169,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,170,change_case:english_capital,False,False,False
+SFT seed 42,171,detectable_format:json_format,False,False,False
+SFT seed 42,172,detectable_format:json_format,False,False,False
+SFT seed 42,173,startend:end_checker,True,True,True
+SFT seed 42,174,detectable_format:json_format,False,False,False
+SFT seed 42,175,punctuation:no_comma,True,True,True
+SFT seed 42,176,punctuation:no_comma,False,False,False
+SFT seed 42,177,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,178,punctuation:no_comma,False,False,False
+SFT seed 42,179,change_case:english_capital,False,False,False
+SFT seed 42,180,startend:end_checker,True,True,True
+SFT seed 42,181,punctuation:no_comma,False,False,False
+SFT seed 42,182,change_case:english_capital,False,False,False
+SFT seed 42,183,startend:end_checker,False,False,False
+SFT seed 42,184,startend:end_checker,False,False,False
+SFT seed 42,185,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,186,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,187,language:reasoning_language,True,True,True
+SFT seed 42,188,language:reasoning_language,True,True,True
+SFT seed 42,189,detectable_format:json_format,False,False,False
+SFT seed 42,190,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,191,detectable_format:json_format,False,False,False
+SFT seed 42,192,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,193,language:reasoning_language,True,True,True
+SFT seed 42,194,punctuation:no_comma,True,True,True
+SFT seed 42,195,punctuation:no_comma,False,False,False
+SFT seed 42,196,language:reasoning_language,False,False,False
+SFT seed 42,197,language:reasoning_language,True,True,True
+SFT seed 42,198,change_case:english_capital,False,False,False
+SFT seed 42,199,language:reasoning_language,False,False,False
+SFT seed 42,200,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,201,change_case:english_capital,False,False,False
+SFT seed 42,202,punctuation:no_comma,False,False,False
+SFT seed 42,203,startend:end_checker,False,False,False
+SFT seed 42,204,detectable_format:json_format,False,False,False
+SFT seed 42,205,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,206,punctuation:no_comma,True,True,True
+SFT seed 42,207,detectable_format:json_format,False,False,False
+SFT seed 42,208,detectable_format:json_format,False,False,False
+SFT seed 42,209,startend:end_checker,True,True,True
+SFT seed 42,210,startend:end_checker,False,False,False
+SFT seed 42,211,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,212,language:reasoning_language,True,True,True
+SFT seed 42,213,punctuation:no_comma,True,True,True
+SFT seed 42,214,startend:end_checker,False,False,False
+SFT seed 42,215,startend:end_checker,False,False,False
+SFT seed 42,216,startend:end_checker,True,True,True
+SFT seed 42,217,language:reasoning_language,False,False,False
+SFT seed 42,218,punctuation:no_comma,True,True,True
+SFT seed 42,219,punctuation:no_comma,False,False,False
+SFT seed 42,220,language:reasoning_language,True,True,True
+SFT seed 42,221,startend:end_checker,False,False,False
+SFT seed 42,222,change_case:english_capital,False,False,False
+SFT seed 42,223,language:reasoning_language,False,False,False
+SFT seed 42,224,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,225,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,226,detectable_format:json_format,False,False,False
+SFT seed 42,227,startend:end_checker,True,True,True
+SFT seed 42,228,startend:end_checker,False,False,False
+SFT seed 42,229,change_case:english_capital,False,False,False
+SFT seed 42,230,startend:end_checker,True,True,True
+SFT seed 42,231,language:reasoning_language,True,True,True
+SFT seed 42,232,detectable_format:json_format,False,False,False
+SFT seed 42,233,language:reasoning_language,True,True,True
+SFT seed 42,234,punctuation:no_comma,True,True,False
+SFT seed 42,235,detectable_format:json_format,False,False,False
+SFT seed 42,236,language:reasoning_language,True,True,True
+SFT seed 42,237,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,238,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,239,startend:end_checker,True,True,True
+SFT seed 42,240,startend:end_checker,False,False,False
+SFT seed 42,241,startend:end_checker,True,True,True
+SFT seed 42,242,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,243,startend:end_checker,False,False,False
+SFT seed 42,244,startend:end_checker,True,True,True
+SFT seed 42,245,startend:end_checker,True,True,True
+SFT seed 42,246,startend:end_checker,True,True,True
+SFT seed 42,247,punctuation:no_comma,False,False,False
+SFT seed 42,248,detectable_format:json_format,False,False,False
+SFT seed 42,249,punctuation:no_comma,False,False,False
+SFT seed 42,250,punctuation:no_comma,True,True,True
+SFT seed 42,251,startend:end_checker,False,False,False
+SFT seed 42,252,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,253,change_case:english_capital,False,False,False
+SFT seed 42,254,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,255,language:reasoning_language,True,True,True
+SFT seed 42,256,punctuation:no_comma,True,True,True
+SFT seed 42,257,detectable_format:json_format,False,False,False
+SFT seed 42,258,language:reasoning_language,False,False,False
+SFT seed 42,259,change_case:english_capital,False,False,False
+SFT seed 42,260,language:reasoning_language,True,True,True
+SFT seed 42,261,detectable_format:json_format,False,False,False
+SFT seed 42,262,startend:end_checker,False,False,False
+SFT seed 42,263,detectable_format:json_format,False,False,False
+SFT seed 42,264,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,265,language:reasoning_language,True,True,True
+SFT seed 42,266,language:reasoning_language,True,True,True
+SFT seed 42,267,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,268,language:reasoning_language,True,True,True
+SFT seed 42,269,language:reasoning_language,True,True,True
+SFT seed 42,270,length_constraint_checkers:number_words,False,False,False
+SFT seed 42,271,startend:end_checker,False,False,False
+SFT seed 42,272,detectable_format:json_format,False,False,False
+SFT seed 42,273,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,274,detectable_format:json_format,False,False,False
+SFT seed 42,275,detectable_format:json_format,False,False,False
+SFT seed 42,276,language:reasoning_language,False,False,False
+SFT seed 42,277,language:reasoning_language,True,True,True
+SFT seed 42,278,punctuation:no_comma,False,False,False
+SFT seed 42,279,detectable_format:json_format,False,False,False
+SFT seed 42,280,detectable_format:json_format,False,False,False
+SFT seed 42,281,detectable_format:json_format,False,False,False
+SFT seed 42,282,change_case:english_capital,False,False,False
+SFT seed 42,283,change_case:english_capital,False,False,False
+SFT seed 42,284,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,285,punctuation:no_comma,True,True,True
+SFT seed 42,286,punctuation:no_comma,False,False,False
+SFT seed 42,287,change_case:english_capital,False,False,False
+SFT seed 42,288,length_constraint_checkers:number_words,True,True,True
+SFT seed 42,289,change_case:english_capital,False,False,False
+SFT seed 42,290,startend:end_checker,True,True,True
+SFT seed 42,291,punctuation:no_comma,False,False,False
+SFT seed 42,292,punctuation:no_comma,False,False,False
+SFT seed 42,293,change_case:english_capital,False,False,False
+SFT seed 42,294,startend:end_checker,True,True,True
+SFT seed 42,295,language:reasoning_language,True,True,True
+SFT seed 42,296,startend:end_checker,False,False,False
+SFT seed 42,297,detectable_format:json_format,False,False,False
+SFT seed 42,298,language:reasoning_language,True,True,True
+SFT seed 42,299,detectable_format:json_format,False,False,False
+SFT seed 1,0,punctuation:no_comma,False,False,False
+SFT seed 1,1,language:reasoning_language,True,True,True
+SFT seed 1,2,punctuation:no_comma,False,False,False
+SFT seed 1,3,change_case:english_capital,False,False,False
+SFT seed 1,4,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,5,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,6,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,7,punctuation:no_comma,False,False,False
+SFT seed 1,8,language:reasoning_language,False,False,False
+SFT seed 1,9,punctuation:no_comma,False,False,False
+SFT seed 1,10,detectable_format:json_format,False,False,False
+SFT seed 1,11,language:reasoning_language,False,False,False
+SFT seed 1,12,startend:end_checker,True,True,True
+SFT seed 1,13,language:reasoning_language,True,True,True
+SFT seed 1,14,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,15,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,16,detectable_format:json_format,False,False,False
+SFT seed 1,17,detectable_format:json_format,False,False,False
+SFT seed 1,18,language:reasoning_language,True,True,True
+SFT seed 1,19,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,20,punctuation:no_comma,False,False,False
+SFT seed 1,21,punctuation:no_comma,False,False,False
+SFT seed 1,22,punctuation:no_comma,False,False,False
+SFT seed 1,23,detectable_format:json_format,False,False,False
+SFT seed 1,24,startend:end_checker,True,True,True
+SFT seed 1,25,startend:end_checker,False,False,False
+SFT seed 1,26,change_case:english_capital,False,False,False
+SFT seed 1,27,language:reasoning_language,True,True,True
+SFT seed 1,28,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,29,punctuation:no_comma,False,False,False
+SFT seed 1,30,startend:end_checker,True,True,True
+SFT seed 1,31,change_case:english_capital,False,False,False
+SFT seed 1,32,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,33,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,34,change_case:english_capital,False,False,False
+SFT seed 1,35,language:reasoning_language,True,True,True
+SFT seed 1,36,startend:end_checker,True,True,True
+SFT seed 1,37,change_case:english_capital,False,False,False
+SFT seed 1,38,change_case:english_capital,False,False,False
+SFT seed 1,39,detectable_format:json_format,False,False,False
+SFT seed 1,40,change_case:english_capital,False,False,False
+SFT seed 1,41,language:reasoning_language,False,False,False
+SFT seed 1,42,startend:end_checker,False,False,False
+SFT seed 1,43,language:reasoning_language,True,True,True
+SFT seed 1,44,language:reasoning_language,False,False,False
+SFT seed 1,45,change_case:english_capital,False,False,False
+SFT seed 1,46,punctuation:no_comma,False,False,False
+SFT seed 1,47,detectable_format:json_format,False,False,False
+SFT seed 1,48,change_case:english_capital,False,False,False
+SFT seed 1,49,detectable_format:json_format,False,False,False
+SFT seed 1,50,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,51,punctuation:no_comma,True,True,True
+SFT seed 1,52,language:reasoning_language,True,True,True
+SFT seed 1,53,punctuation:no_comma,False,False,False
+SFT seed 1,54,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,55,change_case:english_capital,False,False,False
+SFT seed 1,56,language:reasoning_language,True,True,True
+SFT seed 1,57,length_constraint_checkers:number_words,True,True,False
+SFT seed 1,58,language:reasoning_language,False,False,False
+SFT seed 1,59,change_case:english_capital,False,False,False
+SFT seed 1,60,startend:end_checker,True,True,True
+SFT seed 1,61,change_case:english_capital,False,False,False
+SFT seed 1,62,length_constraint_checkers:number_words,True,True,False
+SFT seed 1,63,change_case:english_capital,False,False,False
+SFT seed 1,64,change_case:english_capital,False,False,False
+SFT seed 1,65,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,66,punctuation:no_comma,False,False,False
+SFT seed 1,67,change_case:english_capital,False,False,False
+SFT seed 1,68,punctuation:no_comma,True,True,True
+SFT seed 1,69,punctuation:no_comma,False,False,False
+SFT seed 1,70,punctuation:no_comma,False,False,False
+SFT seed 1,71,language:reasoning_language,False,False,False
+SFT seed 1,72,punctuation:no_comma,False,False,False
+SFT seed 1,73,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,74,detectable_format:json_format,False,False,False
+SFT seed 1,75,punctuation:no_comma,False,False,False
+SFT seed 1,76,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,77,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,78,startend:end_checker,False,False,False
+SFT seed 1,79,change_case:english_capital,False,False,False
+SFT seed 1,80,punctuation:no_comma,True,True,True
+SFT seed 1,81,punctuation:no_comma,True,True,True
+SFT seed 1,82,detectable_format:json_format,False,False,False
+SFT seed 1,83,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,84,punctuation:no_comma,True,True,True
+SFT seed 1,85,change_case:english_capital,False,False,False
+SFT seed 1,86,language:reasoning_language,True,True,True
+SFT seed 1,87,language:reasoning_language,True,True,True
+SFT seed 1,88,change_case:english_capital,False,False,False
+SFT seed 1,89,startend:end_checker,False,False,False
+SFT seed 1,90,language:reasoning_language,False,False,False
+SFT seed 1,91,detectable_format:json_format,False,False,False
+SFT seed 1,92,punctuation:no_comma,False,False,False
+SFT seed 1,93,change_case:english_capital,False,False,False
+SFT seed 1,94,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,95,punctuation:no_comma,False,False,False
+SFT seed 1,96,startend:end_checker,False,False,False
+SFT seed 1,97,punctuation:no_comma,False,False,False
+SFT seed 1,98,startend:end_checker,True,True,True
+SFT seed 1,99,change_case:english_capital,False,False,False
+SFT seed 1,100,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,101,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,102,punctuation:no_comma,True,True,True
+SFT seed 1,103,detectable_format:json_format,False,False,False
+SFT seed 1,104,detectable_format:json_format,False,False,False
+SFT seed 1,105,change_case:english_capital,False,False,False
+SFT seed 1,106,punctuation:no_comma,True,True,False
+SFT seed 1,107,detectable_format:json_format,False,False,False
+SFT seed 1,108,startend:end_checker,False,False,False
+SFT seed 1,109,startend:end_checker,True,True,True
+SFT seed 1,110,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,111,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,112,detectable_format:json_format,False,False,False
+SFT seed 1,113,startend:end_checker,False,False,False
+SFT seed 1,114,language:reasoning_language,True,True,True
+SFT seed 1,115,language:reasoning_language,False,False,False
+SFT seed 1,116,punctuation:no_comma,False,False,False
+SFT seed 1,117,length_constraint_checkers:number_words,False,False,True
+SFT seed 1,118,punctuation:no_comma,False,False,False
+SFT seed 1,119,startend:end_checker,False,False,False
+SFT seed 1,120,language:reasoning_language,True,True,True
+SFT seed 1,121,startend:end_checker,False,False,False
+SFT seed 1,122,startend:end_checker,True,True,True
+SFT seed 1,123,change_case:english_capital,False,False,False
+SFT seed 1,124,detectable_format:json_format,False,False,False
+SFT seed 1,125,language:reasoning_language,False,False,False
+SFT seed 1,126,punctuation:no_comma,False,False,False
+SFT seed 1,127,language:reasoning_language,False,False,False
+SFT seed 1,128,detectable_format:json_format,False,False,False
+SFT seed 1,129,change_case:english_capital,False,False,False
+SFT seed 1,130,punctuation:no_comma,True,True,True
+SFT seed 1,131,change_case:english_capital,False,False,False
+SFT seed 1,132,language:reasoning_language,False,False,False
+SFT seed 1,133,startend:end_checker,False,False,False
+SFT seed 1,134,startend:end_checker,False,False,False
+SFT seed 1,135,punctuation:no_comma,True,True,True
+SFT seed 1,136,punctuation:no_comma,False,False,False
+SFT seed 1,137,change_case:english_capital,False,False,False
+SFT seed 1,138,detectable_format:json_format,False,False,False
+SFT seed 1,139,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,140,detectable_format:json_format,False,False,False
+SFT seed 1,141,language:reasoning_language,True,True,True
+SFT seed 1,142,punctuation:no_comma,True,True,True
+SFT seed 1,143,change_case:english_capital,False,False,False
+SFT seed 1,144,punctuation:no_comma,False,False,False
+SFT seed 1,145,detectable_format:json_format,False,False,False
+SFT seed 1,146,detectable_format:json_format,False,False,False
+SFT seed 1,147,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,148,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,149,change_case:english_capital,False,False,False
+SFT seed 1,150,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,151,detectable_format:json_format,False,False,False
+SFT seed 1,152,detectable_format:json_format,False,False,False
+SFT seed 1,153,language:reasoning_language,False,False,False
+SFT seed 1,154,change_case:english_capital,False,False,False
+SFT seed 1,155,startend:end_checker,False,False,False
+SFT seed 1,156,language:reasoning_language,False,False,False
+SFT seed 1,157,change_case:english_capital,False,False,False
+SFT seed 1,158,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,159,language:reasoning_language,True,True,True
+SFT seed 1,160,detectable_format:json_format,False,False,False
+SFT seed 1,161,language:reasoning_language,True,True,True
+SFT seed 1,162,punctuation:no_comma,False,False,False
+SFT seed 1,163,startend:end_checker,True,True,True
+SFT seed 1,164,detectable_format:json_format,False,False,False
+SFT seed 1,165,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,166,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,167,punctuation:no_comma,True,True,True
+SFT seed 1,168,startend:end_checker,True,True,True
+SFT seed 1,169,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,170,change_case:english_capital,False,False,False
+SFT seed 1,171,detectable_format:json_format,False,False,False
+SFT seed 1,172,detectable_format:json_format,False,False,False
+SFT seed 1,173,startend:end_checker,False,False,False
+SFT seed 1,174,detectable_format:json_format,False,False,False
+SFT seed 1,175,punctuation:no_comma,False,False,False
+SFT seed 1,176,punctuation:no_comma,False,False,False
+SFT seed 1,177,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,178,punctuation:no_comma,True,True,True
+SFT seed 1,179,change_case:english_capital,False,False,False
+SFT seed 1,180,startend:end_checker,False,False,False
+SFT seed 1,181,punctuation:no_comma,False,False,False
+SFT seed 1,182,change_case:english_capital,False,False,False
+SFT seed 1,183,startend:end_checker,False,False,False
+SFT seed 1,184,startend:end_checker,True,True,True
+SFT seed 1,185,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,186,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,187,language:reasoning_language,True,True,True
+SFT seed 1,188,language:reasoning_language,True,True,True
+SFT seed 1,189,detectable_format:json_format,False,False,False
+SFT seed 1,190,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,191,detectable_format:json_format,False,False,False
+SFT seed 1,192,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,193,language:reasoning_language,True,True,True
+SFT seed 1,194,punctuation:no_comma,True,True,True
+SFT seed 1,195,punctuation:no_comma,False,False,False
+SFT seed 1,196,language:reasoning_language,False,False,False
+SFT seed 1,197,language:reasoning_language,True,True,True
+SFT seed 1,198,change_case:english_capital,False,False,False
+SFT seed 1,199,language:reasoning_language,False,False,False
+SFT seed 1,200,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,201,change_case:english_capital,False,False,False
+SFT seed 1,202,punctuation:no_comma,False,False,False
+SFT seed 1,203,startend:end_checker,True,True,True
+SFT seed 1,204,detectable_format:json_format,False,False,False
+SFT seed 1,205,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,206,punctuation:no_comma,True,True,True
+SFT seed 1,207,detectable_format:json_format,False,False,False
+SFT seed 1,208,detectable_format:json_format,False,False,False
+SFT seed 1,209,startend:end_checker,True,True,True
+SFT seed 1,210,startend:end_checker,False,False,False
+SFT seed 1,211,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,212,language:reasoning_language,True,True,True
+SFT seed 1,213,punctuation:no_comma,True,True,True
+SFT seed 1,214,startend:end_checker,False,False,False
+SFT seed 1,215,startend:end_checker,False,False,False
+SFT seed 1,216,startend:end_checker,True,True,True
+SFT seed 1,217,language:reasoning_language,False,False,False
+SFT seed 1,218,punctuation:no_comma,True,True,True
+SFT seed 1,219,punctuation:no_comma,False,False,False
+SFT seed 1,220,language:reasoning_language,True,True,True
+SFT seed 1,221,startend:end_checker,False,False,False
+SFT seed 1,222,change_case:english_capital,False,False,False
+SFT seed 1,223,language:reasoning_language,False,False,False
+SFT seed 1,224,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,225,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,226,detectable_format:json_format,False,False,False
+SFT seed 1,227,startend:end_checker,True,True,True
+SFT seed 1,228,startend:end_checker,False,False,False
+SFT seed 1,229,change_case:english_capital,False,False,False
+SFT seed 1,230,startend:end_checker,False,False,False
+SFT seed 1,231,language:reasoning_language,True,True,True
+SFT seed 1,232,detectable_format:json_format,False,False,False
+SFT seed 1,233,language:reasoning_language,True,True,True
+SFT seed 1,234,punctuation:no_comma,True,True,False
+SFT seed 1,235,detectable_format:json_format,False,False,False
+SFT seed 1,236,language:reasoning_language,True,True,True
+SFT seed 1,237,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,238,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,239,startend:end_checker,True,True,True
+SFT seed 1,240,startend:end_checker,False,False,False
+SFT seed 1,241,startend:end_checker,True,True,True
+SFT seed 1,242,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,243,startend:end_checker,True,True,True
+SFT seed 1,244,startend:end_checker,False,False,False
+SFT seed 1,245,startend:end_checker,True,True,True
+SFT seed 1,246,startend:end_checker,True,True,True
+SFT seed 1,247,punctuation:no_comma,False,False,False
+SFT seed 1,248,detectable_format:json_format,False,False,False
+SFT seed 1,249,punctuation:no_comma,False,False,False
+SFT seed 1,250,punctuation:no_comma,True,True,True
+SFT seed 1,251,startend:end_checker,False,False,False
+SFT seed 1,252,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,253,change_case:english_capital,False,False,False
+SFT seed 1,254,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,255,language:reasoning_language,True,True,True
+SFT seed 1,256,punctuation:no_comma,True,True,True
+SFT seed 1,257,detectable_format:json_format,False,False,False
+SFT seed 1,258,language:reasoning_language,False,False,False
+SFT seed 1,259,change_case:english_capital,False,False,False
+SFT seed 1,260,language:reasoning_language,True,True,True
+SFT seed 1,261,detectable_format:json_format,False,False,False
+SFT seed 1,262,startend:end_checker,False,False,False
+SFT seed 1,263,detectable_format:json_format,False,False,False
+SFT seed 1,264,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,265,language:reasoning_language,True,True,True
+SFT seed 1,266,language:reasoning_language,True,True,True
+SFT seed 1,267,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,268,language:reasoning_language,True,True,True
+SFT seed 1,269,language:reasoning_language,False,False,True
+SFT seed 1,270,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,271,startend:end_checker,False,False,False
+SFT seed 1,272,detectable_format:json_format,False,False,False
+SFT seed 1,273,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,274,detectable_format:json_format,False,False,False
+SFT seed 1,275,detectable_format:json_format,False,False,False
+SFT seed 1,276,language:reasoning_language,False,False,False
+SFT seed 1,277,language:reasoning_language,True,True,True
+SFT seed 1,278,punctuation:no_comma,True,True,True
+SFT seed 1,279,detectable_format:json_format,False,False,False
+SFT seed 1,280,detectable_format:json_format,False,False,False
+SFT seed 1,281,detectable_format:json_format,False,False,False
+SFT seed 1,282,change_case:english_capital,False,False,False
+SFT seed 1,283,change_case:english_capital,False,False,False
+SFT seed 1,284,length_constraint_checkers:number_words,False,False,False
+SFT seed 1,285,punctuation:no_comma,True,True,True
+SFT seed 1,286,punctuation:no_comma,False,False,False
+SFT seed 1,287,change_case:english_capital,False,False,False
+SFT seed 1,288,length_constraint_checkers:number_words,True,True,True
+SFT seed 1,289,change_case:english_capital,False,False,False
+SFT seed 1,290,startend:end_checker,False,False,False
+SFT seed 1,291,punctuation:no_comma,False,False,False
+SFT seed 1,292,punctuation:no_comma,False,False,False
+SFT seed 1,293,change_case:english_capital,False,False,False
+SFT seed 1,294,startend:end_checker,False,False,False
+SFT seed 1,295,language:reasoning_language,True,True,True
+SFT seed 1,296,startend:end_checker,False,False,False
+SFT seed 1,297,detectable_format:json_format,False,False,False
+SFT seed 1,298,language:reasoning_language,True,True,True
+SFT seed 1,299,detectable_format:json_format,False,False,False
+SFT seed 2,0,punctuation:no_comma,False,False,False
+SFT seed 2,1,language:reasoning_language,True,True,True
+SFT seed 2,2,punctuation:no_comma,False,False,False
+SFT seed 2,3,change_case:english_capital,False,False,True
+SFT seed 2,4,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,5,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,6,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,7,punctuation:no_comma,False,False,False
+SFT seed 2,8,language:reasoning_language,False,False,False
+SFT seed 2,9,punctuation:no_comma,False,False,False
+SFT seed 2,10,detectable_format:json_format,False,False,False
+SFT seed 2,11,language:reasoning_language,False,False,False
+SFT seed 2,12,startend:end_checker,True,True,True
+SFT seed 2,13,language:reasoning_language,True,True,True
+SFT seed 2,14,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,15,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,16,detectable_format:json_format,False,False,False
+SFT seed 2,17,detectable_format:json_format,False,False,False
+SFT seed 2,18,language:reasoning_language,True,True,True
+SFT seed 2,19,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,20,punctuation:no_comma,False,False,False
+SFT seed 2,21,punctuation:no_comma,False,False,False
+SFT seed 2,22,punctuation:no_comma,False,False,False
+SFT seed 2,23,detectable_format:json_format,False,False,False
+SFT seed 2,24,startend:end_checker,False,False,False
+SFT seed 2,25,startend:end_checker,False,False,False
+SFT seed 2,26,change_case:english_capital,False,False,False
+SFT seed 2,27,language:reasoning_language,False,False,False
+SFT seed 2,28,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,29,punctuation:no_comma,False,False,False
+SFT seed 2,30,startend:end_checker,True,True,True
+SFT seed 2,31,change_case:english_capital,False,False,False
+SFT seed 2,32,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,33,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,34,change_case:english_capital,False,False,False
+SFT seed 2,35,language:reasoning_language,True,True,True
+SFT seed 2,36,startend:end_checker,False,False,False
+SFT seed 2,37,change_case:english_capital,False,False,False
+SFT seed 2,38,change_case:english_capital,False,False,False
+SFT seed 2,39,detectable_format:json_format,False,False,False
+SFT seed 2,40,change_case:english_capital,False,False,False
+SFT seed 2,41,language:reasoning_language,False,False,False
+SFT seed 2,42,startend:end_checker,False,False,False
+SFT seed 2,43,language:reasoning_language,True,True,True
+SFT seed 2,44,language:reasoning_language,False,False,False
+SFT seed 2,45,change_case:english_capital,False,False,False
+SFT seed 2,46,punctuation:no_comma,True,True,True
+SFT seed 2,47,detectable_format:json_format,False,False,False
+SFT seed 2,48,change_case:english_capital,False,False,False
+SFT seed 2,49,detectable_format:json_format,False,False,False
+SFT seed 2,50,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,51,punctuation:no_comma,True,True,True
+SFT seed 2,52,language:reasoning_language,True,True,True
+SFT seed 2,53,punctuation:no_comma,False,False,False
+SFT seed 2,54,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,55,change_case:english_capital,False,False,False
+SFT seed 2,56,language:reasoning_language,True,True,True
+SFT seed 2,57,length_constraint_checkers:number_words,True,True,False
+SFT seed 2,58,language:reasoning_language,False,False,False
+SFT seed 2,59,change_case:english_capital,False,False,False
+SFT seed 2,60,startend:end_checker,False,False,False
+SFT seed 2,61,change_case:english_capital,False,False,False
+SFT seed 2,62,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,63,change_case:english_capital,False,False,False
+SFT seed 2,64,change_case:english_capital,False,False,False
+SFT seed 2,65,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,66,punctuation:no_comma,False,False,False
+SFT seed 2,67,change_case:english_capital,False,False,False
+SFT seed 2,68,punctuation:no_comma,True,True,True
+SFT seed 2,69,punctuation:no_comma,False,False,False
+SFT seed 2,70,punctuation:no_comma,False,False,False
+SFT seed 2,71,language:reasoning_language,False,False,False
+SFT seed 2,72,punctuation:no_comma,False,False,False
+SFT seed 2,73,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,74,detectable_format:json_format,False,False,False
+SFT seed 2,75,punctuation:no_comma,False,False,False
+SFT seed 2,76,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,77,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,78,startend:end_checker,True,True,True
+SFT seed 2,79,change_case:english_capital,False,False,False
+SFT seed 2,80,punctuation:no_comma,True,True,True
+SFT seed 2,81,punctuation:no_comma,True,True,True
+SFT seed 2,82,detectable_format:json_format,False,False,False
+SFT seed 2,83,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,84,punctuation:no_comma,False,False,False
+SFT seed 2,85,change_case:english_capital,False,False,False
+SFT seed 2,86,language:reasoning_language,True,True,True
+SFT seed 2,87,language:reasoning_language,True,True,True
+SFT seed 2,88,change_case:english_capital,False,False,False
+SFT seed 2,89,startend:end_checker,False,False,False
+SFT seed 2,90,language:reasoning_language,False,False,False
+SFT seed 2,91,detectable_format:json_format,False,False,False
+SFT seed 2,92,punctuation:no_comma,False,False,False
+SFT seed 2,93,change_case:english_capital,False,False,False
+SFT seed 2,94,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,95,punctuation:no_comma,False,False,False
+SFT seed 2,96,startend:end_checker,False,False,False
+SFT seed 2,97,punctuation:no_comma,False,False,False
+SFT seed 2,98,startend:end_checker,True,True,True
+SFT seed 2,99,change_case:english_capital,False,False,False
+SFT seed 2,100,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,101,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,102,punctuation:no_comma,False,False,False
+SFT seed 2,103,detectable_format:json_format,False,False,False
+SFT seed 2,104,detectable_format:json_format,False,False,False
+SFT seed 2,105,change_case:english_capital,False,False,False
+SFT seed 2,106,punctuation:no_comma,True,True,False
+SFT seed 2,107,detectable_format:json_format,False,False,False
+SFT seed 2,108,startend:end_checker,False,False,False
+SFT seed 2,109,startend:end_checker,False,False,False
+SFT seed 2,110,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,111,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,112,detectable_format:json_format,False,False,False
+SFT seed 2,113,startend:end_checker,False,False,False
+SFT seed 2,114,language:reasoning_language,True,True,True
+SFT seed 2,115,language:reasoning_language,False,False,False
+SFT seed 2,116,punctuation:no_comma,True,True,True
+SFT seed 2,117,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,118,punctuation:no_comma,False,False,False
+SFT seed 2,119,startend:end_checker,False,False,False
+SFT seed 2,120,language:reasoning_language,True,True,True
+SFT seed 2,121,startend:end_checker,False,False,False
+SFT seed 2,122,startend:end_checker,False,False,False
+SFT seed 2,123,change_case:english_capital,False,False,False
+SFT seed 2,124,detectable_format:json_format,False,False,False
+SFT seed 2,125,language:reasoning_language,False,False,False
+SFT seed 2,126,punctuation:no_comma,False,False,False
+SFT seed 2,127,language:reasoning_language,False,False,False
+SFT seed 2,128,detectable_format:json_format,False,False,False
+SFT seed 2,129,change_case:english_capital,False,False,False
+SFT seed 2,130,punctuation:no_comma,True,True,True
+SFT seed 2,131,change_case:english_capital,False,False,False
+SFT seed 2,132,language:reasoning_language,False,False,False
+SFT seed 2,133,startend:end_checker,False,False,False
+SFT seed 2,134,startend:end_checker,False,False,False
+SFT seed 2,135,punctuation:no_comma,True,True,True
+SFT seed 2,136,punctuation:no_comma,False,False,False
+SFT seed 2,137,change_case:english_capital,False,False,True
+SFT seed 2,138,detectable_format:json_format,False,False,False
+SFT seed 2,139,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,140,detectable_format:json_format,False,False,False
+SFT seed 2,141,language:reasoning_language,True,True,True
+SFT seed 2,142,punctuation:no_comma,True,True,True
+SFT seed 2,143,change_case:english_capital,False,False,False
+SFT seed 2,144,punctuation:no_comma,False,False,False
+SFT seed 2,145,detectable_format:json_format,False,False,False
+SFT seed 2,146,detectable_format:json_format,False,False,False
+SFT seed 2,147,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,148,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,149,change_case:english_capital,False,False,False
+SFT seed 2,150,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,151,detectable_format:json_format,False,False,False
+SFT seed 2,152,detectable_format:json_format,False,False,False
+SFT seed 2,153,language:reasoning_language,False,False,False
+SFT seed 2,154,change_case:english_capital,False,False,False
+SFT seed 2,155,startend:end_checker,False,False,False
+SFT seed 2,156,language:reasoning_language,False,False,False
+SFT seed 2,157,change_case:english_capital,False,False,False
+SFT seed 2,158,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,159,language:reasoning_language,True,True,True
+SFT seed 2,160,detectable_format:json_format,False,False,False
+SFT seed 2,161,language:reasoning_language,True,True,True
+SFT seed 2,162,punctuation:no_comma,False,False,False
+SFT seed 2,163,startend:end_checker,True,True,True
+SFT seed 2,164,detectable_format:json_format,False,False,False
+SFT seed 2,165,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,166,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,167,punctuation:no_comma,True,True,True
+SFT seed 2,168,startend:end_checker,True,True,True
+SFT seed 2,169,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,170,change_case:english_capital,False,False,False
+SFT seed 2,171,detectable_format:json_format,False,False,False
+SFT seed 2,172,detectable_format:json_format,False,False,False
+SFT seed 2,173,startend:end_checker,False,False,False
+SFT seed 2,174,detectable_format:json_format,False,False,False
+SFT seed 2,175,punctuation:no_comma,False,False,False
+SFT seed 2,176,punctuation:no_comma,False,False,False
+SFT seed 2,177,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,178,punctuation:no_comma,True,True,True
+SFT seed 2,179,change_case:english_capital,False,False,False
+SFT seed 2,180,startend:end_checker,True,True,True
+SFT seed 2,181,punctuation:no_comma,False,False,False
+SFT seed 2,182,change_case:english_capital,False,False,False
+SFT seed 2,183,startend:end_checker,False,False,False
+SFT seed 2,184,startend:end_checker,False,False,False
+SFT seed 2,185,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,186,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,187,language:reasoning_language,True,True,True
+SFT seed 2,188,language:reasoning_language,True,True,True
+SFT seed 2,189,detectable_format:json_format,False,False,False
+SFT seed 2,190,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,191,detectable_format:json_format,False,False,False
+SFT seed 2,192,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,193,language:reasoning_language,True,True,True
+SFT seed 2,194,punctuation:no_comma,True,True,True
+SFT seed 2,195,punctuation:no_comma,False,False,False
+SFT seed 2,196,language:reasoning_language,False,False,False
+SFT seed 2,197,language:reasoning_language,True,True,True
+SFT seed 2,198,change_case:english_capital,False,False,False
+SFT seed 2,199,language:reasoning_language,False,False,False
+SFT seed 2,200,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,201,change_case:english_capital,False,False,False
+SFT seed 2,202,punctuation:no_comma,False,False,False
+SFT seed 2,203,startend:end_checker,True,True,True
+SFT seed 2,204,detectable_format:json_format,False,False,False
+SFT seed 2,205,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,206,punctuation:no_comma,True,True,True
+SFT seed 2,207,detectable_format:json_format,False,False,False
+SFT seed 2,208,detectable_format:json_format,False,False,False
+SFT seed 2,209,startend:end_checker,True,True,True
+SFT seed 2,210,startend:end_checker,True,True,True
+SFT seed 2,211,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,212,language:reasoning_language,True,True,True
+SFT seed 2,213,punctuation:no_comma,True,True,True
+SFT seed 2,214,startend:end_checker,False,False,False
+SFT seed 2,215,startend:end_checker,True,True,True
+SFT seed 2,216,startend:end_checker,False,False,False
+SFT seed 2,217,language:reasoning_language,False,False,False
+SFT seed 2,218,punctuation:no_comma,True,True,True
+SFT seed 2,219,punctuation:no_comma,False,False,False
+SFT seed 2,220,language:reasoning_language,True,True,True
+SFT seed 2,221,startend:end_checker,False,False,False
+SFT seed 2,222,change_case:english_capital,False,False,False
+SFT seed 2,223,language:reasoning_language,False,False,False
+SFT seed 2,224,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,225,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,226,detectable_format:json_format,False,False,False
+SFT seed 2,227,startend:end_checker,True,True,True
+SFT seed 2,228,startend:end_checker,False,False,False
+SFT seed 2,229,change_case:english_capital,False,False,False
+SFT seed 2,230,startend:end_checker,False,False,False
+SFT seed 2,231,language:reasoning_language,True,True,True
+SFT seed 2,232,detectable_format:json_format,False,False,False
+SFT seed 2,233,language:reasoning_language,True,True,True
+SFT seed 2,234,punctuation:no_comma,True,True,False
+SFT seed 2,235,detectable_format:json_format,False,False,False
+SFT seed 2,236,language:reasoning_language,True,True,True
+SFT seed 2,237,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,238,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,239,startend:end_checker,False,False,False
+SFT seed 2,240,startend:end_checker,False,False,False
+SFT seed 2,241,startend:end_checker,True,True,True
+SFT seed 2,242,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,243,startend:end_checker,False,False,False
+SFT seed 2,244,startend:end_checker,True,True,True
+SFT seed 2,245,startend:end_checker,False,False,False
+SFT seed 2,246,startend:end_checker,False,False,False
+SFT seed 2,247,punctuation:no_comma,False,False,False
+SFT seed 2,248,detectable_format:json_format,False,False,False
+SFT seed 2,249,punctuation:no_comma,False,False,False
+SFT seed 2,250,punctuation:no_comma,True,True,True
+SFT seed 2,251,startend:end_checker,False,False,False
+SFT seed 2,252,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,253,change_case:english_capital,False,False,False
+SFT seed 2,254,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,255,language:reasoning_language,True,True,True
+SFT seed 2,256,punctuation:no_comma,True,True,True
+SFT seed 2,257,detectable_format:json_format,False,False,False
+SFT seed 2,258,language:reasoning_language,False,False,False
+SFT seed 2,259,change_case:english_capital,False,False,False
+SFT seed 2,260,language:reasoning_language,True,True,True
+SFT seed 2,261,detectable_format:json_format,False,False,False
+SFT seed 2,262,startend:end_checker,False,False,False
+SFT seed 2,263,detectable_format:json_format,False,False,False
+SFT seed 2,264,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,265,language:reasoning_language,True,True,True
+SFT seed 2,266,language:reasoning_language,True,True,True
+SFT seed 2,267,length_constraint_checkers:number_words,False,False,False
+SFT seed 2,268,language:reasoning_language,True,True,True
+SFT seed 2,269,language:reasoning_language,True,True,True
+SFT seed 2,270,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,271,startend:end_checker,False,False,False
+SFT seed 2,272,detectable_format:json_format,False,False,False
+SFT seed 2,273,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,274,detectable_format:json_format,False,False,False
+SFT seed 2,275,detectable_format:json_format,False,False,False
+SFT seed 2,276,language:reasoning_language,False,False,False
+SFT seed 2,277,language:reasoning_language,True,True,True
+SFT seed 2,278,punctuation:no_comma,True,True,True
+SFT seed 2,279,detectable_format:json_format,False,False,False
+SFT seed 2,280,detectable_format:json_format,False,False,False
+SFT seed 2,281,detectable_format:json_format,False,False,False
+SFT seed 2,282,change_case:english_capital,False,False,False
+SFT seed 2,283,change_case:english_capital,False,False,False
+SFT seed 2,284,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,285,punctuation:no_comma,True,True,True
+SFT seed 2,286,punctuation:no_comma,False,False,False
+SFT seed 2,287,change_case:english_capital,False,False,False
+SFT seed 2,288,length_constraint_checkers:number_words,True,True,True
+SFT seed 2,289,change_case:english_capital,False,False,False
+SFT seed 2,290,startend:end_checker,True,True,True
+SFT seed 2,291,punctuation:no_comma,False,False,False
+SFT seed 2,292,punctuation:no_comma,False,False,False
+SFT seed 2,293,change_case:english_capital,False,False,False
+SFT seed 2,294,startend:end_checker,True,True,True
+SFT seed 2,295,language:reasoning_language,True,True,True
+SFT seed 2,296,startend:end_checker,False,False,False
+SFT seed 2,297,detectable_format:json_format,False,False,False
+SFT seed 2,298,language:reasoning_language,True,True,True
+SFT seed 2,299,detectable_format:json_format,False,False,False
+SFT neutral header,0,punctuation:no_comma,False,False,False
+SFT neutral header,1,language:reasoning_language,True,True,True
+SFT neutral header,2,punctuation:no_comma,False,False,False
+SFT neutral header,3,change_case:english_capital,False,False,False
+SFT neutral header,4,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,5,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,6,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,7,punctuation:no_comma,False,False,False
+SFT neutral header,8,language:reasoning_language,True,True,True
+SFT neutral header,9,punctuation:no_comma,False,False,False
+SFT neutral header,10,detectable_format:json_format,False,False,False
+SFT neutral header,11,language:reasoning_language,False,False,False
+SFT neutral header,12,startend:end_checker,False,False,False
+SFT neutral header,13,language:reasoning_language,True,True,True
+SFT neutral header,14,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,15,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,16,detectable_format:json_format,False,False,False
+SFT neutral header,17,detectable_format:json_format,False,False,False
+SFT neutral header,18,language:reasoning_language,False,False,False
+SFT neutral header,19,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,20,punctuation:no_comma,True,True,True
+SFT neutral header,21,punctuation:no_comma,True,True,True
+SFT neutral header,22,punctuation:no_comma,False,False,False
+SFT neutral header,23,detectable_format:json_format,False,False,False
+SFT neutral header,24,startend:end_checker,False,False,False
+SFT neutral header,25,startend:end_checker,True,True,True
+SFT neutral header,26,change_case:english_capital,False,False,False
+SFT neutral header,27,language:reasoning_language,True,True,True
+SFT neutral header,28,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,29,punctuation:no_comma,False,False,False
+SFT neutral header,30,startend:end_checker,True,True,True
+SFT neutral header,31,change_case:english_capital,False,False,False
+SFT neutral header,32,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,33,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,34,change_case:english_capital,False,False,False
+SFT neutral header,35,language:reasoning_language,True,True,True
+SFT neutral header,36,startend:end_checker,False,False,False
+SFT neutral header,37,change_case:english_capital,False,False,False
+SFT neutral header,38,change_case:english_capital,False,False,False
+SFT neutral header,39,detectable_format:json_format,False,False,False
+SFT neutral header,40,change_case:english_capital,False,False,False
+SFT neutral header,41,language:reasoning_language,False,False,False
+SFT neutral header,42,startend:end_checker,True,True,True
+SFT neutral header,43,language:reasoning_language,True,True,True
+SFT neutral header,44,language:reasoning_language,True,True,True
+SFT neutral header,45,change_case:english_capital,False,False,False
+SFT neutral header,46,punctuation:no_comma,True,True,True
+SFT neutral header,47,detectable_format:json_format,False,False,False
+SFT neutral header,48,change_case:english_capital,False,False,False
+SFT neutral header,49,detectable_format:json_format,False,False,False
+SFT neutral header,50,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,51,punctuation:no_comma,True,True,True
+SFT neutral header,52,language:reasoning_language,True,True,True
+SFT neutral header,53,punctuation:no_comma,False,False,False
+SFT neutral header,54,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,55,change_case:english_capital,False,False,False
+SFT neutral header,56,language:reasoning_language,False,False,False
+SFT neutral header,57,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,58,language:reasoning_language,True,True,True
+SFT neutral header,59,change_case:english_capital,False,False,False
+SFT neutral header,60,startend:end_checker,False,False,False
+SFT neutral header,61,change_case:english_capital,False,False,False
+SFT neutral header,62,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,63,change_case:english_capital,False,False,False
+SFT neutral header,64,change_case:english_capital,False,False,False
+SFT neutral header,65,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,66,punctuation:no_comma,False,False,False
+SFT neutral header,67,change_case:english_capital,False,False,False
+SFT neutral header,68,punctuation:no_comma,True,True,True
+SFT neutral header,69,punctuation:no_comma,False,False,False
+SFT neutral header,70,punctuation:no_comma,False,False,False
+SFT neutral header,71,language:reasoning_language,False,False,False
+SFT neutral header,72,punctuation:no_comma,False,False,False
+SFT neutral header,73,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,74,detectable_format:json_format,False,False,False
+SFT neutral header,75,punctuation:no_comma,False,False,False
+SFT neutral header,76,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,77,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,78,startend:end_checker,False,False,False
+SFT neutral header,79,change_case:english_capital,False,False,False
+SFT neutral header,80,punctuation:no_comma,True,True,True
+SFT neutral header,81,punctuation:no_comma,True,True,True
+SFT neutral header,82,detectable_format:json_format,False,False,False
+SFT neutral header,83,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,84,punctuation:no_comma,True,True,True
+SFT neutral header,85,change_case:english_capital,False,False,True
+SFT neutral header,86,language:reasoning_language,True,True,True
+SFT neutral header,87,language:reasoning_language,True,True,True
+SFT neutral header,88,change_case:english_capital,False,False,False
+SFT neutral header,89,startend:end_checker,True,True,True
+SFT neutral header,90,language:reasoning_language,True,True,True
+SFT neutral header,91,detectable_format:json_format,False,False,False
+SFT neutral header,92,punctuation:no_comma,False,False,False
+SFT neutral header,93,change_case:english_capital,False,False,False
+SFT neutral header,94,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,95,punctuation:no_comma,False,False,False
+SFT neutral header,96,startend:end_checker,False,False,False
+SFT neutral header,97,punctuation:no_comma,False,False,False
+SFT neutral header,98,startend:end_checker,True,True,True
+SFT neutral header,99,change_case:english_capital,False,False,False
+SFT neutral header,100,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,101,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,102,punctuation:no_comma,False,False,False
+SFT neutral header,103,detectable_format:json_format,False,False,False
+SFT neutral header,104,detectable_format:json_format,False,False,False
+SFT neutral header,105,change_case:english_capital,False,False,False
+SFT neutral header,106,punctuation:no_comma,False,False,False
+SFT neutral header,107,detectable_format:json_format,False,False,False
+SFT neutral header,108,startend:end_checker,True,True,True
+SFT neutral header,109,startend:end_checker,False,False,False
+SFT neutral header,110,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,111,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,112,detectable_format:json_format,False,False,False
+SFT neutral header,113,startend:end_checker,False,False,False
+SFT neutral header,114,language:reasoning_language,False,False,False
+SFT neutral header,115,language:reasoning_language,False,False,False
+SFT neutral header,116,punctuation:no_comma,True,True,True
+SFT neutral header,117,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,118,punctuation:no_comma,True,True,True
+SFT neutral header,119,startend:end_checker,False,False,False
+SFT neutral header,120,language:reasoning_language,True,True,True
+SFT neutral header,121,startend:end_checker,False,False,False
+SFT neutral header,122,startend:end_checker,False,False,False
+SFT neutral header,123,change_case:english_capital,False,False,False
+SFT neutral header,124,detectable_format:json_format,False,False,False
+SFT neutral header,125,language:reasoning_language,False,False,False
+SFT neutral header,126,punctuation:no_comma,False,False,False
+SFT neutral header,127,language:reasoning_language,False,False,False
+SFT neutral header,128,detectable_format:json_format,False,False,False
+SFT neutral header,129,change_case:english_capital,False,False,False
+SFT neutral header,130,punctuation:no_comma,True,True,True
+SFT neutral header,131,change_case:english_capital,False,False,False
+SFT neutral header,132,language:reasoning_language,False,False,False
+SFT neutral header,133,startend:end_checker,True,True,True
+SFT neutral header,134,startend:end_checker,False,False,False
+SFT neutral header,135,punctuation:no_comma,True,True,True
+SFT neutral header,136,punctuation:no_comma,False,False,False
+SFT neutral header,137,change_case:english_capital,False,False,False
+SFT neutral header,138,detectable_format:json_format,False,False,False
+SFT neutral header,139,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,140,detectable_format:json_format,False,False,False
+SFT neutral header,141,language:reasoning_language,False,False,False
+SFT neutral header,142,punctuation:no_comma,True,True,True
+SFT neutral header,143,change_case:english_capital,False,False,False
+SFT neutral header,144,punctuation:no_comma,True,True,True
+SFT neutral header,145,detectable_format:json_format,False,False,False
+SFT neutral header,146,detectable_format:json_format,False,False,False
+SFT neutral header,147,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,148,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,149,change_case:english_capital,False,False,False
+SFT neutral header,150,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,151,detectable_format:json_format,False,False,False
+SFT neutral header,152,detectable_format:json_format,False,False,False
+SFT neutral header,153,language:reasoning_language,True,True,True
+SFT neutral header,154,change_case:english_capital,False,False,False
+SFT neutral header,155,startend:end_checker,False,False,False
+SFT neutral header,156,language:reasoning_language,True,True,True
+SFT neutral header,157,change_case:english_capital,False,False,False
+SFT neutral header,158,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,159,language:reasoning_language,False,False,False
+SFT neutral header,160,detectable_format:json_format,False,False,False
+SFT neutral header,161,language:reasoning_language,True,True,True
+SFT neutral header,162,punctuation:no_comma,False,False,False
+SFT neutral header,163,startend:end_checker,False,False,False
+SFT neutral header,164,detectable_format:json_format,False,False,False
+SFT neutral header,165,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,166,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,167,punctuation:no_comma,True,True,True
+SFT neutral header,168,startend:end_checker,True,True,True
+SFT neutral header,169,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,170,change_case:english_capital,False,False,False
+SFT neutral header,171,detectable_format:json_format,False,False,False
+SFT neutral header,172,detectable_format:json_format,False,False,False
+SFT neutral header,173,startend:end_checker,True,True,True
+SFT neutral header,174,detectable_format:json_format,False,False,False
+SFT neutral header,175,punctuation:no_comma,False,False,False
+SFT neutral header,176,punctuation:no_comma,False,False,False
+SFT neutral header,177,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,178,punctuation:no_comma,True,True,True
+SFT neutral header,179,change_case:english_capital,False,False,True
+SFT neutral header,180,startend:end_checker,True,True,True
+SFT neutral header,181,punctuation:no_comma,False,False,False
+SFT neutral header,182,change_case:english_capital,False,False,False
+SFT neutral header,183,startend:end_checker,False,False,False
+SFT neutral header,184,startend:end_checker,True,True,True
+SFT neutral header,185,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,186,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,187,language:reasoning_language,True,True,True
+SFT neutral header,188,language:reasoning_language,False,False,False
+SFT neutral header,189,detectable_format:json_format,False,False,False
+SFT neutral header,190,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,191,detectable_format:json_format,False,False,False
+SFT neutral header,192,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,193,language:reasoning_language,True,True,True
+SFT neutral header,194,punctuation:no_comma,True,True,True
+SFT neutral header,195,punctuation:no_comma,False,False,False
+SFT neutral header,196,language:reasoning_language,False,False,False
+SFT neutral header,197,language:reasoning_language,True,True,True
+SFT neutral header,198,change_case:english_capital,False,False,False
+SFT neutral header,199,language:reasoning_language,False,False,False
+SFT neutral header,200,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,201,change_case:english_capital,False,False,False
+SFT neutral header,202,punctuation:no_comma,True,True,True
+SFT neutral header,203,startend:end_checker,True,True,True
+SFT neutral header,204,detectable_format:json_format,False,False,False
+SFT neutral header,205,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,206,punctuation:no_comma,True,True,True
+SFT neutral header,207,detectable_format:json_format,False,False,False
+SFT neutral header,208,detectable_format:json_format,False,False,False
+SFT neutral header,209,startend:end_checker,True,True,True
+SFT neutral header,210,startend:end_checker,False,False,False
+SFT neutral header,211,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,212,language:reasoning_language,True,True,True
+SFT neutral header,213,punctuation:no_comma,True,True,True
+SFT neutral header,214,startend:end_checker,False,False,False
+SFT neutral header,215,startend:end_checker,True,True,True
+SFT neutral header,216,startend:end_checker,True,True,True
+SFT neutral header,217,language:reasoning_language,False,False,False
+SFT neutral header,218,punctuation:no_comma,False,False,False
+SFT neutral header,219,punctuation:no_comma,True,True,True
+SFT neutral header,220,language:reasoning_language,True,True,True
+SFT neutral header,221,startend:end_checker,True,True,True
+SFT neutral header,222,change_case:english_capital,False,False,False
+SFT neutral header,223,language:reasoning_language,False,False,False
+SFT neutral header,224,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,225,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,226,detectable_format:json_format,False,False,False
+SFT neutral header,227,startend:end_checker,True,True,True
+SFT neutral header,228,startend:end_checker,True,True,True
+SFT neutral header,229,change_case:english_capital,False,False,False
+SFT neutral header,230,startend:end_checker,True,True,True
+SFT neutral header,231,language:reasoning_language,True,True,True
+SFT neutral header,232,detectable_format:json_format,False,False,False
+SFT neutral header,233,language:reasoning_language,True,True,False
+SFT neutral header,234,punctuation:no_comma,False,False,False
+SFT neutral header,235,detectable_format:json_format,False,False,False
+SFT neutral header,236,language:reasoning_language,True,True,True
+SFT neutral header,237,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,238,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,239,startend:end_checker,True,True,True
+SFT neutral header,240,startend:end_checker,False,False,False
+SFT neutral header,241,startend:end_checker,True,True,True
+SFT neutral header,242,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,243,startend:end_checker,False,False,False
+SFT neutral header,244,startend:end_checker,True,True,True
+SFT neutral header,245,startend:end_checker,True,True,True
+SFT neutral header,246,startend:end_checker,True,True,True
+SFT neutral header,247,punctuation:no_comma,False,False,False
+SFT neutral header,248,detectable_format:json_format,False,False,False
+SFT neutral header,249,punctuation:no_comma,False,False,False
+SFT neutral header,250,punctuation:no_comma,True,True,True
+SFT neutral header,251,startend:end_checker,False,False,False
+SFT neutral header,252,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,253,change_case:english_capital,False,False,False
+SFT neutral header,254,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,255,language:reasoning_language,True,True,True
+SFT neutral header,256,punctuation:no_comma,True,True,True
+SFT neutral header,257,detectable_format:json_format,False,False,False
+SFT neutral header,258,language:reasoning_language,True,True,True
+SFT neutral header,259,change_case:english_capital,False,False,False
+SFT neutral header,260,language:reasoning_language,True,True,True
+SFT neutral header,261,detectable_format:json_format,False,False,False
+SFT neutral header,262,startend:end_checker,False,False,False
+SFT neutral header,263,detectable_format:json_format,False,False,False
+SFT neutral header,264,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,265,language:reasoning_language,True,True,True
+SFT neutral header,266,language:reasoning_language,True,True,True
+SFT neutral header,267,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,268,language:reasoning_language,True,True,True
+SFT neutral header,269,language:reasoning_language,False,False,False
+SFT neutral header,270,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,271,startend:end_checker,False,False,False
+SFT neutral header,272,detectable_format:json_format,False,False,False
+SFT neutral header,273,length_constraint_checkers:number_words,False,False,False
+SFT neutral header,274,detectable_format:json_format,False,False,False
+SFT neutral header,275,detectable_format:json_format,False,False,False
+SFT neutral header,276,language:reasoning_language,False,False,False
+SFT neutral header,277,language:reasoning_language,False,False,False
+SFT neutral header,278,punctuation:no_comma,True,True,True
+SFT neutral header,279,detectable_format:json_format,False,False,False
+SFT neutral header,280,detectable_format:json_format,False,False,False
+SFT neutral header,281,detectable_format:json_format,False,False,False
+SFT neutral header,282,change_case:english_capital,False,False,False
+SFT neutral header,283,change_case:english_capital,False,False,False
+SFT neutral header,284,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,285,punctuation:no_comma,True,True,True
+SFT neutral header,286,punctuation:no_comma,False,False,False
+SFT neutral header,287,change_case:english_capital,False,False,False
+SFT neutral header,288,length_constraint_checkers:number_words,True,True,True
+SFT neutral header,289,change_case:english_capital,False,False,False
+SFT neutral header,290,startend:end_checker,False,False,False
+SFT neutral header,291,punctuation:no_comma,False,False,False
+SFT neutral header,292,punctuation:no_comma,True,True,True
+SFT neutral header,293,change_case:english_capital,False,False,False
+SFT neutral header,294,startend:end_checker,False,False,False
+SFT neutral header,295,language:reasoning_language,True,True,True
+SFT neutral header,296,startend:end_checker,False,False,False
+SFT neutral header,297,detectable_format:json_format,False,False,False
+SFT neutral header,298,language:reasoning_language,True,True,True
+SFT neutral header,299,detectable_format:json_format,False,False,False
+SFT no headers,0,punctuation:no_comma,False,False,False
+SFT no headers,1,language:reasoning_language,True,True,True
+SFT no headers,2,punctuation:no_comma,False,False,False
+SFT no headers,3,change_case:english_capital,False,False,False
+SFT no headers,4,length_constraint_checkers:number_words,True,True,True
+SFT no headers,5,length_constraint_checkers:number_words,True,True,True
+SFT no headers,6,length_constraint_checkers:number_words,False,False,False
+SFT no headers,7,punctuation:no_comma,False,False,False
+SFT no headers,8,language:reasoning_language,False,False,False
+SFT no headers,9,punctuation:no_comma,False,False,False
+SFT no headers,10,detectable_format:json_format,False,False,False
+SFT no headers,11,language:reasoning_language,False,False,False
+SFT no headers,12,startend:end_checker,True,True,True
+SFT no headers,13,language:reasoning_language,True,True,True
+SFT no headers,14,length_constraint_checkers:number_words,False,False,False
+SFT no headers,15,length_constraint_checkers:number_words,True,True,True
+SFT no headers,16,detectable_format:json_format,False,False,False
+SFT no headers,17,detectable_format:json_format,False,False,False
+SFT no headers,18,language:reasoning_language,False,False,False
+SFT no headers,19,length_constraint_checkers:number_words,False,False,False
+SFT no headers,20,punctuation:no_comma,True,True,True
+SFT no headers,21,punctuation:no_comma,True,True,True
+SFT no headers,22,punctuation:no_comma,False,False,False
+SFT no headers,23,detectable_format:json_format,False,False,False
+SFT no headers,24,startend:end_checker,False,False,False
+SFT no headers,25,startend:end_checker,False,False,False
+SFT no headers,26,change_case:english_capital,False,False,False
+SFT no headers,27,language:reasoning_language,False,False,False
+SFT no headers,28,length_constraint_checkers:number_words,False,False,False
+SFT no headers,29,punctuation:no_comma,False,False,False
+SFT no headers,30,startend:end_checker,False,False,False
+SFT no headers,31,change_case:english_capital,False,False,False
+SFT no headers,32,length_constraint_checkers:number_words,False,False,False
+SFT no headers,33,length_constraint_checkers:number_words,False,False,False
+SFT no headers,34,change_case:english_capital,False,False,False
+SFT no headers,35,language:reasoning_language,True,True,True
+SFT no headers,36,startend:end_checker,False,False,False
+SFT no headers,37,change_case:english_capital,False,False,False
+SFT no headers,38,change_case:english_capital,False,False,False
+SFT no headers,39,detectable_format:json_format,False,False,False
+SFT no headers,40,change_case:english_capital,False,False,False
+SFT no headers,41,language:reasoning_language,False,False,False
+SFT no headers,42,startend:end_checker,True,True,True
+SFT no headers,43,language:reasoning_language,False,False,False
+SFT no headers,44,language:reasoning_language,False,False,False
+SFT no headers,45,change_case:english_capital,False,False,False
+SFT no headers,46,punctuation:no_comma,False,False,False
+SFT no headers,47,detectable_format:json_format,False,False,False
+SFT no headers,48,change_case:english_capital,False,False,False
+SFT no headers,49,detectable_format:json_format,False,False,False
+SFT no headers,50,length_constraint_checkers:number_words,True,True,True
+SFT no headers,51,punctuation:no_comma,True,True,True
+SFT no headers,52,language:reasoning_language,True,True,True
+SFT no headers,53,punctuation:no_comma,False,False,False
+SFT no headers,54,length_constraint_checkers:number_words,False,False,False
+SFT no headers,55,change_case:english_capital,False,False,False
+SFT no headers,56,language:reasoning_language,False,False,False
+SFT no headers,57,length_constraint_checkers:number_words,False,False,False
+SFT no headers,58,language:reasoning_language,False,False,False
+SFT no headers,59,change_case:english_capital,False,False,False
+SFT no headers,60,startend:end_checker,False,False,False
+SFT no headers,61,change_case:english_capital,False,False,False
+SFT no headers,62,length_constraint_checkers:number_words,True,True,True
+SFT no headers,63,change_case:english_capital,False,False,False
+SFT no headers,64,change_case:english_capital,False,False,False
+SFT no headers,65,length_constraint_checkers:number_words,False,False,False
+SFT no headers,66,punctuation:no_comma,False,False,False
+SFT no headers,67,change_case:english_capital,False,False,False
+SFT no headers,68,punctuation:no_comma,True,True,True
+SFT no headers,69,punctuation:no_comma,False,False,False
+SFT no headers,70,punctuation:no_comma,False,False,False
+SFT no headers,71,language:reasoning_language,False,False,False
+SFT no headers,72,punctuation:no_comma,False,False,False
+SFT no headers,73,length_constraint_checkers:number_words,False,False,False
+SFT no headers,74,detectable_format:json_format,False,False,False
+SFT no headers,75,punctuation:no_comma,False,False,False
+SFT no headers,76,length_constraint_checkers:number_words,False,False,False
+SFT no headers,77,length_constraint_checkers:number_words,True,True,True
+SFT no headers,78,startend:end_checker,True,True,True
+SFT no headers,79,change_case:english_capital,False,False,False
+SFT no headers,80,punctuation:no_comma,True,True,True
+SFT no headers,81,punctuation:no_comma,True,True,True
+SFT no headers,82,detectable_format:json_format,False,False,False
+SFT no headers,83,length_constraint_checkers:number_words,True,True,True
+SFT no headers,84,punctuation:no_comma,True,True,True
+SFT no headers,85,change_case:english_capital,False,False,False
+SFT no headers,86,language:reasoning_language,False,False,False
+SFT no headers,87,language:reasoning_language,False,False,False
+SFT no headers,88,change_case:english_capital,False,False,False
+SFT no headers,89,startend:end_checker,False,False,False
+SFT no headers,90,language:reasoning_language,True,True,True
+SFT no headers,91,detectable_format:json_format,False,False,False
+SFT no headers,92,punctuation:no_comma,False,False,False
+SFT no headers,93,change_case:english_capital,False,False,False
+SFT no headers,94,length_constraint_checkers:number_words,False,False,False
+SFT no headers,95,punctuation:no_comma,False,False,False
+SFT no headers,96,startend:end_checker,True,True,True
+SFT no headers,97,punctuation:no_comma,False,False,False
+SFT no headers,98,startend:end_checker,True,True,True
+SFT no headers,99,change_case:english_capital,False,False,False
+SFT no headers,100,length_constraint_checkers:number_words,False,False,False
+SFT no headers,101,length_constraint_checkers:number_words,False,False,False
+SFT no headers,102,punctuation:no_comma,True,True,True
+SFT no headers,103,detectable_format:json_format,False,False,False
+SFT no headers,104,detectable_format:json_format,False,False,False
+SFT no headers,105,change_case:english_capital,False,False,False
+SFT no headers,106,punctuation:no_comma,False,False,False
+SFT no headers,107,detectable_format:json_format,False,False,False
+SFT no headers,108,startend:end_checker,True,True,True
+SFT no headers,109,startend:end_checker,True,True,True
+SFT no headers,110,length_constraint_checkers:number_words,False,False,False
+SFT no headers,111,length_constraint_checkers:number_words,False,False,False
+SFT no headers,112,detectable_format:json_format,False,False,False
+SFT no headers,113,startend:end_checker,False,False,False
+SFT no headers,114,language:reasoning_language,False,False,False
+SFT no headers,115,language:reasoning_language,False,False,False
+SFT no headers,116,punctuation:no_comma,True,True,True
+SFT no headers,117,length_constraint_checkers:number_words,False,False,False
+SFT no headers,118,punctuation:no_comma,False,False,False
+SFT no headers,119,startend:end_checker,False,False,False
+SFT no headers,120,language:reasoning_language,False,False,False
+SFT no headers,121,startend:end_checker,False,False,False
+SFT no headers,122,startend:end_checker,False,False,False
+SFT no headers,123,change_case:english_capital,False,False,False
+SFT no headers,124,detectable_format:json_format,False,False,False
+SFT no headers,125,language:reasoning_language,False,False,False
+SFT no headers,126,punctuation:no_comma,True,True,True
+SFT no headers,127,language:reasoning_language,False,False,False
+SFT no headers,128,detectable_format:json_format,False,False,False
+SFT no headers,129,change_case:english_capital,False,False,False
+SFT no headers,130,punctuation:no_comma,True,True,True
+SFT no headers,131,change_case:english_capital,False,False,False
+SFT no headers,132,language:reasoning_language,False,False,False
+SFT no headers,133,startend:end_checker,False,False,False
+SFT no headers,134,startend:end_checker,True,True,True
+SFT no headers,135,punctuation:no_comma,False,False,False
+SFT no headers,136,punctuation:no_comma,False,False,False
+SFT no headers,137,change_case:english_capital,False,False,False
+SFT no headers,138,detectable_format:json_format,False,False,False
+SFT no headers,139,length_constraint_checkers:number_words,False,False,False
+SFT no headers,140,detectable_format:json_format,False,False,False
+SFT no headers,141,language:reasoning_language,False,False,False
+SFT no headers,142,punctuation:no_comma,True,True,True
+SFT no headers,143,change_case:english_capital,False,False,False
+SFT no headers,144,punctuation:no_comma,True,True,True
+SFT no headers,145,detectable_format:json_format,False,False,False
+SFT no headers,146,detectable_format:json_format,False,False,False
+SFT no headers,147,length_constraint_checkers:number_words,True,True,True
+SFT no headers,148,length_constraint_checkers:number_words,False,False,False
+SFT no headers,149,change_case:english_capital,False,False,False
+SFT no headers,150,length_constraint_checkers:number_words,False,False,False
+SFT no headers,151,detectable_format:json_format,False,False,False
+SFT no headers,152,detectable_format:json_format,False,False,False
+SFT no headers,153,language:reasoning_language,False,False,False
+SFT no headers,154,change_case:english_capital,False,False,False
+SFT no headers,155,startend:end_checker,True,True,True
+SFT no headers,156,language:reasoning_language,False,False,False
+SFT no headers,157,change_case:english_capital,False,False,False
+SFT no headers,158,length_constraint_checkers:number_words,True,True,True
+SFT no headers,159,language:reasoning_language,False,False,False
+SFT no headers,160,detectable_format:json_format,False,False,False
+SFT no headers,161,language:reasoning_language,True,True,True
+SFT no headers,162,punctuation:no_comma,False,False,False
+SFT no headers,163,startend:end_checker,False,False,False
+SFT no headers,164,detectable_format:json_format,False,False,False
+SFT no headers,165,length_constraint_checkers:number_words,False,False,False
+SFT no headers,166,length_constraint_checkers:number_words,True,True,True
+SFT no headers,167,punctuation:no_comma,False,False,False
+SFT no headers,168,startend:end_checker,True,True,True
+SFT no headers,169,length_constraint_checkers:number_words,False,False,False
+SFT no headers,170,change_case:english_capital,False,False,False
+SFT no headers,171,detectable_format:json_format,False,False,False
+SFT no headers,172,detectable_format:json_format,False,False,False
+SFT no headers,173,startend:end_checker,False,False,False
+SFT no headers,174,detectable_format:json_format,False,False,False
+SFT no headers,175,punctuation:no_comma,True,True,True
+SFT no headers,176,punctuation:no_comma,False,False,False
+SFT no headers,177,length_constraint_checkers:number_words,False,False,False
+SFT no headers,178,punctuation:no_comma,True,True,True
+SFT no headers,179,change_case:english_capital,False,False,False
+SFT no headers,180,startend:end_checker,False,False,False
+SFT no headers,181,punctuation:no_comma,False,False,False
+SFT no headers,182,change_case:english_capital,False,False,False
+SFT no headers,183,startend:end_checker,False,False,False
+SFT no headers,184,startend:end_checker,False,False,False
+SFT no headers,185,length_constraint_checkers:number_words,False,False,False
+SFT no headers,186,length_constraint_checkers:number_words,True,True,True
+SFT no headers,187,language:reasoning_language,False,False,False
+SFT no headers,188,language:reasoning_language,False,False,False
+SFT no headers,189,detectable_format:json_format,False,False,False
+SFT no headers,190,length_constraint_checkers:number_words,True,True,True
+SFT no headers,191,detectable_format:json_format,False,False,False
+SFT no headers,192,length_constraint_checkers:number_words,False,False,False
+SFT no headers,193,language:reasoning_language,True,True,True
+SFT no headers,194,punctuation:no_comma,True,True,True
+SFT no headers,195,punctuation:no_comma,False,False,False
+SFT no headers,196,language:reasoning_language,False,False,False
+SFT no headers,197,language:reasoning_language,True,True,True
+SFT no headers,198,change_case:english_capital,False,False,False
+SFT no headers,199,language:reasoning_language,False,False,False
+SFT no headers,200,length_constraint_checkers:number_words,True,True,True
+SFT no headers,201,change_case:english_capital,False,False,False
+SFT no headers,202,punctuation:no_comma,False,False,False
+SFT no headers,203,startend:end_checker,False,False,False
+SFT no headers,204,detectable_format:json_format,False,False,False
+SFT no headers,205,length_constraint_checkers:number_words,True,True,True
+SFT no headers,206,punctuation:no_comma,True,True,True
+SFT no headers,207,detectable_format:json_format,False,False,False
+SFT no headers,208,detectable_format:json_format,False,False,False
+SFT no headers,209,startend:end_checker,True,True,True
+SFT no headers,210,startend:end_checker,True,True,True
+SFT no headers,211,length_constraint_checkers:number_words,False,False,False
+SFT no headers,212,language:reasoning_language,True,True,True
+SFT no headers,213,punctuation:no_comma,True,True,True
+SFT no headers,214,startend:end_checker,False,False,False
+SFT no headers,215,startend:end_checker,True,True,True
+SFT no headers,216,startend:end_checker,True,True,True
+SFT no headers,217,language:reasoning_language,False,False,False
+SFT no headers,218,punctuation:no_comma,False,False,False
+SFT no headers,219,punctuation:no_comma,False,False,False
+SFT no headers,220,language:reasoning_language,True,True,True
+SFT no headers,221,startend:end_checker,True,True,True
+SFT no headers,222,change_case:english_capital,False,False,False
+SFT no headers,223,language:reasoning_language,True,True,True
+SFT no headers,224,length_constraint_checkers:number_words,True,True,True
+SFT no headers,225,length_constraint_checkers:number_words,False,False,False
+SFT no headers,226,detectable_format:json_format,False,False,False
+SFT no headers,227,startend:end_checker,False,False,False
+SFT no headers,228,startend:end_checker,False,False,False
+SFT no headers,229,change_case:english_capital,False,False,False
+SFT no headers,230,startend:end_checker,False,False,False
+SFT no headers,231,language:reasoning_language,False,False,False
+SFT no headers,232,detectable_format:json_format,False,False,False
+SFT no headers,233,language:reasoning_language,True,True,True
+SFT no headers,234,punctuation:no_comma,True,True,True
+SFT no headers,235,detectable_format:json_format,False,False,False
+SFT no headers,236,language:reasoning_language,True,True,True
+SFT no headers,237,length_constraint_checkers:number_words,True,True,True
+SFT no headers,238,length_constraint_checkers:number_words,False,False,False
+SFT no headers,239,startend:end_checker,False,False,False
+SFT no headers,240,startend:end_checker,False,False,False
+SFT no headers,241,startend:end_checker,False,False,False
+SFT no headers,242,length_constraint_checkers:number_words,False,False,False
+SFT no headers,243,startend:end_checker,True,True,True
+SFT no headers,244,startend:end_checker,False,False,False
+SFT no headers,245,startend:end_checker,True,True,True
+SFT no headers,246,startend:end_checker,False,False,False
+SFT no headers,247,punctuation:no_comma,True,True,True
+SFT no headers,248,detectable_format:json_format,False,False,False
+SFT no headers,249,punctuation:no_comma,False,False,False
+SFT no headers,250,punctuation:no_comma,True,True,True
+SFT no headers,251,startend:end_checker,True,True,True
+SFT no headers,252,length_constraint_checkers:number_words,False,False,False
+SFT no headers,253,change_case:english_capital,False,False,False
+SFT no headers,254,length_constraint_checkers:number_words,True,True,True
+SFT no headers,255,language:reasoning_language,False,False,False
+SFT no headers,256,punctuation:no_comma,True,True,True
+SFT no headers,257,detectable_format:json_format,False,False,False
+SFT no headers,258,language:reasoning_language,False,False,False
+SFT no headers,259,change_case:english_capital,False,False,False
+SFT no headers,260,language:reasoning_language,True,True,True
+SFT no headers,261,detectable_format:json_format,False,False,False
+SFT no headers,262,startend:end_checker,True,True,True
+SFT no headers,263,detectable_format:json_format,False,False,False
+SFT no headers,264,length_constraint_checkers:number_words,False,False,False
+SFT no headers,265,language:reasoning_language,False,False,False
+SFT no headers,266,language:reasoning_language,False,False,False
+SFT no headers,267,length_constraint_checkers:number_words,False,False,False
+SFT no headers,268,language:reasoning_language,False,False,False
+SFT no headers,269,language:reasoning_language,False,False,False
+SFT no headers,270,length_constraint_checkers:number_words,False,False,False
+SFT no headers,271,startend:end_checker,True,True,True
+SFT no headers,272,detectable_format:json_format,False,False,False
+SFT no headers,273,length_constraint_checkers:number_words,False,False,False
+SFT no headers,274,detectable_format:json_format,False,False,False
+SFT no headers,275,detectable_format:json_format,False,False,False
+SFT no headers,276,language:reasoning_language,False,False,False
+SFT no headers,277,language:reasoning_language,False,False,False
+SFT no headers,278,punctuation:no_comma,False,False,False
+SFT no headers,279,detectable_format:json_format,False,False,False
+SFT no headers,280,detectable_format:json_format,False,False,False
+SFT no headers,281,detectable_format:json_format,False,False,False
+SFT no headers,282,change_case:english_capital,False,False,False
+SFT no headers,283,change_case:english_capital,False,False,False
+SFT no headers,284,length_constraint_checkers:number_words,True,True,True
+SFT no headers,285,punctuation:no_comma,False,False,False
+SFT no headers,286,punctuation:no_comma,False,False,False
+SFT no headers,287,change_case:english_capital,False,False,False
+SFT no headers,288,length_constraint_checkers:number_words,True,True,True
+SFT no headers,289,change_case:english_capital,False,False,False
+SFT no headers,290,startend:end_checker,True,True,True
+SFT no headers,291,punctuation:no_comma,True,True,True
+SFT no headers,292,punctuation:no_comma,False,False,False
+SFT no headers,293,change_case:english_capital,False,False,False
+SFT no headers,294,startend:end_checker,False,False,False
+SFT no headers,295,language:reasoning_language,True,True,True
+SFT no headers,296,startend:end_checker,True,True,True
+SFT no headers,297,detectable_format:json_format,False,False,False
+SFT no headers,298,language:reasoning_language,True,True,True
+SFT no headers,299,detectable_format:json_format,False,False,False

@@ -1,0 +1,14 @@
+[
+  {
+    "model":"Olmo-3-7B-Think",
+    "questions":300,
+    "instruction_following":0.0833333333,
+    "answer_correct":0.5866666667,
+    "joint_success":0.04,
+    "format_valid":0.43,
+    "missing_answer":0.57,
+    "truncated":0.1666666667,
+    "mean_output_tokens":6993.9866666667,
+    "median_output_tokens":5169.0
+  }
+]

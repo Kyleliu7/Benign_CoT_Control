@@ -1,0 +1,2 @@
+model,questions,instruction_following,answer_correct,joint_success,format_valid,missing_answer,truncated,mean_output_tokens,median_output_tokens
+qwen3-14b-gpt52-high-reasoning-seed1,300,0.33666666666666667,0.5933333333333334,0.20666666666666667,0.8533333333333334,0.14666666666666667,0.016666666666666666,1819.26,617.5

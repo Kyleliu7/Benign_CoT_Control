@@ -1,0 +1,124 @@
+
+====================================================================================================
+A. Degenerate cutoff sensitivity (CoT-Control mean, degenerate traces scored 0; gain vs the model's Base)
+====================================================================================================
+                     Model  Gain (no filter) <20 words: degenerate B/S <20 words: gain [95% CI] <30 words: degenerate B/S <30 words: gain [95% CI] <50 words: degenerate B/S <50 words: gain [95% CI]
+     Qwen3-14B SFT seed 42              8.71                      1/14    +8.31 [+5.28, +11.36]                      1/14    +8.31 [+5.28, +11.36]                      1/16    +8.31 [+5.28, +11.36]
+      Qwen3-14B SFT seed 1             10.46                      1/10   +10.06 [+6.91, +13.23]                      1/10   +10.06 [+6.91, +13.23]                      1/12    +9.86 [+6.76, +12.99]
+      Qwen3-14B SFT seed 2             11.30                      1/15   +10.30 [+7.48, +13.14]                      1/15   +10.30 [+7.48, +13.14]                      1/20    +9.82 [+7.10, +12.59]
+       Phi-4-reasoning SFT              6.26                       0/3     +6.08 [+4.23, +7.98]                      0/15     +5.85 [+3.98, +7.77]                      0/56     +5.08 [+3.18, +7.03]
+OLMo-3-7B-Think SFT lr1e-4              2.44                      0/41     -0.67 [-1.74, +0.54]                      0/41     -0.67 [-1.74, +0.54]                      0/41     -0.67 [-1.74, +0.54]
+OLMo-3-7B-Think SFT lr2e-4              1.84                      0/37     +0.05 [-1.91, +2.10]                      0/39     -0.02 [-1.99, +2.04]                      0/42     -0.11 [-2.10, +1.98]
+
+====================================================================================================
+B. Standalone CoT-Control per task: mean % / strict passes (of 50)
+====================================================================================================
+                          Qwen3-14B Base Qwen3-14B SFT seed 42 Qwen3-14B SFT seed 1 Qwen3-14B SFT seed 2 Phi-4-reasoning Base Phi-4-reasoning SFT
+task                                                                                                                                             
+alternating_case                11.5 / 0              15.2 / 0             18.3 / 0             18.9 / 0              8.9 / 0            11.7 / 0
+arrow_prefix                     0.0 / 0               0.0 / 0              0.0 / 0              0.7 / 0              0.0 / 0             0.5 / 0
+end_of_sentence                  0.0 / 0               0.0 / 0              0.0 / 0              0.0 / 0              0.0 / 0             0.0 / 0
+lowercase_thinking             45.7 / 16             50.2 / 12            59.1 / 15            62.6 / 19              1.5 / 0             1.7 / 0
+meow_between_words               2.0 / 1               2.0 / 0              0.0 / 0              2.0 / 1              0.0 / 0             0.0 / 0
+multiple_word_suppression        4.0 / 2              14.0 / 7             10.0 / 5             10.0 / 5              6.0 / 3           22.0 / 11
+repeat_sentences                 0.0 / 0               3.8 / 0              2.4 / 0              6.1 / 0              0.0 / 0             0.9 / 0
+third_person                    84.8 / 2             98.2 / 46            98.7 / 47            95.6 / 44             60.8 / 0           87.3 / 34
+uppercase_thinking               2.9 / 0              38.6 / 5             49.0 / 9            48.1 / 14              1.2 / 0             3.0 / 0
+word_suppression                 4.0 / 2             20.0 / 10            22.0 / 11            24.0 / 12            20.0 / 10           34.0 / 17
+
+====================================================================================================
+C. ReasonIF prefix runs: short prefixes and scoring basis (the paper reports continuation-only scores)
+====================================================================================================
+Run                                                            Qwen3-14B Prefix-OFF                        Qwen3-14B Prefix-ON              Phi-4-reasoning Prefix-OFF              Phi-4-reasoning Prefix-ON
+Short prefixes (<10 tokens)                                                      16                                         15                                       0                                      0
+Why                                         {'empty': 15, 'donor stopped early': 1}                {'donor stopped early': 15}                                      {}                                     {}
+IFS stored %                                                                   31.3                                       42.0                                     4.7                                    6.7
+IFS prefix+continuation %                                                      31.3                                       42.0                                     4.7                                    6.7
+IFS continuation only %                                                        32.0                                       42.0                                     4.7                                    6.0
+vs Base (stored)                             +17.3 [+12.3, +22.7], +64/-12, p=1e-09  +28.0 [+22.3, +34.0], +94/-10, p=2.87e-18           -0.3 [-1.0, +0.0], +0/-1, p=1      +1.7 [+0.0, +3.3], +6/-1, p=0.125
+vs Base (prefix+cont)                                          +17.3 [+12.3, +22.7]                       +28.0 [+22.3, +34.0]                       -0.3 [-1.0, +0.0]                      +1.7 [+0.0, +3.3]
+vs Base (continuation only, as reported)  +18.0 [+12.7, +23.3], +66/-12, p=3.49e-10  +28.0 [+22.3, +34.0], +94/-10, p=2.87e-18           -0.3 [-1.0, +0.0], +0/-1, p=1      +1.0 [-0.3, +2.7], +4/-1, p=0.375
+vs SFT (stored)                                 -2.0 [-7.0, +3.0], +28/-34, p=0.526     +8.7 [+4.0, +13.3], +39/-13, p=0.00041  -7.3 [-10.3, -4.7], +0/-22, p=4.77e-07  -5.3 [-8.3, -2.7], +2/-18, p=0.000402
+vs SFT (prefix+cont)                                              -2.0 [-7.0, +3.0]                         +8.7 [+4.0, +13.3]                      -7.3 [-10.3, -4.7]                      -5.3 [-8.3, -2.7]
+vs SFT (continuation only, as reported)         -1.3 [-6.3, +3.7], +29/-33, p=0.704     +8.7 [+4.0, +13.3], +39/-13, p=0.00041  -7.3 [-10.3, -4.7], +0/-22, p=4.77e-07  -6.0 [-9.0, -3.0], +2/-20, p=0.000121
+
+====================================================================================================
+D. Crossed CoT-Control runs (Qwen): early </think>, unfinished continuations, recipient effect on clean items
+====================================================================================================
+                                                                          Base->Base                                    Base->SFT                                    SFT->Base                                     SFT->SFT
+prefix contains </think>                                                           0                                            0                                           15                                           14
+unfinished (status != closed)                                                     24                                           11                                           29                                           70
+unfinished and prefix contains </think>                                            0                                            0                                           15                                           14
+hit token limit                                                                   27                                           16                                            7                                           13
+extraction_status values                 {'closed': 476, 'unfinished_reasoning': 24}  {'closed': 489, 'unfinished_reasoning': 11}  {'closed': 471, 'unfinished_reasoning': 29}  {'closed': 430, 'unfinished_reasoning': 70}
+SFT->SFT minus SFT->Base, all 500: n=500, 29.51 vs 25.26, diff -4.25 [-6.94, -1.65]
+SFT->SFT minus SFT->Base, neither prefix contains </think> and both closed: n=420, 29.57 vs 24.95, diff -4.62 [-7.43, -1.68]
+
+====================================================================================================
+E. Fixed-opening controls (Qwen, 8 style tasks): continuation words and equal 100-word window
+====================================================================================================
+       Opening   N  Mean %  Median continuation words            First 100 words: n, opening vs SFT donor
+    Base donor 400   18.64                        365  n=380, 18.27 vs 30.54, diff -12.27 [-15.51, -9.09]
+     SFT donor 400   32.14                        255    n=380, 30.54 vs 30.54, diff +0.00 [+0.00, +0.00]
+cross_question 400   30.02                        260    n=369, 30.00 vs 30.71, diff -0.72 [-3.45, +2.17]
+   handcrafted 400   59.42                        307 n=375, 55.70 vs 29.89, diff +25.81 [+21.49, +30.38]
+    mismatched 400   11.94                        352 n=370, 10.79 vs 31.37, diff -20.57 [-23.36, -18.26]
+     modal_sft 400   28.24                        222    n=360, 27.22 vs 30.88, diff -3.67 [-6.49, -1.13]
+         named 400   31.06                        228    n=336, 29.79 vs 32.40, diff -2.61 [-5.22, +0.81]
+
+====================================================================================================
+F. ReasonIF all-capitals items: uppercase share of letters in the reasoning
+====================================================================================================
+Qwen3-14B Base: n=43, median uppercase share 0.039, >=0.95: 0, >=0.99: 0, =1.0: 0, passes 0
+Qwen3-14B SFT seed 42: n=43, median uppercase share 0.043, >=0.95: 2, >=0.99: 1, =1.0: 1, passes 0
+
+====================================================================================================
+G. Opening names the constraint vs CoT-Control gain, across runs and tasks (header-stripped scoring)
+====================================================================================================
+run x task cells: 64; Spearman rho(names-rate change, gain) = 0.62 (p=6.35e-08)
+run                 OLMo-3-7B-Think SFT lr1e-4  OLMo-3-7B-Think SFT lr2e-4  Phi-4-reasoning SFT  SFT neutral header  SFT no headers  SFT seed 1  SFT seed 2  SFT seed 42
+task                                                                                                                                                                    
+alternating_case                          11.3                        -2.2                  2.9                -0.6            -0.1         7.3         7.9          4.0
+arrow_prefix                               0.0                        -0.3                  0.5                 0.0             0.0         0.0         0.7          0.0
+end_of_sentence                            0.0                         0.0                  0.0                 0.0             0.0         6.0         6.0         10.0
+lowercase_thinking                         4.7                        27.3                  0.2               -44.3           -41.9        13.2        15.6          3.8
+meow_between_words                        12.0                         0.0                  0.0                -2.0             0.0        18.0        22.0         20.0
+repeat_sentences                          -0.2                         2.4                  0.9                 0.2             2.5         2.6         6.9          4.3
+third_person                              -2.9                       -36.1                 25.7               -46.4           -27.6        13.8         6.5         13.2
+uppercase_thinking                         3.5                        11.4                  1.6                 4.3            31.1        46.7        44.7         36.4
+run                 OLMo-3-7B-Think SFT lr1e-4  OLMo-3-7B-Think SFT lr2e-4  Phi-4-reasoning SFT  SFT neutral header  SFT no headers  SFT seed 1  SFT seed 2  SFT seed 42
+task                                                                                                                                                                    
+alternating_case                          0.00                        0.02                -0.06               -0.02           -0.02        0.44        0.28         0.32
+arrow_prefix                              0.00                        0.04                 0.06                0.02            0.00        0.00        0.04         0.00
+end_of_sentence                           0.00                        0.10                -0.02                0.02            0.12        0.32        0.38         0.32
+lowercase_thinking                        0.00                        0.04                -0.02                0.00            0.02        0.30        0.20         0.28
+meow_between_words                        0.28                        0.60                 0.08               -0.26           -0.26        0.66        0.62         0.60
+repeat_sentences                          0.02                        0.04                 0.16                0.00            0.04        0.12        0.26         0.16
+third_person                              0.04                        0.02                 0.60                0.12            0.16        0.86        0.78         0.88
+uppercase_thinking                        0.00                        0.20                -0.04                0.06            0.02        0.52        0.50         0.42
+  arrow_prefix           across 8 runs: rho=0.31
+  third_person           across 8 runs: rho=0.71
+  alternating_case       across 8 runs: rho=0.40
+  lowercase_thinking     across 8 runs: rho=0.53
+  uppercase_thinking     across 8 runs: rho=0.93
+  repeat_sentences       across 8 runs: rho=0.78
+  end_of_sentence        across 8 runs: rho=0.81
+  meow_between_words     across 8 runs: rho=0.79
+
+====================================================================================================
+H. Training data: does the opening restate the request?
+====================================================================================================
+first sentence covers 31.1% of the request's content words (another example's request: 1.0%)
+heading covers 11.8% of the request's content words
+first sentence opens with 'I need to / I'm / I'll / The user wants...': 157/212
+examples: [('Crafting a comprehensive guide', 'I need to create a detailed yet concise guide covering various topics like Dockerfiles, docker-compose, and Kubernetes manifests, such as Deployment, Service, and ConfigMap.'), ('Planning Knowledge Base Improvement', 'I need to create a structured plan covering various aspects: goals, guiding principles, taxonomy redesign, tags, search capabilities, and review processes.'), ('Researching database concepts', 'I need to provide a clear explanation of several database concepts, including ACID properties, isolation levels, anomalies, and more.')]
+
+====================================================================================================
+I. KL caches (Qwen3-14B, CoT-Control): first-position KL by whether the SFT trace opens with a bold heading
+====================================================================================================
+cache keys (task:question) matched to SFT records: 500
+           kl1       kl2_10       kl11_100      
+          mean count   mean count     mean count
+heading                                         
+False    15.75    20   0.22    20     0.16    20
+True     28.53   480   1.46   480     0.24   467

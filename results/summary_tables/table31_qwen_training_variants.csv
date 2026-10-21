@@ -1,0 +1,15 @@
+Group,Condition,Adapter,N,IFS,IFS_Pct,Accuracy_Pct,Joint,Mean_Tokens,Starts_Bold_Heading,Note,IFS_Gain_vs_Base,IFS_Gain_CI
+reference,Base (no fine-tuning),Qwen/Qwen3-14B,300,42,14.0,80.33,35,4401.7,0,,,
+reference,"Reported adapter: GPT-5.2 reasoning summaries, loss on reasoning and answer",kyleliu789/qwen3-14b-gpt52-high-reasoning-original,300,100,33.33,65.33,62,2023.7,295,,19.33,"[13.67, 25.00]"
+loss target,"Same data, loss on reasoning only (answer masked)",kyleliu789/qwen3-14b-gpt52-high-reasoning-original-output-mask,300,74,24.67,50.67,36,799.3,300,,10.67,"[5.33, 16.00]"
+loss target,"Same data, loss on answer only (reasoning masked)",kyleliu789/qwen3-14b-gpt52-high-reasoning-original-think-mask,300,38,12.67,82.33,35,4169.0,0,,-1.33,"[-4.33, 1.67]"
+reasoning style,"Same data, reasoning rewritten as plain prose by GLM-5.3",kyleliu789/qwen3-14b-gpt52-high-reasoning-normalized,300,79,26.33,72.0,54,2513.2,1,evaluated with a standalone script (same sampling settings and prompts) instead of the notebook,12.33,"[7.33, 17.67]"
+reasoning source,"Same prompts, long GPT-5.2 reasoning",kyleliu789/qwen3-14b-qwen3-gpt-52-long-high-reasoning-original,300,58,19.33,75.33,43,3395.1,58,,5.33,"[1.00, 9.67]"
+reasoning source,"Same prompts, Qwen3-235B-A22B reasoning",kyleliu789/qwen3-14b-qwen3-235b-high-reasoning-original,300,54,18.0,77.33,45,4638.2,0,,4.0,"[-0.33, 8.33]"
+reasoning source,"Same prompts, Claude Sonnet 4.5 reasoning",kyleliu789/qwen3-14b-sonnet-3.7-high-reasoning-original,300,37,12.33,77.67,29,3515.0,0,"The teacher was Claude Sonnet 4.5 (author, 2026-10-16). The adapter, folder and dataset names say 3.7 by mistake; they are kept unchanged so that existing records and the Hub repository still match.",-1.67,"[-5.00, 1.67]"
+reasoning source,"Same prompts, ReasonFlux reasoning",kyleliu789/qwen3-14b-reasonflux-high-reasoning-original,300,31,10.33,79.67,27,4504.3,1,,-3.67,"[-6.67, -0.67]"
+reasoning source,"Same prompts, Qwen3-14B's own reasoning (self-distillation)",kyleliu789/qwen3-14b-gpt52-qwen314,300,45,15.0,79.67,36,4235.5,0,,1.0,"[-2.67, 5.00]"
+no reasoning,"Same prompts, answers only",kyleliu789/qwen3-14b-gpt52-no-reasoning,300,3,1.0,60.33,0,754.5,0,,-13.0,"[-17.00, -9.00]"
+no reasoning,"Same prompts, answers only, thinking disabled in training",kyleliu789/qwen3-14b-gpt52-no-reasoning-thinking-false,300,45,15.0,82.0,42,4210.9,0,,1.0,"[-2.33, 4.33]"
+excluded,Corrupted copy of the dataset (failed run),kyleliu789/qwen3-14b-gpt52-general-sft,300,60,20.0,51.0,28,263.3,300,,6.0,"[0.67, 11.33]"
+excluded,"Different dataset (SVAMP meta-reasoning), 1 epoch; not part of this study",kyleliu789/qwen3-14b-svamp-meta-discussion,300,24,8.0,82.33,19,3395.5,300,,-6.0,"[-9.67, -2.67]"

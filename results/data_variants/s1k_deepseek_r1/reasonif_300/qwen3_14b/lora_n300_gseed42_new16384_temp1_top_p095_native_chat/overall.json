@@ -1,0 +1,14 @@
+[
+  {
+    "model":"qwen3-14b-s1k_deepseek_r1",
+    "questions":300,
+    "instruction_following":0.13,
+    "answer_correct":0.7066666667,
+    "joint_success":0.09,
+    "format_valid":0.7033333333,
+    "missing_answer":0.2966666667,
+    "truncated":0.06,
+    "mean_output_tokens":4003.9633333333,
+    "median_output_tokens":1874.5
+  }
+]

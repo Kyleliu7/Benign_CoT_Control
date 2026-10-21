@@ -1,0 +1,8402 @@
+{
+  "arrow_prefix:00:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 0,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:01:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 1,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:02:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 2,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:03:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 3,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:04:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 4,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:05:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 5,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:06:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 6,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:07:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 7,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:08:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 8,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:09:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 9,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:10:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 10,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:11:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 11,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:12:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 12,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:13:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 13,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:14:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 14,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:15:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 15,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:16:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 16,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:17:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 17,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:18:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 18,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:19:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 19,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:20:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 20,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:21:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 21,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:22:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 22,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:23:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 23,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:24:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 24,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:25:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 25,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:26:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 26,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:27:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 27,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:28:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 28,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:29:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 29,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:30:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 30,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:31:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 31,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:32:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 32,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:33:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 33,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:34:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 34,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:35:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 35,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:36:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 36,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:37:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 37,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:38:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 38,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:39:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 39,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:40:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 40,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:41:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 41,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:42:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 42,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:43:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 43,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:44:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 44,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:45:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 45,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:46:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 46,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:47:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 47,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:48:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 48,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "arrow_prefix:49:00": {
+    "task": "arrow_prefix",
+    "prompt_idx": 49,
+    "prefix_text": "<think>This is my analysis.\n\n",
+    "prefix_token_ids": [
+      151667,
+      1986,
+      374,
+      847,
+      6358,
+      382
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:00:00": {
+    "task": "third_person",
+    "prompt_idx": 0,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:01:00": {
+    "task": "third_person",
+    "prompt_idx": 1,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:02:00": {
+    "task": "third_person",
+    "prompt_idx": 2,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:03:00": {
+    "task": "third_person",
+    "prompt_idx": 3,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:04:00": {
+    "task": "third_person",
+    "prompt_idx": 4,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:05:00": {
+    "task": "third_person",
+    "prompt_idx": 5,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:06:00": {
+    "task": "third_person",
+    "prompt_idx": 6,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:07:00": {
+    "task": "third_person",
+    "prompt_idx": 7,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:08:00": {
+    "task": "third_person",
+    "prompt_idx": 8,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:09:00": {
+    "task": "third_person",
+    "prompt_idx": 9,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:10:00": {
+    "task": "third_person",
+    "prompt_idx": 10,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:11:00": {
+    "task": "third_person",
+    "prompt_idx": 11,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:12:00": {
+    "task": "third_person",
+    "prompt_idx": 12,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:13:00": {
+    "task": "third_person",
+    "prompt_idx": 13,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:14:00": {
+    "task": "third_person",
+    "prompt_idx": 14,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:15:00": {
+    "task": "third_person",
+    "prompt_idx": 15,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:16:00": {
+    "task": "third_person",
+    "prompt_idx": 16,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:17:00": {
+    "task": "third_person",
+    "prompt_idx": 17,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:18:00": {
+    "task": "third_person",
+    "prompt_idx": 18,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:19:00": {
+    "task": "third_person",
+    "prompt_idx": 19,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:20:00": {
+    "task": "third_person",
+    "prompt_idx": 20,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:21:00": {
+    "task": "third_person",
+    "prompt_idx": 21,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:22:00": {
+    "task": "third_person",
+    "prompt_idx": 22,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:23:00": {
+    "task": "third_person",
+    "prompt_idx": 23,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:24:00": {
+    "task": "third_person",
+    "prompt_idx": 24,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:25:00": {
+    "task": "third_person",
+    "prompt_idx": 25,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:26:00": {
+    "task": "third_person",
+    "prompt_idx": 26,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:27:00": {
+    "task": "third_person",
+    "prompt_idx": 27,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:28:00": {
+    "task": "third_person",
+    "prompt_idx": 28,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:29:00": {
+    "task": "third_person",
+    "prompt_idx": 29,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:30:00": {
+    "task": "third_person",
+    "prompt_idx": 30,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:31:00": {
+    "task": "third_person",
+    "prompt_idx": 31,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:32:00": {
+    "task": "third_person",
+    "prompt_idx": 32,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:33:00": {
+    "task": "third_person",
+    "prompt_idx": 33,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:34:00": {
+    "task": "third_person",
+    "prompt_idx": 34,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:35:00": {
+    "task": "third_person",
+    "prompt_idx": 35,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:36:00": {
+    "task": "third_person",
+    "prompt_idx": 36,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:37:00": {
+    "task": "third_person",
+    "prompt_idx": 37,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:38:00": {
+    "task": "third_person",
+    "prompt_idx": 38,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:39:00": {
+    "task": "third_person",
+    "prompt_idx": 39,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:40:00": {
+    "task": "third_person",
+    "prompt_idx": 40,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:41:00": {
+    "task": "third_person",
+    "prompt_idx": 41,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:42:00": {
+    "task": "third_person",
+    "prompt_idx": 42,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:43:00": {
+    "task": "third_person",
+    "prompt_idx": 43,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:44:00": {
+    "task": "third_person",
+    "prompt_idx": 44,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:45:00": {
+    "task": "third_person",
+    "prompt_idx": 45,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:46:00": {
+    "task": "third_person",
+    "prompt_idx": 46,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:47:00": {
+    "task": "third_person",
+    "prompt_idx": 47,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:48:00": {
+    "task": "third_person",
+    "prompt_idx": 48,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "third_person:49:00": {
+    "task": "third_person",
+    "prompt_idx": 49,
+    "prefix_text": "<think>okay, so the user wants me to",
+    "prefix_token_ids": [
+      151667,
+      93217,
+      11,
+      773,
+      279,
+      1196,
+      6801,
+      752,
+      311
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:00:00": {
+    "task": "word_suppression",
+    "prompt_idx": 0,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:01:00": {
+    "task": "word_suppression",
+    "prompt_idx": 1,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:02:00": {
+    "task": "word_suppression",
+    "prompt_idx": 2,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:03:00": {
+    "task": "word_suppression",
+    "prompt_idx": 3,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:04:00": {
+    "task": "word_suppression",
+    "prompt_idx": 4,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:05:00": {
+    "task": "word_suppression",
+    "prompt_idx": 5,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:06:00": {
+    "task": "word_suppression",
+    "prompt_idx": 6,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:07:00": {
+    "task": "word_suppression",
+    "prompt_idx": 7,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:08:00": {
+    "task": "word_suppression",
+    "prompt_idx": 8,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:09:00": {
+    "task": "word_suppression",
+    "prompt_idx": 9,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:10:00": {
+    "task": "word_suppression",
+    "prompt_idx": 10,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:11:00": {
+    "task": "word_suppression",
+    "prompt_idx": 11,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:12:00": {
+    "task": "word_suppression",
+    "prompt_idx": 12,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:13:00": {
+    "task": "word_suppression",
+    "prompt_idx": 13,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:14:00": {
+    "task": "word_suppression",
+    "prompt_idx": 14,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:15:00": {
+    "task": "word_suppression",
+    "prompt_idx": 15,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:16:00": {
+    "task": "word_suppression",
+    "prompt_idx": 16,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:17:00": {
+    "task": "word_suppression",
+    "prompt_idx": 17,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:18:00": {
+    "task": "word_suppression",
+    "prompt_idx": 18,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:19:00": {
+    "task": "word_suppression",
+    "prompt_idx": 19,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:20:00": {
+    "task": "word_suppression",
+    "prompt_idx": 20,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:21:00": {
+    "task": "word_suppression",
+    "prompt_idx": 21,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:22:00": {
+    "task": "word_suppression",
+    "prompt_idx": 22,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:23:00": {
+    "task": "word_suppression",
+    "prompt_idx": 23,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:24:00": {
+    "task": "word_suppression",
+    "prompt_idx": 24,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:25:00": {
+    "task": "word_suppression",
+    "prompt_idx": 25,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:26:00": {
+    "task": "word_suppression",
+    "prompt_idx": 26,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:27:00": {
+    "task": "word_suppression",
+    "prompt_idx": 27,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:28:00": {
+    "task": "word_suppression",
+    "prompt_idx": 28,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:29:00": {
+    "task": "word_suppression",
+    "prompt_idx": 29,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:30:00": {
+    "task": "word_suppression",
+    "prompt_idx": 30,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:31:00": {
+    "task": "word_suppression",
+    "prompt_idx": 31,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:32:00": {
+    "task": "word_suppression",
+    "prompt_idx": 32,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:33:00": {
+    "task": "word_suppression",
+    "prompt_idx": 33,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:34:00": {
+    "task": "word_suppression",
+    "prompt_idx": 34,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:35:00": {
+    "task": "word_suppression",
+    "prompt_idx": 35,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:36:00": {
+    "task": "word_suppression",
+    "prompt_idx": 36,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:37:00": {
+    "task": "word_suppression",
+    "prompt_idx": 37,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:38:00": {
+    "task": "word_suppression",
+    "prompt_idx": 38,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:39:00": {
+    "task": "word_suppression",
+    "prompt_idx": 39,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:40:00": {
+    "task": "word_suppression",
+    "prompt_idx": 40,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:41:00": {
+    "task": "word_suppression",
+    "prompt_idx": 41,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:42:00": {
+    "task": "word_suppression",
+    "prompt_idx": 42,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:43:00": {
+    "task": "word_suppression",
+    "prompt_idx": 43,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:44:00": {
+    "task": "word_suppression",
+    "prompt_idx": 44,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:45:00": {
+    "task": "word_suppression",
+    "prompt_idx": 45,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:46:00": {
+    "task": "word_suppression",
+    "prompt_idx": 46,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:47:00": {
+    "task": "word_suppression",
+    "prompt_idx": 47,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:48:00": {
+    "task": "word_suppression",
+    "prompt_idx": 48,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "word_suppression:49:00": {
+    "task": "word_suppression",
+    "prompt_idx": 49,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:00:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 0,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:01:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 1,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:02:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 2,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:03:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 3,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:04:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 4,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:05:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 5,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:06:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 6,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:07:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 7,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:08:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 8,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:09:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 9,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:10:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 10,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:11:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 11,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:12:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 12,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:13:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 13,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:14:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 14,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:15:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 15,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:16:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 16,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:17:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 17,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:18:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 18,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:19:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 19,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:20:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 20,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:21:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 21,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:22:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 22,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:23:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 23,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:24:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 24,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:25:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 25,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:26:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 26,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:27:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 27,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:28:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 28,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:29:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 29,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:30:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 30,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:31:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 31,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:32:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 32,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:33:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 33,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:34:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 34,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:35:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 35,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:36:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 36,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:37:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 37,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:38:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 38,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:39:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 39,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:40:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 40,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:41:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 41,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:42:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 42,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:43:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 43,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:44:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 44,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:45:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 45,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:46:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 46,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:47:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 47,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:48:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 48,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "multiple_word_suppression:49:00": {
+    "task": "multiple_word_suppression",
+    "prompt_idx": 49,
+    "prefix_text": "<think>Okay, let me think about this.",
+    "prefix_token_ids": [
+      151667,
+      32313,
+      11,
+      1077,
+      752,
+      1744,
+      911,
+      419,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:00:00": {
+    "task": "alternating_case",
+    "prompt_idx": 0,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:01:00": {
+    "task": "alternating_case",
+    "prompt_idx": 1,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:02:00": {
+    "task": "alternating_case",
+    "prompt_idx": 2,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:03:00": {
+    "task": "alternating_case",
+    "prompt_idx": 3,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:04:00": {
+    "task": "alternating_case",
+    "prompt_idx": 4,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:05:00": {
+    "task": "alternating_case",
+    "prompt_idx": 5,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:06:00": {
+    "task": "alternating_case",
+    "prompt_idx": 6,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:07:00": {
+    "task": "alternating_case",
+    "prompt_idx": 7,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:08:00": {
+    "task": "alternating_case",
+    "prompt_idx": 8,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:09:00": {
+    "task": "alternating_case",
+    "prompt_idx": 9,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:10:00": {
+    "task": "alternating_case",
+    "prompt_idx": 10,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:11:00": {
+    "task": "alternating_case",
+    "prompt_idx": 11,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:12:00": {
+    "task": "alternating_case",
+    "prompt_idx": 12,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:13:00": {
+    "task": "alternating_case",
+    "prompt_idx": 13,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:14:00": {
+    "task": "alternating_case",
+    "prompt_idx": 14,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:15:00": {
+    "task": "alternating_case",
+    "prompt_idx": 15,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:16:00": {
+    "task": "alternating_case",
+    "prompt_idx": 16,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:17:00": {
+    "task": "alternating_case",
+    "prompt_idx": 17,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:18:00": {
+    "task": "alternating_case",
+    "prompt_idx": 18,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:19:00": {
+    "task": "alternating_case",
+    "prompt_idx": 19,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:20:00": {
+    "task": "alternating_case",
+    "prompt_idx": 20,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:21:00": {
+    "task": "alternating_case",
+    "prompt_idx": 21,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:22:00": {
+    "task": "alternating_case",
+    "prompt_idx": 22,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:23:00": {
+    "task": "alternating_case",
+    "prompt_idx": 23,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:24:00": {
+    "task": "alternating_case",
+    "prompt_idx": 24,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:25:00": {
+    "task": "alternating_case",
+    "prompt_idx": 25,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:26:00": {
+    "task": "alternating_case",
+    "prompt_idx": 26,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:27:00": {
+    "task": "alternating_case",
+    "prompt_idx": 27,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:28:00": {
+    "task": "alternating_case",
+    "prompt_idx": 28,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:29:00": {
+    "task": "alternating_case",
+    "prompt_idx": 29,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:30:00": {
+    "task": "alternating_case",
+    "prompt_idx": 30,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:31:00": {
+    "task": "alternating_case",
+    "prompt_idx": 31,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:32:00": {
+    "task": "alternating_case",
+    "prompt_idx": 32,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:33:00": {
+    "task": "alternating_case",
+    "prompt_idx": 33,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:34:00": {
+    "task": "alternating_case",
+    "prompt_idx": 34,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:35:00": {
+    "task": "alternating_case",
+    "prompt_idx": 35,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:36:00": {
+    "task": "alternating_case",
+    "prompt_idx": 36,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:37:00": {
+    "task": "alternating_case",
+    "prompt_idx": 37,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:38:00": {
+    "task": "alternating_case",
+    "prompt_idx": 38,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:39:00": {
+    "task": "alternating_case",
+    "prompt_idx": 39,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:40:00": {
+    "task": "alternating_case",
+    "prompt_idx": 40,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:41:00": {
+    "task": "alternating_case",
+    "prompt_idx": 41,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:42:00": {
+    "task": "alternating_case",
+    "prompt_idx": 42,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:43:00": {
+    "task": "alternating_case",
+    "prompt_idx": 43,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:44:00": {
+    "task": "alternating_case",
+    "prompt_idx": 44,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:45:00": {
+    "task": "alternating_case",
+    "prompt_idx": 45,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:46:00": {
+    "task": "alternating_case",
+    "prompt_idx": 46,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:47:00": {
+    "task": "alternating_case",
+    "prompt_idx": 47,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:48:00": {
+    "task": "alternating_case",
+    "prompt_idx": 48,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "alternating_case:49:00": {
+    "task": "alternating_case",
+    "prompt_idx": 49,
+    "prefix_text": "<think>Let meow me meow read meow",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      363,
+      752,
+      752,
+      363,
+      1349,
+      752,
+      363
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:00:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 0,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:01:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 1,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:02:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 2,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:03:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 3,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:04:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 4,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:05:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 5,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:06:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 6,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:07:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 7,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:08:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 8,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:09:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 9,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:10:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 10,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:11:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 11,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:12:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 12,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:13:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 13,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:14:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 14,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:15:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 15,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:16:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 16,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:17:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 17,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:18:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 18,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:19:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 19,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:20:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 20,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:21:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 21,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:22:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 22,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:23:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 23,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:24:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 24,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:25:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 25,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:26:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 26,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:27:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 27,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:28:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 28,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:29:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 29,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:30:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 30,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:31:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 31,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:32:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 32,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:33:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 33,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:34:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 34,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:35:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 35,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:36:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 36,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:37:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 37,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:38:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 38,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:39:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 39,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:40:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 40,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:41:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 41,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:42:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 42,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:43:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 43,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:44:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 44,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:45:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 45,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:46:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 46,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:47:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 47,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:48:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 48,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "lowercase_thinking:49:00": {
+    "task": "lowercase_thinking",
+    "prompt_idx": 49,
+    "prefix_text": "<think>OKAY, SO THE USER WANTS ME",
+    "prefix_token_ids": [
+      151667,
+      3925,
+      3022,
+      11,
+      5627,
+      3168,
+      13872,
+      467,
+      37125,
+      16292
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:00:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 0,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:01:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 1,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:02:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 2,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:03:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 3,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:04:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 4,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:05:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 5,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:06:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 6,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:07:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 7,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:08:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 8,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:09:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 9,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:10:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 10,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:11:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 11,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:12:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 12,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:13:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 13,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:14:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 14,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:15:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 15,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:16:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 16,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:17:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 17,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:18:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 18,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:19:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 19,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:20:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 20,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:21:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 21,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:22:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 22,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:23:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 23,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:24:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 24,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:25:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 25,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:26:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 26,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:27:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 27,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:28:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 28,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:29:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 29,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:30:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 30,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:31:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 31,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:32:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 32,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:33:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 33,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:34:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 34,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:35:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 35,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:36:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 36,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:37:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 37,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:38:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 38,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:39:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 39,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:40:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 40,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:41:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 41,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:42:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 42,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:43:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 43,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:44:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 44,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:45:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 45,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:46:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 46,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:47:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 47,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:48:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 48,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "uppercase_thinking:49:00": {
+    "task": "uppercase_thinking",
+    "prompt_idx": 49,
+    "prefix_text": "<think>LeT mE sEe WhAt",
+    "prefix_token_ids": [
+      151667,
+      2304,
+      51,
+      296,
+      36,
+      274,
+      36,
+      68,
+      1232,
+      1655
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:00:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 0,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:01:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 1,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:02:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 2,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:03:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 3,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:04:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 4,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:05:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 5,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:06:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 6,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:07:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 7,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:08:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 8,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:09:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 9,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:10:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 10,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:11:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 11,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:12:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 12,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:13:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 13,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:14:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 14,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:15:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 15,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:16:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 16,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:17:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 17,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:18:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 18,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:19:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 19,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:20:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 20,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:21:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 21,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:22:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 22,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:23:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 23,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:24:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 24,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:25:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 25,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:26:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 26,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:27:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 27,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:28:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 28,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:29:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 29,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:30:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 30,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:31:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 31,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:32:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 32,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:33:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 33,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:34:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 34,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:35:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 35,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:36:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 36,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:37:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 37,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:38:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 38,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:39:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 39,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:40:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 40,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:41:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 41,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:42:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 42,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:43:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 43,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:44:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 44,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:45:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 45,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:46:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 46,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:47:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 47,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:48:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 48,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "repeat_sentences:49:00": {
+    "task": "repeat_sentences",
+    "prompt_idx": 49,
+    "prefix_text": "<think>The assistant will work out the answer.",
+    "prefix_token_ids": [
+      151667,
+      785,
+      17847,
+      686,
+      975,
+      700,
+      279,
+      4226,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:00:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 0,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:01:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 1,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:02:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 2,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:03:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 3,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:04:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 4,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:05:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 5,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:06:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 6,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:07:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 7,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:08:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 8,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:09:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 9,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:10:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 10,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:11:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 11,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:12:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 12,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:13:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 13,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:14:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 14,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:15:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 15,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:16:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 16,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:17:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 17,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:18:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 18,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:19:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 19,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:20:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 20,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:21:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 21,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:22:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 22,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:23:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 23,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:24:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 24,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:25:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 25,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:26:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 26,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:27:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 27,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:28:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 28,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:29:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 29,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:30:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 30,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:31:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 31,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:32:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 32,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:33:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 33,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:34:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 34,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:35:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 35,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:36:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 36,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:37:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 37,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:38:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 38,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:39:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 39,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:40:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 40,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:41:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 41,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:42:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 42,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:43:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 43,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:44:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 44,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:45:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 45,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:46:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 46,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:47:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 47,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:48:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 48,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "end_of_sentence:49:00": {
+    "task": "end_of_sentence",
+    "prompt_idx": 49,
+    "prefix_text": "<think>>>> Let me read the question.",
+    "prefix_token_ids": [
+      151667,
+      20154,
+      6771,
+      752,
+      1349,
+      279,
+      3405,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:00:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 0,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:01:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 1,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:02:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 2,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:03:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 3,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:04:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 4,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:05:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 5,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:06:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 6,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:07:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 7,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:08:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 8,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:09:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 9,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:10:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 10,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:11:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 11,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:12:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 12,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:13:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 13,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:14:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 14,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:15:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 15,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:16:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 16,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:17:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 17,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:18:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 18,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:19:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 19,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:20:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 20,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:21:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 21,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:22:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 22,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:23:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 23,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:24:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 24,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:25:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 25,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:26:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 26,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:27:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 27,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:28:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 28,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:29:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 29,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:30:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 30,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:31:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 31,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:32:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 32,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:33:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 33,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:34:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 34,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:35:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 35,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:36:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 36,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:37:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 37,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:38:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 38,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:39:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 39,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:40:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 40,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:41:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 41,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:42:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 42,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:43:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 43,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:44:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 44,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:45:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 45,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:46:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 46,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:47:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 47,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:48:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 48,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  },
+  "meow_between_words:49:00": {
+    "task": "meow_between_words",
+    "prompt_idx": 49,
+    "prefix_text": "<think>Let me read it, safe.",
+    "prefix_token_ids": [
+      151667,
+      10061,
+      752,
+      1349,
+      432,
+      11,
+      6092,
+      13
+    ],
+    "control_condition": "mismatched"
+  }
+}

@@ -434,6 +434,10 @@ def main() -> int:
     tables.update(sensitivity_tables())
     from analysis_prefix_controls import controls_tables  # empty unless control / prefix-length runs have been added
     tables.update(controls_tables())
+    from analysis_length_controlled import length_controlled_tables
+    tables.update(length_controlled_tables())
+    from analysis_followups import followup_tables  # training seeds, OLMo-3-7B-Think, degenerate-output checks
+    tables.update(followup_tables())
     mismatches = 0
     for name, df in tables.items():
         print("\n" + "=" * 100 + f"\n {name}\n" + "=" * 100)

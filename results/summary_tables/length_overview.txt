@@ -1,0 +1,62 @@
+1. Reasoning length per run (500 traces; tokens use each model's own tokenizer)
+                                               Run  Mean words  Median words  Mean tokens  Hit limit  7-task mean %
+                                    Qwen3-14B Base         519           380          722         25           13.5
+                             Qwen3-14B SFT seed 42         279           194          392         13           19.7
+                   Qwen3-14B SFT self-distillation         541           396          755         31           14.5
+Qwen3-14B SFT Sonnet 4.5 teacher (GPT-5.2 prompts)         315           225          453         16           25.7
+                        Qwen3-14B SFT s1k claude37         891           426         1199        137           21.0
+                     Qwen3-14B SFT s1k deepseek r1         511           395          711         18           13.9
+                              Phi-4-reasoning Base         972           874         1336         52           12.4
+                               Phi-4-reasoning SFT         129            97          178          3           20.7
+                  Phi-4-reasoning SFT s1k claude37         787           372         1062        151           21.0
+               Phi-4-reasoning SFT s1k deepseek r1         980           678         1272        119           15.8
+                              OLMo-3-7B-Think Base        1576          1561         2131        235           13.4
+                        OLMo-3-7B-Think SFT lr1e-4        1242          1147         1726        177           14.1
+                  OLMo-3-7B-Think SFT s1k claude37        1436          1442         1966        275           11.7
+               OLMo-3-7B-Think SFT s1k deepseek r1        1212           983         1634        130           13.2
+
+2. Per category: mean reasoning words and mean compliance
+                                                    Mean words                               Compliance %                            
+cat                                                suppression addition third person    case  suppression addition third person  case
+Qwen3-14B Base                                           593.0    488.0        509.0   514.0          4.0      0.5         84.8  20.0
+Qwen3-14B SFT seed 42                                    293.0    255.0        316.0   291.0         17.0      1.5         98.2  34.7
+Qwen3-14B SFT self-distillation                          607.0    520.0        503.0   539.0          8.0      0.0         85.6   7.0
+Qwen3-14B SFT Sonnet 4.5 teacher (GPT-5.2 prompts)       242.0    346.0        297.0   328.0         22.0      9.9         96.2  32.4
+Qwen3-14B SFT s1k claude37                               803.0   1028.0        585.0   869.0         19.0      5.6         86.4  11.2
+Qwen3-14B SFT s1k deepseek r1                            576.0    479.0        465.0   526.0          4.0      0.0         88.8   7.2
+Phi-4-reasoning Base                                     991.0    983.0        958.0   951.0         13.0      0.0         60.8   3.9
+Phi-4-reasoning SFT                                      153.0    109.0        215.0   112.0         28.0      0.3         87.3   5.5
+Phi-4-reasoning SFT s1k claude37                         737.0    797.0        795.0   805.0         26.0      1.0         90.6  12.7
+Phi-4-reasoning SFT s1k deepseek r1                     1120.0    938.0       1033.0   926.0          9.0      0.1         92.4   7.4
+OLMo-3-7B-Think Base                                    1635.0   1537.0       1606.0  1577.0          3.0      0.1         87.2   8.7
+OLMo-3-7B-Think SFT lr1e-4                              1418.0   1232.0       1325.0  1111.0          1.0      3.1         84.2  15.2
+OLMo-3-7B-Think SFT s1k claude37                        1703.0   1549.0       1533.0  1077.0          3.0      0.7         73.3  36.4
+OLMo-3-7B-Think SFT s1k deepseek r1                     1177.0   1210.0       1277.0  1217.0          1.0      0.1         90.0   7.0
+
+3. Phi-4-reasoning: mean compliance (%) by reasoning tokens (n = traces in the bin)
+                                          <250      250-500        500-1k         1k-2k 2k-3k (not capped) hit 3000 limit
+Base | 7 tasks                              --  16.5 (n=25)   10.6 (n=93)  13.9 (n=177)         6.1 (n=21)    10.3 (n=34)
+Base | case tasks                    0.0 (n=2)   2.0 (n=16)    4.7 (n=43)    4.0 (n=66)          0.0 (n=5)     4.8 (n=18)
+SFT | 7 tasks                     19.3 (n=293)  26.5 (n=45)    41.3 (n=7)     0.0 (n=2)                 --     33.3 (n=3)
+SFT | case tasks                   5.5 (n=127)   4.8 (n=21)    12.9 (n=2)            --                 --             --
+SFT s1k claude37 | 7 tasks         25.7 (n=67)  18.6 (n=97)   30.8 (n=52)   26.7 (n=21)         16.7 (n=6)   14.4 (n=107)
+SFT s1k claude37 | case tasks      12.9 (n=33)  11.2 (n=42)    8.8 (n=21)     9.6 (n=7)         11.2 (n=3)    16.5 (n=44)
+SFT s1k deepseek r1 | 7 tasks        0.0 (n=3)  13.2 (n=46)  16.6 (n=121)   17.2 (n=73)         5.1 (n=15)    17.2 (n=92)
+SFT s1k deepseek r1 | case tasks     1.0 (n=4)   5.6 (n=22)    9.9 (n=54)    7.0 (n=34)          7.0 (n=9)     5.2 (n=27)
+   Phi-4-reasoning Base: correlation of log reasoning tokens with seven-task compliance r = -0.014 (n=350)
+   Phi-4-reasoning SFT: correlation of log reasoning tokens with seven-task compliance r = +0.094 (n=350)
+   Phi-4-reasoning SFT s1k claude37: correlation of log reasoning tokens with seven-task compliance r = -0.172 (n=350)
+   Phi-4-reasoning SFT s1k deepseek r1: correlation of log reasoning tokens with seven-task compliance r = -0.046 (n=350)
+
+4. Phi-4-reasoning: gain over Base matched on reasoning-token bin within each task (seven tasks); n = matched trace weight
+
+   SFT: unmatched gain +8.3; length-matched within task +5.0 [-3.4, +15.9] (n=35)
+   SFT s1k claude37: unmatched gain +8.6; length-matched within task +5.7 [+1.6, +9.1] (n=158)
+   SFT s1k deepseek r1: unmatched gain +3.4; length-matched within task +4.0 [+1.7, +6.3] (n=246)
+
+   Share of third-person traces among the seven-task traces in each token bin (%)
+tokens               <250  250-500  500-1k  1k-2k  >=2k
+Base                  NaN     16.0    14.0   15.0  11.0
+SFT                  12.0     27.0    43.0    0.0  50.0
+SFT s1k claude37      6.0     16.0    24.0   26.0  12.0
+SFT s1k deepseek r1   0.0     20.0    12.0   16.0  13.0

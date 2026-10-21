@@ -1,0 +1,14 @@
+[
+  {
+    "model":"qwen3-14b-neutral_header",
+    "questions":300,
+    "instruction_following":0.38,
+    "answer_correct":0.6133333333,
+    "joint_success":0.26,
+    "format_valid":0.8033333333,
+    "missing_answer":0.1966666667,
+    "truncated":0.0433333333,
+    "mean_output_tokens":2484.8566666667,
+    "median_output_tokens":496.0
+  }
+]

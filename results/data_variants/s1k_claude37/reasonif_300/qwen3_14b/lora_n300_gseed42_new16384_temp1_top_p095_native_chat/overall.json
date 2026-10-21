@@ -1,0 +1,14 @@
+[
+  {
+    "model":"qwen3-14b-s1k_claude37",
+    "questions":300,
+    "instruction_following":0.2933333333,
+    "answer_correct":0.5733333333,
+    "joint_success":0.1933333333,
+    "format_valid":0.67,
+    "missing_answer":0.33,
+    "truncated":0.2433333333,
+    "mean_output_tokens":5708.3666666667,
+    "median_output_tokens":1167.5
+  }
+]

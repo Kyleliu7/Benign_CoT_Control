@@ -6,5 +6,53 @@
       "query": "input",
       "response": "output"
     }
+  },
+  "gpt52_high_reasoning_no_headers": {
+    "file_name": "gpt52_high_reasoning_no_headers.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "gpt52_high_reasoning_neutral_header": {
+    "file_name": "gpt52_high_reasoning_neutral_header.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_235b_gpt52_prompts_sft": {
+    "file_name": "qwen3_235b_gpt52_prompts_sft.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "qwen3_235b_gpt52_headers": {
+    "file_name": "qwen3_235b_gpt52_headers.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "s1k_claude37_212": {
+    "file_name": "s1k_claude37_212.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "s1k_deepseek_r1_212": {
+    "file_name": "s1k_deepseek_r1_212.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
   }
 }

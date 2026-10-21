@@ -1,0 +1,16 @@
+{
+ "model": "microsoft/Phi-4-reasoning",
+ "cutoff": 12288,
+ "s1k_claude37_212": {
+  "n": 212,
+  "over_cutoff": 0,
+  "max_tokens": 12235,
+  "median_tokens": 9150
+ },
+ "s1k_deepseek_r1_212": {
+  "n": 212,
+  "over_cutoff": 1,
+  "max_tokens": 12445,
+  "median_tokens": 5734
+ }
+}

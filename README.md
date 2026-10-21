@@ -18,7 +18,7 @@ See [`AUDIT.md`](AUDIT.md) for the audit that produced this version, what change
 | ReasonIF Qwen3-14B SFT, Prefix-OFF, Prefix-ON | Raw records present |
 | ReasonIF Qwen3-14B Base | Raw records present (`base_model_id: Qwen/Qwen3-14B`, revision `40c06982…`). The file previously under this name was a GPT-OSS-20B run; it is kept as `results/reasonif_300/gpt_oss_20b/reasonif_gpt_oss_20b_medium.jsonl` |
 | ReasonIF Phi-4 Base / SFT | Raw records present |
-| ReasonIF Phi-4 Prefix-OFF / Prefix-ON | Aggregate CSV only; raw records absent |
+| ReasonIF Phi-4 Prefix-OFF / Prefix-ON | Raw and scored records present (recovered 2026-10-13); counts match the summary files |
 | Forward-KL caches (4 × float32) | Present; Table 4 reproduces exactly |
 | Token-level "policing" examples | Previous table did not match the stored spike records and was removed (see `AUDIT.md`) |
 
@@ -73,7 +73,7 @@ Prefix rows are scored on the recipient continuation only. IFS = all instruction
 | Phi-4-reasoning | Prefix-OFF† | 4.7 % (14) | 73.7 % (221) | 3.0 % (9) | 3,993.3 | 14 |
 | Phi-4-reasoning | Prefix-ON† | 6.0 % (18) | 74.3 % (223) | 3.7 % (11) | 3,793.4 | 11 |
 
-† aggregate CSV only. In the Qwen prefix runs the forced prefix is shorter than 10 tokens for 16 (OFF) and 15 (ON) of 300 questions
+† summary CSV in the table pipeline; the per-question records are now in the same folders and give the same counts. In the Qwen prefix runs the forced prefix is shorter than 10 tokens for 16 (OFF) and 15 (ON) of 300 questions
 (15 OFF prefixes are empty), so those items are effectively unprefixed. Scores re-checked with the official grader: 0 mismatches on the 205
 non-language items per file; language / english_capital items need the fast-langdetect model (see Quickstart step 3).
 
@@ -170,7 +170,7 @@ scripts/                analysis_prefix_length_paired.py (prefix content, window
 MIT License. The manuscript is not yet on arXiv; cite the repository until it is.
 
 ```bibtex
-@misc{liu2026benign,
+@misc{benign2026cotcontrol,
   title  = {Benign Reasoning Distillation and Early-Token Steering of Chain-of-Thought Controllability},
   author = {Liu, Kyle},
   year   = {2026},
@@ -189,5 +189,61 @@ Inference-only; no training. Regenerate the notebooks with `python scripts/build
 2. `notebooks/Haskins_500_vLLM_2x2_SFT_Donor_to_Base_PrefixLength_Evaluation.ipynb`: SFT model writes the first N tokens, base continues.
    Run with `PREFIX_TOKENS = 30` and `100`.
 
+Results (Qwen3-14B base recipient, eight style tasks, binary grading for end-of-sentence and meow; `table16`, `table16b`, `table17`): Base donor 18.64, SFT donor 32.14,
+handcrafted obeying opening 59.42, names-the-rule-only 31.06, wrong-rule opening 11.94, SFT opening of another question 30.02, most frequent SFT opening 28.24;
+SFT-written openings of 30 / 100 tokens give 33.68 / 33.28 (continuation scored).
+
 Put each result directory under `results/haskins_500/qwen3_14b/`; `python scripts/analysis_prefix_controls.py` (or `reproduce_tables.py --write`)
 then writes `table16_prefix_controls.csv` and `table17_prefix_length.csv`. Without these runs both are skipped.
+
+## Follow-up runs (2026-10-10/11): training seeds, OLMo-3-7B-Think, length control, degenerate outputs
+
+All tables below are produced by `scripts/reproduce_tables.py` (which now also runs `analysis_length_controlled.py` and `analysis_followups.py`)
+and turned into LaTeX by `scripts/make_paper_tables.py`.
+
+| Table | What it contains |
+| :--- | :--- |
+| `table23_length_controlled_curve.csv` | Standalone Haskins scored on the first L words of each trace (L = 100 ... 1000), following Chen et al. (2026, Sec. 5.3); paired rows keep pairs in which both traces reach L |
+| `table24_length_adjusted_regression.csv` | SFT effect with and without log(reasoning words) as a covariate (Haskins linear and logistic; ReasonIF logistic, word-limit items excluded) |
+| `table25_reasonif_length_matched.csv` | ReasonIF items whose Base and SFT reasoning lengths are within a factor of 1.5 |
+| `table26_training_seeds.csv` | Qwen3-14B SFT with training seeds 42 (published adapter), 1 and 2: standalone Haskins and ReasonIF vs the same Base run |
+| `table27_olmo_haskins_per_task.csv`, `table28_olmo_summary.csv` | OLMo-3-7B-Think Base, SFT lr 1e-4 (same recipe as Qwen) and SFT lr 2e-4 (chosen after the 1e-4 result; Haskins only) |
+| `table29_haskins_degenerate.csv` | Standalone Haskins runs with degenerate traces (fewer than 20 words of reasoning, or meow-only) counted and scored 0 (post-hoc rule) |
+| `table30_reasonif_excluded.csv` | ReasonIF IFS without passes judged to contain no reasoning or incoherent text (`data/manual_review/reasonif_pass_review.json`) |
+
+Raw records: `results/training_seeds/seed{1,2}/` and `results/olmo3_7b_think/` (run folders as written by the notebooks, plus `training/`
+with each run's `trainer_state.json`, the exact training config and, for the seeds, hashes showing the validation split is the seed-42 split).
+
+How the runs were produced (`scripts/vm/`, run on the same single RTX PRO 6000 VM as the original runs):
+* `train_seed.py`: LlamaFactory training with a new training seed while keeping the seed-42 validation split.
+* `train_olmo3.py`: registers an `olmo3_think` LlamaFactory template that is token-identical to OLMo-3-7B-Think's official chat template
+  (`python train_olmo3.py check`), then trains with the Qwen3-14B config (optionally a different learning rate).
+* `run_seed_evals.py`, `run_olmo_evals.py`: run the existing evaluation notebooks (`notebooks/Haskins_500_vLLM_Evaluation.ipynb` and the ReasonIF
+  notebooks) with only the model id, adapter path, output folder and model-family checks changed. OLMo Haskins runs set `VLLM_USE_AOT_COMPILE=0`
+  to avoid a vLLM 0.29 start-up error. The ReasonIF notebook is the one used for the Qwen3-14B ReasonIF runs (vLLM 0.16.0, per its run manifest).
+* Adapters (private on the Hugging Face Hub): `kyleliu789/olmo3-7b-think-gpt52-high-reasoning-original` and `...-lr2e-4`. The seed-1/2 Qwen adapters are not published.
+
+## Post-ARR follow-ups (2026-10-15/16): heading ablations, review requests, mechanism analyses
+
+All runs use the reported Qwen3-14B recipe (LoRA r=32, lr 1e-4, 3 epochs, seed 42, seed-42 split, lowest-validation-loss
+checkpoint) and the reported evaluation notebooks; one training run each.
+
+| Run | Training data | Results |
+|---|---|---|
+| No headings | `data/training/gpt52_high_reasoning_no_headers.json` (`scripts/make_no_header_dataset.py`) | `results/data_variants/no_headers/` |
+| Fixed heading | `data/training/gpt52_high_reasoning_neutral_header.json` (`scripts/make_neutral_header_dataset.py`) | `results/data_variants/neutral_header/` |
+| Header transplant | `data/training/qwen3_235b_gpt52_headers.json` (`scripts/make_header_transplant_dataset.py`, from `qwen3_235b_gpt52_prompts_sft.json`) | `results/data_variants/header_transplant/` |
+| Table 2 adapters on CoT-Control | existing Hub adapters | `results/haskins_500/qwen3_14b_training_variants/` |
+
+* **Heading-stripped grading.** The CoT-Control grader counts a heading line as a sentence; `scripts/haskins_header_stripped.py`
+  grades every model with a leading `**...**` heading removed, and `scripts/reasonif_header_stripped.py` does the same for ReasonIF.
+* **Summaries.** `scripts/variant_summary.py`, `scripts/heading_obeys_rule.py`, `scripts/review_followups.py` (numbers requested by
+  the October 2026 review), `scripts/make_review_tables.py` (LaTeX: `tab:headings`, `tab:standalone-task`, `tab:variants-cot`,
+  `tab:mechanism`). Text outputs are in `results/summary_tables/` (`review_followups.txt`, `variant_summary.txt`,
+  `haskins_header_stripped.txt`, `heading_obeys_rule.txt`, `reasonif_header_stripped.csv`, `training_length_counts.json`).
+* **Mechanism analyses** (`scripts/mechanism/`, outputs and notes in `results/mechanism/README.md`): per-segment surprisal of the
+  training targets, the probability that the first reasoning token starts a heading, attention at the first reasoning position, and
+  attention-pattern patching. Measurements are taken right after `<think>` with no newline, because the fine-tuned models write
+  `<think>**`; files measured after `<think>\n` are kept and marked superseded.
+* **VM.** `scripts/vm/run_variant_chain.sh`, `run_variant_evals.py`, `mechanism_chain*.sh`; folder map in `scripts/vm/VM_INDEX.md`.
+  The session ran from a `git archive` snapshot of commit 09ab1e1; later script fixes are recorded in the VM's `mechanism_runs/paths.txt`.

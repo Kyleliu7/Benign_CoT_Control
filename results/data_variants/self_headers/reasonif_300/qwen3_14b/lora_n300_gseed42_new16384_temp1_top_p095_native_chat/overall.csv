@@ -1,0 +1,2 @@
+model,questions,instruction_following,answer_correct,joint_success,format_valid,missing_answer,truncated,mean_output_tokens,median_output_tokens
+qwen3-14b-self_headers,300,0.2866666666666667,0.7666666666666667,0.23,0.77,0.23,0.06333333333333334,3431.9566666666665,837.5

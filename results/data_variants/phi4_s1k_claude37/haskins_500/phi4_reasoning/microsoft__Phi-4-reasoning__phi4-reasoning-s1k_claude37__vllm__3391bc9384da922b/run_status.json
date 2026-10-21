@@ -1,0 +1,10 @@
+{
+  "scheduled": 500,
+  "completed": 500,
+  "missing_count": 0,
+  "missing_ids": [],
+  "complete": true,
+  "run_fingerprint": "3391bc9384da922be883bf4f24c61f78e234ddfb20d0b56514346d997efb3c3d",
+  "updated_utc": "2026-10-17T04:47:20.161863+00:00",
+  "scientific_aggregate_publishable": true
+}

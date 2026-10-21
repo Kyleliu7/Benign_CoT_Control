@@ -1,0 +1,14 @@
+[
+  {
+    "model":"olmo3-7b-think-gpt52-high-reasoning-original-lr2e-4",
+    "questions":300,
+    "instruction_following":0.2033333333,
+    "answer_correct":0.59,
+    "joint_success":0.1433333333,
+    "format_valid":0.4466666667,
+    "missing_answer":0.5533333333,
+    "truncated":0.1466666667,
+    "mean_output_tokens":5809.0333333333,
+    "median_output_tokens":2692.5
+  }
+]

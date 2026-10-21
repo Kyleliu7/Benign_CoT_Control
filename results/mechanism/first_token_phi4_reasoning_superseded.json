@@ -1,0 +1,4512 @@
+{
+ "meta": {
+  "base": "microsoft/Phi-4-reasoning",
+  "adapters": {
+   "sft": "/home/kyleliu789/.cache/huggingface/hub/models--kyleliu789--phi4-reasoning-14b-gpt52-high-reasoning-original/snapshots/eb831e623581632779d515558686d6975c4fa0b4"
+  },
+  "n_star_tokens": 78,
+  "finished": "2026-10-16T10:54:21Z"
+ },
+ "rows": [
+  {
+   "task": "arrow_prefix",
+   "q": 0,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.504577974439599e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.029734885320067406,
+   "sft__top1": "We"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 1,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.039524694439024e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.33967533707618713,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 2,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.255479219253175e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.12927278876304626,
+   "sft__top1": "We"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 3,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.385335498431232e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.020093301311135292,
+   "sft__top1": "We"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 4,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.123857019701973e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6140539646148682,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 5,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.28553404010745e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.06253960728645325,
+   "sft__top1": "We"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 6,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9747255919355666e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008051108568906784,
+   "sft__top1": "We"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 7,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.274055987072643e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008968863636255264,
+   "sft__top1": "We"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 8,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.647727109841071e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.363742470741272,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 9,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.4516367627948057e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.021391434594988823,
+   "sft__top1": "We"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 10,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.280322395468829e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.7412403225898743,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 11,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.553452137974091e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.79902184009552,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 12,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.77943671689718e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6263970732688904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 13,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.0256455172784626e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7572777271270752,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 14,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.8065811673295684e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7425991296768188,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 15,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.316104943631217e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7027488946914673,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 16,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.6016951121855527e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8198473453521729,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 17,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1174415703862906e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7491095662117004,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 18,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.95660525909625e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.6600961089134216,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 19,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.267711872467771e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8145034313201904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 20,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.471849469060544e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7941356897354126,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 21,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.379984476254322e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7735556960105896,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 22,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1998689842585009e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7601470351219177,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 23,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1167548109369818e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7581058144569397,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 24,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.2670773685385939e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8001844882965088,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 25,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.4009935916401446e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7727445363998413,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 26,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.7723926400067285e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7792147397994995,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 27,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.86187418573536e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7684445381164551,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 28,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.922907050466165e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7927665710449219,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 29,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.062830940820277e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8265010118484497,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 30,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.216822996269912e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8095192909240723,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 31,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7126299755764194e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7872821688652039,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 32,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7552872779779136e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7819111943244934,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 33,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.0617236411198974e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7814689874649048,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 34,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.405447255820036e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.11080796271562576,
+   "sft__top1": "The"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 35,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.008641720545711e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.1717710793018341,
+   "sft__top1": "The"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 36,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.358609880408039e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.11197032034397125,
+   "sft__top1": "We"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 37,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.4035667593125254e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.0575597882270813,
+   "sft__top1": "We"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 38,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9610286472016014e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.05633671581745148,
+   "sft__top1": "We"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 39,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.077564754988998e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.08050062507390976,
+   "sft__top1": "We"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 40,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.7580394897959195e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.019450930878520012,
+   "sft__top1": "We"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 41,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.083343916747253e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.05803824961185455,
+   "sft__top1": "We"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 42,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.470769873587415e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8510208129882812,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 43,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.9174661146244034e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.6652572751045227,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 44,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.978888606885448e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8324213624000549,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 45,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.825169111834839e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8275840282440186,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 46,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 0.00011532361531862989,
+   "base__top1": "User",
+   "sft__p_star": 0.7983214259147644,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 47,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.426160249859095e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7338653802871704,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 48,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.402624709764495e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8659051060676575,
+   "sft__top1": "**"
+  },
+  {
+   "task": "arrow_prefix",
+   "q": 49,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.940327097661793e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7783125042915344,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 0,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.504577974439599e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.029734885320067406,
+   "sft__top1": "We"
+  },
+  {
+   "task": "third_person",
+   "q": 1,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.039524694439024e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.33967533707618713,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 2,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.255479219253175e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.12927278876304626,
+   "sft__top1": "We"
+  },
+  {
+   "task": "third_person",
+   "q": 3,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.385335498431232e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.020093301311135292,
+   "sft__top1": "We"
+  },
+  {
+   "task": "third_person",
+   "q": 4,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.123857019701973e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6140539646148682,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 5,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.28553404010745e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.06253960728645325,
+   "sft__top1": "We"
+  },
+  {
+   "task": "third_person",
+   "q": 6,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9747255919355666e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008051108568906784,
+   "sft__top1": "We"
+  },
+  {
+   "task": "third_person",
+   "q": 7,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.274055987072643e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008968863636255264,
+   "sft__top1": "We"
+  },
+  {
+   "task": "third_person",
+   "q": 8,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.647727109841071e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.363742470741272,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 9,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.4516367627948057e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.021391434594988823,
+   "sft__top1": "We"
+  },
+  {
+   "task": "third_person",
+   "q": 10,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.280322395468829e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.7412403225898743,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 11,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.553452137974091e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.79902184009552,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 12,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.77943671689718e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6263970732688904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 13,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.0256455172784626e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7572777271270752,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 14,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.8065811673295684e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7425991296768188,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 15,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.316104943631217e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7027488946914673,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 16,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.6016951121855527e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8198473453521729,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 17,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1174415703862906e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7491095662117004,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 18,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.95660525909625e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.6600961089134216,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 19,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.267711872467771e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8145034313201904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 20,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.471849469060544e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7941356897354126,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 21,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.379984476254322e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7735556960105896,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 22,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1998689842585009e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7601470351219177,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 23,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1167548109369818e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7581058144569397,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 24,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.2670773685385939e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8001844882965088,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 25,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.4009935916401446e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7727445363998413,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 26,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.7723926400067285e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7792147397994995,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 27,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.86187418573536e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7684445381164551,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 28,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.922907050466165e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7927665710449219,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 29,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.062830940820277e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8265010118484497,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 30,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.216822996269912e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8095192909240723,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 31,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7126299755764194e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7872821688652039,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 32,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7552872779779136e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7819111943244934,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 33,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.0617236411198974e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7814689874649048,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 34,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.405447255820036e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.11080796271562576,
+   "sft__top1": "The"
+  },
+  {
+   "task": "third_person",
+   "q": 35,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.008641720545711e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.1717710793018341,
+   "sft__top1": "The"
+  },
+  {
+   "task": "third_person",
+   "q": 36,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.358609880408039e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.11197032034397125,
+   "sft__top1": "We"
+  },
+  {
+   "task": "third_person",
+   "q": 37,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.4035667593125254e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.0575597882270813,
+   "sft__top1": "We"
+  },
+  {
+   "task": "third_person",
+   "q": 38,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9610286472016014e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.05633671581745148,
+   "sft__top1": "We"
+  },
+  {
+   "task": "third_person",
+   "q": 39,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.077564754988998e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.08050062507390976,
+   "sft__top1": "We"
+  },
+  {
+   "task": "third_person",
+   "q": 40,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.7580394897959195e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.019450930878520012,
+   "sft__top1": "We"
+  },
+  {
+   "task": "third_person",
+   "q": 41,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.083343916747253e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.05803824961185455,
+   "sft__top1": "We"
+  },
+  {
+   "task": "third_person",
+   "q": 42,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.470769873587415e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8510208129882812,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 43,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.9174661146244034e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.6652572751045227,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 44,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.978888606885448e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8324213624000549,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 45,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.825169111834839e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8275840282440186,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 46,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 0.00011532361531862989,
+   "base__top1": "User",
+   "sft__p_star": 0.7983214259147644,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 47,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.426160249859095e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7338653802871704,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 48,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.402624709764495e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8659051060676575,
+   "sft__top1": "**"
+  },
+  {
+   "task": "third_person",
+   "q": 49,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.940327097661793e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7783125042915344,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 0,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.504577974439599e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.029734885320067406,
+   "sft__top1": "We"
+  },
+  {
+   "task": "word_suppression",
+   "q": 1,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.039524694439024e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.33967533707618713,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 2,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.255479219253175e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.12927278876304626,
+   "sft__top1": "We"
+  },
+  {
+   "task": "word_suppression",
+   "q": 3,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.385335498431232e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.020093301311135292,
+   "sft__top1": "We"
+  },
+  {
+   "task": "word_suppression",
+   "q": 4,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.123857019701973e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6140539646148682,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 5,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.28553404010745e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.06253960728645325,
+   "sft__top1": "We"
+  },
+  {
+   "task": "word_suppression",
+   "q": 6,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9747255919355666e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008051108568906784,
+   "sft__top1": "We"
+  },
+  {
+   "task": "word_suppression",
+   "q": 7,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.274055987072643e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008968863636255264,
+   "sft__top1": "We"
+  },
+  {
+   "task": "word_suppression",
+   "q": 8,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.647727109841071e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.363742470741272,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 9,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.4516367627948057e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.021391434594988823,
+   "sft__top1": "We"
+  },
+  {
+   "task": "word_suppression",
+   "q": 10,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.280322395468829e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.7412403225898743,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 11,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.553452137974091e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.79902184009552,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 12,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.77943671689718e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6263970732688904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 13,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.0256455172784626e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7572777271270752,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 14,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.8065811673295684e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7425991296768188,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 15,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.316104943631217e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7027488946914673,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 16,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.6016951121855527e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8198473453521729,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 17,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1174415703862906e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7491095662117004,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 18,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.95660525909625e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.6600961089134216,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 19,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.267711872467771e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8145034313201904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 20,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.471849469060544e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7941356897354126,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 21,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.379984476254322e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7735556960105896,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 22,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1998689842585009e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7601470351219177,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 23,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1167548109369818e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7581058144569397,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 24,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.2670773685385939e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8001844882965088,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 25,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.4009935916401446e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7727445363998413,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 26,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.7723926400067285e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7792147397994995,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 27,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.86187418573536e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7684445381164551,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 28,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.922907050466165e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7927665710449219,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 29,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.062830940820277e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8265010118484497,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 30,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.216822996269912e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8095192909240723,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 31,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7126299755764194e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7872821688652039,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 32,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7552872779779136e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7819111943244934,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 33,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.0617236411198974e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7814689874649048,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 34,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.405447255820036e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.11080796271562576,
+   "sft__top1": "The"
+  },
+  {
+   "task": "word_suppression",
+   "q": 35,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.008641720545711e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.1717710793018341,
+   "sft__top1": "The"
+  },
+  {
+   "task": "word_suppression",
+   "q": 36,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.358609880408039e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.11197032034397125,
+   "sft__top1": "We"
+  },
+  {
+   "task": "word_suppression",
+   "q": 37,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.4035667593125254e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.0575597882270813,
+   "sft__top1": "We"
+  },
+  {
+   "task": "word_suppression",
+   "q": 38,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9610286472016014e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.05633671581745148,
+   "sft__top1": "We"
+  },
+  {
+   "task": "word_suppression",
+   "q": 39,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.077564754988998e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.08050062507390976,
+   "sft__top1": "We"
+  },
+  {
+   "task": "word_suppression",
+   "q": 40,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.7580394897959195e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.019450930878520012,
+   "sft__top1": "We"
+  },
+  {
+   "task": "word_suppression",
+   "q": 41,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.083343916747253e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.05803824961185455,
+   "sft__top1": "We"
+  },
+  {
+   "task": "word_suppression",
+   "q": 42,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.470769873587415e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8510208129882812,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 43,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.9174661146244034e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.6652572751045227,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 44,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.978888606885448e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8324213624000549,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 45,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.825169111834839e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8275840282440186,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 46,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 0.00011532361531862989,
+   "base__top1": "User",
+   "sft__p_star": 0.7983214259147644,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 47,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.426160249859095e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7338653802871704,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 48,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.402624709764495e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8659051060676575,
+   "sft__top1": "**"
+  },
+  {
+   "task": "word_suppression",
+   "q": 49,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.940327097661793e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7783125042915344,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 0,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.504577974439599e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.029734885320067406,
+   "sft__top1": "We"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 1,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.039524694439024e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.33967533707618713,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 2,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.255479219253175e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.12927278876304626,
+   "sft__top1": "We"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 3,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.385335498431232e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.020093301311135292,
+   "sft__top1": "We"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 4,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.123857019701973e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6140539646148682,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 5,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.28553404010745e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.06253960728645325,
+   "sft__top1": "We"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 6,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9747255919355666e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008051108568906784,
+   "sft__top1": "We"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 7,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.274055987072643e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008968863636255264,
+   "sft__top1": "We"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 8,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.647727109841071e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.363742470741272,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 9,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.4516367627948057e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.021391434594988823,
+   "sft__top1": "We"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 10,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.280322395468829e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.7412403225898743,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 11,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.553452137974091e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.79902184009552,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 12,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.77943671689718e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6263970732688904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 13,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.0256455172784626e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7572777271270752,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 14,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.8065811673295684e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7425991296768188,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 15,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.316104943631217e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7027488946914673,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 16,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.6016951121855527e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8198473453521729,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 17,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1174415703862906e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7491095662117004,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 18,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.95660525909625e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.6600961089134216,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 19,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.267711872467771e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8145034313201904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 20,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.471849469060544e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7941356897354126,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 21,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.379984476254322e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7735556960105896,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 22,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1998689842585009e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7601470351219177,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 23,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1167548109369818e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7581058144569397,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 24,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.2670773685385939e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8001844882965088,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 25,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.4009935916401446e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7727445363998413,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 26,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.7723926400067285e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7792147397994995,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 27,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.86187418573536e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7684445381164551,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 28,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.922907050466165e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7927665710449219,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 29,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.062830940820277e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8265010118484497,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 30,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.216822996269912e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8095192909240723,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 31,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7126299755764194e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7872821688652039,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 32,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7552872779779136e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7819111943244934,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 33,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.0617236411198974e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7814689874649048,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 34,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.405447255820036e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.11080796271562576,
+   "sft__top1": "The"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 35,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.008641720545711e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.1717710793018341,
+   "sft__top1": "The"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 36,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.358609880408039e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.11197032034397125,
+   "sft__top1": "We"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 37,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.4035667593125254e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.0575597882270813,
+   "sft__top1": "We"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 38,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9610286472016014e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.05633671581745148,
+   "sft__top1": "We"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 39,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.077564754988998e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.08050062507390976,
+   "sft__top1": "We"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 40,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.7580394897959195e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.019450930878520012,
+   "sft__top1": "We"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 41,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.083343916747253e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.05803824961185455,
+   "sft__top1": "We"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 42,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.470769873587415e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8510208129882812,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 43,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.9174661146244034e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.6652572751045227,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 44,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.978888606885448e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8324213624000549,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 45,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.825169111834839e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8275840282440186,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 46,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 0.00011532361531862989,
+   "base__top1": "User",
+   "sft__p_star": 0.7983214259147644,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 47,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.426160249859095e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7338653802871704,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 48,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.402624709764495e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8659051060676575,
+   "sft__top1": "**"
+  },
+  {
+   "task": "multiple_word_suppression",
+   "q": 49,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.940327097661793e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7783125042915344,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 0,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.504577974439599e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.029734885320067406,
+   "sft__top1": "We"
+  },
+  {
+   "task": "alternating_case",
+   "q": 1,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.039524694439024e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.33967533707618713,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 2,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.255479219253175e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.12927278876304626,
+   "sft__top1": "We"
+  },
+  {
+   "task": "alternating_case",
+   "q": 3,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.385335498431232e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.020093301311135292,
+   "sft__top1": "We"
+  },
+  {
+   "task": "alternating_case",
+   "q": 4,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.123857019701973e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6140539646148682,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 5,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.28553404010745e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.06253960728645325,
+   "sft__top1": "We"
+  },
+  {
+   "task": "alternating_case",
+   "q": 6,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9747255919355666e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008051108568906784,
+   "sft__top1": "We"
+  },
+  {
+   "task": "alternating_case",
+   "q": 7,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.274055987072643e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008968863636255264,
+   "sft__top1": "We"
+  },
+  {
+   "task": "alternating_case",
+   "q": 8,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.647727109841071e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.363742470741272,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 9,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.4516367627948057e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.021391434594988823,
+   "sft__top1": "We"
+  },
+  {
+   "task": "alternating_case",
+   "q": 10,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.280322395468829e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.7412403225898743,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 11,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.553452137974091e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.79902184009552,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 12,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.77943671689718e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6263970732688904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 13,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.0256455172784626e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7572777271270752,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 14,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.8065811673295684e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7425991296768188,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 15,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.316104943631217e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7027488946914673,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 16,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.6016951121855527e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8198473453521729,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 17,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1174415703862906e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7491095662117004,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 18,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.95660525909625e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.6600961089134216,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 19,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.267711872467771e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8145034313201904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 20,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.471849469060544e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7941356897354126,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 21,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.379984476254322e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7735556960105896,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 22,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1998689842585009e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7601470351219177,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 23,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1167548109369818e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7581058144569397,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 24,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.2670773685385939e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8001844882965088,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 25,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.4009935916401446e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7727445363998413,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 26,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.7723926400067285e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7792147397994995,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 27,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.86187418573536e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7684445381164551,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 28,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.922907050466165e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7927665710449219,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 29,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.062830940820277e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8265010118484497,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 30,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.216822996269912e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8095192909240723,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 31,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7126299755764194e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7872821688652039,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 32,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7552872779779136e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7819111943244934,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 33,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.0617236411198974e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7814689874649048,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 34,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.405447255820036e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.11080796271562576,
+   "sft__top1": "The"
+  },
+  {
+   "task": "alternating_case",
+   "q": 35,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.008641720545711e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.1717710793018341,
+   "sft__top1": "The"
+  },
+  {
+   "task": "alternating_case",
+   "q": 36,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.358609880408039e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.11197032034397125,
+   "sft__top1": "We"
+  },
+  {
+   "task": "alternating_case",
+   "q": 37,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.4035667593125254e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.0575597882270813,
+   "sft__top1": "We"
+  },
+  {
+   "task": "alternating_case",
+   "q": 38,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9610286472016014e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.05633671581745148,
+   "sft__top1": "We"
+  },
+  {
+   "task": "alternating_case",
+   "q": 39,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.077564754988998e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.08050062507390976,
+   "sft__top1": "We"
+  },
+  {
+   "task": "alternating_case",
+   "q": 40,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.7580394897959195e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.019450930878520012,
+   "sft__top1": "We"
+  },
+  {
+   "task": "alternating_case",
+   "q": 41,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.083343916747253e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.05803824961185455,
+   "sft__top1": "We"
+  },
+  {
+   "task": "alternating_case",
+   "q": 42,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.470769873587415e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8510208129882812,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 43,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.9174661146244034e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.6652572751045227,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 44,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.978888606885448e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8324213624000549,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 45,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.825169111834839e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8275840282440186,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 46,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 0.00011532361531862989,
+   "base__top1": "User",
+   "sft__p_star": 0.7983214259147644,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 47,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.426160249859095e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7338653802871704,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 48,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.402624709764495e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8659051060676575,
+   "sft__top1": "**"
+  },
+  {
+   "task": "alternating_case",
+   "q": 49,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.940327097661793e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7783125042915344,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 0,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.504577974439599e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.029734885320067406,
+   "sft__top1": "We"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 1,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.039524694439024e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.33967533707618713,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 2,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.255479219253175e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.12927278876304626,
+   "sft__top1": "We"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 3,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.385335498431232e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.020093301311135292,
+   "sft__top1": "We"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 4,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.123857019701973e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6140539646148682,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 5,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.28553404010745e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.06253960728645325,
+   "sft__top1": "We"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 6,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9747255919355666e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008051108568906784,
+   "sft__top1": "We"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 7,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.274055987072643e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008968863636255264,
+   "sft__top1": "We"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 8,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.647727109841071e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.363742470741272,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 9,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.4516367627948057e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.021391434594988823,
+   "sft__top1": "We"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 10,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.280322395468829e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.7412403225898743,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 11,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.553452137974091e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.79902184009552,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 12,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.77943671689718e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6263970732688904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 13,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.0256455172784626e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7572777271270752,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 14,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.8065811673295684e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7425991296768188,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 15,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.316104943631217e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7027488946914673,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 16,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.6016951121855527e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8198473453521729,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 17,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1174415703862906e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7491095662117004,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 18,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.95660525909625e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.6600961089134216,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 19,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.267711872467771e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8145034313201904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 20,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.471849469060544e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7941356897354126,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 21,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.379984476254322e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7735556960105896,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 22,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1998689842585009e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7601470351219177,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 23,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1167548109369818e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7581058144569397,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 24,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.2670773685385939e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8001844882965088,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 25,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.4009935916401446e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7727445363998413,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 26,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.7723926400067285e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7792147397994995,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 27,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.86187418573536e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7684445381164551,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 28,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.922907050466165e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7927665710449219,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 29,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.062830940820277e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8265010118484497,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 30,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.216822996269912e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8095192909240723,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 31,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7126299755764194e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7872821688652039,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 32,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7552872779779136e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7819111943244934,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 33,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.0617236411198974e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7814689874649048,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 34,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.405447255820036e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.11080796271562576,
+   "sft__top1": "The"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 35,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.008641720545711e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.1717710793018341,
+   "sft__top1": "The"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 36,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.358609880408039e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.11197032034397125,
+   "sft__top1": "We"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 37,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.4035667593125254e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.0575597882270813,
+   "sft__top1": "We"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 38,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9610286472016014e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.05633671581745148,
+   "sft__top1": "We"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 39,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.077564754988998e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.08050062507390976,
+   "sft__top1": "We"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 40,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.7580394897959195e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.019450930878520012,
+   "sft__top1": "We"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 41,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.083343916747253e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.05803824961185455,
+   "sft__top1": "We"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 42,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.470769873587415e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8510208129882812,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 43,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.9174661146244034e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.6652572751045227,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 44,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.978888606885448e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8324213624000549,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 45,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.825169111834839e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8275840282440186,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 46,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 0.00011532361531862989,
+   "base__top1": "User",
+   "sft__p_star": 0.7983214259147644,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 47,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.426160249859095e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7338653802871704,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 48,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.402624709764495e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8659051060676575,
+   "sft__top1": "**"
+  },
+  {
+   "task": "lowercase_thinking",
+   "q": 49,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.940327097661793e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7783125042915344,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 0,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.504577974439599e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.029734885320067406,
+   "sft__top1": "We"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 1,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.039524694439024e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.33967533707618713,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 2,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.255479219253175e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.12927278876304626,
+   "sft__top1": "We"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 3,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.385335498431232e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.020093301311135292,
+   "sft__top1": "We"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 4,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.123857019701973e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6140539646148682,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 5,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.28553404010745e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.06253960728645325,
+   "sft__top1": "We"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 6,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9747255919355666e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008051108568906784,
+   "sft__top1": "We"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 7,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.274055987072643e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008968863636255264,
+   "sft__top1": "We"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 8,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.647727109841071e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.363742470741272,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 9,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.4516367627948057e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.021391434594988823,
+   "sft__top1": "We"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 10,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.280322395468829e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.7412403225898743,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 11,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.553452137974091e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.79902184009552,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 12,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.77943671689718e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6263970732688904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 13,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.0256455172784626e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7572777271270752,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 14,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.8065811673295684e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7425991296768188,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 15,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.316104943631217e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7027488946914673,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 16,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.6016951121855527e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8198473453521729,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 17,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1174415703862906e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7491095662117004,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 18,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.95660525909625e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.6600961089134216,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 19,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.267711872467771e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8145034313201904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 20,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.471849469060544e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7941356897354126,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 21,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.379984476254322e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7735556960105896,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 22,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1998689842585009e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7601470351219177,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 23,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1167548109369818e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7581058144569397,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 24,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.2670773685385939e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8001844882965088,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 25,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.4009935916401446e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7727445363998413,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 26,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.7723926400067285e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7792147397994995,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 27,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.86187418573536e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7684445381164551,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 28,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.922907050466165e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7927665710449219,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 29,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.062830940820277e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8265010118484497,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 30,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.216822996269912e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8095192909240723,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 31,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7126299755764194e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7872821688652039,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 32,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7552872779779136e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7819111943244934,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 33,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.0617236411198974e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7814689874649048,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 34,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.405447255820036e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.11080796271562576,
+   "sft__top1": "The"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 35,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.008641720545711e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.1717710793018341,
+   "sft__top1": "The"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 36,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.358609880408039e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.11197032034397125,
+   "sft__top1": "We"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 37,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.4035667593125254e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.0575597882270813,
+   "sft__top1": "We"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 38,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9610286472016014e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.05633671581745148,
+   "sft__top1": "We"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 39,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.077564754988998e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.08050062507390976,
+   "sft__top1": "We"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 40,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.7580394897959195e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.019450930878520012,
+   "sft__top1": "We"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 41,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.083343916747253e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.05803824961185455,
+   "sft__top1": "We"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 42,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.470769873587415e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8510208129882812,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 43,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.9174661146244034e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.6652572751045227,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 44,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.978888606885448e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8324213624000549,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 45,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.825169111834839e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8275840282440186,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 46,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 0.00011532361531862989,
+   "base__top1": "User",
+   "sft__p_star": 0.7983214259147644,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 47,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.426160249859095e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7338653802871704,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 48,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.402624709764495e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8659051060676575,
+   "sft__top1": "**"
+  },
+  {
+   "task": "uppercase_thinking",
+   "q": 49,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.940327097661793e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7783125042915344,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 0,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.504577974439599e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.029734885320067406,
+   "sft__top1": "We"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 1,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.039524694439024e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.33967533707618713,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 2,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.255479219253175e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.12927278876304626,
+   "sft__top1": "We"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 3,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.385335498431232e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.020093301311135292,
+   "sft__top1": "We"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 4,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.123857019701973e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6140539646148682,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 5,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.28553404010745e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.06253960728645325,
+   "sft__top1": "We"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 6,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9747255919355666e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008051108568906784,
+   "sft__top1": "We"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 7,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.274055987072643e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008968863636255264,
+   "sft__top1": "We"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 8,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.647727109841071e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.363742470741272,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 9,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.4516367627948057e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.021391434594988823,
+   "sft__top1": "We"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 10,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.280322395468829e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.7412403225898743,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 11,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.553452137974091e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.79902184009552,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 12,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.77943671689718e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6263970732688904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 13,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.0256455172784626e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7572777271270752,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 14,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.8065811673295684e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7425991296768188,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 15,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.316104943631217e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7027488946914673,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 16,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.6016951121855527e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8198473453521729,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 17,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1174415703862906e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7491095662117004,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 18,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.95660525909625e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.6600961089134216,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 19,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.267711872467771e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8145034313201904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 20,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.471849469060544e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7941356897354126,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 21,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.379984476254322e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7735556960105896,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 22,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1998689842585009e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7601470351219177,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 23,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1167548109369818e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7581058144569397,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 24,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.2670773685385939e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8001844882965088,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 25,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.4009935916401446e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7727445363998413,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 26,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.7723926400067285e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7792147397994995,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 27,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.86187418573536e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7684445381164551,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 28,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.922907050466165e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7927665710449219,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 29,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.062830940820277e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8265010118484497,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 30,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.216822996269912e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8095192909240723,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 31,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7126299755764194e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7872821688652039,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 32,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7552872779779136e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7819111943244934,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 33,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.0617236411198974e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7814689874649048,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 34,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.405447255820036e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.11080796271562576,
+   "sft__top1": "The"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 35,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.008641720545711e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.1717710793018341,
+   "sft__top1": "The"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 36,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.358609880408039e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.11197032034397125,
+   "sft__top1": "We"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 37,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.4035667593125254e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.0575597882270813,
+   "sft__top1": "We"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 38,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9610286472016014e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.05633671581745148,
+   "sft__top1": "We"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 39,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.077564754988998e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.08050062507390976,
+   "sft__top1": "We"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 40,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.7580394897959195e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.019450930878520012,
+   "sft__top1": "We"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 41,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.083343916747253e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.05803824961185455,
+   "sft__top1": "We"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 42,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.470769873587415e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8510208129882812,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 43,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.9174661146244034e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.6652572751045227,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 44,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.978888606885448e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8324213624000549,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 45,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.825169111834839e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8275840282440186,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 46,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 0.00011532361531862989,
+   "base__top1": "User",
+   "sft__p_star": 0.7983214259147644,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 47,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.426160249859095e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7338653802871704,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 48,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.402624709764495e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8659051060676575,
+   "sft__top1": "**"
+  },
+  {
+   "task": "repeat_sentences",
+   "q": 49,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.940327097661793e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7783125042915344,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 0,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.504577974439599e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.029734885320067406,
+   "sft__top1": "We"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 1,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.039524694439024e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.33967533707618713,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 2,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.255479219253175e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.12927278876304626,
+   "sft__top1": "We"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 3,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.385335498431232e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.020093301311135292,
+   "sft__top1": "We"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 4,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.123857019701973e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6140539646148682,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 5,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.28553404010745e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.06253960728645325,
+   "sft__top1": "We"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 6,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9747255919355666e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008051108568906784,
+   "sft__top1": "We"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 7,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.274055987072643e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008968863636255264,
+   "sft__top1": "We"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 8,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.647727109841071e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.363742470741272,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 9,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.4516367627948057e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.021391434594988823,
+   "sft__top1": "We"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 10,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.280322395468829e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.7412403225898743,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 11,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.553452137974091e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.79902184009552,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 12,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.77943671689718e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6263970732688904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 13,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.0256455172784626e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7572777271270752,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 14,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.8065811673295684e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7425991296768188,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 15,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.316104943631217e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7027488946914673,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 16,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.6016951121855527e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8198473453521729,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 17,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1174415703862906e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7491095662117004,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 18,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.95660525909625e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.6600961089134216,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 19,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.267711872467771e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8145034313201904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 20,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.471849469060544e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7941356897354126,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 21,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.379984476254322e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7735556960105896,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 22,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1998689842585009e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7601470351219177,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 23,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1167548109369818e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7581058144569397,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 24,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.2670773685385939e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8001844882965088,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 25,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.4009935916401446e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7727445363998413,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 26,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.7723926400067285e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7792147397994995,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 27,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.86187418573536e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7684445381164551,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 28,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.922907050466165e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7927665710449219,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 29,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.062830940820277e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8265010118484497,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 30,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.216822996269912e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8095192909240723,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 31,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7126299755764194e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7872821688652039,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 32,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7552872779779136e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7819111943244934,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 33,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.0617236411198974e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7814689874649048,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 34,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.405447255820036e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.11080796271562576,
+   "sft__top1": "The"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 35,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.008641720545711e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.1717710793018341,
+   "sft__top1": "The"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 36,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.358609880408039e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.11197032034397125,
+   "sft__top1": "We"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 37,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.4035667593125254e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.0575597882270813,
+   "sft__top1": "We"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 38,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9610286472016014e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.05633671581745148,
+   "sft__top1": "We"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 39,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.077564754988998e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.08050062507390976,
+   "sft__top1": "We"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 40,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.7580394897959195e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.019450930878520012,
+   "sft__top1": "We"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 41,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.083343916747253e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.05803824961185455,
+   "sft__top1": "We"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 42,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.470769873587415e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8510208129882812,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 43,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.9174661146244034e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.6652572751045227,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 44,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.978888606885448e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8324213624000549,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 45,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.825169111834839e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8275840282440186,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 46,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 0.00011532361531862989,
+   "base__top1": "User",
+   "sft__p_star": 0.7983214259147644,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 47,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.426160249859095e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7338653802871704,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 48,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.402624709764495e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8659051060676575,
+   "sft__top1": "**"
+  },
+  {
+   "task": "end_of_sentence",
+   "q": 49,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.940327097661793e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7783125042915344,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 0,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.504577974439599e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.029734885320067406,
+   "sft__top1": "We"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 1,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.039524694439024e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.33967533707618713,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 2,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.255479219253175e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.12927278876304626,
+   "sft__top1": "We"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 3,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.385335498431232e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.020093301311135292,
+   "sft__top1": "We"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 4,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.123857019701973e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6140539646148682,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 5,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.28553404010745e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.06253960728645325,
+   "sft__top1": "We"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 6,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9747255919355666e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008051108568906784,
+   "sft__top1": "We"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 7,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.274055987072643e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.008968863636255264,
+   "sft__top1": "We"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 8,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.647727109841071e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.363742470741272,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 9,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.4516367627948057e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.021391434594988823,
+   "sft__top1": "We"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 10,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.280322395468829e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.7412403225898743,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 11,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.553452137974091e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.79902184009552,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 12,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.77943671689718e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.6263970732688904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 13,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.0256455172784626e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7572777271270752,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 14,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.8065811673295684e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7425991296768188,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 15,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.316104943631217e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7027488946914673,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 16,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.6016951121855527e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8198473453521729,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 17,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1174415703862906e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7491095662117004,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 18,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.95660525909625e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.6600961089134216,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 19,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.267711872467771e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8145034313201904,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 20,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.471849469060544e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7941356897354126,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 21,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.379984476254322e-06,
+   "base__top1": "User",
+   "sft__p_star": 0.7735556960105896,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 22,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1998689842585009e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7601470351219177,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 23,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.1167548109369818e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7581058144569397,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 24,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.2670773685385939e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8001844882965088,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 25,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 3.4009935916401446e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7727445363998413,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 26,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.7723926400067285e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7792147397994995,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 27,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 4.86187418573536e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7684445381164551,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 28,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.922907050466165e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7927665710449219,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 29,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.062830940820277e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8265010118484497,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 30,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.216822996269912e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8095192909240723,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 31,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7126299755764194e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7872821688652039,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 32,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.7552872779779136e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7819111943244934,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 33,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.0617236411198974e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7814689874649048,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 34,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.405447255820036e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.11080796271562576,
+   "sft__top1": "The"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 35,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.008641720545711e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.1717710793018341,
+   "sft__top1": "The"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 36,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.358609880408039e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.11197032034397125,
+   "sft__top1": "We"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 37,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 2.4035667593125254e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.0575597882270813,
+   "sft__top1": "We"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 38,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 1.9610286472016014e-05,
+   "base__top1": "We",
+   "sft__p_star": 0.05633671581745148,
+   "sft__top1": "We"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 39,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.077564754988998e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.08050062507390976,
+   "sft__top1": "We"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 40,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.7580394897959195e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.019450930878520012,
+   "sft__top1": "We"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 41,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.083343916747253e-06,
+   "base__top1": "We",
+   "sft__p_star": 0.05803824961185455,
+   "sft__top1": "We"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 42,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.470769873587415e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8510208129882812,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 43,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 5.9174661146244034e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.6652572751045227,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 44,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 7.978888606885448e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8324213624000549,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 45,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 6.825169111834839e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8275840282440186,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 46,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 0.00011532361531862989,
+   "base__top1": "User",
+   "sft__p_star": 0.7983214259147644,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 47,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.426160249859095e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7338653802871704,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 48,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 9.402624709764495e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.8659051060676575,
+   "sft__top1": "**"
+  },
+  {
+   "task": "meow_between_words",
+   "q": 49,
+   "prompt_tail": "t|>assistant<|im_sep|><think>\n",
+   "base__p_star": 8.940327097661793e-05,
+   "base__top1": "User",
+   "sft__p_star": 0.7783125042915344,
+   "sft__top1": "**"
+  }
+ ]
+}

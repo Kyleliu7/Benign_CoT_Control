@@ -1,0 +1,7 @@
+Run,N,Leading heading,IFS stored (%),IFS recomputed (%),IFS header-stripped (%),Items changed by stripping
+Base,300,0,14.0,14.0,14.0,0
+SFT seed 42,300,288,33.33,33.33,32.33,3
+SFT seed 1,300,291,33.67,33.67,33.0,6
+SFT seed 2,300,291,33.0,33.0,32.67,5
+SFT neutral header,300,299,38.0,38.0,38.33,3
+SFT no headers,300,0,26.67,26.67,26.67,0

@@ -1,0 +1,31 @@
+{
+  "description": "Other Qwen3-14B LoRA fine-tunes trained by the author with the same recipe as the reported adapter (r=32, alpha=64, lr 1e-4, 3 epochs, seed 42, lowest-validation-loss checkpoint) and evaluated on ReasonIF with the same settings (temperature 1.0, top-p 0.95, 16,384 new tokens, seed 42 + question index, official prompts with the Qwen3-14B word-limit key). Training data are described from the LlamaFactory configs on the training VM and the author's notes (2026-10-11). Each was trained and evaluated once. Records: results/reasonif_300/qwen3_14b_training_variants/<folder>/scored_responses.jsonl.",
+  "variants": [
+    {"folder": "qwen3_14b_gpt52_high_reasoning_original_output_mask", "adapter": "kyleliu789/qwen3-14b-gpt52-high-reasoning-original-output-mask",
+     "group": "loss target", "label": "Same data, loss on reasoning only (answer masked)"},
+    {"folder": "qwen3_14b_gpt52_high_reasoning_original_think_mask", "adapter": "kyleliu789/qwen3-14b-gpt52-high-reasoning-original-think-mask",
+     "group": "loss target", "label": "Same data, loss on answer only (reasoning masked)"},
+    {"folder": "qwen3_14b_gpt52_high_reasoning_normalized", "adapter": "kyleliu789/qwen3-14b-gpt52-high-reasoning-normalized",
+     "group": "reasoning style", "label": "Same data, reasoning rewritten as plain prose by GLM-5.3",
+     "note": "evaluated with a standalone script (same sampling settings and prompts) instead of the notebook"},
+    {"folder": "qwen3_14b_qwen3_gpt_52_long_high_reasoning_original", "adapter": "kyleliu789/qwen3-14b-qwen3-gpt-52-long-high-reasoning-original",
+     "group": "reasoning source", "label": "Same prompts, long GPT-5.2 reasoning"},
+    {"folder": "qwen3_14b_qwen3_235b_high_reasoning_original", "adapter": "kyleliu789/qwen3-14b-qwen3-235b-high-reasoning-original",
+     "group": "reasoning source", "label": "Same prompts, Qwen3-235B-A22B reasoning"},
+    {"folder": "qwen3_14b_sonnet_3_7_high_reasoning_original", "adapter": "kyleliu789/qwen3-14b-sonnet-3.7-high-reasoning-original",
+     "group": "reasoning source", "label": "Same prompts, Claude Sonnet 4.5 reasoning",
+     "note": "The teacher was Claude Sonnet 4.5 (author, 2026-10-16). The adapter, folder and dataset names say 3.7 by mistake; they are kept unchanged so that existing records and the Hub repository still match."},
+    {"folder": "qwen3_14b_reasonflux_high_reasoning_original", "adapter": "kyleliu789/qwen3-14b-reasonflux-high-reasoning-original",
+     "group": "reasoning source", "label": "Same prompts, ReasonFlux reasoning"},
+    {"folder": "qwen3_14b_gpt52_qwen314", "adapter": "kyleliu789/qwen3-14b-gpt52-qwen314",
+     "group": "reasoning source", "label": "Same prompts, Qwen3-14B's own reasoning (self-distillation)"},
+    {"folder": "qwen3_14b_gpt52_no_reasoning", "adapter": "kyleliu789/qwen3-14b-gpt52-no-reasoning",
+     "group": "no reasoning", "label": "Same prompts, answers only"},
+    {"folder": "qwen3_14b_gpt52_no_reasoning_thinking_false", "adapter": "kyleliu789/qwen3-14b-gpt52-no-reasoning-thinking-false",
+     "group": "no reasoning", "label": "Same prompts, answers only, thinking disabled in training"},
+    {"folder": "qwen3_14b_gpt52_general_sft", "adapter": "kyleliu789/qwen3-14b-gpt52-general-sft",
+     "group": "excluded", "label": "Corrupted copy of the dataset (failed run)"},
+    {"folder": "qwen3_14b_svamp_meta_discussion", "adapter": "kyleliu789/qwen3-14b-svamp-meta-discussion",
+     "group": "excluded", "label": "Different dataset (SVAMP meta-reasoning), 1 epoch; not part of this study"}
+  ]
+}

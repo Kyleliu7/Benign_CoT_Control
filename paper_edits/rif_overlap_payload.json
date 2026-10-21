@@ -1,0 +1,7 @@
+[
+ {
+  "start": "ReasonIF is not evaluated, because its questions overlap with the sources of s1K.",
+  "end": "\n",
+  "text": "ReasonIF is not evaluated, because the two question sets overlap: 4 of the 300 ReasonIF questions appear verbatim among the s1K questions (1 among the 212 used) and 37 share an 8-gram with one (24 with the 212), mostly AIME and AMC problems."
+ }
+]
