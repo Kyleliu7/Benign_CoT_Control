@@ -1,0 +1,8 @@
+          Model                   Run All 350 pairs Same question, length within 1.5x Pairs kept  Questions kept
+      Qwen3-14B Qwen3-14B SFT seed 42         +6.16              +4.99 [+2.48, +7.38]     95/350              44
+      Qwen3-14B  Qwen3-14B SFT seed 1         +5.47              +4.52 [+2.12, +6.38]     88/350              41
+      Qwen3-14B  Qwen3-14B SFT seed 2         +6.22              +2.94 [-0.05, +7.37]     79/350              39
+      Qwen3-14B        s1K Claude 3.7         +7.43             +7.31 [+3.28, +12.89]    121/350              45
+      Qwen3-14B                s1K R1         +0.31              +0.53 [-0.91, +2.52]    235/350              50
+Phi-4-reasoning           GPT-5.2 SFT         +8.27              +0.00 [+0.00, +0.00]      3/350               3
+OLMo-3-7B-Think           GPT-5.2 SFT         +0.70              +0.39 [-1.67, +2.92]    221/350              50

@@ -1,0 +1,9 @@
+{
+ "qwen_claude37_looping": 142,
+ "qwen_claude37_n": 500,
+ "qwen_claude_minus_r1_loops0": {
+  "est": 3.98,
+  "lo": 1.32,
+  "hi": 6.81
+ }
+}

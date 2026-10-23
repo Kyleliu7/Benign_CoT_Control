@@ -1,0 +1,33 @@
+CoT-Control (500 traces per run; generation limit as in each model's evaluation)
+          Model            Run   N  Hit limit  Looping (rep>=0.5)  Hit limit and looping  Degenerate (paper detector)  Median repetition, capped
+      Qwen3-14B           Base 500         25                   1                      1                            1                       0.02
+      Qwen3-14B    GPT-5.2 SFT 500         13                  19                     12                           14                       1.00
+      Qwen3-14B s1K Claude 3.7 500        137                 142                    132                            1                       1.00
+      Qwen3-14B         s1K R1 500         18                   0                      0                            0                       0.04
+Phi-4-reasoning           Base 500         52                  54                     37                            0                       1.00
+Phi-4-reasoning    GPT-5.2 SFT 500          3                   3                      2                            3                       0.89
+Phi-4-reasoning s1K Claude 3.7 500        151                 137                    109                           71                       0.84
+Phi-4-reasoning         s1K R1 500        119                  19                     19                            0                       0.13
+OLMo-3-7B-Think           Base 500        235                   6                      4                            0                       0.01
+OLMo-3-7B-Think    GPT-5.2 SFT 500        177                   9                      9                           41                       0.01
+OLMo-3-7B-Think s1K Claude 3.7 500        275                 231                    227                            9                       1.00
+OLMo-3-7B-Think         s1K R1 500        130                   2                      1                            0                       0.03
+
+ReasonIF, Qwen3-14B (300 questions; 16,384-token limit)
+           Run   N  Truncated  Looping (rep>=0.5)  Truncated and looping  Median repetition, truncated
+          Base 300         19                   0                      0                          0.03
+   GPT-5.2 SFT 300          6                   3                      0                          0.02
+s1K Claude 3.7 300         73                  62                     38                          0.56
+        s1K R1 300         18                   0                      0                          0.00
+
+Seven-task contrasts with looping traces handled (looping = repetition score >= 0.5)
+          Model          Contrast           as reported      looping scored 0      pairs where neither loops
+      Qwen3-14B Claude 3.7 - Base +7.43 [+4.89, +10.14]  +4.57 [+1.89, +7.41]  +9.03 [+5.80, +12.65] (n=245)
+      Qwen3-14B         R1 - Base  +0.31 [-1.05, +1.61]  +0.59 [-0.61, +1.79]   +0.60 [-0.61, +1.79] (n=349)
+      Qwen3-14B   Claude 3.7 - R1  +7.12 [+4.66, +9.81]  +3.98 [+1.32, +6.81]  +8.35 [+5.22, +11.55] (n=245)
+Phi-4-reasoning Claude 3.7 - Base +8.56 [+5.55, +11.59] +6.89 [+3.34, +10.49] +12.16 [+7.83, +17.77] (n=235)
+Phi-4-reasoning         R1 - Base  +3.41 [+1.55, +5.18]  +3.36 [+1.45, +5.23]   +2.98 [+1.09, +4.56] (n=305)
+Phi-4-reasoning   Claude 3.7 - R1  +5.15 [+2.76, +7.74]  +3.53 [+0.50, +6.64]   +7.41 [+3.29, +8.71] (n=252)
+OLMo-3-7B-Think Claude 3.7 - Base  -1.67 [-2.90, -0.43]  -5.52 [-7.18, -3.96]   -2.18 [-4.50, -1.29] (n=179)
+OLMo-3-7B-Think         R1 - Base  -0.17 [-1.33, +0.93]  +0.10 [-1.16, +1.34]   -0.19 [-1.34, +0.92] (n=345)
+OLMo-3-7B-Think   Claude 3.7 - R1  -1.50 [-2.69, -0.22]  -5.62 [-7.26, -3.98]   -2.51 [-5.11, -1.11] (n=181)
