@@ -98,3 +98,13 @@ extra = ["", "Seven-task contrasts with looping traces handled (looping = repeti
 print("\n".join(extra))
 with open(F.RES / "summary_tables/reasoning_loops.txt", "a", encoding="utf-8") as fh:
     fh.write("\n".join(extra) + "\n")
+
+# Numbers quoted in the paper (written to results/summary_tables/reasoning_loops.json)
+q = RUNS[("Qwen3-14B", "s1K Claude 3.7")]
+qrow = next(r for r in rows if r["Model"] == "Qwen3-14B" and r["Contrast"] == "Claude 3.7 - R1")
+est, ci = qrow["looping scored 0"].split(" [")
+lo, hi = ci.rstrip("]").split(", ")
+J = {"qwen_claude37_looping": int((q.reasoning.map(rep_score) >= THRESH).sum()), "qwen_claude37_n": len(q),
+     "qwen_claude_minus_r1_loops0": {"est": float(est), "lo": float(lo), "hi": float(hi)}}
+(F.RES / "summary_tables/reasoning_loops.json").write_text(json.dumps(J, indent=1), encoding="utf-8")
+print(J)
